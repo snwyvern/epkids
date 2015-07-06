@@ -1,0 +1,19 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Website,Applikation ===
+
+
+//image::p-logo.svg[align="center",width=30%,scaledwidth=35%]
+
+*link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für Simpl4*
+
+* link:http://de.wikipedia.org/wiki/Single-page-Webanwendung[Single page,window="_blank"]
+* link:http://www.reactivemanifesto.org[Reaktiv,window="_blank"], siehe Chat
+* Erstellt mit link:http://polymer-project.org[Polymer, window="_blank"]
+* link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"] für alle relevanten Artefakte
+* Kann leicht mit HTML/CSS Kenntnissen  genutzt werden und  auf eigene Bedürfnisse angepasst/erweitert werden
+* Es können aber auch Textfragmente als Teil der Seite mit link:http://asciidoctor.org[Asciidoctor, window="_ blank"] erstellt werden.
+* Forms mit client- und serverseitiger Plausibilitätsprüfung
+* History und Back-Button
+* Websockets
+* i18n

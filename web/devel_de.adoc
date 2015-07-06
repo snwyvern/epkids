@@ -1,0 +1,14 @@
+:icons: font
+:linkattrs:
+
+=== icon:lightbulb-o[size=1x,role=black] Entwicklungswerkzeuge für ===
+
+//image::devel.svg[align="center",width=20%]
+
+* Datenmodell
+* Datenabfragen
+* Forms
+* Workflow(BPMN2)
+* Messages
+* Dokumente
+* Camel Routen

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="fragment" content="!">
+	<meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>Simpl4 Info/Demo</title>
+	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
+	<script src="/sw/surface/libs.js.gz"></script>
+
+	<link rel="import" href="/sw/surface/domelements.html.gz">
+
+</head>
+
+<body unresolved fullbleed>
+
+	<script>
+		Polymer( {
+			is: 'bind-ref',
+
+			properties: {
+				ref: {
+					type: String,
+					observer: 'refChanged',
+				},
+			},
+
+			refChanged: function( newRef, oldRef ) {
+				if ( oldRef != undefined ) {
+					this._removeChildren();
+					this._stamp();
+				}
+			},
+
+			_stamp: function() {
+				this._parent = Polymer.dom( this ).parentNode;
+				var rootEl = this._parent;
+				while ( Polymer.dom( rootEl ).parentNode ) {
+					rootEl = Polymer.dom( rootEl ).parentNode;
+				}
+
+				var tpl = Polymer.dom( rootEl ).querySelector( '#' + this.ref );
+				var tplRoot = tpl.stamp().root;
+				this._children = Array.prototype.slice.call( tplRoot.childNodes );
+				Polymer.dom( this._parent ).insertBefore( tplRoot, this );
+			},
+
+			_removeChildren: function() {
+				for ( var i = 0; i < this._children.length; i++ ) {
+					Polymer.dom( this._parent ).removeChild( this._children[ i ] );
+				}
+			},
+
+			attached: function() {
+				console.log( "attached" );
+				this._stamp();
+			},
+			detached: function() {
+				this._removeChildren();
+			},
+		} );
+
+	</script>
+
+	<dom-module id="x-mmenu" flex relative>
+		<template>
+			<!--nav class="nav" id="mainmenu">
+				<ul>
+					<template is="dom-repeat" items="{{nodes}}" id="t">
+						<template is="dom-if" if="{{ !_isNodeDisabled(item) }}">
+							<template is="dom-if" if="{{ !_hasNodeChildren(item) }}">
+								<li style="list-style:none;" class="{{ level==-1 ? 'firstLevel' : ''}}" id="{{item.hash}}">
+									<a style="cursor:pointer;">
+										<font-awesome icon="{{item.icon}}"></font-awesome>{{item.name|tr}}</a>
+								</li>
+							</template>
+							<template is="dom-if" if="{{ _hasNodeChildren(item) }}">
+								<li style="list-style:none;" class="{{ level==-1 ? 'firstLevel' : ''}}" id="{{item.hash}}">
+									<span>
+                                                                        <font-awesome icon="{{item.icon}}"></font-awesome>{{item.name}}</span>
+									<ul>
+										<template  is="dom-repeat" items="{{item.children}}">
+											 <bind-ref ref="t"></bind-ref>
+										</template>
+									</ul>
+								</li>
+							</template>
+						</template>
+					</template>
+				</ul>
+			</nav-->
+			<content></content>
+		</template>
+		<script>
+			Polymer( {
+				is: 'x-mmenu',
+				properties: {
+					name: {
+						type: String,
+						value: ""
+					},
+					globals: Object
+				},
+				observers: [
+					'globalsChanged(globals.*)'
+				],
+				level: -1,
+				classes: "mm-white mm-zoom-panels",
+				backgroundColor: "invalid",
+				attached: function() {
+					console.log( "attached" );
+					this.getMenuYaml();
+					//this.createMenu();
+					this._createTree();
+				},
+				_createTree: function() {
+					var nav = document.createElement( 'nav' );
+					var ul = document.createElement( 'ul' );
+					Polymer.dom( this.root ).appendChild( nav )
+					Polymer.dom( nav ).appendChild( ul )
+
+					this._createNodeList( ul, this.nodes, true );
+				},
+				_createNodeList: function( ul, nodes, firstLevel ) {
+					for ( var i = 0; i < nodes.length; i++ ) {
+						var node = nodes[ i ];
+						if ( this._isNodeDisabled( node ) ) {
+							continue;
+						}
+						if ( !this._hasNodeChildren( node ) ) {
+							this._createLeaf( ul, node, firstLevel );
+						} else {
+							var ul2 = this._createNode( ul, node, firstLevel );
+							this._createNodeList( ul2, node.children, false );
+						}
+					}
+				},
+				_createNode: function( parent, node, firstLevel ) {
+					var fontAwesome = document.createElement( 'font-awesome' );
+					var li = document.createElement( 'li' );
+					var ul = document.createElement( 'ul' );
+					var span = document.createElement( 'span' );
+					Polymer.dom( parent ).appendChild( li )
+					Polymer.dom( li ).appendChild( span )
+					Polymer.dom( li ).appendChild( ul )
+					Polymer.dom( li ).setAttribute( "style", 'list-style:none' );
+					Polymer.dom( li ).setAttribute( "id", "x" + node.hash );
+					Polymer.dom( span ).textContent = node.name;
+					Polymer.dom( span ).appendChild( fontAwesome );
+					Polymer.dom( fontAwesome ).setAttribute( "icon", node.icon );
+					if ( firstLevel ) {
+						Polymer.dom( li ).classList.add( 'firstLevel' )
+					}
+					return ul;
+				},
+				_createLeaf: function( parent, node, firstLevel ) {
+					var fontAwesome = document.createElement( 'font-awesome' );
+					var li = document.createElement( 'li' );
+					var a = document.createElement( 'a' );
+					Polymer.dom( parent ).appendChild( li )
+					Polymer.dom( li ).appendChild( a )
+					Polymer.dom( a ).appendChild( fontAwesome );
+					Polymer.dom( fontAwesome ).setAttribute( "icon", node.icon );
+					Polymer.dom( a ).textContent = node.name;
+					Polymer.dom( li ).setAttribute( "style", 'list-style:none' );
+					Polymer.dom( li ).setAttribute( "id", "x" + node.hash );
+					if ( firstLevel ) {
+						Polymer.dom( li ).classList.add( 'firstLevel' )
+					}
+				},
+				_isNodeDisabled: function( node ) {
+					return node.disabled === true;
+				},
+				_hasNodeChildren: function( node ) {
+					return node.children && node.children.length > 0;
+				},
+				globalsChanged: function() {
+					this.getMenuYaml();
+					//this.createMenu();
+				},
+				createMenu: function() {
+					console.log( "mmenu.createMenu" );
+					var menu = $( this.$.mainmenu ).mmenu( {
+						slidingSubmenus: this.slidingSubmenus == "true",
+						searchfield: this.searchfield != "false",
+						body: $( this.$.mainmenu ),
+						classes: this.classes,
+						offCanvas: false
+
+					} );
+
+					var b = this.background;
+					if ( b && b.length >= 0 ) {
+						this.backgroundColor = b;
+						$( this.$.mainmenu ).css( "backgroundColor", b );
+						menu.addClass( "mm-background" );
+						$( this ).addClass( "mm-background" );
+					}
+				},
+				getMenuYaml: function() {
+					console.log( "Menu.getMenuYaml" );
+					var nodes = jQuery.ajax( {
+						url: "menu.yaml",
+						async: false,
+						dataType: "json"
+					} ).responseText;
+					try {
+						this.nodes = JSON.parse( nodes );
+					} catch ( e ) {
+						alert( "Error.Read Menu:" + e );
+						console.error( "Error.Read Menu:", e );
+						return;
+					}
+					this.pages = [];
+					this._traverse( this.nodes );
+					var isArray = Array.isArray( this.nodes );
+					console.log( "isArray:" + isArray );
+					console.log( "Pages:", this.nodes );
+				},
+				_traverse: function( nodes ) {
+					for ( var i = 0; i < nodes.length; i++ ) {
+						var node = nodes[ i ];
+						if ( node.name ) {
+							node.name = tr( node.name );
+						}
+
+						if ( node.hash == null ) {
+							if ( node.name ) {
+								var lc = node.name.toLowerCase();
+								node.hash = lc.replace( /[^a-z0-9_.]/g, "" );
+							} else {
+								alert( "Warning.menu:name and hash are empty" );
+							}
+						}
+						if ( node.url && node.url.indexOf( "%l" ) != -1 ) {
+							//node.url = node.url.replace( "%l", this.globals.lang );
+						}
+						if ( node.disabled !== true ) {
+							if ( node.children && node.children.length > 0 ) {
+								this.pages.push( node );
+								this._traverse( node.children );
+							} else {
+								this.pages.push( node );
+							}
+						}
+					}
+				}
+			} );
+
+		</script>
+	</dom-module>
+
+	<x-mmenu flex></x-mmenu>
+
+
+</body>
+
+
+</html>

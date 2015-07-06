@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="fragment" content="!">
+	<meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>Simpl4 Info/Demo</title>
+	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
+	<script src="/sw/surface/libs.js.gz"></script>
+
+	<link rel="import" href="/sw/surface/domelements.html.gz">
+
+	<script>
+		window._paq = [];
+		( function() {
+			var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
+			window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
+			window._paq.push( [ 'setSiteId', 2 ] );
+			var d = document,
+				g = d.createElement( 'script' ),
+				s = d.getElementsByTagName( 'script' )[ 0 ];
+			g.type = 'text/javascript';
+			g.defer = true;
+			g.async = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore( g, s );
+		} )();
+
+	</script>
+	<style>
+		body {
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+			font-size: 14px;
+			margin: 0;
+			padding: 24px;
+		}
+		section {
+			padding: 20px 0;
+		}
+		section > div {
+			padding: 14px;
+			font-size: 16px;
+		}
+		paper-button.colorful {
+			color: #4285f4;
+		}
+		paper-button[raised].colorful {
+			background: #4285f4;
+			color: #fff;
+		}
+		paper-button[toggles] {
+			transition: background-color 0.3s;
+		}
+		paper-button[toggles][active] {
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+		paper-button[toggles][active].colorful {
+			background-color: rgba(66, 133, 244, 0.25);
+		}
+		paper-button[toggles][active][raised].colorful {
+			background-color: rgba(66, 133, 244, 0.75);
+		}
+		paper-button.hover:hover {
+			background: #eee;
+		}
+		paper-button.blue-ripple::shadow paper-ripple {
+			color: #4285f4;
+		}
+		paper-button.blue-ripple paper-ripple {
+			color: #4285f4;
+		}
+		html,
+		body {}
+
+	</style>
+</head>
+
+<body unresolved fullbleed>
+	<!--simpl-main logoLink="http://simpl4.org/%l" logoBackground="white" toolbarBackground="#f6f6f6" mmenuBackground="white" mmenuClasses="mm-simpl"></simpl-main-->
+
+	<dom-module id="user-view">
+		<template>
+			First: <span>{{user.first}}</span>
+		</template>
+
+		<script>
+			Polymer( {
+				is: 'user-view',
+				properties: {
+					user: {
+						type: Object
+					}
+				},
+				observers: [
+					'userChanged(user.*)'
+				],
+				attached: function() {
+					console.log( "User.attached:", this.get( 'user' ) );
+				},
+				userChanged: function() {
+					console.log( "User.userChanged:", this.get( 'user' ) );
+					this.set( "user.first", "Manfred" );
+					this.async( function() {
+						//this.user.first = 'Manftred';
+					}, 1 );
+				}
+			} );
+
+		</script>
+	</dom-module>
+
+	<dom-module id="main-view">
+		<script>
+			Polymer( {
+				is: 'main-view',
+				properties: {
+					input: {
+						type: Object,
+						reflectToAttribute: true,
+						//observer: 'inputChanged',
+						value: function() {
+							return {}
+						}
+					},
+					user: {
+						type: Object,
+						notify: true,
+						observer: 'userChanged',
+						value: function() {
+							console.log( "INI" );
+							return {
+								first: "Manfred"
+							};
+						}
+					}
+				},
+				allChanged: function(x) {
+					console.log( "Main.allChanged:", x );
+				},
+				inputChanged: function() {
+					console.log( "Main.inputChanged:", this.input.a );
+				},
+				userChanged: function() {
+					console.log( "Main.userChanged:", this.get( 'user' ) );
+				},
+				deserialize: function( value, type ) {
+					switch ( type ) {
+						case Number:
+							value = Number( value );
+							break;
+						case Boolean:
+							value = value !== null;
+							break;
+						case Object:
+							try {
+								value = JSON5.parse( value );
+							} catch ( x ) {
+								console.error( x.stack );
+							}
+							break;
+						case Array:
+							try {
+								value = JSON.parse( value );
+							} catch ( x ) {
+								value = null;
+								console.warn( 'Polymer::Attributes: couldn`t decode Array as JSON' );
+							}
+							break;
+						case Date:
+							value = new Date( value );
+							break;
+						case String:
+						default:
+							break;
+					}
+					return value;
+				},
+
+				ready: function() {
+					console.log( "Main.attached:", this.user );
+					this.set( "user", {} );
+					/*			this.set( "user.first", "Melanie" );
+
+								this.async( function() {
+									this.set( "user.first", "Timeout5000" );
+								}, 5000 );
+
+								this.async( function() {
+									this.set( "user.first", "Timeout10000" );
+								}, 10000 );*/
+
+				}
+			} );
+
+		</script>
+	</dom-module>
+
+	<template id="t" is="dom-bind">
+		<paper-input label="Search:" value="{{input}}"> </paper-input>
+		<br/>
+		<br/>
+
+		<main-view input="{a:'x'}" user="{{ eval('input',input)}}"></main-view>
+		<!--user-view user="{{u}}"></user-view-->
+	</template>
+	<script>
+		document.getElementById( "t" );
+		console.log( "t:", t );
+		t.set( "eval", function( p1, p2 ) {
+			console.log( "p1:", p1 );
+			console.log( "p2:", p2 );
+			return {
+				first: p1
+			};
+		} );
+
+	</script>
+</body>
+
+
+</html>

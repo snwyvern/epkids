@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>Simpl4 Info/Demo</title>
+	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
+	<script src="/sw/surface/libs.js.gz"></script>
+	<script>
+		window.Polymer = window.Polymer || {};
+		window.Polymer.dom = 'shadow';
+
+	</script>
+
+	<link rel="import" href="/sw/surface/domelements.html.gz">
+
+</head>
+
+<body>
+<dom-module id="app-data">
+</dom-module>
+<script>
+    (function () {
+        var instances = [];
+        var vars = Object.create(Polymer.Base);
+        var commondata = {
+            get loader() {
+                return vars.get("loader");
+            },
+            set loader(v) {
+                return setGlob("loader", v);
+            }
+        };
+
+        function setGlob(path, v) {
+            if (vars.get(path) != v) {
+                vars.set(path, v);
+                for (var i = 0; i < instances.length; i++) {
+                    instances[i].notifyPath("data." + path, v);
+                }
+            }
+            return v;
+        }
+
+        Polymer({
+            is: 'app-data',
+            properties: {
+                data: {
+                    type: Object,
+                    value: commondata,
+                    notify: true,
+                    readonly: true
+                }
+            },
+            created: function () {
+                instances.push(this);
+            },
+
+            detached: function () {
+                var i = instances.indexOf(this);
+                if (i >= 0) {
+                    instances.splice(i, 1);
+                }
+            }
+        });
+    })();
+</script>
+	<script>
+	</script>
+
+	<user-view> </user-view>
+
+</body>
+
+
+</html>

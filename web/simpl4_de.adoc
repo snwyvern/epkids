@@ -1,0 +1,109 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+
+=== Der Webclient ===
+
+[TIP]
+====
+*Erstellen von maßgeschneiderten Applikationen. +
+HTML-Kenntnisse sind dafür ausreichend*
+====
+
+.Hauptsächlich basiert die Entwicklung auf HTML5 Webcomponents
+[role="border"] 
+--
+* link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"]
+* HTML Templates
+* Shadow DOM
+--
+
+*Damit ist es möglich HTML5 zu erweitern und  Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.*
+
+.Beispiel einer Datenbankabfrage mit Tabellarischer Darstellung
+[source,handlebars]
+----
+<div>
+<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
+  <br/>
+  <br/>
+
+<simpl-executefilter pageSize=10 offset=0 data="{{addressList}}" 
+		params="{{params}}" name="contact.filter"></simpl-executefilter> <!--2--> 
+
+ <table> <!--3-->
+    <template repeat="{{addressList}}">
+      <tr>
+        <td>"{{last_name}}"</td> <!--4-->
+        <td><a href=tel:{{phone}}>"{{phone}}"</a> </td><!--5-->
+      </tr>
+    </template>
+  </table>
+</div>
+----
+
+<1> Abfrage des Suchstrings
+<2> Ausführen des Filters
+<3> Darstellung
+<4> Name
+<5> Telefon als URL, damit kann auf einen Mobilclient direkt gewählt werden
+
+
+[TIP]
+Und so sieht es dann aus.Obiges Fragment ist hier in die Seite eingefügt. +
+Auf einfachste Weise können so Daten in eine Webseite  integriert werden. +
+Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
+
+[subs="macros"] 
+++++
+<div>
+<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
+  <br/>
+  <br/>
+
+<simpl-executefilter pageSize=10 offset=0 data="{{addressList}}" 
+		params="{{params}}" name="contact.filter"></simpl-executefilter> 
+
+ <table> 
+    <template is="dom-repeat"  items="{{addressList}}">
+      <tr>
+        <td>{{item.last_name}}</td> 
+        <td><a href=tel:{{item.phone}}>{{item.phone}}</a> </td>
+      </tr>
+    </template>
+  </table>
+</div>
+++++
+
+'''
+
+[NOTE]
+Und nun noch ein bißchen komfortabler. +
+In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] benutzt.
+
+[source,handlebars]
+----
+<div>
+  <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
+  <br/>
+  <br/>
+
+  <simpl-executefilter pageSize=30 offset=0 meta={{meta}} data="{{contactList}}. params=.{{params2}}. name="contact.filter"></simpl-executefilter>
+
+  <simpl-datatables options='{"bFilter":false}' meta=.{{meta}}. data=.{{contactList}}. />
+</div>
+----
+
+====
+++++
+<div>
+		<paper-input label="Search:" value="{{ params2.input }}"> </paper-input>
+		<br/>
+		<br/>
+
+		<simpl-executefilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executefilter>
+		<simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}"/>
+</div>
+====

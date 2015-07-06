@@ -1,0 +1,13 @@
+[sw]
+	type = sw.relations
+--
+[
+    {
+        "rightmodule": "data.ctest",
+        "leftmodule": "data.test1",
+        "leftfield": null,
+        "rightfield": null,
+        "dependent": true,
+        "relation": "one-to-many"
+    }
+]

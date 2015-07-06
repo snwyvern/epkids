@@ -1,0 +1,92 @@
+- name: Home
+  icon: home
+  url: frontpage.html
+  scope: "homescope"
+  hash: '0'
+- name: tr.menu.webclient
+  icon: info
+  url: simpl4_%l.adoc?t=1
+  hash: simpl4-info
+- name: tr.menu.server
+  icon: info
+  url: simpl4_server_%l.adoc
+  disabled: true
+  hash: simpl4_server-info
+- name: tr.menu.usage
+  icon: laptop
+  url: usage.html
+  help: web/help/usage_%l.adoc
+  hash: usage
+- name: CRM Demo
+  icon: list-alt
+  children:
+  - name: menu.crmdemo.accounts
+    icon: folder
+    url: accounts.html
+    hash: accounts
+  - name: menu.crmdemo.contacts
+    icon: user
+    url: contacts.html
+    hash: contacts
+  - name: tr.menu.task_list
+    icon: tasks
+    url: tasks.html
+    hash: tasklist
+  - name: tr.menu.process_list
+    icon: gears
+    url: processes.html
+    hash: processlist
+- name: tr.menu.misc_demo
+  icon: thumbs-up
+  children:
+  - name: Chat(XMPP)
+    url: websocket.html
+    icon: circle
+    help: web/help/chat_%l.adoc
+    hash: xmppchat
+  - name: Viewer
+    icon: desktop
+    url: viewer.html
+    hash: viewer
+  - name: Asciidoctor
+    icon: file-text
+    hash: 6-0
+    children:
+    - hash: asciidoc1
+      name: menu.asciidoctor.testfile
+      url: wolpertinger.adoc
+      icon: file-o
+    - name: menu.asciidoctor.otherstyle
+      hash: asciidoc2
+      wrap: true
+      url: wrapped_adoc.html
+      icon: file-text-o
+  - name: tr.menu.forms
+    icon: check-square
+    children:
+    - name: tr.form_with_table
+      url: formtable.html
+      icon: plus
+      hash: formtabledemo
+    - name: tr.form_with_tabs
+      url: formtab.html
+      icon: plus
+      hash: formtabdemo
+  - name: tr.menu.rpc
+    icon: location-arrow
+    children:
+    - name: SQL/Datatable
+      url: sql_datatable.html
+      icon: circle
+      hash: sql_datatable
+      help: web/help/sql_datatable_%l.adoc
+    - name: SQL/Asciidoctor
+      url: sql.html
+      icon: circle
+      help: web/help/sql_%l.adoc
+      hash: sql
+    - name: Products
+      url: products.html
+      icon: circle
+      help: web/help/products_%l.adoc
+      hash: products

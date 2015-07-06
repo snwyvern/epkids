@@ -1,0 +1,110 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+
+=== The Webclient ===
+
+[TIP]
+====
+*Creating custom applications. +
+HTML knowledge is sufficient*
+====
+
+.The development based mainly on HTML5 Webcomponents
+[role="border"] 
+--
+* Custom Elements
+* HTML Templates
+* Shadow DOM
+--
+
+*This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.*
+
+.Example of a database query with tabular representation
+[source,handlebars]
+----
+<div>
+<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
+  <br/>
+  <br/>
+
+<simpl-executeFilter pageSize=10 offset=0 data="{{addressList}}" 
+		params="{{params}}" name="contact.filter"></simpl-executeFilter> <!--2--> 
+
+ <table> <!--3-->
+    <template repeat="{{addressList}}">
+      <tr>
+        <td>"{{last_name}}"</td> <!--4-->
+        <td><a href=tel:{{phone}}>"{{phone}}"</a> </td><!--5-->
+      </tr>
+    </template>
+  </table>
+</div>
+----
+
+<1> Query the search string
+<2> Run the filter
+<3> Display
+<4> Name
+<5> Phone as a URL, so that can be selected directly on a mobile client
+
+
+[TIP]
+Here's how it looks.Upper fragment is inserted at this point into the page. +
+This is very simple way to integrate data into a web page. +
+After each inputed character the list is updated.
+
+[subs="macros"] 
+++++
+<div>
+<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
+  <br/>
+  <br/>
+
+<simpl-executeFilter pageSize=10 offset=0 data="{{addressList}}" 
+		params={{params}} name="contact.filter"></simpl-executeFilter> 
+
+ <table> 
+    <template repeat="{{addressList}}">
+      <tr>
+        <td>"{{last_name}}"</td> 
+        <td><a href=tel:{{phone}}>"{{phone}}"</a> </td>
+      </tr>
+    </template>
+  </table>
+</div>
+++++
+
+'''
+
+[NOTE]
+And now with a little bit more comfort. +
+In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
+
+[source,handlebars]
+----
+<div>
+  <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
+  <br/>
+  <br/>
+
+  <simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
+
+  <simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}" />
+</div>
+----
+
+====
+++++
+<div>
+		<paper-input label="Search:" value="{{ params2.input }}"> </paper-input>
+		<br/>
+		<br/>
+
+		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
+		<simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}"/>
+</div>
+++++
+====
