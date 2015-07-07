@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="fragment" content="!">
+	<meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>Simpl4 Info/Demo</title>
+	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
+	<script src="/sw/surface/libs.js.gz"></script>
+
+	<link rel="import" href="/sw/surface/domelements.html.gz">
+
+</head>
+
+<body unresolved fullbleed>
+
+	<dom-module id="x-filter">
+		<script>
+			Polymer( {
+				is: 'x-filter',
+				properties: {
+					filter: {
+						//value:function(){ return {} },
+						value: null,
+						notify: true,
+						type: Object
+					}
+				},
+				attached: function() {
+					console.log( "x-filter attached:", this.get( 'filter' ) );
+					this.async( function() {
+						//						this.set( "filter", {xxx:"XXXX"} );
+						this.filter = {
+							xxx: "XXXX"
+						};
+					}, 3000 );
+				}
+			} );
+
+		</script>
+	</dom-module>
+
+	<dom-module id="x-crudtable">
+		<script>
+			Polymer( {
+				is: 'x-crudtable',
+
+				properties: {
+					filter: {
+						type: Object
+					}
+				},
+				observers: [
+					'filterChanged(filter.*)'
+				],
+
+				filterChanged: function() {
+					console.log( "x-crudtable.filterChanged:", this.get( 'filter' ) );
+				},
+			} );
+
+		</script>
+	</dom-module>
+
+	<dom-module id="x-crud">
+		<template>
+			<x-filter filter="{{filter}}"> </x-filter>
+			<x-crudtable filter="{{filter}}"></x-crudtable>
+		</template>
+		<script>
+			Polymer( {
+				is: 'x-crud',
+			} );
+
+		</script>
+	</dom-module>
+
+
+	</script>
+	<x-crud></x-crud>
+</body>
+
+
+</html>

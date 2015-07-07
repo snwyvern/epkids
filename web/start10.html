@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="fragment" content="!">
+	<meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>Simpl4 Info/Demo</title>
+	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
+	<script src="/sw/surface/libs.js.gz"></script>
+
+	<link rel="import" href="/sw/surface/domelements.html.gz">
+
+</head>
+
+<body unresolved fullbleed>
+
+	<dom-module id="x-filter">
+		<script>
+			Polymer( {
+				is: 'x-filter',
+				properties: {
+					filter: {
+						notify: true,
+						type: String
+					}
+				},
+				attached: function() {
+					this.filter = "XXX";
+					console.log( "x-filter attached:", this.filter );
+					this.async( function() {
+						console.log( "x-filter setfilter" );
+						this.filter = "YYY";
+						console.log( "x-filter get after set:" );
+					}, 3000 );
+				}
+			} );
+
+		</script>
+	</dom-module>
+
+	<dom-module id="x-crudtable">
+		<script>
+			Polymer( {
+				is: 'x-crudtable',
+
+				properties: {
+					filter: {
+						type: String
+					}
+				},
+				observers: [
+					'filterChanged(filter)'
+				],
+
+				filterChanged: function() {
+					console.log( "x-crudtable.filterChanged:", this.filter );
+				},
+			} );
+
+		</script>
+	</dom-module>
+	<dom-module id="x-main">
+		<template>
+			<x-filter filter="{{filter}}">
+			</x-filter>
+				<x-crudtable filter="{{filter}}"></x-crudtable>
+		</template>
+		<script>
+			Polymer( {
+				is: 'x-main',
+
+				properties: {
+					filter: {
+						type: String
+					}
+				},
+				observers: [
+					'filterChanged(filter)'
+				],
+				filterChanged: function() {
+					console.log( "x-main.filterChanged:", this.filter );
+				},
+			} );
+
+		</script>
+	</dom-module>
+
+
+	</script>
+	<x-main></x-main>
+</body>
+
+
+</html>
