@@ -1,0 +1,15 @@
+<template is="dom-bind" id="root">
+	<simpl-panel bgcolor="black" heading="{{'tr.form_with_tabs'|tr}}">
+		<simpl-form namespace="cassandra" " on-xaction="onTap"  form-name="tabform.form"></simpl-form>
+	</simpl-panel>
+</template>
+<script>
+	HTMLImports.whenReady( function() {
+		var t = document.getElementById( "root" );
+		console.log( "ttt:", t );
+		t.onTap = function(e){
+			console.log("Tap:",e.detail);
+		}
+	} );
+
+</script>
