@@ -15,81 +15,32 @@
 </head>
 
 <body unresolved fullbleed>
+	<dom-module id="x-grap">
+		<template is="dom-template" id="sayHello">
+			<template is="dom-repeat" items="{{list}}">
+				<div>Hello <span>[[item.name]]</span>!</div>
+			</template>
+		</template>
 
-	<dom-module id="x-filter">
-		<script>
-			Polymer( {
-				is: 'x-filter',
-				properties: {
-					filter: {
-						notify: true,
-						type: String
-					}
-				},
-				attached: function() {
-					this.filter = "XXX";
-					console.log( "x-filter attached:", this.filter );
-					this.async( function() {
-						console.log( "x-filter setfilter" );
-						this.filter = "YYY";
-						console.log( "x-filter get after set:" );
-					}, 3000 );
-				}
-			} );
+		<template is="dom-bind">
 
-		</script>
-	</dom-module>
+			<template is="dom-repeat" items='[{"list":[{"name":"alice"},{"name":"alice2"}]}, {"list":[{"name":"bob"},{"name":"bob2"}]}, {"list":[{"name":"carol"},{"name":"carol2"}]}]'>
+				<grapp-template-ref ref="sayHello" bind="[[item]]"></grapp-template-ref>
+			</template>
 
-	<dom-module id="x-crudtable">
-		<script>
-			Polymer( {
-				is: 'x-crudtable',
-
-				properties: {
-					filter: {
-						type: String
-					}
-				},
-				observers: [
-					'filterChanged(filter)'
-				],
-
-				filterChanged: function() {
-					console.log( "x-crudtable.filterChanged:", this.filter );
-				},
-			} );
-
-		</script>
-	</dom-module>
-	<dom-module id="x-main">
-		<template>
-			<x-filter filter="{{filter}}">
-			</x-filter>
-				<x-crudtable filter="{{filter}}"></x-crudtable>
 		</template>
 		<script>
 			Polymer( {
-				is: 'x-main',
-
-				properties: {
-					filter: {
-						type: String
-					}
-				},
-				observers: [
-					'filterChanged(filter)'
-				],
-				filterChanged: function() {
-					console.log( "x-main.filterChanged:", this.filter );
-				},
+				is: 'x-grap',
 			} );
 
 		</script>
 	</dom-module>
 
 
-	</script>
-	<x-main></x-main>
+
+	<x-grap/>
+
 </body>
 
 
