@@ -5,7 +5,7 @@
 				<simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" namespace="firstapp" name="feature.filter" params="[[getParams()]]"></simpl-executeFilter>
 				<simpl-carousel items="[[featureList]]" class="flex" style="overflow:hidden;opacity:0.99;height: 100%;">
 					<template is="dom-repeat" as="feature" items="[[featureList]]">
-						<simpl-panel data-index$="{{index}}" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="{{feature.headline}}">
+						<simpl-panel data-index$="[[index]]" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="[[feature.headline]]">
 							<simpl-asciidoctor  data="[[feature]]">
 {empty} +
 [grid=none,frame=none,cols="33a,66a"]
