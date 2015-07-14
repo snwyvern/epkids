@@ -1,0 +1,14 @@
+:linkattrs:
+
+=== icon:lightbulb-o[size=1x,role=black] Technical overwiew ===
+
+//image::technic.svg[align="center",width=15%]
+
+* Backend OS:Linux and Windows
+* Programming Backend: Java/link:http://osgi.org[OSGI,window="_blank"]
+* Webclient: link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements with Polymer, window="_blank"]
+* Development tools: link:http://qooxdoo.org[qooxdoo, window="_blank"](Javascript)
+* Dataaccess:  link:http://datanucleus.org/[data nucleus, window="_blank"]
+* Workflows: Prozessengine link:http://activiti.org[activiti, window="_blank"]
+* Interfaces: link:http://camel.apache.org[apache camel, window="_blank"]
+* Versioning: link:http://git-scm.org[git, window="_blank"]

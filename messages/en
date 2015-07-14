@@ -2,4 +2,260 @@
 	type = sw.messageslang
 --
 [
+    {
+        "msgid": "alle_text",
+        "msgstr": "All textfields"
+    },
+    {
+        "msgid": "data.customer.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.customer.role_id",
+        "msgstr": "Role"
+    },
+    {
+        "msgid": "data.customer.company",
+        "msgstr": "Company"
+    },
+    {
+        "msgid": "data.customer.legalform",
+        "msgstr": "Form"
+    },
+    {
+        "msgid": "data.customer.category",
+        "msgstr": "Category"
+    },
+    {
+        "msgid": "data.customer.domain",
+        "msgstr": "Domain"
+    },
+    {
+        "msgid": "data.customer._team_list",
+        "msgstr": "Teams"
+    },
+    {
+        "msgid": "data.contact",
+        "msgstr": "Contact"
+    },
+    {
+        "msgid": "data.contact.salutation",
+        "msgstr": "Salutation"
+    },
+    {
+        "msgid": "data.contact.first_name",
+        "msgstr": "Firstname"
+    },
+    {
+        "msgid": "data.contact.last_name",
+        "msgstr": "Lastname"
+    },
+    {
+        "msgid": "data.contact.gender",
+        "msgstr": "Gender"
+    },
+    {
+        "msgid": "data.contact.title",
+        "msgstr": "Title"
+    },
+    {
+        "msgid": "data.contact.phone",
+        "msgstr": "Phone"
+    },
+    {
+        "msgid": "data.contact.email1",
+        "msgstr": "Email1"
+    },
+    {
+        "msgid": "data.contact.birth_date",
+        "msgstr": "Birthday"
+    },
+    {
+        "msgid": "data.contact.password",
+        "msgstr": "Password"
+    },
+    {
+        "msgid": "data.contact._team_list",
+        "msgstr": "Teams"
+    },
+    {
+        "msgid": "data.address",
+        "msgstr": "Address"
+    },
+    {
+        "msgid": "data.address.street",
+        "msgstr": "Street"
+    },
+    {
+        "msgid": "data.address.zipcode",
+        "msgstr": "Zipcode"
+    },
+    {
+        "msgid": "data.address.city",
+        "msgstr": "City"
+    },
+    {
+        "msgid": "data.address.country",
+        "msgstr": "Country"
+    },
+    {
+        "msgid": "data.address.state",
+        "msgstr": "State"
+    },
+    {
+        "msgid": "data.address._team_list",
+        "msgstr": "Teams"
+    },
+    {
+        "msgid": "data.customer.contact_list",
+        "msgstr": "Contacts"
+    },
+    {
+        "msgid": "data.customer.address_list",
+        "msgstr": "Addresses"
+    },
+    {
+        "msgid": "data.customer.cid",
+        "msgstr": "Cid"
+    },
+    {
+        "msgid": "data.customer_list",
+        "msgstr": "Customers"
+    },
+    {
+        "msgid": "data.customers._team_list",
+        "msgstr": "Teams"
+    },
+    {
+        "msgid": "tr.email1",
+        "msgstr": "Email"
+    },
+    {
+        "msgid": "tr.nachname",
+        "msgstr": "Surname"
+    },
+    {
+        "msgid": "tr.phone",
+        "msgstr": "Phone"
+    },
+    {
+        "msgid": "tr.first_name",
+        "msgstr": "Givenname"
+    },
+    {
+        "msgid": "tr.salutation",
+        "msgstr": "Salutation"
+    },
+    {
+        "msgid": "tr.menu.description",
+        "msgstr": "Description"
+    },
+    {
+        "msgid": "menu.asciidoctor.testfile",
+        "msgstr": "Testfile"
+    },
+    {
+        "msgid": "menu.asciidoctor.otherstyle",
+        "msgstr": "Other style"
+    },
+    {
+        "msgid": "tr.overwiew",
+        "msgstr": "Build your own fullstack application, it's easy!"
+    },
+    {
+        "msgid": "data.contact._tab1",
+        "msgstr": "Contact data"
+    },
+    {
+        "msgid": "data.customer.tab1",
+        "msgstr": "Customer data"
+    },
+    {
+        "msgid": "data.contact.tab2",
+        "msgstr": "Part 2"
+    },
+    {
+        "msgid": "data.feature.description",
+        "msgstr": "Description"
+    },
+    {
+        "msgid": "data.feature.price",
+        "msgstr": "Price"
+    },
+    {
+        "msgid": "menu.crmdemo.accounts",
+        "msgstr": "Accounts"
+    },
+    {
+        "msgid": "menu.crmdemo.contacts",
+        "msgstr": "Contacts"
+    },
+    {
+        "msgid": "tr.menu.task_list",
+        "msgstr": "Tasklist"
+    },
+    {
+        "msgid": "tr.menu.rpc",
+        "msgstr": "RPC"
+    },
+    {
+        "msgid": "tr.menu.process_list",
+        "msgstr": "Workflows"
+    },
+    {
+        "msgid": "tr.menu.database",
+        "msgstr": "Database"
+    },
+    {
+        "msgid": "tr.menu.misc_demo",
+        "msgstr": "Misc. Demos"
+    },
+    {
+        "msgid": "tr.menu.webclient",
+        "msgstr": "Webclient"
+    },
+    {
+        "msgid": "tr.menu.server",
+        "msgstr": "Server(Backend)"
+    },
+    {
+        "msgid": "tr.menu.usage",
+        "msgstr": "Use Cases"
+    },
+    {
+        "msgid": "tr.menu.forms",
+        "msgstr": "Forms"
+    },
+    {
+        "msgid": "tr.form_with_tabs",
+        "msgstr": "with tabs"
+    },
+    {
+        "msgid": "tr.form_with_table",
+        "msgstr": "with table"
+    },
+    {
+        "msgid": "enum.role.customer",
+        "msgstr": "Customer"
+    },
+    {
+        "msgid": "enum.salutation.mr",
+        "msgstr": "Mr."
+    },
+    {
+        "msgid": "enum.salutation.mrs",
+        "msgstr": "Ms."
+    },
+    {
+        "msgid": "enum.sex.female",
+        "msgstr": "female"
+    },
+    {
+        "msgid": "enum.sex.male",
+        "msgstr": "male"
+    },
+    {
+        "msgid": "zwei_bis_fuenf_ziffern",
+        "msgstr": "min. 2, max. 5 Digits"
+    }
 ]

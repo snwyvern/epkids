@@ -25,5 +25,321 @@
     {
         "msgstr": "Teams",
         "msgid": "data.ctest._team_list"
+    },
+    {
+        "msgstr": "Alle Textfelder",
+        "msgid": "alle_text"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "data.customer.id"
+    },
+    {
+        "msgstr": "Kunden",
+        "msgid": "data.customer_list"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.customers._team_list"
+    },
+    {
+        "msgstr": "Kunde",
+        "msgid": "data.customer"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "data.customer.cid"
+    },
+    {
+        "msgstr": "Rolle",
+        "msgid": "data.customer.role_id"
+    },
+    {
+        "msgstr": "Firma",
+        "msgid": "data.customer.company"
+    },
+    {
+        "msgstr": "Form",
+        "msgid": "data.customer.legalform"
+    },
+    {
+        "msgstr": "Kateg.",
+        "msgid": "data.customer.category"
+    },
+    {
+        "msgstr": "Bereich",
+        "msgid": "data.customer.domain"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.customer._team_list"
+    },
+    {
+        "msgstr": "Contact",
+        "msgid": "data.contact"
+    },
+    {
+        "msgstr": "Anrede",
+        "msgid": "data.contact.salutation"
+    },
+    {
+        "msgstr": "Vorname",
+        "msgid": "data.contact.first_name"
+    },
+    {
+        "msgstr": "Nachname",
+        "msgid": "data.contact.last_name"
+    },
+    {
+        "msgstr": "Geschlecht",
+        "msgid": "data.contact.gender"
+    },
+    {
+        "msgstr": "Titel",
+        "msgid": "data.contact.title"
+    },
+    {
+        "msgstr": "Telefon",
+        "msgid": "data.contact.phone"
+    },
+    {
+        "msgstr": "Email",
+        "msgid": "data.contact.email1"
+    },
+    {
+        "msgstr": "Geburtstag",
+        "msgid": "data.contact.birth_date"
+    },
+    {
+        "msgstr": "Passwort",
+        "msgid": "data.contact.password"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.contact._team_list"
+    },
+    {
+        "msgstr": "Address",
+        "msgid": "data.address"
+    },
+    {
+        "msgstr": "Street",
+        "msgid": "data.address.street"
+    },
+    {
+        "msgstr": "Zipcode",
+        "msgid": "data.address.zipcode"
+    },
+    {
+        "msgstr": "City",
+        "msgid": "data.address.city"
+    },
+    {
+        "msgstr": "Country",
+        "msgid": "data.address.country"
+    },
+    {
+        "msgstr": "State",
+        "msgid": "data.address.state"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.address._team_list"
+    },
+    {
+        "msgstr": "Email",
+        "msgid": "tr.email1"
+    },
+    {
+        "msgstr": "Nachname",
+        "msgid": "tr.nachname"
+    },
+    {
+        "msgstr": "Telefon",
+        "msgid": "tr.phone"
+    },
+    {
+        "msgstr": "Vorname",
+        "msgid": "tr.first_name"
+    },
+    {
+        "msgstr": "Anrede",
+        "msgid": "tr.salutation"
+    },
+    {
+        "msgstr": "Erstellen Sie vollständige Anwendungen, es ist einfach!",
+        "msgid": "tr.overwiew"
+    },
+    {
+        "msgstr": "Kontaktdaten",
+        "msgid": "data.contact._tab1"
+    },
+    {
+        "msgstr": "Kundendaten",
+        "msgid": "data.customer.tab1"
+    },
+    {
+        "msgstr": "Teil 2",
+        "msgid": "data.contact.tab2"
+    },
+    {
+        "msgstr": "Testdatei",
+        "msgid": "menu.asciidoctor.testfile"
+    },
+    {
+        "msgstr": "Anderer Stil",
+        "msgid": "menu.asciidoctor.otherstyle"
+    },
+    {
+        "msgstr": "Konten",
+        "msgid": "menu.crmdemo.accounts"
+    },
+    {
+        "msgstr": "Kontakte",
+        "msgid": "menu.crmdemo.contacts"
+    },
+    {
+        "msgstr": "Beschreibung",
+        "msgid": "tr.menu.description"
+    },
+    {
+        "msgstr": "Workflows",
+        "msgid": "tr.menu.process_list"
+    },
+    {
+        "msgstr": "Aufgabenliste",
+        "msgid": "tr.menu.task_list"
+    },
+    {
+        "msgstr": "RPC",
+        "msgid": "tr.menu.rpc"
+    },
+    {
+        "msgstr": "Datenbank",
+        "msgid": "tr.menu.database"
+    },
+    {
+        "msgstr": "Anwendungsfälle",
+        "msgid": "tr.menu.usage"
+    },
+    {
+        "msgstr": "Div. Demos",
+        "msgid": "tr.menu.misc_demo"
+    },
+    {
+        "msgstr": "Webclient",
+        "msgid": "tr.menu.webclient"
+    },
+    {
+        "msgstr": "Server(Backend)",
+        "msgid": "tr.menu.server"
+    },
+    {
+        "msgstr": "Formulare",
+        "msgid": "tr.menu.forms"
+    },
+    {
+        "msgstr": "mit Tabs",
+        "msgid": "tr.form_with_tabs"
+    },
+    {
+        "msgstr": "mit Tabelle",
+        "msgid": "tr.form_with_table"
+    },
+    {
+        "msgstr": "Kunde",
+        "msgid": "enum.role.customer"
+    },
+    {
+        "msgstr": "Herr",
+        "msgid": "enum.salutation.mr"
+    },
+    {
+        "msgstr": "Frau",
+        "msgid": "enum.salutation.mrs"
+    },
+    {
+        "msgstr": "weiblich",
+        "msgid": "enum.sex.female"
+    },
+    {
+        "msgstr": "männlich",
+        "msgid": "enum.sex.male"
+    },
+    {
+        "msgstr": "min. 2, max. 5 Ziffern",
+        "msgid": "zwei_bis_fuenf_ziffern"
+    },
+    {
+        "msgstr": "Feature",
+        "msgid": "data.feature"
+    },
+    {
+        "msgstr": "Headline",
+        "msgid": "data.feature.headline"
+    },
+    {
+        "msgstr": "Beschreibung",
+        "msgid": "data.feature.description"
+    },
+    {
+        "msgstr": "Preis",
+        "msgid": "data.feature.price"
+    },
+    {
+        "msgstr": "Picture",
+        "msgid": "data.feature.picture"
+    },
+    {
+        "msgstr": "Lang",
+        "msgid": "data.feature.lang"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.feature._team_list"
+    },
+    {
+        "msgstr": "Fakeuser",
+        "msgid": "data.fakeuser"
+    },
+    {
+        "msgstr": "Userid",
+        "msgid": "data.fakeuser.userid"
+    },
+    {
+        "msgstr": "Email",
+        "msgid": "data.fakeuser.email"
+    },
+    {
+        "msgstr": "Land",
+        "msgid": "data.fakeuser.land"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.fakeuser._team_list"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "data.fakeuser.name"
+    },
+    {
+        "msgstr": "Password",
+        "msgid": "data.fakeuser.password"
+    },
+    {
+        "msgstr": "Alternate",
+        "msgid": "data.fakeuser.alternate"
+    },
+    {
+        "msgstr": "Github",
+        "msgid": "data.fakeuser.github"
+    },
+    {
+        "msgstr": "Reddit",
+        "msgid": "data.fakeuser.reddit"
+    },
+    {
+        "msgstr": "Notes",
+        "msgid": "data.fakeuser.notes"
     }
 ]
