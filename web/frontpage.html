@@ -47,22 +47,21 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</template>
 		<script>
-			HTMLImports.whenReady( function() {
-				Polymer( {
-					is: 'front-page',
-   				behaviors: [ TranslationsBehavior ],
-					getFileName: function( name ) {
-						var lang = Simpl4.Cache.getItem( "lang" );
-						console.log( "lang", lang );
-						return name + "_" + lang + ".adoc";
-					},
-					getHref: function( name ) {
-						var lang = Simpl4.Cache.getItem( "lang" );
-						return "http://simpl4.org?lang=" + lang;
-					}
-				} );
+			Polymer( {
+				is: 'front-page',
+				behaviors: [ TranslationsBehavior ],
+				getFileName: function( name ) {
+					var lang = Simpl4.Cache.getItem( "lang" );
+					console.log( "lang", lang );
+					return name + "_" + lang + ".adoc";
+				},
+				getHref: function( name ) {
+					var lang = Simpl4.Cache.getItem( "lang" );
+					return "http://simpl4.org?lang=" + lang;
+				}
 			} );
 
 		</script>
