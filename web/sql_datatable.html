@@ -1,0 +1,4 @@
+<template is="dom-bind">
+  <simpl-rpc params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+  <simpl-datatables data="{{response}}" />
+</template>

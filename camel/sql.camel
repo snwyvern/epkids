@@ -1,0 +1,162 @@
+[sw]
+        type = sw.camel
+--
+{
+  "resourceId": "oryx_AE544E67-2E0F-4DE1-9F20-2404BF32FC7A",
+  "properties": {
+    "overrideid": "sql.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": true,
+    "rpcParameter": null,
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "websocket": false,
+    "recvEndpoint": "",
+    "sendEndpoint": "",
+    "startableGroups": null,
+    "startableUsers": "admin,guest",
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_A55ECDAD-495A-4596-B9F9-E20E489541B9",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": "#gitrepos/.bundles/org.ops4j.datasource-test.cfg\nosgi.jdbc.driver.name=mysql\nosgi.jdbc.driver.class=com.mysql.jdbc.Driver\ndatabaseName=zurmo\nuser=root\npassword=ms123\nserverName=localhost\ndataSourceName=zurmods\n\n\n#/etc/service/tunnel/run \n#!/bin/sh\n/usr/bin/ssh -o StrictHostKeyChecking=no  -4 -N  -l root -L 127.0.0.1:3306:127.0.0.1:3306   192.168.2.7",
+        "bgcolor": "teal",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_sql": "SQL",
+        "uri_template": "sql://${statement}",
+        "urivalue_statement": "select companyname,website from contact where companyname <> ''",
+        "uriparam_dataSource": "zurmods",
+        "uriparam_template.maxRows": 100,
+        "uriparam_outputClass": "",
+        "extraParams": null,
+        "uriparam_datasource": ""
+      },
+      "stencil": {
+        "id": "SQLEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 305.01689994000003,
+          "y": 167
+        },
+        "upperLeft": {
+          "x": 225,
+          "y": 107
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_67CA3DD2-5B14-4A2C-83A6-544F834BAB58",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_A55ECDAD-495A-4596-B9F9-E20E489541B9"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 225.01421599289063,
+          "y": 137
+        },
+        "upperLeft": {
+          "x": 144.6231732348047,
+          "y": 137
+        }
+      },
+      "dockers": [
+        {
+          "x": 40.0000001396,
+          "y": 30.363110894999984
+        },
+        {
+          "x": 40.008449970000015,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_A55ECDAD-495A-4596-B9F9-E20E489541B9"
+      }
+    },
+    {
+      "resourceId": "oryx_37129868-F77F-416C-98DD-67E4839EED05",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#CCC",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "direct1"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_67CA3DD2-5B14-4A2C-83A6-544F834BAB58"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 144.0000001396,
+          "y": 167.36311089499998
+        },
+        "upperLeft": {
+          "x": 63.999999860399996,
+          "y": 106.63688910500001
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
