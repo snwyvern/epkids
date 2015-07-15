@@ -1,0 +1,25 @@
+<template is="dom-bind">
+	<simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+	<simpl-asciidoctor data="{{response}}">
+
+////
+.Images
+|===
+|C1|C2|C3|C4
+
+|image:data_s.svg[Data,80]
+|image:workflow_s.svg[Workflow,80]
+|image:website_s.svg[Website,80]
+|image:report_s.svg[Report,80]
+|===
+////
+
+.Database
+|===
+|Name|Website<% data.each { map -> %>
+
+|$map.companyname|<%= map.website ? map.website : '--' %><%}%>
+|===
+
+	</simpl-asciidoctor>
+</template>
