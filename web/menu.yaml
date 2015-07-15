@@ -54,7 +54,7 @@
     children:
     - hash: asciidoc1
       name: menu.asciidoctor.testfile
-      url: wolpertinger.adoc
+      url: wolpertinger.adoc?t=1
       icon: file-o
     - name: menu.asciidoctor.otherstyle
       hash: asciidoc2
