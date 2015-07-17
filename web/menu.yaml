@@ -1,7 +1,7 @@
 - name: Home
   icon: home
   url: frontpage.html
-  scope: "homescope"
+  scope: "front-page"
   hash: '0'
 - name: tr.menu.webclient
   icon: info
