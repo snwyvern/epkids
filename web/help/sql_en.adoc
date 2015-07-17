@@ -1,0 +1,36 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== icon:play[size=1x,role=black] Processingsteps ===
+
+==== Serverside ====
+--
+[role=border]
+image::web/images/sql.svg[align="left"]
+--
+<1> The databasequery
+
+{empty} +
+
+==== Clientside(representation) ====
+
+[source,handlebars]
+----
+<div>
+	<!--1-->
+	<simpl-rpc auto params="{namespace:'firstapp'}" method="sql" service="camelRoute" response="{{response}}"/></simpl-rpc>
+	<simpl-asciidoctor data="{{response}}"><!--2-->
+
+.Query any database
+|===
+|Name|Website<% data.each { map -> %>
+
+|$map.companyname|<%= map.website ? map.website : '--' %><%}%>
+|===
+
+	</simpl-asciidoctor>
+</div>
+----
+
+<1> Execute the sql-query
+<2> Tabular representation of data with Asciidoctor.

@@ -1,0 +1,36 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== icon:play[size=1x,role=black] Verarbeitungschritte ===
+
+==== Serverseitig ====
+--
+[role=border]
+image::web/images/sql.svg[align="left"]
+--
+<1> Die Datenbankabfrage
+
+{empty} +
+
+==== Clientseitig(Darstellung) ====
+
+[source,handlebars]
+----
+<div>
+	<!--1-->
+	<simpl-rpc auto params="{namespace:'firstapp'}" method="sql" service="camelRoute" response="{{response}}"/></simpl-rpc>
+	<simpl-asciidoctor data="{{response}}"><!--2-->
+
+.Abfrage einer beliebigen Datenbank
+|===
+|Name|Website<% data.each { map -> %>
+
+|$map.companyname|<%= map.website ? map.website : '--' %><%}%>
+|===
+
+	</simpl-asciidoctor>
+</div>
+----
+
+<1> Ausführen der SQL-Abfrage
+<2> Tabellarische Darstellung der Daten mit Asciidoctor.

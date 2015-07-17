@@ -1,0 +1,9 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+==== overall view ====
+--
+[role=border]
+image::web/images/xmpp-ws.svg[align="center"]
+--

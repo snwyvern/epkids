@@ -1,0 +1,47 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== icon:play[size=1x,role=black] Verarbeitungschritte ===
+
+==== Serverseitig ====
+--
+
+
+[role=border]
+image::web/images/asciidoctorcamel.svg[align="center"]
+--
+<1> Der Adapter zum System, Eingang des RPC-Calls
+<2> Ersetzen von Variablen,  hier der Produkt- Imagename, Preis und EAN.
+<3> Produktbeschreibung nach HTML wandeln und in RPC-Out speichern. 
+
+{empty} +
+
+==== Clientseitig(Darstellung) ====
+
+[source,handlebars,linenums]
+----
+<div>
+  <simpl-executeFilter pageSize=10 offset=0 data="{{productList}}" namespace="crm" name="products.filter"></simpl-executeFilter><!--1-->
+  <simpl-carousel items="{{productList}}" flex style="overflow:hidden;opacity:0.99;"><!--2-->
+    <template repeat="{{product,i in productList}}"><!--3-->
+      <simpl-panel data-index="{{i}}" bgcolor="black" heading="{{product.name}}" collapsable="false" collapsed="false">
+        <simpl-asciidoctor data-index="{{i}}" data="{{product}}"><!--4-->
+image::$image[Picture,height=165,align=center]
+{empty} +
+[cols="33,66"]
+|===
+| Description |  $description
+| Price | *$price* Euro
+| EAN | *$ean_code*
+|===
+        </simpl-asciidoctor>
+      </simpl-panel>
+    </template>
+  </simpl-carousel>
+</div>
+----
+
+<1> Ausführen des Filter,liefert die Produktliste
+<2> Das Carousel erstellen
+<3> und mit den Produkten füllen
+<4> Die Produktbeschreibung mit Asciidoctor erstellt
