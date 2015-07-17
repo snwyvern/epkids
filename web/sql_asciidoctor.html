@@ -1,6 +1,6 @@
 <template is="dom-bind">
 	<simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
-	<simpl-asciidoctor data="{{response}}">
+	<simpl-asciidoctor scope="colony" css="colony.css" data="{{response}}">
 
 ////
 .Images
