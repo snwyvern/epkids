@@ -86,7 +86,7 @@
       help: web/help/sql_%l.adoc
       hash: sql
     - name: Products
-      url: products.html
+      url: products_%l.html
       icon: circle
       help: web/help/products_%l.adoc
       hash: products

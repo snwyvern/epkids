@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg7594"
+    sodipodi:docname="hw_central_computer_1.svg"
+    viewBox="0 0 44 52"
+    sodipodi:version="0.32"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    inkscape:version="0.46"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="62"
+      pagecolor="#ffffff"
+      inkscape:window-height="848"
+      inkscape:zoom="12.538462"
+      inkscape:window-x="163"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="22"
+      inkscape:cy="26"
+      showguides="true"
+      inkscape:guide-bbox="true"
+      inkscape:window-width="1360"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Calque 1"
+      inkscape:groupmode="layer"
+    >
+    <g
+        id="g12880"
+      >
+      <path
+          id="path27036"
+          style="fill-rule:evenodd;fill:#edd400"
+          d="m2 11v30l20 10v-30l-20-10z"
+      />
+      <path
+          id="path27038"
+          d="m22 51l20-10v-30l-20 10v30z"
+          style="fill-rule:evenodd;fill:#fce94f"
+          sodipodi:nodetypes="ccccc"
+      />
+      <path
+          id="path27034"
+          d="m2 11l20-10 20 10s-19 10-20 10-20-10-20-10z"
+          style="fill-rule:evenodd;fill:#c4a000"
+          sodipodi:nodetypes="ccczc"
+      />
+      <path
+          id="path27048"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m22 2.4503l-3.125 1.5625 3.125 1.5313 3.125-1.5313-3.125-1.5625z"
+      />
+      <path
+          id="path27050"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m26 4.4503l-0.219 0.0938-2 1-0.906 0.4687 0.906 0.4375 2 1 0.219 0.0938 0.219-0.0938 2-1 0.906-0.4375-0.906-0.4687-2-1-0.219-0.0938zm0 1.125l0.875 0.4375-0.875 0.4375-0.875-0.4375 0.875-0.4375z"
+      />
+      <path
+          id="path27052"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m30 6.4503l-3.125 1.5625 3.125 1.5313 3.125-1.5313-3.125-1.5625z"
+      />
+      <path
+          id="path27044"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m34 8.4503l-0.219 0.0938-2 1-0.906 0.4689 0.906 0.437 2 1 0.219 0.094 0.219-0.094 2-1 0.906-0.437-0.906-0.4689-2-1-0.219-0.0938zm0 1.125l0.875 0.4377-0.875 0.437-0.875-0.437 0.875-0.4377z"
+      />
+      <path
+          id="path27042"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m14 6.4503l-3.125 1.5625 3.125 1.5313 3.125-1.5313-3.125-1.5625z"
+      />
+      <path
+          id="path27046"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m18 4.4503l-0.219 0.0938-2 1-0.906 0.4687 0.906 0.4375 2 1 0.219 0.0938 0.219-0.0938 2-1 0.906-0.4375-0.906-0.4687-2-1-0.219-0.0938zm0 1.125l0.875 0.4375-0.875 0.4375-0.875-0.4375 0.875-0.4375z"
+      />
+      <path
+          id="path27040"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m10 8.4503l-0.2188 0.0938-2 1-0.9062 0.4689 0.9062 0.437 2 1 0.2188 0.094 0.219-0.094 2-1 0.906-0.437-0.906-0.4689-2-1-0.219-0.0938zm0 1.125l0.875 0.4377-0.875 0.437-0.875-0.437 0.875-0.4377z"
+      />
+      <path
+          id="rect12348"
+          sodipodi:nodetypes="ccccc"
+          style="fill:#729fcf"
+          d="m11.963 31.982l8.135 3.908 0.08 9.251-8.295-4.067 0.08-9.092z"
+      />
+      <path
+          id="path27054"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m11.5 31.188v0.812 9 0.312l0.281 0.126 8 4 0.719 0.374v-0.812-9-0.312l-0.281-0.126-8-4-0.719-0.374zm1 1.624l7 3.5v7.876l-7-3.5v-7.876z"
+      />
+      <path
+          id="path27058"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m3.5 15.188v0.812 24 0.312l0.2812 0.126 2 1 0.7188 0.374v-0.812-24-0.312l-0.2812-0.126-2-1-0.7188-0.374zm1 1.624l1 0.5v22.876l-1-0.5v-22.876z"
+      />
+      <path
+          id="path27056"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m7 16.688v25.124l3 1.5v-25.124l-3-1.5z"
+      />
+      <path
+          id="path27060"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m11.5 18.188v0.812 10 0.312l0.281 0.126 4 2 0.719 0.374v-0.812-10-0.312l-0.281-0.126-4-2-0.719-0.374zm1 1.624l3 1.5v8.876l-3-1.5v-8.876z"
+      />
+      <path
+          id="path27062"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m17.5 21.188v0.812 11 0.312l0.281 0.126 2 1 0.719 0.374v-0.812-11-0.312l-0.281-0.126-2-1-0.719-0.374zm1 1.624l1 0.5v9.876l-1-0.5v-9.876z"
+      />
+      <path
+          id="path28810"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m22 0.5c-0.25 0-0.354 0.05382-0.562 0.125-0.209 0.07118-0.469 0.18646-0.782 0.3125-0.625 0.2521-1.442 0.6-2.406 1.0313-1.929 0.8624-4.402 2.029-6.844 3.2187-2.4419 1.1897-4.8467 2.3838-6.656 3.375-0.9047 0.4956-1.6765 0.9571-2.2188 1.3125-0.2711 0.178-0.4865 0.322-0.6562 0.469-0.0849 0.073-0.1504 0.13-0.2188 0.218-0.0683 0.089-0.1562 0.209-0.1562 0.438v30c0 0.229 0.0879 0.349 0.1562 0.438 0.0684 0.088 0.1339 0.145 0.2188 0.218 0.1697 0.147 0.3851 0.291 0.6562 0.469 0.5423 0.355 1.3141 0.817 2.2188 1.313 1.8093 0.991 4.2141 2.185 6.656 3.374 2.442 1.19 4.915 2.357 6.844 3.219 0.964 0.431 1.781 0.779 2.406 1.031 0.313 0.127 0.573 0.242 0.782 0.313 0.208 0.071 0.312 0.125 0.562 0.125s0.354-0.054 0.562-0.125c0.209-0.071 0.469-0.186 0.782-0.313 0.625-0.252 1.442-0.6 2.406-1.031 1.929-0.862 4.402-2.029 6.844-3.219 2.442-1.189 4.847-2.383 6.656-3.374 0.905-0.496 1.677-0.958 2.219-1.313 0.271-0.178 0.486-0.322 0.656-0.469 0.085-0.073 0.15-0.13 0.219-0.218 0.068-0.089 0.156-0.209 0.156-0.438v-30c0-0.229-0.088-0.349-0.156-0.438-0.069-0.088-0.134-0.145-0.219-0.218-0.17-0.147-0.385-0.291-0.656-0.469-0.542-0.3554-1.314-0.8169-2.219-1.3125-1.809-0.9912-4.214-2.1853-6.656-3.375s-4.915-2.3563-6.844-3.2187c-0.964-0.4313-1.781-0.7792-2.406-1.0313-0.313-0.12604-0.573-0.24132-0.782-0.3125-0.208-0.07118-0.312-0.125-0.562-0.125zm0 1c-0.125 0 0.039 0.0014 0.219 0.0625 0.179 0.0611 0.447 0.1592 0.75 0.2813 0.605 0.244 1.417 0.6031 2.375 1.0312 1.915 0.8563 4.379 2.0022 6.812 3.1875s4.841 2.4287 6.625 3.4063c0.892 0.4887 1.624 0.8902 2.125 1.2192 0.251 0.164 0.454 0.311 0.563 0.406 0.018 0.016 0.018 0.018 0.031 0.031v29.75c-0.013 0.013-0.013 0.015-0.031 0.031-0.109 0.095-0.312 0.242-0.563 0.406-0.501 0.329-1.233 0.73-2.125 1.219-1.784 0.978-4.192 2.221-6.625 3.407-2.433 1.185-4.897 2.331-6.812 3.187-0.958 0.428-1.77 0.787-2.375 1.031-0.303 0.122-0.571 0.22-0.75 0.282-0.18 0.061-0.344 0.062-0.219 0.062s-0.039-0.001-0.219-0.062c-0.179-0.062-0.447-0.16-0.75-0.282-0.605-0.244-1.417-0.603-2.375-1.031-1.915-0.856-4.379-2.002-6.812-3.187-2.4331-1.186-4.8408-2.429-6.6252-3.407-0.8923-0.489-1.6243-0.89-2.125-1.219-0.2504-0.164-0.4535-0.311-0.5626-0.406-0.0181-0.016-0.018-0.018-0.0312-0.031v-29.75c0.0132-0.013 0.0131-0.015 0.0312-0.031 0.1091-0.095 0.3122-0.242 0.5626-0.406 0.5007-0.329 1.2327-0.7305 2.125-1.2192 1.7844-0.9776 4.1921-2.221 6.6252-3.4063 2.433-1.1853 4.897-2.3312 6.812-3.1875 0.958-0.4281 1.77-0.7872 2.375-1.0312 0.303-0.1221 0.571-0.2202 0.75-0.2813 0.18-0.0611 0.344-0.0625 0.219-0.0625z"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >central computer</dc:title
+        >
+        <dc:date
+          >2008-06-11T19:48:06</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/17348/central-computer-by-jcartier</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >jcartier</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >central computer</rdf:li
+            >
+            <rdf:li
+              >mainframe</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

@@ -1,0 +1,21 @@
+<template is="dom-bind">
+	<div style="width:100%;">
+		<simpl-executeFilter pageSize=10 offset=0 data="{{productList}}" namespace="crm" name="products.filter"></simpl-executeFilter>
+		<simpl-carousel items="[[productList]]" flex style="overflow:hidden;opacity:0.99;height: 100%;">
+			<template is="dom-repeat" as="product" items="[[productList]]">
+				<simpl-panel data-index$="[[index]]" bgcolor="black" heading="[[product.name]]">
+					<simpl-asciidoctor data="[[product]]">
+image::$image[Picture,height=165,align=center]
+{empty} +
+[cols="33,66"]
+|===
+| Beschreibung |  $description
+| Preis | *$price* Euro
+| EAN | *$ean_code*
+|===
+					</simpl-asciidoctor>
+				</simpl-panel>
+			</template>
+		</simpl-carousel>
+	</div>
+</template>
