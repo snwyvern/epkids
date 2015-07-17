@@ -58,7 +58,7 @@
       icon: file-o
     - name: menu.asciidoctor.otherstyle
       hash: asciidoc2
-      wrap: true
+      scope: wrapped-adoc
       url: wrapped_adoc.html
       icon: file-text-o
   - name: tr.menu.forms
@@ -84,7 +84,7 @@
       url: sql_asciidoctor.html
       icon: circle
       help: web/help/sql_%l.adoc
-      hash: sql
+      hash: sql_asciidoctor
     - name: Products
       url: products_%l.html
       icon: circle
