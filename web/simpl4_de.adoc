@@ -63,7 +63,7 @@ Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
   <br/>
   <br/>
 
-<simpl-executefilter pagesize=30 offset=0 data="{{addressList}}" 
+<simpl-executefilter pagesize=10 offset=0 data="{{addressList}}" 
 		params="{{params}}" name="contact.filter"></simpl-executefilter> 
 
  <table> 
@@ -90,7 +90,7 @@ In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] 
   <br/>
   <br/>
 
-  <simpl-executefilter pagesize=30 offset=0 meta={{meta}} data="{{contactList}}. params=.{{params2}}. name="contact.filter"></simpl-executefilter>
+  <simpl-executefilter pagesize=10 offset=0 meta={{meta}} data="{{contactList}}. params=.{{params2}}. name="contact.filter"></simpl-executefilter>
 
   <simpl-datatables options='{"bFilter":false}' meta=.{{meta}}. data=.{{contactList}}. />
 </div>
@@ -103,7 +103,7 @@ In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] 
 		<br/>
 		<br/>
 
-		<simpl-executefilter pagesize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executefilter>
+		<simpl-executefilter pagesize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executefilter>
 		<simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}"/>
 </div>
 ++++
