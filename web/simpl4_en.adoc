@@ -31,10 +31,10 @@ HTML knowledge is sufficient*
   <br/>
 
 <simpl-executeFilter pageSize=10 offset=0 data="{{addressList}}" 
-		params="{{params}}" name="contact.filter"></simpl-executeFilter> <!--2--> 
+		params="{{params}}" name="contact.filter"></simpl-executefilter> <!--2--> 
 
  <table> <!--3-->
-    <template repeat="{{addressList}}">
+    <template is="dom-repeat"  items="{{addressList}}">
       <tr>
         <td>"{{last_name}}"</td> <!--4-->
         <td><a href=tel:{{phone}}>"{{phone}}"</a> </td><!--5-->
@@ -63,14 +63,14 @@ After each inputed character the list is updated.
   <br/>
   <br/>
 
-<simpl-executeFilter pageSize=10 offset=0 data="{{addressList}}" 
-		params={{params}} name="contact.filter"></simpl-executeFilter> 
+<simpl-executeFilter pageSize=30 offset=0 data="{{addressList}}" 
+		params={{params}} name="contact.filter"></simpl-executefilter> 
 
  <table> 
-    <template repeat="{{addressList}}">
+    <template is="dom-repeat"  items="{{addressList}}">
       <tr>
-        <td>"{{last_name}}"</td> 
-        <td><a href=tel:{{phone}}>"{{phone}}"</a> </td>
+        <td>{{item.last_name}}</td> 
+        <td><a href=tel:{{item.phone}}>{{item.phone}}</a> </td>
       </tr>
     </template>
   </table>
@@ -104,7 +104,7 @@ In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 		<br/>
 
 		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
-		<simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}"/>
+		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"150px"}' meta="{{meta}}" data="{{contactList}}"/>
 </div>
 ++++
 ====
