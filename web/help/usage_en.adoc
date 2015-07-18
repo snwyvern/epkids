@@ -6,7 +6,7 @@
 ==== Serverside ====
 --
 [role=border]
-image::web/images/database.svg[align="center"]
+image::database.svg[align="center"]
 --
 <1> Query the featurelist from database +
 Answer to *<simpl-executeFilter>*
@@ -14,7 +14,7 @@ Answer to *<simpl-executeFilter>*
 {empty} +
 
 [role=border]
-image::web/images/asciidoctorcamel.svg[align="center"]
+image::asciidoctorcamel.svg[align="center"]
 <1> The adapter to the system. RPC-IN
 <2> Replacing variables, here the product image name, price and EAN.
 <3> Convert the productspecification to HTML and provide it on RPC-OUT. +

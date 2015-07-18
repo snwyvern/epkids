@@ -6,7 +6,7 @@
 ==== Serverseitig ====
 --
 [role=border]
-image::web/images/database.svg[align="center"]
+image::database.svg[align="center"]
 --
 <1> Die Featureliste aus Datenbank abfragen +
 Antwort auf *<simpl-executeFilter>*
@@ -15,7 +15,7 @@ Antwort auf *<simpl-executeFilter>*
 {empty} +
 
 [role=border]
-image::web/images/asciidoctorcamel.svg[align="center"]
+image::asciidoctorcamel.svg[align="center"]
 <1> Der Adapter zum System, Eingang des RPC-Calls
 <2> Ersetzen von Variablen,  hier der Produkt- Imagename, Preis und EAN.
 <3> Produktbeschreibung nach HTML wandeln und in RPC-Out speichern. +
