@@ -6,7 +6,7 @@
 ==== Serverseitig ====
 --
 [role=border]
-image::web/images/sql.svg[align="left"]
+image::sql.svg[align="left"]
 --
 <1> Die Datenbankabfrage
 
@@ -16,20 +16,19 @@ image::web/images/sql.svg[align="left"]
 
 [source,handlebars]
 ----
-<div>
-	<!--1-->
-	<simpl-rpc auto params="{namespace:'firstapp'}" method="sql" service="camelRoute" response="{{response}}"/></simpl-rpc>
-	<simpl-asciidoctor data="{{response}}"><!--2-->
+<template is="dom-bind">
+  <simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
+  <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}"><!--2-->
 
-.Abfrage einer beliebigen Datenbank
+.Database
 |===
 |Name|Website<% data.each { map -> %>
 
 |$map.companyname|<%= map.website ? map.website : '--' %><%}%>
 |===
 
-	</simpl-asciidoctor>
-</div>
+  </simpl-asciidoctor>
+</template>
 ----
 
 <1> Ausführen der SQL-Abfrage

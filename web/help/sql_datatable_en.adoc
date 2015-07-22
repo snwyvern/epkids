@@ -6,7 +6,7 @@
 ==== Serverside ====
 --
 [role=border]
-image::web/images/sql.svg[align="left"]
+image::sql.svg[align="left"]
 --
 <1> The databasequery
 
@@ -16,11 +16,12 @@ image::web/images/sql.svg[align="left"]
 
 [source,handlebars]
 ----
-<div>
-  <!--1-->
-  <simpl-rpc auto="" params="{namespace:'firstapp'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
-  <simpl-datatables options="{dom:'rtS', scrollY:'200px',scrollCollapse: true}" data="{{response}}" /><!--2-->
-</div>
+<template is="dom-bind">
+  <simpl-panel bgcolor="black">
+    <simpl-rpc params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
+    <simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"150px"}' data="{{response}}" /><!--2-->
+  </simpl-panel>
+</template>
 ----
 
 <1> Execute the sql-query

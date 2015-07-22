@@ -1,6 +1,6 @@
 <template is="dom-bind">
-	<simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
-	<simpl-asciidoctor scope="colony" css="colony.css" data="{{response}}">
+  <simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+  <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}">
 
 ////
 .Images
@@ -21,5 +21,5 @@
 |$map.companyname|<%= map.website ? map.website : '--' %><%}%>
 |===
 
-	</simpl-asciidoctor>
+  </simpl-asciidoctor>
 </template>

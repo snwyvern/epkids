@@ -1,5 +1,6 @@
 :linkattrs:
 :source-highlighter: rouge
+:miscellaneous.tabsize: 1
 
 === icon:play[size=1x,role=black] Processing steps ===
 
@@ -24,25 +25,41 @@ Answer to *<simpl-asciidoctor>*
 
 ==== Client-side(representation) ====
 
-[source,handlebars,linenums]
+[source,handlebars,linenums,indent=0]
 ----
-<div style="height:100%;max-width:600px;">
-  <!--1-->
-	<simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" namespace="firstapp" name="feature.filter" params="{lang:'de'}"></simpl-executeFilter>
-	<simpl-carousel items="{{featureList}}" flex style="overflow:hidden;opacity:0.99;height: 100%;"><!--2-->
-		<template repeat="{{feature,i in featureList}}"><!--3-->
-			<simpl-panel data-index="{{i}}" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="{{feature.headline}}" collapsable="false" collapsed="false">
-				<simpl-asciidoctor data-index="{{i}}" data="{{feature}}"><!--4-->
-
+<div>
+  <dom-module id="usage-page">
+    <template>
+      <div style="height:100%;width:100%;border-right: 1px solid #eaeaea;border-radius: 5px;">
+        <simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" namespace="firstapp" name="feature.filter" params="[[getParams()]]"></simpl-executeFilter><!--1-->
+        <simpl-carousel items="[[featureList]]" class="flex" style="overflow:hidden;opacity:0.99;height: 100%;"><!--2-->
+          <template is="dom-repeat" as="feature" items="[[featureList]]"><!--3-->
+            <simpl-panel data-index$="[[index]]" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="[[feature.headline]]">
+              <simpl-asciidoctor data="[[feature]]"><!--4-->
 {empty} +
 [grid=none,frame=none,cols="33a,66a"]
 |===
 | image::$picture[Picture,height=165,align=left] | $description
 |===
-				</simpl-asciidoctor>
-			</simpl-panel>
-		</template>
-	</simpl-carousel>
+              </simpl-asciidoctor>
+            </simpl-panel>
+          </template>
+        </simpl-carousel>
+      </div>
+    </template>
+    <script>
+      Polymer( {
+        is: 'usage-page',
+        getParams: function() {
+          return {
+            lang: Simpl4.Cache.getItem( "lang" )
+          };
+        }
+      } );
+
+    </script>
+  </dom-module>
+  <usage-page class="flex layout horizontal" />
 </div>
 ----
 
