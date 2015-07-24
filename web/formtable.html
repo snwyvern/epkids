@@ -1,4 +1,16 @@
- <simpl-panel bgcolor="black" heading="{{'tr.form_with_tabs'|tr}}" collapsable="false" collapsed="false">
-		   <simpl-form namespace="firstapp" formName="tableselect.form"></simpl-form>
-</simpl-panel>
+<template is="dom-bind" id="root">
+	<simpl-panel bgcolor="black" heading="{{tr('tr.form_with_table')}}">
+		<simpl-form namespace="kfzplan" " on-xaction="onTap"  form-name="tableselect.form"></simpl-form>
+	</simpl-panel>
+</template>
+<script>
+	HTMLImports.whenReady( function() {
+		var t = document.getElementById( "root" );
+		console.log( "ttt:", t );
+		t.onTap = function(e){
+			console.log("Tap:",e.detail);
+		}
+	} );
+
+</script>
 

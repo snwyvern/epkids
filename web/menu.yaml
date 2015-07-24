@@ -40,7 +40,7 @@
   icon: thumbs-up
   children:
   - name: Chat(XMPP)
-    url: websocket.html
+    url: chat.html
     icon: circle
     help: web/help/chat_%l.adoc
     hash: xmppchat
