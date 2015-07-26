@@ -76,12 +76,12 @@
     icon: location-arrow
     children:
     - name: SQL/Datatable
-      url: sql_datatable.html
+      url: sql_datatable_%l.html
       icon: circle
       hash: sql_datatable
       help: web/help/sql_datatable_%l.adoc
     - name: SQL/Asciidoctor
-      url: sql_asciidoctor.html
+      url: sql_asciidoctor_%l.html
       icon: circle
       help: web/help/sql_%l.adoc
       hash: sql_asciidoctor
