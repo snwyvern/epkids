@@ -23,7 +23,7 @@ HTML-Kenntnisse sind dafür ausreichend*
 *Damit ist es möglich HTML5 zu erweitern und  Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.*
 
 .Beispiel einer Datenbankabfrage mit Tabellarischer Darstellung
-[source,handlebars]
+[source,html]
 ----
 <div>
 <paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
@@ -83,16 +83,16 @@ Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
 Und nun noch ein bißchen komfortabler. +
 In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] benutzt.
 
-[source,handlebars]
+[source,html]
 ----
 <div>
   <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
   <br/>
   <br/>
 
-  <simpl-executefilter pagesize=10 offset=0 meta={{meta}} data="{{contactList}}. params=.{{params2}}. name="contact.filter"></simpl-executefilter>
+  <simpl-executefilter pagesize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params=.{{params2}}" name="contact.filter"></simpl-executefilter>
 
-  <simpl-datatables options='{"bFilter":false}' meta=.{{meta}}. data=.{{contactList}}. />
+  <simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}" />
 </div>
 ----
 
@@ -103,8 +103,8 @@ In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] 
 		<br/>
 		<br/>
 
-		<simpl-executefilter pagesize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executefilter>
-		<simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}"/>
+		<simpl-executefilter pagesize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executefilter>
+		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"180px"}' meta="{{meta}}" data="{{contactList}}"/>
 </div>
 ++++
 ====

@@ -23,7 +23,7 @@ HTML knowledge is sufficient*
 *This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.*
 
 .Example of a database query with tabular representation
-[source,handlebars]
+[source,html]
 ----
 <div>
 <paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
@@ -37,7 +37,7 @@ HTML knowledge is sufficient*
     <template is="dom-repeat"  items="{{addressList}}">
       <tr>
         <td>"{{last_name}}"</td> <!--4-->
-        <td><a href=tel:{{phone}}>"{{phone}}"</a> </td><!--5-->
+        <td><a href=tel:{{phone}}>{{phone}}</a> </td><!--5-->
       </tr>
     </template>
   </table>
@@ -83,7 +83,7 @@ After each inputed character the list is updated.
 And now with a little bit more comfort. +
 In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 
-[source,handlebars]
+[source,html]
 ----
 <div>
   <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
@@ -103,8 +103,8 @@ In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 		<br/>
 		<br/>
 
-		<simpl-executeFilter pageSize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
-		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"150px"}' meta="{{meta}}" data="{{contactList}}"/>
+		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
+		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"180px"}' meta="{{meta}}" data="{{contactList}}"/>
 </div>
 ++++
 ====

@@ -14,7 +14,7 @@ image::sql.svg[align="left"]
 
 ==== Clientseitig(Darstellung) ====
 
-[source,handlebars]
+[source,html]
 ----
 <template is="dom-bind">
   <simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->

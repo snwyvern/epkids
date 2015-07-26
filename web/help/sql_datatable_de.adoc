@@ -14,7 +14,7 @@ image::sql.svg[align="left"]
 
 ==== Clientseitig(Darstellung) ====
 
-[source,handlebars]
+[source,html]
 ----
 <template is="dom-bind">
   <simpl-panel bgcolor="black">

@@ -25,7 +25,7 @@ Answer to *<simpl-asciidoctor>*
 
 ==== Client-side(representation) ====
 
-[source,handlebars,linenums,indent=0]
+[source,html,linenums,indent=0]
 ----
 <div>
   <dom-module id="usage-page">

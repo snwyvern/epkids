@@ -18,7 +18,7 @@ image::web/images/asciidoctorcamel.svg[align="center"]
 
 ==== Clientseitig(Darstellung) ====
 
-[source,handlebars,linenums]
+[source,html,linenums]
 ----
 <template is="dom-bind">
   <div style="width:100%;">
