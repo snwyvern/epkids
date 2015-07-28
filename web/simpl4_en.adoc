@@ -64,7 +64,7 @@ After each inputed character the list is updated.
   <br/>
 
 <simpl-executeFilter pageSize=10 offset=0 data="{{addressList}}" 
-		params={{params}} name="contact.filter"></simpl-executefilter> 
+		params={{params}} namespace="firstapp" name="contact.filter"></simpl-executefilter> 
 
  <table> 
     <template is="dom-repeat"  items="{{addressList}}">
@@ -90,7 +90,7 @@ In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
   <br/>
   <br/>
 
-  <simpl-executeFilter pageSize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
+  <simpl-executeFilter pageSize=10 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" namespace="firstapp" name="contact.filter"></simpl-executeFilter>
 
   <simpl-datatables options='{"bFilter":false}' meta="{{meta}}" data="{{contactList}}" />
 </div>
@@ -103,7 +103,7 @@ In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 		<br/>
 		<br/>
 
-		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" name="contact.filter"></simpl-executeFilter>
+		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" namespace="firstapp" name="contact.filter"></simpl-executeFilter>
 		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"180px"}' meta="{{meta}}" data="{{contactList}}"/>
 </div>
 ++++
