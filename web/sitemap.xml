@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+   <url>
+      <loc>http://web.simpl4.org/repo/firstapp/start.html#!0</loc>
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="de"
+                 href="http://web.simpl4.org/repo/firstapp/start.html#!0"
+                 />
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="http://web.simpl4.org/repo/firstapp/start.html?lang=en#!0"
+                 />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/firstapp/start.html#!usage</loc>
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="de"
+                 href="http://web.simpl4.org/repo/firstapp/start.html#!usage"
+                 />
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="http://web.simpl4.org/repo/firstapp/start.html?lang=en#!usage"
+                 />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/firstapp/start.html#!simpl4-info</loc>
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="de"
+                 href="http://web.simpl4.org/repo/firstapp/start.html#!simpl4-info"
+                 />
+			<xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="http://web.simpl4.org/repo/firstapp/start.html?lang=en#!simpl4-info"
+                 />
+   </url>
+</urlset> 
