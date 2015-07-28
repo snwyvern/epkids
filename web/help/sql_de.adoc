@@ -17,7 +17,7 @@ image::sql.svg[align="left"]
 [source,html]
 ----
 <template is="dom-bind">
-  <simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
+  <simpl-rpc  method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
   <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}"><!--2-->
 
 .Database

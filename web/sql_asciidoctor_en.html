@@ -1,5 +1,5 @@
 <template is="dom-bind">
-  <simpl-rpc  params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+  <simpl-rpc  method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
   <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}">
 
 ////

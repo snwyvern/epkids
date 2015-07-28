@@ -18,7 +18,7 @@ image::sql.svg[align="left"]
 ----
 <template is="dom-bind">
   <simpl-panel bgcolor="black">
-    <simpl-rpc params="{namespace:'cassandra'}" method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
+    <simpl-rpc method="sql" service="camelRoute" response="{{response}}"></simpl-rpc><!--1-->
     <simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"150px"}' data="{{response}}" /><!--2-->
   </simpl-panel>
 </template>

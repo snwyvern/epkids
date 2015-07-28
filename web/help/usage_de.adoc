@@ -11,7 +11,6 @@ image::database.svg[align="center"]
 <1> Die Featureliste aus Datenbank abfragen +
 Antwort auf *<simpl-executeFilter>*
 
-
 {empty} +
 
 [role=border]
@@ -31,7 +30,7 @@ Antwort auf *<simpl-asciidoctor>*
   <dom-module id="usage-page">
     <template>
       <div style="height:100%;width:100%;border-right: 1px solid #eaeaea;border-radius: 5px;">
-        <simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" namespace="firstapp" name="feature.filter" params="[[getParams()]]"></simpl-executeFilter><!--1-->
+        <simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" name="feature.filter" params="[[getParams()]]"></simpl-executeFilter><!--1-->
         <simpl-carousel items="[[featureList]]" class="flex" style="overflow:hidden;opacity:0.99;height: 100%;"><!--2-->
           <template is="dom-repeat" as="feature" items="[[featureList]]"><!--3-->
             <simpl-panel data-index$="[[index]]" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="[[feature.headline]]">
