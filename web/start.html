@@ -2,77 +2,77 @@
 <html>
 
 <head>
-	<meta name="fragment" content="!">
-	<meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
-	<title>Simpl4 Info/Demo</title>
-	<script src="/sw/surface/webcomponents-lite.js.gz"></script>
-	<script>
-		//window.Polymer = window.Polymer || {};
-		//		window.Polymer.dom = 'shadow';
+  <meta name="fragment" content="!">
+  <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <title>Simpl4 Info/Demo</title>
+  <script src="/sw/surface/webcomponents-lite.js.gz"></script>
+  <script src="/sw/surface/libs.js.gz"></script>
+  <link rel="stylesheet" type="text/css" href="/sw/surface/libs.css.gz">
 
-	</script>
-	<script src="/sw/surface/libs.js.gz"></script>
-	<link rel="stylesheet" type="text/css" href="/sw/surface/libs.css.gz">
+  <link rel="import" href="/sw/surface/domelements.html.gz">
 
-	<link rel="import" href="/sw/surface/domelements.html.gz">
-	<!--link rel="stylesheet" type="text/css" href="colony.css"-->
-	<!--link is="custom-style" rel="stylesheet" type="text/css" href="my-theme.css"-->
+  <script>
+    window._paq = [];
+    ( function() {
+      var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
+      window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
+      window._paq.push( [ 'setSiteId', 2 ] );
+      var d = document,
+        g = d.createElement( 'script' ),
+        s = d.getElementsByTagName( 'script' )[ 0 ];
+      g.type = 'text/javascript';
+      g.defer = true;
+      g.async = true;
+      g.src = u + 'piwik.js';
+      s.parentNode.insertBefore( g, s );
+    } )();
 
-	<script>
-		window._paq = [];
-		( function() {
-			var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
-			window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
-			window._paq.push( [ 'setSiteId', 2 ] );
-			var d = document,
-				g = d.createElement( 'script' ),
-				s = d.getElementsByTagName( 'script' )[ 0 ];
-			g.type = 'text/javascript';
-			g.defer = true;
-			g.async = true;
-			g.src = u + 'piwik.js';
-			s.parentNode.insertBefore( g, s );
-		} )();
+  </script>
 
-	</script>
-	<style>
-
-   [invisible] {
+  <style>
+    [invisible] {
       visibility: hidden;
     }
     [exclude] {
       display: none !important;
     }
 
+    /*chromium asciidoctor hack*/
+    html /deep/ .admonitionblock > table {
+      display: block;
+    }
 
-*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-		html /deep/ select {
-			padding: 3px;
-			margin: 2px;
-			border-radius: 3px;
-			box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-			background: #ffffff;
-			color: #888;
-			border: none;
-			outline: none;
-			display: inline-block;
-			cursor: pointer;
-		}
-		@media screen and (max-height: 650px) {
-			html /deep/ #loginDialog {
-				top: -30px;
-			}
-		}
+    a {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-	</style>
+    html /deep/ select {
+      padding: 3px;
+      margin: 2px;
+      border-radius: 3px;
+      box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      background: #ffffff;
+      color: #888;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    @media screen and (max-height: 650px) {
+      html /deep/ #loginDialog {
+        top: -30px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
-
-	<simpl-main logo-link="http://simpl4.org/%l" logo-background="white" toolbar-background="#f6f6f6" mmenu-background="white" mmenu-classes="mm-light"></simpl-main>
+  <simpl-main logo-link="http://simpl4.org/%l" logo-background="white" toolbar-background="#f6f6f6" mmenu-background="white" mmenu-classes="mm-light"></simpl-main>
 </body>
-
 
 </html>
