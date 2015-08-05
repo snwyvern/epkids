@@ -1,1 +1,1 @@
-sitemap: http://web.simpl4.org/repo/firstapp/sitemap.xml
+sitemap: http://web.simpl4.org/repo/webdemo/sitemap.xml
