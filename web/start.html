@@ -14,20 +14,23 @@
   <link rel="import" href="/sw/surface/domelements.html.gz">
 
   <script>
-    window._paq = [];
-    ( function() {
-      var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
-      window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
-      window._paq.push( [ 'setSiteId', 2 ] );
-      var d = document,
-        g = d.createElement( 'script' ),
-        s = d.getElementsByTagName( 'script' )[ 0 ];
-      g.type = 'text/javascript';
-      g.defer = true;
-      g.async = true;
-      g.src = u + 'piwik.js';
-      s.parentNode.insertBefore( g, s );
-    } )();
+		console.log("HOST:",window.location.host);
+		if( window.location.host == 'web.simpl4.org'){
+			window._paq = [];
+			( function() {
+				var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
+				window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
+				window._paq.push( [ 'setSiteId', 2 ] );
+				var d = document,
+					g = d.createElement( 'script' ),
+					s = d.getElementsByTagName( 'script' )[ 0 ];
+				g.type = 'text/javascript';
+				g.defer = true;
+				g.async = true;
+				g.src = u + 'piwik.js';
+				s.parentNode.insertBefore( g, s );
+			} )();
+		}
 
   </script>
 
