@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="fragment" content="!">
+  <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <title>Simpl4 Info/Demo</title>
+  <script src="/sw/surface/webcomponents-lite.js.gz"></script>
+  <script src="/sw/surface/libs.js.gz"></script>
+  <link rel="stylesheet" type="text/css" href="/sw/surface/libs.css.gz">
+
+  <link rel="import" href="/sw/surface/domelements.html.gz">
+
+  <script>
+    console.log( "HOST:", window.location.host );
+    if ( window.location.host == 'web.simpl4.org' ) {
+      window._paq = [];
+      ( function() {
+        var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
+        window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
+        window._paq.push( [ 'setSiteId', 2 ] );
+        var d = document,
+          g = d.createElement( 'script' ),
+          s = d.getElementsByTagName( 'script' )[ 0 ];
+        g.type = 'text/javascript';
+        g.defer = true;
+        g.async = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore( g, s );
+      } )();
+    }
+
+  </script>
+
+  <style>
+    [invisible] {
+      visibility: hidden;
+    }
+    [exclude] {
+      display: none !important;
+    }
+    /*chromium asciidoctor hack*/
+    
+    html /deep/ .admonitionblock > table {
+      display: block;
+    }
+    a {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html /deep/ select {
+      padding: 3px;
+      margin: 2px;
+      border-radius: 3px;
+      box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      background: #ffffff;
+      color: #888;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    @media screen and (max-height: 650px) {
+      html /deep/ #loginDialog {
+        top: -30px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <dom-module id="x-test">
+    <template>
+      <simpl-main logo-link="http://simpl4.org/%l" logo-background="white" xoolbar-provided toolbar-background="#f6f6f6" selected-page="{{selectedPage}}" mmenu-background="white" mmenu-classes="mm-light">
+        <paper-toolbar id="mainToolbar" class="toolbarClass">
+          <paper-icon-button id="menuButton" icon="menu" on-tap="togglePanel"></paper-icon-button>
+          <h2 id="headlineId" class="flex">[[selectedPage.name]]</h2>
+          <template is="dom-if" if="[[selectedPage.help]]">
+            <div>
+              <paper-tooltip>[[helpMessage]]</paper-tooltip>
+              <paper-icon-button on-click="showHelp" icon="help"></paper-icon-button>
+            </div>
+          </template>
+          <paper-icon-button on-click="reload" class="langIcon" src="[[getLangIcon()]]"></paper-icon-button>
+          <template is="dom-if" if="[[signInOutIcon]]">
+            <div>
+              <paper-tooltip position="left">[[loginMessage]]</paper-tooltip>
+              <paper-icon-button on-click="login" icon="[[signInOutIcon]]"></paper-icon-button>
+            </div>
+          </template>
+        </paper-toolbar>
+      </simpl-main>
+    </template>
+    <script>
+      Polymer( {
+        is: 'x-test',
+        properties: {
+          filter: {
+            notify: true,
+            type: Object
+          }
+        },
+        attached: function() {
+          console.log( "x-test attached:", this.get( 'name' ) );
+        }
+      } );
+    </script>
+  </dom-module>
+
+  <x-test/>
+</body>
+
+</html>
