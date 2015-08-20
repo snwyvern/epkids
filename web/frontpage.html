@@ -1,47 +1,45 @@
 <div>
 	<dom-module id="front-page">
 		<link rel="import" type="css" href="frontpage.css" />
-		<link rel="import" type="css" href="layout-columns.css" />
 		<link rel="import" type="css" href="asciidoc.css" />
 		<template>
-			<div id="frontwrapper">
+			<div id="frontwrapper" style="width:100%;">
 
 				<div class="page">
 
 					<header class="header top-spacer">
-						<div horizontal layout wrap>
+						<div row grid wrap>
 							<a style="text-decoration: underline;" target="_blank" href="[[getHref()]]">
 								<img class="logo" src="skyline.svg" alt="">
 							</a>
 						</div>
 					</header>
 
-					<div horizontal layout>
+					<div>
 						<h3 style="padding-left:12px;">[[tr("tr.overwiew")]]</h3>
 					</div>
 
-					<div class="horizontal layout wrap">
+					<div class="grid row">
 
-						<div class="flex layout horizontal" s100 m50 xl25>
-							<simpl-panel bgcolor="black" collapsable class="layout vertical collapsable flex s4-feature">
+						<div class="col-lg-3 col-xs-12 col-md-6">
+							<simpl-panel bgcolor="black" collapsable class="grid column collapsable flex s4-feature">
 								<simpl-import url="{{getFileName('website')}}"></simpl-import>
 							</simpl-panel>
-						</div>
-
-						<div class="flex layout horizontal" s100 m50 xl25>
-							<simpl-panel bgcolor="black" collapsable class="layout vertical flex s4-feature">
+						</div> 
+						<div class="col-lg-3 col-xs-12 col-md-6">
+							<simpl-panel bgcolor="black" collapsable class="grid column flex s4-feature">
 								<simpl-import url="[[getFileName('backend')]]"></simpl-import>
 							</simpl-panel>
 						</div>
 
-						<div class="flex layout horizontal" s100 m50 xl25>
-							<simpl-panel bgcolor="black" collapsable class="layout vertical flex s4-feature">
+						<div class="col-lg-3 col-xs-12 col-md-6">
+							<simpl-panel bgcolor="black" collapsable class="grid column flex s4-feature">
 								<simpl-import url="[[getFileName('devel')]]"></simpl-import>
 							</simpl-panel>
 						</div>
 
-						<div class="flex layout horizontal" s100 m50 xl25>
-							<simpl-panel bgcolor="black" collapsable class="layout vertical flex s4-feature">
+						<div class="col-lg-3 col-xs-12 col-md-6">
+							<simpl-panel bgcolor="black" collapsable class="grid column flex s4-feature">
 								<simpl-import url="[[getFileName('technic')]]"></simpl-import>
 							</simpl-panel>
 						</div>
@@ -52,7 +50,7 @@
 		<script>
 			Polymer( {
 				is: 'front-page',
-				behaviors: [ TranslationsBehavior ],
+				behaviors: [ TranslationsBehavior,WhitespaceBehavior ],
 				getFileName: function( name ) {
 					var lang = Simpl4.Cache.getItem( "lang" );
 					console.log( "lang", lang );
