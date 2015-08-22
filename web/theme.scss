@@ -3,9 +3,8 @@ $font-lang:               'en';
 @import 'theme/sass/base';
 
 .polymer-theme {
-  $color-name-primary:    'lime';
-  $color-name-secondary:  'green';
-  $color-name-text:       'lime';
+  $color-name-primary:    'brown';
+  $color-name-secondary:  'orange';
   @import 'theme/sass/variables';
     @import 'theme/sass/blocks/all';
   font-family: $font-body;
