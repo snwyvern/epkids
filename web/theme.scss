@@ -1,0 +1,20 @@
+$font-name-heading:       'roboto-slab';
+$font-lang:               'en';
+@import 'theme/sass/base';
+
+.polymer-theme {
+  $color-name-primary:    'lime';
+  $color-name-secondary:  'green';
+  $color-name-text:       'lime';
+  @import 'theme/sass/variables';
+    @import 'theme/sass/blocks/all';
+  font-family: $font-body;
+
+    h1,
+    h2,
+    h3 {
+      font-family: $font-heading;
+      color: $color-text-secondary !important;
+    }
+}
+

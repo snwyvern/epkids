@@ -1,3 +1,3 @@
 #!/bin/sh
-sass app.scss >app.css
-css-beautify -r app.css
+sass theme.scss >theme.css
+css2html theme.css >theme.html
