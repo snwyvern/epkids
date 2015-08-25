@@ -3,17 +3,17 @@ $font-lang:               'en';
 @import 'theme/sass/base';
 
 .polymer-theme {
-  $color-name-primary:    'brown';
-  $color-name-secondary:  'orange';
+  $color-name-primary:    'blue-grey';
+  $color-name-secondary:  'red';
   @import 'theme/sass/variables';
     @import 'theme/sass/blocks/all';
   font-family: $font-body;
 
-    h1,
-    h2,
-    h3 {
-      font-family: $font-heading;
-      color: $color-text-secondary !important;
-    }
+  h1,
+	h2,
+	h3 {
+		font-family: $font-heading;
+		color: $color-accent-primary !important;
+	}
 }
 

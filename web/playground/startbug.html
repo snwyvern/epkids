@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="fragment" content="!">
+  <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <title>Simpl4 Info/Demo</title>
+  <script src="/sw/surface/webcomponents-lite.js.gz"></script>
+  <script src="/sw/surface/libs.js.gz"></script>
+
+  <link rel="import" href="/sw/surface/domelements.html.gz">
+
+</head>
+
+<body>
+  <dom-module id="test-element2">
+    <script>
+      Polymer( {
+        is: "test-element2",
+        properties: {
+          value: {
+            observer: "valueChanged",
+            type: String
+          }
+        },
+        valueChanged: function() {
+          console.log( "valueChanged:", this.value );
+        }
+      } );
+
+    </script>
+  </dom-module>
+
+  <dom-module id="test-element">
+    <template>
+      <template is="dom-if" if="[[value2]]" restamp>
+        <template is="dom-if" if="[[value]]" restamp>
+          <test-element2 value="[[value]]"></test-element2>
+        </template>
+      </template>
+    </template>
+    <script>
+      Polymer( {
+        is: 'test-element',
+        ready: function() {},
+        attached: function() {
+          this.value2 = "xxx";
+          this.value = "Hello";
+          this.async( function() {
+            this.value2 = null;
+            this.async( function() {
+              this.value = null;
+            }, 200 );
+          }, 200 );
+        }
+      } );
+
+    </script>
+  </dom-module>
+
+  <test-element>
+
+</body>
+
+
+</html>
