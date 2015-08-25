@@ -58,8 +58,8 @@ After each inputed character the list is updated.
 
 [subs="macros"] 
 ++++
-<div>
-<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
+<paper-material elevation="1" style="padding:10px;">
+	<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
   <br/>
   <br/>
 
@@ -70,11 +70,13 @@ After each inputed character the list is updated.
     <template is="dom-repeat"  items="{{addressList}}">
       <tr>
         <td>{{item.last_name}}</td> 
+        <td>{{item.email1}}</td> 
+        <td>{{item.salutation}}</td> 
         <td><a href=tel:{{item.phone}}>{{item.phone}}</a> </td>
       </tr>
     </template>
   </table>
-</div>
+</paper-material>
 ++++
 
 '''
@@ -96,15 +98,22 @@ In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 </div>
 ----
 
-====
 ++++
-<div>
+<paper-material elevation="1" style="padding:10px;">
 		<paper-input label="Search:" value="{{ params2.input }}"> </paper-input>
 		<br/>
 		<br/>
 
 		<simpl-executeFilter pageSize=30 offset=0 meta="{{meta}}" data="{{contactList}}" params="{{params2}}" namespace="firstapp" name="contact.filter"></simpl-executeFilter>
 		<simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"180px"}' meta="{{meta}}" data="{{contactList}}"/>
-</div>
+</paper-material>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 ++++
-====
