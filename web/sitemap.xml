@@ -3,44 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html?page=0</loc>
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="de"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?page=0"
-                 />
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="en"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?lang=en&amp;page=0"
-                 />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!0</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!0" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!0" />
    </url>
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html?page=usage</loc>
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="de"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?page=usage"
-                 />
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="en"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?lang=en&amp;page=usage"
-                 />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!usage</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!usage" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!usage" />
    </url>
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html?page=simpl4-info</loc>
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="de"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?page=simpl4-info"
-                 />
-			<xhtml:link 
-                 rel="alternate"
-                 hreflang="en"
-                 href="http://web.simpl4.org/repo/webdemo/start.html?lang=en&amp;page=simpl4-info"
-                 />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!simpl4-info</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!simpl4-info" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!simpl4-info" />
    </url>
 </urlset> 
