@@ -11,7 +11,8 @@ $font-lang:               'en';
 
   h1,
 	h2,
-	h3 {
+	h3,
+	h4 {
 		font-family: $font-heading;
 		color: $color-accent-primary !important;
 	}
