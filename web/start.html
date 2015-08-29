@@ -66,6 +66,11 @@
       display: inline-block;
       cursor: pointer;
     }
+    @media screen and (max-width: 640px) {
+      html /deep/ .mobile-hidden {
+        display: none !important;
+      }
+    }
     @media screen and (max-height: 650px) {
       html /deep/ #loginDialog {
         top: -30px;

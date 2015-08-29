@@ -70,8 +70,8 @@ After each inputed character the list is updated.
     <template is="dom-repeat"  items="{{addressList}}">
       <tr>
         <td>{{item.last_name}}</td> 
-        <td>{{item.email1}}</td> 
-        <td>{{item.salutation}}</td> 
+        <td class="mobile-hidden">{{item.email1}}</td> 
+        <td class="mobile-hidden">{{item.salutation}}</td> 
         <td><a href=tel:{{item.phone}}>{{item.phone}}</a> </td>
       </tr>
     </template>
