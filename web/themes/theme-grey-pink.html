@@ -478,59 +478,6 @@
   light-primary-contrast {
     background: #212121;
   }
-  .sidebarblock.asciidoctor-default,
-  .listingblock.asciidoctor-default .content,
-  .admonitionblock.asciidoctor-default .content,
-  .imageblock.asciidoctor-default,
-  .openblock.asciidoctor-default .content {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    border: 0px !important;
-    background: #ffffff !important;
-  }
-  .literalblock pre.asciidoctor-default,
-  .literalblock pre[class].asciidoctor-default,
-  .openblock.border > .content.asciidoctor-default,
-  .imageblock.border > .content.asciidoctor-default,
-  .listingblock > .content > pre.asciidoctor-default {
-    border: 0px !important;
-  }
-  h4,
-  h5,
-  h6 {
-    font-weight: 500;
-    color: #212121 !important;
-  }
-  .sect2.asciidoctor-default,
-  .sect3.asciidoctor-default {
-    color: #212121;
-  }
-  a.asciidoctor-default {
-    color: #727272 !important;
-  }
-  .title.asciidoctor-default {
-    color: #9e9e9e !important;
-  }
-  .admonitionblock.asciidoctor-default > table td.content {
-    color: #616161 !important;
-    border: 0px !important;
-  }
-  .highlight.asciidoctor-default .na {
-    color: #c2185b !important;
-  }
-  .conum[data-value].asciidoctor-default {
-    background-color: #212121 !important;
-    color: white !important;
-  }
-  table tr.even.asciidoctor-default,
-  table tr.alt.asciidoctor-default,
-  table tr.asciidoctor-default:nth-of-type(even) {
-    background: white !important;
-  }
-  table tr th.asciidoctor-default,
-  table tr td.asciidoctor-default {
-    color: #727272 !important;
-  }
   .polymer-theme .menu__item.mm-selected {
     font-weight: 400;
   }
@@ -581,6 +528,71 @@
     .polymer-theme .panel__header {
       font-size: 1.2em;
     }
+  }
+  .polymer-theme .sidebarblock.asciidoctor-default,
+  .polymer-theme .listingblock.asciidoctor-default .content,
+  .polymer-theme .admonitionblock.asciidoctor-default .content,
+  .polymer-theme .exampleblock.asciidoctor-default .content,
+  .polymer-theme .imageblock.asciidoctor-default,
+  .polymer-theme .openblock.asciidoctor-default .content {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 0px !important;
+    background: #ffffff !important;
+  }
+  .polymer-theme .literalblock pre.asciidoctor-default,
+  .polymer-theme .literalblock pre[class].asciidoctor-default,
+  .polymer-theme .openblock.border > .content.asciidoctor-default,
+  .polymer-theme .imageblock.border > .content.asciidoctor-default,
+  .polymer-theme .listingblock > .content > pre.asciidoctor-default {
+    border: 0px !important;
+  }
+  .polymer-theme h4.asciidoctor.default,
+  .polymer-theme h5.asciidoctor.default,
+  .polymer-theme h6.asciidoctor.default {
+    font-weight: 500;
+    color: #212121 !important;
+  }
+  neon-animatable > div.asciidoctor-default {
+    padding-left: 5px;
+  }
+  .polymer-theme .sect1.asciidoctor-default,
+  .polymer-theme .sect2.asciidoctor-default,
+  .polymer-theme .sect3.asciidoctor-default {
+    color: #212121;
+  }
+  @media screen and (max-width: 480px) {
+    .polymer-theme .sect1.asciidoctor-default,
+    .polymer-theme .sect2.asciidoctor-default,
+    .polymer-theme .sect3.asciidoctor-default {
+      font-size: 0.85em;
+    }
+  }
+  .polymer-theme a.asciidoctor-default {
+    color: #727272 !important;
+  }
+  .polymer-theme .title.asciidoctor-default {
+    color: #9e9e9e !important;
+  }
+  .polymer-theme .admonitionblock.asciidoctor-default > table td.content {
+    color: #616161 !important;
+    border: 0px !important;
+  }
+  .polymer-theme .highlight.asciidoctor-default .na {
+    color: #c2185b !important;
+  }
+  .polymer-theme .conum[data-value].asciidoctor-default {
+    background-color: #212121 !important;
+    color: white !important;
+  }
+  .polymer-theme table tr.even.asciidoctor-default,
+  .polymer-theme table tr.alt.asciidoctor-default,
+  .polymer-theme table tr.asciidoctor-default:nth-of-type(even) {
+    background: white !important;
+  }
+  .polymer-theme table tr th.asciidoctor-default,
+  .polymer-theme table tr td.asciidoctor-default {
+    color: #727272 !important;
   }
   .polymer-theme h1,
   .polymer-theme h2,
