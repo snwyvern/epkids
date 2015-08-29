@@ -58,7 +58,6 @@ After each inputed character the list is updated.
 
 [subs="macros"] 
 ++++
-<paper-material elevation="1" style="padding:10px;">
 	<paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
   <br/>
   <br/>
@@ -76,7 +75,6 @@ After each inputed character the list is updated.
       </tr>
     </template>
   </table>
-</paper-material>
 ++++
 
 {zwsp} +
