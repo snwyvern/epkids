@@ -20,7 +20,7 @@ HTML knowledge is sufficient*
 * Shadow DOM
 --
 
-*This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.*
+* This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.
 
 .Example of a database query with tabular representation
 [source,html]
@@ -77,8 +77,6 @@ After each inputed character the list is updated.
   </table>
 ++++
 
-{zwsp} +
-{zwsp} +
 {zwsp} +
 
 [NOTE]

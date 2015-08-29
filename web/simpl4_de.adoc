@@ -20,7 +20,7 @@ HTML-Kenntnisse sind dafür ausreichend*
 * Shadow DOM
 --
 
-*Damit ist es möglich HTML5 zu erweitern und  Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.*
+* Damit ist es möglich HTML5 zu erweitern und  Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.
 
 .Beispiel einer Datenbankabfrage mit Tabellarischer Darstellung
 [source,html]
@@ -77,8 +77,6 @@ Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
   </table>
 ++++
 
-{zwsp} +
-{zwsp} +
 {zwsp} +
 
 [NOTE]

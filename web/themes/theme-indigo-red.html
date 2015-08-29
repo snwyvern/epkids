@@ -547,8 +547,24 @@
   .polymer-theme .listingblock > .content > pre.asciidoctor-default {
     border: 0px !important;
   }
-  .polymer-theme .admonitionblock.asciidoctor-default td.icon i:before {
-    color: #212121 !important;
+  .polymer-theme .admonitionblock.asciidoctor-default td.icon .icon-note:before {
+    color: #388e3c !important;
+  }
+  .polymer-theme .admonitionblock.asciidoctor-default td.icon .icon-tip:before {
+    text-shadow: 0px 0px 0px;
+    color: #0288d1 !important;
+  }
+  .polymer-theme .admonitionblock.asciidoctor-default td.icon .icon-warning:before {
+    color: #ffa000 !important;
+  }
+  .polymer-theme .admonitionblock.asciidoctor-default td.icon .icon-caution:before {
+    color: #d32f2f !important;
+  }
+  .polymer-theme .admonitionblock.asciidoctor-default td.icon .icon-important:before {
+    color: #ff5252 !important;
+  }
+  .polymer-theme div.openblock.asciidoctor-default {
+    margin-bottom: 3px;
   }
   .polymer-theme h4.asciidoctor-default,
   .polymer-theme h5.asciidoctor-default,
@@ -564,22 +580,29 @@
   .polymer-theme .sect3.asciidoctor-default {
     color: #212121;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 640px) {
     .polymer-theme .sect1.asciidoctor-default,
     .polymer-theme .sect2.asciidoctor-default,
     .polymer-theme .sect3.asciidoctor-default {
-      font-size: 0.85em;
+      font-size: 0.9em;
     }
   }
   .polymer-theme a.asciidoctor-default {
     color: #727272 !important;
   }
   .polymer-theme .title.asciidoctor-default {
-    color: #3f51b5 !important;
+    color: #303f9f !important;
+    font-weight: 500 !important;
   }
   .polymer-theme .admonitionblock.asciidoctor-default > table td.content {
-    color: #303f9f !important;
+    color: #212121 !important;
+    font-weight: 500 !important;
     border: 0px !important;
+  }
+  @media screen and (max-width: 640px) {
+    .polymer-theme .admonitionblock.asciidoctor-default > table td.content {
+      font-weight: 400 !important;
+    }
   }
   .polymer-theme .highlight.asciidoctor-default .na {
     color: #d32f2f !important;
