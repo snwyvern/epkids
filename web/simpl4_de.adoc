@@ -79,7 +79,10 @@ Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
 </paper-material>
 ++++
 
-'''
+
+{zwsp} +
+{zwsp} +
+{zwsp} +
 
 [NOTE]
 Und nun noch ein bißchen komfortabler. +
