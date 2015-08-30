@@ -6,7 +6,7 @@
 
 * Backend OS:Linux und Windows
 * Programmierung Backend: Java/link:http://osgi.org[OSGI,window="_blank"]
-* Webclient: link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements mit Polymer, window="_blank"]
+* Webclient: http://www.html5rocks.com/en/tutorials/webcomponents/customelements[Custom elements mit Polymer, window="_blank"]
 * Entwicklungstools: link:http://qooxdoo.org[qooxdoo, window="_blank"](Javascript)
 * Datenzugriff:  link:http://datanucleus.org/[data nucleus, window="_blank"]
 * Workflows: Prozessengine link:http://activiti.org[activiti, window="_blank"]

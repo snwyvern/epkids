@@ -160,7 +160,7 @@
     },
     {
         "msgid": "tr.overwiew",
-        "msgstr": "Webapplications made easy.Now with Polymer 1.0"
+        "msgstr": "Simpl4 Applicationdevelopment",
     },
     {
         "msgid": "data.contact._tab1",
@@ -225,6 +225,22 @@
     {
         "msgid": "tr.menu.forms",
         "msgstr": "Forms"
+    },
+    {
+        "msgstr": "Presentation",
+        "msgid": "tr.menu.presentation"
+    },
+    {
+        "msgstr": "Page1",
+        "msgid": "tr.menu.presentation.page1"
+    },
+    {
+        "msgstr": "Page2",
+        "msgid": "tr.menu.presentation.page2"
+    },
+    {
+        "msgstr": "Page3",
+        "msgid": "tr.menu.presentation.page3"
     },
     {
         "msgid": "tr.form_with_tabs",

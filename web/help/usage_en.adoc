@@ -5,7 +5,6 @@
 
 ==== Serverside ====
 --
-[role=border]
 image::database.svg[align="center"]
 --
 <1> Query the featurelist from database +

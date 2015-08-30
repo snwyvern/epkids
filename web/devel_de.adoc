@@ -6,9 +6,9 @@
 //image::devel.svg[align="center",width=20%]
 
 * Datenmodell
-* Datenabfragen
-* Forms
-* Workflow(BPMN2)
-* Messages
+* link:local:accounts[Datenabfragen]
+* link:local:accounts[Forms]
+* link:http://www.bpmb.de/images/BPMN2_0_Poster_EN.pdf[Workflow(BPMN2), window="_blank"]
+* I18n
 * Dokumente
-* Camel Routen
+* link:http://camel.apache.org[Camel Routen,window="_blank"]

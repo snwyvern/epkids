@@ -167,7 +167,7 @@
         "msgid": "tr.salutation"
     },
     {
-        "msgstr": "Webapplikation leicht gemacht.Nun mit Polymer 1.0",
+        "msgstr": "Simpl4 Applikationsentwicklung",
         "msgid": "tr.overwiew"
     },
     {
@@ -237,6 +237,22 @@
     {
         "msgstr": "Formulare",
         "msgid": "tr.menu.forms"
+    },
+    {
+        "msgstr": "Präsentation",
+        "msgid": "tr.menu.presentation"
+    },
+    {
+        "msgstr": "Seite1",
+        "msgid": "tr.menu.presentation.page1"
+    },
+    {
+        "msgstr": "Seite2",
+        "msgid": "tr.menu.presentation.page2"
+    },
+    {
+        "msgstr": "Seite3",
+        "msgid": "tr.menu.presentation.page3"
     },
     {
         "msgstr": "mit Tabs",

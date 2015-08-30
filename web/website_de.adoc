@@ -8,7 +8,7 @@
 *link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für Simpl4*
 
 * link:http://de.wikipedia.org/wiki/Single-page-Webanwendung[Single page,window="_blank"]
-* link:http://www.reactivemanifesto.org[Reaktiv,window="_blank"], siehe Chat
+* link:http://www.reactivemanifesto.org[Reaktiv,window="_blank"], siehe link:local:xmppchat[Chat]
 * Erstellt mit link:http://polymer-project.org[Polymer, window="_blank"]
 * link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"] für alle relevanten Artefakte
 * Kann leicht mit HTML/CSS Kenntnissen  genutzt werden und  auf eigene Bedürfnisse angepasst/erweitert werden

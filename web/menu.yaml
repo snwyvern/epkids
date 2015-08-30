@@ -1,7 +1,6 @@
 - name: Home
   icon: home
   url: frontpage.html
-  scope: "front-page"
   hash: '0'
 - name: tr.menu.webclient
   icon: info
@@ -17,6 +16,22 @@
   url: usage.html
   help: web/help/usage_%l.adoc
   hash: usage
+- name: tr.menu.presentation
+  icon: list-alt
+  disabled: true
+  children:
+  - name: tr.menu.presentation.page1
+    icon: folder
+    url: web/presentation/page1_%l.adoc?t=1
+    hash: presentation_page1
+  - name: tr.menu.presentation.page2
+    icon: folder
+    url: web/presentation/page2_%l.adoc
+    hash: presentation_page2
+  - name: tr.menu.presentation.page3
+    icon: folder
+    url: web/presentation/page3_%l.adoc
+    hash: presentation_page3
 - name: CRM Demo
   icon: list-alt
   children:

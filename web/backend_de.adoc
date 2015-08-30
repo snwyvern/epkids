@@ -4,14 +4,17 @@
 
 //image::server.svg[align="center",width=25%]
 
-* Daten
-* Workflow
+* link:local:accounts[Daten]
+* link:local:processlist[Workflow]
 * User
 * Dokumente
 * Einstellungen
-* Zugriff
-* Messages
+* Zugriffskontrolle
+* I18n
 * Schnittstellen
+* link:http://www.jooq.org/[Typesave SQL/jOOQ,window=_blank"]
+* link:http://activemq.apache.org[Messaging/ActiveMQ,window="_blank"]
+* link:http://wamp.ws/[WAMP,window="_blank"]
+* Chat(link:https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol[XMPP,window="_blank"])
 
-[BIG]
-*Alle Dienste sind über JSON-RPC ansprechbar*
+*Alle Dienste sind über link:http://wamp.ws/[WAMP(Websocket/RPC), window="_blank"] ansprechbar*
