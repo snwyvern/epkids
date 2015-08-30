@@ -1,67 +1,63 @@
 <div>
-	<dom-module id="front-page">
-		<link rel="import" type="css" href="frontpage.css" />
-		<template>
-			<div id="frontwrapper" style="width:100%;">
+  <dom-module id="front-page">
+    <link rel="import" type="css" href="frontpage.css" />
+    <template>
+      <div id="frontwrapper" style="width:100%;">
+        <div class="page">
+          <paper-material elevation="0" style="padding-top:15px;" class="flex card">
+            <header class="header top-spacer">
+              <div row grid wrap>
+                <a style="text-decoration: underline;" target="_blank" href="[[getHref()]]">
+                  <img class="logo" src="front.svg" alt="">
+                </a>
+              </div>
+            </header>
+            <h2 style="padding-left:12px;">[[tr("tr.overwiew")]]</h2>
+          </paper-material>
 
-				<div class="page">
+          <div class="grid row">
+            <div class="col-xl-3 col-xs-12 col-md-6">
+              <paper-material elevation="1" class="grid column flex card">
+                <simpl-import url="{{getFileName('website')}}"></simpl-import>
+              </paper-material>
+            </div>
+            <div class="col-xl-3 col-xs-12 col-md-6">
+              <paper-material elevation="1" class="grid column flex card">
+                <simpl-import url="[[getFileName('backend')]]"></simpl-import>
+              </paper-material>
+            </div>
 
-					<header class="header top-spacer">
-						<div row grid wrap>
-							<a style="text-decoration: underline;" target="_blank" href="[[getHref()]]">
-								<img class="logo" src="front.svg" alt="">
-							</a>
-						</div>
-					</header>
+            <div class="col-xl-3 col-xs-12 col-md-6">
+              <paper-material elevation="1" class="grid column flex card">
+                <simpl-import url="[[getFileName('devel')]]"></simpl-import>
+              </paper-material>
+            </div>
 
-					<div>
-						<h2 style="padding-left:12px;">[[tr("tr.overwiew")]]</h2>
-					</div>
+            <div class="col-xl-3 col-xs-12 col-md-6">
+              <paper-material elevation="1" class="grid column flex card">
+                <simpl-import url="[[getFileName('technic')]]"></simpl-import>
+              </paper-material>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <script>
+      Polymer( {
+        is: 'front-page',
+        behaviors: [ TranslationsBehavior, WhitespaceBehavior ],
+        getFileName: function( name ) {
+          var lang = Simpl4.Cache.getItem( "lang" );
+          console.log( "lang", lang );
+          return name + "_" + lang + ".adoc";
+        },
+        getHref: function( name ) {
+          var lang = Simpl4.Cache.getItem( "lang" );
+          return "http://simpl4.org?lang=" + lang;
+        }
+      } );
 
-					<div class="grid row">
-
-						<div class="col-lg-3 col-xs-12 col-md-6">
-							<paper-material elevation"3" bgcolor="black" collapsable class="grid column collapsable flex s4-feature">
-								<simpl-import url="{{getFileName('website')}}"></simpl-import>
-							</paper-material>
-						</div> 
-						<div class="col-lg-3 col-xs-12 col-md-6">
-							<paper-material elevation"3" bgcolor="black" collapsable class="grid column flex s4-feature">
-								<simpl-import url="[[getFileName('backend')]]"></simpl-import>
-							</paper-material>
-						</div>
-
-						<div class="col-lg-3 col-xs-12 col-md-6">
-							<paper-card elevation"3" bgcolor="black" collapsable class="grid column flex s4-feature">
-								<simpl-import url="[[getFileName('devel')]]"></simpl-import>
-							</paper-material>
-						</div>
-
-						<div class="col-lg-3 col-xs-12 col-md-6">
-							<paper-card elevation"3" bgcolor="black" collapsable class="grid column flex s4-feature">
-								<simpl-import url="[[getFileName('technic')]]"></simpl-import>
-							</paper-material>
-						</div>
-					</div>
-				</div>
-			</div>
-		</template>
-		<script>
-			Polymer( {
-				is: 'front-page',
-				behaviors: [ TranslationsBehavior,WhitespaceBehavior ],
-				getFileName: function( name ) {
-					var lang = Simpl4.Cache.getItem( "lang" );
-					console.log( "lang", lang );
-					return name + "_" + lang + ".adoc";
-				},
-				getHref: function( name ) {
-					var lang = Simpl4.Cache.getItem( "lang" );
-					return "http://simpl4.org?lang=" + lang;
-				}
-			} );
-
-		</script>
-	</dom-module>
-	<front-page class="flex layout horizontal" />
+    </script>
+  </dom-module>
+  <front-page class="flex layout horizontal" />
 </div>
