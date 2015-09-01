@@ -12,4 +12,4 @@ but also for other things that needs a backend.
 Base for your own developments.
 
 [.border.left.thumb]
-image::web/presentation/images/main.svg[width=100%]
+image::web/presentation/images/front.svg[width=100%]

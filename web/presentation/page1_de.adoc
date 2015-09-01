@@ -14,4 +14,4 @@
 
 
 [.border.left.thumb]
-image::web/presentation/images/main.svg[width=100%]
+image::web/presentation/images/front.svg[width=100%]
