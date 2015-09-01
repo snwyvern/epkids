@@ -9,11 +9,11 @@
 
 *Die Antwort sollte unverzüglich zur Verfügung stehen.*
 
-* Freigeschaltete und als RPC-Type konfigurierte link:http://camel.apache.org[Camelrouten,window="_blank"] werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Händler als Prozeduren registriert.
+* Freigeschaltete und als RPC-Typ konfigurierte link:http://camel.apache.org[Camelrouten,window="_blank"] werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Router als Prozeduren registriert.
 * Im WAMP-Endpunkt *(2)* werden die  Prozedur-Parameter und der Rückgabewert festgelegt.
 * Damit ist es möglich, Berechtigung vorausgesetzt, die Route von einem WAMP-Client als Remote Prozedur aufzurufen.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/request-response.svg[width=400]
 
 * Der Response enthält die Daten, die in der letzten Komponente *(1)* enstanden sind als Rückgabewert der Prozedur.
@@ -28,7 +28,7 @@ image::web/presentation/images/request-response.svg[width=400]
 * Der Body der Route enthält die zu veröffentlichen Daten.
 * In diesem Beispiel, immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/publish-subscribe.svg[width=400]
 
 
@@ -41,5 +41,5 @@ Darum ist es wichtig das der/die Berechtigten jederzeit den Zustand des Prozesse
 da die rote Task einer anderen Person als dem Initiator zugewiesen ist.
 * Wenn diese Person die rote Task ausgeführt hat, wird der Initiator benachrichtigt.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/process1.svg[width=600]

@@ -9,11 +9,11 @@
 
 *The answer should be immediately available.*
 
-* Enabled link:http://camel.apache.org[camel routes,window="_blank"], configured as RPC-Type  are registered on the link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Dealer as procedures.
+* Enabled link:http://camel.apache.org[camel routes,window="_blank"], configured as RPC-Type  are registered on the link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Router as procedures.
 * The procedure parameters and the return value are defined in the WAMP endpoint *(2)*.
 * It is therefore possible, provided authorization, to invoke the route from  WAMP-client as remote procedure.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/request-response.svg[width=400]
 
 * The response contains the data, that was produced in the last component *(1)* as return value of the procedure.
@@ -28,7 +28,7 @@ image::web/presentation/images/request-response.svg[width=400]
 * The body of the route contains the publishing data.
 * In this example, whenever a file is copied to the "Publish" folder, the subscriber gets immediately the content.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/publish-subscribe.svg[width=400]
 
 
@@ -41,5 +41,5 @@ It is therefore important that the guardian can always retrieve the state of the
 because the red task is assigned  to another person.
 * If that person has executed the red task, the initiator is notified.
 
-[.thumb]
+[.border.thumb]
 image::web/presentation/images/process1.svg[width=600]

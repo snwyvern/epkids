@@ -3,15 +3,13 @@
 
 = Simpl4==
 
-=== What is it? ===
-
-The three main parts.
+=== Main parts ===
 
 . Development system for creating individual (web)applications +
 but also for other things that needs a backend.
-. Backend with many services (eg. Data access, workflow).
+. Backend with many services (eg. data, workflow, routing ..).
 . Basic web application for mobile and desktop. +
 Base for your own developments.
 
-[.left.thumb]
+[.border.left.thumb]
 image::web/presentation/images/main.svg[width=100%]
