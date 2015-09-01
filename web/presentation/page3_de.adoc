@@ -7,9 +7,9 @@
 
 === Request-Response (RPC)  ===
 
-Die Antwort sollte unverzüglich zur Verfügung stehen.
+*Die Antwort sollte unverzüglich zur Verfügung stehen.*
 
-* Freigeschaltete und als RPC-Type konfigurierte Camelrouten werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Händler als Prozeduren registriert.
+* Freigeschaltete und als RPC-Type konfigurierte link:http://camel.apache.org[Camelrouten,window="_blank"] werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Händler als Prozeduren registriert.
 * Im WAMP-Endpunkt *(2)* werden die  Prozedur-Parameter und der Rückgabewert festgelegt.
 * Damit ist es möglich, Berechtigung vorausgesetzt, die Route von einem WAMP-Client als Remote Prozedur aufzurufen.
 
@@ -21,9 +21,9 @@ image::web/presentation/images/request-response.svg[width=400]
 
 === Publish/Subscribe  ===
 
-Wenn der Publisher neue Daten hat, werden diese sofort beim Subscriber sichtbar.
+*Wenn der Publisher neue Daten hat, werden diese sofort beim Subscriber sichtbar.*
 
-* Eine Camelroute kann auch ein Publisher sein.
+* Eine Camelroute kann ein Publisher sein.
 * Der WAMP-Endpunkt wird als Publisher-Typ konfiguriert.
 * Der Body der Route enthält die zu veröffentlichen Daten.
 * In diesem Beispiel, immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
@@ -34,8 +34,8 @@ image::web/presentation/images/publish-subscribe.svg[width=400]
 
 === Starten eines Prozesses  ===
 
-Die Ausführungszeit eines  Prozess kann sehr lang sein(Wochen, Monate!). +
-Darum ist es wichtig das der/die Berechtigten jederzeit den Zustand des Prozesses abrufen können.
+*Die Ausführungszeit eines  Prozess kann sehr lang sein(Wochen, Monate!). +
+Darum ist es wichtig das der/die Berechtigten jederzeit den Zustand des Prozesses abrufen können.*
 
 * Das System stopped nach den drei grünen Tasks, +
 da die rote Task einer anderen Person als dem Initiator zugewiesen ist.

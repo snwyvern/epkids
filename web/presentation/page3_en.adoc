@@ -7,7 +7,7 @@
 
 === Request-Response (RPC) ===
 
-The answer should be immediately available.
+*The answer should be immediately available.*
 
 * Enabled link:http://camel.apache.org[camel routes,window="_blank"], configured as RPC-Type  are registered on the link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Dealer as procedures.
 * The procedure parameters and the return value are defined in the WAMP endpoint *(2)*.
@@ -21,9 +21,9 @@ image::web/presentation/images/request-response.svg[width=400]
 
 === Publish / Subscribe ===
 
-If the publisher has new data, she are immediately visible at the Subscriber.
+*If the publisher has new data, she are immediately visible at the Subscriber.*
 
-* A Camelroute can also be a publisher.
+* A Camelroute can be a publisher.
 * The WAMP endpoint is configured as publisher type.
 * The body of the route contains the publishing data.
 * In this example, whenever a file is copied to the "Publish" folder, the subscriber gets immediately the content.
@@ -34,8 +34,8 @@ image::web/presentation/images/publish-subscribe.svg[width=400]
 
 === Starting a process ===
 
-The execution time of a process can be very long (weeks, months!). +
-It is therefore important that the guardian can always retrieve the state of the process.
+*The execution time of a process can be very long (weeks, months!). +
+It is therefore important that the guardian can always retrieve the state of the process.*
 
 * The system stopps after  the three green tasks, +
 because the red task is assigned  to another person.
