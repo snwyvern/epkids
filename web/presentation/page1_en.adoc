@@ -1,0 +1,17 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+=== What is it? ===
+
+The three main parts.
+
+. Development system for creating individual (web)applications +
+but also for other things that needs a backend.
+. Backend with many services (eg. Data access, workflow).
+. Basic web application for mobile and desktop. +
+Base for your own developments.
+
+[.left.thumb]
+image::web/presentation/images/main.svg[width=100%]

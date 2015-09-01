@@ -1,0 +1,19 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+
+=== Was ist es ? ===
+
+Die drei Hauptteile 
+
+. Entwicklungssystem zur Erstellung individueller (Web)Applikationen, +
+	aber auch anderer Dinge, die ein Backend brauchen.
+. Backend mit vielen Diensten(ua. Datenzugriff , Workflow).
+. Basis Webapplikation  für Mobil und Desktop. +
+	Grundlage für eigene Entwicklungen.
+
+
+[.left.thumb]
+image::web/presentation/images/main.svg[width=100%]

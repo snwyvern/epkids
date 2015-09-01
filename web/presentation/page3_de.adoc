@@ -1,0 +1,37 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+== Verschiedene Verarbeitungsarten  ==
+
+=== Request-Response (RPC)  ===
+
+* Die Antwort sollte unverzüglich zur Verfügung stehen.
+* RPC wird über link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"] initiert.
+* Der WAMP-Endpunkt *(2)* wird als RPC konfiguriert, sowie Parameter und Return festgelegt.
+* Beliebige Komponenten werden durchlaufen.(Camelroute)
+
+[.thumb]
+image::web/presentation/images/request-response.svg[width=400]
+
+* Der Response enthält die Daten, die in der letzten Komponente *(1)* enstanden sind.
+* *(2)* ist sowohl Ein- als auch Ausgang.
+
+=== Publish/Subscribe  ===
+
+* Eine Camelroute kann auch ein Publisher sein.
+* Der WAMP-Endpunkt wird als Publisher konfiguriert.
+* Der Body der Route enthält die zu veröffentlichen Daten.
+* Immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
+
+image::web/presentation/images/publish-subscribe.svg[width=400]
+
+
+=== Starten eines Prozesses  ===
+
+* Das System stopped nach den drei grünen Tasks, +
+da die rote Task einer anderen Person als dem Initiator zugewiesen ist.
+* Wenn diese Person die rote Task ausgeführt hat, wird der Initiator benachrichtigt.
+
+image::web/presentation/images/process1.svg[width=600]

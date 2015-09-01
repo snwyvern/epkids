@@ -2,23 +2,14 @@
   icon: home
   url: frontpage.html
   hash: '0'
-- name: tr.menu.webclient
-  icon: info
-  url: simpl4_%l.adoc?t=1
-  hash: simpl4-info
-- name: tr.menu.server
-  icon: info
-  url: simpl4_server_%l.adoc
-  disabled: true
-  hash: simpl4_server-info
 - name: tr.menu.usage
   icon: laptop
   url: usage.html
   help: web/help/usage_%l.adoc
   hash: usage
+  disabled: true
 - name: tr.menu.presentation
   icon: list-alt
-  disabled: true
   children:
   - name: tr.menu.presentation.page1
     icon: folder
@@ -32,6 +23,10 @@
     icon: folder
     url: web/presentation/page3_%l.adoc
     hash: presentation_page3
+  - name: tr.menu.webclient
+    icon: info
+    url: simpl4_%l.adoc?t=1
+    hash: simpl4-info
 - name: CRM Demo
   icon: list-alt
   children:
