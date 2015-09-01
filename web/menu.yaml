@@ -1,97 +1,97 @@
 - name: Home
-  ironicon: home
+  icon: home
   url: frontpage.html
   hash: '0'
 - name: tr.menu.presentation
-  ironicon: list
+  icon: list
   children:
   - name: tr.menu.presentation.mainparts
-    ironicon: image:filter-3
+    icon: image:filter-3
     url: web/presentation/mainparts_%l.adoc?t=1
     hash: presentation_mainparts
   - name: tr.menu.presentation.usecases
-    ironicon:  description
+    icon:  description
     url: web/presentation/usecases_%l.adoc
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
   - name: tr.menu.presentation.processing
-    ironicon: refresh 
+    icon: refresh 
     url: web/presentation/processing_%l.adoc
     hash: presentation_processing
   - name: tr.menu.webclient
-    ironicon: av:web 
+    icon: av:web 
     url: simpl4_%l.adoc?t=1
     hash: simpl4-info
 - name: CRM Demo
-  ironicon: supervisor-account 
+  icon: supervisor-account 
   children:
   - name: menu.crmdemo.accounts
-    ironicon: folder-shared
+    icon: folder-shared
     url: accounts.html
     hash: accounts
   - name: menu.crmdemo.contacts
-    ironicon: account-box
+    icon: account-box
     url: contacts.html
     hash: contacts
   - name: tr.menu.task_list
-    ironicon: inbox
+    icon: inbox
     url: tasks.html
     hash: tasklist
   - name: tr.menu.process_list
-    ironicon: settings
+    icon: settings
     url: processes.html
     hash: processlist
 - name: tr.menu.misc_demo
-  ironicon: apps
+  icon: apps
   children:
   - name: Chat(XMPP)
     url: chat.html
-    icon: circle
+    icon: communication:chat
     help: web/help/chat_%l.adoc
     hash: xmppchat
   - name: Viewer
-    icon: desktop
+    icon: av:airplay
     url: viewer.html
     hash: viewer
   - name: Asciidoctor
-    icon: file-text
+    icon: text-format
     hash: 6-0
     children:
     - hash: asciidoc1
       name: menu.asciidoctor.testfile
       url: wolpertinger.adoc?t=1
-      icon: file-o
+      icon: text-format
     - name: menu.asciidoctor.otherstyle
       hash: asciidoc2
       scope: wrapped-adoc
       url: wrapped_adoc.html
-      icon: file-text-o
+      icon: editor:format-color-text
   - name: tr.menu.forms
-    icon: check-square
+    icon: subject
     children:
     - name: tr.form_with_table
       url: formtable.html
-      icon: plus
+      icon: subject
       hash: formtabledemo
     - name: tr.form_with_tabs
       url: formtab.html
-      icon: plus
+      icon: tab
       hash: formtabdemo
   - name: tr.menu.rpc
-    icon: location-arrow
+    icon: send
     children:
     - name: SQL/Datatable
       url: sql_datatable_%l.html
-      icon: circle
+      icon: search
       hash: sql_datatable
       help: web/help/sql_datatable_%l.adoc
     - name: SQL/Asciidoctor
       url: sql_asciidoctor_%l.html
-      icon: circle
+      icon: search
       help: web/help/sql_%l.adoc
       hash: sql_asciidoctor
     - name: Products
       url: products_%l.html
-      icon: circle
+      icon: av:library-books
       help: web/help/products_%l.adoc
       hash: products
