@@ -7,31 +7,39 @@
 
 === Request-Response (RPC) ===
 
-* The answer should be immediately available.
-* RPC is over link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP, window="_blank"] initiated.
-* The WAMP endpoint *(2)* is configured as RPC type, parameters and return set.
-* Any components are run. (Camel Route)
+The answer should be immediately available.
+
+* Enabled link:http://camel.apache.org[camel routes,window="_blank"], configured as RPC-Type  are registered on the link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Dealer as procedures.
+* The procedure parameters and the return value are defined in the WAMP endpoint *(2)*.
+* It is therefore possible, provided authorization, to invoke the route from  WAMP-client as remote procedure.
 
 [.thumb]
 image::web/presentation/images/request-response.svg[width=400]
 
-* The response contains the data, that was produced in the last component *(1)*.
+* The response contains the data, that was produced in the last component *(1)* as return value of the procedure.
 * *(2)* is both, input and output.
 
 === Publish / Subscribe ===
 
+If the publisher has new data, she are immediately visible at the Subscriber.
+
 * A Camelroute can also be a publisher.
 * The WAMP endpoint is configured as publisher type.
 * The body of the route contains the publishing data.
-* Whenever a file is copied to the "Publish" folder, the subscriber gets immediately the content.
+* In this example, whenever a file is copied to the "Publish" folder, the subscriber gets immediately the content.
 
+[.thumb]
 image::web/presentation/images/publish-subscribe.svg[width=400]
 
 
 === Starting a process ===
 
+The execution time of a process can be very long (weeks, months!). +
+It is therefore important that the guardian can always retrieve the state of the process.
+
 * The system stopps after  the three green tasks, +
 because the red task is assigned  to another person.
 * If that person has executed the red task, the initiator is notified.
 
+[.thumb]
 image::web/presentation/images/process1.svg[width=600]

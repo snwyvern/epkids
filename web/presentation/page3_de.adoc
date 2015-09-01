@@ -7,31 +7,39 @@
 
 === Request-Response (RPC)  ===
 
-* Die Antwort sollte unverzüglich zur Verfügung stehen.
-* RPC wird über link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"] initiert.
-* Der WAMP-Endpunkt *(2)* wird als RPC-Typ konfiguriert, sowie Parameter und Return festgelegt.
-* Beliebige Komponenten werden durchlaufen.(Camelroute)
+Die Antwort sollte unverzüglich zur Verfügung stehen.
+
+* Freigeschaltete und als RPC-Type konfigurierte Camelrouten werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Händler als Prozeduren registriert.
+* Im WAMP-Endpunkt *(2)* werden die  Prozedur-Parameter und der Rückgabewert festgelegt.
+* Damit ist es möglich, Berechtigung vorausgesetzt, die Route von einem WAMP-Client als Remote Prozedur aufzurufen.
 
 [.thumb]
 image::web/presentation/images/request-response.svg[width=400]
 
-* Der Response enthält die Daten, die in der letzten Komponente *(1)* enstanden sind.
+* Der Response enthält die Daten, die in der letzten Komponente *(1)* enstanden sind als Rückgabewert der Prozedur.
 * *(2)* ist sowohl Ein- als auch Ausgang.
 
 === Publish/Subscribe  ===
 
+Wenn der Publisher neue Daten hat, werden diese sofort beim Subscriber sichtbar.
+
 * Eine Camelroute kann auch ein Publisher sein.
 * Der WAMP-Endpunkt wird als Publisher-Typ konfiguriert.
 * Der Body der Route enthält die zu veröffentlichen Daten.
-* Immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
+* In diesem Beispiel, immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
 
+[.thumb]
 image::web/presentation/images/publish-subscribe.svg[width=400]
 
 
 === Starten eines Prozesses  ===
 
+Die Ausführungszeit eines  Prozess kann sehr lang sein(Wochen, Monate!). +
+Darum ist es wichtig das der/die Berechtigten jederzeit den Zustand des Prozesses abrufen können.
+
 * Das System stopped nach den drei grünen Tasks, +
 da die rote Task einer anderen Person als dem Initiator zugewiesen ist.
 * Wenn diese Person die rote Task ausgeführt hat, wird der Initiator benachrichtigt.
 
+[.thumb]
 image::web/presentation/images/process1.svg[width=600]
