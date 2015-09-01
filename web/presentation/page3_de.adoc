@@ -9,7 +9,7 @@
 
 * Die Antwort sollte unverzüglich zur Verfügung stehen.
 * RPC wird über link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"] initiert.
-* Der WAMP-Endpunkt *(2)* wird als RPC konfiguriert, sowie Parameter und Return festgelegt.
+* Der WAMP-Endpunkt *(2)* wird als RPC-Typ konfiguriert, sowie Parameter und Return festgelegt.
 * Beliebige Komponenten werden durchlaufen.(Camelroute)
 
 [.thumb]
@@ -21,7 +21,7 @@ image::web/presentation/images/request-response.svg[width=400]
 === Publish/Subscribe  ===
 
 * Eine Camelroute kann auch ein Publisher sein.
-* Der WAMP-Endpunkt wird als Publisher konfiguriert.
+* Der WAMP-Endpunkt wird als Publisher-Typ konfiguriert.
 * Der Body der Route enthält die zu veröffentlichen Daten.
 * Immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
 

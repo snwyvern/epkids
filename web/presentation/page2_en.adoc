@@ -4,17 +4,17 @@
 = Simpl4==
 
 
-=== Was kann man damit machen ? ===
+=== What can i do ? ===
 
-Eine kleine Auswahl.
+A small selection.
 
-* maßgeschneidertes CRM
-* elektronische Kataloge
-* Abläufe wie z.B. die Urlaubsplanung
-* allgemeine Webseite(Präsentation beliebiger Daten)
-* Integration  verschiedenster Systeme
-* Ergänzung des vorhanden Fachsystem
-* oder auch Serienmails
+* customized CRM
+* electronic catalog
+* workflows e.g. holiday planning
+* general website (presentation of any data)
+* integration  of different  systeme
+* supplementing the existing professional system
+* or mass mails
 
 ++++
 <div>

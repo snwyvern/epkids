@@ -13,7 +13,7 @@ Eine kleine Auswahl.
 * Abläufe wie z.B. die Urlaubsplanung
 * allgemeine Webseite(Präsentation beliebiger Daten)
 * Integration  verschiedenster Systeme
-* Ergänzung des vorhanden Fachsystem
+* Ergänzung des vorhandenen Fachsystem
 * oder auch Serienmails
 
 ++++
