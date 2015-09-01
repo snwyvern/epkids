@@ -219,10 +219,6 @@
         "msgstr": "Server(Backend)"
     },
     {
-        "msgid": "tr.menu.usage",
-        "msgstr": "Use Cases"
-    },
-    {
         "msgid": "tr.menu.forms",
         "msgstr": "Forms"
     },
@@ -232,15 +228,15 @@
     },
     {
         "msgstr": "Main parts",
-        "msgid": "tr.menu.presentation.page1"
+        "msgid": "tr.menu.presentation.mainparts"
     },
     {
-        "msgstr": "What can i do?",
-        "msgid": "tr.menu.presentation.page2"
+        "msgstr": "Use cases",
+        "msgid": "tr.menu.presentation.usecases"
     },
     {
         "msgstr": "Various types of processing",
-        "msgid": "tr.menu.presentation.page3"
+        "msgid": "tr.menu.presentation.processing"
     },
     {
         "msgid": "tr.form_with_tabs",

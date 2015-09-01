@@ -219,10 +219,6 @@
         "msgid": "tr.menu.database"
     },
     {
-        "msgstr": "Anwendungsfälle",
-        "msgid": "tr.menu.usage"
-    },
-    {
         "msgstr": "Div. Demos",
         "msgid": "tr.menu.misc_demo"
     },
@@ -244,15 +240,15 @@
     },
     {
         "msgstr": "Hauptbestandteile",
-        "msgid": "tr.menu.presentation.page1"
+        "msgid": "tr.menu.presentation.mainparts"
     },
     {
-        "msgstr": "Was kann man machen?",
-        "msgid": "tr.menu.presentation.page2"
+        "msgstr": "Anwendungsfälle",
+        "msgid": "tr.menu.presentation.usecases"
     },
     {
         "msgstr": "Verarbeitungsarten",
-        "msgid": "tr.menu.presentation.page3"
+        "msgid": "tr.menu.presentation.processing"
     },
     {
         "msgstr": "mit Tabs",

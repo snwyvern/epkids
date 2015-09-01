@@ -1,53 +1,48 @@
 - name: Home
-  icon: home
+  ironicon: home
   url: frontpage.html
   hash: '0'
-- name: tr.menu.usage
-  icon: laptop
-  url: usage.html
-  help: web/help/usage_%l.adoc
-  hash: usage
-  disabled: true
 - name: tr.menu.presentation
-  icon: list-alt
+  ironicon: list
   children:
-  - name: tr.menu.presentation.page1
-    icon: folder
-    url: web/presentation/page1_%l.adoc?t=1
-    hash: presentation_page1
-  - name: tr.menu.presentation.page2
-    icon: folder
-    url: web/presentation/page2_%l.adoc
-    hash: presentation_page2
-  - name: tr.menu.presentation.page3
-    icon: folder
-    url: web/presentation/page3_%l.adoc
-    hash: presentation_page3
+  - name: tr.menu.presentation.mainparts
+    ironicon: image:filter-3
+    url: web/presentation/mainparts_%l.adoc?t=1
+    hash: presentation_mainparts
+  - name: tr.menu.presentation.usecases
+    ironicon:  description
+    url: web/presentation/usecases_%l.adoc
+    hash: presentation_usecases
+    help: web/help/usage_%l.adoc
+  - name: tr.menu.presentation.processing
+    ironicon: refresh 
+    url: web/presentation/processing_%l.adoc
+    hash: presentation_processing
   - name: tr.menu.webclient
-    icon: info
+    ironicon: av:web 
     url: simpl4_%l.adoc?t=1
     hash: simpl4-info
 - name: CRM Demo
-  icon: list-alt
+  ironicon: supervisor-account 
   children:
   - name: menu.crmdemo.accounts
-    icon: folder
+    ironicon: folder-shared
     url: accounts.html
     hash: accounts
   - name: menu.crmdemo.contacts
-    icon: user
+    ironicon: account-box
     url: contacts.html
     hash: contacts
   - name: tr.menu.task_list
-    icon: tasks
+    ironicon: inbox
     url: tasks.html
     hash: tasklist
   - name: tr.menu.process_list
-    icon: gears
+    ironicon: settings
     url: processes.html
     hash: processlist
 - name: tr.menu.misc_demo
-  icon: thumbs-up
+  ironicon: apps
   children:
   - name: Chat(XMPP)
     url: chat.html
