@@ -21,7 +21,7 @@ image::web/presentation/images/request-response.svg[width=400]
 
 === Publish / Subscribe ===
 
-*If the publisher has new data, she are immediately visible at the Subscriber.*
+*If the publisher has new data, she are immediately visible at all subscriber.*
 
 * A Camelroute can be a publisher.
 * The WAMP endpoint is configured as publisher type.
