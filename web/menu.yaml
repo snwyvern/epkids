@@ -19,7 +19,7 @@
     url: web/presentation/processing_%l.adoc
     hash: presentation_processing
   - name: tr.menu.webclient
-    icon: av:web 
+    icon: language
     url: simpl4_%l.adoc?t=1
     hash: simpl4-info
 - name: CRM Demo
@@ -50,7 +50,7 @@
     help: web/help/chat_%l.adoc
     hash: xmppchat
   - name: Viewer
-    icon: av:airplay
+    icon: device:dvr
     url: viewer.html
     hash: viewer
   - name: Asciidoctor
@@ -71,7 +71,7 @@
     children:
     - name: tr.form_with_table
       url: formtable.html
-      icon: subject
+      icon: av:web
       hash: formtabledemo
     - name: tr.form_with_tabs
       url: formtab.html
