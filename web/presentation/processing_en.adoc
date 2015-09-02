@@ -41,5 +41,5 @@ It is therefore important that the guardian can always retrieve the state of the
 because the red task is assigned  to another person.
 * If that person has executed the red task, the initiator is notified.
 
-[.border.overflow500.thumb]
-image::web/presentation/images/process1.svg[width=500]
+[.border.thumb.width500]
+image::web/presentation/images/process1.svg[]
