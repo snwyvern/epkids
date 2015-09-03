@@ -25,5 +25,5 @@ Nebenbei, dadurch ist Browser-Browser Kommunikation möglich!
 
 
 
-[.border.left.thumb.width450]
+[.border.left.thumb.width500]
 image::web/presentation/images/bigpicture.svg[]
