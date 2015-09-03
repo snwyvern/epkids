@@ -9,14 +9,32 @@
    </url>
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!usage</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!usage" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!usage" />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_mainparts</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_mainparts" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_mainparts" />
    </url>
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!simpl4-info</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!simpl4-info" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!simpl4-info" />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_bigpicture</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_bigpicture" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_bigpicture" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_processing</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_processing" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_processing" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_webclient</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_webclient" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_webclient" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_usecases</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_usecases" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_usecases" />
    </url>
 </urlset> 
