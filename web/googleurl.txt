@@ -1,7 +1,19 @@
 #request  update for the site in webtools
 repo/webdemo/start.html?_escaped_fragment_=0
 repo/webdemo/start.html?lang=de&_escaped_fragment_=0
-repo/webdemo/start.html?_escaped_fragment_=simpl4-info
-repo/webdemo/start.html?lang=de&_escaped_fragment_=simpl4-info
-repo/webdemo/start.html?_escaped_fragment_=usage
-repo/webdemo/start.html?lang=de&_escaped_fragment_=usage
+
+repo/webdemo/start.html?_escaped_fragment_=presentation_mainparts
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_mainparts
+
+repo/webdemo/start.html?_escaped_fragment_=presentation_bigpicture
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_bigpicture
+
+repo/webdemo/start.html?_escaped_fragment_=presentation_processing
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_processing
+
+repo/webdemo/start.html?_escaped_fragment_=presentation_webclient
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_webclient
+
+repo/webdemo/start.html?_escaped_fragment_=presentation_usecases
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_usecases
+

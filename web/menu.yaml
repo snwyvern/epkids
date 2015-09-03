@@ -20,7 +20,7 @@
   - name: tr.menu.webclient
     icon: language
     url: simpl4_%l.adoc?t=1
-    hash: simpl4-info
+    hash: presentation_webclient
   - name: tr.menu.presentation.usecases
     icon:  description
     url: web/presentation/usecases_%l.adoc
