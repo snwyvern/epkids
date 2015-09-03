@@ -4,17 +4,16 @@
 = Simpl4==
 
 
-=== Technical overview ===
+== Technical overview ==
+The main ingredients
 
-==== The main ingredients ====
-
-===== Apache Camel: *Routing and conversion engine* =====
+=== Apache Camel *Routing and conversion engine* ===
 
 * Camelroutes are the main processing units in Simpl4. +
 The specify the data flow from component to component. +
 A Camel route corresponds to a procedure that registers on the WAMP router and is in this way reachable via RPC.
 
-===== WAMP: *Web Application Messaging Protocol* =====
+=== WAMP *Web Application Messaging Protocol* ===
 
 * Websocket Subprotokol registered by IANA
 * Provides routed remote procedure calls (RPC) and PubSub
