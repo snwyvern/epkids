@@ -9,11 +9,6 @@
     icon: image:filter-3
     url: web/presentation/mainparts_%l.adoc?t=1
     hash: presentation_mainparts
-  - name: tr.menu.presentation.usecases
-    icon:  description
-    url: web/presentation/usecases_%l.adoc
-    hash: presentation_usecases
-    help: web/help/usage_%l.adoc
   - name: tr.menu.presentation.bigpicture
     icon: image:panorama 
     url: web/presentation/bigpicture_%l.adoc
@@ -26,6 +21,11 @@
     icon: language
     url: simpl4_%l.adoc?t=1
     hash: simpl4-info
+  - name: tr.menu.presentation.usecases
+    icon:  description
+    url: web/presentation/usecases_%l.adoc
+    hash: presentation_usecases
+    help: web/help/usage_%l.adoc
 - name: CRM Demo
   icon: supervisor-account 
   children:

@@ -21,7 +21,7 @@ Eine Camelroute entspricht einer Prozedur die sich am WAMP Router registriert un
 * WAMP besteht aus Clients und Routern(Nicht verwechseln mit den Camelrouten)
 * Am Router sind die Prozeduren registriert
 * Simpl4 ist WAMP-Client und WAMP-Router
-* Es können sich auch externe Geräte(oder auch Browser) ihre Dienste(Prozeduren) registrieren lassen und sind damit von jedem WAMP-Client erreichbar. +
+* Es können sich externe Geräte(oder auch Browser) ihre Dienste(Prozeduren) registrieren lassen und sind damit von jedem anderen WAMP-Client erreichbar. +
 Nebenbei, dadurch ist Browser-Browser Kommunikation möglich!
 
 
