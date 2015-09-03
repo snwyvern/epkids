@@ -118,9 +118,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99941357"
-     inkscape:cx="405.51817"
-     inkscape:cy="417.24468"
+     inkscape:zoom="2.938619"
+     inkscape:cx="128.32673"
+     inkscape:cy="280.64507"
      inkscape:document-units="px"
      inkscape:current-layer="g5340"
      showgrid="false"
@@ -718,15 +718,15 @@
          inkscape:connector-curvature="0" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:89.99999762%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:89.99999762%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="53.480652"
-         y="771.91791"
+         y="770.21643"
          id="text5072"
          sodipodi:linespacing="89.999998%"><tspan
            sodipodi:role="line"
            id="tspan5074"
            x="53.480652"
-           y="771.91791">Data</tspan></text>
+           y="770.21643">Data</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:89.99999762%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
@@ -777,13 +777,13 @@
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:89.99999762%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="135.44411"
-         y="681.75574"
+         y="680.11267"
          id="text5092"
          sodipodi:linespacing="89.999998%"><tspan
            sodipodi:role="line"
            id="tspan5094"
            x="135.44411"
-           y="681.75574">JMS</tspan></text>
+           y="680.11267">JMS</tspan></text>
       <g
          id="g5024"
          transform="matrix(0.74593842,0,0,0.74593842,198.50578,571.3191)">
@@ -809,7 +809,7 @@
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:89.99999762%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="214.38153"
-         y="680.75513"
+         y="680.07452"
          id="text5100"
          sodipodi:linespacing="89.999998%"
          inkscape:transform-center-x="102.05985"
@@ -817,7 +817,7 @@
            sodipodi:role="line"
            id="tspan5102"
            x="214.38153"
-           y="680.75513">Mail</tspan></text>
+           y="680.07452">Mail</tspan></text>
     </g>
     <g
        id="g5172">
