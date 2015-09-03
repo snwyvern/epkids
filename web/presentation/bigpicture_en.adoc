@@ -1,0 +1,15 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+=== Technical overview ===
+
+. Development system for creating individual (web)applications +
+but also for other things that needs a backend.
+. Backend with many services (eg. data, workflow, routing ..).
+. Basic web application for mobile and desktop. +
+Base for your own developments.
+
+[.border.left.thumb]
+image::web/presentation/images/front.svg[width=100%]

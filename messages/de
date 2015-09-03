@@ -243,6 +243,10 @@
         "msgid": "tr.menu.presentation.mainparts"
     },
     {
+        "msgstr": "Gesamtbild",
+        "msgid": "tr.menu.presentation.bigpicture"
+    },
+    {
         "msgstr": "Anwendungsfälle",
         "msgid": "tr.menu.presentation.usecases"
     },

@@ -223,6 +223,10 @@
         "msgstr": "Forms"
     },
     {
+        "msgstr": "Big picture",
+        "msgid": "tr.menu.presentation.bigpicture"
+    },
+    {
         "msgstr": "Presentation",
         "msgid": "tr.menu.presentation"
     },

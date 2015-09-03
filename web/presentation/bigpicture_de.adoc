@@ -1,0 +1,30 @@
+:linkattrs:
+:source-highlighter: rouge
+
+= Simpl4==
+
+
+=== Technischer Überblick ===
+
+==== Die wichtigsten Bestandteile ====
+
+===== Apache Camel: *Routing und Konvertierungs Engine* =====
+
+* Camelrouten sind die hauptsächlichen Verarbeitungseinheiten in Simpl4. +
+Sie spezifizieren den Datenfluß von Komponente zu Komponente. +
+Eine Camelroute entspricht einer Prozedur die sich am WAMP Router registriert und via RPC erreichbar ist.
+
+===== WAMP: *Web Application Messaging Protocol* =====
+
+* Websocket Subprotokol registriert bei der IANA
+* Bietet geroutete Remote-Prozedur-Calls(RPC) und PubSub
+* WAMP besteht aus Clients und Routern(Nicht verwechseln mit den Camelrouten)
+* Am Router sind die Prozeduren registriert
+* Simpl4 ist WAMP-Client und WAMP-Router
+* Es können sich auch externe Geräte(oder auch Browser) ihre Dienste(Prozeduren) registrieren lassen und sind damit von jedem WAMP-Client erreichbar. +
+Nebenbei, dadurch ist Browser-Browser Kommunikation möglich!
+
+
+
+[.border.left.thumb.width450]
+image::web/presentation/images/bigpicture.svg[]

@@ -14,6 +14,10 @@
     url: web/presentation/usecases_%l.adoc
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
+  - name: tr.menu.presentation.bigpicture
+    icon: image:panorama 
+    url: web/presentation/bigpicture_%l.adoc
+    hash: presentation_bigpicture
   - name: tr.menu.presentation.processing
     icon: refresh 
     url: web/presentation/processing_%l.adoc
