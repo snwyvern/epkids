@@ -11,8 +11,8 @@
 * link:http://www.reactivemanifesto.org[Reactive,window="_blank"], see link:local:xmppchat[Chat]
 * Created with link:http://polymer-project.org[Polymer,window="_ blank"].
 * link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_ blank"] for all relevant artefacts
-* HTML/CSS knowledge is sufficient for using and extending to their own needs.
-* You can also create textfragments as part of the page with link:http://asciidoctor.org[Asciidoctor, window="_ blank"].
+* Base for own developments
+* Text with link:http://asciidoctor.org[Asciidoctor, window="_ blank"]
 * Forms with client- and server-side validation
 * history and back button
 * Websockets
