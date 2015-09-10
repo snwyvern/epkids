@@ -1,18 +1,6 @@
 <template is="dom-bind">
-  <simpl-rpc  method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+  <simpl-rpc method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
   <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}">
-
-////
-.Images
-|===
-|C1|C2|C3|C4
-
-|image:data_s.svg[Data,80]
-|image:workflow_s.svg[Workflow,80]
-|image:website_s.svg[Website,80]
-|image:report_s.svg[Report,80]
-|===
-////
 
 *Help button(top right) shows how it is done.*
 
@@ -23,5 +11,5 @@
 |$map.companyname|<%= map.website ? map.website : '--' %><%}%>
 |===
 
-  </simpl-asciidoctor>
+	</simpl-asciidoctor>
 </template>
