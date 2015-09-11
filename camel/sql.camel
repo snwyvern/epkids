@@ -14,7 +14,7 @@
     "creationdate": null,
     "modificationdate": null,
     "camelcontext": "default",
-    "rpc": true,
+    "rpc": false,
     "rpcParameter": null,
     "rpcReturn": "body",
     "rpcReturnHeaders": null,
@@ -119,7 +119,13 @@
         "caption": "",
         "type_direct": "Direct",
         "uri_template": "direct:${name}",
-        "urivalue_name": "direct1"
+        "urivalue_name": "sql",
+        "rpc": true,
+        "rpcParameter": null,
+        "rpcReturn": "body",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "guest,admin"
       },
       "stencil": {
         "id": "DirectEndpoint"
