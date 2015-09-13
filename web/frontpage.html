@@ -4,16 +4,14 @@
     <template>
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
-          <paper-material elevation="0" style="padding-top:15px;" class="flex card">
-            <header class="header top-spacer">
+          <div elevation="0" style="padding-top:15px;" class="flex">
               <div row grid wrap>
                 <a style="text-decoration: none;" target="_blank" href="[[getHref()]]">
-                <simpl-import style="text-align:center;" method="firstapp.xml" data="{path:'front2.svg',colors:{color1:'#212121',color2:'#727272',color3:'blue'}}"></simpl-import>
+                <simpl-import style="text-align:center;" method="svgTemplate" data="{path:'front3.svg',colors:{color1:'#727272',color2:'#727272',color3:'blue'}}"></simpl-import>
                 </a>
               </div>
-            </header>
-            <h1 style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1>
-          </paper-material>
+            <h1 class="title" style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1>
+          </div>
 
           <div class="grid row">
             <div class="col-xl-3 col-xs-12 col-md-6">
