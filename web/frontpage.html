@@ -5,11 +5,11 @@
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
           <div elevation="0" style="padding-top:15px;" class="flex">
-              <div row grid wrap>
-                <a style="text-decoration: none;" target="_blank" href="[[getHref()]]">
-                <simpl-import style="text-align:center;" method="svgTemplate" data="{path:'front3.svg',colors:{color1:'#727272',color2:'#727272',color3:'blue'}}"></simpl-import>
-                </a>
-              </div>
+            <div row grid wrap>
+              <a style="text-decoration: none;" target="_blank" href="[[getHref()]]">
+                <simpl-import style="text-align:center;" method="svgTemplate" data="[[getData()]]"></simpl-import>
+              </a>
+            </div>
             <h1 class="title" style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1>
           </div>
 
@@ -48,6 +48,17 @@
           var lang = Simpl4.Cache.getItem( "lang" );
           console.log( "lang", lang );
           return name + "_" + lang + ".adoc";
+        },
+        getData: function() {
+          return {
+            path: 'web/images/front3.svg',
+						repo:simpl4.util.BaseManager.getNamespace(),
+            colors: {
+              color1: '#909090',
+              color2: '#909090',
+              color3: 'blue'
+            }
+          }
         },
         getHref: function( name ) {
           var lang = Simpl4.Cache.getItem( "lang" );

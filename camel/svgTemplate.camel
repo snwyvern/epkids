@@ -37,7 +37,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "green",
         "bordercolor": "#000000",
         "caption": "",
         "type_direct": "Direct",
@@ -45,7 +45,7 @@
         "urivalue_name": "svgTemplate",
         "rpc": true,
         "rpcParameter": {
-          "totalCount": 2,
+          "totalCount": 3,
           "items": [
             {
               "name": "path",
@@ -59,8 +59,16 @@
               "name": "colors",
               "destname": null,
               "defaultvalue": null,
-              "optional": false,
+              "optional": true,
               "type": "map",
+              "destination": "header"
+            },
+            {
+              "name": "repo",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
               "destination": "header"
             }
           ]
@@ -140,7 +148,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "#999",
         "bordercolor": "#000000",
         "caption": "",
         "type_repo": "Repo",
@@ -148,7 +156,7 @@
         "urivalue_operation": "get",
         "uriparam_target": "body",
         "uriparam_header": "",
-        "uriparam_repo": "cassandra",
+        "uriparam_repo": "-",
         "uriparam_path": "",
         "uriparam_type": "all",
         "extraParams": null
@@ -175,114 +183,7 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_03FE48A4-858B-4F8D-8885-EDE76B17D848",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null,
-        "bgcolor": "white",
-        "bordercolor": "#000000",
-        "caption": "",
-        "type": "java.lang.String",
-        "charset": ""
-      },
-      "stencil": {
-        "id": "ConvertBodyTo"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_C4E70129-3847-45B8-8B08-FD901EA7EAB2"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 280.5,
-          "y": 435
-        },
-        "upperLeft": {
-          "x": 200.5,
-          "y": 375
-        }
-      },
-      "dockers": []
-    },
-    {
       "resourceId": "oryx_FE3DBF9E-3EF9-4ED4-AF18-453CDF31A3F4",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null
-      },
-      "stencil": {
-        "id": "SimpleConnection"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_03FE48A4-858B-4F8D-8885-EDE76B17D848"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 240.5,
-          "y": 374.28125
-        },
-        "upperLeft": {
-          "x": 240.5,
-          "y": 315.53125
-        }
-      },
-      "dockers": [
-        {
-          "x": 40,
-          "y": 30
-        },
-        {
-          "x": 40,
-          "y": 18
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_03FE48A4-858B-4F8D-8885-EDE76B17D848"
-      }
-    },
-    {
-      "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F",
-      "properties": {
-        "shared": "no",
-        "shareRef": "",
-        "overrideid": "",
-        "name": "",
-        "documentation": null,
-        "bgcolor": "white",
-        "bordercolor": "#000000",
-        "caption": "",
-        "type_groovytemplate": "GroovyTemplate",
-        "uri_template": "groovytemplate:${type}",
-        "urivalue_type": "simple",
-        "urivalue_headerfields": "colors",
-        "extraParams": null
-      },
-      "stencil": {
-        "id": "GroovyTemplateEndpoint"
-      },
-      "childShapes": [],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 280.5,
-          "y": 555
-        },
-        "upperLeft": {
-          "x": 200.5,
-          "y": 495
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_C4E70129-3847-45B8-8B08-FD901EA7EAB2",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -300,11 +201,11 @@
       "bounds": {
         "lowerRight": {
           "x": 240.5,
-          "y": 494.9375
+          "y": 374.598388671875
         },
         "upperLeft": {
           "x": 240.5,
-          "y": 436
+          "y": 315.462890625
         }
       },
       "dockers": [
@@ -314,12 +215,46 @@
         },
         {
           "x": 40,
-          "y": 30
+          "y": 4.28125
         }
       ],
       "target": {
         "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F"
       }
+    },
+    {
+      "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "green",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_groovytemplate": "GroovyTemplate",
+        "uri_template": "groovytemplate:${type}",
+        "urivalue_type": "simple",
+        "urivalue_headerfields": "colors",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "GroovyTemplateEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 280.5,
+          "y": 435
+        },
+        "upperLeft": {
+          "x": 200.5,
+          "y": 375
+        }
+      },
+      "dockers": []
     }
   ],
   "bounds": {

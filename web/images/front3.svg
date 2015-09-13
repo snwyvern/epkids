@@ -87,7 +87,7 @@
            sodipodi:cx="350.97919"
            sodipodi:end="4.6660407"
            sodipodi:start="4.712389"
-           style="fill:ff" />
+           style="fill:#fff" />
         <path
            id="rect4112"
            inkscape:connector-curvature="0"
@@ -105,7 +105,7 @@
            y="448.12"
            x="495.60999" />
         <rect
-           class="default-primary"
+           class="dark-primary"
            id="rect4172"
            ry="22.333"
            height="250.42"

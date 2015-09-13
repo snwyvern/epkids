@@ -1,8 +1,7 @@
 <template is="dom-bind">
+  <simpl-panel heading="Help button(top right) shows how it is done." bgcolor="black">
   <simpl-rpc method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
   <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}">
-
-*Help button(top right) shows how it is done.*
 
 .Database
 |===
@@ -12,4 +11,5 @@
 |===
 
 	</simpl-asciidoctor>
+  </simpl-panel>
 </template>
