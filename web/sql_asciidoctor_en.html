@@ -1,5 +1,5 @@
 <template is="dom-bind">
-  <simpl-panel heading="Help button(top right) shows how it is done." bgcolor="black">
+  <simpl-panel heading="Help button(top right) shows how it is done.">
   <simpl-rpc method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
   <simpl-asciidoctor scope="colony" css="asciidoc.css" data="{{response}}">
 
@@ -7,7 +7,7 @@
 |===
 |Name|Website<% data.each { map -> %>
 
-|$map.companyname|<%= map.website ? map.website : '--' %><%}%>
+|${map.companyname}|<%= map.website ? map.website : '--' %><%}%>
 |===
 
 	</simpl-asciidoctor>
