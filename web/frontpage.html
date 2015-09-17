@@ -10,7 +10,7 @@
                 <simpl-import style="text-align:center;" method="global.svgimport" data="[[getData()]]"></simpl-import>
               </a>
             </div>
-            <h1 class="title" style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1>
+            <!--h1 class="title" style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1-->
           </div>
 
           <div class="grid row">
@@ -51,9 +51,10 @@
         },
         getData: function() {
           return {
-            path: 'web/images/front3.svg',
+            path: 'web/images/front4.svg',
 						repo:simpl4.util.BaseManager.getNamespace(),
             colors: {
+							headline: tr("tr.overwiew"),
               color1: '#909090',
               color2: '#909090',
               color3: 'blue'
