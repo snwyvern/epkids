@@ -243,6 +243,15 @@
         "msgid": "tr.menu.presentation.processing"
     },
     {
+        "msgstr": "Tutorials",
+        "msgid": "tr.menu.tutorials"
+    },
+
+    {
+        "msgstr": "Data import",
+        "msgid": "tr.menu.tutorials.dataimport"
+    },
+    {
         "msgid": "tr.form_with_tabs",
         "msgstr": "with tabs"
     },

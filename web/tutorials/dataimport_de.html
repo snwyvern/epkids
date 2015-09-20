@@ -1,0 +1,204 @@
+<body>
+	<div class="page-container">
+		<div class="container-fluid">
+			<div class="row row-offcanvas row-offcanvas-left">
+				<div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
+					<div class="row">
+						<div class="col-sm-12">
+							<div style="padding:20px;margin:0px;" class="panel panel-default">
+								<div style="margin:0;" class="page-header">
+									<h1>A database application in 5 minutes</h1>
+								</div>
+								<div>
+									<div id="preamble">
+										<div class="sectionbody">
+											<div id="toc" class="toc">
+												<div id="toctitle" class="title">Table of Contents</div>
+												<ul class="sectlevel2">
+													<li><a href="#specify_the_import">1. Specify the import</a>
+													</li>
+													<li><a href="#finish_the_import_definition">2. Finish the import definition</a>
+													</li>
+													<li><a href="#the_mapping_view">3. The mapping view</a>
+													</li>
+													<li><a href="#creating_classes_from_the_output_structure">4. Creating classes from the output structure</a>
+													</li>
+													<li><a href="#connecting_the_input_with_the_output">5. Connecting the input with the output</a>
+													</li>
+													<li><a href="#specify_the_date_format">6. Specify the date format</a>
+													</li>
+													<li><a href="#importing_the_data">7. Importing the data</a>
+													</li>
+													<li><a href="#the_app_is_ready">8. The app is ready</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="specify_the_import">1. Specify the import</h3>
+										<div class="ulist">
+											<ul>
+												<li>
+													<p><a href="images/customers.import">Example addresses to test</a>
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic1.svg" alt="pic1"></span>
+											</p>
+										</div>
+										<div class="olist arabic">
+											<ol class="arabic">
+												<li>
+													<p><code>demo</code> : Name of the import</p>
+												</li>
+												<li>
+													<p><code>sample file</code> : Take the data structure from the importfile</p>
+												</li>
+												<li>
+													<p><code>xml</code> : File type (one of csv, xml or json)</p>
+												</li>
+												<li>
+													<p>The file to be read</p>
+												</li>
+												<li>
+													<p>Or drop here a file</p>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="finish_the_import_definition">2. Finish the import definition</h3>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic2.svg" alt="pic2"></span>
+											</p>
+										</div>
+										<div class="olist arabic">
+											<ol class="arabic">
+												<li>
+													<p><code>Like input</code> : We want same output structure as the input</p>
+												</li>
+												<li>
+													<p>If <code>point 2</code> is green, then the mapping definition can be generated</p>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="the_mapping_view">3. The mapping view</h3>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic3.svg" alt="pic3"></span>
+											</p>
+										</div>
+										<div class="olist arabic">
+											<ol class="arabic">
+												<li>
+													<p>Input structure</p>
+												</li>
+												<li>
+													<p>The mapping</p>
+												</li>
+												<li>
+													<p>Ouput structure</p>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="creating_classes_from_the_output_structure">4. Creating classes from the output structure</h3>
+										<div class="paragraph">
+											<p><code>Creates implied the database scheme</code>
+											</p>
+										</div>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic4.svg" alt="pic4"></span>
+											</p>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="connecting_the_input_with_the_output">5. Connecting the input with the output</h3>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic5.svg" alt="pic5"></span>
+											</p>
+										</div>
+										<div class="olist arabic">
+											<ol class="arabic">
+												<li>
+													<p>Input structure</p>
+												</li>
+												<li>
+													<p>The mapping</p>
+												</li>
+												<li>
+													<p>Ouput structure</p>
+												</li>
+												<li>
+													<p>Go to the import view</p>
+												</li>
+												<li>
+													<p>active region(gray background) switch, only in the active region can be connected</p>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="specify_the_date_format">6. Specify the date format</h3>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic5.1.svg" alt="pic5.1"></span>
+											</p>
+										</div>
+										<div class="ulist">
+											<ul>
+												<li>
+													<p>yyyy : year e.g:1961</p>
+												</li>
+												<li>
+													<p>MM : month e.g:12</p>
+												</li>
+												<li>
+													<p>dd : day e.g:31</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="importing_the_data">7. Importing the data</h3>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic6.svg" alt="pic6"></span>
+											</p>
+										</div>
+										<div class="olist arabic">
+											<ol class="arabic">
+												<li>
+													<p>Upload a file</p>
+												</li>
+												<li>
+													<p>Preview mode</p>
+												</li>
+												<li>
+													<p>Fill the database</p>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="the_app_is_ready">8. The app is ready</h3>
+										<div class="paragraph">
+											<p>Now you can e.g. search , modify records or send personalized mass mails.</p>
+										</div>
+										<div class="paragraph">
+											<p><span class="image"><img src="web/tutorials/images/dataimport/pic7.svg" alt="pic7"></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

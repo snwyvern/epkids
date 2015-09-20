@@ -23,5 +23,5 @@ A Camel route corresponds to a procedure that registers on the WAMP router and i
 * External equipment (or browsers) can register their services(procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 
-[.border.left.thumb.width450]
-image::web/presentation/images/bigpicture.svg[]
+[.border.thumb]
+imagezoom::web/presentation/images/bigpicture.svg[]

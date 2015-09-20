@@ -26,6 +26,13 @@
     url: web/presentation/usecases_%l.adoc
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
+- name: tr.menu.tutorials
+  icon: list
+  children:
+  - name: tr.menu.tutorials.dataimport
+    icon: image:filter-3
+    url: web/tutorials/dataimport_%l.adoc?t=1
+    hash: tutorials_dataimport
 - name: CRM Demo
   icon: supervisor-account 
   children:
