@@ -1,84 +1,83 @@
 :toc: macro
-:toc-title: A database application in 5 minutes
+:toc-title: Importieren von strukturierten Daten und Anlegen des Datenbankschemas
 :linkattrs:
 
 toc::[]
 
-=== 1. Specify the import ===
+=== 1. Spezifieren des Imports ===
 
 
-link:web/tutorials/images/customers.import.xml[Example addresses to test,window=_blank]
+link:web/tutorials/images/customers.import.xml[Beispieladressen zum Testen,window=_blank]
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic1.svg[]
 
-. `demo`: Name of the import
-. `sample file`: Take the data structure from the importfile
-.	`xml`: File type (one of csv, xml or json)
-.	The file to be read
-.	Or drop here a file
+. `demo`: Name des Imports
+. `sample file`: Die Datenstruktur aus der Importdatei gewinnen.
+.	`xml`: Dateitype (csv, xml oder json)
+.	Die Importdatei
+.	Oder Drop ein File hier
 
 
-=== 2. Finish the import definition ===
+=== 2. Die Importdefinition fertigstellen ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic2.svg[]
 
-. `Like input`: We want same output structure as the input
-. if `point two` is green, then the mapping definition can be generated
+. `Like input`: Die selbe Struktur wie der Input
+. Wenn `Punkt 2` grün ist, kann das Mapping generiert werden
 
 
-=== 3. The mapping view ===
+=== 3. Das Mapping ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic3.svg[]
 
-. Input structure
-. The mapping
-. Ouput structure
+. Die Struktur im Importfile
+. Das Mapping
+. Die gewünschte Datenstruktur
 
-=== 4. Creating classes from the output structure ===
-`Creates implied the database scheme`
+=== 4. Entitäten(Klassen) automatisch von der definierten  Struktur erstellen ===
+`Ausserdem wird das Datenbankschema erstellt
 
 imagezoom::web/tutorials/images/dataimport/pic4.svg[]
 
 
-=== 5. Connecting the input with the output ===
+=== 5. Welche Felder sollen, wohin importiert werden ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic5.svg[]
 
-. Input structure
-. The mapping
-. Ouput structure
-. Go to the import view
-. active region(gray background) switch, only in the active region can be connected
+. Die Struktur im Importfile
+. Das Mapping
+. Die gewünschte Datenstruktur
+. Voransicht und Import starten
 
 
-=== 6. Specify the date format ===
+=== 6. Datumsformat muß angegeben werden ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic5.1.svg[]
 
-. yyyy : year e.g:1961
-. MM : month e.g:12
-. dd : day e.g:31
+. yyyy : Jahr e.g:1961
+. MM : Monat e.g:12
+. dd : Tag e.g:31
 
 
 
-=== 7. Importing the data ===
+=== 7. Starten des Imports ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic6.svg[]
 
-. Upload a file
-. Preview mode
-. Fill the database
+. Upload einer Datei im vorher spezifierten Format
+. Voransicht
+. Daten in die Datenbank schreiben
 
 
 
-=== 8. Ready ===
-`Now you can e.g. search , modify records or send personalized mass mails.`
+=== 8. Fertig ===
+`Die Daten stehen zur Verfügung.`  Suchen, Ändern usw.
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic7.svg[]
