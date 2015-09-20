@@ -43,7 +43,7 @@ imagezoom::web/tutorials/images/dataimport/pic3.svg[]
 imagezoom::web/tutorials/images/dataimport/pic4.svg[]
 
 
-=== 5. Welche Felder sollen, wohin importiert werden ===
+=== 5. Verbinden der Importfelder mit den Datenbankfeldern ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic5.svg[]

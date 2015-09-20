@@ -1,5 +1,5 @@
 :toc: macro
-:toc-title: Import structured data and create the databasescheme
+:toc-title: Import structured data and create the database scheme
 :linkattrs:
 
 toc::[]
@@ -37,13 +37,13 @@ imagezoom::web/tutorials/images/dataimport/pic3.svg[]
 . The mapping
 . The wanted structure
 
-=== 4. Creating classes from the output structure ===
+=== 4. Creating entities(classes) from the wanted structure ===
 `Creates implied the database scheme`
 
 imagezoom::web/tutorials/images/dataimport/pic4.svg[]
 
 
-=== 5. Connecting the input with the output ===
+=== 5. Connecting the import field with the the database fields ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic5.svg[]
