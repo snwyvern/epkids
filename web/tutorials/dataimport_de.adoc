@@ -1,5 +1,5 @@
 :toc: macro
-:toc-title: Importieren von strukturierten Daten und Anlegen des Datenbankschemas
+:toc-title: Importieren von strukturierten Daten(mit Anlegen des Datenbankschemas)
 :linkattrs:
 
 toc::[]
