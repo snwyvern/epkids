@@ -1,5 +1,5 @@
 :toc: macro
-:toc-title: Import structured Data and create the Databaseschema
+:toc-title: Import structured data and create the databasescheme
 :linkattrs:
 
 toc::[]
@@ -24,7 +24,7 @@ imagezoom::web/tutorials/images/dataimport/pic1.svg[]
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic2.svg[]
 
-. `Like input`: We want same output structure as the input
+. `Like input`: We want same  structure as the input
 . if `point two` is green, then the mapping definition can be generated
 
 
@@ -33,9 +33,9 @@ imagezoom::web/tutorials/images/dataimport/pic2.svg[]
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic3.svg[]
 
-. Input structure
+. Importfile structure
 . The mapping
-. Ouput structure
+. The wanted structure
 
 === 4. Creating classes from the output structure ===
 `Creates implied the database scheme`
@@ -48,9 +48,9 @@ imagezoom::web/tutorials/images/dataimport/pic4.svg[]
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic5.svg[]
 
-. Input structure
+. Importfile structure
 . The mapping
-. Ouput structure
+. The wanted  structure
 . Go to the import view
 . active region(gray background) switch, only in the active region can be connected
 
@@ -66,7 +66,7 @@ imagezoom::web/tutorials/images/dataimport/pic5.1.svg[]
 
 
 
-=== 7. Importing the data ===
+=== 7. Execute the Import ===
 
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic6.svg[]
