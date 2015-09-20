@@ -27,10 +27,10 @@
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
 - name: tr.menu.tutorials
-  icon: list
+  icon: chrome-reader-mode
   children:
   - name: tr.menu.tutorials.dataimport
-    icon: image:filter-3
+    icon: file-download
     url: web/tutorials/dataimport_%l.adoc?t=1
     hash: tutorials_dataimport
 - name: CRM Demo
