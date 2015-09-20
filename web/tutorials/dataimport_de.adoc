@@ -4,7 +4,7 @@
 
 toc::[]
 
-=== 1. Spezifieren des Imports ===
+=== 1. Spezifizieren des Imports ===
 
 
 link:web/tutorials/images/customers.import.xml[Beispieladressen zum Testen,window=_blank]
@@ -70,7 +70,7 @@ imagezoom::web/tutorials/images/dataimport/pic5.1.svg[]
 [.border.thumb.width700]
 imagezoom::web/tutorials/images/dataimport/pic6.svg[]
 
-. Upload einer Datei im vorher spezifierten Format
+. Upload einer Datei im vorher spezifizierten Format
 . Voransicht
 . Daten in die Datenbank schreiben
 
