@@ -447,8 +447,11 @@
 				},  3000);
 			}, 500);
 		</script>
-		<text xml:space="preserve" style="font-weight:800;font-size:22px;" class="dark-secondary" x="168.92325" y="380.45886" id="text4228" sodipodi:linespacing="89.999998%">
-			<tspan sodipodi:role="line" id="tspan4230" x="168.92325" y="385.45886">${headline}</tspan>
+		<text xml:space="preserve" style="font-weight:800;font-size:22px;font-style:italic;" class="dark-secondary" x="168.92325" y="380.45886" id="text4228" sodipodi:linespacing="89.999998%">
+			<tspan sodipodi:role="line" id="tspan4230" x="168.92325" y="385.45886">simpl4</tspan>
+		</text>
+		<text xml:space="preserve" style="font-weight:800;font-size:22px;font-style:normal;" class="dark-secondary" x="280.92325" y="380.45886" id="text4228" sodipodi:linespacing="89.999998%">
+			<tspan sodipodi:role="line" id="tspan4230" x="240.92325" y="385.45886">${headline}</tspan>
 		</text>
 
     <image

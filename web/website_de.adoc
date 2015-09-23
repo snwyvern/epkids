@@ -5,7 +5,7 @@
 
 //image::p-logo.svg[align="center",width=30%,scaledwidth=35%]
 
-*link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für simpl4*
+*link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für __simpl4__*
 
 * link:http://de.wikipedia.org/wiki/Single-page-Webanwendung[Single page,window="_blank"]
 * link:http://www.reactivemanifesto.org[Reaktiv,window="_blank"], siehe link:local:xmppchat[Chat]

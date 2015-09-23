@@ -360,7 +360,7 @@
          y="601.34985" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="125.24335"
        y="196.49207"
        id="text40234"
@@ -368,7 +368,18 @@
          sodipodi:role="line"
          id="tspan40236"
          x="125.24335"
-         y="196.49207">simpl4-Backend</tspan></text>
+         y="196.49207">simpl4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="125.24335"
+       y="196.49207"
+       id="text40234"
+       sodipodi:linespacing="89.999998%"><tspan
+         sodipodi:role="line"
+         id="tspan40236"
+         x="205.24335"
+         y="196.49207">Backend</tspan></text>
     <g
        id="g50674"
        transform="translate(-119.47612,33.525125)">
