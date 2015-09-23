@@ -1,7 +1,7 @@
 :linkattrs:
 :source-highlighter: rouge
 
-= Simpl4==
+= simpl4==
 
 
 === Hauptbestandsteile ? ===

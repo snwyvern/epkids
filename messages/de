@@ -167,7 +167,7 @@
         "msgid": "tr.salutation"
     },
     {
-        "msgstr": "Simpl4 Applikationsentwicklung",
+        "msgstr": "simpl4 Applikationsentwicklung",
         "msgid": "tr.overwiew"
     },
     {
@@ -224,7 +224,7 @@
     },
     {
         "msgstr": "Webclient",
-        "msgid": "tr.menu.webclient"
+        "msgid": "tr.menu.presentation.webclient"
     },
     {
         "msgstr": "Server(Backend)",

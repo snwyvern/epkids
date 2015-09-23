@@ -160,7 +160,7 @@
     },
     {
         "msgid": "tr.overwiew",
-        "msgstr": "Simpl4 Applicationdevelopment",
+        "msgstr": "simpl4 Applicationdevelopment",
     },
     {
         "msgid": "data.contact._tab1",
@@ -211,7 +211,7 @@
         "msgstr": "Misc. Demos"
     },
     {
-        "msgid": "tr.menu.webclient",
+        "msgid": "tr.menu.presentation.webclient",
         "msgstr": "Webclient"
     },
     {

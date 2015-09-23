@@ -1,7 +1,7 @@
 :linkattrs:
 :source-highlighter: rouge
 
-= Simpl4==
+= simpl4==
 
 == Verschiedene Verarbeitungsarten  ==
 
@@ -41,5 +41,5 @@ Darum ist es wichtig das der/die Berechtigten jederzeit den Zustand des Prozesse
 da die rote Task einer anderen Person als dem Initiator zugewiesen ist.
 * Wenn diese Person die rote Task ausgeführt hat, wird der Initiator benachrichtigt.
 
-[.border.thumbi.width550]
-image::web/presentation/images/process1.svg[]
+[.border.thumb]
+imagezoom::web/presentation/images/process1.svg[]

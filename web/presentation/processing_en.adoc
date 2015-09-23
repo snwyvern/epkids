@@ -1,7 +1,7 @@
 :linkattrs:
 :source-highlighter: rouge
 
-= Simpl4==
+= simpl4==
 
 == Various types of processing ==
 
@@ -41,5 +41,5 @@ It is therefore important that the guardian can always retrieve the state of the
 because the red task is assigned  to another person.
 * If that person has executed the red task, the initiator is notified.
 
-[.border.thumb.width550]
-image::web/presentation/images/process1.svg[]
+[.border.thumb]
+imagezoom::web/presentation/images/process1.svg[]

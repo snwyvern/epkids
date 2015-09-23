@@ -17,9 +17,9 @@
     icon: refresh 
     url: web/presentation/processing_%l.adoc
     hash: presentation_processing
-  - name: tr.menu.webclient
+  - name: tr.menu.presentation.webclient
     icon: language
-    url: simpl4_%l.adoc?t=1
+    url: web/presentation/webclient_%l.adoc?t=1
     hash: presentation_webclient
   - name: tr.menu.presentation.usecases
     icon:  description
