@@ -8,11 +8,11 @@
 *link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für __simpl4__*
 
 * link:http://de.wikipedia.org/wiki/Single-page-Webanwendung[Single page,window="_blank"]
-* link:http://www.reactivemanifesto.org[Reaktiv,window="_blank"], siehe link:local:xmppchat[Chat]
+* Responsive und link:http://www.reactivemanifesto.org[reaktiv,window="_blank"], siehe link:local:xmppchat[Chat]
 * Erstellt mit link:http://polymer-project.org[Polymer, window="_blank"]
 * link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"] für alle relevanten Artefakte
 * Basis für eigene Entwicklungen
-* Texte mit link:http://asciidoctor.org[Asciidoctor, window="_ blank"]
+* Texte mit Markdown (link:http://asciidoctor.org[Asciidoctor, window="_ blank"])
 * Forms mit client- und serverseitiger Plausibilitätsprüfung
 * History und Back-Button
 * Websockets
