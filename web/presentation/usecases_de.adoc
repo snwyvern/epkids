@@ -6,12 +6,12 @@
 
 === Was kann man damit machen ? ===
 
-Eine kleine Auswahl.
+Eine beispielhafte Auswahl an Möglichkeiten
 
 * maßgeschneidertes CRM
 * elektronische Kataloge
 * Abläufe wie z.B. die Urlaubsplanung
-* allgemeine Webseite(Präsentation beliebiger Daten)
+* allgemeine Webseite (Präsentation beliebiger Daten)
 * Integration  verschiedenster Systeme
 * Ergänzung des vorhandenen Fachsystem
 * oder auch Serienmails

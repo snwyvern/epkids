@@ -43,7 +43,7 @@ image::$image[Picture,height=165,align=center]
 </template>
 ----
 
-<1> Ausführen des Filter,liefert die Produktliste
+<1> Ausführen des Filters liefert die Produktliste
 <2> Das Carousel erstellen
 <3> und mit den Produkten füllen
 <4> Die Produktbeschreibung mit Asciidoctor erstellt

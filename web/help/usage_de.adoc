@@ -61,7 +61,7 @@ Antwort auf *<simpl-asciidoctor>*
 </div>
 ----
 
-<1> Ausführen des Filter,liefert die Featureliste
+<1> Ausführen des Filters liefert die Feature Liste
 <2> Das Carousel erstellen
 <3> und mit den Features füllen
-<4> Die Featurebeschreibung mit Asciidoctor erstellt
+<4> Die Feature Beschreibung mit Asciidoctor erstellt

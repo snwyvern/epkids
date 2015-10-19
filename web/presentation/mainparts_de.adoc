@@ -4,12 +4,13 @@
 = simpl4==
 
 
-=== Hauptbestandsteile ? ===
+=== Mögliche Einsatzszenarien für simpl4 ===
 
 . Entwicklungssystem zur Erstellung individueller (Web)Applikationen, +
 	aber auch anderer Dinge, die ein Backend brauchen.
-. Backend mit vielen Diensten(ua. Daten , Workflow, Routen..).
-. Basis Webapplikation  für Mobil und Desktop. +
+. Funktionserweiterung bereits bestehender Applikationen.
+. Backend mit vielen Diensten (u.a. Daten , Workflow, Routen, usw.).
+. Basis Webapplikation für Mobil und Desktop. +
 	Grundlage für eigene Entwicklungen.
 
 

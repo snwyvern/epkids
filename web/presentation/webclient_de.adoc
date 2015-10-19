@@ -20,9 +20,9 @@ HTML-Kenntnisse sind dafür ausreichend*
 * Shadow DOM
 --
 
-* Damit ist es möglich HTML5 zu erweitern und  Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.
+* Damit ist es möglich HTML5 zu erweitern und Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.
 
-.Beispiel einer Datenbankabfrage mit Tabellarischer Darstellung
+.Beispiel einer Datenbankabfrage mit tabellarischer Darstellung
 [source,html]
 ----
 <div>
@@ -52,7 +52,7 @@ HTML-Kenntnisse sind dafür ausreichend*
 
 
 [TIP]
-Und so sieht es dann aus.Obiges Fragment ist hier in die Seite eingefügt. +
+Und so sieht es dann aus. Obiges Fragment ist hier in die Seite eingefügt. +
 Auf einfachste Weise können so Daten in eine Webseite  integriert werden. +
 Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
 
