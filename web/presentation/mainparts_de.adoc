@@ -4,7 +4,7 @@
 = simpl4==
 
 
-=== Mögliche Einsatzszenarien für simpl4 ===
+=== Hauptbestandsteile ===
 
 . Entwicklungssystem zur Erstellung individueller (Web)Applikationen, +
 	aber auch anderer Dinge, die ein Backend brauchen.
