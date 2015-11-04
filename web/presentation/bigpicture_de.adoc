@@ -15,9 +15,9 @@ Eine Camelroute entspricht einer Prozedur die sich am WAMP Router registriert un
 
 === Activiti Prozessengine ===
 
-Prozese(Workflows) werden in der activiti prozessengine ausgeführt.
-Die Prozesse werden in BPMN2 spezifiziert.
-Ein Graphischereditor(Modeler) steht hier zur Verfügung.
+* Prozese(Workflows) werden in der activiti prozessengine ausgeführt.
+* Die Prozesse werden in BPMN2 spezifiziert.
+* Ein Graphischereditor(Modeler) steht hier zur Verfügung.
 
 === WAMP *Web Application Messaging Protocol* ===
 
