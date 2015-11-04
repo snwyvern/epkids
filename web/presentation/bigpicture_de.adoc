@@ -11,7 +11,7 @@ Die wichtigsten Bestandteile
 
 * Camelrouten sind die hauptsächlichen Verarbeitungseinheiten in *_simpl4._* +
 Sie spezifizieren den Datenfluß von Komponente zu Komponente. +
-Eine Camelroute entspricht einer Prozedur die sich am WAMP Router registriert und via RPC(über http oder Websocket) erreichbar ist.
+Eine Camelroute entspricht einer Prozedur die sich am WAMP Router registriert und via RPC(HTTP oder Websocket) erreichbar ist.
 
 === Activiti Prozessengine ===
 

@@ -11,7 +11,7 @@ The main ingredients
 
 * Camelroutes are the main processing units in *_simpl4_.* +
 The specify the data flow from component to component. +
-A Camel route corresponds to a procedure that registers on the WAMP router and is in this way reachable via RPC(via http or websocket).
+A Camel route corresponds to a procedure that registers on the WAMP router and is in this way reachable via RPC(HTTP or websocket).
 
 === Activiti processengine
 
