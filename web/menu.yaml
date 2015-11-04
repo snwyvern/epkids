@@ -106,6 +106,10 @@
       icon: av:library-books
       help: web/help/products_%l.adoc
       hash: products
+- name: Links
+  icon: communication:call-made
+  url: links_%l.adoc
+  hash: 'links'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc
