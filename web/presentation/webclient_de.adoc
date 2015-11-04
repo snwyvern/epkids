@@ -9,7 +9,7 @@
 [TIP]
 ====
 *Erstellen von maßgeschneiderten Applikationen. +
-HTML-Kenntnisse sind dafür ausreichend*
+HTML,CSS-Kenntnisse sind dafür ausreichend*
 ====
 
 .Hauptsächlich basiert die Entwicklung auf HTML5 Webcomponents
@@ -17,7 +17,6 @@ HTML-Kenntnisse sind dafür ausreichend*
 --
 * link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"]
 * HTML Templates
-* Shadow DOM
 --
 
 * Damit ist es möglich HTML5 zu erweitern und Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.

@@ -9,7 +9,7 @@
 [TIP]
 ====
 *Creating custom applications. +
-HTML knowledge is sufficient*
+HTML,CSS knowledge is sufficient*
 ====
 
 .The development based mainly on HTML5 Webcomponents
@@ -17,7 +17,6 @@ HTML knowledge is sufficient*
 --
 * Custom Elements
 * HTML Templates
-* Shadow DOM
 --
 
 * This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.
