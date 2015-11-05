@@ -1,11 +1,19 @@
 :linkattrs:
 :source-highlighter: rouge
 
-= simpl4==
-
 
 == Technical overview ==
-The main ingredients
+
+=== Server ===
+
+[.border.left.thumb.width500]
+imagezoom::web/presentation/images/server_en.svg[]
+
+
+=== simpl4 backend, the main ingredients ===
+
+[.border.thumb]
+imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Apache Camel *Routing and conversion engine* ===
 
@@ -30,5 +38,3 @@ A Camel route corresponds to a procedure that registers on the WAMP router and i
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 
-[.border.thumb]
-imagezoom::web/presentation/images/bigpicture.svg[]

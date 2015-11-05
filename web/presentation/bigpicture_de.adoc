@@ -1,11 +1,19 @@
 :linkattrs:
 :source-highlighter: rouge
 
-= simpl4==
-
 
 == Technischer Überblick ==
-Die wichtigsten Bestandteile
+
+=== Server ===
+
+[.border.left.thumb.width500]
+imagezoom::web/presentation/images/server_en.svg[]
+
+
+=== simpl4 backend, die wichtigsten Bestandteile ===
+
+[.border.left.thumb.width500]
+imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Apache Camel *Routing und Konvertierungs Engine* ===
 
@@ -32,5 +40,4 @@ Positiver Nebeneffekt, dadurch ist Browser-to-Browser Kommunikation möglich!
 
 
 
-[.border.left.thumb.width500]
-imagezoom::web/presentation/images/bigpicture.svg[]
+
