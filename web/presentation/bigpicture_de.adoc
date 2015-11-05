@@ -4,10 +4,18 @@
 
 == Technischer Überblick ==
 
-=== Server ===
+=== Standalone-Server ===
 
 [.border.left.thumb.width500]
 imagezoom::web/presentation/images/server_en.svg[]
+
+=== Servlet Engine ===
+
+Das simpl4 backend kann auch als WAR in einer Servlet-Engine deployed werden.
+
+[.border.left.thumb.width500]
+imagezoom::web/presentation/images/servlet-engine_de.svg[]
+
 
 
 === simpl4 backend, die wichtigsten Bestandteile ===
