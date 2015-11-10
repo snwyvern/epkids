@@ -7,12 +7,20 @@ Information in accordance with section 5 TMG
 
 [role="border"] 
 --
-transparent solutions GmbH +
+Responsible for the content of this website:
+
+transparent solutions Software Systems & Consulting GmbH +
 Schlesierstraße 15 +
-91735 Muhr am See
+Germany - 91735 Muhr am See
 
 fon: +49 (0)9831 88 47538 +
 fax: +49 (0)9831 88 02984
+
+Represented by the CEO: +
+Jürgen Roscher und Manfred Sattler
+
+Amtsgericht Ansbach HRB 5377 +
+Ust.-Identnr.:DE 192 578 420
 --
 
 === Contact ===

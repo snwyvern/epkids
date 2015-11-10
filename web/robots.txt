@@ -1,1 +1,3 @@
+User-agent: *
+Disallow:
 sitemap: http://web.simpl4.org/repo/webdemo/sitemap.xml
