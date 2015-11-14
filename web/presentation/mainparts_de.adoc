@@ -8,7 +8,6 @@
 
 . Entwicklungssystem zur Erstellung individueller (Web)Applikationen, +
 	aber auch anderer Dinge, die ein Backend brauchen.
-. Funktionserweiterung bereits bestehender Applikationen.
 . Backend mit vielen Diensten (u.a. Daten , Workflow, Routen, usw.).
 . Basis Webapplikation für Mobil und Desktop. +
 	Grundlage für eigene Entwicklungen.

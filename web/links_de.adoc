@@ -25,3 +25,8 @@ link:https://github.com/ms123s/simpl4-deployed[https://github.com/ms123s/simpl4-
 --
 link:http://web.simpl4.org/download/simpl4-installer.exe[http://web.simpl4.org/download/simpl4-installer.exe,window="_blank"]
 --
+
+=== Erste Schritte ===
+[role="border"] 
+--
+link:http://web.simpl4.org/download/first_steps.mp4[http://web.simpl4.org/download/first_steps.mp4,window="_blank"]
