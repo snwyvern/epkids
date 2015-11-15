@@ -34,4 +34,4 @@ link:http://web.simpl4.org/download/first_steps.mp4[http://web.simpl4.org/downlo
 === Beispiele ===
 [role="border"] 
 --
-link:http://https://github.com/simpl4-apps[http://https://github.com/simpl4-apps,window="_blank"]
+link:http://https://github.com/simpl4-apps[https://github.com/simpl4-apps,window="_blank"]
