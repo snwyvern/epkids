@@ -30,3 +30,8 @@ link:http://web.simpl4.org/download/simpl4-installer.exe[http://web.simpl4.org/d
 [role="border"] 
 --
 link:http://web.simpl4.org/download/first_steps.mp4[http://web.simpl4.org/download/first_steps.mp4,window="_blank"]
+
+=== Beispiele ===
+[role="border"] 
+--
+link:http://https://github.com/simpl4-apps[http://https://github.com/simpl4-apps,window="_blank"]
