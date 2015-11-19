@@ -15,7 +15,7 @@ image::web/images/logo.png[]
 
 ===== Der Einsatz von simpl4 bei der Entwicklung bietet Ihnen verschiedenste Vorteile =====
 
-- Anwendungen können zu schnell und zu einem günstigen Preis erstellt werden.
+- Anwendungen können schnell und zu einem günstigen Preis erstellt werden.
 - Eine Anwendung kann auch auf Basis der im Unternehmen bereits vorhandenen Datenstrukturen erstellt werden.
 - Der komplette Quellcode von simpl4 und der erstellten Individual-Lösung ist immer für Sie verfügbar.
 
