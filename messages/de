@@ -167,6 +167,10 @@
         "msgid": "tr.salutation"
     },
     {
+        "msgstr": "Leistungen",
+        "msgid": "tr.services"
+    },
+    {
         "msgstr": "Entwicklungsumgebung",
         "msgid": "tr.overwiew"
     },

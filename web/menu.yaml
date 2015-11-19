@@ -110,6 +110,10 @@
   icon: communication:call-made
   url: links_%l.adoc
   hash: 'links'
+- name: tr.services
+  icon: done-all
+  url: services_%l.adoc
+  hash: 'services'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc

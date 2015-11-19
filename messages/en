@@ -147,6 +147,10 @@
         "msgstr": "Salutation"
     },
     {
+        "msgstr": "Services",
+        "msgid": "tr.services"
+    },
+    {
         "msgid": "tr.menu.description",
         "msgstr": "Description"
     },
