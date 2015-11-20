@@ -1,6 +1,6 @@
 :linkattrs:
 
-=== Leistungen ===
+=== Unsere Leistungen für Sie ===
 
 [.width400]
 image::web/images/logo.png[]

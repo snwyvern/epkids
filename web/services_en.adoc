@@ -1,6 +1,6 @@
 :linkattrs:
 
-== Services ==
+=== Our Services for you ===
 
 [.width400]
 image::web/images/logo.png[]
