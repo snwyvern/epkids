@@ -20,6 +20,10 @@ link:http://web.simpl4.org/download/simpl4-installer.exe[http://web.simpl4.org/d
 
 link:http://web.simpl4.org/download/first_steps.mp4[http://web.simpl4.org/download/first_steps.mp4,window="_blank"]
 
-====== Beispiele ======
+===== Beispiele =====
 
 link:https://github.com/simpl4-apps[https://github.com/simpl4-apps,window="_blank"]
+
+===== Heise Download =====
+
+<a title="simpl4 - Download - heise online" href="/download/simpl4-1197125.html"><img alt="simpl4 - Download - heise online" title="simpl4 - Download - heise online" src="http://www.heise.de/download/logo97125.png" /></a>

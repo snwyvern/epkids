@@ -1,0 +1,40 @@
+:linkattrs:
+
+=== Ersatzteilkataloge  ===
+
+transparent solutions bietet auch medienneutrale Produktinformationssysteme und Ersatzteilkataloge an.
+Für den gesamten Informations-Workflow in Service, Pre-Sales, Sales und After-Sales konzipieren und realisieren wir maßgeschneiderte Informationssysteme für namhafte Unternehmen.
+Mit unserer eigens entwickelten Softwarelösung TRANS-IT auf Basis von simpl4 kanalisieren und zentralisieren wir komplexe Datenstrukturen für alle Belange Ihrer internen Informationslogistik.
+
+Wir konzipieren und realisieren elektronische Ersatzteilkataloge für alle individuellen Kundenanforderungen an Bestellsysteme, Retourenmanagement, Service, Kundendienst und Technische Dokumentation.
+Sowohl für Serien- als auch Einzelfertiger gehört ein schneller Ersatzteilservice und eine detaillierte Dokumentation zu den größten Herausforderungen, die in der täglichen Betriebspraxis zu bewältigen sind.
+
+[.width600]
+image::web/images/etk_allgemeiner_ablauf[]
+
+Kern der TRANS-IT ist die auf Stücklisten und Materialstammdaten basierende Recherche nach Ersatzteilen. Damit verknüpft sind Explosionszeichnungen, die auch eine grafische Navigation in Produkt- und Einzelteildaten erlauben.
+
+==== Die Vorteile elektronischer Ersatzteilkataloge: ====
+
+medienneutral: Kataloge im Internet, auf CD-Rom, auf Papier
+Informationen aller Art jederzeit verfügbar
+Automatische unternehmensübergreifende Aktualisierung Ihrer Produktdaten
+Systemunabhängig
+Datenbankunabhängig
+Weltweite Zugriffsmöglichkeiten
+Leichte Bedienung
+Hoher Servicenutzen
+Zeit- und Kostenersparnis durch Reduzierung des Verwaltungsaufwandes
+Zeit- und Kostenersparnis durch erhebliche Minderung der Fehlbestellungen
+Amortisation Ihrer Investition binnen kürzester Zeit
+Kataloge im Internet/Intranet
+
+Kataloge im Internet/Intranet basieren auf plattform- und datenbankunabhängigen Online-Dokumentations- und Recherchesystemen und gewährleisten eine maximale Serviceorientierung für Kunden und Mitarbeiter. Die Suche nach Ersatzteilen, Artikeln und Zeichnungen kann weltweit rund um die Uhr sichergestellt werden. Die zentrale Pflege des Systems garantiert die Darstellung immer aktueller Daten.
+
+==== Kataloge auf CD-ROM ====
+
+Mit Katalogen auf CD-Rom sind Sie in der Lage, ein komplettes Ersatzteil-Bestellsystem für Ihre Kunden abzubilden. Die automatisierte Bestellung minimiert Fehlerquellen bisheriger manueller Bestellungen. Unnötige Kosten im Bestellprozess werden so deutlich reduziert resp. entfallen. Kataloge auf CD-Rom sind kundenindividuell generierbar. Benutzerführung und Funktionsumfang sind analog zum Katalog im Internet/Intranet aufbereitet.
+
+==== Print-Kataloge ====
+
+Anhand von Auswahlparametern definieren Sie welche Daten in den Katalog einfließen sollen, z.B. Artikel, Baugruppen sowie dazugehörige Montage- und Einbauanleitungen. Eine Erstellung zielgruppen- und kundenindividueller Kataloge auch auf Papier ist jederzeit möglich.

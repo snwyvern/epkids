@@ -1,0 +1,14 @@
+:linkattrs:
+
+=== Die Firma hinter simpl4  ===
+
+[.width400]
+image::web/images/logo.png[]
+
+
+transparent solutions GmbH ist ein bereits seit 1998 tätiges Softwareunternehmen mit Sitz im Großraum Nürnberg in Mittelfranken.
+
+Unsere bundesweit ansässigen Kunden, kommen sowohl aus dem klein- und mittelständischen Bereich, wie auch auch aus dem Bereich der Großkonzern.
+
+Wir verfügen über mehr als 20Jahre Erfahrungen in den Bereichen Auswahl, Einsatz und Anpassung von Open Source Software und Open Source Komponenten,
+welche unseren Kunden bei der Erstellung deren individueller Lösungen zu Gute kommt.

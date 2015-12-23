@@ -1,0 +1,53 @@
+:doctype: article
+:source-highlighter: coderay
+:listing-caption: Listing
+:pdf-page-size: A4
+
+== simpl4: New open source development environment
+
+=== Applications can be created quickly, even without detailed programming knowledge
+image::web/images/presse.svg[role="related thumb left",width=300]
+
+The first official release of the open source development environment *simpl4* is now available in GNU General Public Licence v3. simpl4 (http://simpl4.org/?lang=de) is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
+All interactions with the system (development and UI) run through the browser. The front end is created with HTML and CSS. Prefabricated HTML elements (custom elements) that communicate with the back end make it possible to integrate any data of choice into the website.
+
+=== Easy to use development system
+The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, Camel routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
+
+In practice *simpl4* supports the realisation of individual add-ons to databases or CRM systems for example. A process can for instance be created to map the workflows for an employee holiday request. Depending on the required complexity, this can encompass the integration of various hierarchy levels in the company and the inclusion of additional related tasks, such as automatically reducing the remaining holiday time and sending a message to the employee submitting the request.
+
+=== Linking data as desired
+In *simpl4*, data are described in freely configurable classes (for example Company, Activity, Article) with individually definable characteristics (such as Last Name, First Name and so on). These can then be linked as desired.
+
+The process is even more easier, when sample data are already available. In this case the data model is derived as part of the data import and the classes are generated. Tables and forms are also created based on the data model, covering numerous common application cases. This makes it possible to create simple database applications quickly – especially compared to conventional methods.
+
+=== Processing in the back end
+Processes (workflows) are executed in the Activiti process engine and specified in BPMN2. Activiti can delegate service tasks to Camel.
+
+The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for completed processes.
+
+=== Delivery of data from any source
+Camel routes are the main processing units in *simpl4*. They specify the flow of data from one component to another. Camel also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
+
+=== Source code information
+”The complete *simpl4* source code is available under the GPL3. This was a conscious decision to encourage the continuous further development of the solution by interested users,” explains Manfred Sattler, developer of *simpl4* and CEO of transparent solutions GmbH. Open source is not a short-term marketing strategy for us. It has guided our development efforts for more than 20 years.”
+
+=== Overview of key data:
+
+* Primary programming languages: Java (back end) and JavaScript (front end)
+* Installation: OSGI environment, either as a standalone server or as WAR in a servlet engine
+* Front end programming: HTML5 / Material Design with Polymer
+* Workflows: Activiti process engine
+* Rule-based routing: Apache Camel
+* Development environment: qooxdoo (JavaScript)
+* Data access: DataNucleus
+* Integrated chat server and web-based chat client
+* BPMN 2.0 – Business Process Model and Notation
+* Assets such as workflows, forms, filters, rules and so on are held in Git and therefore versioned
+
+Further information: http://simpl4.org/
+
+*simpl4* on the GitHub open source hosting platform: https://github.com/ms123s/simpl4-src
+
+=== About simpl4:
+*simpl4* is an open source development environment that supports the creation of applications with individual processes. Because of it's handling, simpl4 does not require in-depth programming knowledge. The developer team of transparent solutions GmbH stands behind simpl4.

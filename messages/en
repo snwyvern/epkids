@@ -3,228 +3,228 @@
 --
 [
     {
-        "msgid": "alle_text",
-        "msgstr": "All textfields"
+        "msgstr": "All textfields",
+        "msgid": "alle_text"
     },
     {
-        "msgid": "data.customer.id",
-        "msgstr": "Id"
+        "msgstr": "Id",
+        "msgid": "data.customer.id"
     },
     {
-        "msgid": "data.customer.role_id",
-        "msgstr": "Role"
+        "msgstr": "Role",
+        "msgid": "data.customer.role_id"
     },
     {
-        "msgid": "data.customer.company",
-        "msgstr": "Company"
+        "msgstr": "Company",
+        "msgid": "data.customer.company"
     },
     {
-        "msgid": "data.customer.legalform",
-        "msgstr": "Form"
+        "msgstr": "Form",
+        "msgid": "data.customer.legalform"
     },
     {
-        "msgid": "data.customer.category",
-        "msgstr": "Category"
+        "msgstr": "Category",
+        "msgid": "data.customer.category"
     },
     {
-        "msgid": "data.customer.domain",
-        "msgstr": "Domain"
+        "msgstr": "Domain",
+        "msgid": "data.customer.domain"
     },
     {
-        "msgid": "data.customer._team_list",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.customer._team_list"
     },
     {
-        "msgid": "data.contact",
-        "msgstr": "Contact"
+        "msgstr": "Contact",
+        "msgid": "data.contact"
     },
     {
-        "msgid": "data.contact.salutation",
-        "msgstr": "Salutation"
+        "msgstr": "Salutation",
+        "msgid": "data.contact.salutation"
     },
     {
-        "msgid": "data.contact.first_name",
-        "msgstr": "Firstname"
+        "msgstr": "Firstname",
+        "msgid": "data.contact.first_name"
     },
     {
-        "msgid": "data.contact.last_name",
-        "msgstr": "Lastname"
+        "msgstr": "Lastname",
+        "msgid": "data.contact.last_name"
     },
     {
-        "msgid": "data.contact.gender",
-        "msgstr": "Gender"
+        "msgstr": "Gender",
+        "msgid": "data.contact.gender"
     },
     {
-        "msgid": "data.contact.title",
-        "msgstr": "Title"
+        "msgstr": "Title",
+        "msgid": "data.contact.title"
     },
     {
-        "msgid": "data.contact.phone",
-        "msgstr": "Phone"
+        "msgstr": "Phone",
+        "msgid": "data.contact.phone"
     },
     {
-        "msgid": "data.contact.email1",
-        "msgstr": "Email1"
+        "msgstr": "Email1",
+        "msgid": "data.contact.email1"
     },
     {
-        "msgid": "data.contact.birth_date",
-        "msgstr": "Birthday"
+        "msgstr": "Birthday",
+        "msgid": "data.contact.birth_date"
     },
     {
-        "msgid": "data.contact.password",
-        "msgstr": "Password"
+        "msgstr": "Password",
+        "msgid": "data.contact.password"
     },
     {
-        "msgid": "data.contact._team_list",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.contact._team_list"
     },
     {
-        "msgid": "data.address",
-        "msgstr": "Address"
+        "msgstr": "Address",
+        "msgid": "data.address"
     },
     {
-        "msgid": "data.address.street",
-        "msgstr": "Street"
+        "msgstr": "Street",
+        "msgid": "data.address.street"
     },
     {
-        "msgid": "data.address.zipcode",
-        "msgstr": "Zipcode"
+        "msgstr": "Zipcode",
+        "msgid": "data.address.zipcode"
     },
     {
-        "msgid": "data.address.city",
-        "msgstr": "City"
+        "msgstr": "City",
+        "msgid": "data.address.city"
     },
     {
-        "msgid": "data.address.country",
-        "msgstr": "Country"
+        "msgstr": "Country",
+        "msgid": "data.address.country"
     },
     {
-        "msgid": "data.address.state",
-        "msgstr": "State"
+        "msgstr": "State",
+        "msgid": "data.address.state"
     },
     {
-        "msgid": "data.address._team_list",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.address._team_list"
     },
     {
-        "msgid": "data.customer.contact_list",
-        "msgstr": "Contacts"
+        "msgstr": "Contacts",
+        "msgid": "data.customer.contact_list"
     },
     {
-        "msgid": "data.customer.address_list",
-        "msgstr": "Addresses"
+        "msgstr": "Addresses",
+        "msgid": "data.customer.address_list"
     },
     {
-        "msgid": "data.customer.cid",
-        "msgstr": "Cid"
+        "msgstr": "Cid",
+        "msgid": "data.customer.cid"
     },
     {
-        "msgid": "data.customer_list",
-        "msgstr": "Customers"
+        "msgstr": "Customers",
+        "msgid": "data.customer_list"
     },
     {
-        "msgid": "data.customers._team_list",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.customers._team_list"
     },
     {
-        "msgid": "tr.email1",
-        "msgstr": "Email"
+        "msgstr": "Email",
+        "msgid": "tr.email1"
     },
     {
-        "msgid": "tr.nachname",
-        "msgstr": "Surname"
+        "msgstr": "Surname",
+        "msgid": "tr.nachname"
     },
     {
-        "msgid": "tr.phone",
-        "msgstr": "Phone"
+        "msgstr": "Phone",
+        "msgid": "tr.phone"
     },
     {
-        "msgid": "tr.first_name",
-        "msgstr": "Givenname"
+        "msgstr": "Givenname",
+        "msgid": "tr.first_name"
     },
     {
-        "msgid": "tr.salutation",
-        "msgstr": "Salutation"
+        "msgstr": "Salutation",
+        "msgid": "tr.salutation"
     },
     {
-        "msgstr": "Services",
+        "msgstr": "Services around simpl4",
         "msgid": "tr.services"
     },
     {
-        "msgid": "tr.menu.description",
-        "msgstr": "Description"
+        "msgstr": "Description",
+        "msgid": "tr.menu.description"
     },
     {
-        "msgid": "menu.asciidoctor.testfile",
-        "msgstr": "Testfile"
+        "msgstr": "Testfile",
+        "msgid": "menu.asciidoctor.testfile"
     },
     {
-        "msgid": "menu.asciidoctor.otherstyle",
-        "msgstr": "Other style"
+        "msgstr": "Other style",
+        "msgid": "menu.asciidoctor.otherstyle"
     },
     {
-        "msgid": "tr.overwiew",
         "msgstr": "Applicationdevelopment",
+        "msgid": "tr.overwiew"
     },
     {
-        "msgid": "data.contact._tab1",
-        "msgstr": "Contact data"
+        "msgstr": "Contact data",
+        "msgid": "data.contact._tab1"
     },
     {
-        "msgid": "data.customer.tab1",
-        "msgstr": "Customer data"
+        "msgstr": "Customer data",
+        "msgid": "data.customer.tab1"
     },
     {
-        "msgid": "data.contact.tab2",
-        "msgstr": "Part 2"
+        "msgstr": "Part 2",
+        "msgid": "data.contact.tab2"
     },
     {
-        "msgid": "data.feature.description",
-        "msgstr": "Description"
+        "msgstr": "Description",
+        "msgid": "data.feature.description"
     },
     {
-        "msgid": "data.feature.price",
-        "msgstr": "Price"
+        "msgstr": "Price",
+        "msgid": "data.feature.price"
     },
     {
-        "msgid": "menu.crmdemo.accounts",
-        "msgstr": "Accounts"
+        "msgstr": "Accounts",
+        "msgid": "menu.crmdemo.accounts"
     },
     {
-        "msgid": "menu.crmdemo.contacts",
-        "msgstr": "Contacts"
+        "msgstr": "Contacts",
+        "msgid": "menu.crmdemo.contacts"
     },
     {
-        "msgid": "tr.menu.task_list",
-        "msgstr": "Tasklist"
+        "msgstr": "Tasklist",
+        "msgid": "tr.menu.task_list"
     },
     {
-        "msgid": "tr.menu.rpc",
-        "msgstr": "RPC"
+        "msgstr": "RPC",
+        "msgid": "tr.menu.rpc"
     },
     {
-        "msgid": "tr.menu.process_list",
-        "msgstr": "Workflows"
+        "msgstr": "Workflows",
+        "msgid": "tr.menu.process_list"
     },
     {
-        "msgid": "tr.menu.database",
-        "msgstr": "Database"
+        "msgstr": "Database",
+        "msgid": "tr.menu.database"
     },
     {
-        "msgid": "tr.menu.misc_demo",
-        "msgstr": "Misc. Demos"
+        "msgstr": "Misc. Demos",
+        "msgid": "tr.menu.misc_demo"
     },
     {
-        "msgid": "tr.menu.presentation.webclient",
-        "msgstr": "Webclient"
+        "msgstr": "Webclient",
+        "msgid": "tr.menu.presentation.webclient"
     },
     {
-        "msgid": "tr.menu.server",
-        "msgstr": "Server(Backend)"
+        "msgstr": "Server(Backend)",
+        "msgid": "tr.menu.server"
     },
     {
-        "msgid": "tr.menu.forms",
-        "msgstr": "Forms"
+        "msgstr": "Forms",
+        "msgid": "tr.menu.forms"
     },
     {
         "msgstr": "Big picture",
@@ -250,41 +250,64 @@
         "msgstr": "Tutorials",
         "msgid": "tr.menu.tutorials"
     },
-
     {
         "msgstr": "Data import",
         "msgid": "tr.menu.tutorials.dataimport"
     },
     {
-        "msgid": "tr.form_with_tabs",
-        "msgstr": "with tabs"
+        "msgstr": "with tabs",
+        "msgid": "tr.form_with_tabs"
     },
     {
-        "msgid": "tr.form_with_table",
-        "msgstr": "with table"
+        "msgstr": "with table",
+        "msgid": "tr.form_with_table"
     },
     {
-        "msgid": "enum.role.customer",
-        "msgstr": "Customer"
+        "msgstr": "Customer",
+        "msgid": "enum.role.customer"
     },
     {
-        "msgid": "enum.salutation.mr",
-        "msgstr": "Mr."
+        "msgstr": "Mr.",
+        "msgid": "enum.salutation.mr"
     },
     {
-        "msgid": "enum.salutation.mrs",
-        "msgstr": "Ms."
+        "msgstr": "Ms.",
+        "msgid": "enum.salutation.mrs"
     },
     {
-        "msgid": "enum.sex.female",
-        "msgstr": "female"
+        "msgstr": "female",
+        "msgid": "enum.sex.female"
     },
     {
-        "msgid": "enum.sex.male",
-        "msgstr": "male"
+        "msgstr": "male",
+        "msgid": "enum.sex.male"
     },
     {
-        "msgid": "zwei_bis_fuenf_ziffern",
-        "msgstr": "min. 2, max. 5 Digits"
+        "msgstr": "min. 2, max. 5 Digits",
+        "msgid": "zwei_bis_fuenf_ziffern"
+    },
+    {
+        "msgstr": "Individual Software",
+        "msgid": "tr.individual-software"
+    },
+    {
+        "msgstr": "Individual Software",
+        "msgid": "tr.individual-software"
+    },
+    {
+        "msgstr": "Company",
+        "msgid": "tr.menu.company"
+    },
+    {
+        "msgstr": "Company behind simpl4",
+        "msgid": "tr.menu.company.behind-simpl4"
+    },
+    {
+        "msgstr": "Spareparts catalogs",
+        "msgid": "tr.catalog-software"
+    },
+    {
+        "msgstr": "Press",
+        "msgid": "tr.menu.press"
     }
 ]

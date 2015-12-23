@@ -106,14 +106,33 @@
       icon: av:library-books
       help: web/help/products_%l.adoc
       hash: products
+- name: tr.menu.company
+  icon: supervisor-account 
+  children:
+  - name: tr.menu.company.behind-simpl4
+    icon: folder-shared
+    url: company_%l.adoc
+    hash: 'company-behind-simpl4'
+  - name: tr.services
+    icon: done-all
+    url: services_%l.adoc
+    hash: 'services'
+  - name: tr.individual-software
+    icon: done-all
+    url: individualsoftware_%l.adoc
+    hash: 'individual-software'
+  - name: tr.catalog-software
+    icon: done-all
+    disabled: true
+    hash: 'catalog-software'
+- name: tr.menu.press
+  icon: communication:call-made
+  url: press_%l.adoc
+  hash: 'press'
 - name: Links
   icon: communication:call-made
   url: links_%l.adoc
   hash: 'links'
-- name: tr.services
-  icon: done-all
-  url: services_%l.adoc
-  hash: 'services'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc

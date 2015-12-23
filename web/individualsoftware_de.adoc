@@ -1,0 +1,21 @@
+:linkattrs:
+
+=== Individual Software  ===
+
+
+Breits seit vielen Jahren erstellen wir maßgeschneiderte Softwarelösungen auf Basis kundenspezifischer Anforderungen und Wünsche.
+
+Dabei kann das sowohl die Adaption einer bereits im Unternehmen existierenden Software an neue oder andere betriebliche, fachliche oder technische Anforderungen sein, 
+als auch eine komplett neu zu erstellende Software-Lösung.
+
+Das Wichtigste Vorteil einer individuell erstellten Softwarelösung ist, dass die Software genau das macht, was der Kunde will.
+Sie ist optimal an die individuelle Daten Infrastruktur angepasst und hilft Ressourcen somit noch besser zu nutzen.
+Somit ergeben sich Einsparpotential in Punkto Arbeitsaufwand bei der Softwarenutzung, sprich eingesparte Zeit, und dadurch natürlich auch bares gespartes Geld.
+
+
+===== Der Einsatz von simpl4 bei der Entwicklung Ihrer Software-Lösung bietet Ihnen verschiedenste Vorteile =====
+
+- Anwendungen können schnell und zu einem günstigen Preis erstellt werden.
+- Eine Anwendung kann auch auf Basis der im Unternehmen bereits vorhandenen Datenstrukturen erstellt werden.
+- Der komplette Quellcode von simpl4 und der erstellten Individual-Lösung ist immer für Sie verfügbar.
+

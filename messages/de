@@ -167,7 +167,7 @@
         "msgid": "tr.salutation"
     },
     {
-        "msgstr": "Leistungen",
+        "msgstr": "Leistungen rund um simpl4",
         "msgid": "tr.services"
     },
     {
@@ -369,5 +369,25 @@
     {
         "msgstr": "Notes",
         "msgid": "data.fakeuser.notes"
+    },
+    {
+        "msgstr": "Firma",
+        "msgid": "tr.menu.company"
+    },
+    {
+        "msgstr": "Die Firma hinter simpl4",
+        "msgid": "tr.menu.company.behind-simpl4"
+    },
+    {
+        "msgstr": "Individual Software",
+        "msgid": "tr.individual-software"
+    },
+    {
+        "msgstr": "Ersatzteilkataloge",
+        "msgid": "tr.catalog-software"
+    },
+    {
+        "msgstr": "Presse",
+        "msgid": "tr.menu.press"
     }
 ]

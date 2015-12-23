@@ -2,22 +2,12 @@
 
 === Our Services for you ===
 
-[.width400]
-image::web/images/logo.png[]
-
 ===== We can assist you in various matters concerning simpl4 =====
 
 * You have questions about simpl4 or want a simpl4 training?
 * In a workshop you want to create together with us a sample application?
 * Or you would like us to create a custom, especially personalized management through customized software solution for you?
 * You want us to host your application?
-
-
-===== The use of simpl4 in the development offers various advantages =====
-
-* Applications can be created quickly and at a favorable price.
-* An application can also be created based on the already existing data structures in your company.
-* The complete source code of simpl4 and created individual solution is always available for you.
 
 
 Contact us at +

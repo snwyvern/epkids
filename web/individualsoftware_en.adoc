@@ -1,0 +1,11 @@
+:linkattrs:
+
+=== Individual software ===
+
+
+===== The use of simpl4 in the development offers various advantages =====
+
+* Applications can be created quickly and at a favorable price.
+* An application can also be created based on the already existing data structures in your company.
+* The complete source code of simpl4 and created individual solution is always available for you.
+
