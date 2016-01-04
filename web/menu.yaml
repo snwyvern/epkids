@@ -110,15 +110,15 @@
   icon: supervisor-account 
   children:
   - name: tr.menu.company.behind-simpl4
-    icon: folder-shared
+    icon: communication:business
     url: company_%l.adoc
     hash: 'company-behind-simpl4'
   - name: tr.services
-    icon: done-all
+    icon: build
     url: services_%l.adoc
     hash: 'services'
   - name: tr.individual-software
-    icon: done-all
+    icon: face
     url: individualsoftware_%l.adoc
     hash: 'individual-software'
   - name: tr.catalog-software
@@ -126,7 +126,7 @@
     disabled: true
     hash: 'catalog-software'
 - name: tr.menu.press
-  icon: communication:call-made
+  icon: turned-in-not
   url: press_%l.adoc
   hash: 'press'
 - name: Links
