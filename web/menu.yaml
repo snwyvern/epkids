@@ -1,6 +1,6 @@
 - name: Home
   icon: home
-  url: frontpage.html
+  url: web/main_%l.adoc
   hash: '0'
 - name: tr.menu.presentation
   icon: list
