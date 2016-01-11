@@ -6,6 +6,7 @@
   <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="forkme.css" >
   <title>simpl4 Info/Demo</title>
   <script src="/sw/surface/webcomponents-lite.js.gz"></script>
   <script src="/sw/surface/libs.js.gz"></script>
@@ -67,6 +68,15 @@
         display: none !important;
       }
     }
+		/*@@@MS tem.*/
+		html simpl-mmenu.simpl-main {
+			position:relative !important;
+		}
+		/*ie9*/
+		.no-flexbox simpl-mmenu.simpl-main {
+			position:absolute !important;
+		}
+
     @media screen and (max-height: 650px) {
       html /deep/ #loginDialog {
         top: -30px;

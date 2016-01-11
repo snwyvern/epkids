@@ -1,0 +1,13 @@
+:linkattrs:
+
+=== The company behind simpl4 ===
+
+[.width400]
+image::web/images/logo.png[]
+
+transparent solutions GmbH is a already since 1998 acting Software company headquartered in the Greater Nuremberg in Middle Franconia.
+
+Our nationwide resident Customers come from both, the Small and Medium-Sized Companies as well, as also from the field of major corporations.
+
+We have more than 20years experience in the selection, use and adaptation of open source software and open source components,
+which our customers in creating their individual solutions comes to Good.

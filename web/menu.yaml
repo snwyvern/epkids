@@ -1,6 +1,6 @@
 - name: Home
   icon: home
-  url: frontpage.html
+  url: web/main_%l.adoc
   hash: '0'
 - name: tr.menu.presentation
   icon: list
@@ -110,6 +110,29 @@
       icon: av:library-books
       help: web/help/products_%l.adoc
       hash: products
+- name: tr.menu.company
+  icon: supervisor-account 
+  children:
+  - name: tr.menu.company.behind-simpl4
+    icon: communication:business
+    url: company_%l.adoc
+    hash: 'company-behind-simpl4'
+  - name: tr.services
+    icon: build
+    url: services_%l.adoc
+    hash: 'services'
+  - name: tr.individual-software
+    icon: face
+    url: individualsoftware_%l.adoc
+    hash: 'individual-software'
+  - name: tr.catalog-software
+    icon: done-all
+    disabled: true
+    hash: 'catalog-software'
+- name: tr.menu.press
+  icon: turned-in-not
+  url: press_%l.adoc
+  hash: 'press'
 - name: Links
   icon: communication:call-made
   url: links_%l.adoc

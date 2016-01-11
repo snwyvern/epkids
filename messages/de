@@ -3,30 +3,6 @@
 --
 [
     {
-        "msgstr": "Test1",
-        "msgid": "data.test1"
-    },
-    {
-        "msgstr": "Field1",
-        "msgid": "data.test1.field1"
-    },
-    {
-        "msgstr": "Teams",
-        "msgid": "data.test1._team_list"
-    },
-    {
-        "msgstr": "Ctest",
-        "msgid": "data.ctest"
-    },
-    {
-        "msgstr": "Cfield1",
-        "msgid": "data.ctest.cfield1"
-    },
-    {
-        "msgstr": "Teams",
-        "msgid": "data.ctest._team_list"
-    },
-    {
         "msgstr": "Alle Textfelder",
         "msgid": "alle_text"
     },
@@ -165,6 +141,10 @@
     {
         "msgstr": "Anrede",
         "msgid": "tr.salutation"
+    },
+    {
+        "msgstr": "Leistungen rund um simpl4",
+        "msgid": "tr.services"
     },
     {
         "msgstr": "Entwicklungsumgebung",
@@ -369,5 +349,25 @@
     {
         "msgstr": "Notes",
         "msgid": "data.fakeuser.notes"
+    },
+    {
+        "msgstr": "Firma",
+        "msgid": "tr.menu.company"
+    },
+    {
+        "msgstr": "Die Firma hinter simpl4",
+        "msgid": "tr.menu.company.behind-simpl4"
+    },
+    {
+        "msgstr": "Individual Software",
+        "msgid": "tr.individual-software"
+    },
+    {
+        "msgstr": "Ersatzteilkataloge",
+        "msgid": "tr.catalog-software"
+    },
+    {
+        "msgstr": "Presse",
+        "msgid": "tr.menu.press"
     }
 ]

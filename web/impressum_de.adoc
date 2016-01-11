@@ -1,7 +1,7 @@
 :linkattrs:
 :source-highlighter: rouge
 
-== Impressum ==
+=== Impressum ===
 
 Angaben gemäß § 5 TMG
 
@@ -23,7 +23,7 @@ Amtsgericht Ansbach HRB 5377 +
 Ust.-Identnr.:DE 192 578 420
 --
 
-=== Kontakt ===
+==== Kontakt ====
 
 [role="border"] 
 --

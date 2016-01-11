@@ -1,0 +1,17 @@
+:linkattrs:
+
+=== Kommunizieren im eigenen Firmen-Chat  ===
+
+simpl4 bietet Ihnen die Möglichkeit, Ihren eigenen Firmen-Chat auf einfache Weise aufzubauen.
+Hierzu wurden die relevanten Komponenten des Open Source XMMP-Severs Openfire verwendet, einem RealTimeCollaboration Server (RTC) Server, unter der Open-Source-Apache-Lizenz steht.
+Dabei wird das weit verbreitete Open-Protokoll für Instant Messaging, XMPP (wird auch Jabber genannt).
+
+Clients dazu gibt es für Windows, Mac, Linux, Android, iPhone, Blackberry, Web-Browser, und andere.
+
+Durch die nahtlose Integration von Openfire, kann die in simpl4 vorhandene User- und Usergruppenvewaltung genutzt werden.
+Dadurch können darüber die Zugriffssteuerung und auch sogenannte Gruppenchats auf einfache Weise über die Oberfläche konfiguriert und verwaltet werden.
+
+* Kommunizieren Sie auf einfache Weise
+** mit Ihren Kunden
+** mit den Angestellten
+** sicher über IHR eigenes Firmennetzwerk, NICHT über Dritte !
