@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_D1D42425-E650-4A42-943A-E4C1B3C784C3",
   "properties": {
-    "xf_id": "",
-    "xf_name": "${diagramname}",
+    "xf_id": "tabform.form",
+    "xf_name": "tabform",
     "xf_version": "",
     "xf_default_buttons": false,
     "xf_postprocess": null

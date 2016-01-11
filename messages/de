@@ -259,6 +259,10 @@
         "msgid": "tr.menu.tutorials"
     },
     {
+        "msgstr": "Kalender",
+        "msgid": "tr.menu.calendar"
+    },
+    {
         "msgstr": "Datenimport",
         "msgid": "tr.menu.tutorials.dataimport"
     },

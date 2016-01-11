@@ -64,6 +64,10 @@
     icon: device:dvr
     url: viewer.html
     hash: viewer
+  - name: tr.menu.calendar
+    icon: perm-contact-calendar
+    url: calendar.html
+    hash: calendar
   - name: Asciidoctor
     icon: text-format
     hash: 6-0
