@@ -203,6 +203,10 @@
         "msgid": "tr.menu.misc_demo"
     },
     {
+        "msgstr": "Features",
+        "msgid": "tr.menu.presentation.features"
+    },
+    {
         "msgstr": "Webclient",
         "msgid": "tr.menu.presentation.webclient"
     },
