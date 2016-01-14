@@ -72,6 +72,7 @@
   - name: tr.menu.calendar
     icon: perm-contact-calendar
     url: calendar.html
+    disabled: true
     hash: calendar
   - name: Asciidoctor
     icon: text-format
