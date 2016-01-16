@@ -90,6 +90,10 @@
   - name: tr.menu.forms
     icon: subject
     children:
+    - name: tr.form_with_grid
+      url: formgrid.html
+      icon: av:web
+      hash: formgriddemo
     - name: tr.form_with_table
       url: formtable.html
       icon: av:web

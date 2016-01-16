@@ -524,7 +524,7 @@
             "xf_required": null,
             "xf_filtercheck": null,
             "xf_constraint_text": null,
-            "xf_constraint_date": null,
+            "xf_constraint_date": "{\"Future\":[true],\"Past\":[false],\"DateMin\":[false,1452466800000],\"DateMax\":[false,1452466800000],\"NotBlank\":[false],\"NotNull\":[false]}",
             "xf_constraint_boolean": null,
             "xf_constraint_decimal": null,
             "xf_constraint_number": null

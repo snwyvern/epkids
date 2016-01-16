@@ -30,7 +30,7 @@ Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vo
 
 === Verarbeitung im Backend
 Prozesse (Workflows) werden in der Activiti-Prozessengine ausgeführt und in BPMN2 spezifiziert. Activiti kann Serviceaufgaben an Camel delegieren.
-[.border.right]
+[.right.width600]
 imagezoom::web/presentation/images/bigpicture.svg[]
 Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für beendete Prozesse gibt es eine Historie.
 
