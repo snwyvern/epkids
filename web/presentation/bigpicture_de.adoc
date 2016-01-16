@@ -6,21 +6,21 @@
 
 === Standalone-Server ===
 
-[.width700]
+[.width600]
 imagezoom::web/presentation/images/server_en.svg[]
 
 === Servlet Engine ===
 
 Das simpl4 backend kann auch als WAR in einer Servlet-Engine deployed werden.
 
-[.width700]
+[.width600]
 imagezoom::web/presentation/images/servlet-engine_de.svg[]
 
 
 
 === simpl4 backend, die wichtigsten Bestandteile ===
 
-[.width700]
+[.width600]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Apache Camel *Routing und Konvertierungs Engine* ===
