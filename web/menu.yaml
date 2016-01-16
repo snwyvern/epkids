@@ -5,6 +5,10 @@
 - name: tr.menu.presentation
   icon: list
   children:
+  - name: tr.menu.presentation.features
+    icon:  description
+    url: frontpage.html
+    hash: presentation_features
   - name: tr.menu.presentation.mainparts
     icon: image:filter-3
     url: web/presentation/mainparts_%l.adoc?t=1
@@ -28,6 +32,7 @@
     help: web/help/usage_%l.adoc
 - name: tr.menu.tutorials
   icon: chrome-reader-mode
+  disabled: true
   children:
   - name: tr.menu.tutorials.dataimport
     icon: file-download
@@ -67,6 +72,7 @@
   - name: tr.menu.calendar
     icon: perm-contact-calendar
     url: calendar.html
+    disabled: true
     hash: calendar
   - name: Asciidoctor
     icon: text-format
@@ -131,6 +137,7 @@
     hash: 'catalog-software'
 - name: tr.menu.press
   icon: turned-in-not
+  disabled: true
   url: press_%l.adoc
   hash: 'press'
 - name: Links
