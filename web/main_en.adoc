@@ -19,7 +19,7 @@ _if necessary, it can of course also be written code_
 image:web/images/presse.svg[role="related thumb left",width=300]
 
 *_simpl4_* is an open source development environment and is licensed under the GNU General Public Licence v3. *_simpl4_* is designed as an all-round solution. With *_simpl4_*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
-All interactions with the system (development and UI) run through the browser. The front end is created with HTML and CSS. Prefabricated HTML elements (custom elements) that communicate with the back end make it possible to integrate any data of choice into the website.
+All interactions with the system (development and UI) run through the browser. The front end is created with HTML and CSS. Prefabricated HTML elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
 
 === Easy to use development system
 The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, Camel routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
