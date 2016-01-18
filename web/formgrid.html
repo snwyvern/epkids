@@ -1,0 +1,20 @@
+<template is="dom-bind" id="root">
+	<simpl-panel bgcolor="black" heading="{{tr('tr.form_with_grid')}}">
+		<simpl-form namespace="tutorials"  on-xaction="onTap"  data="[[data]]" form-name="gridinput.form"></simpl-form>
+	</simpl-panel>
+</template>
+<script>
+	HTMLImports.whenReady( function() {
+		var t = document.getElementById( "root" );
+		t.data={'grid1':[
+			{col1:'Hello3'},
+			{col1:'Hello2'},
+			{col1:'Hello1'}
+		]}
+		t.onTap = function(e){
+			console.log("Tap:",e.detail);
+		}
+	} );
+
+</script>
+

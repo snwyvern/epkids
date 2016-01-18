@@ -263,6 +263,10 @@
         "msgid": "tr.menu.tutorials.dataimport"
     },
     {
+        "msgstr": "Gridinput",
+        "msgid": "tr.form_with_grid"
+    },
+    {
         "msgstr": "with tabs",
         "msgid": "tr.form_with_tabs"
     },
