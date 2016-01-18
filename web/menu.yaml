@@ -39,7 +39,7 @@
     url: web/tutorials/dataimport_%l.adoc?t=1
     hash: tutorials_dataimport
 - name: CRM Demo
-  icon: supervisor-account 
+  icon: communication:contact-phone
   children:
   - name: menu.crmdemo.accounts
     icon: folder-shared
@@ -140,7 +140,7 @@
     disabled: true
     hash: 'catalog-software'
 - name: News
-  icon: build
+  icon: communication:ring-volume
   url: news_%l.adoc
   hash: 'news'
 - name: tr.menu.press
