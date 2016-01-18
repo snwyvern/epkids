@@ -32,7 +32,7 @@ Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vo
 Prozesse (Workflows) werden in der Activiti-Prozessengine ausgeführt und in BPMN2 spezifiziert. Activiti kann Serviceaufgaben an Camel delegieren.
 [.right.width600]
 imagezoom::web/presentation/images/bigpicture.svg[]
-Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für beendete Prozesse gibt es eine Historie.
+Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für die Prozesse wird  eine Historie geführt.
 
 === Bereitstellung von Daten aus beliebigen Quellen
 Camelrouten sind die hauptsächlichen Verarbeitungseinheiten in *_simpl4_*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt Camel eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
@@ -43,19 +43,16 @@ Camelrouten sind die hauptsächlichen Verarbeitungseinheiten in *_simpl4_*. Sie 
 === Eckdaten im Überblick:
 
 * Primäre Programmiersprachen: Java (Backend) und JavaScript (Frontend)
-* Installation: OSGI-Umgebung wahlweise als Standalone-Server oder als WAR in einer Servlet-Engine
-* Frontend-Programmierung: HTML5 / Material Design mit Polymer 
-* Workflows: Prozessengine Activiti
-* Regelbasiertes Routing: Apache Camel
-* Entwicklungsumgebung: qooxdoo (Javascript)
-* Datenzugriff: DataNucleus
-* Integrierter Chat-Server und webbasierter Chat-Client
+* Installation: link:https://de.wikipedia.org/wiki/OSGi[OSGI-Umgebung,window="_blank"]  wahlweise als Standalone-Server oder als WAR in einer Servlet-Engine
+* link:https://de.wikipedia.org/wiki/HTML5[Frontend-Programmierung: HTML5,window="_blank"] / link:https://en.wikipedia.org/wiki/Google_Polymer[Material Design mit Polymer, window="_blank"]
+* link:https://de.wikipedia.org/wiki/Activiti[Workflows: Prozessengine Activiti,window=_blank"]
+* link:https://de.wikipedia.org/wiki/Apache_Camel[Regelbasiertes Routing: Apache Camel,window="_blank"]
+* link:https://de.wikipedia.org/wiki/Qooxdoo[Entwicklungsumgebung: qooxdoo (Javascript), window="_blank"]
+* link:https://de.wikipedia.org/wiki/DataNucleus[Datenzugriff: DataNucleus, window="_blank"]
+* link:https://en.wikipedia.org/wiki/XMPP[Integrierter Chat-Server und webbasierter Chat-Client,window="_blank"]
 * link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[Web Application Messaging Protocol(WAMP),window="_blank"]
-* BPMN 2.0 - Business Process Model and Notation 
-* Assets wie Workflows, Forms, Filter, Rules usw. werden in Git gehalten und somit versioniert
+* link:https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation[BPMN 2.0 - Business Process Model and Notation, window="_blank"]
+* Assets wie Workflows, Forms, Filter, Rules usw. werden in link:https://de.wikipedia.org/wiki/Git[Git,window="_blank"] gehalten und somit versioniert
 
 
 *_simpl4_* auf der Open-Source-Hosting-Plattform GitHub: https://github.com/ms123s/simpl4-src
-
-=== Über _simpl4_:
-*_simpl4_* ist eine Open-Source-Entwicklungsumgebung, mit der Applikationen mit individuellen Prozessen erstellt werden können. Durch die einfache Bedienung setzt *_simpl4_* keine fundierten Programmierkenntnisse voraus und kann auch direkt in Fachabteilungen eingesetzt werden. Hinter *_simpl4_* steht das Entwicklerteam der transparent solutions GmbH.
