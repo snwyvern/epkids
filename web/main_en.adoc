@@ -3,10 +3,10 @@
 :linkattrs:
 
 
-== _simpl4_: The somewhat different development environment
+== The somewhat different development environment
 
 === Link components together in an elegant way
-_if necessary, it can of course also be written code_
+_It can of course also be programmed(scripted)._
 
 ++++
 <div class="github-fork-ribbon-wrapper right">
