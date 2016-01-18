@@ -2,10 +2,10 @@
 :linkattrs:
 
 
-== _simpl4_: Die etwas andere Entwicklungsumgebung
+== Die etwas andere Entwicklungsumgebung
 
 === Verknüpfen sie Komponenten auf elegante Weise miteinander.
-_bei Bedarf kann natürlich auch Code geschrieben werden._
+_Es kann natürlich auch programmiert(gescripted) werden._
 
 ++++
 <div class="github-fork-ribbon-wrapper right">

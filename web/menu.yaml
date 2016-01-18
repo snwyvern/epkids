@@ -139,6 +139,10 @@
     icon: done-all
     disabled: true
     hash: 'catalog-software'
+- name: News
+  icon: build
+  url: news_%l.adoc
+  hash: 'news'
 - name: tr.menu.press
   icon: turned-in-not
   disabled: true
