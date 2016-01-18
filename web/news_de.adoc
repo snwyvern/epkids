@@ -6,7 +6,7 @@
 ==== Januar 2016 - simpl4 beim Open-Source-Treffen am 22.01.2016 in München
 
 Hier wird ein Einblick in simpl4 gegeben, und kleine Beispiele gezeigt.
-https://www.opensourcetreffen.de/?file=start
+link:https://www.opensourcetreffen.de/?file=start[https://www.opensourcetreffen.de/?file=start,window="_blank"]
 
 ==== Dezember 2015 - Neue Features in simpl4 
 
@@ -21,8 +21,7 @@ Durch die Auslagerung in Camel ist es viel flexibler, man kann dadurch auf einfa
 ==== November 2015 - Erstes offizielle Release von simpl4 steht zur Verfügung
 
 Seit November 2015 steht das erste offizielle Release der Open-Source-Entwicklungsumgebung simpl4 steht unter der GNU General Public Licence v3 zur Verfügung.
-Weiterlesen unter http://www.heise.de/ix/meldung/simpl4-Neue-Open-Source-Entwicklungsumgebung-mit-geringem-Aufwand-2919699.html
-
+Weiterlesen unter link:http://www.heise.de/ix/meldung/simpl4-Neue-Open-Source-Entwicklungsumgebung-mit-geringem-Aufwand-2919699.html[http://www.heise.de/ix/meldung/simpl4-Neue-Open-Source-Entwicklungsumgebung-mit-geringem-Aufwand-2919699.html,window="_blank"]
 
 Sie haben Fragen, kontaktieren Sie uns unter + 
 EMail: info@simpl4.org +

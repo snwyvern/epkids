@@ -22,7 +22,7 @@ image:web/images/presse.svg[role="related thumb left",width=300]
 All interactions with the system (development and UI) run through the browser. The front end is created with HTML and CSS. Prefabricated HTML elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
 
 === Easy to use development system
-The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, Camel routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
+The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, link:https://en.wikipedia.org/wiki/Apache_Camel[Camel,window="_blank] routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
 
 In practice *_simpl4_* supports the realisation of individual add-ons to databases or CRM systems for example. A process can for instance be created to map the workflows for an employee holiday request. Depending on the required complexity, this can encompass the integration of various hierarchy levels in the company and the inclusion of additional related tasks, such as automatically reducing the remaining holiday time and sending a message to the employee submitting the request.
 
@@ -39,7 +39,7 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
 
 === Delivery of data from any source
-Camel routes are the main processing units in *_simpl4_*. They specify the flow of data from one component to another. Camel also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
+link:https://en.wikipedia.org/wiki/Apache_Camel[Camel routes,window="_blank"]  are the main processing units in *_simpl4_*. They specify the flow of data from one component to another. Camel also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
 
 === Source code information
 ”The complete *_simpl4_* source code is available under the GPL3. This was a conscious decision to encourage the continuous further development of the solution by interested users,” explains Manfred Sattler, developer of *_simpl4_* and CEO of transparent solutions GmbH. Open source is not a short-term marketing strategy for us. It has guided our development efforts for more than 20 years.”
