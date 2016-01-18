@@ -41,7 +41,7 @@ A Camel route corresponds to a procedure that registers on the WAMP router and i
 * Provides routed remote procedure calls (RPC) and PubSub
 * WAMP consists of clients and routers (not be confused with the Camel routes)
 * The procedures are registered on the router
-* *_simpl4_* is WAMP client and router
+* *simpl4* is WAMP client and router
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 
