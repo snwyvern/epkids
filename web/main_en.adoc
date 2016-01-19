@@ -32,7 +32,7 @@ In *simpl4*, data are described in freely configurable classes (for example Comp
 The process is even more easier, when sample data are already available. In this case the data model is derived as part of the data import and the classes are generated. Tables and forms are also created based on the data model, covering numerous common application cases. This makes it possible to create simple database applications quickly – especially compared to conventional methods.
 
 === Processing in the back end
-Processes (workflows) are executed in the Activiti process engine and specified in BPMN2. Activiti can delegate service tasks to Camel.
+Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. Activiti can delegate service tasks to Camel.
 [.right.width500]
 imagezoom::web/presentation/images/bigpicture.svg[]
 

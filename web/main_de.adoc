@@ -29,7 +29,7 @@ Dabei beschreibt *simpl4* Daten in frei konfigurierbaren Klassen (zum Beispiel F
 Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vorhanden sind. Dann wird im Zuge des Datenimport das Datenmodell abgeleitet und die Klassen werden erzeugt. Anhand der Datenmodells werden auch Tabellen und Formulare erstellt und somit viele gängige Anwendungsfälle abgedeckt. Dadurch ist es möglich, einfache Datenbankanwendungen – gerade im Vergleich zu konventionellen Vorgehensweisen – innerhalb kurzer Zeit aufzusetzen.
 
 === Verarbeitung im Backend
-Prozesse (Workflows) werden in der Activiti-Prozessengine ausgeführt und in BPMN2 spezifiziert. Activiti kann Serviceaufgaben an Camel delegieren.
+Prozesse (Workflows) werden in BPMN2 spezifiziert und in der Activiti-Prozessengine ausgeführt. Activiti kann Serviceaufgaben an Camel delegieren.
 [.right.width600]
 imagezoom::web/presentation/images/bigpicture.svg[]
 Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für die Prozesse wird  eine Historie geführt.
