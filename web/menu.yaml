@@ -126,6 +126,7 @@
   - name: tr.menu.company.behind-simpl4
     icon: communication:business
     url: company_%l.adoc
+    disabled: true
     hash: 'company-behind-simpl4'
   - name: tr.services
     icon: build

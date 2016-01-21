@@ -1,0 +1,28 @@
+:linkattrs:
+
+=== Neuigkeiten über und zu simpl4 ===
+
+
+==== January 2016 - simpl4 at the open source meeting on 01.22.2016 in Munich
+
+An insight into simpl4 will be given here and shown small examples will be shown.
+link:https://www.opensourcetreffen.de/?file=start[https://www.opensourcetreffen.de/?file=start,window="_blank"]
+
+==== December 2015 - New Features in simpl4 
+
+* VFS-Camel component
+
+* Docbook-Camel
+Markdown(Asciidoctor) → Pdf
+simpl4-Documents → Pdf was previously controllable only by Activiti, therefor a new Camel component was created.
+By outsourcing in Camel it is much more flexible, because of this, data can be brought into a document in a simple way.
+
+
+==== November 2015 - First official release of simpl4 available
+
+Since November 2015, the first official release of the open source development environment simpl4 is available under GNU General Public Licence v3 available.
+Read more below link:http://www.heise.de/ix/meldung/simpl4-Neue-Open-Source-Entwicklungsumgebung-mit-geringem-Aufwand-2919699.html[http://www.heise.de/ix/meldung/simpl4-Neue-Open-Source-Entwicklungsumgebung-mit-geringem-Aufwand-2919699.html,window="_blank"]
+
+Do you have questions, please contact us on +
+EMail: info@simpl4.org +
+Phone: +49 (0) 9831 8847538
