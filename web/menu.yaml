@@ -3,10 +3,10 @@
   url: web/main_%l.adoc
   hash: '0'
 - name: tr.menu.presentation
-  icon: list
+  icon: speaker-notes
   children:
   - name: tr.menu.presentation.features
-    icon:  description
+    icon:  grade
     url: frontpage.html
     hash: presentation_features
   - name: tr.menu.presentation.mainparts
@@ -14,11 +14,11 @@
     url: web/presentation/mainparts_%l.adoc?t=1
     hash: presentation_mainparts
   - name: tr.menu.presentation.bigpicture
-    icon: image:panorama 
+    icon: av:hd 
     url: web/presentation/bigpicture_%l.adoc
     hash: presentation_bigpicture
   - name: tr.menu.presentation.processing
-    icon: refresh 
+    icon: av:repeat 
     url: web/presentation/processing_%l.adoc
     hash: presentation_processing
   - name: tr.menu.presentation.webclient
@@ -26,7 +26,7 @@
     url: web/presentation/webclient_%l.adoc?t=1
     hash: presentation_webclient
   - name: tr.menu.presentation.usecases
-    icon:  description
+    icon:  device:widgets
     url: web/presentation/usecases_%l.adoc
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
