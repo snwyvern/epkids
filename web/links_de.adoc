@@ -26,4 +26,4 @@ link:https://github.com/simpl4-apps[https://github.com/simpl4-apps,window="_blan
 
 ===== Heise Download =====
 
-<a title="simpl4 - Download - heise online" href="/download/simpl4-1197125.html"><img alt="simpl4 - Download - heise online" title="simpl4 - Download - heise online" src="http://www.heise.de/download/logo97125.png" /></a>
+link:http://www.heise.de/download/simpl4-1197125.html[simpl4 - Download - heise online,window="_blank"]

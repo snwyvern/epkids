@@ -2,6 +2,9 @@
 repo/webdemo/start.html?_escaped_fragment_=0
 repo/webdemo/start.html?lang=de&_escaped_fragment_=0
 
+repo/webdemo/start.html?_escaped_fragment_=presentation_features
+repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_features
+
 repo/webdemo/start.html?_escaped_fragment_=presentation_mainparts
 repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_mainparts
 
@@ -17,3 +20,14 @@ repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_webclient
 repo/webdemo/start.html?_escaped_fragment_=presentation_usecases
 repo/webdemo/start.html?lang=de&_escaped_fragment_=presentation_usecases
 
+repo/webdemo/start.html?_escaped_fragment_=services
+repo/webdemo/start.html?lang=de&_escaped_fragment_=services
+
+repo/webdemo/start.html?_escaped_fragment_=individual-software
+repo/webdemo/start.html?lang=de&_escaped_fragment_=individual-software
+
+repo/webdemo/start.html?_escaped_fragment_=news
+repo/webdemo/start.html?lang=de&_escaped_fragment_=news
+
+repo/webdemo/start.html?_escaped_fragment_=links
+repo/webdemo/start.html?lang=de&_escaped_fragment_=links

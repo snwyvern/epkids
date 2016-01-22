@@ -23,3 +23,7 @@ link:http://web.simpl4.org/download/first_steps.mp4[http://web.simpl4.org/downlo
 ===== Examples =====
 
 link:https://github.com/simpl4-apps[https://github.com/simpl4-apps,window="_blank"]
+
+===== Heise Download =====
+
+link:http://www.heise.de/download/simpl4-1197125.html[simpl4 - Download - heise online,window="_blank"]
