@@ -19,7 +19,7 @@ _It can of course also be programmed(scripted)._
 image:web/images/presse.svg[role="related thumb left",width=300]
 
 *simpl4* is an open source development environment and is licensed under the GNU General Public Licence v3. *simpl4* is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
-All interactions with the system (development and UI) run through the browser. The front end is created with HTML and CSS. Prefabricated HTML elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
+All interactions with the system (development and UI) run through the browser. The front end is created with HTML5 and CSS. Prefabricated HTML5 elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
 
 === Easy to use development system
 The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, link:https://en.wikipedia.org/wiki/Apache_Camel[Camel,window="_blank] routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
@@ -56,7 +56,7 @@ link:https://en.wikipedia.org/wiki/Apache_Camel[Camel routes,window="_blank"]  a
 * link:https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol[Integrated chat server and web-based chat client,window="_blank"]
 * link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[Web Application Messaging Protocol(WAMP),window="_blank"]
 * link:https://de.wikipedia.org/wiki/Business_Process_Model_and_Notation[BPMN 2.0 – Business Process Model and Notation,window="_blank"]
-* Assets such as workflows, forms, filters, rules and so on are held in link:https://de.wikipedia.org/wiki/Git[Git,window="_blank"] and therefore versioned
+* simpl4-application are held in link:https://de.wikipedia.org/wiki/Git[Git,window="_blank"] and therefore versioned
 
 Further information: http://simpl4.org/
 
