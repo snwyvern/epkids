@@ -16,7 +16,8 @@ _It can of course also be programmed(scripted)._
 </div>
 ++++
 
-image:web/images/presse.svg[role="related thumb left",width=300]
+[.left.width800]
+imagezoom::web/images/main_workflow_en.svg[]
 
 *simpl4* is an open source development environment and is licensed under the GNU General Public Licence v3. *simpl4* is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
 All interactions with the system (development and UI) run through the browser. The front end is created with HTML5 and CSS. Prefabricated HTML5 elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
@@ -33,8 +34,7 @@ The process is even more easier, when sample data are already available. In this
 
 === Processing in the back end
 Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. Activiti can delegate service tasks to Camel.
-[.right.width500]
-imagezoom::web/presentation/images/bigpicture.svg[]
+image:web/images/presse.svg[role="related thumb right",width=300]
 
 The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
 
