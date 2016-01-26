@@ -20,7 +20,7 @@ _It can of course also be programmed(scripted)._
 *simpl4* is an open source development environment and is licensed under the GNU General Public Licence v3. *simpl4* is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
 All interactions with the system (development and UI) run through the browser. The front end is created with HTML5 and CSS. Prefabricated HTML5 elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
 
-[.left.width800]
+[.left.width700]
 imagezoom::web/images/main_workflow_en.svg[]
 
 === Easy to use development system
