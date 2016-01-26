@@ -36,7 +36,7 @@ Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem
 
 === Bereitstellung von Daten aus beliebigen Quellen
 link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"]  sind die hauptsächlichen Verarbeitungseinheiten in *simpl4*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt Camel eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
-image:web/images/presse.svg[role="related right",width=300]
+//image:web/images/presse.svg[role="related right",width=300]
 
 === Informationen zum Sourcecode
 „Der vollständige Sourcecode von *simpl4* steht unter der GPL3 zur Verfügung. Wir verstehen dies ganz bewusst auch als Einladung zur kontinuierlichen Weiterentwicklung der Lösung durch interessierte Nutzer“, erklärt Manfred Sattler, Entwickler von *simpl4* und Geschäftsführer der transparent solutions GmbH. „Open Source ist für uns keine kurzfristige Marketingstrategie, sondern bildet seit über 20 Jahren die Leitlinie unserer Entwicklungsarbeit.“
