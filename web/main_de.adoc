@@ -15,11 +15,12 @@ _Es kann natürlich auch programmiert(gescripted) werden._
 </div>
 ++++
 
-[.left.width800]
-imagezoom::web/images/main_workflow.svg[]
 
 *simpl4* ist eine Opensource Entwicklungsumgebung die unter der GNU General Public Licence v3 lizensiert ist. *simpl4* ist als Allround-Lösung ausgelegt. Ziel der Entwickler war es, mit *simpl4* ein Entwicklungssystem  zu schaffen, mit dem sich fachliche Aufgaben mit möglichst geringem technischen Aufwand lösen lassen. Die Möglichkeiten reichen von der Ergänzung und Integration bestehender Softwaresysteme bis hin zu kompletten Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops. 
 Alle Interaktionen mit dem System (Entwicklung und UI) finden über den Browser statt. Das Frontend wird mit HTML5 und CSS erstellt. Durch vorgefertigte HTML5-Elemente (Custom Elements), die mit mit dem Backend kommunizieren, können flexible Webapplikationen erstellt werden.
+
+[.left.width800]
+imagezoom::web/images/main_workflow.svg[]
 
 === Einfach bedienbares Entwicklungssystem
 Im Backend steuert die Prozessengine Activiti gemeinsam mit der Routingengine Apache Camel das Geschehen. Beide Komponenten werden, wie alles andere auch, über grafische Editoren gesteuert. Dadurch ist eine einfache Erstellung von Prozessen, link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"], Datenmodellen, Eingabeformularen usw. möglich. Alle Aspekte des Systems sind aufeinander abgestimmt.
@@ -31,11 +32,11 @@ Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vo
 
 === Verarbeitung im Backend
 Prozesse (Workflows) werden in BPMN2 spezifiziert und in der Activiti-Prozessengine ausgeführt. Activiti kann Serviceaufgaben an Camel delegieren.
-image:web/images/presse.svg[role="related thumb right",width=300]
 Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für die Prozesse wird  eine Historie geführt.
 
 === Bereitstellung von Daten aus beliebigen Quellen
 link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"]  sind die hauptsächlichen Verarbeitungseinheiten in *simpl4*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt Camel eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
+image:web/images/presse.svg[role="related right",width=300]
 
 === Informationen zum Sourcecode
 „Der vollständige Sourcecode von *simpl4* steht unter der GPL3 zur Verfügung. Wir verstehen dies ganz bewusst auch als Einladung zur kontinuierlichen Weiterentwicklung der Lösung durch interessierte Nutzer“, erklärt Manfred Sattler, Entwickler von *simpl4* und Geschäftsführer der transparent solutions GmbH. „Open Source ist für uns keine kurzfristige Marketingstrategie, sondern bildet seit über 20 Jahren die Leitlinie unserer Entwicklungsarbeit.“
