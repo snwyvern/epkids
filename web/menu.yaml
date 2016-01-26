@@ -76,7 +76,7 @@
     hash: calendar
   - name: Asciidoctor
     icon: text-format
-    hash: 6-0
+    hash: calendar
     children:
     - hash: asciidoc1
       name: menu.asciidoctor.testfile
