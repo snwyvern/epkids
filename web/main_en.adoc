@@ -36,7 +36,6 @@ The process is even more easier, when sample data are already available. In this
 //image:web/images/presse.svg[role="related right",width=300]
 === Processing in the back end
 Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. Activiti can delegate service tasks to Camel.
-
 The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
 
 === Delivery of data from any source
