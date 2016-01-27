@@ -1639,22 +1639,22 @@
      transform="translate(-66.305306,-454.42383)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.7925005px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
-       x="240.3856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.79250145px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       x="209.18509"
        y="549.88702"
        id="text3120"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3122"
-         x="240.3856"
+         x="209.18509"
          y="549.88702">Execution</tspan><tspan
          sodipodi:role="line"
-         x="240.3856"
-         y="573.37793"
+         x="209.18509"
+         y="573.37762"
          id="tspan13773">BPMN2</tspan><tspan
          sodipodi:role="line"
-         x="240.3856"
-         y="596.86877"
+         x="209.18509"
+         y="596.86829"
          id="tspan4791">Process</tspan></text>
     <g
        id="g5874"
@@ -1746,7 +1746,7 @@
     </g>
     <g
        id="g4207"
-       transform="matrix(0.93963536,0,0,0.93963536,-314.40423,273.62658)">
+       transform="matrix(0.93963536,0,0,0.93963536,-294.14144,263.01274)">
       <g
          transform="matrix(1.2610193,0,0,1.2610193,593.48566,523.26292)"
          id="layer1-52">
@@ -1904,7 +1904,7 @@
          id="text13761"
          y="600.09979"
          x="583.74683"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.00011193px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.00011158px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="600.09979"
            x="583.74683"
@@ -2026,15 +2026,15 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.68692493px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
-       x="356.63461"
-       y="471.13815"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.68692493px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       x="368.13434"
+       y="473.38959"
        id="text13769"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan13771"
-         x="356.63461"
-         y="471.13815">Tasks</tspan></text>
+         x="368.13434"
+         y="473.38959">Tasks</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.86712354;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
        d="m 424.49745,664.04195 c 32.49042,-0.38242 32.49042,-0.38242 32.49042,-0.38242"
@@ -2779,22 +2779,22 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.75899994px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
-       x="435.87677"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.75899982px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       x="440.06311"
        y="743.41412"
        id="text13765"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan13767"
-         x="435.87677"
+         x="440.06311"
          y="743.41412">Input-Output to other</tspan><tspan
          sodipodi:role="line"
-         x="435.87677"
-         y="755.61292"
+         x="440.06311"
+         y="755.61285"
          id="tspan6268">Systems / Services</tspan><tspan
          sodipodi:role="line"
-         x="435.87677"
-         y="767.81171"
+         x="440.06311"
+         y="767.81165"
          id="tspan4833">with integrated Apache Camel</tspan></text>
     <g
        id="g6232"
@@ -2821,7 +2821,7 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.73459554;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
-       d="m 543.17022,811.77333 c 17.10987,-0.52117 17.10987,-0.52117 17.10987,-0.52117"
+       d="m 540.06686,821.74391 c 17.10987,-0.52117 17.10987,-0.52117 17.10987,-0.52117"
        id="path4286-5-3-8-1"
        inkscape:connector-curvature="0" />
     <image
@@ -2835,12 +2835,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
-       x="70.197182"
+       x="70.167419"
        y="467.70883"
        id="text3053"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         x="70.197182"
+         x="70.167419"
          y="467.70883"
          id="tspan3057">Integrated Editors for</tspan></text>
     <text
@@ -2892,14 +2892,14 @@
        width="81.285027" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none;"
-       x="69.714676"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none"
+       x="70.204651"
        y="487.45554"
        id="text4787"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4789"
-         x="69.714676"
+         x="70.204651"
          y="487.45554">Datamodel</tspan></text>
     <image
        y="727.35193"
@@ -2917,11 +2917,11 @@
        y="568.58978"
        ry="0" />
     <rect
-       style="opacity:0.58699999;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#455a64;stroke-width:0.827;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:19.31999969;stroke-opacity:1"
+       style="opacity:0.58699999;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#455a64;stroke-width:0.82700002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:19.31999969;stroke-opacity:1"
        id="rect5215-8"
        width="80.702179"
        height="61.683495"
-       x="71.158356"
+       x="71.008163"
        y="490.14169"
        ry="0" />
     <image
