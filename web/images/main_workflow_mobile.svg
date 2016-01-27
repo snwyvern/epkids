@@ -1702,8 +1702,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.264446"
-     inkscape:cx="51.226414"
-     inkscape:cy="113.27274"
+     inkscape:cx="163.39513"
+     inkscape:cy="289.91639"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1848,7 +1848,7 @@
          id="text3124"
          y="645.42255"
          x="197.71988"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            y="645.42255"
            x="197.71988"
@@ -2111,7 +2111,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.68749905px;line-height:110.00000238%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.68749952px;line-height:110%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
        x="322.55161"
        y="569.07965"
        id="text13769"
@@ -2419,7 +2419,7 @@
     <g
        style="fill:#000000;fill-opacity:0.00716846"
        id="g8969"
-       transform="matrix(0.1890934,0,0,0.1890934,201.11729,931.89843)">
+       transform="matrix(0.1890934,0,0,0.1890934,171.52948,930.5736)">
       <rect
          ry="21.8214"
          y="42.095516"
@@ -2852,26 +2852,26 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.75899982px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
-       x="113.28792"
-       y="901.31561"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       x="90.765846"
+       y="900.43237"
        id="text13765"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan13767"
-         x="113.28792"
-         y="901.31561">Ein-Ausgang zu anderen</tspan><tspan
+         x="90.765846"
+         y="900.43237">Ein-Ausgang zu anderen</tspan><tspan
          sodipodi:role="line"
-         x="113.28792"
-         y="913.51434"
+         x="90.765846"
+         y="914.49487"
          id="tspan6268">Systemen / Diensten</tspan><tspan
          sodipodi:role="line"
-         x="113.28792"
-         y="925.71313"
+         x="90.765846"
+         y="928.55737"
          id="tspan4833">mit integrierten Apache Camel</tspan></text>
     <g
        id="g6232"
-       transform="matrix(0.93963536,0,0,0.93963536,121.50289,945.53614)">
+       transform="matrix(0.93963536,0,0,0.93963536,91.915079,944.21131)">
       <rect
          id="rect6218"
          height="67.639"
@@ -2881,25 +2881,25 @@
          style="fill:#727272;fill-opacity:0.94117647" />
       <polygon
          id="polygon6220"
-         points="19.002,64.472 21.717,2.941 17.318,2.948 2.272,64.41 "
+         points="21.717,2.941 17.318,2.948 2.272,64.41 19.002,64.472 "
          style="fill:#ffffff" />
       <polygon
          id="polygon6222"
-         points="26.012,64.353 23.313,2.948 27.789,2.928 42.799,64.41 "
+         points="23.313,2.948 27.789,2.928 42.799,64.41 26.012,64.353 "
          style="fill:#ffffff" />
       <polygon
          id="polygon6224"
-         points="7.013,23.753 1.854,23.788 1.81,21.039 42.982,21.039 42.982,23.527 37.856,23.576 37.779,25.336 35.291,25.336 35.239,23.576 9.988,23.646 9.954,25.563 7.088,25.627 "
+         points="1.854,23.788 1.81,21.039 42.982,21.039 42.982,23.527 37.856,23.576 37.779,25.336 35.291,25.336 35.239,23.576 9.988,23.646 9.954,25.563 7.088,25.627 7.013,23.753 "
          style="fill:#ffffff;stroke:#212121;stroke-opacity:1" />
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.70828921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
-       d="m 169.26692,976.45905 c 14.86627,-0.55763 14.86627,-0.55763 14.86627,-0.55763"
+       d="m 139.67911,975.13422 c 14.86627,-0.55763 14.86627,-0.55763 14.86627,-0.55763"
        id="path4286-5-3-8-1"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
        x="71.208069"
        y="467.38721"
        id="text3053"
@@ -3067,7 +3067,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.89944708;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart-55-7);marker-end:url(#Arrow2Mend-5-8)"
-       d="m 261.00663,894.38325 -0.17071,30.42451"
+       d="m 263.21468,894.38325 -0.17071,30.42451"
        id="path4286-5-3-7-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
