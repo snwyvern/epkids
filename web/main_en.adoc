@@ -16,11 +16,13 @@ _It can of course also be programmed(scripted)._
 </div>
 ++++
 
+[.desktop-hidden.imageblock.left.width700]
+imagezoom::web/images/main_workflow.svg[]
 
 *simpl4* is an open source development environment and is licensed under the GNU General Public Licence v3. *simpl4* is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
 All interactions with the system (development and UI) run through the browser. The front end is created with HTML5 and CSS. Prefabricated HTML5 elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
 
-[.imageblock.left.width700]
+[.mobile-hidden.imageblock.left.width700]
 imagezoom::web/images/main_workflow_en.svg[]
 
 === Easy to use development system
@@ -30,10 +32,9 @@ In practice *simpl4* supports the realisation of individual add-ons to databases
 
 === Linking data as desired
 In *simpl4*, data are described in freely configurable classes (for example Company, Activity, Article) with individually definable characteristics (such as Last Name, First Name and so on). These can then be linked as desired.
-
+image:web/images/presse.svg[role="related desktop-hidden",width=350]
 The process is even more easier, when sample data are already available. In this case the data model is derived as part of the data import and the classes are generated. Tables and forms are also created based on the data model, covering numerous common application cases. This makes it possible to create simple database applications quickly – especially compared to conventional methods.
 
-//image:web/images/presse.svg[role="related right",width=300]
 === Processing in the back end
 Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. Activiti can delegate service tasks to Camel.
 The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
