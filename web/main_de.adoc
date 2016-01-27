@@ -41,6 +41,9 @@ link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"]  si
 === Informationen zum Sourcecode
 „Der vollständige Sourcecode von *simpl4* steht unter der GPL3 zur Verfügung. Wir verstehen dies ganz bewusst auch als Einladung zur kontinuierlichen Weiterentwicklung der Lösung durch interessierte Nutzer“, erklärt Manfred Sattler, Entwickler von *simpl4* und Geschäftsführer der transparent solutions GmbH. „Open Source ist für uns keine kurzfristige Marketingstrategie, sondern bildet seit über 20 Jahren die Leitlinie unserer Entwicklungsarbeit.“
 
+++++
+<div style="clear:both;"/>
+++++
 === Eckdaten im Überblick:
 
 * Primäre Programmiersprachen: Java (Backend) und JavaScript (Frontend)
