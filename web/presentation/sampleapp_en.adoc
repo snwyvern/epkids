@@ -23,7 +23,7 @@ Therefore the used Forms are designed as web pages.
 
 --
 [.width1000]
-imagezoom::web/images/simpldate_overview.svg[]
+imagezoom::web/images/simpldate_overview.svg[border]
 --
 
 === RPC ===

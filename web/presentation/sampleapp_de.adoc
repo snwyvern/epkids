@@ -21,8 +21,10 @@ Therefore the used Forms are designed as web pages.
 * InitiateForm(initiate.form) starts the process.
 * The voting page communicates with the process via rpc (final a message is sent to the  process)
 
+--
 [.width1000]
-imagezoom::web/images/simpldate_overview.svg[]
+imagezoom::web/images/simpldate_overview.svg[border]
+--
 
 === RPC ===
 
