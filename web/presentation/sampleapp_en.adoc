@@ -22,7 +22,7 @@ Therefore the used Forms are designed as web pages.
 * The voting page communicates with the process via rpc (final a message is sent to the  process)
 
 --
-[.width800]
+[.width1000]
 imagezoom::web/images/simpldate_overview.svg[]
 --
 
@@ -37,10 +37,8 @@ The Camel component "workflow" implements the  RPC-Interface.
 * Messageevents are sent to the processs.
 * Read variables(state) from the process.
 
---
-[role=border]
-image::http://simpldate.ms123.org/repo/simpldate/web/images/camel.svg[align="center"]
---
+[.width600]
+imagezoom::web/images/camel.svg[]
 
 === WEB ===
 
