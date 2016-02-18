@@ -8,7 +8,7 @@
 ==== The main aspects ====
 
 * Process (with sub-process,message events and mail service task)
-* Camel (implementing a rpc interface, showing how camel and activiti playing together)
+* Camel (implementing an rpc interface, showing how camel and activiti playing together)
 * Form (embed in website)
 * Webapp (Basic staffolding, a customized form)
 
