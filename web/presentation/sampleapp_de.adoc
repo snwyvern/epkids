@@ -1,0 +1,47 @@
+:linkattrs:
+
+==== simpldate(schedule meetings) ====
+
+=== Overview ===
+
+
+==== The main aspects ====
+
+* Process (with sub-process,message events and mail service task)
+* Camel (creating a rpc api, showing how camel and activiti playing together)
+* Form (embed in website)
+* Webapp (Basic staffolding)
+
+
+Main character: In this process, no usertasks will be used.
+That's not possible, because an unknown number of participants are involved,
+which also no users in simpl4 are.
+Therefore the used Forms are designed as web pages.
+
+* InitiateForm(initiate.form) starts the process.
+* The voting page communicates with the process via rpc (final a message is sent to the  process)
+
+[.width1000]
+imagezoom::web/images/simpldate_overview.svg[]
+
+=== RPC ===
+
+
+The application requires four rpc`s to interact with the process at the moment.
+The fourth, finish the  process is not ready.
+The Camel component "workflow" implements the  RPC-Interface.
+
+* Starts the process.
+* Messageevents are sent to the processs.
+* Read variables(state) from the process.
+
+[.width600]
+imagezoom::web/images/camel.svg[]
+
+=== WEB ===
+
+The web pages are implemented as  html5 customelements.
+
+* simpldate-initiate
+* simpldate-vote
+

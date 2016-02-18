@@ -207,6 +207,10 @@
         "msgid": "tr.menu.presentation.features"
     },
     {
+        "msgstr": "Beispiel Anwendung",
+        "msgid": "tr.menu.presentation.sampleapp"
+    },
+    {
         "msgstr": "Webclient",
         "msgid": "tr.menu.presentation.webclient"
     },

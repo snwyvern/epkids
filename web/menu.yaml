@@ -21,6 +21,10 @@
     icon: av:repeat 
     url: web/presentation/processing_%l.adoc
     hash: presentation_processing
+  - name: tr.menu.presentation.sampleapp
+    icon: event
+    url: web/presentation/sampleapp_%l.adoc?t=1
+    hash: presentation_sampleapp
   - name: tr.menu.presentation.webclient
     icon: language
     url: web/presentation/webclient_%l.adoc?t=1
