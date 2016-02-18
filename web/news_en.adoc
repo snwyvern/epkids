@@ -1,7 +1,15 @@
 :linkattrs:
 
-=== Neuigkeiten über und zu simpl4 ===
+=== New about and to simpl4 ===
 
+==== February 2016 - Tell us and others your issues
+
+We have for you an link:http://simpl4-redmine.ms123.org/projects/simpl4-public?file=start[issue tracking system,window="_blank"] set up to simpl4, so you can now record your suggestions, questions and more.
+
+==== February 2016 - simpl4 at Chemnitzer days 19-20. March 2016
+
+We will be giving a link:https://chemnitzer.linux-tage.de/2016/de/programm/beitrag/372/?file=start[presentation,window="_blank"] and a link:https://chemnitzer.linux-tage.de/2016/de/programm/beitrag/373/?file=start[workshop,window="_blank"] on simpl4.
+Further information on site are available at our booth.
 
 ==== January 2016 - simpl4 at the open source meeting on 01.22.2016 in Munich
 

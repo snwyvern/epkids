@@ -2,6 +2,16 @@
 
 === Neuigkeiten über und zu simpl4 ===
 
+==== Februar 2016 - Teilen Sie uns und anderen Ihre Fragen mit
+
+Wir haben für Sie ein link:http://simpl4-redmine.ms123.org/projects/simpl4-public?file=start[Issue- Tracking-System,window="_blank"] zu simpl4 einrichtet. Registrieren Sie sich, und erfassen Sie Ihre Anregungen, Fragen und mehr.
+
+
+==== Februar 2016 - simpl4 bei den Chemnitzer Linuxtagen am 19./20. März 2016
+
+Wir werden mit einem link:https://chemnitzer.linux-tage.de/2016/de/programm/beitrag/372/?file=start[Vortrag,window="_blank"] und einem link:https://chemnitzer.linux-tage.de/2016/de/programm/beitrag/373/?file=start[Workshop,window="_blank"] zu simpl4 vertreten sein.
+Weitere Informationen vor Ort erhalten Sie an unserem Stand.
+
 
 ==== Januar 2016 - simpl4 beim Open-Source-Treffen am 22.01.2016 in München
 
