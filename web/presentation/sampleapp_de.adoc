@@ -13,6 +13,7 @@
 * Webapp (Basic staffolding, a customized form)
 
 
+[NOTE]
 Main character: In this process, no usertasks will be used. +
 That's not possible, because an unknown number of participants are involved, +
 which also no users in simpl4 are. +
