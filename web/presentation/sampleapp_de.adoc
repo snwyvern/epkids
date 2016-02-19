@@ -15,8 +15,7 @@
 
 [TIP]
 In this process, no usertasks will be used. +
-That's not possible, because an unknown number of participants are involved, +
-which are also no users in simpl4. +
+That's not possible, because an unknown number of participants are involved, which are also no users in simpl4. +
 Therefore the used Forms are designed as web pages and sent to the process via RPC.
 
 * InitiateForm(initiate.form) starts the process.
