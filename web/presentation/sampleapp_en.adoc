@@ -13,14 +13,14 @@
 * Webapp (Basic staffolding, a customized form)
 
 
-[NOTE]
-Main character: In this process, no usertasks will be used. +
+[TIP]
+In this process, no usertasks will be used. +
 That's not possible, because an unknown number of participants are involved, +
 which are also no users in simpl4. +
-Therefore the used Forms are designed as web pages.
+Therefore the used Forms are designed as web pages and sent to the process via RPC.
 
 * InitiateForm(initiate.form) starts the process.
-* The voting page communicates with the process via rpc (final a message is sent to the  process)
+* The voting page communicates with the process via rpc (at last a message is sent to the  process)
 
 --
 [.width1000]
