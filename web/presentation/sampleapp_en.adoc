@@ -16,7 +16,7 @@
 [NOTE]
 Main character: In this process, no usertasks will be used. +
 That's not possible, because an unknown number of participants are involved, +
-which also no users in simpl4 are. +
+which are also no users in simpl4. +
 Therefore the used Forms are designed as web pages.
 
 * InitiateForm(initiate.form) starts the process.
