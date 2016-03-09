@@ -9,10 +9,6 @@
     icon:  grade
     url: frontpage.html
     hash: presentation_features
-  - name: tr.menu.presentation.mainparts
-    icon: image:filter-3
-    url: web/presentation/mainparts_%l.adoc?t=1
-    hash: presentation_mainparts
   - name: tr.menu.presentation.bigpicture
     icon: av:hd 
     url: web/presentation/bigpicture_%l.adoc
@@ -29,6 +25,10 @@
     icon: language
     url: web/presentation/webclient_%l.adoc?t=1
     hash: presentation_webclient
+  - name: tr.menu.presentation.mainparts
+    icon: image:filter-3
+    url: web/presentation/mainparts_%l.adoc?t=1
+    hash: presentation_mainparts
   - name: tr.menu.presentation.usecases
     icon:  device:widgets
     url: web/presentation/usecases_%l.adoc

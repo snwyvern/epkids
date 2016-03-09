@@ -4,18 +4,6 @@
 
 == Technical overview ==
 
-=== Standalone server ===
-
-[.width600]
-imagezoom::web/presentation/images/server_en.svg[]
-
-=== Servlet engine ===
-
-The simpl4 backend can be deployed as a WAR in a servlet engine.
-
-[.width600]
-imagezoom::web/presentation/images/servlet-engine_en.svg[]
-
 
 === simpl4 backend, the main ingredients ===
 
@@ -44,4 +32,16 @@ A Camel route corresponds to a procedure that registers on the WAMP router and i
 * *simpl4* is WAMP client and router
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
+
+=== Standalone server ===
+
+[.width600]
+imagezoom::web/presentation/images/server_en.svg[]
+
+=== Servlet engine ===
+
+The simpl4 backend can be deployed as a WAR in a servlet engine.
+
+[.width600]
+imagezoom::web/presentation/images/servlet-engine_en.svg[]
 
