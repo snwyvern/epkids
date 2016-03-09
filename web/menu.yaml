@@ -5,14 +5,14 @@
 - name: tr.menu.presentation
   icon: speaker-notes
   children:
-  - name: tr.menu.presentation.features
-    icon:  grade
-    url: frontpage.html
-    hash: presentation_features
   - name: tr.menu.presentation.bigpicture
     icon: av:hd 
     url: web/presentation/bigpicture_%l.adoc
     hash: presentation_bigpicture
+  - name: tr.menu.presentation.features
+    icon:  grade
+    url: frontpage.html
+    hash: presentation_features
   - name: tr.menu.presentation.processing
     icon: av:repeat 
     url: web/presentation/processing_%l.adoc
