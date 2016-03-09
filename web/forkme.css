@@ -94,7 +94,12 @@
   right: 0;
 }
 
+.github-fork-ribbon > a.style-scope.simpl-main.asciidoctor-default{
+	color:white !important;
+}
+
 .github-fork-ribbon-wrapper.right .github-fork-ribbon {
+	background:#455A64;
   top: 42px;
   right: -43px;
 

@@ -4,6 +4,8 @@
 
 == Die etwas andere Entwicklungsumgebung
 
+image::web/images/header.jpg[width="100%"]
+
 === Verknüpfen sie Komponenten auf elegante Weise miteinander.
 _Es kann natürlich auch programmiert(gescripted) werden._
 

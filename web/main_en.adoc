@@ -5,6 +5,8 @@
 
 == The somewhat different development environment
 
+image::web/images/header.jpg[width="100%"]
+
 === Link components together in an elegant way
 _It can of course also be programmed(scripted)._
 
