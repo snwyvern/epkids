@@ -19,7 +19,7 @@ _It can of course also be programmed(scripted)._
 ++++
 
 [.desktop-hidden.imageblock.left.width700]
-imagezoom::web/images/main_workflow_mobile_en.svg[]
+imagezoom::web/images/main_workflow_mobile_en.svg[min-height:700]
 
 *simpl4* is an open source development environment and is licensed under the GNU General Public Licence v3. *simpl4* is designed as an all-round solution. With *simpl4*, the developers created a development system that makes it possible to accomplish functional tasks with minimal technical effort. The possibilities range from extending and integrating existing software systems to complete applications with an HTML5 front end for smart phones, tablets and desktops.
 All interactions with the system (development and UI) run through the browser. The front end is created with HTML5 and CSS. Prefabricated HTML5 elements (custom elements) that communicate with the back end makes it possible to create flexible web applications.
@@ -28,7 +28,7 @@ All interactions with the system (development and UI) run through the browser. T
 imagezoom::web/images/main_workflow_en.svg[]
 
 === Easy to use development system
-The Activiti process engine and Apache Camel routing engine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, link:https://en.wikipedia.org/wiki/Apache_Camel[Camel,window="_blank] routes, data models, input forms and more is easily possible. All aspects of the system are coordinated.
+The processengine and the integrationengine control what happens in the back end. Both components are managed with graphical editors just like everything else. Creating processes, integrationrules, data models, input forms and more is easily possible. All aspects of the system are coordinated.
 
 In practice *simpl4* supports the realisation of individual add-ons to databases or CRM systems for example. A process can for instance be created to map the workflows for an employee holiday request. Depending on the required complexity, this can encompass the integration of various hierarchy levels in the company and the inclusion of additional related tasks, such as automatically reducing the remaining holiday time and sending a message to the employee submitting the request.
 
@@ -38,11 +38,11 @@ image:web/images/presse.svg[role="related desktop-hidden",width=350]
 The process is even more easier, when sample data are already available. In this case the data model is derived as part of the data import and the classes are generated. Tables and forms are also created based on the data model, covering numerous common application cases. This makes it possible to create simple database applications quickly – especially compared to conventional methods.
 
 === Processing in the back end
-Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. Activiti can delegate service tasks to Camel.
-The process engine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
+Processes (workflows) are specified in BPMN2 and executed in the Activiti process engine. The processengine can delegate service tasks to the integrationengine.
+The processengine makes it possible to view the current state of processes at any time – even with processes that run for weeks or more. A history is maintained for the processes.
 
 === Delivery of data from any source
-link:https://en.wikipedia.org/wiki/Apache_Camel[Camel routes,window="_blank"]  are the main processing units in *simpl4*. They specify the flow of data from one component to another. Camel also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
+Integration- and mediationrules are the main processing units in *simpl4*. They specify the flow of data from one component to another. The integrationengine also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
 
 === Source code information
 ”The complete *simpl4* source code is available under the GPL3. This was a conscious decision to encourage the continuous further development of the solution by interested users,” explains Manfred Sattler, developer of *simpl4* and CEO of transparent solutions GmbH. Open source is not a short-term marketing strategy for us. It has guided our development efforts for more than 20 years.”
@@ -56,7 +56,7 @@ link:https://en.wikipedia.org/wiki/Apache_Camel[Camel routes,window="_blank"]  a
 * Installation: link:https://de.wikipedia.org/wiki/OSGi[OSGI environment,window="_blank"], either as a standalone server or as WAR in a servlet engine
 * link:https://en.wikipedia.org/wiki/HTML5[Front end programming: HTML5,window="_blank"] / link:https://en.wikipedia.org/wiki/Google_Polymer[Material Design with Polymer,window="_blank"]
 * link:https://en.wikipedia.org/wiki/Activiti[Workflows: activity process engine,window="_blank"]
-* link:https://en.wikipedia.org/wiki/Apache_Camel[Rule-based routing: Apache Camel,wiki="_blank"]
+* link:https://en.wikipedia.org/wiki/Apache_Camel[Rule-based integration and mediation: Apache Camel,wiki="_blank"]
 * link:https://en.wikipedia.org/wiki/Qooxdoo[Development environment: qooxdoo (JavaScript),window="_blank"]
 * link:https://en.wikipedia.org/wiki/DataNucleus[Data access: DataNucleus, window="_blank"]
 * link:https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol[Integrated chat server and web-based chat client,window="_blank"]

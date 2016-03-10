@@ -1147,16 +1147,6 @@
        y2="533.0849" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2991"
-       id="linearGradient5083"
-       gradientUnits="userSpaceOnUse"
-       x1="558.78833"
-       y1="533.0849"
-       x2="649.20715"
-       y2="533.0849"
-       gradientTransform="matrix(0.82030167,0,0,0.82030167,36.340876,487.67113)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient5059"
        id="linearGradient5085"
        gradientUnits="userSpaceOnUse"
@@ -1164,16 +1154,6 @@
        y1="533.0849"
        x2="649.20715"
        y2="533.0849" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2991"
-       id="linearGradient4398-8"
-       gradientUnits="userSpaceOnUse"
-       x1="562.91534"
-       y1="80.457932"
-       x2="653.33411"
-       y2="80.457932"
-       gradientTransform="matrix(0.82030167,0,0,0.82030167,-3.6401343,489.94607)" />
     <linearGradient
        y2="520.33002"
        x2="327.78"
@@ -1267,17 +1247,6 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2991"
-       id="linearGradient5645"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(7.7501287,518.69342)"
-       x1="562.91534"
-       y1="80.457932"
-       x2="653.33411"
-       y2="80.457932"
-       spreadMethod="pad" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient4156-3-3"
        id="linearGradient5751"
        gradientUnits="userSpaceOnUse"
@@ -1285,16 +1254,6 @@
        y1="533.0849"
        x2="649.20715"
        y2="533.0849" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2991"
-       id="linearGradient5816"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.873,0,0,0.873,104.8596,517.8694)"
-       x1="562.91534"
-       y1="80.457932"
-       x2="653.33411"
-       y2="80.457932" />
     <linearGradient
        x1="18.729"
        x2="18.729"
@@ -1485,16 +1444,6 @@
        xlink:href="#linearGradient4156-3-3"
        id="linearGradient6047"
        gradientUnits="userSpaceOnUse"
-       x1="558.78833"
-       y1="533.0849"
-       x2="649.20715"
-       y2="533.0849" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2991"
-       id="linearGradient6079"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.82030167,0,0,0.82030167,58.508577,490.74972)"
        x1="558.78833"
        y1="533.0849"
        x2="649.20715"
@@ -1702,8 +1651,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.264446"
-     inkscape:cx="51.226414"
-     inkscape:cy="201.59456"
+     inkscape:cx="163.39513"
+     inkscape:cy="236.92329"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2037,13 +1986,13 @@
       <g
          id="g5181">
         <rect
-           style="fill:url(#linearGradient6079);fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:1.64060342;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#455a64;stroke-width:1.64060342;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect3395-9"
            width="72.530075"
            height="70.112404"
            x="521.08923"
            y="521.6933"
-           ry="16.923685" />
+           ry="2.7922144" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none"
@@ -2127,13 +2076,13 @@
          id="g5803"
          transform="translate(-168.50655,307.32031)">
         <rect
-           style="fill:url(#linearGradient5816);fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:1.74600005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#455a64;stroke-width:1.74600005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect3395"
            width="77.189598"
            height="74.616608"
            x="597.15771"
            y="550.8009"
-           ry="18.010906" />
+           ry="2.5016103" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.34895039px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
@@ -2237,13 +2186,13 @@
       <g
          id="g5125">
         <rect
-           ry="16.923685"
+           ry="4.1170416"
            y="518.61469"
            x="498.92154"
            height="70.112404"
            width="72.530075"
            id="rect3395-8"
-           style="fill:url(#linearGradient5083);fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:1.6406033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#455a64;stroke-width:1.6406033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none"
@@ -2314,13 +2263,13 @@
           <g
              id="g5013">
             <rect
-               style="fill:url(#linearGradient4398-8);fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:1.6406033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#455a64;stroke-width:1.6406033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                id="rect3395-4"
                width="72.530075"
                height="70.112404"
                x="458.94058"
                y="520.88965"
-               ry="16.923685" />
+               ry="3.6754324" />
           </g>
         </g>
       </g>
@@ -2389,13 +2338,13 @@
          transform="translate(59.443386,49.487272)"
          id="g4385-7">
         <rect
-           style="fill:url(#linearGradient5645);fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#455a64;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect3395-1"
            width="88.418785"
            height="85.471489"
            x="571.66547"
            y="556.41559"
-           ry="20.63105" />
+           ry="2.865504" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.71446705px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none"
@@ -3349,7 +3298,7 @@
          id="tspan4833-1"
          y="925.46539"
          x="96.012741"
-         sodipodi:role="line">with integrated Apache Camel</tspan></text>
+         sodipodi:role="line">with the integrationengine</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#455a64;fill-opacity:1;stroke:none;"
@@ -3371,7 +3320,7 @@
          sodipodi:role="line"
          id="tspan5969"
          x="71.177025"
-         y="723.88751">Camel routes</tspan></text>
+         y="723.88751">Integrationrules</tspan></text>
     <image
        y="811.85754"
        x="71.67804"

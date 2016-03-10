@@ -27,7 +27,7 @@ Alle Interaktionen mit dem System (Entwicklung und UI) finden über den Browser 
 imagezoom::web/images/main_workflow.svg[]
 
 === Einfach bedienbares Entwicklungssystem
-Im Backend steuert die Prozessengine Activiti gemeinsam mit der Routingengine Apache Camel das Geschehen. Beide Komponenten werden, wie alles andere auch, über grafische Editoren gesteuert. Dadurch ist eine einfache Erstellung von Prozessen, link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"], Datenmodellen, Eingabeformularen usw. möglich. Alle Aspekte des Systems sind aufeinander abgestimmt.
+Im Backend steuert die Processengine gemeinsam mit der Integrationengine das Geschehen. Beide Komponenten werden, wie alles andere auch, über grafische Editoren gesteuert. Dadurch ist eine einfache Erstellung von Prozessen, Integrationsregeln, Datenmodellen, Eingabeformularen usw. möglich. Alle Aspekte des Systems sind aufeinander abgestimmt.
 Realisierbar sind mit *simpl4* in der Praxis zum Beispiel individuelle Ergänzungen zu vorhandenen Datenbanken oder CRM-Systemen. So lässt sich beispielsweise ein Prozess aufsetzen, der die Arbeitsabläufe bei der Urlaubsanfrage eines Mitarbeiters abbildet – je nach geforderter Komplexität inklusive der Einbindung verschiedener Hierarchiestufen im Unternehmen und mit Einbeziehung weiterer damit verbundener Aufgaben, etwa der automatischen Reduzierung des Resturlaubs und einer Mitteilung an den anfragenden Mitarbeiter.
 
 === Daten auf beliebige Weise verknüpfen
@@ -36,11 +36,11 @@ image:web/images/presse.svg[role="related desktop-hidden",width=350]
 Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vorhanden sind. Dann wird im Zuge des Datenimport das Datenmodell abgeleitet und die Klassen werden erzeugt. Anhand der Datenmodells werden auch Tabellen und Formulare erstellt und somit viele gängige Anwendungsfälle abgedeckt. Dadurch ist es möglich, einfache Datenbankanwendungen – gerade im Vergleich zu konventionellen Vorgehensweisen – innerhalb kurzer Zeit aufzusetzen.
 
 === Verarbeitung im Backend
-Prozesse (Workflows) werden in BPMN2 spezifiziert und in der Activiti-Prozessengine ausgeführt. Activiti kann Serviceaufgaben an Camel delegieren.
+Prozesse (Workflows) werden in BPMN2 spezifiziert und in der Activiti-Prozessengine ausgeführt. Activiti kann Serviceaufgaben an die Integrationengine delegieren.
 Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für die Prozesse wird  eine Historie geführt.
 
 === Bereitstellung von Daten aus beliebigen Quellen
-link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"]  sind die hauptsächlichen Verarbeitungseinheiten in *simpl4*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt Camel eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
+Integrations- und Vermittlungsregeln  sind die hauptsächlichen Verarbeitungseinheiten in *simpl4*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt die Integrationengine eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
 
 === Informationen zum Sourcecode
 „Der vollständige Sourcecode von *simpl4* steht unter der GPL3 zur Verfügung. Wir verstehen dies ganz bewusst auch als Einladung zur kontinuierlichen Weiterentwicklung der Lösung durch interessierte Nutzer“, erklärt Manfred Sattler, Entwickler von *simpl4* und Geschäftsführer der transparent solutions GmbH. „Open Source ist für uns keine kurzfristige Marketingstrategie, sondern bildet seit über 20 Jahren die Leitlinie unserer Entwicklungsarbeit.“
@@ -53,8 +53,8 @@ link:https://de.wikipedia.org/wiki/Apache_Camel[Camelrouten,window="_blank"]  si
 * Primäre Programmiersprachen: Java (Backend) und JavaScript (Frontend)
 * Installation: link:https://de.wikipedia.org/wiki/OSGi[OSGI-Umgebung,window="_blank"]  wahlweise als Standalone-Server oder als WAR in einer Servlet-Engine
 * link:https://de.wikipedia.org/wiki/HTML5[Frontend-Programmierung: HTML5,window="_blank"] / link:https://en.wikipedia.org/wiki/Google_Polymer[Material Design mit Polymer, window="_blank"]
-* link:https://de.wikipedia.org/wiki/Activiti[Workflows: Prozessengine Activiti,window=_blank"]
-* link:https://de.wikipedia.org/wiki/Apache_Camel[Regelbasiertes Routing: Apache Camel,window="_blank"]
+* link:https://de.wikipedia.org/wiki/Activiti[Prozesse: Prozessengine Activiti,window=_blank"]
+* link:https://de.wikipedia.org/wiki/Apache_Camel[Regelbasierte Integration und Vermittlung: Apache Camel,window="_blank"]
 * link:https://de.wikipedia.org/wiki/Qooxdoo[Entwicklungsumgebung: qooxdoo (Javascript), window="_blank"]
 * link:https://de.wikipedia.org/wiki/DataNucleus[Datenzugriff: DataNucleus, window="_blank"]
 * link:https://en.wikipedia.org/wiki/XMPP[Integrierter Chat-Server und webbasierter Chat-Client,window="_blank"]

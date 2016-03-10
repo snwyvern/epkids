@@ -7,7 +7,7 @@
 
 === simpl4 backend, the main ingredients ===
 
-[.width600]
+[.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Apache Camel *Routing and conversion engine* ===
@@ -35,13 +35,13 @@ Incidentally, in this way is browser-browser communication possible!
 
 === Standalone server ===
 
-[.width600]
+[.width700]
 imagezoom::web/presentation/images/server_en.svg[]
 
 === Servlet engine ===
 
 The simpl4 backend can be deployed as a WAR in a servlet engine.
 
-[.width600]
+[.width700]
 imagezoom::web/presentation/images/servlet-engine_en.svg[]
 
