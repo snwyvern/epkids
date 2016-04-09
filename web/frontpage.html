@@ -12,12 +12,12 @@
           <div class="grid row">
             <div class="xol-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
-                <simpl-import url="{{getFileName('block4')}}"></simpl-import>
+                <simpl-import url="{{getFileName('benefit')}}"></simpl-import>
               </paper-material>
             </div>
             <div class="xol-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
-                <simpl-import url="[[getFileName('block3')]]"></simpl-import>
+                <simpl-import url="[[getFileName('overview')]]"></simpl-import>
               </paper-material>
             </div>
 
@@ -44,22 +44,6 @@
           var lang = Simpl4.Cache.getItem( "lang" );
           console.log( "lang", lang );
           return name + "_" + lang + ".adoc";
-        },
-        getData: function() {
-          return {
-            path: 'web/images/front5.svg',
-						repo:simpl4.util.BaseManager.getNamespace(),
-            colors: {
-							headline: tr("tr.overwiew"),
-              color1: '#909090',
-              color2: '#909090',
-              color3: 'blue'
-            }
-          }
-        },
-        getHref: function( name ) {
-          var lang = Simpl4.Cache.getItem( "lang" );
-          return "http://simpl4.org?lang=" + lang;
         }
       } );
 

@@ -7,7 +7,7 @@
 
 === simpl4 backend, die wichtigsten Bestandteile ===
 
-[.width4000]
+[.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Apache Camel *Routing und Konvertierungs Engine* ===
