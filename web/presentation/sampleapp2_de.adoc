@@ -24,7 +24,7 @@ Deswegen wurden die verwendeten Forms als Webseiten realisiert, und dem Prozess 
 
 --
 [.width4000]
-imagezoom::web/images/simpldate_overview.svg[border]
+imagezoom::web/images/gesoverview.svg[border]
 --
 
 === RPC ===

@@ -1,0 +1,16 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Ihre Vorteile ===
+
+* Sie sind von Anfang an in die Entwicklung eingebunden.
+* Alle Projektbeteiligen sprechen die gleiche Sprache
+* gegebenenfalls übernehmen  sie  die Weiterentwicklung
+* durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden
+* Keine Kostenfalle
+* flexible Anpassbarkeit an neue Anforderungen
+* durch visuelle Programmierung entsteht Dokumentation automatisch
+* Schnelle Entwicklungzyklen
+
+[.desktop-xidden.imageblock.left.width600]
+image::web/images/identity.jpg[]
+

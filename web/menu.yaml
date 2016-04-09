@@ -1,5 +1,10 @@
 - name: Home
   icon: home
+  url: frontpage.html
+  hash: '0'
+- name: Home
+  icon: home
+  disabled: true
   url: web/main_%l.adoc
   hash: '0'
 - name: tr.menu.presentation
@@ -11,7 +16,7 @@
     hash: presentation_bigpicture
   - name: tr.menu.presentation.features
     icon:  grade
-    url: frontpage.html
+    url: features.html
     hash: presentation_features
   - name: tr.menu.presentation.processing
     icon: av:repeat 
@@ -21,6 +26,10 @@
     icon: event
     url: web/presentation/sampleapp_%l.adoc?t=1
     hash: presentation_sampleapp
+  - name: tr.menu.presentation.sampleapp2
+    icon: event
+    url: web/presentation/sampleapp2_%l.adoc?t=1
+    hash: presentation_sampleapp2
   - name: tr.menu.presentation.webclient
     icon: language
     url: web/presentation/webclient_%l.adoc?t=1

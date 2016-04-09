@@ -23,7 +23,7 @@ Therefore the used Forms are designed as web pages and sent to the process via R
 
 --
 [.width4000]
-imagezoom::web/images/simpldate_overview.svg[border]
+imagezoom::web/presentation/images/gesoverview.svg[border]
 --
 
 === RPC ===

@@ -1,0 +1,13 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Block2 ===
+
+
+* Open-Source- Entwicklungsumgebung
+* Minimales Projekt-Setup
+* Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops
+* Integration bestehender Softwaresysteme
+* Vorgefertigte HTML5-Elemente (Custom Elements) kommunizieren mit dem Backend
+* Entwicklung im Browser
+* Cloud-ready
+

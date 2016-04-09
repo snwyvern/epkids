@@ -1,0 +1,16 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] BPMN ===
+
+
+* Durch die Verwendung von BPMN 2.0 und deren direkt Ausführung sind Programmierung und Dokumentation quasi Eins
+* Abläufe sind visualisiert, und dadurch für alle Beteiligten einfach verständlich
+* Fachanwender und die IT (Programmierer) sprechen die selbe Sprache, dadurch
+nahezu nahtloser Übergang von der Theorie in die Praxis
+* Zeitersparnis, da es unter den Beteiligten von Anfang an zu weniger Mißverständnissen kommt
+* Dem fachlichem Know-How entsprechend, kann in der Modellierung auf verschiedene Ebenen abstrahiert werden (meine damit z.B. Sub-Tasks wie z.B "Artikel versenden" wo dann darunter die ganzen Buchungen etc. stattfinden) )
+* simpl4 bietet diverseste Anbindungsmöglickeiten an bereits vorhanden Lösungen
+* simpl4 ist Open Source, man erhält automatisch immer auch den Quellcode
+
+[.desktop-xidden.imageblock.left.width400]
+imagezoom::web/images/features.svg[]
