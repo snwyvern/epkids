@@ -11,5 +11,7 @@ but also for other things that needs a backend.
 . Basic web application for mobile and desktop. +
 Base for your own developments.
 
-[.border.left.thumb]
-image::web/presentation/images/front.svg[width=100%]
+[.desktop-hidden.imageblock.left.width700]
+imagezoom::web/images/main_workflow_mobile_en.svg[min-height:700]
+[.mobile-hidden.imageblock.left.width700]
+imagezoom::web/images/main_workflow_en.svg[]

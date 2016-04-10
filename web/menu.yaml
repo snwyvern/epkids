@@ -28,6 +28,7 @@
     hash: presentation_sampleapp
   - name: tr.menu.presentation.sampleapp2
     icon: event
+    disabled: true
     url: web/presentation/sampleapp2_%l.adoc?t=1
     hash: presentation_sampleapp2
   - name: tr.menu.presentation.webclient

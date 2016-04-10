@@ -13,5 +13,9 @@
 	Grundlage für eigene Entwicklungen.
 
 
-[.border.left.thumb]
-image::web/presentation/images/front.svg[width=100%]
+[.desktop-hidden.imageblock.left.width700]
+imagezoom::web/images/main_workflow_mobile.svg[]
+
+[.mobile-hidden.imageblock.left.width700]
+imagezoom::web/images/main_workflow.svg[]
+

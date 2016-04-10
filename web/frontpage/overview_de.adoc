@@ -3,17 +3,18 @@
 === icon:bars[size=1x,role=black] Übersicht ===
 
 * Open-Source- Entwicklungsumgebung
-* Minimales Projekt-Setup
+* alle Komponenten sind aufeinander abgestimmt
 * Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops
 * Integration bestehender Softwaresysteme
 * Vorgefertigte HTML5-Elemente (Custom Elements) kommunizieren mit dem Backend
 * Entwicklung im Browser
+* Minimales Projekt-Setup
 * Cloud-ready
 
 * BPMN 2.0 – Business Process Model and Notation
 * Process-Engine
 * Regelbasierte Integration-Engine
-* Web Application Messaging Protocol (WAMP, Web- socket Subprotokoll)
+* Web Application Messaging Protocol (WAMP, Websocket Subprotokoll)
 * Git-basierter simpl4-Application-Store
 
 [.desktop-xidden.imageblock.left.width500]
