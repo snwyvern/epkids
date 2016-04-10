@@ -2,19 +2,26 @@
 
 === icon:cloud[size=1x,role="white"] Backend Services ===
 
-//image::server.svg[align="center",width=25%]
+[CI, header="Data"]
+-
+[CI, header="Processes"]
+-
+[CI, header="User"]
+-
+[CI, header="Documents"]
+-
+[CI, header="Accesscontrol"]
+-
+[CI, header="i18n"]
+-
+[CI, header="Integration"]
+-
+[CI, header="Typesave/SQL"]
+-
+[CI, header="ActiveMQ"]
+-
+[CI, header="WAMP"]
+-
+[CI, header="CHAT"]
 
-* link:local:accounts[Data]
-* link:local:processlist[Workflow]
-* User
-* Documents
-* Permissions
-* Settings
-* I18n
-* Interfaces
-* link:http://www.jooq.org/[Typesave SQL/jOOQ,window=_blank"]
-* link:http://activemq.apache.org[Messaging/ActiveMQ,window="_blank"]
-* link:http://wamp.ws/[WAMP,window="_blank"]
-* Chat(link:https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol[XMPP,window="_blank"])
-
-*All services are accessible via link:http://wamp.ws/[WAMP(Websocket/RPC), window="_blank"]*
+*All services are accessible via WAMP(Websocket/RPC)*

@@ -2,13 +2,19 @@
 
 === icon:lightbulb-o[size=1x,role=black] Technical overwiew ===
 
-//image::technic.svg[align="center",width=15%]
-
-* Backend OS:Linux and Windows
-* Programming Backend: Java/link:http://osgi.org[OSGI,window="_blank"]
-* Webclient: http://www.html5rocks.com/en/tutorials/webcomponents/customelements[Custom elements with Polymer, window="_blank"]
-* Development tools: link:http://qooxdoo.org[qooxdoo, window="_blank"](Javascript)
-* Dataaccess:  link:http://datanucleus.org/[data nucleus, window="_blank"]
-* Workflows: Prozessengine link:http://activiti.org[activiti, window="_blank"]
-* Interfaces: link:http://camel.apache.org[apache camel, window="_blank"]
-* Versioning: link:http://git-scm.org[git, window="_blank"]
+[CI, header="Operatingsystem:Linux,Windows"]
+-
+[CI, header="Backend programming: Java,Groovy"]
+-
+[CI, header="Webclient:HTML5/Javascript"]
+-
+[CI, header="Development tools: qooxdoo/Javascript"]
+-
+[CI, header="Dataaccess: datanucleus"]
+-
+[CI, header="Prozessengine: activiti"]
+-
+[CI, header="Integration: apache camel"]
+-
+[CI, header="Versioning: git"]
+-

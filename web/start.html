@@ -6,7 +6,7 @@
   <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="forkme.css" >
+  <link rel="stylesheet" href="forkme.css">
   <title>simpl4 Info/Demo</title>
   <script src="/sw/surface/webcomponents-lite.js.gz"></script>
   <script src="/sw/surface/libs.js.gz"></script>
@@ -37,6 +37,37 @@
   </script>
 
   <style>
+		/*paper-collapse-item*/
+    paper-collapse-item.asciidoctor iron-icon {
+      width: 6px !important;
+      height: 6px !important;
+      color: #212121 !important;
+    }
+    paper-collapse-item.asciidoctor {
+      cursor: pointer;
+    }
+    paper-collapse-item.asciidoctor.empty {
+      cursor: auto;
+    }
+    paper-collapse-item.asciidoctor paper-item {
+      min-height: 24px !important;
+      padding: 0 12px !important;
+    }
+    paper-collapse-item.asciidoctor .header.paper-collapse-item {
+      min-height: 24px;
+      font-size: 14px;
+      height: 24px;
+    }
+    paper-collapse-item.asciidoctor .icon.paper-collapse-item {
+      margin-right: 12px;
+    }
+
+		paper-collapse-item.asciidoctor.empty paper-icon-button.paper-collapse-item{
+			display:none;
+		}
+
+		/*paper-collapse-item end*/
+
     [invisible] {
       visibility: hidden;
     }
@@ -44,6 +75,7 @@
       display: none !important;
     }
     /*chromium asciidoctor hack*/
+    
     html /deep/ .admonitionblock > table {
       display: block;
     }
@@ -69,48 +101,50 @@
         display: none !important;
       }
     }
-		/*@@@MS tem.*/
-		html simpl-mmenu.simpl-main {
-			position:relative !important;
-		}
-		/*ie9*/
-		.no-flexbox simpl-mmenu.simpl-main {
-			position:absolute !important;
-		}
-
+    /*@@@MS tem.*/
+    
+    html simpl-mmenu.simpl-main {
+      position: relative !important;
+    }
+    /*ie9*/
+    
+    .no-flexbox simpl-mmenu.simpl-main {
+      position: absolute !important;
+    }
     @media screen and (max-height: 650px) {
       html /deep/ #loginDialog {
         top: -30px;
       }
     }
-		/*ie9*/
+    /*ie9*/
+    
     .no-flexbox iron-icon {
       display: inline-block !important;
     }
-
     @media screen and (max-width: 640px) {
-      html  .mobile-hidden {
+      html .mobile-hidden {
         display: none !important;
       }
     }
     @media screen and (min-width: 640px) {
-      html  .desktop-hidden {
+      html .desktop-hidden {
         display: none !important;
       }
     }
-	_body{
-		position:absolute;
-		width:100%;
-		height:100%;
-	}
-	_simpl-main{
-    max-width: 1000px !important;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-	}
+    _body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    _simpl-main {
+      max-width: 1000px !important;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
   </style>
 </head>
 

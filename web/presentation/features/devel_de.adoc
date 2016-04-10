@@ -3,12 +3,17 @@
 
 === icon:lightbulb-o[size=1x,role=black] Entwicklungswerkzeuge für ===
 
-//image::devel.svg[align="center",width=20%]
-
-* link:local:presentation_bigpicture[Camel Routen]
-* Datenmodell
-* link:local:accounts[Datenabfragen]
-* link:local:accounts[Forms]
-* link:http://www.bpmb.de/images/BPMN2_0_Poster_EN.pdf[Workflow(BPMN2), window="_blank"]
-* I18n
-* Dokumente
+[CI, header="Integrations Regeln"]
+-
+[CI, header="Datenmodell"]
+-
+[CI, header="Datenabfragen"]
+-
+[CI, header="Forms"]
+-
+[CI, header="Prozesse(BPMN2)"]
+-
+[CI, header="i18n"]
+-
+[CI, header="Dokumente"]
+-

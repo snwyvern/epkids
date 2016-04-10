@@ -3,17 +3,23 @@
 === icon:bars[size=1x,role=black] Website,Applikation ===
 
 
-//image::p-logo.svg[align="center",width=30%,scaledwidth=35%]
+*Responsive Web-Anwendungen für __simpl4__*
 
-*link:http://de.wikipedia.org/wiki/Responsive_Webdesign[Responsive,window="_blank"] Web-Anwendungen für __simpl4__*
-
-* link:http://de.wikipedia.org/wiki/Single-page-Webanwendung[Single page,window="_blank"]
-* Responsive und link:http://www.reactivemanifesto.org[reaktiv,window="_blank"], siehe link:local:xmppchat[Chat]
-* Erstellt mit link:http://polymer-project.org[Polymer, window="_blank"]
-* link:https://www.polymer-project.org/platform/custom-elements.html[Custom elements, window="_blank"] für alle relevanten Artefakte
-* Basis für eigene Entwicklungen
-* Texte mit Markdown (link:http://asciidoctor.org[Asciidoctor, window="_ blank"])
-* Forms mit client- und serverseitiger Plausibilitätsprüfung
-* History und Back-Button
-* Websockets
-* i18n
+[CI, header="Single page"]
+-
+[CI, header="HTML5"]
+-
+[CI, header="Custom elements zur Kommunikation mit dem Backend"]
+-
+[CI, header="Basis für eigene Entwicklungen"]
+-
+[CI, header="Text mit Markdown"]
+-
+[CI, header="Forms mit client- und serverseitiger Plausibilitätsprüfung"]
+-
+[CI, header="History und Back-Button"]
+-
+[CI, header="Websocket"]
+-
+[CI, header="i18n"]
+-

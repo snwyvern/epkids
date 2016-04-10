@@ -3,7 +3,7 @@
 === icon:bars[size=1x,role=black] Übersicht ===
 
 * Open-Source- Entwicklungsumgebung
-* alle Komponenten sind aufeinander abgestimmt
+* Alle Komponenten sind aufeinander abgestimmt
 * Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops
 * Integration bestehender Softwaresysteme
 * Vorgefertigte HTML5-Elemente (Custom Elements) kommunizieren mit dem Backend

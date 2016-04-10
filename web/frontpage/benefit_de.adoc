@@ -4,11 +4,11 @@
 
 * Sie sind von Anfang an in die Entwicklung eingebunden.
 * Alle Projektbeteiligen sprechen die gleiche Sprache
-* gegebenenfalls übernehmen  sie  die Weiterentwicklung
-* durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden
-* keine Kostenfalle
-* flexible Anpassbarkeit an neue Anforderungen
-* durch visuelle Programmierung entsteht Dokumentation automatisch
+* Gegebenenfalls übernehmen  Sie  die Weiterentwicklung
+* Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden
+* Keine Kostenfalle
+* Flexible Anpassbarkeit an neue Anforderungen
+* Durch visuelle Programmierung entsteht Dokumentation automatisch
 * Schnelle Entwicklungzyklen
 
 [.desktop-xidden.imageblock.left.width800]
