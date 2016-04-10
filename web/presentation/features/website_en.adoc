@@ -23,3 +23,5 @@
 -
 [CI, header="i18n"]
 -
+[.desktop-xidden.imageblock.left.width600]
+image::web/images/website.jpg[]

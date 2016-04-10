@@ -18,3 +18,5 @@
 -
 [CI, header="Versionierung: git"]
 -
+[.desktop-xidden.imageblock.left.width400]
+image::web/images/technic.svg[]

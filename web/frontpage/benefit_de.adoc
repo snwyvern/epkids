@@ -2,15 +2,23 @@
 
 === icon:bars[size=1x,role=black] Ihre Vorteile ===
 
-* Sie sind von Anfang an in die Entwicklung eingebunden.
-* Alle Projektbeteiligen sprechen die gleiche Sprache
-* Gegebenenfalls übernehmen  Sie  die Weiterentwicklung
-* Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden
-* Keine Kostenfalle
-* Flexible Anpassbarkeit an neue Anforderungen
-* Durch visuelle Programmierung entsteht Dokumentation automatisch
-* Schnelle Entwicklungzyklen
+
+[CI, header="Sie sind von Anfang an in die Entwicklung eingebunden"]
+-
+[CI, header="Alle Projektbeteiligen sprechen die gleiche Sprache"]
+-
+[CI, header="Gegebenenfalls übernehmen  Sie  die Weiterentwicklung"]
+-
+[CI, header="Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden"]
+-
+[CI, header="Keine Kostenfalle"]
+-
+[CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
+-
+[CI, header="Durch visuelle Programmierung entsteht Dokumentation automatisch"]
+-
+[CI, header="Schnelle Entwicklungzyklen"]
+-
 
 [.desktop-xidden.imageblock.left.width800]
-image::web/images/bbb.jpg[]
-
+image::web/images/peoples.jpg[]

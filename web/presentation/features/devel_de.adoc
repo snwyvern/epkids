@@ -17,3 +17,5 @@
 -
 [CI, header="Dokumente"]
 -
+[.desktop-xidden.imageblock.left.width800]
+image::web/images/tools.jpg[]

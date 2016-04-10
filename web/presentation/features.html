@@ -4,34 +4,33 @@
     <template>
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
-          <div elevation="0" style="padding-top:15px;" class="flex">
+          <!--div elevation="0" style="padding-top:15px;" class="flex">
             <div row grid wrap>
               <a style="text-decoration: none;" target="_blank" href="[[getHref()]]">
                 <simpl-import style="text-align:center;" method="global.svgimport" data="[[getData()]]"></simpl-import>
               </a>
             </div>
-            <!--h1 class="title" style="padding-left:12px;color:#212121 !important;">[[tr("tr.overwiew")]]</h1-->
-          </div>
+          </div-->
 
           <div class="grid row">
-            <div class="col-xl-3 col-xs-12 col-md-6">
+            <div class="_col-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
                 <simpl-import url="{{getFileName('website')}}"></simpl-import>
               </paper-material>
             </div>
-            <div class="col-xl-3 col-xs-12 col-md-6">
+            <div class="_col-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
                 <simpl-import url="[[getFileName('backend')]]"></simpl-import>
               </paper-material>
             </div>
 
-            <div class="col-xl-3 col-xs-12 col-md-6">
+            <div class="_col-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
                 <simpl-import url="[[getFileName('devel')]]"></simpl-import>
               </paper-material>
             </div>
 
-            <div class="col-xl-3 col-xs-12 col-md-6">
+            <div class="_col-xl-3 col-xs-12 col-md-6">
               <paper-material elevation="1" class="grid column flex card">
                 <simpl-import url="[[getFileName('technic')]]"></simpl-import>
               </paper-material>

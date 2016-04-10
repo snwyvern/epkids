@@ -30,6 +30,8 @@ bietet viele Möglichkeiten der Gestaltung.
 Forms können automatisch erzeugt werden, abgeleitet vom Datenmodell +
 oder mit dem Formeditor erstellt werden.
 [CI, header="Websocket"]
-Ein Websocket bietet die Möglichkeit asynchron Nachrichten zu empfangen.
+-
 [CI, header="Mehrsprachigkeit"]
 -
+[.desktop-xidden.imageblock.left.width600]
+image::web/images/website.jpg[]

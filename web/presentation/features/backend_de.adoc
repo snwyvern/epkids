@@ -26,3 +26,6 @@
 -
 
 *Alle Dienste sind über WAMP(Websocket/RPC) ansprechbar*
+
+[.desktop-xidden.imageblock.left.width400]
+image::web/images/backend.svg[]
