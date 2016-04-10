@@ -385,5 +385,9 @@
     {
         "msgstr": "Presse",
         "msgid": "tr.menu.press"
+    },
+    {
+        "msgstr": "Sind sie bereit neue Wege zu gehen?",
+        "msgid": "neue_wege"
     }
 ]

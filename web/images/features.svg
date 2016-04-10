@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="221.4565mm"
-   height="177.24898mm"
-   viewBox="0 0 784.68837 628.04757"
+   height="161.24872mm"
+   viewBox="0 0 784.68837 571.35374"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -23,10 +23,10 @@
      id="defs4">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18111 : 1"
+       inkscape:vp_x="0 : 526.18113 : 1"
        inkscape:vp_y="0 : 1000.0001 : 0"
-       inkscape:vp_z="744.09449 : 526.18111 : 1"
-       inkscape:persp3d-origin="372.04723 : 350.78741 : 1"
+       inkscape:vp_z="744.09449 : 526.18113 : 1"
+       inkscape:persp3d-origin="372.04723 : 350.78742 : 1"
        id="perspective3336" />
   </defs>
   <sodipodi:namedview
@@ -37,8 +37,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0029917"
-     inkscape:cx="402.81229"
-     inkscape:cy="326.48647"
+     inkscape:cx="149.56991"
+     inkscape:cy="269.79265"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -473,18 +473,6 @@
         </g>
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="178.73824"
-       y="1072.8691"
-       id="text4359"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="178.73824"
-         y="1072.8691"
-         id="tspan4363"
-         style="font-size:25px">Alle Komponenten sind exakt aufeinander abgestimmt</tspan></text>
     <g
        id="g4578"
        transform="translate(-262.21553,141.57644)">

@@ -11,6 +11,6 @@
 * durch visuelle Programmierung entsteht Dokumentation automatisch
 * Schnelle Entwicklungzyklen
 
-[.desktop-xidden.imageblock.left.width600]
+[.desktop-xidden.imageblock.left.width800]
 image::web/images/bbb.jpg[]
 

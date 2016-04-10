@@ -2,21 +2,27 @@
   <dom-module id="front-page">
     <link rel="import" type="css" href="features.css" />
     <template>
+      <div style="color:white;" class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+          <a href="https://github.com/ms123s/simpl4-src" target="_blank">Fork me on GitHub</a>
+        </div>
+      </div>
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
           <div elevation="0" style="padding-top:15px;" class="flex">
-						<img style="width:100%;" src="web/images/header.jpg"/>
+            <img style="width:100%;" src="web/images/header.jpg" />
           </div>
 
-					<h1>simpl4 &#x2192 business process goes HTML5</h1>
+          <h1 style="margin-bottom:0px;">simpl4 &#x2192 business process goes HTML5</h1>
+          <h3>[[tr("neue_wege")]]</h3>
           <div class="grid row">
             <div class="xol-xl-3 col-xs-12 col-md-6">
-              <paper-material elevation="1" class="grid column flex card">
+              <paper-material elevation="3" class="grid column flex card">
                 <simpl-import url="{{getFileName('benefit')}}"></simpl-import>
               </paper-material>
             </div>
             <div class="xol-xl-3 col-xs-12 col-md-6">
-              <paper-material elevation="1" class="grid column flex card">
+              <paper-material elevation="3" class="grid column flex card">
                 <simpl-import url="[[getFileName('overview')]]"></simpl-import>
               </paper-material>
             </div>
