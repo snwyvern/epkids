@@ -38,7 +38,15 @@
 
   <style>
 		/*paper-collapse-item*/
-    paper-collapse-item.asciidoctor iron-icon {
+    paper-collapse-item.asciidoctor iron-collapse.paper-collapse-item {
+      border: 1px inset #cfd8dc;
+	    border-radius: 3px;
+			padding-left:10px;
+    }
+    paper-collapse-item.asciidoctor.empty iron-collapse.paper-collapse-item {
+      border: 0px;
+    }
+    paper-collapse-item.asciidoctor iron-icon.paper-collapse-item {
       width: 6px !important;
       height: 6px !important;
       color: #212121 !important;

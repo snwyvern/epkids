@@ -6,20 +6,30 @@
 *Responsive Web-Anwendungen für __simpl4__*
 
 [CI, header="Single page"]
--
+--
+Erst durch diese Technologie ist es möglich, Web-Applikationen + 
+mit fließender Bedienung zu erstellen. +
+Die Applikation kann über Websockets Nachrichten empfangen. 
+--
 [CI, header="HTML5"]
--
+--
+Mit HTML5 ist es möglich Web-Applikationen zu erstellen, +
+ die sich kaum von nativen Apps unterscheiden.
+--
 [CI, header="Custom elements zur Kommunikation mit dem Backend"]
--
-[CI, header="Basis für eigene Entwicklungen"]
--
+--
+Custom elements sind ein Hauptfeature von HTML5. +
+simpl4 nutzt dies,  um eine einfache Kommunikation +
+mit den Diensten im  Backend anzubieten.
+--
 [CI, header="Text mit Markdown"]
--
+Um textlastige Seiten zu erstellen, wird Markdown verwendet. +
+Die verwendete Implementierung Asciidoctor + 
+bietet viele Möglichkeiten der Gestaltung.
 [CI, header="Forms mit client- und serverseitiger Plausibilitätsprüfung"]
--
-[CI, header="History und Back-Button"]
--
+Forms können automatisch erzeugt werden, abgeleitet vom Datenmodell +
+oder mit dem Formeditor erstellt werden.
 [CI, header="Websocket"]
--
-[CI, header="i18n"]
+Ein Websocket bietet die Möglichkeit asynchron Nachrichten zu empfangen.
+[CI, header="Mehrsprachigkeit"]
 -
