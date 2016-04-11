@@ -3,11 +3,13 @@
 === icon:bars[size=1x,role=black] Übersicht ===
 
 [CI,header="Open-Source- Entwicklungsumgebung"]
--
+simpl4 steht unter der GPLV3 (General Public License) und +
+kann daher von jedem kostenlos verwendet werden.
 [CI,header="Alle Komponenten sind aufeinander abgestimmt"]
 -
 [CI,header="Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops"]
--
+Eine Applikation einmal erstellen +
+auf allen gängigen Geräten benutzen.
 [CI,header="Integration bestehender Softwaresysteme"]
 -
 [CI,header="Vorgefertigte HTML5-Elemente (Custom Elements) kommunizieren mit dem Backend"]
