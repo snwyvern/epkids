@@ -8,11 +8,9 @@ kann daher von jedem kostenlos verwendet werden.
 [CI,header="Alle Komponenten sind aufeinander abgestimmt"]
 -
 [CI,header="Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops"]
-Eine Applikation einmal erstellen +
+Applikation einmal erstellen +
 auf allen gängigen Geräten benutzen.
 [CI,header="Integration bestehender Softwaresysteme"]
--
-[CI,header="Vorgefertigte HTML5-Elemente (Custom Elements) kommunizieren mit dem Backend"]
 -
 [CI,header="Entwicklung im Browser"]
 -
