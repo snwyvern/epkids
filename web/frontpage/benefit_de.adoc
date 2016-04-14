@@ -6,9 +6,12 @@
 [CI, header="Sie sind von Anfang an in die Entwicklung eingebunden"]
 -
 [CI, header="Alle Projektbeteiligen sprechen die gleiche Sprache"]
--
+Fachabteilung und IT sprechen die gleiche +
+visuelle Sprache BPMN 2.0
 [CI, header="Gegebenenfalls übernehmen  Sie  die Weiterentwicklung"]
--
+Sie haben die Wahl +
+*Sie starten ein Projekt, wir machen weiter +
+*wir machen das Pilotprojekt, Sie machen weiter
 [CI, header="Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden"]
 -
 [CI, header="Keine Kostenfalle"]

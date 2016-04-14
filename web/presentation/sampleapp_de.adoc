@@ -1,6 +1,6 @@
 :linkattrs:
 
-==== simpldate (Besprechungen planen) ====
+== simpldate (Besprechungen planen) ==
 
 === Übersicht === 
 
