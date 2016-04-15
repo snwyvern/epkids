@@ -1,0 +1,27 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Your benefits ===
+
+
+[CI, header="From the start you are involved in the development"]
+-
+[CI, header="All project mebers speak the same language"]
+Fold division and IT spreak the same +
+visual language BPMN 2.0
+[CI, header="Possibly You take over the further development"]
+You have the choise +
+*You start a project, an we continue +
+*we start a project, You continue
+[CI, header="Because of open source the further development can also be delegated to third parties"]
+-
+[CI, header="No cost trap"]
+-
+[CI, header="Flexible customization to new requirements"]
+-
+[CI, header="Through visual programming documentation is created automatically"]
+-
+[CI, header="Faster development cycles Entwicklungzyklen"]
+-
+
+[.desktop-xidden.imageblock.left.width800]
+image::web/images/peoples.jpg[]

@@ -7,7 +7,9 @@
 -
 [CI, header="Alle Projektbeteiligen sprechen die gleiche Sprache"]
 Fachabteilung und IT sprechen die gleiche +
-visuelle Sprache BPMN 2.0
+visuelle Sprache BPMN 2.0 +
+Unter den Beteiligten kommt es von Anfang an +
+zu weniger Mißverständnissen
 [CI, header="Gegebenenfalls übernehmen  Sie  die Weiterentwicklung"]
 Sie haben die Wahl +
 *Sie starten ein Projekt, wir machen weiter +

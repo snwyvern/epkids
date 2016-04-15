@@ -7,8 +7,8 @@ simpl4 steht unter der GPLV3 (General Public License) und +
 kann daher von jedem kostenlos verwendet werden.
 [CI,header="Alle Komponenten sind aufeinander abgestimmt"]
 -
-[CI,header="Flexible Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops"]
-Applikation einmal erstellen +
+[CI,header="Flexible repsonsive Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops"]
+Applikationen einmal erstellen +
 auf allen gängigen Geräten benutzen.
 [CI,header="Integration bestehender Softwaresysteme"]
 -

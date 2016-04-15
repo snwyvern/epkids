@@ -1,0 +1,34 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Overview ===
+
+[CI,header="Open-Source- devlopment environment"]
+simpl4 is licenced under GPLV3 (General Public License), an because of this +
+it can be used free of any.
+[CI,header=" All aspects of the system are coordinated"]
+-
+[CI,header="Flexible responsive applications because of HTML5-Frontend for Smartphones, Tablets and Desktops"]
+Create a application, and use it on +
+all popular devices.
+[CI,header="Integration of existing software systems"]
+-
+[CI,header="Development in the browser"]
+-
+[CI,header="Minimal Project-Setup"]
+-
+[CI,header="Cloud-ready"]
+-
+
+[CI,header="BPMN 2.0 – Business Process Model and Notation"]
+-
+[CI,header="Process-Engine"]
+-
+[CI,header="Rule based Integration-Engine"]
+-
+[CI,header="Web Application Messaging Protocol (WAMP, Websocket Subprotocol)"]
+-
+[CI,header="Git-based simpl4-Application-Store"]
+-
+
+[.desktop-xidden.imageblock.left.width500]
+imagezoom::web/images/features.svg[]
