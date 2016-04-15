@@ -13,7 +13,7 @@ zu weniger Mißverständnissen
 [CI, header="Gegebenenfalls übernehmen  Sie  die Weiterentwicklung"]
 --
 
-=== Sie haben die Wahl ===
+*Sie haben die Wahl*
 
 * Sie starten ein Projekt, wir machen weiter
 * wir machen das Pilotprojekt, Sie machen weiter
