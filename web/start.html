@@ -37,16 +37,17 @@
   </script>
 
   <style>
-		/*paper-collapse-item*/
+    /*paper-collapse-item*/
+    
     paper-collapse-item.asciidoctor iron-collapse.paper-collapse-item {
       border: 1px solid #d2dbe0;
-			background:#f0f3f5;
-	    border-radius: 3px;
-			padding-left:10px;
+      background: #f0f3f5;
+      border-radius: 3px;
+      padding-left: 10px;
     }
-    paper-collapse-item.asciidoctor  div.paragraph > p {
-			margin-bottom: 5px;
-			margin-top: 5px;
+    paper-collapse-item.asciidoctor div.paragraph > p {
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
     paper-collapse-item.asciidoctor.empty iron-collapse.paper-collapse-item {
       border: 0px;
@@ -57,11 +58,11 @@
     paper-collapse-item.asciidoctor.empty {
       cursor: auto;
     }
-		paper-collapse-item.asciidoctor.empty paper-icon-button.paper-collapse-item{
-			display:none;
-		}
-		/*paper-collapse-item end*/
-
+    paper-collapse-item.asciidoctor.empty paper-icon-button.paper-collapse-item {
+      display: none;
+    }
+    /*paper-collapse-item end*/
+    
     [invisible] {
       visibility: hidden;
     }
@@ -124,6 +125,9 @@
       html .desktop-hidden {
         display: none !important;
       }
+    }
+    simpl-main /deep/ neon-animated-pages > * {
+      left: 5px;
     }
     _body {
       position: absolute;
