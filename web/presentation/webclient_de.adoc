@@ -22,7 +22,7 @@ HTML,CSS-Kenntnisse sind dafür ausreichend*
 * Damit ist es möglich HTML5 zu erweitern und Custom Elements für alle relevanten Artefakte zur Verfügung zu stellen.
 
 .Beispiel einer Datenbankabfrage mit tabellarischer Darstellung
-[source,html]
+[source,handlebars,html]
 ----
 <div>
 <paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
@@ -82,7 +82,7 @@ Nach jedem eingebenen Zeichen wird die Liste aktualisiert.
 Und nun noch ein bißchen komfortabler. +
 In diesem Beispiel wird link:http://datatables.net[Datatables, window="_blank"] benutzt.
 
-[source,html]
+[source,handlebars,html]
 ----
 <div>
   <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
