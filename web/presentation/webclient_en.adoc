@@ -22,7 +22,7 @@ HTML,CSS knowledge is sufficient*
 * This makes it possible to extend HTML5 and provide Custom element for all relevant artifacts.
 
 .Example of a database query with tabular representation
-[source,html]
+[source,handlebars,html]
 ----
 <div>
 <paper-input label="Search:" value="{{params.input}}"> </paper-input> <!--1--> 
@@ -82,7 +82,7 @@ After each inputed character the list is updated.
 And now with a little bit more comfort. +
 In this Example is link:http://datatables.net[Datatables, window="_blank"] used.
 
-[source,html]
+[source,handlebars,html]
 ----
 <div>
   <paper-input label="Search:" value="{{params2.input}}"> </paper-input>
