@@ -329,5 +329,13 @@
     {
         "msgstr": "Press",
         "msgid": "tr.menu.press"
+    },
+    {
+        "msgstr": "Are you ready to go new ways ?",
+        "msgid": "neue_wege"
+    },
+    {
+        "msgstr": "Advantages",
+        "msgid": "Ihre Vorteile"
     }
 ]
