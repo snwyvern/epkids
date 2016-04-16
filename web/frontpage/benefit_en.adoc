@@ -9,9 +9,12 @@
 Fold division and IT spreak the same +
 visual language BPMN 2.0
 [CI, header="Possibly You take over the further development"]
+--
 You have the choise +
-*You start a project, an we continue +
-*we start a project, You continue
+
+* we start a project, You continue
+* You start a project, an we continue 
+--
 [CI, header="Because of open source the further development can also be delegated to third parties"]
 -
 [CI, header="No cost trap"]
