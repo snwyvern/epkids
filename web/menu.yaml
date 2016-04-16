@@ -157,6 +157,7 @@
 - name: News
   icon: communication:ring-volume
   url: news_%l.adoc
+  disabled: true
   hash: 'news'
 - name: tr.menu.press
   icon: turned-in-not
