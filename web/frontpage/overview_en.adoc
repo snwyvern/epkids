@@ -31,4 +31,4 @@ all popular devices.
 -
 
 [.desktop-xidden.imageblock.left.width500]
-imagezoom::web/images/features.svg[]
+imagezoom::web/images/features.svgz[]

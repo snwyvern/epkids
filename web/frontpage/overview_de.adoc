@@ -31,4 +31,4 @@ auf allen gängigen Geräten benutzen.
 -
 
 [.desktop-xidden.imageblock.left.width500]
-imagezoom::web/images/features.svg[]
+imagezoom::web/images/features.svgz[]

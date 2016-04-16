@@ -46,4 +46,4 @@ that provides
 *All services are accessible via websocket or http*
 
 [.desktop-xidden.imageblock.left.width400]
-image::web/images/backend.svg[]
+image::web/images/backend.svgz[]

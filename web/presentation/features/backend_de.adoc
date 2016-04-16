@@ -46,4 +46,4 @@ Subprotokoll,es unterstützt
 *Alle Dienste sind über sind über Websocket oder http  erreichbar*
 
 [.desktop-xidden.imageblock.left.width400]
-image::web/images/backend.svg[]
+image::web/images/backend.svgz[]

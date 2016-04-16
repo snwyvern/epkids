@@ -30,5 +30,5 @@ zu weniger Mißverständnissen
 [CI, header="Schnelle Entwicklungzyklen"]
 -
 
-[.desktop-xidden.imageblock.left.width800]
-image::web/images/peoples.jpg[]
+[.imageblock.left.width800]
+image::web/images/peoples.png[]

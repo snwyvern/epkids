@@ -6,7 +6,7 @@
 [CI, header="From the start you are involved in the development"]
 -
 [CI, header="All project mebers speak the same language"]
-Fold division and IT spreak the same +
+Fold division and IT speak the same +
 visual language BPMN 2.0
 [CI, header="Possibly You take over the further development"]
 --
@@ -23,8 +23,8 @@ You have the choise +
 -
 [CI, header="Through visual programming documentation is created automatically"]
 -
-[CI, header="Faster development cycles Entwicklungzyklen"]
+[CI, header="Faster development cycles"]
 -
 
 [.desktop-xidden.imageblock.left.width800]
-image::web/images/peoples.jpg[]
+image::web/images/peoples.png[]
