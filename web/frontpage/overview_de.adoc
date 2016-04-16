@@ -30,5 +30,5 @@ auf allen gängigen Geräten benutzen.
 [CI,header="Git-basierter simpl4-Application-Store"]
 -
 
-[.desktop-xidden.imageblock.left.width500]
+[.imageblock.left.width600]
 imagezoom::web/images/features.svgz[]
