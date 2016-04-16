@@ -33,5 +33,12 @@ oder mit dem Formeditor erstellt werden.
 -
 [CI, header="Mehrsprachigkeit"]
 -
-[.desktop-xidden.imageblock.left.width600]
-image::web/images/website.jpg[]
+
+{nbsp} +
+{nbsp} +
+{nbsp} +
+
+
+
+[.desktop-xidden.imageblock.left.width400]
+image::web/images/website.svg[]

@@ -3,7 +3,7 @@
 === icon:bars[size=1x,role=black] Website,Application ===
 
 
-*Responsive Web Applications for __simpl4__*
+*Xesponsive Web Applications for __simpl4__*
 
 [CI, header="Single page"]
 -
@@ -23,5 +23,5 @@
 -
 [CI, header="i18n"]
 -
-[.desktop-xidden.imageblock.left.width600]
-image::web/images/website.jpg[]
+[.desktop-xidden.imageblock.left.width400]
+image::web/images/website.svg[]
