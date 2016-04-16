@@ -8,20 +8,28 @@
 [CI, header="Single page"]
 -
 [CI, header="HTML5"]
--
+--
+With HTML5, it's possible to create web applications, +
+ that hardly differ from native apps.
+--
 [CI, header="Custom elements for communication with the Backend"]
--
-[CI, header="Base for own developments"]
--
+Custom elements are a main feature of HTML5. +
+simpl4 uses this to provide a simple communication to the backend.
 [CI, header="Text with markdown"]
--
+--
+To create pages with lots of text, markdown is available. +
+The used implementation asciidoctor offers many design possibilities.
+--
 [CI, header="Forms with client- und server-side validation"]
--
-[CI, header="History and back button"]
 -
 [CI, header="Websocket"]
 -
 [CI, header="i18n"]
 -
+
+{nbsp} +
+{nbsp} +
+{nbsp} +
+
 [.desktop-xidden.imageblock.left.width400]
 image::web/images/website.svg[]
