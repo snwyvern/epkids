@@ -2,29 +2,48 @@
 
 === icon:cloud[size=1x,role="white"] Backend Services ===
 
-[CI, header="Data"]
--
 [CI, header="Processes"]
 -
-[CI, header="User"]
+[CI, header="Integration"]
 -
-[CI, header="Documents"]
+[CI, header="Data"]
+-
+[CI, header="Document templates"]
+-
+[CI, header="Usermanagement"]
 -
 [CI, header="Accesscontrol"]
 -
 [CI, header="i18n"]
 -
-[CI, header="Integration"]
--
 [CI, header="Typesave/SQL"]
 -
-[CI, header="ActiveMQ"]
--
-[CI, header="WAMP"]
--
-[CI, header="CHAT"]
+[CI, header="JMS"]
+--
+Java Message Service. +
+JMS allows a distributed, asynchronous communications.
+--
+[CI, header="XMPP"]
+--
+supports
 
-*All services are accessible via WAMP(Websocket/RPC)*
+* Messaging
+* Conferences with multiple users
+* Displaying the online status
+* File Transfers
+* Dispatch of certificates
+* and many other services.
+--
+[CI, header="WAMP"]
+--
+is an open standard WebSocket subprotocol + 
+that provides  
+
+* Remote Procedure Calls 
+* Publish & Subscribe
+--
+{nbsp} +
+*All services are accessible via websocket or http*
 
 [.desktop-xidden.imageblock.left.width400]
 image::web/images/backend.svg[]
