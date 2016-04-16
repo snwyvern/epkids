@@ -21,7 +21,7 @@
 [CI, header="JMS"]
 --
 steht für Java Message Service. +
-JMS ermöglicht eine verteilte, asynchron Kommunikation.
+JMS ermöglicht eine verteilte, asynchrone Kommunikation.
 --
 [CI, header="XMPP"]
 --
