@@ -4,8 +4,9 @@
 
 ===== Wir unterstützen Sie gerne in verschiedensten Belangen rund um simpl4 =====
 
-* Sie haben Fragen zu simpl4 oder wünschen sich eine simpl4-Schulung?
+* Sie haben Fragen zu simpl4 oder möchten eine simpl4-Schulung?
 * Sie wollen in einem Workshop gemeinsam mit uns eine Beispiel-Anwendung erstellen?
+* Sie möchten, dass wir für Sie ein Pilotprojekt umsetzen ?
 * Oder Sie möchten, dass wir eine individuelle, speziell auf Ihre Bedürnisse hin maßgeschneiderte Softwarelösung für Sie erstellen?
 * Sie wollen, dass wir Ihre Anwendung hosten?
 

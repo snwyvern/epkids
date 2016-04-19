@@ -20,15 +20,24 @@ zu weniger Mißverständnissen
 * Sie starten ein Projekt, wir unterstützen Sie
 --
 [CI, header="Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden"]
--
+--
+Quelloffener Code vermeidet die Abhängigkeit von einem Anbieter.
+--
 [CI, header="Keine Kostenfalle"]
--
+--
+Sie zahlen nur erbrachte Leistungen, KEINE Lizenz-Kosten
+--
 [CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
 -
 [CI, header="Durch visuelle Programmierung entsteht Dokumentation automatisch"]
--
+--
+Die Prozessdokumentationen lässt sich für das Qualitätsmanagement nutzen.
+--
 [CI, header="Schnelle Entwicklungzyklen"]
--
+--
+In den visualisierten Abläufen sind Ansätze für +
+notwendige Programmänderungen einfacher erkennbar
+--
 
 [.imageblock.left.width800]
 image::web/images/peoples.png[]
