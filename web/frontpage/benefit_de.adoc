@@ -7,21 +7,19 @@
 -
 [CI, header="Alle Projektbeteiligen sprechen die gleiche Sprache"]
 --
-* Fachabteilung und IT sprechen die gleiche +
-visuelle Sprache BPMN 2.0
-* Unter den Beteiligten kommt es von Anfang an +
-zu weniger Mißverständnissen
+* Fachabteilung und IT sprechen die gleiche visuelle Sprache BPMN 2.0
+* Unter den Beteiligten kommt es von Anfang an zu weniger Mißverständnissen
 --
 [CI, header="Gegebenenfalls übernehmen  Sie  die Weiterentwicklung"]
 --
-*Sie haben die Wahl*
+Sie haben die Wahl
 
 * wir machen das Pilotprojekt, Sie machen weiter
 * Sie starten ein Projekt, wir unterstützen Sie
 --
 [CI, header="Durch Opensource kann die Weiterentwicklung auch an Dritte delegiert werden"]
 --
-Quelloffener Code vermeidet die Abhängigkeit von einem Anbieter.
+Quelloffener Code vermeidet die Abhängigkeit von einem Anbieter
 --
 [CI, header="Keine Kostenfalle"]
 --
@@ -31,12 +29,11 @@ Sie zahlen nur erbrachte Leistungen, KEINE Lizenz-Kosten
 -
 [CI, header="Durch visuelle Programmierung entsteht Dokumentation automatisch"]
 --
-Die Prozessdokumentationen lässt sich für das Qualitätsmanagement nutzen.
+Die Prozessdokumentationen lässt sich für das Qualitätsmanagement nutzen
 --
 [CI, header="Schnelle Entwicklungzyklen"]
 --
-In den visualisierten Abläufen sind Ansätze für +
-notwendige Programmänderungen einfacher erkennbar
+In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar
 --
 
 [.imageblock.left.width800]
