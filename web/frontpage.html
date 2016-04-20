@@ -13,8 +13,10 @@
             <img style="width:100%;" src="web/images/header.jpg" />
           </div>
 
-          <h2 style="margin-bottom:0px;">simpl4 &#x2192 business process goes HTML5</h2>
-          <h3>[[tr("neue_wege")]]</h3>
+<div class="layout horizontal">
+          <h2 style="margin-bottom:0px;margin-top:16px;font-size:32px;color:#607d8b !important;">simpl</h2><div style="padding-top:12px;"><img src="favicon.png"></div><h2 margin-top:18px;">&#160; business process goes HTML5</h2>
+</div>
+          <h3 style="margin:0px;">[[tr("neue_wege")]]</h3>
           <div class="grid row">
             <div class="col-xs-12 col-md-6">
               <paper-material elevation="3" class="grid column flex card">
@@ -36,7 +38,6 @@
         behaviors: [ TranslationsBehavior, WhitespaceBehavior ],
         getFileName: function( name ) {
           var lang = Simpl4.Cache.getItem( "lang" );
-          console.log( "lang", lang );
           return name + "_" + lang + ".adoc";
         }
       } );
