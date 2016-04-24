@@ -19,5 +19,9 @@
 -
 [CI, header="Dokumente"]
 -
+
+{nbsp} +
+{nbsp} +
+
 [.desktop-xidden.imageblock.left.width800]
-image::web/images/tools.jpg[]
+image::web/images/tools.svgz[]

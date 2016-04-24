@@ -18,6 +18,11 @@
 [CI, header="i18n"]
 -
 [CI, header="Documents"]
+-
+
+
+{nbsp} +
+{nbsp} +
 
 [.desktop-xidden.imageblock.left.width800]
-image::web/images/tools.jpg[]
+image::web/images/tools.svgz[]
