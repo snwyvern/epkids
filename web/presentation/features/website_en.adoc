@@ -3,7 +3,7 @@
 === icon:bars[size=1x,role=black] Website,Application ===
 
 
-*Xesponsive Web Applications for __simpl4__*
+*Responsive Web Applications for __simpl4__*
 
 [CI, header="Single page"]
 -
