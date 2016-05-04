@@ -42,4 +42,4 @@ oder mit dem Formeditor erstellt werden.
 
 
 [.desktop-xidden.imageblock.left.width400]
-image::web/images/website.svgz[]
+image::web/images/cloud-simple.svg[]
