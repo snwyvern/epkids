@@ -41,7 +41,7 @@ link:http://www.heise.de/download/simpl4-1197125.html[simpl4 - Download - heise 
 
 [role="border"] 
 --
-*simpl4 VirtualBox Image* +
+*simpl4 virtual machine(VirtualBox)* +
 Password(root): simpl4 +
 Network:nat with portforwarding +
  127.0.0.1:2222 to 22 +
@@ -54,7 +54,7 @@ link:http://download.ms123.org/download/simpl4_vbox.ova[Download simpl4 VirtualB
 
 [role="border"] 
 --
-*simpl4 VMWare Image* +
+*simpl4 virtual machine(VMWare)* +
 Password(root): simpl4 +
 Network:nat +
 IP via DHCP and can be read in the console +
