@@ -63,3 +63,13 @@ simpl4 Login: admin/admin
 
 link:http://download.ms123.org/download/simpl4_vmware.ova[Download simpl4 VMware,window="_blank"]
 --
+
+[role="border"] 
+--
+*simpl4 vagrant* +
+vagrant init simpl4/virtualbox +
+vagrant up +
+
+simpl4 url:  https://localhost:4443/sw/start.html +
+simpl4 Login: admin/admin
+--
