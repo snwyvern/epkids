@@ -33,7 +33,7 @@ und orchestriert die Integrationengine sowie die Humantasks
 [CI,header="Rule based Integration-Engine"]
 -
 [CI,header="Cloud-ready (PaaS,SaaS)"]
-simpl4 fills the cloud layer PaaS and SaaS
+simpl4 and simpl4 applications fill the cloud layer PaaS and SaaS
 [CI,header="Integration of existing software systems"]
 -
 [CI,header="Development in the browser"]

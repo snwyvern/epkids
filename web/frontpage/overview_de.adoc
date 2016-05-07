@@ -31,7 +31,7 @@ and orchestrates the integration engine and the Human Tasks
 [CI,header="Regelbasierte Integration-Engine"]
 -
 [CI,header="Cloud-ready (PaaS,SaaS)"]
-simpl4 füllt die Cloud Schichten PaaS und SaaS
+simpl4 und simpl4 Applikationen  füllen die Cloud Schichten PaaS und SaaS
 [CI,header="Integration bestehender Softwaresysteme"]
 -
 [CI,header="Entwicklung im Browser"]
