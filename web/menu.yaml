@@ -52,28 +52,28 @@
     icon: file-download
     url: web/tutorials/dataimport_%l.adoc?t=1
     hash: tutorials_dataimport
-- name: CRM Demo
-  icon: communication:contact-phone
-  children:
-  - name: menu.crmdemo.accounts
-    icon: folder-shared
-    url: accounts.html
-    hash: accounts
-  - name: menu.crmdemo.contacts
-    icon: account-box
-    url: contacts.html
-    hash: contacts
-  - name: tr.menu.task_list
-    icon: inbox
-    url: tasks.html
-    hash: tasklist
-  - name: tr.menu.process_list
-    icon: settings
-    url: processes.html
-    hash: processlist
 - name: tr.menu.misc_demo
   icon: apps
   children:
+  - name: CRUD Demo
+    icon: communication:contact-phone
+    children:
+    - name: menu.crmdemo.accounts
+      icon: folder-shared
+      url: accounts.html
+      hash: accounts
+    - name: menu.crmdemo.contacts
+      icon: account-box
+      url: contacts.html
+      hash: contacts
+    - name: tr.menu.task_list
+      icon: inbox
+      url: tasks.html
+      hash: tasklist
+    - name: tr.menu.process_list
+      icon: settings
+      url: processes.html
+      hash: processlist
   - name: Chat(XMPP)
     url: chat.html
     icon: communication:chat
