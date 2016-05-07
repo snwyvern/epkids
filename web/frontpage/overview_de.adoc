@@ -5,26 +5,41 @@
 [CI,header="Open-Source- Entwicklungsumgebung"]
 simpl4 steht unter der GPLV3 (General Public License) und 
 kann daher von jedem kostenlos verwendet werden.
-[CI,header="Alle Komponenten sind aufeinander abgestimmt"]
--
 [CI,header="Flexible repsonsive Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops"]
 Applikationen einmal erstellen auf allen gängigen Geräten benutzen.
+[CI,header="Schnelle Erstellung von Prozessen, Tabellen, Forms ..."]
+--
+* Geschäftsprozessen (mit BPMN 2.0 Modeller)
+* Datenmodell (konfortabler Editor zum Definieren des Datenmodells) 
+* Datenbanktabellen (werden automatisch erzeugt, abgeleitet vom Datenmodell) 
+* Forms (freidefiniert oder abgeleitet vom Datenmodell)
+* Integrationsregeln 
+* Geschäftsregeln 
+* Datenabfragen
+* Dokumenttemplates
+--
+[CI,header="BPMN 2.0 – Business Process Model and Notation"]
+--
+is a graphical representation for specifying business processes.
+The objective of BPMN is to support business process management, for both technical users and business users, by providing a notation that is intuitive to business users, yet able to represent complex process semantics
+--
+[CI,header="Business-Process-Engine"]
+--
+Executes the BPMN process models +
+and orchestrates the integration engine and the Human Tasks
+--
+[CI,header="Regelbasierte Integration-Engine"]
+-
+[CI,header="Cloud-ready (PaaS,SaaS)"]
+simpl4 füllt die Cloud Schichten PaaS und SaaS
 [CI,header="Integration bestehender Softwaresysteme"]
 -
 [CI,header="Entwicklung im Browser"]
 -
 [CI,header="Minimales Projekt-Setup"]
 -
-[CI,header="Cloud-ready"]
--
 
-[CI,header="BPMN 2.0 – Business Process Model and Notation"]
--
-[CI,header="Process-Engine"]
--
-[CI,header="Regelbasierte Integration-Engine"]
--
-[CI,header="Web Application Messaging Protocol (WAMP, Websocket Subprotokoll)"]
+[CI,header="Web Application Messaging Protocol (Websocket Subprotokoll)"]
 -
 [CI,header="Git-basierter simpl4-Application-Store"]
 -

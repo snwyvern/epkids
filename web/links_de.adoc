@@ -1,7 +1,7 @@
 :linkattrs:
 :source-highlighter: rouge
 
-=== Download ===
+=== {nbsp} ===
 
 [role="border"] 
 --
@@ -35,6 +35,19 @@ vagrant init simpl4/virtualbox +
 vagrant up +
 
 simpl4 url:  https://localhost:4443/sw/start.html +
+simpl4 Login: admin/admin
+--
+
+[role="border"] 
+--
+*simpl4 docker* +
+
+docker run -p 127.0.0.1:8080:80 simpl4/simpl4:latest +
+or +
+docker run -p 127.0.0.1:4443:443 simpl4/simpl4:latest +
+
+Login simpl4: +
+simpl4 url: https://localhost:4443/sw/start.html +
 simpl4 Login: admin/admin
 --
 
