@@ -14,10 +14,10 @@ all popular devices.
 * Datamodel (comfortable editor for defining the data model) 
 * Databasetables (automatically generated, derived from the data model) 
 * Forms (freely defined or derived from the data model)
-* Integrationsregeln 
-* Geschäftsregeln 
-* Datenabfragen
-* Dokumenttemplates
+* Integration rules 
+* Business rules 
+* Data queries
+* Document templates
 --
 [CI,header="BPMN 2.0 – Business Process Model and Notation"]
 --
