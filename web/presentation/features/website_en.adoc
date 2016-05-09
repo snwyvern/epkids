@@ -33,4 +33,4 @@ The used implementation asciidoctor offers many design possibilities.
 {nbsp} +
 
 [.desktop-xidden.imageblock.left.width400]
-image::web/images/website.svgz[]
+image::web/images/website2.svgz[]

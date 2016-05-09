@@ -331,6 +331,10 @@
         "msgid": "tr.menu.press"
     },
     {
+        "msgstr": "Resources",
+        "msgid": "tr.menu.resources"
+    },
+    {
         "msgstr": "Development and service platform for HTML5 applications with process- and integrationengine.",
         "msgid": "frontpage.subheader"
     },

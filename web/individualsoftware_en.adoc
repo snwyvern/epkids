@@ -2,6 +2,8 @@
 
 === Individual software ===
 
+
+
 For many years, we create custom software solutions based on customer-specific requirements and desires.
 This may be the both the adaptation of an already existing enterprise software to new or other operational, technical or technical requirements,
 as well as a completely newly created software solution.
@@ -10,6 +12,8 @@ The most important advantage of a software solution individually created is that
 It is optimally adapted to the individual data infrastructure and thus helps to make better use of resources.
 Thus, savings result in terms of workload in software use, ie time saved, and thereby also money saved.
 
+[imageblock.xeft.width600]
+image::web/images/business_men.jpg[]
 
 ===== The use of simpl4 in developing your software solution offers various advantages =====
 

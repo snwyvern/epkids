@@ -383,6 +383,10 @@
         "msgid": "tr.catalog-software"
     },
     {
+        "msgstr": "Resourcen",
+        "msgid": "tr.menu.resources"
+    },
+    {
         "msgstr": "Presse",
         "msgid": "tr.menu.press"
     },

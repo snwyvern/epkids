@@ -164,7 +164,7 @@
   disabled: true
   url: press_%l.adoc
   hash: 'press'
-- name: Links
+- name: tr.menu.resources
   icon: communication:call-made
   url: links_%l.adoc
   hash: 'links'
