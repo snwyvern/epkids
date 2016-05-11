@@ -29,7 +29,10 @@ Executes the BPMN process models +
 and orchestrates the integration engine and the Human Tasks
 --
 [CI,header="Regelbasierte Integration-Engine"]
--
+--
+Die Integrationsengine verbindet auf flexible Weise simpl4 Bausteine miteinander.
+In einem visuellen Editor werden die Integrationsregeln definiert.
+--
 [CI,header="Cloud-ready (PaaS,SaaS)"]
 simpl4 und simpl4 Applikationen  füllen die Cloud Schichten PaaS und SaaS
 [CI,header="Integration bestehender Softwaresysteme"]
