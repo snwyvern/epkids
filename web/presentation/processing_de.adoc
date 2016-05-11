@@ -23,9 +23,9 @@ image::web/presentation/images/request-response.svg[width=400]
 
 *Wenn der Publisher neue Daten veröffentlicht, werden diese sofort bei allen Subscribern sichtbar.*
 
-* Eine Integrationsregel  kann ein Publisher sein.
+* Eine Integrationsregel  kann als Publisher verwendet werden.
 * Der WAMP-Endpunkt wird als Publisher-Typ konfiguriert.
-* Der Body der Route enthält die zu veröffentlichenden Daten.
+* Der Body der Message enthält die zu veröffentlichenden Daten.
 * In diesem Beispiel, immer wenn ein File in den "Publish-Ordner" kopiert wird, bekommen die Subscriber den Fileinhalt geliefert.
 
 [.border.thumb]

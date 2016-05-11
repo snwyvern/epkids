@@ -23,9 +23,9 @@ image::web/presentation/images/request-response.svg[width=400]
 
 *If the publisher released new data, she are immediately visible at all subscriber.*
 
-* A Integration rule can be a publisher.
+* A Integration rule can be used as a publisher.
 * The WAMP endpoint is configured as publisher type.
-* The body of the route contains the publishing data.
+* The body of the message contains the publishing data.
 * In this example, whenever a file is copied to the "Publish" folder, the subscriber gets immediately the content.
 
 [.border.thumb]
