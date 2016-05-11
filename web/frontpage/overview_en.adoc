@@ -32,7 +32,7 @@ und orchestriert die Integrationengine sowie die Humantasks
 --
 [CI,header="Rule based Integration-Engine"]
 --
-The integration engine connects in a flexible manner simpl4 building blocks together.
+The integration engine connects in a flexible manner simpl4 building blocks together. +
 The integration rules are defined in an visual editor.
 --
 [CI,header="Cloud-ready (PaaS,SaaS)"]

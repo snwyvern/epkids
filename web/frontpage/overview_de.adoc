@@ -30,7 +30,7 @@ and orchestrates the integration engine and the Human Tasks
 --
 [CI,header="Regelbasierte Integration-Engine"]
 --
-Die Integrationsengine verbindet auf flexible Weise simpl4 Bausteine miteinander.
+Die Integrationsengine verbindet auf flexible Weise simpl4 Bausteine miteinander. +
 In einem visuellen Editor werden die Integrationsregeln definiert.
 --
 [CI,header="Cloud-ready (PaaS,SaaS)"]
