@@ -9,9 +9,9 @@
 
 *Die Antwort sollte unverzüglich zur Verfügung stehen.*
 
-* Freigeschaltete und als RPC-Typ konfigurierte link:http://camel.apache.org[Camelrouten,window="_blank"] werden am link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Router als Prozeduren registriert.
+* Freigebene und als RPC-Typ konfigurierte Integrationsregeln werden am link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[WAMP,window="_blank"]-Router als Prozeduren registriert.
 * Im WAMP-Endpunkt *(2)* werden die  Prozedur-Parameter und der Rückgabewert festgelegt.
-* Damit ist es möglich, die Berechtigung vorausgesetzt, die Route von einem WAMP-Client als Remote Prozedur aufzurufen.
+* Damit ist es möglich, die Berechtigung vorausgesetzt, die Regel von einem WAMP-Client(zb:Browser) als Service(Remote Prozedur) aufzurufen.
 
 [.border.thumb]
 image::web/presentation/images/request-response.svg[width=400]

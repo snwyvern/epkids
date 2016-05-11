@@ -9,9 +9,9 @@
 
 *The answer should be immediately available.*
 
-* Enabled link:http://camel.apache.org[camel routes,window="_blank"], configured as RPC-Type  are registered on the link:https://github.com/tavendo/WAMP/blob/master/spec/basic.md[WAMP,window="_blank"]-Router as procedures.
+* Enabled intergrations rules, configured as RPC-Type  are registered on the link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[WAMP,window="_blank"]-Router as procedures.
 * The procedure parameters and the return value are defined in the WAMP endpoint *(2)*.
-* It is therefore possible, provided authorization, to invoke the route from  WAMP-client as remote procedure.
+* It is therefore possible, provided authorization, to invoke the rule from  WAMP-client(eq.Browser) as service(remote procedure).
 
 [.border.thumb]
 image::web/presentation/images/request-response.svg[width=400]
