@@ -4,7 +4,7 @@
 
 [CI, header="Operatingsystem:Linux,Windows"]
 -
-[CI, header="Backend programming: Java,Groovy"]
+[CI, header="Backend programming: Java,Groovy,Javascript"]
 -
 [CI, header="Webclient:HTML5/Javascript"]
 -
