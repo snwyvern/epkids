@@ -14,6 +14,17 @@ wherever a Java virtual machine is available.
 -
 [CI, header="Dataaccess: datanucleus"]
 -
+[CI, header="Supported databases"]
+--
+* postgresql
+* mariadb
+* mysql
+* oracle
+* db2(as400)
+* mssql(sqlserver)
+* h2
+* cassandra
+--
 [CI, header="Prozessengine: activiti"]
 -
 [CI, header="Integration: apache camel"]
