@@ -14,7 +14,7 @@ wherever a Java virtual machine is available.
 -
 [CI, header="Dataaccess: datanucleus"]
 -
-[CI, header="Supported databases"]
+[CI, header="Supported databases .."]
 --
 * postgresql
 * mariadb

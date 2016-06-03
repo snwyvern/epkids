@@ -14,7 +14,7 @@
 -
 [CI, header="Datenzugriff: datanucleus"]
 -
-[CI, header="Unterstützte Datenbanken:"]
+[CI, header="Unterstützte Datenbanken .."]
 --
 * postgresql
 * mariadb
