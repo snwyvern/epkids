@@ -2,17 +2,19 @@
 
 === icon:lightbulb-o[size=1x,role=black] Technical overwiew ===
 
-[CI, header="Operatingsystem:Linux,Windows,Mac or .."]
+[CI, header="Operatingsystem: Linux,Windows,Mac or .."]
 --
 wherever a Java virtual machine is available.
 --
 [CI, header="Backend programming: Java,Groovy,Javascript"]
 -
-[CI, header="Webclient:HTML5,Websockets,Javascript"]
+[CI, header="Webclient: HTML5,Websockets,Javascript"]
 -
-[CI, header="Development tools: qooxdoo/Javascript"]
--
-[CI, header="Dataaccess: datanucleus"]
+[CI, header="The development tools were created .."]
+--
+with qooxdoo, a universal JavaScript framework
+--
+[CI, header="Persistence Layer: DataNucleus Accessplatform"]
 -
 [CI, header="Supported databases .."]
 --
@@ -25,11 +27,13 @@ wherever a Java virtual machine is available.
 * h2
 * cassandra
 --
-[CI, header="Prozessengine: activiti"]
+[CI, header="Business Process Engine: Activiti BPM Platform"]
 -
-[CI, header="Integration: apache camel"]
--
-[CI, header="Versioning: git"]
+[CI, header="Integration Engine: Apache Camel"]
+--
+Implementation of all enterprise integration patterns (EIP)
+--
+[CI, header="Versioning: Git"]
 -
 
 [.desktop-xidden.imageblock.left.width400]
