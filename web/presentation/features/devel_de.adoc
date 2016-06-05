@@ -1,11 +1,13 @@
 :icons: font
 :linkattrs:
 
-=== icon:lightbulb-o[size=1x,role=black] Entwicklungswerkzeuge für ===
+=== icon:lightbulb-o[size=1x,role=black] Entwicklungswerkzeuge ===
 
-[CI, header="Prozesse(BPMN2)"]
+*Visuelle Editoren*
+
+[CI, header="Prozessmodelierung (BPMN2)"]
 -
-[CI, header="Integrations Regeln"]
+[CI, header="Enterprice Integration Patterns(EIP)"]
 -
 [CI, header="Datenmodell"]
 -
@@ -15,7 +17,7 @@
 -
 [CI, header="Geschäftsregeln"]
 -
-[CI, header="i18n"]
+[CI, header="Übersetzungen(i18n)"]
 -
 [CI, header="Dokumente"]
 -

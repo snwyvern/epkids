@@ -3,9 +3,11 @@
 
 === icon:lightbulb-o[size=1x,role=black] Development Tools ===
 
-[CI, header="Processes(BPMN2)"]
+*Visuelle Editoren*
+
+[CI, header="Process modeling (BPMN2)"]
 -
-[CI, header="Integration rules"]
+[CI, header="Enterprice Integration Patterns (EIP)"]
 -
 [CI, header="Datamodel"]
 -
@@ -15,7 +17,7 @@
 -
 [CI, header="Businessrules"]
 -
-[CI, header="i18n"]
+[CI, header="Translations(i18n)"]
 -
 [CI, header="Documents"]
 -
