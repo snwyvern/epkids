@@ -341,5 +341,9 @@
     {
         "msgstr": "Advantages",
         "msgid": "Ihre Vorteile"
+    },
+    {
+        "msgstr": "Documentation",
+        "msgid": "tr.menu.documentation"
     }
 ]

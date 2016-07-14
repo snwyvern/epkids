@@ -393,5 +393,9 @@
     {
         "msgstr": "Entwicklungs und Service Platform für HTML5 Applikationen mit Prozess- und Integrationsengine.",
         "msgid": "frontpage.subheader"
+    },
+    {
+        "msgstr": "Dokumentation",
+        "msgid": "tr.menu.documentation"
     }
 ]

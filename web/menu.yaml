@@ -168,6 +168,29 @@
   icon: communication:call-made
   url: links_%l.adoc
   hash: 'links'
+- name: tr.menu.documentation
+  icon: chrome-reader-mode
+  children:
+  - name: tr.menu.documentation.introduction
+    icon: av:hd 
+    url: web/Documentation/introduction_en.adoc
+    hash: 'introduction'
+  - name: tr.menu.documentation.instexistapp
+    icon: av:hd 
+    url: web/Documentation/instexistapp_en.adoc
+    hash: 'instexistapp'
+  - name: tr.menu.documentation.enumerations
+    icon: av:hd 
+    url: web/Documentation/enumerations_en.adoc
+    hash: 'enumerations'
+  - name: tr.menu.documentation.project
+    icon: av:hd 
+    url: web/Documentation/project_en.adoc
+    hash: 'project'
+  - name: tr.menu.documentation.messages
+    icon: av:hd 
+    url: web/Documentation/messages_en.adoc
+    hash: 'messages'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc

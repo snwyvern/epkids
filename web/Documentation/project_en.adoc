@@ -1,0 +1,37 @@
+:linkattrs:
+
+== Project Management ==
+
+In the Main menu you can find "project management".
+This includes things which can be part of a application for e.g.
+
+* Data Descriptions with Classes (with their definitions) and Relations (between classes)
+* Enumerations
+* Filter
+* Forms
+* Processes
+* ...
+
+The structure of each project is represented as a tree. It consists of these named and other points, which can be seen as directories.
+It is also possible to create new directories and subdirectories in a project, for e.g. to group something for a special workflow.
+
+In these directories and subdirectories everything like forms, processes, etc. which are concering the same topic, can be placed.
+
+Expected from this are 
+
+* Data description
+* Enumerations
+* Filter
+* Translations
+
+
+WARNING: They can only be placed in the designated drectories !
+
+=== General: Creating new topics in a directory
+
+To create new things like forms, processes an so one, the following has to be done:
+
+While staying with the cursor on a node, you have to click the right mouse button.
+Having done this the selection of possible values will appear.
+Here you have to select the one you want, and then to write a name in the input field.
+Having done both, press the Ok-Button.

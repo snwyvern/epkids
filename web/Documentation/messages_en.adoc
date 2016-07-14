@@ -1,0 +1,39 @@
+:linkattrs:
+
+== Translations ==
+
+Within a project, for nearely all is the possibility to translate it and show it in user interface in different languages.
+The desired language of the user interface has to be selected in the Login screen.
+
+=== Creating a new language and translations ===
+
+While staying on the node _Translations_, you have to click the right mouse button.
+Having done this the selection _New Language_ will appear, which has to be selected.
+After that, you have to write a language code (this appears in the Login-Screen as language selection) in the input field, and press ok.
+
+Then select the new language which appears in the left tree.
+
+Now clicking on the plus sign in the bottom, a new small window with 2 input fiels appears.
+Message-ID => This is the key
+Displayed Text => The text that will be shown in the user interface
+
+After pressing the _Takeover(then still save)_ botton, the new translation will be shown as a new line
+
+
+WARNING: After having saved one or several values via the window and left it, finally all has to saved via clicking the  _save_ button bottom right.
+
+Now in every place where a key in the appliaction is used, the concerning _Displayed_Text_ will be shown, weather in the user interface or in documents.
+
+
+=== Changing existing translations in a language ===
+
+For this only select the designated language in the tree on the left side.
+After that, all existing translations for this language will be shown on the right side.
+
+To find the translation you want to change, use _Filter(incremantal)_ .
+When typing characters in the input field, only these values will listed, in which they in the "Message-ID" or the "Displayed Text" included.
+
+Now having found the right one, only make a double-click in the column you want to change.
+Then the content is highlighted in blue, and you can change it.
+
+Made all the wanted changes, you finally have to save via clicking the _save_ button bottom right.

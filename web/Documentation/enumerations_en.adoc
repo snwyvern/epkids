@@ -1,0 +1,6 @@
+:linkattrs:
+
+== Enumerations ==
+
+With the option "Enumerations" informations like for e.g. custoumer ratings (A-customer, B-customer, ...) or  car-brands (Audi, BMW, Citroen,...) can be defined and managed.
+Such enumarations then can be assigned in classes on field level, thereby for e.g. a categorization is possible. The data can also be filtered then according to these criteria (categories).

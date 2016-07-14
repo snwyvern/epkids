@@ -1,0 +1,28 @@
+:linkattrs:
+
+== How to create a Webapp ==
+
+When you already have entities, they should be able to be managed (crud) via a web frontend.
+Therefore a small HTML-file has to be created, in which the class is adressed.
+
+The file can be placed under Main/Project in the folder *web* or in other created folders, also with a strcture.
+
+Here the example _fahrer.html_ from the Demo-Application kfzplan
+
+<div >
+    <simpl-crud namespace="kfzplan" entity="fahrer"></simpl-crud>
+</div>
+
+After having done this, it has to be added to the menu.yaml  (http://www.yaml.org/start.html)
+
+- name: data.fahrer
+  icon: inbox
+  url: fahrer.html
+  hash: fahrer
+  
+
+In this example the URl is http://www.simpl4.org/repo/kfzplan/start.html
+
+_repo_ means that the call goes to the repository
+_kfzplan_ is the name of the adressed repository 
+_start.html_ is the startpage
