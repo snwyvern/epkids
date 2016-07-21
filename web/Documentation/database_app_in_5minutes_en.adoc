@@ -1,0 +1,110 @@
+:linkattrs:
+
+== A database application in 5 minutes ==
+
+Table of Contents
+
+. Specify the import
+. Finish the import definition
+. The mapping view
+. Creating classes from the output structure
+. Connecting the input with the output
+. Specify the date format
+. Importing the data
+. The app is ready
+
+---
+
+=== Specify the import
+
+* http://ms123s.github.io/simpl4-pages/images/customers.import[Example addresses to test]
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic1.svg[]
+
+	1. demo : Name of the import
+
+	2. sample file : Take the data structure from the importfile
+
+	3. xml : File type (one of csv, xml or json)
+
+	4. The file to be read
+
+	5. Or drop here a file
+
+
+=== Finish the import definition
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic2.svg[]
+
+	1. Like input : We want same output structure as the input
+
+	2. If point 2 is green, then the mapping definition can be generated
+
+
+=== The mapping view
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic3.svg[]
+
+	1. Input structure
+
+	2. The mapping
+
+	3. Ouput structure
+
+
+
+=== Creating classes from the output structure
+
+Creates implied the database scheme
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic4.svg[]
+
+
+=== Connecting the input with the output
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic5.svg[]
+
+	1. Input structure
+
+	2. The mapping
+
+	3. Ouput structure
+
+	4. Go to the import view
+
+	5. active region(gray background) switch, only in the active region can be connected
+
+
+=== Specify the date format
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic5.1.svg[]
+
+	* YYYY : year e.g:1961
+	* MM : month e.g:12
+	* DD : day e.g:31
+
+
+=== Importing the data
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic6.svg[]
+
+	1. Upload a file
+
+	2. Preview mode
+
+	3. Fill the database
+
+
+=== The app is ready
+
+Now you can e.g. search , modify records or send personalized mass mails.
+
+[.width200]
+image::web/Documentation/pictures/db_app_in_5_minutes/pic7.svg[]

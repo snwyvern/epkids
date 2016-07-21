@@ -1,0 +1,33 @@
+:linkattrs:
+
+== Data ==
+
+Key point in a application are the data, and in simpl4 they are described in classes (tables).
+It is possible to have any freely configurable classe such as for example companies, contact persons, activities, articles and more, which can have any properties (fields) such as example  name, surnname, etc.
+classes can be arbitrarily set in relation to each other, so for example a company can have any number of contact persons (1:n).
+The developer of an application is supported by simpl4 with various automatically generated standard components.
+
+So for example, only when creating the classes customer and contact person with the each desired fields, the configuration in the Global Settings and linking the classes together, immedately serveral standard functions are abailable.
+
+* Data can be captured immediately (so-called CRUD-functions)
+* records can be dublicated
+* testing for dublicates
+* various search options
+	** All previous searches can be stored per user, are again loaded or deleted
+	** Combine Search (Various results of an entity can be added or subtracted from each other, and the result can again be saved as a new search)
+	** Exclusion of individual records from search results
+* creating of lists and reports
+** output of lists in serveral forms like CSV, PDF, HTML, ...
+* Mass actions (for example, assign all records of a search field a special value)
+* export data from the application - and import data into the application
+** when importing data there will be a check on definable field for already existing data (duplicates)
+
+
+
+
+
+
+Here you can see how it is used
+
+[.width200]
+image::web/Documentation/pictures/data/Use_of_enumerations.png[]

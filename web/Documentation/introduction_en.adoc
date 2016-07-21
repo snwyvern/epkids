@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-In the following, it will be explained what siml4 is, and for what it can be used
+In the following, it will be explained what simlp4 is, and for what it can be used
 
 === What is simpl4
 
@@ -12,7 +12,9 @@ simpl4 is a development- and serviceplatform for HTML5-applications with
 * included graphical editors for all important components
 
 The source code in simpl4 is the BPMN 2.0 model and the model of integration rules, and if neccecary scripts for e.g. Grovy or JavaScript. 
-All components are exact coordinated, so there is a no Project-Setup neccecary, you can start to develope your responsive Cloud Applications immediatly 
+
+NOTE: All components are exact coordinated, so there is no Project-Setup neccecary.
+Developing responsive Cloud Applications can be started immediatly, after the installation. 
 
 
 === Examples for what or when simpl4 should be used

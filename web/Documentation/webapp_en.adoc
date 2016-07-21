@@ -1,6 +1,6 @@
 :linkattrs:
 
-== How to create a Webapp ==
+== How to make the Webfrontend available ==
 
 When you already have entities, they should be able to be managed (crud) via a web frontend.
 Therefore a small HTML-file has to be created, in which the class is adressed.

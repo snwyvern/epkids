@@ -191,6 +191,14 @@
     icon: av:hd 
     url: web/Documentation/messages_en.adoc
     hash: 'messages'
+  - name: tr.menu.documentation.dbappin5minutes
+    icon: av:hd 
+    url: web/Documentation/database_app_in_5minutes_en.adoc
+    hash: 'dbappin5minutes'
+  - name: tr.menu.documentation.filter
+    icon: av:hd 
+    url: web/Documentation/filter_en.adoc
+    hash: 'filter'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc
