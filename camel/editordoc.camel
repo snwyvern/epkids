@@ -37,7 +37,7 @@
         "urivalue_operation": "get",
         "uriparam_destination": "",
         "uriparam_repo": "global",
-        "uriparam_path": "form.json",
+        "uriparam_path": "camel.json",
         "uriparam_type": "all",
         "extraParams": null
       },

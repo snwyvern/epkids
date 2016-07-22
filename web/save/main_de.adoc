@@ -1,0 +1,61 @@
+:source-highlighter: rouge
+:linkattrs:
+
+
+== _simpl4_: Die etwas andere Entwicklungsumgebung
+
+=== Verknüpfen sie Komponenten auf elegante Weise miteinander.
+_bei Bedarf kann natürlich auch Code geschrieben werden._
+
+++++
+<div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon"> 
+    <a href="https://github.com/ms123s/simpl4-src" target="_blank">Fork me on GitHub</a>
+  </div>
+</div>
+++++
+
+image:web/images/presse.svg[role="related thumb left",width=300]
+
+*_simpl4_* is an open source development environment and is licensed under the GNU General Public Licence v3. *_simpl4_* ist als Allround-Lösung ausgelegt. Ziel der Entwickler war es, mit *_simpl4_* ein Entwicklungssystem  zu schaffen, mit dem sich fachliche Aufgaben mit möglichst geringem technischen Aufwand lösen lassen. Die Möglichkeiten reichen von der Ergänzung und Integration bestehender Softwaresysteme bis hin zu kompletten Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops. 
+Alle Interaktionen mit dem System (Entwicklung und UI) finden über den Browser statt. Das Frontend wird mit HTML und CSS erstellt. Durch vorgefertigte HTML-Elemente (Custom Elements), die mit mit dem Backend kommunizieren, ist es möglich, beliebige Daten in die Webseite einzubinden.
+
+=== Einfach bedienbares Entwicklungssystem
+Im Backend steuert die Prozessengine Activiti gemeinsam mit der Routingengine Apache Camel das Geschehen. Beide Komponenten werden, wie alles andere auch, über grafische Editoren gesteuert. Dadurch ist eine einfache Erstellung von Prozessen, Camelrouten, Datenmodellen, Eingabeformularen usw. möglich. Alle Aspekte des Systems sind aufeinander abgestimmt.
+Realisierbar sind mit *_simpl4_* in der Praxis zum Beispiel individuelle Ergänzungen zu vorhandenen Datenbanken oder CRM-Systemen. So lässt sich beispielsweise ein Prozess aufsetzen, der die Arbeitsabläufe bei der Urlaubsanfrage eines Mitarbeiters abbildet – je nach geforderter Komplexität inklusive der Einbindung verschiedener Hierarchiestufen im Unternehmen und mit Einbeziehung weiterer damit verbundener Aufgaben, etwa der automatischen Reduzierung des Resturlaubs und einer Mitteilung an den anfragenden Mitarbeiter.
+
+=== Daten auf beliebige Weise verknüpfen
+Dabei beschreibt *_simpl4_* Daten in frei konfigurierbaren Klassen (zum Beispiel Firma, Aktivität, Artikel) mit individuell definierbaren Eigenschaften (beispielsweise Name, Vorname usw.), die dann auf beliebige Weise miteinander verknüpft werden können. 
+Noch einfacher stellt sich die Vorgehensweise dar, wenn bereits Beispieldaten vorhanden sind. Dann wird im Zuge des Datenimport das Datenmodell abgeleitet und die Klassen werden erzeugt. Anhand der Datenmodells werden auch Tabellen und Formulare erstellt und somit viele gängige Anwendungsfälle abgedeckt. Dadurch ist es möglich, einfache Datenbankanwendungen – gerade im Vergleich zu konventionellen Vorgehensweisen – innerhalb kurzer Zeit aufzusetzen.
+
+=== Verarbeitung im Backend
+Prozesse (Workflows) werden in der Activiti-Prozessengine ausgeführt und in BPMN2 spezifiziert. Activiti kann Serviceaufgaben an Camel delegieren.
+[.right.width500]
+imagezoom::web/presentation/images/bigpicture.svg[]
+Die Prozessengine ermöglicht es, die aktuellen Zustände von Prozessen zu jedem beliebigen Zeitpunkt einzusehen – auch bei über Wochen oder noch länger laufenden Prozessen. Für beendete Prozesse gibt es eine Historie.
+
+=== Bereitstellung von Daten aus beliebigen Quellen
+Camelrouten sind die hauptsächlichen Verarbeitungseinheiten in *_simpl4_*. Sie spezifizieren den Datenfluss von Komponente zu Komponente. Außerdem stellt Camel eine Vielzahl an Protokollen und Komponenten zur Verfügung, um so zum Beispiel Daten aus beliebigen Quellen wie einem SAP-System, einer IBM AS/400 oder vielen anderen Systemen und Lösungen bereitzustellen
+
+=== Informationen zum Sourcecode
+„Der vollständige Sourcecode von *_simpl4_* steht unter der GPL3 zur Verfügung. Wir verstehen dies ganz bewusst auch als Einladung zur kontinuierlichen Weiterentwicklung der Lösung durch interessierte Nutzer“, erklärt Manfred Sattler, Entwickler von *_simpl4_* und Geschäftsführer der transparent solutions GmbH. „Open Source ist für uns keine kurzfristige Marketingstrategie, sondern bildet seit über 20 Jahren die Leitlinie unserer Entwicklungsarbeit.“
+
+=== Eckdaten im Überblick:
+
+* Primäre Programmiersprachen: Java (Backend) und JavaScript (Frontend)
+* Installation: OSGI-Umgebung wahlweise als Standalone-Server oder als WAR in einer Servlet-Engine
+* Frontend-Programmierung: HTML5 / Material Design mit Polymer 
+* Workflows: Prozessengine Activiti
+* Regelbasiertes Routing: Apache Camel
+* Entwicklungsumgebung: qooxdoo (Javascript)
+* Datenzugriff: DataNucleus
+* Integrierter Chat-Server und webbasierter Chat-Client
+* link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[Web Application Messaging Protocol(WAMP),window="_blank"]
+* BPMN 2.0 - Business Process Model and Notation 
+* Assets wie Workflows, Forms, Filter, Rules usw. werden in Git gehalten und somit versioniert
+
+
+*_simpl4_* auf der Open-Source-Hosting-Plattform GitHub: https://github.com/ms123s/simpl4-src
+
+=== Über _simpl4_:
+*_simpl4_* ist eine Open-Source-Entwicklungsumgebung, mit der Applikationen mit individuellen Prozessen erstellt werden können. Durch die einfache Bedienung setzt *_simpl4_* keine fundierten Programmierkenntnisse voraus und kann auch direkt in Fachabteilungen eingesetzt werden. Hinter *_simpl4_* steht das Entwicklerteam der transparent solutions GmbH.

@@ -55,4 +55,4 @@ zwischen Applikationen zur Verfügung.
 -
 
 [.imageblock.left.width600]
-imagezoom::web/images/features.svgz[]
+imagezoom::web/images/features2.svgz[]

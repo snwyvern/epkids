@@ -216,7 +216,7 @@
                 }
               ]
             },
-            "xf_inputlistname": "",
+            "xf_varname": "",
             "xf_filter": "Fahrerauswahl",
             "xf_required": null
           },

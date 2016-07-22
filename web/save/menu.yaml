@@ -1,46 +1,32 @@
 - name: Home
   icon: home
-  url: frontpage.html
-  hash: '0'
-- name: Home
-  icon: home
-  disabled: true
   url: web/main_%l.adoc
   hash: '0'
 - name: tr.menu.presentation
-  icon: speaker-notes
+  icon: list
   children:
-  - name: tr.menu.presentation.bigpicture
-    icon: av:hd 
-    url: web/presentation/bigpicture_%l.adoc
-    hash: presentation_bigpicture
   - name: tr.menu.presentation.features
-    icon:  grade
-    url: features.html
+    icon:  description
+    url: frontpage.html
     hash: presentation_features
-  - name: tr.menu.presentation.processing
-    icon: av:repeat 
-    url: web/presentation/processing_%l.adoc
-    hash: presentation_processing
-  - name: tr.menu.presentation.sampleapp
-    icon: event
-    url: web/presentation/sampleapp_%l.adoc?t=1
-    hash: presentation_sampleapp
-  - name: tr.menu.presentation.sampleapp2
-    icon: event
-    disabled: true
-    url: web/presentation/sampleapp2_%l.adoc?t=1
-    hash: presentation_sampleapp2
-  - name: tr.menu.presentation.webclient
-    icon: language
-    url: web/presentation/webclient_%l.adoc?t=1
-    hash: presentation_webclient
   - name: tr.menu.presentation.mainparts
     icon: image:filter-3
     url: web/presentation/mainparts_%l.adoc?t=1
     hash: presentation_mainparts
+  - name: tr.menu.presentation.bigpicture
+    icon: image:panorama 
+    url: web/presentation/bigpicture_%l.adoc
+    hash: presentation_bigpicture
+  - name: tr.menu.presentation.processing
+    icon: refresh 
+    url: web/presentation/processing_%l.adoc
+    hash: presentation_processing
+  - name: tr.menu.presentation.webclient
+    icon: language
+    url: web/presentation/webclient_%l.adoc?t=1
+    hash: presentation_webclient
   - name: tr.menu.presentation.usecases
-    icon:  device:widgets
+    icon:  description
     url: web/presentation/usecases_%l.adoc
     hash: presentation_usecases
     help: web/help/usage_%l.adoc
@@ -52,28 +38,28 @@
     icon: file-download
     url: web/tutorials/dataimport_%l.adoc?t=1
     hash: tutorials_dataimport
+- name: CRM Demo
+  icon: supervisor-account 
+  children:
+  - name: menu.crmdemo.accounts
+    icon: folder-shared
+    url: accounts.html
+    hash: accounts
+  - name: menu.crmdemo.contacts
+    icon: account-box
+    url: contacts.html
+    hash: contacts
+  - name: tr.menu.task_list
+    icon: inbox
+    url: tasks.html
+    hash: tasklist
+  - name: tr.menu.process_list
+    icon: settings
+    url: processes.html
+    hash: processlist
 - name: tr.menu.misc_demo
   icon: apps
   children:
-  - name: CRUD Demo
-    icon: communication:contact-phone
-    children:
-    - name: menu.crmdemo.accounts
-      icon: folder-shared
-      url: accounts.html
-      hash: accounts
-    - name: menu.crmdemo.contacts
-      icon: account-box
-      url: contacts.html
-      hash: contacts
-    - name: tr.menu.task_list
-      icon: inbox
-      url: tasks.html
-      hash: tasklist
-    - name: tr.menu.process_list
-      icon: settings
-      url: processes.html
-      hash: processlist
   - name: Chat(XMPP)
     url: chat.html
     icon: communication:chat
@@ -90,7 +76,7 @@
     hash: calendar
   - name: Asciidoctor
     icon: text-format
-    hash: calendar
+    hash: 6-0
     children:
     - hash: asciidoc1
       name: menu.asciidoctor.testfile
@@ -140,7 +126,6 @@
   - name: tr.menu.company.behind-simpl4
     icon: communication:business
     url: company_%l.adoc
-    disabled: true
     hash: 'company-behind-simpl4'
   - name: tr.services
     icon: build
@@ -154,17 +139,12 @@
     icon: done-all
     disabled: true
     hash: 'catalog-software'
-- name: News
-  icon: communication:ring-volume
-  url: news_%l.adoc
-  disabled: true
-  hash: 'news'
 - name: tr.menu.press
   icon: turned-in-not
   disabled: true
   url: press_%l.adoc
   hash: 'press'
-- name: tr.menu.resources
+- name: Links
   icon: communication:call-made
   url: links_%l.adoc
   hash: 'links'
@@ -172,7 +152,3 @@
   icon: info-outline
   url: impressum_%l.adoc
   hash: 'impressum'
-- name: Test
-  icon: info-outline
-  url: test.html
-  hash: 'test'

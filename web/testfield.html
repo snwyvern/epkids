@@ -1,0 +1,52 @@
+<div>
+<dom-module id="test-field">
+  <style>
+    :host {
+      padding-left: 5px !important;
+
+    }
+    paper-input-error{
+      visibility:visible;
+    }
+
+  </style>
+  <template>
+    <div class="vertical layout">
+      <paper-checkbox checked="{{value}}">
+        <label id="label" hidden$="[[!label]]">[[label]]</label>
+      </paper-checkbox>
+
+      <template is="dom-if" if="[[errorMessage]]">
+        <paper-input-error>[[errorMessage]]</paper-input-error>
+      </template>
+    </div>
+
+
+  </template>
+  <script>
+    Polymer( {
+      is: "test-field",
+      behaviors: [ FieldBehavior ],
+      observers: [
+        'valueChanged(value)'
+      ],
+      setValue:function(v){
+        this.value = v;
+      },
+      getValue:function(){
+        return this.value;
+      },
+      valueChanged: function( e ) {
+        if ( this.isDomReady != true ) return;
+        if ( this.withoutCheck ) {
+          this.withoutCheck = false;
+          return;
+        }
+        this.checkConstraints();
+      }
+    } );
+
+  </script>
+</dom-module>
+<test-field></test-field>
+</div>
