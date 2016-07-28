@@ -199,6 +199,10 @@
     icon: av:hd 
     url: web/Documentation/filter_en.adoc
     hash: 'filter'
+  - name: tr.menu.documentation.data
+    icon: av:hd 
+    url: web/Documentation/data_en.adoc
+    hash: 'data'
 - name: Impressum
   icon: info-outline
   url: impressum_%l.adoc
