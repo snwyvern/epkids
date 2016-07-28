@@ -23,11 +23,36 @@ So for example, only when creating the classes customer and contact person with 
 ** when importing data there will be a check on definable field for already existing data (duplicates)
 
 
+=== Creating a new class ===
 
+For this first in the main menu the item _Project Management_ has to be selected.
+Then the tree on the left site must be opened up to node _Data Description/data_. 
 
+Now a click with the left mouse button on _classes_ below opens a new tab on the right side, where the new class with it's fields an options can be captured.
 
-
-Here you can see how it is used
-
+Right mouse click on _classes_
 [.width200]
-image::web/Documentation/pictures/data/Use_of_enumerations.png[]
+image::web/Documentation/pictures/data/New_class.png[]
+
+Then the fields of the class have to be captured.
+[.width200]
+image::web/Documentation/pictures/data/New_class_fields.png[]
+
+
+At the end all has to be saved, and the class will be created.
+[.width200]
+image::web/Documentation/pictures/data/New_class_save.png[]
+
+
+=== Deleting classes ===
+
+To delete single classes or complete database schemata, on _classes_ the right mouse button has to be clicked. Then a small dialog window with _Database-Admin_ appears, which has to be selected.
+
+
+Right mouse click on _classes_
+[.width200]
+image::web/Documentation/pictures/data/Database_Admin.png[]
+
+Deleting single classes/ hole database schemata
+[.width200]
+image::web/Documentation/pictures/data/Database_Admin_delete.png[]

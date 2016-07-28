@@ -1,0 +1,10 @@
+:linkattrs:
+
+== Forms ==
+
+In simpl4 forms are used for interactions with the User within a workflow.
+They include input fields and fields to show the user values, for example the result of a query, where the user has to select a record.
+
+
+[.width200]
+image::web/Documentation/pictures/forms/Example_form.png[]

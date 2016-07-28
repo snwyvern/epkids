@@ -1,0 +1,25 @@
+:linkattrs:
+
+== Processes ==
+
+In the real world many things have to be done or to be decided within complex or less complex workflows, also named processes.
+One could be, if for e.g a customer wants to buy a car, and he needs to finance it at a bank.
+Now from the start of the request several Informations of and about him, have to be captured and to be checked, perhaps of 
+different persons, which have to make decicions for example depending from the amount he has to finance.
+And at the of the process, which can be a few days or weeks later, and when all tasks have been done, the customer gets the information, if his requesr was accepted or rejected.
+
+To represent a process like the discribed in a software application, with normal programming languages a huge effort is nessecary.
+In simpl4 this can be implemented in a much easier way AND with various advanteges like for example the already monitoring 
+possibility (checking at each time how the status of the process is) 
+
+Therefore are various components implented
+- a visual editor for BPMN 2.0
+- a process engine that "runs" BPMN 2.0
+- a integration engine which for example executes services (tasks) for the process engine
+- more editors to create forms, rules, .... 
+
+
+Here you can see how it is used
+
+[.width200]
+image::web/Documentation/pictures/data/Use_of_enumerations.png[]

@@ -1,0 +1,20 @@
+:linkattrs:
+
+=== 1 tägiger simpl4 Einführungsworkshop in Nürnberg ===
+
+Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Integrationsengine.
+
+simpl4 bietet visuelle Editoren (u. a. BPMN 2.0, Integration rules, Forms, Datenmodell) für die wesentlichen Komponenten. Wo dies nicht ausreicht, kann natürlich auch programmiert (gescriptet z.B. mit JavaScript in Frontend und Backend) werden. Sämtliche Subsysteme, vom HTML5-basierten Frontend für Smartphone, Tablet und Desktop bis hin zum Backend (Activiti und Apache Camel), sind optimal aufeinander abgestimmt. Durch vorgefertigte HTML5-Elemente (Custom Elements), die mit dem Backend asynchron über Websockets oder synchron via RPC kommunizieren, können flexible Webapplikationen erstellt werden.
+
+Inhalte des Workshops sind:
+Einführung in das Konzept von simpl4, Vorstellung von BPMN 2.0 sowie das Erstellen von Workflows, Integrationrules, Formularen und Datenmodellen.
+
+Der Workshop findet am _Mittwoch 7 September von 9.00Uhr bis 17.00Uhr in Nürnberg_ statt.
+
+Für Getränke und kleine Snacks ist gesorgt
+
+Bitte melden Sie sich an unter: info@simpl4.org (ggf besser ein Kontaktformular ?)
+
+Sie haben Fragen, kontaktieren Sie uns unter + 
+EMail: info@simpl4.org +
+Telefon: +49 (0)9831 8847538

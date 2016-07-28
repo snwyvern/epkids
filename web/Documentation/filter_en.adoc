@@ -2,8 +2,10 @@
 
 == Filter ==
 
-A _Filter_ is like a function, that is defined one time, an that can be used in different processes.
-It has input-parameters and a result
+A _Filter_ is a query, that is defined one time, and that then can be used in different places in simpl4.
+It has input-parameters and a result as a output.
+
+=== Usage in processes and services
 
 In the following you can see a defined _Filter_, and how it is used in a process in simpl4.
 
@@ -14,7 +16,7 @@ image::web/Documentation/pictures/filter/filter_definition_fields.png[]
 
 ---
 
-Next step is to define the parameter (here name) to its value the selection within the records has to be done. 
+Next step is to define the _parameter name_ (in this case name) to its value the query within the records has to be done. 
 Here it means: select all records which _include_ the value of the parameter _name_ in the field _name_ of the class _driver_.
 [.width200]
 image::web/Documentation/pictures/filter/filter_definition_filter.png[]
@@ -27,20 +29,29 @@ image::web/Documentation/pictures/filter/filter_definition_result.png[]
 
 ---
 
-In helper.camel are serveral integration rules
-One of these, is the rule "getDriverList" (see the field *Name on the right).
+In helper.camel are serveral integration rules.
+One of these, is the rule "getDriverList" (see the field _*Name_) which is a RPC.
 In _RPC-Parameters_ are the input parameters defined, so also _name_ 
-
 [.width200]
 image::web/Documentation/pictures/filter/Integrationrule_rpc_parameter.png[]
 
 ---
 
+Here the _Filter_ which has to be selected can be specified.
+The choise _Find by Filter_ in the field _Operation_ a has to be done. Then a click on the icon has to be made, and in the then appearing window, the filter has to be picked out.
 [.width200]
 image::web/Documentation/pictures/filter/Integrationrule_selecting_filter.png[]
 
+---
+
+In the _booking.process_ the _Ressource_ which should be called, has to be selected.
+For this a click on the icon has to be made, and in the then appearing window, the integration rule _getDriverList_ has to be picked out.
+The _Return variable_ driverlist contains the records from the intergration rule 
 [.width200]
 image::web/Documentation/pictures/filter/Process_call_filter_rule.png[]
 
+---
+
+In the _Parameter Mapping_ of the process has to be defined which, process variable is mapped to the belonging variable of the Integration rule.
 [.width200]
 image::web/Documentation/pictures/filter/Process_parameter_maping.png[]
