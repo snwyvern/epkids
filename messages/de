@@ -397,5 +397,59 @@
     {
         "msgstr": "Dokumentation",
         "msgid": "tr.menu.documentation"
-    }
+    }, {
+    "msgid": "docu.introduction",
+    "msgstr": "Einführung"
+  }, {
+    "msgid": "docu.installation",
+    "msgstr": "Installation"
+  }, {
+    "msgid": "docu.glossary",
+    "msgstr": "Glossary"
+  }, {
+    "msgid": "docu.external_docu",
+    "msgstr": "Externe doku"
+  }, {
+    "msgid": "docu.app_concept",
+    "msgstr": "App Konzept"
+  }, {
+    "msgid": "docu.app_install",
+    "msgstr": "App Installation"
+  }, {
+    "msgid": "docu.editoren",
+    "msgstr": "Editoren"
+  }, {
+    "msgid": "docu.editors.enumeration",
+    "msgstr": "Aufzählungen"
+  }, {
+    "msgid": "docu.editors.data",
+    "msgstr": "Daten"
+  }, {
+    "msgid": "docu.editors.filter",
+    "msgstr": "Filter"
+  }, {
+    "msgid": "docu.editors.message",
+    "msgstr": "Message"
+  }, {
+    "msgid": "docu.editors.form",
+    "msgstr": "Form"
+  }, {
+    "msgid": "docu.editors.service",
+    "msgstr": "Service"
+  }, {
+    "msgid": "docu.editors.document",
+    "msgstr": "Dokument"
+  }, {
+    "msgid": "docu.editors.process",
+    "msgstr": "Prozess"
+  }, {
+    "msgid": "docu.editors.structure",
+    "msgstr": "Struktur"
+  }, {
+    "msgid": "docu.editors.datamapper",
+    "msgstr": "Datamapper"
+  }, {
+    "msgid": "docu.complete_example",
+    "msgstr": "Komplettes Beispiel"
+  }
 ]
