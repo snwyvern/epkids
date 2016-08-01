@@ -47,7 +47,7 @@ Wählen sie aus einer Anzahl von Sprachen aus
 --
 [CI, header="Flexible parametrisierbare Bausteine"]
 --
-Greifen sei auf einen großen Baukasten mit fertigen Komponenten zu. +
+Greifen sie auf einen großen Baukasten mit fertigen Bausteinen(Komponenten) zu. +
 Verbindung der Bausteine durch Parametrisierung und/oder Scripting
 --
 [CI, header="Website komfortabel mit Prozessen verknüpfen"]
