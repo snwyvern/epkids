@@ -50,7 +50,7 @@ image::web/Documentation/pictures/enumerations/Delete_Enumeration.png[]
 
 
 
-=== Assining a enumeration ===
+=== Assining a enumeration ==
 
 Here is a example of _enumerations_ and how it is used
 
@@ -60,4 +60,3 @@ image::web/Documentation/pictures/enumerations/Use_of_enumerations.png[]
 
 
 An other way without creating _Enumerations_ is to write the few contens on field level in the input field "Serch (list). This allows also to select them, and to query for them.
-
