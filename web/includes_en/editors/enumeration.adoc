@@ -2,7 +2,7 @@
 
 == Enumerations ==
 
-With the option _Enumerations_ informations like for e.g. custoumer ratings (A-customer, B-customer, ...) or  car-brands (Audi, BMW, Citroen,...) can be defined and managed.
+With _Enumerations_ informations like for e.g. custoumer ratings (A-customer, B-customer, ...) or  car-brands (Audi, BMW, Citroen,...) can be defined and managed.
 Such enumarations then can be assigned in classes on field level, thereby for e.g. a categorization is possible. The data can also be filtered then according to these criteria (categories).
 
 Normal wise it makes sense to create _Enumerations_ and use them, when the amount of values is not enough to create a separate class for them. 
@@ -50,9 +50,9 @@ image::web/Documentation/pictures/enumerations/Delete_Enumeration.png[]
 
 
 
-=== Assining a enumeration ==
+=== Assining a enumeration ===
 
-Here is a example of _enumerations_ and how it is used
+Here is a example of _enumerations_ and how it is assingned.
 
 [.width200]
 image::web/Documentation/pictures/enumerations/Use_of_enumerations.png[]
@@ -60,3 +60,10 @@ image::web/Documentation/pictures/enumerations/Use_of_enumerations.png[]
 
 
 An other way without creating _Enumerations_ is to write the few contens on field level in the input field "Serch (list). This allows also to select them, and to query for them.
+
+
+=== A enumeration in a application ===
+
+Here is a example of _enumerations_ and how it is used in a application.
+[.width200]
+image::web/Documentation/pictures/enumerations/enumeration_in_app.png[]

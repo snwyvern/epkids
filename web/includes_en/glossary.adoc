@@ -1,0 +1,16 @@
+:linkattrs:
+
+In the following, the terms used in simpl4 will be explained
+
+* BPMN 2.0: Business Process Model and Notation in Version 2.0
+
+* Enumeration: mostly used as items of a selectBox
+
+* Filter: A Database query, which can be used in different places in simpl4
+
+* Process: A workflow that can be desinged and executed in simpl4.
+It has a start and an end event, and which can contain User interactions, Service Tasks and other things 
+
+
+* Service: Is executed in processes or stand alone, normal wise as a RPC 
+
