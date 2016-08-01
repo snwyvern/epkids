@@ -1,0 +1,75 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Was bietet simpl4? ===
+
+
+[CI, header="Einfache Installation"]
+--
+Viele Möglichkeiten der Installation
+
+* Virtualisierung( Images für VirtualBox und vmware)
+* Container ( Docker und Vagrant)
+* Clonen eines Repositories von Github
+* Selber compilieren
+* Testzugang bei uns anfordern
+* Wir sind Ihnen auch behilflich bei der Installation bei einem Hoster ihren Wahl oder in der Cloud(Google, Amazon ..)
+--
+[CI, header="Website mit vorgebenen Gerüst"]
+--
+Durch ein vorgebenes Gerüst, kann sofort begonnen werden.
+
+* Struktur mit einem Tool erstellen
+* Theme beliebig anpassbar
+
+Website kann aber auch komplett nach ihren Bedürfnissen aufgebaut werden.
+--
+[CI, header="Statische und dynamische Webseiten"]
+--
+mit HTML5 und/oder Markdown(Asciidoc) erstellen +
+auch in Markdown Seiten kann dynamischer Inhalt vorkommen 
+--
+[CI, header="Eingebaute Datenbank"]
+--
+* Keinerlei Setup.  Datenmodell erstellen und benutzen
+* aber auch andere Datenbanken(Postgresql, Mysql, Sqlserver, Oracle, DB2  ..) einfach integrierbar
+--
+[CI, header="Viele Scriptsprachen"]
+--
+Wählen sie aus einer Anzahl von Sprachen aus
+
+* PHP
+* Ruby
+* Phyton
+* Javascript
+* Groovy
+* Java8
+--
+[CI, header="Flexible parametrisierbare Bausteine"]
+--
+Greifen sei auf einen großen Baukasten mit fertigen Komponenten zu. +
+Verbindung der Bausteine durch Parametrisierung und/oder Scripting
+--
+[CI, header="Website komfortabel mit Prozessen verknüpfen"]
+--
+* Prozesse starten
+* Human tasks in die Website integrieren.
+* Tasklisten abrufen
+* Signale über Zustandsänderungen empfangen
+* Ereignisse können asynchron über Websocket auftreten
+--
+[CI, header="Werkzeuge zum Importieren ihrer Daten"]
+-
+[CI, header="Dynamische Inhalte aus beliebigen Datenquellen."]
+-
+[CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
+--
+Die Webseite wächst mit ihren Anforderungen. +
+Von statischen Seiten, über das Einbinden von Datenbanken, bis hin zu Businessprozessen, ist alles möglich.
+--
+[CI, header="Schnelle Entwicklungzyklen"]
+--
+In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar
+--
+
+[.imageblock.left.width800]
+image::web/images/peoples.png[]

@@ -14,7 +14,7 @@
    viewBox="0 0 850.80226 790.31259"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel r"
    sodipodi:docname="bigpicture.svg">
   <defs
      id="defs4">
@@ -423,8 +423,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6593406"
-     inkscape:cx="425.40106"
-     inkscape:cy="379.97015"
+     inkscape:cx="262.98715"
+     inkscape:cy="452.28803"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -448,7 +448,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1709,54 +1709,6 @@
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99439949;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 211.87311,388.54308 132.10814,0 c 0.59937,0 1.0819,0.42334 1.0819,0.9492 l 0,29.62398 c 0,0.52585 -0.48253,0.94919 -1.0819,0.94919 l -132.10814,0 c -0.59937,0 -1.0819,-0.42334 -1.0819,-0.94919 l 0,-29.62398 c 0,-0.52586 0.48253,-0.9492 1.0819,-0.9492 z"
        id="rect40183-9" />
-    <g
-       id="g5322"
-       transform="translate(-24.119477,2.4737925)">
-      <text
-         sodipodi:linespacing="100%"
-         id="text4686"
-         y="332.01279"
-         x="241.49353"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.00000191px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="332.01279"
-           x="241.49353"
-           id="tspan4688"
-           sodipodi:role="line">Rule 1</tspan></text>
-      <text
-         sodipodi:linespacing="100%"
-         id="text4686-9"
-         y="371.98431"
-         x="241.49353"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.00000191px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="371.98431"
-           x="241.49353"
-           id="tspan4688-3"
-           sodipodi:role="line">Rule 2</tspan></text>
-      <text
-         sodipodi:linespacing="100%"
-         id="text4686-3"
-         y="409.70966"
-         x="241.49353"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.00000191px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="409.70966"
-           x="241.49353"
-           id="tspan4688-5"
-           sodipodi:role="line">Rule N</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.50000191px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#d32f2f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="193.8855"
-       y="217.59988"
-       id="text4716"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         id="tspan4718"
-         x="193.8855"
-         y="217.59988">Integration-Engine</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1843,5 +1795,53 @@
            id="tspan4688-1-9"
            sodipodi:role="line">Process N</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.49999984px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#d32f2f;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="209.47797"
+       y="217.63406"
+       id="text4729"
+       sodipodi:linespacing="2200%"><tspan
+         sodipodi:role="line"
+         id="tspan4727"
+         x="209.47797"
+         y="217.63406"
+         style="stroke-width:0.9375px;-inkscape-font-specification:'Roboto Slab, Bold';font-family:'Roboto Slab';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17.49999984px;text-anchor:start;text-align:start;writing-mode:lr;line-height:2200%;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;fill:#d32f2f;fill-opacity:1;">Service Engine</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="220.21265"
+       y="335.71561"
+       id="text4733"
+       sodipodi:linespacing="2200%"><tspan
+         sodipodi:role="line"
+         id="tspan4731"
+         x="220.21265"
+         y="335.71561"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.9375px">Service 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="219.308"
+       y="373.17438"
+       id="text4733-2"
+       sodipodi:linespacing="2200%"><tspan
+         sodipodi:role="line"
+         id="tspan4731-0"
+         x="219.308"
+         y="373.17438"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.9375px">Service 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="221.00294"
+       y="408.76834"
+       id="text4733-6"
+       sodipodi:linespacing="2200%"><tspan
+         sodipodi:role="line"
+         id="tspan4731-9"
+         x="221.00294"
+         y="408.76834"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:2200%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.9375px">Service 3</tspan></text>
   </g>
 </svg>
