@@ -16,7 +16,7 @@ Viele Möglichkeiten der Installation
 --
 [CI, header="Website mit vorgebenen Gerüst"]
 --
-Durch ein vorgebenes Gerüst, kann sofort begonnen werden.
+Durch ein vorgebenes Gerüst,ist der Start sehr einfach .
 
 * Tool für Menu und Seitenstruktur
 * Theme beliebig anpassbar
@@ -25,14 +25,14 @@ Website kann aber auch komplett nach ihren Bedürfnissen aufgebaut werden.
 --
 [CI, header="Statische und dynamische Webseiten"]
 --
-mit HTML5 und/oder Markdown(Asciidoc) erstellen +
-auch in Markdown Seiten kann dynamischer Inhalt vorkommen. +
-simpl4 kann auch als CMS verwendet werden.
+mit HTML5 und/oder Markdown(Asciidoc) erstellen. +
+Auch Markdown Seiten können dynamischen Inhalt enthalten. +
+simpl4 kann als sehr einfach zu handhabendes CMS Verwendung finden.
 --
 [CI, header="Eingebaute Datenbank"]
 --
 * Keinerlei Setup.  Datenmodell erstellen und benutzen
-* aber auch andere Datenbanken(Postgresql, Mysql, Sqlserver, Oracle, DB2  ..) einfach integrierbar
+* Auch andere Datenbanken(Postgresql, Mysql, Sqlserver, Oracle, DB2  ..) sind einfach integrierbar
 --
 [CI, header="Viele Scriptsprachen"]
 --
@@ -65,7 +65,7 @@ Verbindung der Bausteine durch Parametrisierung und/oder Scripting
 [CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
 --
 Die Webseite wächst mit ihren Anforderungen. +
-Von statischen Seiten, über das Einbinden von Datenbanken, bis hin zu Businessprozessen, ist alles möglich.
+Von statischen Seiten, über das Einbinden von Datenquellen, bis hin zu Businessprozessen, ist alles möglich.
 --
 [CI, header="Schnelle Entwicklungzyklen"]
 --
