@@ -39,7 +39,7 @@ Wählen sie aus einer Anzahl von Sprachen aus
 
 * PHP
 * Ruby
-* Phyton
+* Python
 * Javascript
 * Groovy
 * Java8
