@@ -12,4 +12,4 @@ After defining relations in simpl4, simpl4 automatically creates the possibility
 Here you can see where Relations are definded, an how it looks in the crud, which is automatically created by simpl4.
 
 [.width200]
-image::web/Documentation/pictures/relations/Example_Relation.png[]
+image::docu/images/relations/Example_Relation.png[]

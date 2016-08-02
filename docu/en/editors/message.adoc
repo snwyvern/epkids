@@ -11,19 +11,19 @@ While staying on the node _Translations_, you have to click the right mouse butt
 Having done this the selection _New Language_ will appear, which has to be selected.
 
 [.width100]
-image::web/Documentation/pictures/translations/New_Translation.png[]
+image::docu/images/translations/New_Translation.png[]
 
 After that, you have to write a language code (this appears in the Login-Screen as language selection) in the input field, and press ok.
 
 Then select the new language which appears in the left tree.
 
 [.width100]
-image::web/Documentation/pictures/translations/New_language_code.png[]
+image::docu/images/translations/New_language_code.png[]
 
 Now clicking on the plus sign in the bottom, a new small window with 2 input fiels appears.
 
 [.width100]
-image::web/Documentation/pictures/translations/New_Messages.png[]
+image::docu/images/translations/New_Messages.png[]
 
 
 Inserts the Message keys and the text that should be shown in the user interface.

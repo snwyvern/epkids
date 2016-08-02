@@ -32,16 +32,16 @@ Now a click with the left mouse button on _classes_ below opens a new tab on the
 
 Right mouse click on _classes_
 [.width200]
-image::web/Documentation/pictures/data/New_class.png[]
+image::docu/images/data/New_class.png[]
 
 Then the fields of the class have to be captured.
 [.width200]
-image::web/Documentation/pictures/data/New_class_fields.png[]
+image::docu/images/data/New_class_fields.png[]
 
 
 At the end all has to be saved, and the class will be created.
 [.width200]
-image::web/Documentation/pictures/data/New_class_save.png[]
+image::docu/images/data/New_class_save.png[]
 
 
 === Deleting classes ===
@@ -51,8 +51,8 @@ To delete single classes or complete database schemata, on _classes_ the right m
 
 Right mouse click on _classes_
 [.width200]
-image::web/Documentation/pictures/data/Database_Admin.png[]
+image::docu/images/data/Database_Admin.png[]
 
 Deleting single classes/ hole database schemata
 [.width200]
-image::web/Documentation/pictures/data/Database_Admin_delete.png[]
+image::docu/images/data/Database_Admin_delete.png[]

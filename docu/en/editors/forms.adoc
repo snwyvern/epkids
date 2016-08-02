@@ -7,4 +7,4 @@ They include input fields and fields to show the user values, for example the re
 
 
 [.width200]
-image::web/Documentation/pictures/forms/Example_form.png[]
+image::docu/images/forms/Example_form.png[]
