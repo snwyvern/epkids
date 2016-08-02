@@ -9,7 +9,7 @@
   {
     "title": "docu.introduction",
     "description": "",
-    "uri": "web/includes_%l/introduction.adoc",
+    "uri": "web/docu/%l/introduction.adoc",
     "icon": "icons:aspect-ratio",
     "adoc_include": true,
     "enabled": true,
@@ -18,7 +18,7 @@
   {
     "title": "docu.installation",
     "description": "",
-    "uri": "web/includes_%l/installation.adoc",
+    "uri": "web/docu/%l/installation.adoc",
     "icon": "icons:card-giftcard",
     "adoc_include": true,
     "enabled": true,
@@ -27,7 +27,7 @@
   {
     "title": "docu.glossary",
     "description": "",
-    "uri": "web/includes_%l/glossary.adoc",
+    "uri": "web/docu/%l/glossary.adoc",
     "icon": "icons:cancel",
     "adoc_include": true,
     "enabled": true,
@@ -36,7 +36,7 @@
   {
     "title": "docu.external_docu",
     "description": "",
-    "uri": "web/includes_%l/external_docu.adoc",
+    "uri": "web/docu/%l/external_docu.adoc",
     "icon": "icons:file-upload",
     "adoc_include": true,
     "enabled": true,
@@ -45,7 +45,7 @@
   {
     "title": "docu.app_install",
     "description": "",
-    "uri": "web/includes_%l/app_install.adoc",
+    "uri": "web/docu/%l/app_install.adoc",
     "icon": "icons:apps",
     "adoc_include": true,
     "enabled": true,
@@ -54,7 +54,7 @@
   {
     "title": "docu.app_concept",
     "description": "",
-    "uri": "web/includes_%l/app_concept.adoc",
+    "uri": "web/docu/%l/app_concept.adoc",
     "icon": "icons:apps",
     "adoc_include": true,
     "enabled": true,
@@ -71,7 +71,7 @@
       {
         "title": "docu.firststeps.firstpage",
         "description": "",
-        "uri": "web/includes_%l/firststeps/firstpage.adoc",
+        "uri": "web/docu/%l/firststeps/firstpage.adoc",
         "icon": "image:looks-one",
         "adoc_include": true,
         "enabled": true,
@@ -90,7 +90,7 @@
       {
         "title": "docu.editors.enumeration",
         "description": "",
-        "uri": "web/includes_%l/editors/enumeration.adoc",
+        "uri": "web/docu/%l/editors/enumeration.adoc",
         "icon": "editor:format-list-numbered",
         "adoc_include": true,
         "enabled": true,
@@ -99,7 +99,7 @@
       {
         "title": "docu.editors.data",
         "description": "",
-        "uri": "web/includes_%l/editors/data.adoc",
+        "uri": "web/docu/%l/editors/data.adoc",
         "icon": "device:battery-80",
         "adoc_include": true,
         "enabled": true,
@@ -108,7 +108,7 @@
       {
         "title": "docu.editors.filter",
         "description": "",
-        "uri": "web/includes_%l/editors/filter.adoc",
+        "uri": "web/docu/%l/editors/filter.adoc",
         "icon": "image:filter-7",
         "adoc_include": true,
         "enabled": true,
@@ -117,7 +117,7 @@
       {
         "title": "docu.editors.message",
         "description": "",
-        "uri": "web/includes_%l/editors/message.adoc",
+        "uri": "web/docu/%l/editors/message.adoc",
         "icon": "communication:message",
         "adoc_include": true,
         "enabled": true,
@@ -126,7 +126,7 @@
       {
         "title": "docu.editors.form",
         "description": "",
-        "uri": "web/includes_%l/editors/form.adoc",
+        "uri": "web/docu/%l/editors/form.adoc",
         "icon": "editor:format-indent-decrease",
         "adoc_include": true,
         "enabled": true,
@@ -135,7 +135,7 @@
       {
         "title": "docu.editors.service",
         "description": "",
-        "uri": "web/includes_%l/editors/service.adoc",
+        "uri": "web/docu/%l/editors/service.adoc",
         "icon": "icons:card-travel",
         "adoc_include": true,
         "enabled": true,
@@ -144,7 +144,7 @@
       {
         "title": "docu.editors.document",
         "description": "",
-        "uri": "web/includes_%l/editors/document.adoc",
+        "uri": "web/docu/%l/editors/document.adoc",
         "icon": "editor:format-color-text",
         "adoc_include": true,
         "enabled": true,
@@ -153,7 +153,7 @@
       {
         "title": "docu.editors.process",
         "description": "",
-        "uri": "web/includes_%l/editors/process.adoc",
+        "uri": "web/docu/%l/editors/process.adoc",
         "icon": "image:filter-vintage",
         "adoc_include": true,
         "enabled": true,
@@ -162,7 +162,7 @@
       {
         "title": "docu.editors.structure",
         "description": "",
-        "uri": "web/includes_%l/editors/structure.adoc",
+        "uri": "web/docu/%l/editors/structure.adoc",
         "icon": "image:grid-on",
         "adoc_include": true,
         "enabled": true,
@@ -171,7 +171,7 @@
       {
         "title": "docu.editors.datamapper",
         "description": "",
-        "uri": "web/includes_%l/editors/datamapper.adoc",
+        "uri": "web/docu/%l/editors/datamapper.adoc",
         "icon": "maps:layers",
         "adoc_include": true,
         "enabled": true,
@@ -182,7 +182,7 @@
   {
     "title": "docu.complete_example",
     "description": "",
-    "uri": "web/includes_%l/complete_example.adoc",
+    "uri": "web/docu/%l/complete_example.adoc",
     "icon": "icons:cached",
     "adoc_include": true,
     "enabled": true,
