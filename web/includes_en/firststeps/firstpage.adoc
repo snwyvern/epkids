@@ -1,0 +1,34 @@
+:linkattrs:
+
+
+[.lead]
+Load web/menu.structure
+
+The included menu has only on entry
+
+[.autowidth]
+imagezoom::web/includes_en/firststeps/create_structure.svg[]
+
+{sp} +
+{sp} +
+
+[.lead]
+Load web/main.adoc
+
+The content of the first page 
+
+[.autowidth]
+imagezoom::web/includes_en/firststeps/first_page.svg[]
+
+
+{sp} +
+{sp} +
+
+[.lead]
+And now goto http://localhost/repo/testapp/start.html
+
+*localhost* is a placeholder for the real hostname +
+*testapp* is a placeholder for your chosen appname
+
+[.autowidth]
+imagezoom::web/includes_en/firststeps/browser1.svg[]

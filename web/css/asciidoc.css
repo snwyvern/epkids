@@ -427,7 +427,7 @@ b.button:after { content: "]"; padding: 0 2px 0 3px; }
 
 table.tableblock > caption.title { white-space: nowrap; overflow: visible; max-width: 0; }
 
-.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { color: #B1005D; }
+.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { font-weight: 600; }
 
 table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p { font-size: inherit; }
 

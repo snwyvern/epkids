@@ -43,6 +43,15 @@
     "appendix": "'title='+tr(title)"
   },
   {
+    "title": "docu.app_install",
+    "description": "",
+    "uri": "web/includes_%l/app_install.adoc",
+    "icon": "icons:apps",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
     "title": "docu.app_concept",
     "description": "",
     "uri": "web/includes_%l/app_concept.adoc",
@@ -52,13 +61,23 @@
     "appendix": "'title='+tr(title)"
   },
   {
-    "title": "docu.app_install",
+    "title": "docu.firststeps",
     "description": "",
-    "uri": "web/includes_%l/app_install.adoc",
-    "icon": "icons:apps",
-    "adoc_include": true,
+    "uri": "",
+    "icon": "image:filter-1",
+    "adoc_include": false,
     "enabled": true,
-    "appendix": "'title='+tr(title)"
+    "children": [
+      {
+        "title": "docu.firststeps.firstpage",
+        "description": "",
+        "uri": "web/includes_%l/firststeps/firstpage.adoc",
+        "icon": "image:looks-one",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      }
+    ]
   },
   {
     "title": "docu.editoren",

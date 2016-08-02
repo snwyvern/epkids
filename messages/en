@@ -345,60 +345,85 @@
     {
         "msgstr": "Documentation",
         "msgid": "tr.menu.documentation"
-    }, {
-    "msgid": "docu.introduction",
-    "msgstr": "Introduction"
-  }, {
-    "msgid": "docu.installation",
-    "msgstr": "Installation"
-  }, {
-    "msgid": "docu.glossary",
-    "msgstr": "Glossary"
-  }, {
-    "msgid": "docu.external_docu",
-    "msgstr": "External docu"
-  }, {
-    "msgid": "docu.app_concept",
-    "msgstr": "App concept"
-  }, {
-    "msgid": "docu.app_install",
-    "msgstr": "App install"
-  }, {
-    "msgid": "docu.editoren",
-    "msgstr": "Editors"
-  }, {
-    "msgid": "docu.editors.enumeration",
-    "msgstr": "Enumeration"
-  }, {
-    "msgid": "docu.editors.data",
-    "msgstr": "Data"
-  }, {
-    "msgid": "docu.editors.filter",
-    "msgstr": "Filter"
-  }, {
-    "msgid": "docu.editors.message",
-    "msgstr": "Message"
-  }, {
-    "msgid": "docu.editors.form",
-    "msgstr": "Form"
-  }, {
-    "msgid": "docu.editors.service",
-    "msgstr": "Service"
-  }, {
-    "msgid": "docu.editors.document",
-    "msgstr": "Document"
-  }, {
-    "msgid": "docu.editors.process",
-    "msgstr": "Process"
-  }, {
-    "msgid": "docu.editors.structure",
-    "msgstr": "Structure"
-  }, {
-    "msgid": "docu.editors.datamapper",
-    "msgstr": "Datamapper"
-  }, {
-    "msgid": "docu.complete_example",
-    "msgstr": "Complete example"
-  }
-
+    },
+    {
+        "msgstr": "Introduction",
+        "msgid": "docu.introduction"
+    },
+    {
+        "msgstr": "Installation",
+        "msgid": "docu.installation"
+    },
+    {
+        "msgstr": "Glossary",
+        "msgid": "docu.glossary"
+    },
+    {
+        "msgstr": "External docu",
+        "msgid": "docu.external_docu"
+    },
+    {
+        "msgstr": "App concept",
+        "msgid": "docu.app_concept"
+    },
+    {
+        "msgstr": "App install",
+        "msgid": "docu.app_install"
+    },
+    {
+        "msgstr": "Editors",
+        "msgid": "docu.editoren"
+    },
+    {
+        "msgstr": "Enumeration",
+        "msgid": "docu.editors.enumeration"
+    },
+    {
+        "msgstr": "Data",
+        "msgid": "docu.editors.data"
+    },
+    {
+        "msgstr": "Filter",
+        "msgid": "docu.editors.filter"
+    },
+    {
+        "msgstr": "Message",
+        "msgid": "docu.editors.message"
+    },
+    {
+        "msgstr": "Form",
+        "msgid": "docu.editors.form"
+    },
+    {
+        "msgstr": "Service",
+        "msgid": "docu.editors.service"
+    },
+    {
+        "msgstr": "Document",
+        "msgid": "docu.editors.document"
+    },
+    {
+        "msgstr": "Process",
+        "msgid": "docu.editors.process"
+    },
+    {
+        "msgstr": "Structure",
+        "msgid": "docu.editors.structure"
+    },
+    {
+        "msgstr": "Datamapper",
+        "msgid": "docu.editors.datamapper"
+    },
+    {
+        "msgstr": "Complete example",
+        "msgid": "docu.complete_example"
+    },
+    {
+        "msgstr": "First steps",
+        "msgid": "docu.firststeps"
+    },
+    {
+        "msgstr": "Create first page",
+        "msgid": "docu.firststeps.firstpage"
+    }
 ]
