@@ -2,33 +2,34 @@
 
 
 [.lead]
-Load web/menu.structure
+Create a new class with name "Friend"
 
-The included menu has only on entry
+The class holds your friends data
 
 [.autowidth]
-imagezoom::docu/images/firststeps/create_structure.svg[]
+imagezoom::docu/images/firststeps/create_class.svg[]
 
 {sp} +
 {sp} +
 
 [.lead]
-Load web/main.adoc
+For later use, we need an filter. +
 
-The content of the first page 
+The concept of "filter" is described elsewhere. +
+Short: A filter holds an database query.
+
+The filter is used in the next step and is for now very simple.
+
 
 [.autowidth]
-imagezoom::docu/images/firststeps/first_page.svg[]
+imagezoom::docu/images/firststeps/create_filter.svg[]
 
 
 {sp} +
 {sp} +
 
 [.lead]
-And now goto http://localhost/repo/testapp/start.html
-
-*localhost* is a placeholder for the real hostname +
-*testapp* is a placeholder for your chosen appname
+Now we will fill the database with some sample data.
 
 [.autowidth]
-imagezoom::docu/images/firststeps/browser1.svg[]
+imagezoom::docu/images/firststeps/example_data.svg[]

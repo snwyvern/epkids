@@ -85,6 +85,15 @@
         "adoc_include": true,
         "enabled": true,
         "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu_firststeps.create_service",
+        "description": "",
+        "uri": "docu/%l/firststeps/createservice.adoc",
+        "icon": "editor:drag-handle",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
       }
     ]
   },

@@ -481,5 +481,9 @@
     {
         "msgstr": "Daten erstellen",
         "msgid": "docu.firststeps.create_data"
+    },
+    {
+        "msgstr": "Einen Service erstellen",
+        "msgid": "docu_firststeps.create_service"
     }
 ]

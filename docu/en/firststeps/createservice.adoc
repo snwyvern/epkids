@@ -1,0 +1,44 @@
+:linkattrs:
+
+
+[.lead]
+Description of the service
+
+. The service entrypoint
+. The name under which the service is reachable
+. Theire are in the moment no parameters. +
+The result is placed in the body of the service message.
+. The permitted user and roles. +
+when the service should be reachable from the website, then the role guest should be assigned.
+
+[.autowidth]
+imagezoom::docu/images/firststeps/create_service1.svg[]
+
+{sp} +
+{sp} +
+
+[.lead]
+The next building block is the previously created "filter".
+
+. Building block "Localdata"
+. The operation "FindByFilter" ist used.
+. The filtername
+
+
+[.autowidth]
+imagezoom::docu/images/firststeps/create_service2.svg[]
+
+
+{sp} +
+{sp} +
+
+[.lead]
+Last but not leased, we are testing the service.
+
+. run the service with this user credintials
+. the service to execute
+. execute it
+. the result
+
+[.autowidth]
+imagezoom::docu/images/firststeps/test_service.svg[]
