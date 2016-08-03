@@ -9,7 +9,7 @@ Description of the service
 . Theire are in the moment no parameters. +
 The result is placed in the body of the service message.
 . The permitted user and roles. +
-when the service should be reachable from the website, then the role guest should be assigned.
+If the service should be reachable from the website, then the role guest should be assigned.
 
 [.autowidth]
 imagezoom::docu/images/firststeps/create_service1.svg[]

@@ -1,0 +1,53 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+[.lead]
+We create an new entry in the menu
+
+[CAUTION]
+Very urgent: If the page should contain dynamic data, then the "template" paramter is necessary
+
+[.autowidth]
+imagezoom::docu/images/firststeps/one_more_entry.svg[]
+
+
+{sp} +
+{sp} +
+{sp} +
+
+[.lead]
+The following asciidoc page contains  the resulting data from the service call
+
+[source,handlebars,html]
+----
+:linkattrs:
+
+=== Using the service ===
+
+
+++++
+
+<simpl-rpc method="docu.getFriends" service="camelRoute" params="{}" response="{{friends}}"></simpl-rpc>
+
+ <table>
+    <template is="dom-repeat"  items="{{friends}}">
+      <tr>
+        <td>[[item.surname]]</td>
+        <td>[[item.firstname]]</td>
+        <td>[[item.gender]]</td>
+        <td>[[item.phone]]</td>
+      </tr>
+    </template>
+  </table>
+  
+++++
+----
+{sp} +
+{sp} +
+
+[.lead]
+And this is the page now
+
+[.autowidth]
+imagezoom::docu/images/firststeps/dynamicpage1.svg[]

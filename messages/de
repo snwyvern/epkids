@@ -485,5 +485,9 @@
     {
         "msgstr": "Einen Service erstellen",
         "msgid": "docu_firststeps.create_service"
+    },
+    {
+        "msgstr": "Webseite mit Daten",
+        "msgid": "docu.firststeps.dynamic_page"
     }
 ]

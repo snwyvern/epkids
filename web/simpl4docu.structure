@@ -90,7 +90,16 @@
         "title": "docu_firststeps.create_service",
         "description": "",
         "uri": "docu/%l/firststeps/createservice.adoc",
-        "icon": "editor:drag-handle",
+        "icon": "image:filter-center-focus",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.firststeps.dynamic_page",
+        "description": "",
+        "uri": "docu/%l/firststeps/dynamicpage.adoc",
+        "icon": "image:camera",
         "adoc_include": true,
         "enabled": true,
         "appendix": "'title='+tr(title)"
