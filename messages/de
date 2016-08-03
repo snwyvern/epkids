@@ -477,5 +477,9 @@
     {
         "msgstr": "Erste Seite erstellen",
         "msgid": "docu.firststeps.firstpage"
+    },
+    {
+        "msgstr": "Daten erstellen",
+        "msgid": "docu.firststeps.create_data"
     }
 ]

@@ -425,5 +425,9 @@
     {
         "msgstr": "Create first page",
         "msgid": "docu.firststeps.firstpage"
+    },
+    {
+        "msgstr": "Create data",
+        "msgid": "docu.firststeps.create_data"
     }
 ]

@@ -76,6 +76,15 @@
         "adoc_include": true,
         "enabled": true,
         "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.firststeps.create_data",
+        "description": "",
+        "uri": "docu/%l/firststeps/createdata.adoc",
+        "icon": "communication:contact-phone",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
       }
     ]
   },
