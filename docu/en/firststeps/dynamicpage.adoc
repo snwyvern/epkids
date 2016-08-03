@@ -17,7 +17,7 @@ imagezoom::docu/images/firststeps/one_more_entry.svg[]
 {sp} +
 
 [.lead]
-The following asciidoc page contains  the resulting data from the service call
+The following asciidoc page calls the service "getFriends" *(1)* and shows  the resulting data in table form *(2)*
 
 [source,handlebars,html]
 ----
@@ -28,9 +28,9 @@ The following asciidoc page contains  the resulting data from the service call
 
 ++++
 
-<simpl-rpc method="docu.getFriends" service="camelRoute" params="{}" response="{{friends}}"></simpl-rpc>
+<simpl-rpc method="docu.getFriends" service="camelRoute" params="{}" response="{{friends}}"></simpl-rpc> <!--1-->
 
- <table>
+ <table><!--2-->
     <template is="dom-repeat"  items="{{friends}}">
       <tr>
         <td>[[item.surname]]</td>
