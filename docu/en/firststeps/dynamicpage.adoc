@@ -28,7 +28,7 @@ The following asciidoc page calls the service "getFriends" *(1)* and shows  the 
 
 ++++
 
-<simpl-rpc method="docu.getFriends" service="camelRoute" params="{}" response="{{friends}}"></simpl-rpc> <!--1-->
+<simpl-rpc method="docu.getFriends" service="simpl4" params="{}" response="{{friends}}"></simpl-rpc> <!--1-->
 
  <table><!--2-->
     <template is="dom-repeat"  items="[[friends]]">
