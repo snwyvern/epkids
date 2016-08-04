@@ -35,7 +35,7 @@ imagezoom::docu/images/firststeps/create_service2.svg[]
 [.lead]
 Last but not leased, we are testing the service.
 
-. run the service with this user credintials
+. run the service with this user credentials
 . the service to execute
 . execute it
 . the result

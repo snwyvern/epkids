@@ -3,7 +3,7 @@
 
 
 [.lead]
-We create an new entry in the menu
+We create a new entry in the menu
 
 [CAUTION]
 Very urgent: If the page should contain dynamic data, then the "template" paramter is necessary
@@ -31,7 +31,7 @@ The following asciidoc page calls the service "getFriends" *(1)* and shows  the 
 <simpl-rpc method="docu.getFriends" service="camelRoute" params="{}" response="{{friends}}"></simpl-rpc> <!--1-->
 
  <table><!--2-->
-    <template is="dom-repeat"  items="{{friends}}">
+    <template is="dom-repeat"  items="[[friends]]">
       <tr>
         <td>[[item.surname]]</td>
         <td>[[item.firstname]]</td>
