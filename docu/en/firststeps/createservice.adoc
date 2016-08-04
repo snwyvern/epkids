@@ -39,6 +39,7 @@ Last but not leased, we are testing the service.
 . the service to execute
 . execute it
 . the result
+. this icon starts the servicetester
 
 [.autowidth]
 imagezoom::docu/images/firststeps/test_service.svg[]
