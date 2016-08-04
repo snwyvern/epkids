@@ -10,18 +10,31 @@
 [.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
-=== Apache Camel *Routing and conversion engine* ===
 
-* Camelroutes are the main processing units in *_simpl4_.* +
-The specify the data flow from component to component. +
-A Camel route corresponds to a procedure that registers on the WAMP router and is in this way reachable via RPC(HTTP or websocket).
+
+=== Service ===
+
+A service consists of one more building blocks.
+
+[.width800]
+imagezoom::web/presentation/images/service.svg[]
+
+==== Exchange ====
+
+On the service entrypoint is an exchange created and with the service parameters populated. +
+The exchange is handed from building block to building block.
+
+[.width500]
+imagezoom::web/presentation/images/exchange.svg[]
+
+
 
 === Activiti processengine
 
 * Processes (workflows) are executed in the Activiti processengine.
 * The processes are specified in BPMN2.
 * A graphical editor (Modeler) is available here.
-* Service tasks can be delegated to Camel.
+* Service tasks are delegated to the service engine.
 
 === WAMP *Web Application Messaging Protocol* ===
 
