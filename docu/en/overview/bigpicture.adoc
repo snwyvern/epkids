@@ -8,7 +8,7 @@
 === simpl4 backend, the main ingredients ===
 
 [.width800]
-imagezoom::web/presentation/images/bigpicture.svg[]
+imagezoom::docu/images/overview/bigpicture.svg[]
 
 
 
@@ -17,7 +17,7 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 A service consists of one more building blocks.
 
 [.width800]
-imagezoom::web/presentation/images/service.svg[]
+imagezoom::docu/images/overview/service.svg[]
 
 ==== Exchange ====
 
@@ -25,7 +25,7 @@ On the service entrypoint an exchange is created and with the service parameters
 The exchange is handed from building block to building block.
 
 [.width500]
-imagezoom::web/presentation/images/exchange.svg[]
+imagezoom::docu/images/overview/exchange.svg[]
 
 
 
@@ -49,12 +49,4 @@ Incidentally, in this way is browser-browser communication possible!
 === Standalone server ===
 
 [.width700]
-imagezoom::web/presentation/images/server_en.svg[]
-
-=== Servlet engine ===
-
-The simpl4 backend can be deployed as a WAR in a servlet engine.
-
-[.width700]
-imagezoom::web/presentation/images/servlet-engine_en.svg[]
-
+imagezoom::docu/images/overview/server_en.svg[]

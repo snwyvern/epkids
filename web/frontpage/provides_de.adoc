@@ -73,4 +73,4 @@ In den visualisierten Abläufen sind Ansätze für notwendige Programmänderunge
 --
 
 [.imageblock.left.width800]
-image::web/images/peoples.png[]
+image::web/images/devel.svg[]

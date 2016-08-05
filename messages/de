@@ -489,5 +489,13 @@
     {
         "msgstr": "Webseite mit Daten",
         "msgid": "docu.firststeps.dynamic_page"
+    },
+    {
+        "msgstr": "Übersicht",
+        "msgid": "docu.overview"
+    },
+    {
+        "msgstr": "Zusammenhänge",
+        "msgid": "docu.overview.bigpicture"
     }
 ]

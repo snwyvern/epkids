@@ -19,7 +19,7 @@ imagezoom::web/presentation/images/service.svg[]
 
 ==== Exchange ====
 
-Am Serviceeingang wird ein Exchange erstellt und mit den Serviceparamtern gefüllt. +
+Am Serviceeingang wird ein Exchange erstellt und mit den Serviceparametern gefüllt. +
 Der Exchange wird von Baustein zu Baustein gereicht.
 
 [.width500]
