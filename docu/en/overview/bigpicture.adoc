@@ -2,8 +2,6 @@
 :source-highlighter: rouge
 
 
-== Technical overview ==
-
 
 === simpl4 backend, the main ingredients ===
 
@@ -14,7 +12,9 @@ imagezoom::docu/images/overview/bigpicture.svg[]
 
 === Service ===
 
-A service consists of one or more building blocks.
+A service consists of one or more building blocks. +
+simpl4 contains a large kit with finished components. +
+The blocks can be connected by parameterization and / or scripting.
 
 [.width800]
 imagezoom::docu/images/overview/service.svg[]
@@ -40,21 +40,39 @@ imagezoom::docu/images/overview/exchange.svg[]
 
 
 
-=== Activiti processengine
+=== Processengine
 
-* Processes (workflows) are executed in the Activiti processengine.
-* The processes are specified in BPMN2.
-* A graphical editor (Modeler) is available here.
+* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN) 2.0 processes. 
+* in simpl4 there is a graphical modeler to create the bpmn processes.
 * Service tasks are delegated to the service engine.
+
+
+=== Interaction between service and process engine ===
+
+This example is not really meaningful,  but shows some interesting things.
+
+[.width1000]
+imagezoom::docu/images/overview/process-and-service.svg[]
+
+. There are several opportunities to start a process. +
+Here in the example, the Service Engine starts the process(via message) or a user starts the process(via form or menu).
+. The process performs a service 
+. and immediately get the result.
+. Now a asynchronous service are startet.
+. The process waits on an event gateway.
+. The process receives maybe the "answer"  message 
+. or a timeout occurs if the message is not received in time.
+. an error occurs 
+
 
 === WAMP *Web Application Messaging Protocol* ===
 
 * Websocket Subprotokol registered by IANA
 * Provides routed remote procedure calls (RPC) and PubSub
-* WAMP consists of clients and routers (not be confused with the Camel routes)
-* The procedures are registered on the router
+* WAMP consists of clients and routers. 
+* The simpl4 services  are registered on the integrated router
 * *simpl4* is WAMP client and router
-* External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
+* External equipment (eq. browsers) can register their own services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 
 === Standalone server ===
