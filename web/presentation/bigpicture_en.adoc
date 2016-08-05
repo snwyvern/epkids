@@ -14,7 +14,7 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 
 === Service ===
 
-A service consists of one more building blocks.
+A service consists of one or more building blocks.
 
 [.width800]
 imagezoom::web/presentation/images/service.svg[]

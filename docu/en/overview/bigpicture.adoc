@@ -14,15 +14,26 @@ imagezoom::docu/images/overview/bigpicture.svg[]
 
 === Service ===
 
-A service consists of one more building blocks.
+A service consists of one or more building blocks.
 
 [.width800]
 imagezoom::docu/images/overview/service.svg[]
 
-==== Exchange ====
+==== Exchange and message ====
 
 On the service entrypoint an exchange is created and with the service parameters populated. +
-The exchange is handed from building block to building block.
+The exchange is handed from building block to building block. +
+An exchange in simpl4 is the message container during the processing. +
+
+Properties are used to contain global-level information, +
+whereas message headers are specific to a particular message. +
+Properties are name-value pairs; the name is a unique, case-insensitive string.  +
+Simpl4 imposes no constraints on the type of the value. You can store a any data.
+
+The message containing the data.
+Wherein the body contains the payload and the the headers the meta data. +
+If a building block has the concept of headers,for example, http oder jms, the message headers are +
+converted to/from protocol specific headers.
 
 [.width500]
 imagezoom::docu/images/overview/exchange.svg[]
