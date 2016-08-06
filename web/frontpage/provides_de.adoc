@@ -16,7 +16,7 @@ Viele Möglichkeiten der Installation
 --
 [CI, header="Website mit vorgebenen Gerüst"]
 --
-Durch ein vorgebenes Gerüst,ist der Start sehr einfach .
+Durch ein vorgebenes Gerüst,ist der Einstieg sehr einfach .
 
 * Tool für Menu und Seitenstruktur
 * Theme beliebig anpassbar
