@@ -34,6 +34,15 @@
     "appendix": "'title='+tr(title)"
   },
   {
+    "title": "docu.overview",
+    "description": "",
+    "uri": "docu/%l/overview.adoc",
+    "icon": "image:looks-one",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
     "title": "docu.external_docu",
     "description": "",
     "uri": "docu/%l/external_docu.adoc",
@@ -52,15 +61,6 @@
     "appendix": "'title='+tr(title)"
   },
   {
-    "title": "docu.overview.bigpicture",
-    "description": "",
-    "uri": "docu/%l/bigpicture.adoc",
-    "icon": "image:looks-one",
-    "adoc_include": true,
-    "enabled": true,
-    "appendix": "'title='+tr(title)"
-  },
-  {
     "title": "docu.app_concept",
     "description": "",
     "uri": "docu/%l/app_concept.adoc",
@@ -68,6 +68,14 @@
     "adoc_include": true,
     "enabled": true,
     "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.customelements",
+    "description": "",
+    "uri": "docu/%l/customelements.html",
+    "icon": "icons:dashboard",
+    "adoc_include": false,
+    "enabled": true
   },
   {
     "title": "docu.firststeps",
