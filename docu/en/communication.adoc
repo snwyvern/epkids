@@ -20,7 +20,7 @@ There is also a javascript module: *simpl4.util.Rpc*, this does the same in an i
 
 
 
-NOTE: Each service defined in the serviceeditor  for "rpc via http", must begin with a "Direct" endpoint. image:docu/images/rpcendpoint.png[]
+NOTE: Each service defined in the serviceeditor  for "rpc via http", must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[]
 
 
 
@@ -34,7 +34,7 @@ Websocket can be used to transmit bidirectional raw data. +
 As opposed to 'WAMP', you must provide the protocol here self.
 
 
-NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" endpoint. image:docu/images/websocketendpoint.png[]
+NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" endpoint. image:docu/images/communication/websocketendpoint.png[]
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details
 
@@ -47,7 +47,7 @@ WAMP is an open standard WebSocket subprotocol that provides two application mes
 
 
 
-NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" endpoint. image:docu/images/wampendpoint.png[]
+NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" endpoint. image:docu/images/communication/wampendpoint.png[]
 
 The "WAMP" endpoint mode can be configured as "publisher" or "rpc".
 
@@ -86,3 +86,18 @@ There are many events available.
 - Variable created
 - Variable deleted
 - Variable updated
+
+[.width1000]
+imagezoom::docu/images/communication/process-service-website-interaction.svg[]
+
+
+. Process started
+. Human Task created, the website display's maybe a form.
+. Task completed
+. Activity error received
+. Activity message received
+. Timer fired
+. Process completed
+. Process cancelled
+
+
