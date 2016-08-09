@@ -52,3 +52,37 @@ NOTE: Each service defined in the serviceeditor  for use with wamp, must begin w
 The "WAMP" endpoint mode can be configured as "publisher" or "rpc".
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[examples,window="_blank"]
+
+
+
+==== PubSub and simpl4
+
+In the context of simpl4 there is a very valueable usecase of Subscribe/Publish.
+
+The processengine *publishes* her states.
+
+A Website can *subscribe* to one ore more of this events and then react on this.
+
+There are many events available.
+
+.Here is the list in order to evaluate the possibilities:
+[listing]
+- Activity cancelled
+- Activity compensate
+- Activity completed
+- Activity error received
+- Activity message received
+- Activity signaled
+- Activity started
+- Process cancelled
+- Process completed
+- Process completed with error end event
+- Process started
+- Sequenceflow taken
+- Task assigned
+- Task completed
+- Task created
+- Timer fired
+- Variable created
+- Variable deleted
+- Variable updated
