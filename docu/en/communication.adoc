@@ -1,0 +1,54 @@
+:linkattrs:
+
+
+==== Remote Procedure Calls(RPC) over http
+
+The most basic communication in simpl4 is *rpc* via http. +
+rpc can be performed both, declarativ and imperative.  +
+There is a customelement for the declarative way.
+
+[source,html]
+----
+ <simpl-rpc method="namespaceName.methodName" service="simpl4" params='{"key":"value"}' response="{{responseData}}"></simpl-rpc>
+----
+
+* The method name should always be preceded by the namespace name.
+* The service is mostly "simpl4" and can be omitted.
+* Params, the service parameter object, can be also expressed as JSON as in the example here.
+
+There is also a javascript module: *simpl4.util.Rpc*, this does the same in an imperative way.
+
+
+
+NOTE: Each service defined in the serviceeditor  for "rpc via http", must begin with a "Direct" endpoint. image:docu/images/rpcendpoint.png[]
+
+
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details.
+
+
+
+==== Plain websockets
+
+Websocket can be used to transmit bidirectional raw data. +
+As opposed to 'WAMP', you must provide the protocol here self.
+
+
+NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" endpoint. image:docu/images/websocketendpoint.png[]
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details
+
+
+==== RPC and Pub/Sub with WAMP
+
+WAMP is an open standard WebSocket subprotocol that provides two application messaging patterns in one unified protocol:
+*Remote Procedure Calls + Publish & Subscribe*.
+
+
+
+
+NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" endpoint. image:docu/images/wampendpoint.png[]
+
+The "WAMP" endpoint mode can be configured as "publisher" or "rpc".
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[examples,window="_blank"]

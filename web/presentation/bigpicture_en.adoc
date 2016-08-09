@@ -29,20 +29,19 @@ imagezoom::web/presentation/images/exchange.svg[]
 
 
 
-=== Activiti processengine
+=== Processengine
 
-* Processes (workflows) are executed in the Activiti processengine.
-* The processes are specified in BPMN2.
-* A graphical editor (Modeler) is available here.
+* The processes are specified in BPMN2 and executed in the processengine.
+* A graphical editor (Modeler) for BPMN2  is in *simpl4* available.
 * Service tasks are delegated to the service engine.
 
 === WAMP *Web Application Messaging Protocol* ===
 
-* Websocket Subprotokol registered by IANA
-* Provides routed remote procedure calls (RPC) and PubSub
-* WAMP consists of clients and routers (not be confused with the Camel routes)
-* The procedures are registered on the router
-* *simpl4* is WAMP client and router
+* Websocket Subprotokol registered by IANA.
+* Provides routed remote procedure calls (RPC) and Publish & Subscribe (PubSub).
+* WAMP is roughly divided into clients and router.
+* *simpl4* acts as WAMP client and has  a WAMP router integrated.
+* In simpl4 defined services are registered at this WAMP router.
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 
@@ -51,10 +50,4 @@ Incidentally, in this way is browser-browser communication possible!
 [.width700]
 imagezoom::web/presentation/images/server_en.svg[]
 
-=== Servlet engine ===
-
-The simpl4 backend can be deployed as a WAR in a servlet engine.
-
-[.width700]
-imagezoom::web/presentation/images/servlet-engine_en.svg[]
 

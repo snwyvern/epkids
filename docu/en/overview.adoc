@@ -67,11 +67,11 @@ Here in the example, the Service Engine starts the process(via message) or a use
 
 === WAMP *Web Application Messaging Protocol* ===
 
-* Websocket Subprotokol registered by IANA
-* Provides routed remote procedure calls (RPC) and PubSub
-* WAMP consists of clients and routers. 
-* The simpl4 services  are registered on the integrated router
-* *simpl4* is WAMP client and router
+* Websocket Subprotokol registered by IANA.
+* Provides routed remote procedure calls (RPC) and Publish & Subscribe (PubSub).
+* WAMP is roughly divided into clients and router.
+* *simpl4* acts as WAMP client and has  a WAMP router integrated.
+* In simpl4 defined services are registered at this WAMP router.
 * External equipment (eq. browsers) can register their own services (procedures) and thereby are reachable from each other WAMP client. +
 Incidentally, in this way is browser-browser communication possible!
 

@@ -445,5 +445,9 @@
     {
         "msgstr": "Customelements",
         "msgid": "docu.customelements"
+    },
+    {
+        "msgstr": "Communication",
+        "msgid": "docu.communication"
     }
 ]

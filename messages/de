@@ -497,5 +497,9 @@
     {
         "msgstr": "Customelements",
         "msgid": "docu.customelements"
+    },
+    {
+        "msgstr": "Kommunikation",
+        "msgid": "docu.communication"
     }
 ]
