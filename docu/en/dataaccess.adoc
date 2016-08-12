@@ -1,4 +1,5 @@
 :linkattrs:
+:source-highlighter: rouge
 
 
 === Dataaccess
@@ -6,54 +7,124 @@
 
 Dataaccess in simpl4 is handled with the building block "data".
 
-* update, update an object
-* insert, insert a new object
-* upsert, combination between insert and update, if an id in the data map then do 'update', otherwise 'insert'
-* delete, delete an object
-* findById, find an object by its id
-* findByFilter, use an filter to find a list of object
-* findOneByFilter, use a filter to find one object
+* *update* ->  update an object
+* *insert* ->  insert a new object
+* *upsert* ->  combination between insert and update, if an id in the data map then do 'update', otherwise 'insert'
+* *delete* ->  delete an object
+* *findById* ->  find an object by its id
+* *findByFilter* ->  use an filter to find a list of object
+* *findOneByFilter* ->  use a filter to find one object
 
 
 The building block "data" has several  parameter, depended on the operation
 
-=== Insert
+==== Insert
 
-Insert new object, +
+Insert a new object, +
 the data in 'source' are used
 
 image::docu/images/dataaccess/insert.svg[]
 
-=== Update
+==== Update
 
 Update the object with the id specified in 'objectid', +
 the data in 'source' are used
 
 image::docu/images/dataaccess/update.svg[]
 
-=== Upsert
+==== Upsert
 
 Depend whether the 'objectid' is null or not, +
  insert or update is executed
 
 image::docu/images/dataaccess/upsert.svg[]
 
-=== Delete
+==== Delete
 
 Delete the object with the id specified in 'objectid'
 
 image::docu/images/dataaccess/delete.svg[]
 
-=== findById
+==== findById
 
 Find the object with the id specified in 'objectid'.
 
 image::docu/images/dataaccess/findById.svg[]
 
-=== findByFilter/findOneByFilter
+==== findByFilter/findOneByFilter
 
-findByFilter has a list of objects as result, +
+findByFilter has a list of object as result, +
 findOneByFilter an object, +
 if more exists, only the first one is returned
 
 image::docu/images/dataaccess/findByFilter.svg[]
+
+=== A complete example
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/data[examples,window="_blank"]
+
+==== a service, that uses some of the operationen
+
+image::docu/images/dataaccess/data.svg[]
+
+==== and this is an customelement that uses the service
+
+[source,handlebars,html, javascript]
+----
+
+  <dom-module id="data-example">
+    <template>
+      <simpl-panel heading="Edit">
+        <simpl-form id="editformId" namespace="docu" on-xaction="formAction" form-name="examples/data/edit.form"></simpl-form>
+      </simpl-panel>
+
+      <simpl-panel heading="List">
+        <simpl-rpc id="rpcListId" method="docu.dataaccess" params="{operation:'list'}" response="{{dataList}}"></simpl-rpc>
+        <simpl-datatables options='{paging: true,"dom":"frt",scrollY:"200px"}' on-rows-selected="tableRowSelected" data="[[dataList]]" />
+      </simpl-panel>
+
+      <simpl-rpc method="docu.dataaccess" on-complete="rpcComplete" params="[[rpcParams]]"></simpl-rpc>
+    </template>
+    <script>
+      Polymer( {
+        is: 'data-example',
+
+        tableRowSelected: function( e ) {
+          this.$.editformId.setData( e.detail.rows[ 0 ] );
+        },
+        formAction: function( e ) {
+          var d = e.detail;
+          if ( d.xaction == "reset" ) {
+            this.$.editformId.setData( {} );
+          }
+          if ( d.valid && d.xaction == "execute" ) {
+            this.rpcParams = {
+              operation: "upsert",
+              data: d.data
+            }
+          }else if( d.xaction == "delete" && !_.isEmpty(d.data.id) ){
+            this.rpcParams = {
+              operation: "delete",
+              data: d.data
+            }
+            this.$.editformId.setData( {} );
+					}
+        },
+        rpcComplete: function( e ) {
+          this.$.rpcListId.go();
+        }
+      } );
+
+    </script>
+  </dom-module>
+----
+
+more about the used customelements:
+
+* *simpl-panel*
+* *simpl-rpc*
+* *simpl-form*
+* *simpl-datatables*
+
+can be found here. +
+link:local:docu-customelements[customelement documentation]
