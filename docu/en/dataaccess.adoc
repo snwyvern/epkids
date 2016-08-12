@@ -79,11 +79,11 @@ image::docu/images/dataaccess/data.svg[]
       </simpl-panel>
 
       <simpl-panel heading="List">
-        <simpl-rpc id="rpcListId" method="docu.dataaccess" params="{operation:'list'}" response="{{dataList}}"></simpl-rpc>
+        <simpl-rpc id="rpcListId" method="docu.dataaccess" params="{operation:'list'}" response="{{dataList}}"></simpl-rpc> <!--1-->
         <simpl-datatables options='{paging: true,"dom":"frt",scrollY:"200px"}' on-rows-selected="tableRowSelected" data="[[dataList]]" />
       </simpl-panel>
 
-      <simpl-rpc method="docu.dataaccess" on-complete="rpcComplete" params="[[rpcParams]]"></simpl-rpc>
+      <simpl-rpc method="docu.dataaccess" on-complete="rpcComplete" params="[[rpcParams]]"></simpl-rpc> <!--2-->
     </template>
     <script>
       Polymer( {
@@ -108,7 +108,7 @@ image::docu/images/dataaccess/data.svg[]
               data: d.data
             }
             this.$.editformId.setData( {} );
-					}
+          }
         },
         rpcComplete: function( e ) {
           this.$.rpcListId.go();
@@ -118,6 +118,10 @@ image::docu/images/dataaccess/data.svg[]
     </script>
   </dom-module>
 ----
+
+
+* *1)* the rpc for getting the data list
+* *2)* the rpc for updating and deleting objects
 
 more about the used customelements:
 
