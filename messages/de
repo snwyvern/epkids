@@ -501,5 +501,9 @@
     {
         "msgstr": "Kommunikation",
         "msgid": "docu.communication"
+    },
+    {
+        "msgstr": "Datenzugriff",
+        "msgid": "docu.dataaccess"
     }
 ]

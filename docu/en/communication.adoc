@@ -55,9 +55,9 @@ see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[e
 
 
 
-==== PubSub and simpl4
+==== Publish/Subscribe and simpl4
 
-In the context of simpl4 there is a very valueable usecase of Subscribe/Publish.
+In the context of simpl4 there is a very valueable usecase of Pub/Sub.
 
 The processengine *publishes* her states.
 
@@ -92,7 +92,7 @@ imagezoom::docu/images/communication/process-service-website-interaction.svg[]
 
 
 . Process started
-. Human Task created, the website display's maybe a form.
+. Human Task created, the website shows's maybe a form.
 . Task completed
 . Activity error received
 . Activity message received

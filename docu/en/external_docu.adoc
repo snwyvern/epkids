@@ -24,5 +24,8 @@ Download and install example applications. Have a look on them, and see how in s
 
 
 
+Customelements are build with polymer.
+https://www.polymer-project.org/1.0/docs/devguide/feature-overview
 
+Client library used to access WAMP-Services
 https://github.com/KSDaemon/wampy.js

@@ -25,12 +25,42 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4599"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4597"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ff5252;fill-opacity:1;fill-rule:evenodd;stroke:#ff5252;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4445"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4443"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill:#ff5252;fill-opacity:1;fill-rule:evenodd;stroke:#ff5252;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -38,7 +68,8 @@
        refX="0"
        refY="0"
        orient="auto"
-       inkscape:stockid="DotL">
+       inkscape:stockid="DotL"
+       inkscape:collect="always">
       <path
          inkscape:connector-curvature="0"
          transform="matrix(0.8,0,0,0.8,5.92,0.8)"
@@ -53,7 +84,8 @@
        refX="0"
        refY="0"
        orient="auto"
-       inkscape:stockid="Arrow1Lend">
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
       <path
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
          style="fill:#ff5252;fill-opacity:1;fill-rule:evenodd;stroke:#ff5252;stroke-width:1.00000003pt;stroke-opacity:1"
@@ -353,7 +385,7 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.1449446"
-     inkscape:cx="509.63165"
+     inkscape:cx="274.24908"
      inkscape:cy="218.48189"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -635,7 +667,7 @@
      id="path5971-9-9"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ff5252;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker4445);marker-end:url(#marker4599);stroke-miterlimit:4;stroke-dasharray:6,1;stroke-dashoffset:0"
      d="m 966.85902,521.06577 26.20214,0.8734 -5.24042,-393.03212"
      id="path21189"
      inkscape:connector-curvature="0" />

@@ -14,7 +14,7 @@
     "id": "",
     "help": "",
     "adoc_include": true,
-    "enabled": true,
+    "enabled": false,
     "appendix": "'title='+tr(title)"
   },
   {
@@ -32,7 +32,7 @@
     "title": "docu.glossary",
     "description": "",
     "uri": "docu/%l/glossary.adoc",
-    "icon": "icons:cancel",
+    "icon": "vaadin-icons:lines",
     "id": "",
     "help": "",
     "adoc_include": true,
@@ -43,7 +43,7 @@
     "title": "docu.overview",
     "description": "",
     "uri": "docu/%l/overview.adoc",
-    "icon": "image:looks-one",
+    "icon": "vaadin-icons:viewport",
     "id": "",
     "help": "",
     "adoc_include": true,
@@ -58,7 +58,7 @@
     "id": "",
     "help": "",
     "adoc_include": true,
-    "enabled": true,
+    "enabled": false,
     "appendix": "'title='+tr(title)"
   },
   {
@@ -88,6 +88,16 @@
     "description": "",
     "uri": "docu/%l/communication.adoc",
     "icon": "vaadin-icons:phone",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "docu.dataaccess",
+    "description": "",
+    "uri": "docu/%l/dataaccess.adoc",
+    "icon": "vaadin-icons:database",
     "id": "",
     "help": "",
     "adoc_include": false,
@@ -184,7 +194,7 @@
         "title": "docu.editors.data",
         "description": "",
         "uri": "docu/%l/editors/data.adoc",
-        "icon": "device:battery-80",
+        "icon": "vaadin-icons:database",
         "id": "",
         "help": "",
         "adoc_include": true,

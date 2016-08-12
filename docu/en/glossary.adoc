@@ -8,9 +8,10 @@ In the following, the terms used in simpl4 will be explained
 
 * Filter: A Database query, which can be used in different places in simpl4
 
-* Process: A workflow that can be desinged and executed in simpl4.
-It has a start and an end event, and which can contain User interactions, Service Tasks and other things 
+* Namespace: or application, a fenced area with its own git repository.
 
+* Process: processes are specified in BPMN and executed in the processengine
 
-* Service: Is executed in processes or stand alone, normal wise as a RPC 
+* Service: A service consists of one or more building blocks.
 
+* WAMP: Web Application Messaging Protocol, Websocket subprotocol

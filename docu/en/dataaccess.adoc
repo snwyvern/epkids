@@ -1,0 +1,59 @@
+:linkattrs:
+
+
+=== Dataaccess
+
+
+Dataaccess in simpl4 is handled with the building block "data".
+
+* update, update an object
+* insert, insert a new object
+* upsert, combination between insert and update, if an id in the data map then do 'update', otherwise 'insert'
+* delete, delete an object
+* findById, find an object by its id
+* findByFilter, use an filter to find a list of object
+* findOneByFilter, use a filter to find one object
+
+
+The building block "data" has several  parameter, depended on the operation
+
+=== Insert
+
+Insert new object, +
+the data in 'source' are used
+
+image::docu/images/dataaccess/insert.svg[]
+
+=== Update
+
+Update the object with the id specified in 'objectid', +
+the data in 'source' are used
+
+image::docu/images/dataaccess/update.svg[]
+
+=== Upsert
+
+Depend whether the 'objectid' is null or not, +
+ insert or update is executed
+
+image::docu/images/dataaccess/upsert.svg[]
+
+=== Delete
+
+Delete the object with the id specified in 'objectid'
+
+image::docu/images/dataaccess/delete.svg[]
+
+=== findById
+
+Find the object with the id specified in 'objectid'.
+
+image::docu/images/dataaccess/findById.svg[]
+
+=== findByFilter/findOneByFilter
+
+findByFilter has a list of objects as result, +
+findOneByFilter an object, +
+if more exists, only the first one is returned
+
+image::docu/images/dataaccess/findByFilter.svg[]
