@@ -4,6 +4,8 @@ In the following, the terms used in simpl4 will be explained
 
 * BPMN 2.0: Business Process Model and Notation in Version 2.0
 
+* Custom Elements: simpl4 uses link:https://www.polymer-project.org/1.0/[Polymer,window="_blank"] 
+
 * Enumeration: mostly used as items of a selectBox
 
 * Filter: A Database query, which can be used in different places in simpl4
