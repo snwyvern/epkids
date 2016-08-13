@@ -30,8 +30,8 @@ imagezoom::web/presentation/images/exchange.svg[]
 === Prozess-Engine ===
 
 * Ausführung und Koordination  der Abläufe die in den Prozessmodellen definiert sind.
-* Der Prozess-Engine bietet die Funktionalität um  Business Process Model and Notation(BPMN) ausführen.
-* Ein graphischer Editor(Modellierer) für BPMN2 steht in *simpl4* zur Verfügung.
+* Die Prozess-Engine bietet die Funktionalität um  Business Process Model and Notation(BPMN) ausführen.
+* Ein graphischer Editor(Modellierer) für BPMN2 Prozessmodelle steht in *simpl4* zur Verfügung.
 * Serviceaufgaben werden an die service engine delegiert.
 
 === WAMP *Web Application Messaging Protocol* ===
@@ -41,7 +41,8 @@ imagezoom::web/presentation/images/exchange.svg[]
 * WAMP ist grob unterteilt in Clients und Router.
 * *simpl4* fungiert als  WAMP-Client und  hat  außerdem einen WAMP-Router eingebaut.
 * Die in simpl4 definierten Services sind an diesem WAMP-Router registeriert.
-* Es können sich externe Geräte (oder auch Browser) ihre Dienste (Prozeduren) registrieren lassen, und sind damit von jedem anderen WAMP-Client erreichbar. +
+* Es können sich externe Geräte (oder auch Browser) ihre Dienste (Prozeduren) registrieren lassen, +
+und sind damit von jedem anderen WAMP-Client erreichbar. +
 Positiver Nebeneffekt, dadurch ist Browser-to-Browser Kommunikation möglich!
 
 

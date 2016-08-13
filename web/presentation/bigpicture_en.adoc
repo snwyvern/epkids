@@ -28,14 +28,11 @@ The exchange is handed from building block to building block.
 imagezoom::web/presentation/images/exchange.svg[]
 
 
-
-=== Processengine
-
 === Processengine
 
 * Executes and coordinates the sequences, that are defined in a process model.
 * The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
-* in simpl4 there is a graphical modeler to create the processes models.
+* in simpl4 there is a graphical modeler to create the process models.
 * Service tasks are delegated to the service engine.
 
 === WAMP *Web Application Messaging Protocol* ===
