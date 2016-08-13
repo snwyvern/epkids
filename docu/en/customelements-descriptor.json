@@ -349,6 +349,194 @@
     },
     {
       "type": "element",
+      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+      "events": [],
+      "properties": [
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "convertSheetsToStyles",
+          "type": "Function",
+          "params": [
+            {
+              "name": "root"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "createStyleElement",
+          "type": "Function",
+          "params": [
+            {
+              "name": "cssText"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "getProperties",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "hrefForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importRuleForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "href"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "namespace",
+          "type": "String",
+          "published": true,
+          "default": "xxx"
+        },
+        {
+          "name": "namespaceChanged",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_insert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "ins"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_onCssResponse",
+          "type": "Function",
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssNode",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRule",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRules",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            },
+            {
+              "name": "fn"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "ready",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "behaviors": [
+        "CSSImportBehavior"
+      ],
+      "observers": [],
+      "is": "simpl-globals",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "jsdoc": {
+        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "tags": [],
+        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
+      },
+      "demos": [],
+      "show": false
+    },
+    {
+      "type": "element",
       "desc": "\nform element with validation, the form specification is created in the simpl4 form-editor<br/>\nHint:if an external variable 'uuid' exists, then she is passed to service calls\n\n     <simpl-form id=\"editformId\" namespace=\"docu\" on-xaction=\"formAction\" form-name=\"examples/data/edit.form\"></simpl-form>\n        .\n        .\n        formAction: function( e ) {\n          var d = e.detail;\n          if ( d.xaction == \"reset\" ) {\n          }\n        }\n",
       "events": [],
       "properties": [
@@ -2426,171 +2614,405 @@
     },
     {
       "type": "element",
-      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-      "events": [],
+      "desc": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
+      "events": [
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "desc": "\nfire if the datatables table is complete\n\n",
+          "jsdoc": {
+            "description": "\nfire if the datatables table is complete\n\n",
+            "tags": [
+              {
+                "tag": "event",
+                "type": null,
+                "description": "init-complete"
+              }
+            ],
+            "orig": "*\n\t\t * fire if the datatables table is complete\n\t\t *\n\t\t * @event init-complete\n\t\t "
+          },
+          "name": "init-complete",
+          "params": []
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "desc": "\nfire if rows are selected\n\n",
+          "jsdoc": {
+            "description": "\nfire if rows are selected\n\n",
+            "tags": [
+              {
+                "tag": "event",
+                "type": null,
+                "description": "rows-selected"
+              }
+            ],
+            "orig": "*\n\t\t * fire if rows are selected\n\t\t *\n\t\t * @event rows-selected\n\t\t "
+          },
+          "name": "rows-selected",
+          "params": []
+        }
+      ],
       "properties": [
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "convertSheetsToStyles",
-          "type": "Function",
-          "params": [
-            {
-              "name": "root"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "data",
+          "type": "Object",
+          "desc": "\nthe data\n\t\t\t ",
+          "published": true,
+          "jsdoc": {
+            "description": "\nthe data\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * the data\n\t\t\t "
+          }
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "createStyleElement",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "getApi",
           "type": "Function",
-          "params": [
-            {
-              "name": "cssText"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "getProperties",
-          "type": "Function",
+          "desc": "\n get the datatables api\n\t\t ",
           "params": [],
+          "jsdoc": {
+            "description": "\n get the datatables api\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  get the datatables api\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "hrefForSheet",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "getSelection",
           "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
+          "desc": "\n get the selected rows\n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\n get the selected rows\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  get the selected rows\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importRuleForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "meta",
+          "type": "Object",
+          "desc": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
+          "published": true,
+          "default": null,
+          "jsdoc": {
+            "description": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * column definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t "
+          }
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "href"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "multiSelect",
+          "type": "Boolean",
+          "desc": "\nmore than one row can be selected\n\t\t\t ",
+          "published": true,
+          "default": false,
+          "jsdoc": {
+            "description": "\nmore than one row can be selected\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * more than one row can be selected\n\t\t\t "
+          }
         },
         {
+          "__fromBehavior": "DataTablesBehavior",
           "name": "namespace",
           "type": "String",
+          "desc": "\nthe namespace\n\t\t\t ",
           "published": true,
-          "default": "xxx"
+          "default": null,
+          "jsdoc": {
+            "description": "\nthe namespace\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * the namespace\n\t\t\t "
+          }
         },
         {
-          "name": "namespaceChanged",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "options",
+          "type": "String",
+          "desc": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
+          "published": true,
+          "jsdoc": {
+            "description": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t\t * <b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t "
+          }
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "recalc",
           "type": "Function",
+          "desc": "\n recalc and redraw the table\n\t\t ",
           "params": [],
+          "jsdoc": {
+            "description": "\n recalc and redraw the table\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  recalc and redraw the table\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_insert",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "selection",
+          "type": "Array",
+          "desc": "\nThe selected rows\n\t\t\t ",
+          "published": true,
+          "notify": true,
+          "jsdoc": {
+            "description": "\nThe selected rows\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * The selected rows\n\t\t\t "
+          }
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "unselectAll",
+          "type": "Function",
+          "desc": "\n unselect all rows\n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\n unselect all rows\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  unselect all rows\n\t\t "
+          },
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "__createTable",
           "type": "Function",
           "params": [
             {
-              "name": "str"
+              "name": "dtMeta"
+            },
+            {
+              "name": "dataSet"
+            },
+            {
+              "name": "options"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "__dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_addDetailCopier",
+          "type": "Function",
+          "params": [
+            {
+              "name": "mainElem"
+            },
+            {
+              "name": "api"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_copySelection",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sel"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_createRowListener",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_createTable",
+          "type": "Function",
+          "params": [
+            {
+              "name": "dtMeta"
+            },
+            {
+              "name": "dataSet"
+            },
+            {
+              "name": "options"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_getIndex",
+          "type": "Function",
+          "params": [
+            {
+              "name": "target"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_getLang",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_parseOptions",
+          "type": "Function",
+          "params": [
+            {
+              "name": "o"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_prepareMeta",
+          "type": "Function",
+          "params": [
+            {
+              "name": "meta"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_prepareMetaFromData",
+          "type": "Function",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapAction",
+          "type": "Function",
+          "params": [
+            {
+              "name": "target"
             },
             {
               "name": "index"
             },
             {
-              "name": "ins"
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_onCssResponse",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapActionMulti",
           "type": "Function",
           "params": [
             {
-              "name": "e"
+              "name": "target"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssNode",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapActionSingle",
           "type": "Function",
           "params": [
             {
-              "name": "node"
+              "name": "target"
             },
             {
-              "name": "scope"
+              "name": "index"
+            },
+            {
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRule",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_translate",
           "type": "Function",
           "params": [
             {
-              "name": "node"
-            },
-            {
-              "name": "scope"
+              "name": "meta"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRules",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_whenTableReady",
           "type": "Function",
           "params": [
             {
-              "name": "items"
-            },
-            {
-              "name": "fn"
-            },
-            {
-              "name": "scope"
+              "name": "done"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "name": "ready",
+          "__fromBehavior": "ModernizrBehavior",
+          "name": "attached",
           "type": "Function",
           "params": [],
           "private": true,
@@ -2599,18 +3021,19 @@
         }
       ],
       "behaviors": [
-        "CSSImportBehavior"
+        "ModernizrBehavior",
+        "DataTablesBehavior"
       ],
       "observers": [],
-      "is": "simpl-globals",
-      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "is": "simpl-datatables",
+      "contentHref": "src/simpl-datatables/simpl-datatables.html",
       "jsdoc": {
-        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "description": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
         "tags": [],
-        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
+        "orig": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n"
       },
       "demos": [],
-      "show": false
+      "show": true
     },
     {
       "type": "element",
@@ -3104,11 +3527,168 @@
       "show": false
     },
     {
-      "type": "element",
-      "desc": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "TranslationsBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior TranslationsBehavior "
+      },
+      "demos": [],
+      "symbol": "TranslationsBehavior",
+      "is": "TranslationsBehavior",
+      "properties": [
+        {
+          "name": "tr",
+          "type": "Function",
+          "params": [
+            {
+              "name": "m"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "created",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "WhitespaceBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior WhitespaceBehavior "
+      },
+      "demos": [],
+      "symbol": "WhitespaceBehavior",
+      "is": "WhitespaceBehavior",
+      "properties": [
+        {
+          "name": "attached",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "ModernizrBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior ModernizrBehavior "
+      },
+      "demos": [],
+      "symbol": "ModernizrBehavior",
+      "is": "ModernizrBehavior",
+      "properties": [
+        {
+          "name": "attached",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "StyleScopeBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior StyleScopeBehavior "
+      },
+      "demos": [],
+      "symbol": "StyleScopeBehavior",
+      "is": "StyleScopeBehavior",
+      "properties": [
+        {
+          "name": "setStyleScope",
+          "type": "Function",
+          "params": [
+            {
+              "name": "main_el"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "_domVisitor",
+          "type": "Function",
+          "params": [
+            {
+              "name": "el"
+            },
+            {
+              "name": "f"
+            }
+          ],
+          "private": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
       "events": [
         {
-          "__fromBehavior": "DataTablesBehavior",
           "desc": "\nfire if the datatables table is complete\n\n",
           "jsdoc": {
             "description": "\nfire if the datatables table is complete\n\n",
@@ -3125,7 +3705,6 @@
           "params": []
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "desc": "\nfire if rows are selected\n\n",
           "jsdoc": {
             "description": "\nfire if rows are selected\n\n",
@@ -3142,9 +3721,23 @@
           "params": []
         }
       ],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "DataTablesBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior DataTablesBehavior "
+      },
+      "demos": [],
+      "symbol": "DataTablesBehavior",
+      "is": "DataTablesBehavior",
       "properties": [
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "data",
           "type": "Object",
           "desc": "\nthe data\n\t\t\t ",
@@ -3156,7 +3749,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "getApi",
           "type": "Function",
           "desc": "\n get the datatables api\n\t\t ",
@@ -3169,7 +3761,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "getSelection",
           "type": "Function",
           "desc": "\n get the selected rows\n\t\t ",
@@ -3182,7 +3773,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "meta",
           "type": "Object",
           "desc": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
@@ -3195,7 +3785,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "multiSelect",
           "type": "Boolean",
           "desc": "\nmore than one row can be selected\n\t\t\t ",
@@ -3208,7 +3797,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "namespace",
           "type": "String",
           "desc": "\nthe namespace\n\t\t\t ",
@@ -3221,7 +3809,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "options",
           "type": "String",
           "desc": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
@@ -3233,7 +3820,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "recalc",
           "type": "Function",
           "desc": "\n recalc and redraw the table\n\t\t ",
@@ -3246,7 +3832,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "selection",
           "type": "Array",
           "desc": "\nThe selected rows\n\t\t\t ",
@@ -3259,7 +3844,6 @@
           }
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "unselectAll",
           "type": "Function",
           "desc": "\n unselect all rows\n\t\t ",
@@ -3272,7 +3856,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "__createTable",
           "type": "Function",
           "params": [
@@ -3290,7 +3873,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "__dataChanged",
           "type": "Function",
           "params": [],
@@ -3298,7 +3880,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_addDetailCopier",
           "type": "Function",
           "params": [
@@ -3313,7 +3894,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_copySelection",
           "type": "Function",
           "params": [
@@ -3325,7 +3905,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_createRowListener",
           "type": "Function",
           "params": [],
@@ -3333,7 +3912,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_createTable",
           "type": "Function",
           "params": [
@@ -3351,7 +3929,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_dataChanged",
           "type": "Function",
           "params": [],
@@ -3359,7 +3936,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_getIndex",
           "type": "Function",
           "params": [
@@ -3371,7 +3947,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_getLang",
           "type": "Function",
           "params": [],
@@ -3379,7 +3954,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_parseOptions",
           "type": "Function",
           "params": [
@@ -3391,7 +3965,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_prepareMeta",
           "type": "Function",
           "params": [
@@ -3403,7 +3976,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_prepareMetaFromData",
           "type": "Function",
           "params": [
@@ -3415,7 +3987,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_tapAction",
           "type": "Function",
           "params": [
@@ -3436,7 +4007,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_tapActionMulti",
           "type": "Function",
           "params": [
@@ -3457,7 +4027,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_tapActionSingle",
           "type": "Function",
           "params": [
@@ -3478,7 +4047,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_translate",
           "type": "Function",
           "params": [
@@ -3490,7 +4058,6 @@
           "function": true
         },
         {
-          "__fromBehavior": "DataTablesBehavior",
           "name": "_whenTableReady",
           "type": "Function",
           "params": [
@@ -3500,31 +4067,267 @@
           ],
           "private": true,
           "function": true
+        }
+      ],
+      "observers": [
+        {
+          "javascriptNode": {
+            "type": "Literal",
+            "start": 1315,
+            "end": 1340,
+            "loc": {
+              "start": {
+                "line": 68,
+                "column": 3
+              },
+              "end": {
+                "line": 68,
+                "column": 28
+              }
+            },
+            "range": [
+              1315,
+              1340
+            ],
+            "value": "_dataChanged(data,meta)",
+            "raw": "'_dataChanged(data,meta)'"
+          },
+          "expression": "_dataChanged(data,meta)"
+        }
+      ],
+      "contentHref": "src/simpl-datatables/datatables-behavior.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "FormElementSelectorBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior FormElementSelectorBehavior "
+      },
+      "demos": [],
+      "symbol": "FormElementSelectorBehavior",
+      "is": "FormElementSelectorBehavior",
+      "properties": [
+        {
+          "name": "isActionButton",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
         },
         {
-          "__fromBehavior": "ModernizrBehavior",
-          "name": "attached",
+          "name": "isActionButtopn",
           "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isAlert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isCustom",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isEnumSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isField",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isForm",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGridInput",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGroup",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndNotBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isModuleSelector",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isPage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRelatedTo",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRow",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTableSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTabView",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTextArea",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isUpload",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "tabTitle",
+          "type": "Function",
+          "params": [
+            {
+              "name": "t"
+            }
+          ],
           "function": true
         }
       ],
-      "behaviors": [
-        "ModernizrBehavior",
-        "DataTablesBehavior"
-      ],
       "observers": [],
-      "is": "simpl-datatables",
-      "contentHref": "src/simpl-datatables/simpl-datatables.html",
-      "jsdoc": {
-        "description": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
-        "tags": [],
-        "orig": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n"
-      },
-      "demos": [],
-      "show": true
+      "contentHref": "src/simpl-form/simpl-form.html",
+      "show": false
     },
     {
       "type": "behavior",
@@ -4074,809 +4877,6 @@
           {
             "tag": "polymerBehavior",
             "type": null,
-            "name": "FormElementSelectorBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior FormElementSelectorBehavior "
-      },
-      "demos": [],
-      "symbol": "FormElementSelectorBehavior",
-      "is": "FormElementSelectorBehavior",
-      "properties": [
-        {
-          "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isActionButtopn",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isAlert",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isCustom",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isEnumSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isField",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isForm",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGridInput",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGroup",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndNotBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isModuleSelector",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isPage",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRelatedTo",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRow",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTableSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTabView",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTextArea",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isUpload",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "tabTitle",
-          "type": "Function",
-          "params": [
-            {
-              "name": "t"
-            }
-          ],
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-form/simpl-form.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [
-        {
-          "desc": "\nfire if the datatables table is complete\n\n",
-          "jsdoc": {
-            "description": "\nfire if the datatables table is complete\n\n",
-            "tags": [
-              {
-                "tag": "event",
-                "type": null,
-                "description": "init-complete"
-              }
-            ],
-            "orig": "*\n\t\t * fire if the datatables table is complete\n\t\t *\n\t\t * @event init-complete\n\t\t "
-          },
-          "name": "init-complete",
-          "params": []
-        },
-        {
-          "desc": "\nfire if rows are selected\n\n",
-          "jsdoc": {
-            "description": "\nfire if rows are selected\n\n",
-            "tags": [
-              {
-                "tag": "event",
-                "type": null,
-                "description": "rows-selected"
-              }
-            ],
-            "orig": "*\n\t\t * fire if rows are selected\n\t\t *\n\t\t * @event rows-selected\n\t\t "
-          },
-          "name": "rows-selected",
-          "params": []
-        }
-      ],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "DataTablesBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior DataTablesBehavior "
-      },
-      "demos": [],
-      "symbol": "DataTablesBehavior",
-      "is": "DataTablesBehavior",
-      "properties": [
-        {
-          "name": "data",
-          "type": "Object",
-          "desc": "\nthe data\n\t\t\t ",
-          "published": true,
-          "jsdoc": {
-            "description": "\nthe data\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * the data\n\t\t\t "
-          }
-        },
-        {
-          "name": "getApi",
-          "type": "Function",
-          "desc": "\n get the datatables api\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n get the datatables api\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  get the datatables api\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "getSelection",
-          "type": "Function",
-          "desc": "\n get the selected rows\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n get the selected rows\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  get the selected rows\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "meta",
-          "type": "Object",
-          "desc": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
-          "published": true,
-          "default": null,
-          "jsdoc": {
-            "description": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * column definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t "
-          }
-        },
-        {
-          "name": "multiSelect",
-          "type": "Boolean",
-          "desc": "\nmore than one row can be selected\n\t\t\t ",
-          "published": true,
-          "default": false,
-          "jsdoc": {
-            "description": "\nmore than one row can be selected\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * more than one row can be selected\n\t\t\t "
-          }
-        },
-        {
-          "name": "namespace",
-          "type": "String",
-          "desc": "\nthe namespace\n\t\t\t ",
-          "published": true,
-          "default": null,
-          "jsdoc": {
-            "description": "\nthe namespace\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * the namespace\n\t\t\t "
-          }
-        },
-        {
-          "name": "options",
-          "type": "String",
-          "desc": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
-          "published": true,
-          "jsdoc": {
-            "description": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t\t * <b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t "
-          }
-        },
-        {
-          "name": "recalc",
-          "type": "Function",
-          "desc": "\n recalc and redraw the table\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n recalc and redraw the table\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  recalc and redraw the table\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "selection",
-          "type": "Array",
-          "desc": "\nThe selected rows\n\t\t\t ",
-          "published": true,
-          "notify": true,
-          "jsdoc": {
-            "description": "\nThe selected rows\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * The selected rows\n\t\t\t "
-          }
-        },
-        {
-          "name": "unselectAll",
-          "type": "Function",
-          "desc": "\n unselect all rows\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n unselect all rows\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  unselect all rows\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "__createTable",
-          "type": "Function",
-          "params": [
-            {
-              "name": "dtMeta"
-            },
-            {
-              "name": "dataSet"
-            },
-            {
-              "name": "options"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "__dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_addDetailCopier",
-          "type": "Function",
-          "params": [
-            {
-              "name": "mainElem"
-            },
-            {
-              "name": "api"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_copySelection",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sel"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_createRowListener",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_createTable",
-          "type": "Function",
-          "params": [
-            {
-              "name": "dtMeta"
-            },
-            {
-              "name": "dataSet"
-            },
-            {
-              "name": "options"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getIndex",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getLang",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_parseOptions",
-          "type": "Function",
-          "params": [
-            {
-              "name": "o"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_prepareMeta",
-          "type": "Function",
-          "params": [
-            {
-              "name": "meta"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_prepareMetaFromData",
-          "type": "Function",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_tapAction",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_tapActionMulti",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_tapActionSingle",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_translate",
-          "type": "Function",
-          "params": [
-            {
-              "name": "meta"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_whenTableReady",
-          "type": "Function",
-          "params": [
-            {
-              "name": "done"
-            }
-          ],
-          "private": true,
-          "function": true
-        }
-      ],
-      "observers": [
-        {
-          "javascriptNode": {
-            "type": "Literal",
-            "start": 1315,
-            "end": 1340,
-            "loc": {
-              "start": {
-                "line": 68,
-                "column": 3
-              },
-              "end": {
-                "line": 68,
-                "column": 28
-              }
-            },
-            "range": [
-              1315,
-              1340
-            ],
-            "value": "_dataChanged(data,meta)",
-            "raw": "'_dataChanged(data,meta)'"
-          },
-          "expression": "_dataChanged(data,meta)"
-        }
-      ],
-      "contentHref": "src/simpl-datatables/datatables-behavior.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "TranslationsBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior TranslationsBehavior "
-      },
-      "demos": [],
-      "symbol": "TranslationsBehavior",
-      "is": "TranslationsBehavior",
-      "properties": [
-        {
-          "name": "tr",
-          "type": "Function",
-          "params": [
-            {
-              "name": "m"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "created",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "WhitespaceBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior WhitespaceBehavior "
-      },
-      "demos": [],
-      "symbol": "WhitespaceBehavior",
-      "is": "WhitespaceBehavior",
-      "properties": [
-        {
-          "name": "attached",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "ModernizrBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior ModernizrBehavior "
-      },
-      "demos": [],
-      "symbol": "ModernizrBehavior",
-      "is": "ModernizrBehavior",
-      "properties": [
-        {
-          "name": "attached",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "StyleScopeBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior StyleScopeBehavior "
-      },
-      "demos": [],
-      "symbol": "StyleScopeBehavior",
-      "is": "StyleScopeBehavior",
-      "properties": [
-        {
-          "name": "setStyleScope",
-          "type": "Function",
-          "params": [
-            {
-              "name": "main_el"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "_domVisitor",
-          "type": "Function",
-          "params": [
-            {
-              "name": "el"
-            },
-            {
-              "name": "f"
-            }
-          ],
-          "private": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
             "name": "CSSImportBehavior",
             "description": null
           }
@@ -5372,6 +5372,194 @@
       },
       "demos": [],
       "show": true
+    },
+    "simpl-globals": {
+      "type": "element",
+      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+      "events": [],
+      "properties": [
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "convertSheetsToStyles",
+          "type": "Function",
+          "params": [
+            {
+              "name": "root"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "createStyleElement",
+          "type": "Function",
+          "params": [
+            {
+              "name": "cssText"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "getProperties",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "hrefForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importRuleForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "href"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "namespace",
+          "type": "String",
+          "published": true,
+          "default": "xxx"
+        },
+        {
+          "name": "namespaceChanged",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_insert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "ins"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_onCssResponse",
+          "type": "Function",
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssNode",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRule",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRules",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            },
+            {
+              "name": "fn"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "ready",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "behaviors": [
+        "CSSImportBehavior"
+      ],
+      "observers": [],
+      "is": "simpl-globals",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "jsdoc": {
+        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "tags": [],
+        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
+      },
+      "demos": [],
+      "show": false
     },
     "xaction-button": {
       "type": "element",
@@ -7450,173 +7638,407 @@
       "demos": [],
       "show": true
     },
-    "simpl-globals": {
+    "simpl-datatables": {
       "type": "element",
-      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-      "events": [],
+      "desc": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
+      "events": [
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "desc": "\nfire if the datatables table is complete\n\n",
+          "jsdoc": {
+            "description": "\nfire if the datatables table is complete\n\n",
+            "tags": [
+              {
+                "tag": "event",
+                "type": null,
+                "description": "init-complete"
+              }
+            ],
+            "orig": "*\n\t\t * fire if the datatables table is complete\n\t\t *\n\t\t * @event init-complete\n\t\t "
+          },
+          "name": "init-complete",
+          "params": []
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "desc": "\nfire if rows are selected\n\n",
+          "jsdoc": {
+            "description": "\nfire if rows are selected\n\n",
+            "tags": [
+              {
+                "tag": "event",
+                "type": null,
+                "description": "rows-selected"
+              }
+            ],
+            "orig": "*\n\t\t * fire if rows are selected\n\t\t *\n\t\t * @event rows-selected\n\t\t "
+          },
+          "name": "rows-selected",
+          "params": []
+        }
+      ],
       "properties": [
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "convertSheetsToStyles",
-          "type": "Function",
-          "params": [
-            {
-              "name": "root"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "data",
+          "type": "Object",
+          "desc": "\nthe data\n\t\t\t ",
+          "published": true,
+          "jsdoc": {
+            "description": "\nthe data\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * the data\n\t\t\t "
+          }
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "createStyleElement",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "getApi",
           "type": "Function",
-          "params": [
-            {
-              "name": "cssText"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "getProperties",
-          "type": "Function",
+          "desc": "\n get the datatables api\n\t\t ",
           "params": [],
+          "jsdoc": {
+            "description": "\n get the datatables api\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  get the datatables api\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "hrefForSheet",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "getSelection",
           "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
+          "desc": "\n get the selected rows\n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\n get the selected rows\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  get the selected rows\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importRuleForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "meta",
+          "type": "Object",
+          "desc": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
+          "published": true,
+          "default": null,
+          "jsdoc": {
+            "description": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * column definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t "
+          }
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "href"
-            }
-          ],
-          "function": true
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "multiSelect",
+          "type": "Boolean",
+          "desc": "\nmore than one row can be selected\n\t\t\t ",
+          "published": true,
+          "default": false,
+          "jsdoc": {
+            "description": "\nmore than one row can be selected\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * more than one row can be selected\n\t\t\t "
+          }
         },
         {
+          "__fromBehavior": "DataTablesBehavior",
           "name": "namespace",
           "type": "String",
+          "desc": "\nthe namespace\n\t\t\t ",
           "published": true,
-          "default": "xxx"
+          "default": null,
+          "jsdoc": {
+            "description": "\nthe namespace\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * the namespace\n\t\t\t "
+          }
         },
         {
-          "name": "namespaceChanged",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "options",
+          "type": "String",
+          "desc": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
+          "published": true,
+          "jsdoc": {
+            "description": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t\t * <b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t "
+          }
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "recalc",
           "type": "Function",
+          "desc": "\n recalc and redraw the table\n\t\t ",
           "params": [],
+          "jsdoc": {
+            "description": "\n recalc and redraw the table\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  recalc and redraw the table\n\t\t "
+          },
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_insert",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "selection",
+          "type": "Array",
+          "desc": "\nThe selected rows\n\t\t\t ",
+          "published": true,
+          "notify": true,
+          "jsdoc": {
+            "description": "\nThe selected rows\n\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t * The selected rows\n\t\t\t "
+          }
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "unselectAll",
+          "type": "Function",
+          "desc": "\n unselect all rows\n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\n unselect all rows\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t *  unselect all rows\n\t\t "
+          },
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "__createTable",
           "type": "Function",
           "params": [
             {
-              "name": "str"
+              "name": "dtMeta"
+            },
+            {
+              "name": "dataSet"
+            },
+            {
+              "name": "options"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "__dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_addDetailCopier",
+          "type": "Function",
+          "params": [
+            {
+              "name": "mainElem"
+            },
+            {
+              "name": "api"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_copySelection",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sel"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_createRowListener",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_createTable",
+          "type": "Function",
+          "params": [
+            {
+              "name": "dtMeta"
+            },
+            {
+              "name": "dataSet"
+            },
+            {
+              "name": "options"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_getIndex",
+          "type": "Function",
+          "params": [
+            {
+              "name": "target"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_getLang",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_parseOptions",
+          "type": "Function",
+          "params": [
+            {
+              "name": "o"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_prepareMeta",
+          "type": "Function",
+          "params": [
+            {
+              "name": "meta"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_prepareMetaFromData",
+          "type": "Function",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapAction",
+          "type": "Function",
+          "params": [
+            {
+              "name": "target"
             },
             {
               "name": "index"
             },
             {
-              "name": "ins"
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_onCssResponse",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapActionMulti",
           "type": "Function",
           "params": [
             {
-              "name": "e"
+              "name": "target"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssNode",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_tapActionSingle",
           "type": "Function",
           "params": [
             {
-              "name": "node"
+              "name": "target"
             },
             {
-              "name": "scope"
+              "name": "index"
+            },
+            {
+              "name": "row"
+            },
+            {
+              "name": "doubleTap"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRule",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_translate",
           "type": "Function",
           "params": [
             {
-              "name": "node"
-            },
-            {
-              "name": "scope"
+              "name": "meta"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRules",
+          "__fromBehavior": "DataTablesBehavior",
+          "name": "_whenTableReady",
           "type": "Function",
           "params": [
             {
-              "name": "items"
-            },
-            {
-              "name": "fn"
-            },
-            {
-              "name": "scope"
+              "name": "done"
             }
           ],
           "private": true,
           "function": true
         },
         {
-          "name": "ready",
+          "__fromBehavior": "ModernizrBehavior",
+          "name": "attached",
           "type": "Function",
           "params": [],
           "private": true,
@@ -7625,18 +8047,19 @@
         }
       ],
       "behaviors": [
-        "CSSImportBehavior"
+        "ModernizrBehavior",
+        "DataTablesBehavior"
       ],
       "observers": [],
-      "is": "simpl-globals",
-      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "is": "simpl-datatables",
+      "contentHref": "src/simpl-datatables/simpl-datatables.html",
       "jsdoc": {
-        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "description": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
         "tags": [],
-        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
+        "orig": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n"
       },
       "demos": [],
-      "show": false
+      "show": true
     },
     "simpl-crud": {
       "type": "element",
@@ -8128,429 +8551,6 @@
       },
       "demos": [],
       "show": false
-    },
-    "simpl-datatables": {
-      "type": "element",
-      "desc": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
-      "events": [
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "desc": "\nfire if the datatables table is complete\n\n",
-          "jsdoc": {
-            "description": "\nfire if the datatables table is complete\n\n",
-            "tags": [
-              {
-                "tag": "event",
-                "type": null,
-                "description": "init-complete"
-              }
-            ],
-            "orig": "*\n\t\t * fire if the datatables table is complete\n\t\t *\n\t\t * @event init-complete\n\t\t "
-          },
-          "name": "init-complete",
-          "params": []
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "desc": "\nfire if rows are selected\n\n",
-          "jsdoc": {
-            "description": "\nfire if rows are selected\n\n",
-            "tags": [
-              {
-                "tag": "event",
-                "type": null,
-                "description": "rows-selected"
-              }
-            ],
-            "orig": "*\n\t\t * fire if rows are selected\n\t\t *\n\t\t * @event rows-selected\n\t\t "
-          },
-          "name": "rows-selected",
-          "params": []
-        }
-      ],
-      "properties": [
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "data",
-          "type": "Object",
-          "desc": "\nthe data\n\t\t\t ",
-          "published": true,
-          "jsdoc": {
-            "description": "\nthe data\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * the data\n\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "getApi",
-          "type": "Function",
-          "desc": "\n get the datatables api\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n get the datatables api\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  get the datatables api\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "getSelection",
-          "type": "Function",
-          "desc": "\n get the selected rows\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n get the selected rows\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  get the selected rows\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "meta",
-          "type": "Object",
-          "desc": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
-          "published": true,
-          "default": null,
-          "jsdoc": {
-            "description": "\ncolumn definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * column definition, if null, the column definition is taken from the data <br/>\n\t\t\t\tcan be a also json string <br/>\n\t\t\t\t[ {data:'firstname', title:'@translation.firstname'},  <br/>&nbsp; {data:'surname', title:'@translation.surname'} ]<br/>\n\t\t\t\tif the first char in \"title\" is  \"@\", then title.substring(1) will be translated\n\t\t\t\t\n\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "multiSelect",
-          "type": "Boolean",
-          "desc": "\nmore than one row can be selected\n\t\t\t ",
-          "published": true,
-          "default": false,
-          "jsdoc": {
-            "description": "\nmore than one row can be selected\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * more than one row can be selected\n\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "namespace",
-          "type": "String",
-          "desc": "\nthe namespace\n\t\t\t ",
-          "published": true,
-          "default": null,
-          "jsdoc": {
-            "description": "\nthe namespace\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * the namespace\n\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "options",
-          "type": "String",
-          "desc": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
-          "published": true,
-          "jsdoc": {
-            "description": "\n<b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t\t * <b>datatables options</b><br/>\ndom<br/>\nl - length changing input control <br/>\nf - filtering input<br/>\nt - The table!<br/>\ni - Table information summary<br/>\np - pagination control<br/>\nr - processing display element<br/>\n\t\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "recalc",
-          "type": "Function",
-          "desc": "\n recalc and redraw the table\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n recalc and redraw the table\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  recalc and redraw the table\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "selection",
-          "type": "Array",
-          "desc": "\nThe selected rows\n\t\t\t ",
-          "published": true,
-          "notify": true,
-          "jsdoc": {
-            "description": "\nThe selected rows\n\t\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t\t * The selected rows\n\t\t\t "
-          }
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "unselectAll",
-          "type": "Function",
-          "desc": "\n unselect all rows\n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\n unselect all rows\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t *  unselect all rows\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "__createTable",
-          "type": "Function",
-          "params": [
-            {
-              "name": "dtMeta"
-            },
-            {
-              "name": "dataSet"
-            },
-            {
-              "name": "options"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "__dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_addDetailCopier",
-          "type": "Function",
-          "params": [
-            {
-              "name": "mainElem"
-            },
-            {
-              "name": "api"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_copySelection",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sel"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_createRowListener",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_createTable",
-          "type": "Function",
-          "params": [
-            {
-              "name": "dtMeta"
-            },
-            {
-              "name": "dataSet"
-            },
-            {
-              "name": "options"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_getIndex",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_getLang",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_parseOptions",
-          "type": "Function",
-          "params": [
-            {
-              "name": "o"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_prepareMeta",
-          "type": "Function",
-          "params": [
-            {
-              "name": "meta"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_prepareMetaFromData",
-          "type": "Function",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_tapAction",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_tapActionMulti",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_tapActionSingle",
-          "type": "Function",
-          "params": [
-            {
-              "name": "target"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "row"
-            },
-            {
-              "name": "doubleTap"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_translate",
-          "type": "Function",
-          "params": [
-            {
-              "name": "meta"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "DataTablesBehavior",
-          "name": "_whenTableReady",
-          "type": "Function",
-          "params": [
-            {
-              "name": "done"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "ModernizrBehavior",
-          "name": "attached",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "behaviors": [
-        "ModernizrBehavior",
-        "DataTablesBehavior"
-      ],
-      "observers": [],
-      "is": "simpl-datatables",
-      "contentHref": "src/simpl-datatables/simpl-datatables.html",
-      "jsdoc": {
-        "description": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n",
-        "tags": [],
-        "orig": "\nsimple possiblity to invoke any service\n\n     <simpl-rpc id=\"rpcListId\" method=\"docu.dataaccess\" params=\"{operation:'list'}\" response=\"{{dataList}}\"></simpl-rpc>\n     <simpl-datatables options='{paging: true,\"dom\":\"frt\",scrollY:\"200px\"}' \n            on-rows-selected=\"tableRowSelected\" data=\"[[dataList]]\" />\n\n"
-      },
-      "demos": [],
-      "show": true
     }
   },
   "behaviors": []

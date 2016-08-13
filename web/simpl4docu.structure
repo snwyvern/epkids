@@ -299,7 +299,7 @@
     "id": "",
     "help": "",
     "adoc_include": true,
-    "enabled": true,
+    "enabled": false,
     "appendix": "'title='+tr(title)"
   }
 ]
