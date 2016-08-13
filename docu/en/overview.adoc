@@ -12,6 +12,7 @@ imagezoom::docu/images/overview/bigpicture.svg[]
 
 === Serviceengine ===
 
+Executes and controls services models created in the simpl4 service editor. +
 A service consists of one or more building blocks. +
 simpl4 contains a large kit with finished components. +
 The blocks can be connected by parameterization and / or scripting.
@@ -42,8 +43,9 @@ imagezoom::docu/images/overview/exchange.svg[]
 
 === Processengine
 
-* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN) 2.0 processes. 
-* in simpl4 there is a graphical modeler to create the bpmn processes.
+* Executes and coordinates the sequences , that are defined in a process model.
+* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
+* in simpl4 there is a graphical modeler to create the processes models.
 * Service tasks are delegated to the service engine.
 
 

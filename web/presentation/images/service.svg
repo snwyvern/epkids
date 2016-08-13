@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="208.797mm"
-   height="76.384399mm"
-   viewBox="0 0 208.797 76.384399"
+   width="227.10466mm"
+   height="100.64163mm"
+   viewBox="0 0 227.10466 100.64163"
    version="1.1"
    id="svg8"
    inkscape:version="0.91+devel r"
@@ -135,9 +135,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.2152882"
-     inkscape:cx="274.95375"
-     inkscape:cy="133.60903"
+     inkscape:zoom="1.541174"
+     inkscape:cx="429.64374"
+     inkscape:cy="291.69088"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -158,7 +158,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -166,10 +166,10 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-4.471286,-55.189586)">
+     transform="translate(4.8067896,-49.315523)">
     <path
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#727272;stroke-width:0.25147384;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 11.92597,60.315323 h 193.88766 c 1.29023,0 2.32892,0.129688 2.32892,0.290943 v 65.551044 c 0,0.16126 -1.03869,0.29094 -2.32892,0.29094 H 11.92597 c -1.290232,0 -2.3289471,-0.12968 -2.3289471,-0.29094 V 60.606266 c 0,-0.161255 1.0387151,-0.290943 2.3289471,-0.290943 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#727272;stroke-width:0.242;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 11.92127,65.289128 h 193.89706 c 1.29029,0 2.32903,0.119944 2.32903,0.269082 v 60.62577 c 0,0.14915 -1.03874,0.26908 -2.32903,0.26908 H 11.92127 c -1.290295,0 -2.3290601,-0.11993 -2.3290601,-0.26908 V 65.55821 c 0,-0.149138 1.0387651,-0.269082 2.3290601,-0.269082 z"
        id="rect40165-8-8"
        inkscape:connector-curvature="0" />
     <path
@@ -395,15 +395,50 @@
          style="fill:#ff5252;fill-opacity:1;stroke-width:0.26458332px">exchange</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611111px;line-height:110%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="89.387871"
-       y="65.647552"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:110.00000238%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="90.074577"
+       y="61.35564"
        id="text5780-7"
        sodipodi:linespacing="110%"><tspan
          sodipodi:role="line"
          id="tspan5778-25"
-         x="89.387871"
-         y="65.647552"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611111px;line-height:110%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.26458332px;">Serviceengine</tspan></text>
+         x="90.074577"
+         y="61.35564"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:110.00000238%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.26458332px">Serviceengine</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:5.04472208px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="174.89975"
+       y="80.813385"
+       id="text5780-7-8"><tspan
+         sodipodi:role="line"
+         id="tspan5778-25-4"
+         x="174.89975"
+         y="80.813385"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:5.04472208px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.26458332px">Service</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#727272;stroke-width:0.09093153;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 11.7506,131.64665 h 194.71504 c 1.29573,0 2.33884,0.0169 2.33884,0.0379 v 8.53442 c 0,0.021 -1.04311,0.0379 -2.33884,0.0379 H 11.7506 c -1.295738,0 -2.3388848,-0.0168 -2.3388848,-0.0379 v -8.53442 c 0,-0.021 1.0431468,-0.0379 2.3388848,-0.0379 z"
+       id="rect40165-8-8-0-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:5.04472208px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="23.660418"
+       y="137.58905"
+       id="text5780-7-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan5778-25-4-2"
+         x="23.660418"
+         y="137.58905"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;line-height:5.04472208px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.26458332px">more services</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:0.462;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5641"
+       width="216.64304"
+       height="90.180008"
+       x="0.4240208"
+       y="54.546333"
+       ry="1.2796435" />
   </g>
 </svg>

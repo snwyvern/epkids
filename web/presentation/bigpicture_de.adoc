@@ -10,8 +10,9 @@
 [.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
-=== Service ===
+=== Serviceengine ===
 
+Ausführen und steuern von Servicemodellen, erstellt im simpl4 Serviceeditor. +
 Ein service besteht aus einem oder mehren Bausteinen.
 
 [.width800]
@@ -25,9 +26,10 @@ Der Exchange wird von Baustein zu Baustein gereicht.
 [.width500]
 imagezoom::web/presentation/images/exchange.svg[]
 
-=== Prozessengine ===
+=== Prozess-Engine ===
 
-* Die Prozesse werden in BPMN2 spezifiziert und in der processengine ausgeführt.
+* Ausführung und Koordination  der Abläufe die in den Prozessmodellen definiert sind.
+* Der Prozess-Engine bietet die Funktionalität um  Business Process Model and Notation(BPMN) ausführen.
 * Ein graphischer Editor(Modellierer) für BPMN2 steht in *simpl4* zur Verfügung.
 * Serviceaufgaben werden an die service engine delegiert.
 

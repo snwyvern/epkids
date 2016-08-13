@@ -6,19 +6,23 @@ In the following, the terms used in simpl4 will be explained
 
 * Custom Elements: simpl4 uses link:https://www.polymer-project.org/1.0/[Polymer,window="_blank"] 
 
-* Enumeration: mostly used as items of a selectBox
+* Enumeration: Mostly used as items of a selectBox
 
-* Filter: A Database query, which can be used in different places in simpl4
+* Filter: A data query, which can be used in different places in simpl4
 
 * Namespace: or application, a fenced area with its own git repository.
 
-* Process: processes are specified in BPMN and executed in the processengine
+* Process: is a in the processengine executed process model
 
-* Processengine: Controls the sequence of activities (but it does not execute)
+* Process model: is specified in BPMN and modelled in the simpl4 modeler
 
-* Service: A service consists of one or more building blocks.
+* Processengine: executes and coordinates the processes, that are in process models defined
 
-* Serviceengine: executes activities.
+* Service: is a in the serviceengine executed service model
+
+* Service model :  is specified in the simpl4 service editor.
+
+* Serviceengine: Executes and controls services models.
 
 * WAMP: Web Application Messaging Protocol, Websocket subprotocol
 

@@ -10,8 +10,9 @@
 [.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
-=== Service ===
+=== Serviceengine ===
 
+Executes and controls services models created in the simpl4 service editor. +
 A service consists of one or more building blocks.
 
 [.width800]
@@ -29,8 +30,11 @@ imagezoom::web/presentation/images/exchange.svg[]
 
 === Processengine
 
-* The processes are specified in BPMN2 and executed in the processengine.
-* A graphical editor (Modeler) for BPMN2  is in *simpl4* available.
+=== Processengine
+
+* Executes and coordinates the sequences, that are defined in a process model.
+* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
+* in simpl4 there is a graphical modeler to create the processes models.
 * Service tasks are delegated to the service engine.
 
 === WAMP *Web Application Messaging Protocol* ===
