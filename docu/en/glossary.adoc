@@ -2,7 +2,7 @@
 
 In the following, the terms used in simpl4 will be explained
 
-image:docu/images/glossary.svg[width=150]
+image:docu/images/glossary.svg[width=100]
 
 * BPMN 2.0: Business Process Model and Notation in Version 2.0
 
@@ -10,7 +10,7 @@ image:docu/images/glossary.svg[width=150]
 
 * Enumeration: Mostly used as items of a selectBox
 
-* Filter: A data query, which can be used in different places in simpl4
+* Filter: A definition of data query, which can be used in different places in simpl4
 
 * Namespace: or application, a fenced area with its own git repository.
 

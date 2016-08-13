@@ -32,7 +32,7 @@
     "title": "docu.glossary",
     "description": "",
     "uri": "docu/%l/glossary.adoc",
-    "icon": "vaadin-icons:lines",
+    "icon": "vaadin-icons:book",
     "id": "",
     "help": "",
     "adoc_include": true,
