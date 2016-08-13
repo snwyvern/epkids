@@ -13,7 +13,8 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 === Serviceengine ===
 
 Executes and controls services models created in the simpl4 service editor. +
-A service consists of one or more building blocks.
+A service consists of one or more building blocks. +
+simpl4 contains a large kit with finished buildings blocks.
 
 [.width800]
 imagezoom::web/presentation/images/service.svg[]

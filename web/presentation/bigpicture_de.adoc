@@ -13,7 +13,8 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 === Serviceengine ===
 
 Ausführen und steuern von Servicemodellen, erstellt im simpl4 Serviceeditor. +
-Ein service besteht aus einem oder mehren Bausteinen.
+Ein service besteht aus einem oder mehren Bausteinen. +
+simpl4 enthält einen großen Baukasten mit fertigen Bausteinen.
 
 [.width800]
 imagezoom::web/presentation/images/service.svg[]
