@@ -7,6 +7,8 @@
 
 Dataaccess in simpl4 is handled with the building block "data".
 
+Following operation are available.
+
 * *update* ->  update an object
 * *insert* ->  insert a new object
 * *upsert* ->  combination between insert and update, if an id in the data map then do 'update', otherwise 'insert'
@@ -16,7 +18,7 @@ Dataaccess in simpl4 is handled with the building block "data".
 * *findOneByFilter* ->  use a filter to find one object
 
 
-The building block "data" has several  parameter, depended on the operation
+*The building block "data" has several  parameter, depended on the operation*
 
 ==== Insert
 
