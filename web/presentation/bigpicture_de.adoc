@@ -29,7 +29,7 @@ imagezoom::web/presentation/images/exchange.svg[]
 
 === Prozess-Engine ===
 
-* Ausführung und Koordination  der Abläufe die in den Prozessmodellen definiert sind.
+* Führt die in BPMN definierten Prozessmodelle aus und orchestriert die Service-Engine sowie die Humantasks.
 * Die Prozess-Engine bietet die Funktionalität um  Business Process Model and Notation(BPMN) ausführen.
 * Ein graphischer Editor(Modellierer) für BPMN2 Prozessmodelle steht in *simpl4* zur Verfügung.
 * Serviceaufgaben werden an die service engine delegiert.

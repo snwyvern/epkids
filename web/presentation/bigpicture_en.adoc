@@ -30,7 +30,7 @@ imagezoom::web/presentation/images/exchange.svg[]
 
 === Processengine
 
-* Executes and coordinates the sequences, that are defined in a process model.
+* Executes the BPMN process models and orchestrates the service engine and the Human Tasks.
 * The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
 * in simpl4 there is a graphical modeler to create the process models.
 * Service tasks are delegated to the service engine.

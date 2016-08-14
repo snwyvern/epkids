@@ -18,7 +18,7 @@ image:docu/images/glossary.svg[width=100]
 
 * Process model: is specified in BPMN and modelled in the simpl4 modeler
 
-* Processengine: executes and coordinates the processes, that are in process models defined
+* Processengine: executes the BPMN process models and orchestrates the service engine and the Human Tasks.
 
 * Service: is a in the serviceengine executed service model
 
