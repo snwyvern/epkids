@@ -14,7 +14,7 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 
 Ausführen und steuern von Servicemodellen, erstellt im simpl4 Serviceeditor. +
 In diesem Editor können sie auf flexible Weise simpl4 Bausteine miteinander verknüpfen. +
-Ein service besteht aus einem oder mehren Bausteinen. +
+Ein Service besteht aus einem oder mehren Bausteinen. +
 simpl4 enthält einen großen Baukasten mit fertigen Bausteinen.
 
 [.width800]

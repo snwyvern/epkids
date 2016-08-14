@@ -142,12 +142,65 @@
       display: block;
       margin: 0 auto;
     }
+    /*Black header and greyblue menu START*/
+    
+    .polymer-theme .brand_drawer_panel {
+      background: #cfd8dc;
+    }
+    .polymer-theme .mm-menu.simpl-mmenu .mm-search.simpl-mmenu input.simpl-mmenu {
+      border-radius: 0px;
+      background: #cfd8dc;
+      color: #222222;
+    }
+    .polymer-theme .menu__item_primary {
+      color: #455a64;
+    }
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-next.simpl-mmenu:after,
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-arrow.simpl-mmenu:after {
+      border-color: #455a64;
+    }
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:before,
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:after {
+      border-color: #455a64;
+    }
+    .polymer-theme .menu__item_primary.mm-selected {
+      background: #607d8b;
+      color: white;
+    }
+    simpl-animatable-page.simpl-main > div {
+      padding-left: 5px;
+      padding-top: 0px;
+      padding-right: 0px;
+    }
+    @media screen and (max-height: 650px) {
+      simpl-animatable-page.simpl-main > div {
+        padding-right: 12px;
+      }
+    }
+    /*Black header and greyblue menu END*/
+    
+    /*GRAYBLUE BACKGROUNF*/
+    paper-collapse-item.asciidoctor iron-collapse.content.paper-collapse-item {
+      color: white;
+      border: 1px solid #455a64;
+      background: #607d8b;
+      border-radius: 3px;
+      padding-left: 10px;
+    }
+
+    /*CENTER PAGE*/
+    body,
+    html {
+      margin: 0 auto;
+      height: 100%;
+      max-width: 1200px;
+    }
 
   </style>
 </head>
 
 <body class="polymer-theme text_body_1">
-  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4web" logo="web/images/logoneu.svg" mmenu-background="white" mmenu-classes="mm-light"></simpl-main>
+  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4web" logo="web/images/logoneu.svg" mmenu-background="#cfd8dc" mmenu-classes="mm-light"></simpl-main>
 </body>
 
 </html>
