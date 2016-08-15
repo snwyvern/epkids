@@ -1,11 +1,11 @@
 :linkattrs:
 
-==== Workshoptermine
+==== Workshoptermine link:local:docu-customelements[Anmeldung]
 
-Workshops am Bla Bla +
-Workshops am Bla Bla
+* 11.11.2111 in Nürnberg +
+* 11.11.2111 in München 
 
-==== Workshoptermine
+==== Sonstiges
 
-Neue Version 5.0
+Neue Version 55.0
 

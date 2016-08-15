@@ -1,4 +1,11 @@
 :linkattrs:
 
-=== icon:bars[size=1x,role=black] Übersicht ===
+==== Workshoptermine link:local:docu-customelements[Anmeldung]
+
+* 11.11.2111 in Nürnberg +
+* 11.11.2111 in München 
+
+==== Sonstiges
+
+Neue Version 55.0
 
