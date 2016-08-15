@@ -197,7 +197,7 @@ meta.foundation-mq-large { font-family: "only screen and (min-width:1440px)"; wi
 
 html, body { font-size: 100%; }
 
-body { background: #fff; color: #222; padding: 0; margin: 0; font-family: "Roboto slab"; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
+body { padding: 0; margin: 0; font-family: "Roboto slab"; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
 
 a:hover { cursor: pointer; }
 
