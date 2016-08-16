@@ -47,7 +47,7 @@ image:web/presentation/images/integration.svg[width=300]
 [ROW,  cell0="justify-center", col0="align-center"]
 --
 
-image:web/presentation/images/serviceprovider.svg[width=300]
+image:web/presentation/images/simpl4cloud.svg[width=300]
 
 ###
 
