@@ -47,6 +47,16 @@
         "enabled": true
       },
       {
+        "title": "tr.menu.presentation.usecases",
+        "description": "",
+        "uri": "web/presentation/usecases_%l.adoc",
+        "icon": "device:widgets",
+        "id": "",
+        "help": "web/help/usage_%l.adoc",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
         "title": "tr.menu.presentation.features",
         "description": "",
         "uri": "features.html",
@@ -54,7 +64,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true
+        "enabled": false
       },
       {
         "title": "tr.menu.presentation.processing",
@@ -103,16 +113,6 @@
         "icon": "image:filter-3",
         "id": "",
         "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.menu.presentation.usecases",
-        "description": "",
-        "uri": "web/presentation/usecases_%l.adoc",
-        "icon": "device:widgets",
-        "id": "",
-        "help": "web/help/usage_%l.adoc",
         "adoc_include": false,
         "enabled": true
       }

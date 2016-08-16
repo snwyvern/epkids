@@ -3,9 +3,10 @@
 
 === {nbsp} ===
 
+[ROW,  cell0="justify-center", col0="align-center"]
 --
-image:vbox_logo.png[Logo, height=50] +
-
+image:vbox_logo.png[Logo, height=50]
+###
 Passwort(root): simpl4 +
 Network:nat with portforwarding +
  127.0.0.1:2222 to 22 +
@@ -17,9 +18,10 @@ link:http://download.ms123.org/download/simpl4_vbox.ova[Download simpl4 VirtualB
 --
 '''
 
+[ROW,cell0="justify-center", col1="align-center"]
 --
-image:vmware_logo.jpg[Logo, height=50] +
-
+image:vmware_logo.jpg[Logo, height=50]
+###
 Passwort(root): simpl4 +
 Network:nat +
 IP  wird über DHCP bezogen und kann in der Konsole abgelesen werden +
@@ -30,9 +32,11 @@ link:http://download.ms123.org/download/simpl4_vmware.ova[Download simpl4 VMware
 --
 '''
 
---
-image:vagrant_logo.png[Logo, height=50] +
 
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:vagrant_logo.png[Logo, height=50]
+###
 vagrant init simpl4/virtualbox +
 vagrant up +
 
@@ -41,9 +45,11 @@ simpl4 Login: admin/admin
 --
 
 '''
---
-image:docker_logo.png[Logo, height=50] +
 
+[ROW,cell0="justify-center", col1="align-center"]
+--
+image:docker_logo.png[Logo, height=50]
+###
 docker run -p 127.0.0.1:8080:80 simpl4/simpl4:latest +
 or +
 docker run -p 127.0.0.1:4443:443 simpl4/simpl4:latest +
@@ -55,9 +61,10 @@ simpl4 Login: admin/admin
 
 '''
 
+[ROW,  cell0="justify-center", col0="align-center"]
 --
-image:github_logo.png[Logo, height=50] +
-
+image:github_logo.png[Logo, height=50]
+###
 *Sourceccode*
 link:https://github.com/ms123s/simpl4-src[https://github.com/ms123s/simpl4-src,window="_blank"]
 --
