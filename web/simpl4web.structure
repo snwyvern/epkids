@@ -114,7 +114,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true
+        "enabled": false
       }
     ]
   },
@@ -240,7 +240,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true,
+        "enabled": false,
         "children": [
           {
             "title": "menu.asciidoctor.testfile",
