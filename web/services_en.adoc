@@ -11,7 +11,7 @@
 * You want us to host your application?
 
 [imageblock.width500]
-image::web/images/meeting.jpg[]
+image::web/images/business2.svg[]
 
 
 Contact us at +
