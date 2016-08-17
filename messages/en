@@ -319,6 +319,10 @@
         "msgid": "tr.menu.company"
     },
     {
+        "msgstr": "Contact",
+        "msgid": "tr.menu.contact"
+    },
+    {
         "msgstr": "Company behind simpl4",
         "msgid": "tr.menu.company.behind-simpl4"
     },
@@ -453,5 +457,17 @@
     {
         "msgstr": "Dataaccess",
         "msgid": "docu.dataaccess"
+    },
+    {
+        "msgid": "testrequest.email",
+        "msgstr": "Email"
+    },
+    {
+        "msgid": "testrequest.firstname",
+        "msgstr": "Firstname"
+    },
+    {
+        "msgid": "testrequest.surname",
+        "msgstr": "Surname"
     }
 ]

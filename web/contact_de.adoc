@@ -1,0 +1,42 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== Kontakt
+
+[subs="macros"] 
+++++
+<template is="dom-bind" id="root">
+  <simpl-panel bgcolor="black" heading="Contact">
+    <simpl-form on-xaction="onTap" result="{{result}}" form-name="testrequest.form"></simpl-form>
+  </simpl-panel>
+<simpl-rpc method="sendTestRequest"  params="{{result}}"></simpl-rpc>
+</template>
+<script>
+  HTMLImports.whenReady( function() {
+    var t = document.getElementById( "root" );
+    t.onTap = function( e ) {
+      console.log( "Tap:", t.result );
+      //sendTestRequest( e.detail );
+    }
+  } );
+
+  function sendTestRequest( data ) {
+    var params = {
+      service: "simpl4",
+      method: simpl4.util.BaseManager.getNamespace() + ".sendTestRequest",
+      parameter: data,
+      async: true,
+      context: this,
+      failed: function( e ) {
+        console.error( "sendTestRequest:", e );
+      },
+      completed: function( ret ) {
+        console.log( "sendTestRequest:", ret );
+      }
+    }
+    simpl4.util.Rpc.rpcAsync( params );
+  }
+</script>
+
+++++
+

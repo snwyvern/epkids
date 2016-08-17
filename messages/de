@@ -371,6 +371,10 @@
         "msgid": "tr.menu.company"
     },
     {
+        "msgstr": "Kontakt",
+        "msgid": "tr.menu.contact"
+    },
+    {
         "msgstr": "Die Firma hinter simpl4",
         "msgid": "tr.menu.company.behind-simpl4"
     },
@@ -505,5 +509,17 @@
     {
         "msgstr": "Datenzugriff",
         "msgid": "docu.dataaccess"
+    },
+    {
+        "msgid": "testrequest.email",
+        "msgstr": "Email"
+    },
+    {
+        "msgid": "testrequest.firstname",
+        "msgstr": "Vorname"
+    },
+    {
+        "msgid": "testrequest.surname",
+        "msgstr": "Nachname"
     }
 ]

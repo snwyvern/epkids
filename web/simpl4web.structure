@@ -413,6 +413,16 @@
     "enabled": false
   },
   {
+    "title": "tr.menu.contact",
+    "description": "",
+    "uri": "contact_%l.adoc?template=1",
+    "icon": "account-box",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": false
+  },
+  {
     "title": "tr.menu.press",
     "description": "",
     "uri": "press_%l.adoc",
