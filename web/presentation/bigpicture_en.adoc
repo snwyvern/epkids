@@ -15,7 +15,7 @@ imagezoom::web/presentation/images/bigpicture.svg[]
 Executes and controls services models created in the simpl4 service editor. +
 In this editor you can link in a flexible way simpl4 building blocks together. +
 A service consists of one or more building blocks. +
-simpl4 contains a large kit with finished buildings blocks.
+simpl4 already contains a large kit with finished buildings blocks.
 
 [.width800]
 imagezoom::web/presentation/images/service.svg[]
@@ -31,10 +31,10 @@ imagezoom::web/presentation/images/exchange.svg[]
 
 === Processengine
 
-* Executes the BPMN process models and orchestrates the service engine and the Human Tasks.
-* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
-* in simpl4 there is a graphical modeler to create the process models.
-* Service tasks are delegated to the service engine.
+* Executes the BPMN process models and orchestrates the serviceengine and the Human Tasks.
+* The process engine provides the capabilities to execute _Business Process Model and Notation_ (BPMN). 
+* a graphical editor (modeler) to create the BPMN 2.0 process models is in *simpl4* available.
+* Service tasks are delegated to the serviceengine.
 
 === WAMP *Web Application Messaging Protocol* ===
 
@@ -44,7 +44,7 @@ imagezoom::web/presentation/images/exchange.svg[]
 * *simpl4* acts as WAMP client and has  a WAMP router integrated.
 * In simpl4 defined services are registered at this WAMP router.
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
-Incidentally, in this way is browser-browser communication possible!
+Incidentally, in this way is browser-to-browser communication possible!
 
 === Standalone server ===
 

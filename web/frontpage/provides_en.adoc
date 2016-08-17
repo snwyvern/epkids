@@ -1,42 +1,42 @@
 :linkattrs:
 
-=== icon:bars[size=1x,role=black] Was bietet simpl4? ===
+=== icon:bars[size=1x,role=black] What offers simpl4? ===
 
 
-[CI, header="Einfache Installation"]
+[CI, header="Easy installation"]
 --
-Viele Möglichkeiten der Installation
+Many ways of installation
 
-* Virtualisierung( Images für VirtualBox und vmware)
-* Container ( Docker und Vagrant)
-* Clonen eines Repositories von Github
-* Selber compilieren
-* Testzugang bei uns anfordern
-* Wir sind Ihnen auch behilflich bei der Installation bei einem Hoster ihren Wahl oder in der Cloud(Google, Amazon ..)
+* Virtualization (Images for VirtualBox and VMware)
+* Container (Docker and Vagrant)
+* Cloning of a repository from Github
+* Compile it yourself
+* Request us for a test account
+* We also support you during installation at a hoster of your choice or in the cloud (z.B. Google, Amazon, ...)
 --
-[CI, header="Website mit vorgebenen Gerüst"]
+[CI, header="Website with provided frame"]
 --
-Durch ein vorgebenes Gerüst,ist der Einstieg sehr einfach .
+Because of a predefined framework, the entry is very simple.
 
-* Tool für Menu und Seitenstruktur
-* Theme beliebig anpassbar
+* Tool for the menu and site structure
+* Theme is arbitrarily adaptable
 
-Website kann aber auch komplett nach ihren Bedürfnissen aufgebaut werden.
+The website can also be created completely according to your needs.
 --
-[CI, header="Statische und dynamische Webseiten"]
+[CI, header="Static and dynamic websites"]
 --
-mit HTML5 und/oder Markdown(Asciidoc) erstellen. +
-Auch Markdown Seiten können dynamischen Inhalt enthalten. +
-simpl4 kann als sehr einfach zu handhabendes CMS Verwendung finden.
+creating with HTML5 and/or Markdown (Asciidoc). +
+Also Markdown sites can include dynamic content. +
+simpl4 can be used as a very easy to handle CMS.
 --
-[CI, header="Eingebaute Datenbank"]
+[CI, header="Built-in database"]
 --
-* Keinerlei Setup.  Datenmodell erstellen und benutzen
-* Auch andere Datenbanken(Postgresql, Mysql, Sqlserver, Oracle, DB2  ..) sind einfach integrierbar
+* no Setup at all.  A Datamodel model creating and using.
+* Also other databases (PostgreSQL, MySQL, SQL Server, Oracle, DB2, ...) are easy to integate.
 --
-[CI, header="Viele Scriptsprachen"]
+[CI, header="Many scripting languages"]
 --
-Wählen sie aus einer Anzahl von Sprachen aus
+Choose from a amount of languages
 
 * PHP
 * Ruby
@@ -45,31 +45,31 @@ Wählen sie aus einer Anzahl von Sprachen aus
 * Groovy
 * Java8
 --
-[CI, header="Flexible parametrisierbare Bausteine"]
+[CI, header="Flexible parameterizable building blocks"]
 --
-Greifen sie auf einen großen Baukasten mit fertigen Bausteinen(Komponenten) zu. +
-Verbindung der Bausteine durch Parametrisierung und/oder Scripting
+Fall back to a big set of ready bulding blocks (components). +
+Connection of the bulding blocks via parametrization and/or scripting.
 --
-[CI, header="Website komfortabel mit Prozessen verknüpfen"]
+[CI, header="Comfortable connecting of the website with processs"]
 --
-* Prozesse starten
-* ausgewählte Prozessereignisse abonnieren und asynchron über Websocket empfangen
-* Human tasks in die Website integrieren.
-* Tasklisten abrufen
-* Taskstatus setzen
+* starting processes
+* subscribing and via Websocket asynchron receiving of selected process events
+* integrating human tasks into the website
+* tiggering task lists
+* setting task status
 --
-[CI, header="Werkzeuge zum Importieren ihrer Daten"]
+[CI, header="Tools to import your data"]
 -
-[CI, header="Dynamische Inhalte aus beliebigen Datenquellen."]
+[CI, header="Dynamic contents from any data sources"]
 -
-[CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
+[CI, header="Flexible adaptability to new requirements"]
 --
-Die Webseite wächst mit ihren Anforderungen. +
-Von statischen Seiten, über das Einbinden von Datenquellen, bis hin zu Businessprozessen, ist alles möglich.
+The website grows with your requirements. +
+From static sites, over the integrating of data sources, to the point of business processes, everything is possible.
 --
-[CI, header="Schnelle Entwicklungzyklen"]
+[CI, header="Fast developing cycle"]
 --
-In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar
+In visualised workflows are entries for necessary program changes easier recognizable.
 --
 
 [.imageblock.left.width800]

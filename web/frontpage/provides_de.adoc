@@ -7,21 +7,21 @@
 --
 Viele Möglichkeiten der Installation
 
-* Virtualisierung( Images für VirtualBox und vmware)
-* Container ( Docker und Vagrant)
+* Virtualisierung (Images für VirtualBox und VMware)
+* Container (Docker und Vagrant)
 * Clonen eines Repositories von Github
 * Selber compilieren
 * Testzugang bei uns anfordern
-* Wir sind Ihnen auch behilflich bei der Installation bei einem Hoster ihren Wahl oder in der Cloud(Google, Amazon ..)
+* Wir unterstützen Sie auch bei der Installation bei einem Hoster Ihrer Wahl oder in der Cloud (z.B. Google, Amazon, ...)
 --
-[CI, header="Website mit vorgebenen Gerüst"]
+[CI, header="Webseite mit vorgebenen Gerüst"]
 --
-Durch ein vorgebenes Gerüst,ist der Einstieg sehr einfach .
+Durch ein vorgegebenes Gerüst, ist der Einstieg sehr einfach.
 
 * Tool für Menu und Seitenstruktur
 * Theme beliebig anpassbar
 
-Website kann aber auch komplett nach ihren Bedürfnissen aufgebaut werden.
+Die Webseite kann aber auch komplett nach Ihren Bedürfnissen aufgebaut werden.
 --
 [CI, header="Statische und dynamische Webseiten"]
 --
@@ -31,12 +31,12 @@ simpl4 kann als sehr einfach zu handhabendes CMS Verwendung finden.
 --
 [CI, header="Eingebaute Datenbank"]
 --
-* Keinerlei Setup.  Datenmodell erstellen und benutzen
-* Auch andere Datenbanken(Postgresql, Mysql, Sqlserver, Oracle, DB2  ..) sind einfach integrierbar
+* Keinerlei Setup.  Ein Datenmodell erstellen und benutzen
+* Auch andere Datenbanken (PostgreSQL, MySQL, SQL Server, Oracle, DB2, ...) sind einfach integrierbar
 --
 [CI, header="Viele Scriptsprachen"]
 --
-Wählen sie aus einer Anzahl von Sprachen aus
+Wählen Sie aus einer Anzahl von Sprachen aus
 
 * PHP
 * Ruby
@@ -47,14 +47,14 @@ Wählen sie aus einer Anzahl von Sprachen aus
 --
 [CI, header="Flexible parametrisierbare Bausteine"]
 --
-Greifen sie auf einen großen Baukasten mit fertigen Bausteinen(Komponenten) zu. +
-Verbindung der Bausteine durch Parametrisierung und/oder Scripting
+Greifen Sie auf einen großen Baukasten mit fertigen Bausteinen (Komponenten) zu. +
+Verbindung der Bausteine durch Parametrisierung und/oder Scripting.
 --
-[CI, header="Website komfortabel mit Prozessen verknüpfen"]
+[CI, header="Webseite komfortabel mit Prozessen verknüpfen"]
 --
 * Prozesse starten
 * ausgewählte Prozessereignisse abonnieren und asynchron über Websocket empfangen
-* Human tasks in die Website integrieren.
+* Human tasks in die Website integrieren
 * Tasklisten abrufen
 * Taskstatus setzen
 --
@@ -64,12 +64,12 @@ Verbindung der Bausteine durch Parametrisierung und/oder Scripting
 -
 [CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
 --
-Die Webseite wächst mit ihren Anforderungen. +
-Von statischen Seiten, über das Einbinden von Datenquellen, bis hin zu Businessprozessen, ist alles möglich.
+Die Webseite wächst mit Ihren Anforderungen. +
+Von statischen Seiten, über das Einbinden von Datenquellen, bis hin zu Geschäftsprozessen, ist alles möglich.
 --
 [CI, header="Schnelle Entwicklungzyklen"]
 --
-In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar
+In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar.
 --
 
 [.imageblock.left.width800]
