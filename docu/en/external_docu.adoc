@@ -1,0 +1,31 @@
+:linkattrs:
+
+== External Links ==
+
+Here are the links to serveral informations listed.
+
+http://www.bpmb.de/images/BPMN2_0_Poster_EN.pdf[BPMN-Poster]
+
+
+
+== Important links around simpl4 ==
+
+* https://www.facebook.com/simpl4[simpl4 on facebook]
+Here you can have a look on the latest new around simpl4.
+Only subscribe, and you get automatically the newest informations. 
+
+
+* http://simpl4-redmine.ms123.org/projects/simpl4-public[Issue Tracking System and forum for simpl4]
+Feel free to ask anything you want to know about simpl4, regardless of whether questions, errors, request or anything else.
+
+
+*https://github.com/simpl4-apps[simpl4 on GitHub]
+Download and install example applications. Have a look on them, and see how in simpl4 written software looks.
+
+
+
+Customelements are build with polymer.
+https://www.polymer-project.org/1.0/docs/devguide/feature-overview
+
+Client library used to access WAMP-Services
+https://github.com/KSDaemon/wampy.js

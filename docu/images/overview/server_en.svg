@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1424.91"
+   height="942.84442"
+   id="svg4078"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="server_en.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2661"
+     inkscape:window-height="1561"
+     id="namedview106"
+     showgrid="false"
+     inkscape:zoom="0.94608912"
+     inkscape:cx="282.26891"
+     inkscape:cy="456.07339"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     fit-margin-bottom="80"
+     fit-margin-top="20"
+     fit-margin-left="0"
+     fit-margin-right="0" />
+  <defs
+     id="defs4080">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         id="path5872"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path5875"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata4083">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-76.069341,-131.97416)"
+     id="layer1">
+    <g
+       id="g4439"
+       transform="matrix(0.98931777,0,0,1.0002084,0.70308628,-0.11449944)">
+      <rect
+         style="fill:#607d8b;fill-opacity:1;stroke:#000000;stroke-width:2.53555846"
+         id="rect17"
+         y="591.11096"
+         x="78.153526"
+         height="172.43552"
+         width="1436.1732" />
+      <text
+         sodipodi:linespacing="125%"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:49.92469388px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;"
+         id="text79"
+         transform="scale(0.98214494,1.0181797)"
+         y="677.96118"
+         x="161.88196">OSGi Framework</text>
+      <polyline
+         style="display:inline;fill:#cfd8dc;fill-opacity:1;stroke:#000000;stroke-dasharray:5, 5"
+         transform="matrix(2.2653222,0,0,2.3484362,69.164698,115.84316)"
+         id="polyline21"
+         points="276 204 276 244 635 244" />
+      <rect
+         width="810.98535"
+         height="91.589012"
+         x="700.65625"
+         y="595.27271"
+         id="rect19"
+         style="fill:#cfd6dc;fill-opacity:1;stroke:none" />
+      <text
+         x="789.16241"
+         y="642.04749"
+         transform="scale(0.98214494,1.0181797)"
+         id="text71"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.71532199px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;writing-mode:lr;text-anchor:start;fill:#212121;fill-opacity:1;"
+         sodipodi:linespacing="125%">System Services(Registry,Events,..)</text>
+      <rect
+         width="1437.2125"
+         height="115.76575"
+         x="77.079956"
+         y="762.18713"
+         id="rect23"
+         style="fill:#607d8b;fill-opacity:1;stroke:#000000;stroke-width:1.79985702" />
+      <text
+         x="368.46927"
+         y="884.80005"
+         transform="scale(1.0535701,0.94915373)"
+         id="text81"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.79426363px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;"
+         sodipodi:linespacing="125%">Java Runtime Environment</text>
+      <rect
+         width="1437.9939"
+         height="115.64039"
+         x="77.752571"
+         y="878.35626"
+         id="rect27"
+         style="fill:#455a64;fill-opacity:1;stroke:#000000;stroke-width:1.45824289" />
+      <text
+         x="808.05713"
+         y="938.68011"
+         transform="scale(0.98295668,1.0173388)"
+         id="text75"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00007468px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;"
+         sodipodi:linespacing="125%">e.g. Windows, Linux</text>
+      <text
+         x="268.06396"
+         y="938.80127"
+         transform="scale(0.98295668,1.0173388)"
+         id="text83"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.00009334px;line-height:125%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;"
+         sodipodi:linespacing="125%">Operating System</text>
+    </g>
+    <rect
+       width="1412.0753"
+       height="424.30106"
+       x="80.240761"
+       y="159.15009"
+       id="rect11"
+       style="fill:#000000;fill-opacity:0;stroke:#607d8b;stroke-width:10.12390995;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:83.56249829px;line-height:130%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#212121;fill-opacity:1;stroke:none;stroke-width:0.99966037;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       x="821.99994"
+       y="396.84756"
+       id="text4404"
+       sodipodi:linespacing="130%"
+       transform="scale(0.99454096,1.005489)"><tspan
+         style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:0.99966037;-inkscape-font-specification:'Roboto Slab, Bold';font-family:'Roboto Slab';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:83.56249829px;text-anchor:start;text-align:start;writing-mode:lr;line-height:130%;"
+         sodipodi:role="line"
+         id="tspan4406"
+         x="821.99994"
+         y="396.84756">BACKEND</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:142.50868225px;line-height:100%;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#607d8b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="403.00629"
+       y="417.15259"
+       id="text4136"
+       sodipodi:linespacing="100%"
+       transform="scale(0.99454094,1.005489)"><tspan
+         sodipodi:role="line"
+         id="tspan4138"
+         x="403.00629"
+         y="417.15259">simpl</tspan></text>
+    <ellipse
+       cy="316.63123"
+       cx="490.41568"
+       id="path4567-7"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff5252;fill-opacity:1;stroke:#ff5252;stroke-width:3.90243816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       rx="12.937115"
+       ry="13.079529" />
+    <ellipse
+       cy="316.62473"
+       cx="426.55521"
+       id="path4567-7-3"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff5252;fill-opacity:1;stroke:#ff5252;stroke-width:3.90243816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       rx="12.937114"
+       ry="13.079528" />
+    <ellipse
+       cy="255.72408"
+       cx="427.21353"
+       id="path4567-7-7"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff5252;fill-opacity:1;stroke:#ff5252;stroke-width:3.90243816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       rx="12.937114"
+       ry="13.079528" />
+    <ellipse
+       cy="257.05527"
+       cx="491.07196"
+       id="path4567-7-9"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff5252;fill-opacity:1;stroke:#ff5252;stroke-width:3.90243816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       rx="12.937114"
+       ry="13.079528" />
+  </g>
+</svg>

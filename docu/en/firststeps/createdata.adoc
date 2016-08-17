@@ -1,0 +1,35 @@
+:linkattrs:
+
+
+[.lead]
+Create a new class with name "Friend"
+
+The class holds your friends data
+
+[.autowidth]
+imagezoom::docu/images/firststeps/create_class.svg[]
+
+{sp} +
+{sp} +
+
+[.lead]
+For later use, we need a filter. +
+
+The concept of "filter" is described elsewhere. +
+Short: A filter holds an database query.
+
+The filter is used in the next step and is for now very simple.
+
+
+[.autowidth]
+imagezoom::docu/images/firststeps/create_filter.svg[]
+
+
+{sp} +
+{sp} +
+
+[.lead]
+Now we will fill the database with some sample data.
+
+[.autowidth]
+imagezoom::docu/images/firststeps/example_data.svg[]

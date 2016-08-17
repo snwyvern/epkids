@@ -1,54 +1,110 @@
-:linkattrs:
-:source-highlighter: rouge
-
-= simpl4==
 
 
-=== Was kann man damit machen ? ===
+== Ein paar Anwendungsfälle
 
-Eine beispielhafte Auswahl an Möglichkeiten
+[ROW,  cell0="justify-center", col0="align-center"]
+--
 
-* maßgeschneidertes CRM
-* elektronische Kataloge
-* Abläufe wie z.B. die Urlaubsplanung
-* allgemeine Webseite (Präsentation beliebiger Daten)
-* Integration  verschiedenster Systeme
-* Ergänzung des vorhandenen Fachsystem
-* oder auch Serienmails
+image:web/presentation/images/contentmgm.svg[width=300]
 
-++++
-<div>
-  <dom-module id="usage-page">
-    <template>
-      <div style="height:100%;width:100%;max-width:600px;border-right: 1px solid #eaeaea;border-radius: 5px;">
-        <simpl-executeFilter pageSize=10 offset=0 data="{{featureList}}" namespace="firstapp" name="feature.filter" params="[[getParams()]]"></simpl-executeFilter>
-        <simpl-carousel items="[[featureList]]" class="flex" style="overflow:hidden;opacity:0.99;height: 100%;">
-          <template is="dom-repeat" as="feature" items="[[featureList]]">
-            <simpl-panel data-index$="[[index]]" bgcolor="#EAEAEA" fontWeight="bold" fontSize="1.0em" color="black" heading="[[feature.headline]]">
-              <simpl-asciidoctor data="[[feature]]">
-{empty} +
-[grid=none,frame=none,cols="33a,66a"]
-|===
-| image::$picture[Picture,height=165,align=left] | $description
-|===
-              </simpl-asciidoctor>
-            </simpl-panel>
-          </template>
-        </simpl-carousel>
-      </div>
-    </template>
-    <script>
-      Polymer( {
-        is: 'usage-page',
-        getParams: function() {
-          return {
-            lang: Simpl4.Cache.getItem( "lang" )
-          };
-        }
-      } );
+###
 
-    </script>
-  </dom-module>
-  <usage-page class="flex layout horizontal" />
-</div>
-++++
+=== Web content management ===
+
+* Struktureditor
+* Markdown (Asciidoctor) mit dynamischem Content
+* Workflow mit integrierter Processengine
+* integrierte Datenbank, Zugriff auf externe Datenbanken
+* Versionierung
+* Templates
+
+--
+
+
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Integration ===
+
+* Vielzahl von Schnittstellen
+* Messaging mit XMPP und JMS
+* simpl4 als Mediator
+
+
+###
+
+image:web/presentation/images/integration.svg[width=300]
+
+--
+
+
+
+'''
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+
+image:web/presentation/images/simpl4-cloud.svg[width=300]
+
+###
+
+=== Cloud  Services ===
+
+* Prozesse als Services
+* Daten Services
+
+--
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Officeautomation ===
+
+* MS Office (docx, pptx) und OpenOffice (odt, ods) Templates.
+* PDF Generierung
+
+
+###
+
+image:web/presentation/images/officeautomation.svg[width=300]
+
+--
+
+'''
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+
+image:web/presentation/images/printing.svg[width=300]
+
+###
+
+=== Print ===
+
+* Elektronische Kataloge
+* Formuale
+* mit integriertem DocBook
+
+--
+
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Maßgeschneidertes CRM ===
+
+* Auf Ihren Bedarf zugeschnitten, nicht mehr und nicht weniger
+
+
+###
+
+image:web/presentation/images/tailor.svg[width=250]
+
+--

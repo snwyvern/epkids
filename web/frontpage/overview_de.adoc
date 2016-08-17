@@ -13,25 +13,26 @@ Applikationen einmal erstellen auf allen gängigen Geräten benutzen.
 * Datenmodell (konfortabler Editor zum Definieren des Datenmodells) 
 * Datenbanktabellen (werden automatisch erzeugt, abgeleitet vom Datenmodell) 
 * Forms (freidefiniert oder abgeleitet vom Datenmodell)
-* Integrationsregeln 
+* Servicemodelle 
 * Geschäftsregeln 
 * Datenabfragen
 * Dokumenttemplates
 --
 [CI,header="BPMN 2.0 – Business Process Model and Notation"]
 --
-is a graphical representation for specifying business processes.
-The objective of BPMN is to support business process management, for both technical users and business users, by providing a notation that is intuitive to business users, yet able to represent complex process semantics
+ist eine grafische Spezifikationssprache. 
+Sie stellt Symbole zur Verfügung, mit denen Fach- und Informatikspezialisten 
+Geschäftsprozesse und Arbeitsabläufe modellieren und dokumentieren können.
 --
 [CI,header="Business-Process-Engine"]
 --
-Executes the BPMN process models +
-and orchestrates the integration engine and the Human Tasks
+Führt die in BPMN2.0 definierten Prozessmodelle aus +
+und orchestriert die Service-Engine sowie die Humantasks.
 --
-[CI,header="Regelbasierte Integration-Engine"]
+[CI,header="Service-Engine"]
 --
-Die Integrationsengine verbindet auf flexible Weise simpl4 Bausteine miteinander. +
-In einem visuellen Editor werden die Integrationsregeln definiert.
+Im ServiceEditor wird das Servicemodel definiert,das in der Service-Engine ausgeführt wird. +
+In diesem Editor können sie auf flexible Weise simpl4 Bausteine miteinander verknüpfen.
 --
 [CI,header="Cloud-ready (PaaS,SaaS)"]
 simpl4 und simpl4 Applikationen  füllen die Cloud Schichten PaaS und SaaS

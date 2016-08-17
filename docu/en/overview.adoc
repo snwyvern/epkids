@@ -1,0 +1,84 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+
+=== simpl4 backend, the main ingredients ===
+
+[.width800]
+imagezoom::docu/images/overview/bigpicture.svg[]
+
+
+
+=== Serviceengine ===
+
+Executes and controls services models created in the simpl4 service editor. +
+In this editor you can join, in a flexible way simpl4 building blocks together. +
+A service consists of one or more building blocks. +
+simpl4 contains a large kit with finished components. +
+The blocks can be connected by parameterization and / or scripting.
+
+[.width800]
+imagezoom::docu/images/overview/service.svg[]
+
+==== Exchange and message ====
+
+On the service entrypoint an exchange is created and with the service parameters populated. +
+The exchange is handed from building block to building block. +
+An exchange in simpl4 is the message container during the processing. +
+
+Properties are used to contain global-level information, +
+whereas message headers are specific to a particular message. +
+Properties are name-value pairs; the name is a unique, case-insensitive string.  +
+Simpl4 imposes no constraints on the type of the value. You can store a any data.
+
+The message containing the data.
+Wherein the body contains the payload and the the headers the meta data. +
+If a building block has the concept of headers,for example, http oder jms, the message headers are +
+converted to/from protocol specific headers.
+
+[.width500]
+imagezoom::docu/images/overview/exchange.svg[]
+
+
+
+=== Processengine
+
+* Executes the BPMN process models and orchestrates the service engine and the Human Tasks.
+* The process engine provides the capabilities to execute Business Process Model and Notation (BPMN). 
+* in simpl4 there is a graphical modeler to create the process models.
+* Service tasks are delegated to the service engine.
+
+
+=== Interaction between service and process engine ===
+
+This example is not really meaningful,  but shows some interesting things.
+
+[.width1000]
+imagezoom::docu/images/overview/process-and-service.svg[]
+
+. There are several opportunities to start a process. +
+Here in the example, the Service Engine starts the process(via message) or a user starts the process(via form or menu).
+. The process performs a service 
+. and immediately get the result.
+. Now a asynchronous service are startet.
+. The process waits on an event gateway.
+. The process receives maybe the "answer"  message 
+. or a timeout occurs if the message is not received in time.
+. an error occurs 
+
+
+=== WAMP *Web Application Messaging Protocol* ===
+
+* Websocket Subprotokol registered by IANA.
+* Provides routed remote procedure calls (RPC) and Publish & Subscribe (PubSub).
+* WAMP is roughly divided into clients and router.
+* *simpl4* acts as WAMP client and has  a WAMP router integrated.
+* In simpl4 defined services are registered at this WAMP router.
+* External equipment (eq. browsers) can register their own services (procedures) and thereby are reachable from each other WAMP client. +
+Incidentally, in this way is browser-browser communication possible!
+
+=== Standalone server ===
+
+[.width700]
+imagezoom::docu/images/overview/server_en.svg[]

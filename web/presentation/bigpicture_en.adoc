@@ -10,38 +10,45 @@
 [.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
 
-=== Apache Camel *Routing and conversion engine* ===
+=== Serviceengine ===
 
-* Camelroutes are the main processing units in *_simpl4_.* +
-The specify the data flow from component to component. +
-A Camel route corresponds to a procedure that registers on the WAMP router and is in this way reachable via RPC(HTTP or websocket).
+Executes and controls services models created in the simpl4 service editor. +
+In this editor you can join, in a flexible way simpl4 building blocks together. +
+A service consists of one or more building blocks. +
+simpl4 already contains a large kit with finished buildings blocks.
 
-=== Activiti processengine
+[.width800]
+imagezoom::web/presentation/images/service.svg[]
 
-* Processes (workflows) are executed in the Activiti processengine.
-* The processes are specified in BPMN2.
-* A graphical editor (Modeler) is available here.
-* Service tasks can be delegated to Camel.
+==== Exchange ====
+
+On the service entrypoint an exchange is created and with the service parameters populated. +
+The exchange is handed from building block to building block.
+
+[.width500]
+imagezoom::web/presentation/images/exchange.svg[]
+
+
+=== Processengine
+
+* Executes the BPMN process models and orchestrates the serviceengine and the Human Tasks.
+* The process engine provides the capabilities to execute _Business Process Model and Notation_ (BPMN). 
+* a graphical editor (modeler) to create the BPMN 2.0 process models is in *simpl4* available.
+* Service tasks are delegated to the serviceengine.
 
 === WAMP *Web Application Messaging Protocol* ===
 
-* Websocket Subprotokol registered by IANA
-* Provides routed remote procedure calls (RPC) and PubSub
-* WAMP consists of clients and routers (not be confused with the Camel routes)
-* The procedures are registered on the router
-* *simpl4* is WAMP client and router
+* Websocket Subprotokol registered by IANA.
+* Provides routed remote procedure calls (RPC) and Publish & Subscribe (PubSub).
+* WAMP is roughly divided into clients and router.
+* *simpl4* acts as WAMP client and has  a WAMP router integrated.
+* In simpl4 defined services are registered at this WAMP router.
 * External equipment (or browsers) can register their services (procedures) and thereby are reachable from each other WAMP client. +
-Incidentally, in this way is browser-browser communication possible!
+Incidentally, in this way is browser-to-browser communication possible!
 
 === Standalone server ===
 
 [.width700]
 imagezoom::web/presentation/images/server_en.svg[]
 
-=== Servlet engine ===
-
-The simpl4 backend can be deployed as a WAR in a servlet engine.
-
-[.width700]
-imagezoom::web/presentation/images/servlet-engine_en.svg[]
 

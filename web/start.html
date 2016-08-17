@@ -142,12 +142,133 @@
       display: block;
       margin: 0 auto;
     }
+    /*Black header and greyblue menu START*/
+    
+    .polymer-theme .brand_drawer_panel {
+      background: #cfd8dc;
+    }
+    .polymer-theme .mm-menu.simpl-mmenu .mm-search.simpl-mmenu input.simpl-mmenu {
+      border-radius: 0px;
+      background: #cfd8dc;
+      color: #222222;
+    }
+    .polymer-theme .menu__item_primary {
+      color: #455a64;
+    }
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-next.simpl-mmenu:after,
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-arrow.simpl-mmenu:after {
+      border-color: #455a64;
+    }
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:before,
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:after {
+      border-color: #455a64;
+    }
+    .polymer-theme .menu__item_primary.mm-selected {
+      background: #607d8b;
+      color: white;
+    }
+    simpl-animatable-page.simpl-main > div {
+      padding-left: 5px;
+      padding-top: 0px;
+      padding-right: 0px;
+    }
+    @media screen and (max-height: 650px) {
+      simpl-animatable-page.simpl-main > div {
+        padding-right: 12px;
+      }
+    }
+    /*Black header and greyblue menu END*/
+    /*Grayblue background, collaps-item open*/
+    
+    paper-collapse-item.asciidoctor iron-collapse.content.paper-collapse-item {
+      color: #455a64;
+      border: 1px solid #455a64;
+      background: white;
+      border-radius: 3px;
+      padding-left: 10px;
+    }
+    /*Center page*/
+    
+    body,
+    html {
+      margin: 0 auto;
+      height: 100%;
+      max-width: 1200px;
+    }
+    .headeroverlay {
+      z-index: 99;
+      padding-left: 10px;
+      width: 50%;
+      position: absolute;
+      overflow: hidden;
+      top: 44%;
+      height: 51%;
+      left: 2%;
+    }
+    /*Messages overlay*/
+    
+    .headeroverlay {
+      font-size: 1em;
+    }
+    @media screen and (max-width: 1100px) {
+      .headeroverlay {
+        font-size: 0.85em;
+      }
+    }
+    @media screen and (max-width: 920px) {
+      .headeroverlay {
+        font-size: 0.75em;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .headeroverlay {
+        font-size: 0.65em;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .headeroverlay {
+        font-size: 0.6em;
+      }
+    }
+    .headeroverlay ul.asciidoctor-default,
+    .headeroverlay ol.asciidoctor-default,
+    .headeroverlay dl.asciidoctor-default {
+      line-height: 1.6;
+      margin-bottom: 0.25em;
+    }
+    .headeroverlay h1.asciidoctor-default,
+    .headeroverlay h2.asciidoctor-default,
+    .headeroverlay h3.asciidoctor-default,
+    .headeroverlay h4.asciidoctor-default {
+      margin-top: 0.1em;
+      margin-bottom: 0.2em;
+      line-height: 1.0em;
+      font-size: 1.0em;
+    }
+    .headeroverlay p.asciidoctor-default {
+      margin-bottom: 0.225em !important;
+    }
+    .headeroverlay ol > li p.asciidoctor-default,
+    .headeroverlay ul > li p.asciidoctor-default,
+    .headeroverlay ul dd.asciidoctor-default,
+    .headeroverlay ol dd.asciidoctor-default,
+    .headeroverlay .olist .olist.asciidoctor-default,
+    .headeroverlay .ulist .ulist.asciidoctor-default,
+    .headeroverlay .ulist .olist.asciidoctor-default,
+    .headeroverlay .olist .ulist.asciidoctor-default {
+      margin-bottom: 0.025em !important;
+    }
 
+		/* Start iron-collapse*/
+    iron-collapse a.asciidoctor-default.simpl-import {
+      color: #ff5252 !important;
+    }
+		/* End iron-collapse*/
   </style>
 </head>
 
 <body class="polymer-theme text_body_1">
-  <simpl-main logo-link="http://simpl4.org/%l" logo="web/images/logoneu.svg" mmenu-background="white" mmenu-classes="mm-light"></simpl-main>
+  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4web" logo="web/images/logoneu.svg" mmenu-background="#cfd8dc" mmenu-classes="mm-light"></simpl-main>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+:linkattrs:
+
+== Relations ==
+
+When for example _one customer_ has _many contact persons_, these data normal wise are stored in different classes. But, at one place, it has to be described how they belong to each other, so for this in simpl4 are the _Relations_ used.
+
+Relations can be found in the "Project management", and there under _data_ on the level as the the _classes_ are. 
+
+After defining relations in simpl4, simpl4 automatically creates the possibility to manage the together belonging the data.
+
+
+Here you can see where Relations are definded, an how it looks in the crud, which is automatically created by simpl4.
+
+[.width200]
+image::docu/images/relations/Example_Relation.png[]

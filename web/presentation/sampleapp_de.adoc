@@ -7,8 +7,8 @@
 
 ==== Die Hauptaspekte ====
 
-* Prozesse (Mit Sub-Prozess, Message Events und EMail Service Task)
-* Camel (Implementieren eines RPC Interfaces, was das Zusammenspiel von Camel und Activiti zeigt)
+* Prozess (Mit Sub-Prozess, Message Events und EMail Service Task)
+* Service (Implementieren eines RPC Interfaces, was das Zusammenspiel der Serviceengine und der Processengine zeigt)
 * Form (Einbinden in die Webseite)
 * Webapp (Grundgerüst, eine maßgeschneiderte Form)
 
@@ -19,7 +19,7 @@ Es ist nicht möglich, da eine unbekannte Anzahl an Teilnehmern involviert ist, 
 die zudem auch keine User in simpl4 sind. +
 Deswegen wurden die verwendeten Forms als Webseiten realisiert, und dem Prozess via RPC übergeben.
 
-* InitiateForm(initiate.form) startet den Prozess.
+* InitiateForm (initiate.form) startet den Prozess.
 * Die Voting-Seite kommuniziert mit dem Process via RPC (letztendlich wird dem Prozess eine Message gesendet)
 
 --
@@ -30,9 +30,9 @@ imagezoom::web/images/simpldate_overview.svg[border]
 === RPC ===
 
 
-Die Applikation benötig im Moment 4 RPCs um mit dem Prozess zu kommunizieren. Der Vierte, das
+Die Applikation benötigt im Moment 4 RPCs um mit dem Prozess zu kommunizieren. Der Vierte, das
 Beenden des Prozesses, muss noch gemacht werden.
-Die Camel-Komponente "workflow" setzt die "RPCs" um.
+Die Service-Komponente "workflow" setzt die "RPCs" um.
 
 * Starten des Prozesses
 * Message-Events an Prozess senden

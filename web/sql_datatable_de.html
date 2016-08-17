@@ -1,7 +1,7 @@
 <template is="dom-bind">
 	<br/>
   <simpl-panel heading="Hilfebutton(rechts oben), zeigt wie es gemacht ist." bgcolor="black">
-    <simpl-rpc method="sql" service="camelRoute" response="{{response}}"></simpl-rpc>
+    <simpl-rpc method="sql" service="simpl4" response="{{response}}"></simpl-rpc>
     <simpl-datatables options='{paging: true,"bFilter":false,"dom":"frtiS",scrollY:"200px"}' data="{{response}}" />
   </simpl-panel>
 </template>

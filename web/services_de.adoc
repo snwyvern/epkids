@@ -12,7 +12,7 @@
 * Sie wollen, dass wir Ihre Anwendung hosten?
 
 [imageblock.width500]
-image::web/images/meeting.jpg[]
+image::web/images/business2.svg[]
 
 Kontaktieren Sie uns unter + 
 EMail: info@simpl4.org +

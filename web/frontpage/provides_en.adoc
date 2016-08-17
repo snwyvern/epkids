@@ -1,0 +1,77 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] What offers simpl4? ===
+
+
+[CI, header="Easy installation"]
+--
+Many ways of installation
+
+* Virtualization( Images for link:local:resources[VirtualBox und VMware])
+* Container (link:local:resources[Docker und LXD])
+* link:local:resources[Vagrant] environment
+* link:https://github.com/ms123s/simpl4-deployed[Cloning,window="_blank"] of a repository from Github
+* link:https://github.com/ms123s/simpl4-src[Compile,window="_blank"] it yourself
+* Request us for a test account
+* We also support you during installation at a hoster of your choice or in the cloud (z.B. Google, Amazon, ...)
+--
+[CI, header="Website with provided frame"]
+--
+Because of a predefined framework, the entry is very simple.
+
+* Tool for the menu and site structure
+* Theme is arbitrarily adaptable
+
+The website can also be created completely according to your needs.
+--
+[CI, header="Static and dynamic websites"]
+--
+creating with HTML5 and/or Markdown (Asciidoc). +
+Also Markdown sites can include dynamic content. +
+simpl4 can be used as a very easy to handle CMS.
+--
+[CI, header="Built-in database"]
+--
+* no Setup at all.  A Datamodel model creating and using.
+* Also other databases (PostgreSQL, MySQL, SQL Server, Oracle, DB2, ...) are easy to integate.
+--
+[CI, header="Many scripting languages"]
+--
+Choose from a amount of languages
+
+* PHP
+* Ruby
+* Python
+* Javascript
+* Groovy
+* Java8
+--
+[CI, header="Flexible parameterizable building blocks"]
+--
+Fall back to a big set of ready bulding blocks (components). +
+Connection of the bulding blocks via parametrization and/or scripting.
+--
+[CI, header="Comfortable connecting of the website with processs"]
+--
+* starting processes
+* subscribing and via Websocket asynchron receiving of selected process events
+* integrating human tasks into the website
+* tiggering task lists
+* setting task status
+--
+[CI, header="Tools to import your data"]
+-
+[CI, header="Dynamic contents from any data sources"]
+-
+[CI, header="Flexible adaptability to new requirements"]
+--
+The website grows with your requirements. +
+From static sites, over the integrating of data sources, to the point of business processes, everything is possible.
+--
+[CI, header="Fast developing cycle"]
+--
+In visualised workflows are entries for necessary program changes easier recognizable.
+--
+
+[.imageblock.left.width800]
+image::web/images/devel.svg[]

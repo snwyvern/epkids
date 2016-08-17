@@ -9,8 +9,11 @@
       </div>
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
-          <div elevation="0" style="padding-top:15px;" class="flex">
-            <img style="width:100%;" src="web/images/header.jpg" />
+          <div elevation="0" style="padding-top:10px" class="imagewrapper flex">
+            <img style="width:100%;" src="web/images/banner1.svg" />
+            <span class="headeroverlay">
+            <simpl-import class="headertext" url="[[getFileName('messages')]]"></simpl-import>
+						</span>
           </div>
 
           <div class="layout wrap horizontal">
@@ -23,12 +26,12 @@
           <h3 style="margin:0px;font-weight:400;font-size:16px;">[[tr("frontpage.subheader")]]</h3>
           <div class="grid row">
             <div class="col-xs-12 col-md-6">
-              <paper-material elevation="3" class="grid column flex card">
-                <simpl-import url="{{getFileName('benefit')}}"></simpl-import>
+              <paper-material style="" elevation="0" class="grid column flex card">
+                <simpl-import url="{{getFileName('provides')}}"></simpl-import>
               </paper-material>
             </div>
             <div class="col-xs-12 col-md-6">
-              <paper-material elevation="3" class="grid column flex card">
+              <paper-material style="" elevation="0" class="grid column flex card">
                 <simpl-import url="[[getFileName('overview')]]"></simpl-import>
               </paper-material>
             </div>

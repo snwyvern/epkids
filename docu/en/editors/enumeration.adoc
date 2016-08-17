@@ -1,0 +1,69 @@
+:linkattrs:
+
+== Enumerations ==
+
+With _Enumerations_ informations like for e.g. custoumer ratings (A-customer, B-customer, ...) or  car-brands (Audi, BMW, Citroen,...) can be defined and managed.
+Such enumarations then can be assigned in classes on field level, thereby for e.g. a categorization is possible. The data can also be filtered then according to these criteria (categories).
+
+Normal wise it makes sense to create _Enumerations_ and use them, when the amount of values is not enough to create a separate class for them. 
+
+The _Edittype_ of the field where a _Enumeration_ is assigned, has to be defined as _SelectBox_
+
+
+=== Creating a _enumeration_ ===
+
+For this first in the main menu the item _Project Management_ has to be selected.
+Then the tree on the left site must be opened up to node _Enumerations_. 
+
+[.width200]
+image::docu/images/enumerations/New_Enumeration.png[]
+
+
+Now a click with the right mouse button on _Enumerations_ opens a new small window, where a name can be specified
+[.width200]
+image::docu/images/enumerations/New_Enumeration_name.png[]
+
+[.width200]
+image::docu/images/enumerations/New_Enumeration_is_created.png[]
+
+
+Saving it, will create the enumeration, and after refreshing the node _Enumerations_ in the tree, the new created enumeration can be seen.
+Clicking then the right mouse button while staying on the "new enumeration, will open an new tab on the right side, where the values for this new enumeration can be captured.
+
+[.width200]
+image::docu/images/enumerations/New_Enumeration_values.png[]
+
+
+=== Deleting a _enumeration_ ===
+
+For this first in the main menu the item _Project Management_ has to be selected.
+In the project then the tree on the left site must be opened up to node _Enumerations_.
+
+Then the enumeration that should be deleted must be selected by clicking on it.
+Having done that, a tab with the selected _Enumeration_ will opened on the right side.
+To delete it now, click on the "Delete" button buttom right and confirm it with "Yes".
+
+[.width200]
+image::docu/images/enumerations/Deleting_Enumeration.png[]
+
+
+
+
+
+=== Assining a enumeration ===
+
+Here is a example of _enumerations_ and how it is assingned.
+
+[.width200]
+image::docu/images/enumerations/Use_of_enumerations.png[]
+
+
+
+An other way without creating _Enumerations_ is to write the few contens on field level in the input field "Serch (list). This allows also to select them, and to query for them.
+
+
+=== A enumeration in a application ===
+
+Here is a example of _enumerations_ and how it is used in a application.
+[.width200]
+image::docu/images/enumerations/enumeration_in_app.png[]

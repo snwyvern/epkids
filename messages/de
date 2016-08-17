@@ -391,11 +391,119 @@
         "msgid": "tr.menu.press"
     },
     {
-        "msgstr": "Entwicklungs und Service Platform für HTML5 Applikationen mit Prozess- und Integrationsengine.",
+        "msgstr": "Entwicklungs und Service Platform für HTML5 Applikationen mit Prozess- und Serviceengine.",
         "msgid": "frontpage.subheader"
     },
     {
         "msgstr": "Dokumentation",
         "msgid": "tr.menu.documentation"
+    },
+    {
+        "msgstr": "Einführung",
+        "msgid": "docu.introduction"
+    },
+    {
+        "msgstr": "Installation",
+        "msgid": "docu.installation"
+    },
+    {
+        "msgstr": "Glossary",
+        "msgid": "docu.glossary"
+    },
+    {
+        "msgstr": "Externe doku",
+        "msgid": "docu.external_docu"
+    },
+    {
+        "msgstr": "App Konzept",
+        "msgid": "docu.app_concept"
+    },
+    {
+        "msgstr": "App Installation",
+        "msgid": "docu.app_install"
+    },
+    {
+        "msgstr": "Editoren",
+        "msgid": "docu.editoren"
+    },
+    {
+        "msgstr": "Aufzählungen",
+        "msgid": "docu.editors.enumeration"
+    },
+    {
+        "msgstr": "Daten",
+        "msgid": "docu.editors.data"
+    },
+    {
+        "msgstr": "Filter",
+        "msgid": "docu.editors.filter"
+    },
+    {
+        "msgstr": "Message",
+        "msgid": "docu.editors.message"
+    },
+    {
+        "msgstr": "Form",
+        "msgid": "docu.editors.form"
+    },
+    {
+        "msgstr": "Service",
+        "msgid": "docu.editors.service"
+    },
+    {
+        "msgstr": "Dokument",
+        "msgid": "docu.editors.document"
+    },
+    {
+        "msgstr": "Prozess",
+        "msgid": "docu.editors.process"
+    },
+    {
+        "msgstr": "Struktur",
+        "msgid": "docu.editors.structure"
+    },
+    {
+        "msgstr": "Datamapper",
+        "msgid": "docu.editors.datamapper"
+    },
+    {
+        "msgstr": "Komplettes Beispiel",
+        "msgid": "docu.complete_example"
+    },
+    {
+        "msgstr": "Erste Schritte",
+        "msgid": "docu.firststeps"
+    },
+    {
+        "msgstr": "Erste Seite erstellen",
+        "msgid": "docu.firststeps.firstpage"
+    },
+    {
+        "msgstr": "Daten erstellen",
+        "msgid": "docu.firststeps.create_data"
+    },
+    {
+        "msgstr": "Einen Service erstellen",
+        "msgid": "docu_firststeps.create_service"
+    },
+    {
+        "msgstr": "Webseite mit Daten",
+        "msgid": "docu.firststeps.dynamic_page"
+    },
+    {
+        "msgstr": "Übersicht",
+        "msgid": "docu.overview"
+    },
+    {
+        "msgstr": "Customelements",
+        "msgid": "docu.customelements"
+    },
+    {
+        "msgstr": "Kommunikation",
+        "msgid": "docu.communication"
+    },
+    {
+        "msgstr": "Datenzugriff",
+        "msgid": "docu.dataaccess"
     }
 ]

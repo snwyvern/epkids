@@ -1,0 +1,58 @@
+:linkattrs:
+
+== Data ==
+
+Key point in a application are the data, and in simpl4 they are described in classes (tables).
+It is possible to have any freely configurable classe such as for example companies, contact persons, activities, articles and more, which can have any properties (fields) such as example  name, surnname, etc.
+classes can be arbitrarily set in relation to each other, so for example a company can have any number of contact persons (1:n).
+The developer of an application is supported by simpl4 with various automatically generated standard components.
+
+So for example, only when creating the classes customer and contact person with the each desired fields, the configuration in the Global Settings and linking the classes together, immedately serveral standard functions are abailable.
+
+* Data can be captured immediately (so-called CRUD-functions)
+* records can be dublicated
+* testing for dublicates
+* various search options
+	** All previous searches can be stored per user, are again loaded or deleted
+	** Combine Search (Various results of an entity can be added or subtracted from each other, and the result can again be saved as a new search)
+	** Exclusion of individual records from search results
+* creating of lists and reports
+** output of lists in serveral forms like CSV, PDF, HTML, ...
+* Mass actions (for example, assign all records of a search field a special value)
+* export data from the application - and import data into the application
+** when importing data there will be a check on definable field for already existing data (duplicates)
+
+
+=== Creating a new class ===
+
+For this first in the main menu the item _Project Management_ has to be selected.
+Then the tree on the left site must be opened up to node _Data Description/data_. 
+
+Now a click with the left mouse button on _classes_ below opens a new tab on the right side, where the new class with it's fields an options can be captured.
+
+Right mouse click on _classes_
+[.width200]
+image::docu/images/data/New_class.png[]
+
+Then the fields of the class have to be captured.
+[.width200]
+image::docu/images/data/New_class_fields.png[]
+
+
+At the end all has to be saved, and the class will be created.
+[.width200]
+image::docu/images/data/New_class_save.png[]
+
+
+=== Deleting classes ===
+
+To delete single classes or complete database schemata, on _classes_ the right mouse button has to be clicked. Then a small dialog window with _Database-Admin_ appears, which has to be selected.
+
+
+Right mouse click on _classes_
+[.width200]
+image::docu/images/data/Database_Admin.png[]
+
+Deleting single classes/ hole database schemata
+[.width200]
+image::docu/images/data/Database_Admin_delete.png[]

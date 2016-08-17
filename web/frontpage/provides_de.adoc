@@ -1,0 +1,77 @@
+:linkattrs:
+
+=== icon:bars[size=1x,role=black] Was bietet simpl4? ===
+
+
+[CI, header="Einfache Installation"]
+--
+Viele Möglichkeiten der Installation
+
+* Virtualisierung( Images für link:local:resources[VirtualBox und VMware])
+* Container (link:local:resources[Docker und LXD])
+* link:local:resources[Vagrant] Umgebung
+* link:https://github.com/ms123s/simpl4-deployed[Clonen,window="_blank"] eines Repositories von Github
+* Selber link:https://github.com/ms123s/simpl4-src[compilieren,window="_blank"]
+* Testzugang bei uns anfordern
+* Wir unterstützen Sie auch bei der Installation bei einem Hoster Ihrer Wahl oder in der Cloud (z.B. Google, Amazon, ...)
+--
+[CI, header="Webseite mit vorgebenen Gerüst"]
+--
+Durch ein vorgegebenes Gerüst, ist der Einstieg sehr einfach.
+
+* Tool für Menu und Seitenstruktur
+* Theme beliebig anpassbar
+
+Die Webseite kann aber auch komplett nach Ihren Bedürfnissen aufgebaut werden.
+--
+[CI, header="Statische und dynamische Webseiten"]
+--
+mit HTML5 und/oder Markdown(Asciidoc) erstellen. +
+Auch Markdown Seiten können dynamischen Inhalt enthalten. +
+simpl4 kann als sehr einfach zu handhabendes CMS Verwendung finden.
+--
+[CI, header="Eingebaute Datenbank"]
+--
+* Keinerlei Setup.  Ein Datenmodell erstellen und benutzen
+* Auch andere Datenbanken (PostgreSQL, MySQL, SQL Server, Oracle, DB2, ...) sind einfach integrierbar
+--
+[CI, header="Viele Scriptsprachen"]
+--
+Wählen Sie aus einer Anzahl von Sprachen aus
+
+* PHP
+* Ruby
+* Python
+* Javascript
+* Groovy
+* Java8
+--
+[CI, header="Flexible parametrisierbare Bausteine"]
+--
+Greifen Sie auf einen großen Baukasten mit fertigen Bausteinen (Komponenten) zu. +
+Verbindung der Bausteine durch Parametrisierung und/oder Scripting.
+--
+[CI, header="Webseite komfortabel mit Prozessen verknüpfen"]
+--
+* Prozesse starten
+* ausgewählte Prozessereignisse abonnieren und asynchron über Websocket empfangen
+* Human tasks in die Website integrieren
+* Tasklisten abrufen
+* Taskstatus setzen
+--
+[CI, header="Werkzeuge zum Importieren ihrer Daten"]
+-
+[CI, header="Dynamische Inhalte aus beliebigen Datenquellen."]
+-
+[CI, header="Flexible Anpassbarkeit an neue Anforderungen"]
+--
+Die Webseite wächst mit Ihren Anforderungen. +
+Von statischen Seiten, über das Einbinden von Datenquellen, bis hin zu Geschäftsprozessen, ist alles möglich.
+--
+[CI, header="Schnelle Entwicklungzyklen"]
+--
+In den visualisierten Abläufen sind Ansätze für notwendige Programmänderungen einfacher erkennbar.
+--
+
+[.imageblock.left.width800]
+image::web/images/devel.svg[]

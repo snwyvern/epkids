@@ -13,7 +13,7 @@ Sie ist optimal an die individuelle Daten Infrastruktur angepasst und hilft Ress
 Somit ergeben sich Einsparpotential in Punkto Arbeitsaufwand bei der Softwarenutzung, sprich eingesparte Zeit, und dadurch natürlich auch bares gespartes Geld.
 
 [imageblock.xeft.width600]
-image::web/images/business_men.jpg[]
+image::web/images/individuell.svg[]
 
 
 ===== Der Einsatz von simpl4 bei der Entwicklung Ihrer Software-Lösung bietet Ihnen verschiedenste Vorteile =====

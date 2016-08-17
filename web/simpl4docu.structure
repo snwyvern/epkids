@@ -1,0 +1,305 @@
+[sw]
+	type = sw.structure
+--
+[
+  {
+    "menu_file": "web/simpl4docu.json",
+    "doc_file": "web/simpl4docu.adoc"
+  },
+  {
+    "title": "docu.introduction",
+    "description": "",
+    "uri": "docu/%l/introduction.adoc",
+    "icon": "icons:aspect-ratio",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": false,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.installation",
+    "description": "",
+    "uri": "docu/%l/installation.adoc",
+    "icon": "icons:card-giftcard",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.glossary",
+    "description": "",
+    "uri": "docu/%l/glossary.adoc",
+    "icon": "vaadin-icons:book",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.overview",
+    "description": "",
+    "uri": "docu/%l/overview.adoc",
+    "icon": "vaadin-icons:viewport",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.external_docu",
+    "description": "",
+    "uri": "docu/%l/external_docu.adoc",
+    "icon": "icons:file-upload",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": false,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.app_install",
+    "description": "",
+    "uri": "docu/%l/app_install.adoc",
+    "icon": "icons:apps",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": true,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.app_concept",
+    "description": "",
+    "uri": "docu/%l/app_concept.adoc",
+    "icon": "icons:apps",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": false,
+    "appendix": "'title='+tr(title)"
+  },
+  {
+    "title": "docu.communication",
+    "description": "",
+    "uri": "docu/%l/communication.adoc",
+    "icon": "vaadin-icons:phone",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "docu.dataaccess",
+    "description": "",
+    "uri": "docu/%l/dataaccess.adoc",
+    "icon": "vaadin-icons:database",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "docu.customelements",
+    "description": "",
+    "uri": "docu/%l/customelements.html",
+    "icon": "icons:dashboard",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "docu.firststeps",
+    "description": "",
+    "uri": "",
+    "icon": "image:filter-1",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "docu.firststeps.firstpage",
+        "description": "",
+        "uri": "docu/%l/firststeps/firstpage.adoc",
+        "icon": "image:looks-one",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.firststeps.create_data",
+        "description": "",
+        "uri": "docu/%l/firststeps/createdata.adoc",
+        "icon": "communication:contact-phone",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu_firststeps.create_service",
+        "description": "",
+        "uri": "docu/%l/firststeps/createservice.adoc",
+        "icon": "image:filter-center-focus",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.firststeps.dynamic_page",
+        "description": "",
+        "uri": "docu/%l/firststeps/dynamicpage.adoc",
+        "icon": "image:camera",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      }
+    ]
+  },
+  {
+    "title": "docu.editoren",
+    "description": "",
+    "uri": "",
+    "icon": "editor:mode-edit",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "docu.editors.enumeration",
+        "description": "",
+        "uri": "docu/%l/editors/enumeration.adoc",
+        "icon": "editor:format-list-numbered",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.data",
+        "description": "",
+        "uri": "docu/%l/editors/data.adoc",
+        "icon": "vaadin-icons:database",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.filter",
+        "description": "",
+        "uri": "docu/%l/editors/filter.adoc",
+        "icon": "image:filter-7",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.message",
+        "description": "",
+        "uri": "docu/%l/editors/message.adoc",
+        "icon": "communication:message",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.form",
+        "description": "",
+        "uri": "docu/%l/editors/form.adoc",
+        "icon": "editor:format-indent-decrease",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.service",
+        "description": "",
+        "uri": "docu/%l/editors/service.adoc",
+        "icon": "icons:card-travel",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.document",
+        "description": "",
+        "uri": "docu/%l/editors/document.adoc",
+        "icon": "editor:format-color-text",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.process",
+        "description": "",
+        "uri": "docu/%l/editors/process.adoc",
+        "icon": "image:filter-vintage",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.structure",
+        "description": "",
+        "uri": "docu/%l/editors/structure.adoc",
+        "icon": "image:grid-on",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      },
+      {
+        "title": "docu.editors.datamapper",
+        "description": "",
+        "uri": "docu/%l/editors/datamapper.adoc",
+        "icon": "maps:layers",
+        "id": "",
+        "help": "",
+        "adoc_include": true,
+        "enabled": true,
+        "appendix": "'title='+tr(title)"
+      }
+    ]
+  },
+  {
+    "title": "docu.complete_example",
+    "description": "",
+    "uri": "docu/%l/complete_example.adoc",
+    "icon": "icons:cached",
+    "id": "",
+    "help": "",
+    "adoc_include": true,
+    "enabled": false,
+    "appendix": "'title='+tr(title)"
+  }
+]

@@ -197,7 +197,7 @@ meta.foundation-mq-large { font-family: "only screen and (min-width:1440px)"; wi
 
 html, body { font-size: 100%; }
 
-body { background: #fff; color: #222; padding: 0; margin: 0; font-family: "Roboto slab"; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
+body { padding: 0; margin: 0; font-family: "Roboto slab"; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
 
 a:hover { cursor: pointer; }
 
@@ -427,7 +427,7 @@ b.button:after { content: "]"; padding: 0 2px 0 3px; }
 
 table.tableblock > caption.title { white-space: nowrap; overflow: visible; max-width: 0; }
 
-.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { color: #B1005D; }
+.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { font-weight: 600; }
 
 table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p { font-size: inherit; }
 
