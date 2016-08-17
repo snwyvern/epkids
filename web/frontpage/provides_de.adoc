@@ -11,7 +11,7 @@ Viele Möglichkeiten der Installation
 * Container (link:local:resources[Docker und LXD])
 * link:local:resources[Vagrant] Umgebung
 * link:https://github.com/ms123s/simpl4-deployed[Clonen,window="_blank"] eines Repositories von Github
-* Selber compilieren
+* Selber link:https://github.com/ms123s/simpl4-src[compilieren,window="_blank"]
 * Testzugang bei uns anfordern
 * Wir unterstützen Sie auch bei der Installation bei einem Hoster Ihrer Wahl oder in der Cloud (z.B. Google, Amazon, ...)
 --
