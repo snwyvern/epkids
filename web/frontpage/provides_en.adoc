@@ -7,12 +7,22 @@
 --
 Many ways of installation
 
+<<<<<<< HEAD
 * Virtualization (Images for VirtualBox and VMware)
 * Container (Docker and Vagrant)
 * Cloning of a repository from Github
 * Compile it yourself
 * Request us for a test account
 * We also support you during installation at a hoster of your choice or in the cloud (z.B. Google, Amazon, ...)
+=======
+* Virtualisierung( Images für link:local:resources[VirtualBox und vmware])
+* Container (link:local:resources[Docker und LXD])
+* link:local:resources[Vagrant] Umgebung
+* link:https://github.com/ms123s/simpl4-deployed[Clonen,window="_blank"] eines Repositories von Github
+* Selber compilieren
+* Testzugang bei uns anfordern
+* Wir sind Ihnen auch behilflich bei der Installation bei einem Hoster ihrer Wahl oder in der Cloud(Google, Amazon ..)
+>>>>>>> c6a90321463f54a32d56e4842f221ee900fa882c
 --
 [CI, header="Website with provided frame"]
 --

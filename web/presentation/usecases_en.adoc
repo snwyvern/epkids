@@ -105,6 +105,6 @@ image:web/presentation/images/printing.svg[width=300]
 
 ###
 
-image:web/presentation/images/crm.svg[width=300]
+image:web/presentation/images/tailor.svg[width=250]
 
 --

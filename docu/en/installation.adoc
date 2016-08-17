@@ -1,0 +1,6 @@
+:linkattrs:
+
+=== Installations 
+
+The simplest way to get simpl4 up and running , use an vmware/virtualbox image or a container as docker or lxd
+

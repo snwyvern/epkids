@@ -25,7 +25,7 @@
     "id": "",
     "help": "",
     "adoc_include": true,
-    "enabled": false,
+    "enabled": true,
     "appendix": "'title='+tr(title)"
   },
   {
