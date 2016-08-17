@@ -44,7 +44,7 @@ Having done that, a tab with the selected _Enumeration_ will opened on the right
 To delete it now, click on the "Delete" button buttom right and confirm it with "Yes".
 
 [.width200]
-image::docu/images/enumerations/Delete_Enumeration.png[]
+image::docu/images/enumerations/Deleting_Enumeration.png[]
 
 
 

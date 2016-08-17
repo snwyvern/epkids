@@ -12,8 +12,8 @@ image:web/presentation/images/contentmgm.svg[width=300]
 === Web content management ===
 
 * Struktureditor
-* Markdown(Asciidoctor) mit dynamischen Content
-* Workflow mit integrierte Processengine
+* Markdown (Asciidoctor) mit dynamischem Content
+* Workflow mit integrierter Processengine
 * integrierte Datenbank, Zugriff auf externe Datenbanken
 * Versionierung
 * Templates
@@ -53,8 +53,8 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 
 === Cloud  Services ===
 
-* Prozess als Service
-* Daten  Services
+* Prozesse als Services
+* Daten Services
 
 --
 '''
@@ -65,8 +65,8 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 
 === Officeautomation ===
 
-* MS Office(docx,pptx) und OpenOffice (odt, ods) Templates.
-* Pdf Generation
+* MS Office (docx, pptx) und OpenOffice (odt, ods) Templates.
+* PDF Generierung
 
 
 ###
@@ -88,7 +88,7 @@ image:web/presentation/images/printing.svg[width=300]
 
 * Elektronische Kataloge
 * Formuale
-* mit integrierten Docbook
+* mit integriertem DocBook
 
 --
 
