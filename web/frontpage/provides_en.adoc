@@ -10,6 +10,7 @@ Many ways of installation
 * Virtualization( Images for link:local:resources[VirtualBox und VMware])
 * Container (link:local:resources[Docker und LXD])
 * link:local:resources[Vagrant] environment
+* link:local:resources[debian] package
 * link:https://github.com/ms123s/simpl4-deployed[Cloning,window="_blank"] of a repository from Github
 * link:https://github.com/ms123s/simpl4-src[Compile,window="_blank"] it yourself
 * Request us for a test account
