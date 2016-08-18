@@ -16,7 +16,7 @@ Many ways of installation
 * Request us for a test account
 * We also support you during installation at a hoster of your choice or in the cloud (z.B. Google, Amazon, ...)
 --
-[CI, header="Website with provided frame"]
+[CI, header="Website with scaffolding"]
 --
 Because of a predefined framework, the entry is very simple.
 
