@@ -4,6 +4,7 @@
 
 === Dataaccess
 
+image:docu/images/data.svg[width=150]
 
 Dataaccess in simpl4 is handled with the building block "data".
 

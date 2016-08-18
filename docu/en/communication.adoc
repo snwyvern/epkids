@@ -1,7 +1,9 @@
 :linkattrs:
 
 
-==== Remote Procedure Calls(RPC) over http
+=== Remote Procedure Calls(RPC) over http
+
+image:docu/images/rpc.svg[width=150]
 
 The most basic communication in simpl4 is *rpc* via http. +
 rpc can be performed both, declarativ and imperative.  +

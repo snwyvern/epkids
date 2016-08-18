@@ -11,7 +11,7 @@ Each simpl4 application has a namespace and lives in it own git repository. +
 An application consists of a set of services and the web frontend. +
 Exchanging simpl4 applications is very easy using a git hosting service as application store. +
 You can also have a simpl4 application without an git service, but there is no easy way to transport the app to an other simpl4 instance. +
-If you don't like an public git service, then you can alo use a private one, as link:https://github.com/gitbucket/gitbucket[Gitbucket]. +
+If you don't like an public git service, then you can also use a private one, as link:https://github.com/gitbucket/gitbucket[Gitbucket]. +
 It's easy to install and plays very nice with simpl4. The user interface is like github.
 
 
@@ -28,7 +28,7 @@ image:docu/images/app_install.svg[width=800]
 3. The application name eg. kfzplan , only one of them, *url* or *name* can be specified,*name* can only be used when repository is at github.
 4. Username of the git hosting services.
 5. the corresponding password
-6. If the built-in database is used, the data can also be stored in a git repsoitory.
+6. If the built-in database is used, the data can also be stored in a git repository.
 
 
 [NOTE]
