@@ -32,7 +32,7 @@ image:docu/images/app_install.svg[width=800]
 
 
 [NOTE]
-There is no difference between a new and an existing application. +
+There is no difference between a new and an existing application installation. +
 The git repository must exist in both cases. +
 In the case of a new application an empty repository must be created.
 
