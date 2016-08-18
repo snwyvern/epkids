@@ -5,7 +5,7 @@
 == Technical overview ==
 
 
-=== simpl4 backend, the main ingredients ===
+=== simpl4 backend, the principal constituents ===
 
 [.width800]
 imagezoom::web/presentation/images/bigpicture.svg[]
