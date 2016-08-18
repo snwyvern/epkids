@@ -15,16 +15,29 @@ If you don't like an public git service, then you can alo use a private one, as 
 It's easy to install and plays very nice with simpl4. The user interface is like github.
 
 
-== Ho to install an application ==
-
-=== 1. An existing application
+=== How to install an application ===
 
 When simpl4 is opened, first the Tab "global", and then in the mainmenu/Global (bottom left) "Manage applications" has to be selected.
 
-In the appearing screen the point "Install application" has to be choosen, and the fields have to be filled, like here with the example application 
+In the appearing screen the point "Install application" has to be choosen.
 
-* Application name*: kfzplan
-* Clone Url (Meta-Rpository) https://github.com/simpl4-apps/kfzplan
-* Clone Url (Data-Rpository) https://github.com/simpl4-apps/kfzplan_data
+image:docu/images/app_install.svg[width=800]
+
+1. Click "install app", the second window opens.
+2. The url of the git repository eg. https://github.com/simpl4-apps/kfzplan
+3. The application name eg. kfzplan , only one of them, *url* or *name* can be specified,*name* can only be used when repository is at github.
+4. Username of the git hosting services.
+5. the corresponding password
+6. If the built-in database is used, the data can also be stored in a git repsoitory.
+
+
+[NOTE]
+There is no difference between a new and an existing application. +
+The git repository must exist in both cases. +
+In the case of a new application an empty repository must be created.
+
+[TIP]
+If the remote repository is not needed, it must only be filled in Point *2*
+
 
 After saving, simpl4 has to reloaded and an new login has to be made.
