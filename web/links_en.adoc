@@ -69,6 +69,16 @@ image:github_logo.png[Logo, height=50]
 *Sourceccode*
 link:https://github.com/ms123s/simpl4-src[https://github.com/ms123s/simpl4-src,window="_blank"]
 --
+'''
+
+[ROW,cell0="justify-center", col1="align-center"]
+--
+image:debian-logo.jpg[Logo, height=70]
+###
+
+link:http://download.ms123.org/download/simpl4-2.1.deb[Download debian package,window="_blank"]
+--
+
 
 '''
 --
