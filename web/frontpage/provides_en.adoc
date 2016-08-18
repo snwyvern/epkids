@@ -7,8 +7,8 @@
 --
 Many ways of installation
 
-* Virtualization( Images for link:local:resources[VirtualBox und VMware])
-* Container (link:local:resources[Docker und LXD])
+* Virtualization( Images for link:local:resources[VirtualBox and VMware])
+* Container (link:local:resources[Docker and LXD])
 * link:local:resources[Vagrant] environment
 * link:local:resources[Debian] package
 * link:https://github.com/ms123s/simpl4-deployed[Cloning,window="_blank"] of a repository from Github
