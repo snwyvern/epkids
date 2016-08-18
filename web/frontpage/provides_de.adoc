@@ -50,9 +50,9 @@ Wählen Sie aus einer Anzahl von Sprachen aus
 [CI, header="Flexible parametrisierbare Bausteine"]
 --
 Greifen Sie auf einen großen Baukasten mit fertigen Bausteinen (Komponenten) zu. +
-Verbindung der Bausteine durch Parametrisierung und/oder Scripting.
+Verbinden der Bausteine durch Parametrisierung und/oder Scripting.
 --
-[CI, header="Webseite komfortabel mit Prozessen verknüpfen"]
+[CI, header="Webseite komfortabel mit Geschäftsprozessen verknüpfen"]
 --
 * Prozesse starten
 * ausgewählte Prozessereignisse abonnieren und asynchron über Websocket empfangen
@@ -60,7 +60,7 @@ Verbindung der Bausteine durch Parametrisierung und/oder Scripting.
 * Tasklisten abrufen
 * Taskstatus setzen
 --
-[CI, header="Werkzeuge zum Importieren ihrer Daten"]
+[CI, header="Werkzeuge zum Importieren von Daten"]
 -
 [CI, header="Dynamische Inhalte aus beliebigen Datenquellen."]
 -

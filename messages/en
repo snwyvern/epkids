@@ -367,12 +367,8 @@
         "msgid": "docu.external_docu"
     },
     {
-        "msgstr": "App concept",
-        "msgid": "docu.app_concept"
-    },
-    {
-        "msgstr": "App install",
-        "msgid": "docu.app_install"
+        "msgstr": "Application",
+        "msgid": "docu.simpl4_app"
     },
     {
         "msgstr": "Editors",
@@ -459,15 +455,15 @@
         "msgid": "docu.dataaccess"
     },
     {
-        "msgid": "testrequest.email",
-        "msgstr": "Email"
+        "msgstr": "Email",
+        "msgid": "testrequest.email"
     },
     {
-        "msgid": "testrequest.firstname",
-        "msgstr": "Firstname"
+        "msgstr": "Firstname",
+        "msgid": "testrequest.firstname"
     },
     {
-        "msgid": "testrequest.surname",
-        "msgstr": "Surname"
+        "msgstr": "Surname",
+        "msgid": "testrequest.surname"
     }
 ]

@@ -28,7 +28,7 @@ The website can also be created completely according to your needs.
 [CI, header="Static and dynamic websites"]
 --
 creating with HTML5 and/or Markdown (Asciidoc). +
-Also Markdown sites can include dynamic content. +
+Also Markdown pages can include dynamic content. +
 simpl4 can be used as a very easy to handle CMS.
 --
 [CI, header="Built-in database"]
@@ -49,10 +49,10 @@ Choose from a amount of languages
 --
 [CI, header="Flexible parameterizable building blocks"]
 --
-Fall back to a big set of ready bulding blocks (components). +
+Access to a large set of ready to use bulding blocks (components). +
 Connection of the bulding blocks via parametrization and/or scripting.
 --
-[CI, header="Comfortable connecting of the website with processs"]
+[CI, header="Comfortable connecting the website with business processes"]
 --
 * starting processes
 * subscribing and via Websocket asynchron receiving of selected process events
@@ -60,7 +60,7 @@ Connection of the bulding blocks via parametrization and/or scripting.
 * tiggering task lists
 * setting task status
 --
-[CI, header="Tools to import your data"]
+[CI, header="Tools to import data"]
 -
 [CI, header="Dynamic contents from any data sources"]
 -

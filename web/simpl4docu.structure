@@ -62,25 +62,14 @@
     "appendix": "'title='+tr(title)"
   },
   {
-    "title": "docu.app_install",
+    "title": "docu.simpl4_app",
     "description": "",
-    "uri": "docu/%l/app_install.adoc",
+    "uri": "docu/%l/simpl4_app.adoc",
     "icon": "icons:apps",
     "id": "",
     "help": "",
     "adoc_include": true,
     "enabled": true,
-    "appendix": "'title='+tr(title)"
-  },
-  {
-    "title": "docu.app_concept",
-    "description": "",
-    "uri": "docu/%l/app_concept.adoc",
-    "icon": "icons:apps",
-    "id": "",
-    "help": "",
-    "adoc_include": true,
-    "enabled": false,
     "appendix": "'title='+tr(title)"
   },
   {

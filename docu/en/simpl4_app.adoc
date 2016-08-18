@@ -1,0 +1,30 @@
+:linkattrs:
+
+
+=== simpl4 applications
+
+image:docu/images/simpl4_app.svg[width=200]
+
+What is it:
+
+Each simpl4 application has a namespace and lives in it own git repository. +
+An application consists of a set of services and the web frontend. +
+Exchanging simpl4 applications is very easy using a git hosting service as application store. +
+You can also have a simpl4 application without an git service, but there is no easy way to transport the app to an other simpl4 instance. +
+If you don't like an public git service, then you can alo use a private one, as link:https://github.com/gitbucket/gitbucket[Gitbucket]. +
+It's easy to install and plays very nice with simpl4. The user interface is like github.
+
+
+== Ho to install an application ==
+
+=== 1. An existing application
+
+When simpl4 is opened, first the Tab "global", and then in the mainmenu/Global (bottom left) "Manage applications" has to be selected.
+
+In the appearing screen the point "Install application" has to be choosen, and the fields have to be filled, like here with the example application 
+
+* Application name*: kfzplan
+* Clone Url (Meta-Rpository) https://github.com/simpl4-apps/kfzplan
+* Clone Url (Data-Rpository) https://github.com/simpl4-apps/kfzplan_data
+
+After saving, simpl4 has to reloaded and an new login has to be made.
