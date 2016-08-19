@@ -24,8 +24,8 @@ In the appearing screen the point "Install application" has to be choosen.
 image:docu/images/app_install.svg[width=800]
 
 1. Click "install app", the second window opens.
-2. The url of the git repository e.g. https://github.com/simpl4-apps/kfzplan
-3. The application name e.g. kfzplan , only one of them, *url(2)* or *name(3)* can be specified. + 
+2. The url of the git repository, e.g. https://github.com/simpl4-apps/kfzplan
+3. The application name, e.g. kfzplan , only one of them, *url(2)* or *name(3)* can be specified. + 
 *name(3)* can only be used when the repository is at github, otherwise the *url(2)* must be used.
 4. Username of the git hosting services.
 5. the corresponding password
