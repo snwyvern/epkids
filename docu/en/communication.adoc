@@ -30,7 +30,7 @@ see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[ex
 
 
 
-==== Plain websockets
+=== Plain websockets
 
 Websocket can be used to transmit bidirectional raw data. +
 As opposed to 'WAMP', you must provide the protocol here self.
@@ -41,7 +41,7 @@ NOTE: Each service defined in the serviceeditor  for use with plain websockets, 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details
 
 
-==== RPC and Pub/Sub with WAMP
+=== RPC and Pub/Sub with WAMP
 
 WAMP is an open standard WebSocket subprotocol that provides two application messaging patterns in one unified protocol:
 *Remote Procedure Calls + Publish & Subscribe*.
@@ -57,7 +57,7 @@ see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[e
 
 
 
-==== Publish/Subscribe and simpl4
+=== Publish/Subscribe and simpl4
 
 In the context of simpl4 there is a very valueable usecase of Pub/Sub.
 
