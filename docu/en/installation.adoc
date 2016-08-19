@@ -4,7 +4,7 @@
 
 image:docu/images/inst.svg[width=150]
 
-The simplest way to get simpl4 up and running , use an vmware/virtualbox image or a container as docker or lxd
+The simplest way to get simpl4 up and running , use a vmware/virtualbox image or a container as docker or lxd
 
 Installing VMwarePLayer or Virtualbox is not subject of this manual.
 
