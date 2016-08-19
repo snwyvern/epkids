@@ -2,7 +2,7 @@
 :source-highlighter: rouge
 
 
-=== Dataaccess
+== Dataaccess
 
 image:docu/images/data.svg[width=150]
 

@@ -123,6 +123,26 @@
         "msgid": "data.address._team_list"
     },
     {
+        "msgstr": "Kontakt",
+        "msgid": "tr.contact"
+    },
+    {
+        "msgstr": "Anfrage verschickt",
+        "msgid": "tr.requestok"
+    },
+    {
+        "msgstr": "Grund",
+        "msgid": "tr.reason"
+    },
+    {
+        "msgstr": "Bemerkung",
+        "msgid": "tr.comment"
+    },
+    {
+        "msgstr": "Ich bin ein Mensch",
+        "msgid": "tr.human"
+    },
+    {
         "msgstr": "Email",
         "msgid": "tr.email1"
     },

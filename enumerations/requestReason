@@ -1,0 +1,35 @@
+[sw]
+	type = sw.enum
+--
+{
+    "dataList": [
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
+            "label": "Workshop",
+            "value": "workshop"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
+            "label": "Onlinetest",
+            "value": "onlinetest"
+        }
+    ],
+    "fieldList": [
+        {
+            "fieldname": "value",
+            "description": "Value"
+        },
+        {
+            "fieldname": "label",
+            "description": "Label"
+        },
+        {
+            "fieldname": "tooltip",
+            "description": "Tooltip"
+        }
+    ]
+}

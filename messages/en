@@ -127,6 +127,26 @@
         "msgid": "data.customers._team_list"
     },
     {
+        "msgstr": "Contact",
+        "msgid": "tr.contact"
+    },
+    {
+        "msgstr": "sent request",
+        "msgid": "tr.requestok"
+    },
+    {
+        "msgstr": "Reason",
+        "msgid": "tr.reason"
+    },
+    {
+        "msgstr": "Comment",
+        "msgid": "tr.comment"
+    },
+    {
+        "msgstr": "I am a human",
+        "msgid": "tr.human"
+    },
+    {
         "msgstr": "Email",
         "msgid": "tr.email1"
     },

@@ -1,0 +1,272 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_93879203-5085-4063-865E-8221DD6EC359",
+  "properties": {
+    "overrideid": "website.service",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_39C261EA-76F3-4FC1-9D96-CCC90EC36CB0",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "sendRequest",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "sendRequest",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 1,
+          "items": [
+            {
+              "name": "formData",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "map",
+              "destination": "property"
+            }
+          ]
+        },
+        "rpcReturn": "body",
+        "mimetype": "",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "guest,admin"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4FBF124C-6A06-48F0-910C-CB311E9C7E41"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 148,
+          "y": 310
+        },
+        "upperLeft": {
+          "x": 68,
+          "y": 250
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_mail": "Mail",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "smtp",
+        "urivalue_host": "127.0.0.1",
+        "urivalue_port": 0,
+        "uriparam_username": "",
+        "uriparam_password": "",
+        "uriparam_subject": "request",
+        "uriparam_from": "website@simpl4.org",
+        "uriparam_to": "ms@tpso.com",
+        "uriparam_cc": "",
+        "uriparam_bcc": "",
+        "uriparam_searchTerm.subject": "",
+        "uriparam_searchTerm.body": "",
+        "uriparam_searchTerm.subjectOrBody": "",
+        "uriparam_searchTerm.from": "",
+        "uriparam_searchTerm.to": "",
+        "uriparam_searchTerm.seen": true,
+        "uriparam_contentType": "text/plain",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "MailEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 410,
+          "y": 310
+        },
+        "upperLeft": {
+          "x": 330,
+          "y": 250
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_4FBF124C-6A06-48F0-910C-CB311E9C7E41",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4B6DA6B5-3435-43C9-85F5-8A8EEBCE6734"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 194.3125,
+          "y": 280
+        },
+        "upperLeft": {
+          "x": 148.6875,
+          "y": 280
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_4B6DA6B5-3435-43C9-85F5-8A8EEBCE6734"
+      }
+    },
+    {
+      "resourceId": "oryx_4B6DA6B5-3435-43C9-85F5-8A8EEBCE6734",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "",
+        "ref": "",
+        "srcFile": null,
+        "code": null,
+        "script": "var JS = Java.type(\"flexjson.JSONSerializer\");\nvar jsons = new JS();\njsons.prettyPrint(true);\n\nmsg.body = jsons.deepSerialize(p.formData);",
+        "codeKind": "completeClass",
+        "addImport": null,
+        "codeLanguage": "njs",
+        "isEndpoint": false
+      },
+      "stencil": {
+        "id": "Processor"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5AB67DDD-FB22-4599-BA67-9D1BA5432191"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 275,
+          "y": 310
+        },
+        "upperLeft": {
+          "x": 195,
+          "y": 250
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_5AB67DDD-FB22-4599-BA67-9D1BA5432191",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 329.9765625,
+          "y": 280
+        },
+        "upperLeft": {
+          "x": 275.0234375,
+          "y": 280
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}

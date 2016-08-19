@@ -32,7 +32,7 @@
     "xf_postprocess_service": null,
     "xf_postprocess_service_mode": "edit_add",
     "xf_postprocess_local": null,
-    "xf_save_disabled": null,
+    "xf_save_disabled": "human !== true",
     "xf_postprocess": null
   },
   "stencil": {
@@ -53,7 +53,7 @@
         "xf_expression_in": null,
         "xf_expression_out": null,
         "xf_required": null,
-        "xf_constraint_text": null,
+        "xf_constraint_text": "{\"Pattern\":[false,null],\"Size\":[false,null,null],\"NotBlank\":[true],\"CreditCardNumber\":[false],\"URL\":[false],\"Email\":[false]}",
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
@@ -91,11 +91,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 54
+          "y": 134
         },
         "upperLeft": {
           "x": 30,
-          "y": 30
+          "y": 110
         }
       },
       "dockers": []
@@ -152,11 +152,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 108
+          "y": 188
         },
         "upperLeft": {
           "x": 30,
-          "y": 84
+          "y": 164
         }
       },
       "dockers": []
@@ -175,7 +175,7 @@
         "xf_expression_in": null,
         "xf_expression_out": null,
         "xf_required": null,
-        "xf_constraint_text": null,
+        "xf_constraint_text": "{\"Pattern\":[false,null],\"Size\":[false,null,null],\"NotBlank\":[true],\"CreditCardNumber\":[false],\"URL\":[false],\"Email\":[true]}",
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
@@ -213,11 +213,203 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 162
+          "y": 242
         },
         "upperLeft": {
           "x": 30,
-          "y": 138
+          "y": 218
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3D2F5D18-DDC6-4CD6-AC94-831F523A23CC",
+      "properties": {
+        "xf_varname": "",
+        "xf_jsonpath": "",
+        "xf_enumembed": null,
+        "xf_enum": {
+          "totalCount": 3,
+          "enumDescription": "sw.enum:requestReason",
+          "items": [
+            {
+              "colname": "value",
+              "mapping": null
+            },
+            {
+              "colname": "label",
+              "mapping": null
+            },
+            {
+              "colname": "tooltip",
+              "mapping": null
+            }
+          ]
+        },
+        "xf_filter": null,
+        "xf_service": null,
+        "xf_parammapping": null,
+        "xf_resultmapping": null,
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
+        "xf_id": "reason",
+        "xf_default": "",
+        "xf_multiselection": false,
+        "xf_required": null
+      },
+      "stencil": {
+        "id": "Enumselect"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_DA134EDA-839D-4EA3-AA06-14D84FC10574",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "@tr.reason"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 80
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F31D12C4-8D20-4305-A61D-73D02C8CD1FA",
+      "properties": {
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
+        "xf_id": "comment",
+        "xf_default": null,
+        "xf_required": null,
+        "xf_constraint": ""
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_BC4F2333-87C8-44FA-99B0-95F5897F2258",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "@tr.comment"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 327,
+          "y": 371
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 272
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_1B1DD388-9AB4-4E45-9DB6-E3E799662900",
+      "properties": {
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
+        "xf_id": "human",
+        "xf_type": "boolean",
+        "xf_default": "",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
+        "xf_required": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null
+      },
+      "stencil": {
+        "id": "Input"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_5D083059-C76B-47BD-863B-5AD7B9F4B055",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "@tr.human"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 425
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 401
         }
       },
       "dockers": []
