@@ -7,9 +7,9 @@
 ++++
 <template is="dom-bind" id="root">
   <simpl-panel bgcolor="black" heading="Contact">
-    <simpl-form on-xaction="onTap" result="{{result}}" form-name="testrequest.form"></simpl-form>
+    <simpl-form on-xaction="onTap" xdata="{{result}}" form-name="testrequest.form"></simpl-form>
   </simpl-panel>
-<simpl-rpc method="sendTestRequest"  params="{{result}}"></simpl-rpc>
+<!--simpl-rpc method="sendTestRequest"  params="{{result}}"></simpl-rpc-->
 </template>
 <script>
   HTMLImports.whenReady( function() {
