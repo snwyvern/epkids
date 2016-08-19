@@ -27,7 +27,7 @@ image:docu/images/app_install.svg[width=800]
 2. The url of the git repository, e.g. https://github.com/simpl4-apps/kfzplan
 3. The application name, e.g. kfzplan , only one of them, *url(2)* or *name(3)* can be specified. + 
 *name(3)* can only be used when the repository is at github, otherwise the *url(2)* must be specified.
-4. Username of the git hosting services.
+4. Username of the git hosting service.
 5. the corresponding password
 6. If the built-in database is used, the data can also be stored in a git repository. +
 The repository name must be the application name append with "_data". e.g. kfzplan_data.
