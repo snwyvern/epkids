@@ -1,8 +1,6 @@
 :linkattrs:
 
-== simpldate (Besprechungen planen) ==
-
-=== Übersicht === 
+=== simpldate (Besprechungen planen) ===
 
 
 ==== Die Hauptaspekte ====

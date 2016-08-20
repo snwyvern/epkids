@@ -1,8 +1,6 @@
 :linkattrs:
 
-==== simpldate(schedule meetings) ====
-
-=== Overview ===
+=== simpldate(schedule meetings) ===
 
 
 ==== The main aspects ====

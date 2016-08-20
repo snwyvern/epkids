@@ -11,8 +11,8 @@ image:web/images/contactform.svg[width=150]
 
 [subs="macros"] 
 ++++
-
 <contact-request></contact-request>
-
 ++++
 
+{nbsp} +
+{nbsp} +
