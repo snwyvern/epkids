@@ -7,6 +7,13 @@
             "invalid_from": null,
             "tooltip": null,
             "invalid": false,
+            "label": "-",
+            "value": "-"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
             "label": "Workshop",
             "value": "workshop"
         },

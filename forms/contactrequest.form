@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_8B4666CB-FCFD-42BE-817C-8B21FCB113B1",
   "properties": {
-    "xf_id": "testrequest.form",
-    "xf_name": "testrequest",
+    "xf_id": "contactrequest.form",
+    "xf_name": "contactrequest",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_used_default_buttons": {
@@ -31,8 +31,9 @@
     "xf_preprocess_local": null,
     "xf_postprocess_service": null,
     "xf_postprocess_service_mode": "edit_add",
-    "xf_postprocess_local": null,
+    "xf_postprocess_local": "( { reason : reason=='-' ? null : reason }  )",
     "xf_save_disabled": "human !== true",
+    "xf_validate_local": null,
     "xf_postprocess": null
   },
   "stencil": {
@@ -257,7 +258,7 @@
         "xf_id": "reason",
         "xf_default": "",
         "xf_multiselection": false,
-        "xf_required": null
+        "xf_required": "true"
       },
       "stencil": {
         "id": "Enumselect"
