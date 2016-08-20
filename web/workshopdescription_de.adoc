@@ -1,0 +1,13 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== Workshop Beschreibung ===
+
+Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
+
+simpl4 bietet visuelle Editoren (u. a. BPMN 2.0, Services, Forms, Datenmodell) für die wesentlichen Komponenten. Wo dies nicht ausreicht, kann natürlich auch programmiert (gescriptet z.B. mit JavaScript in Frontend und Backend) werden.
+Sämtliche Subsysteme, vom HTML5-basierten Frontend für Smartphone, Tablet und Desktop bis hin zum Backend (Prcessengine und Serviceengine), sind optimal aufeinander abgestimmt.
+Durch vorgefertigte HTML5-Elemente (Custom Elements), die mit dem Backend asynchron über Websockets oder synchron via RPC kommunizieren, können flexible Webapplikationen erstellt werden.
+
+Inhalte des Workshops sind:
+Einführung in das Konzept von simpl4, Vorstellung von BPMN 2.0 sowie das Erstellen von Workflows, Services, Formularen und Datenmodellen.

@@ -23,7 +23,7 @@ Durch ein vorgegebenes Gerüst, ist der Einstieg sehr einfach.
 * Tool für Menu und Seitenstruktur
 * Theme beliebig anpassbar
 
-Die Webseite kann aber auch komplett nach Ihren Bedürfnissen aufgebaut werden.
+Die Web Applikation kann aber auch komplett nach Ihren Bedürfnissen aufgebaut werden.
 --
 [CI, header="Statische und dynamische Webseiten"]
 --
@@ -52,11 +52,11 @@ Wählen Sie aus einer Anzahl von Sprachen aus
 Greifen Sie auf einen großen Baukasten mit fertigen Bausteinen (Komponenten) zu. +
 Verbinden der Bausteine durch Parametrisierung und/oder Scripting.
 --
-[CI, header="Webseite komfortabel mit Geschäftsprozessen verknüpfen"]
+[CI, header="Web-Anwendung komfortabel mit Geschäftsprozessen verknüpfen"]
 --
 * Prozesse starten
 * ausgewählte Prozessereignisse abonnieren und asynchron über Websocket empfangen
-* Human tasks in die Website integrieren
+* Human tasks in die Webseite/Web-Anwendung  integrieren
 * Tasklisten abrufen
 * Taskstatus setzen
 --

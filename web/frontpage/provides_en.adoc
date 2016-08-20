@@ -23,7 +23,7 @@ Because of a predefined scaffold, the first steps are very easy.
 * Tool for the menu and site structure
 * Theme is arbitrarily adaptable
 
-However, the website can also be completely built according to your needs.
+However, the web application can also be completely built according to your needs.
 --
 [CI, header="Static and dynamic websites"]
 --
@@ -52,7 +52,7 @@ Choose from a amount of languages
 Access to a large set of ready to use bulding blocks (components). +
 Connection of the bulding blocks via parametrization and/or scripting.
 --
-[CI, header="Comfortable connecting web application with business processes"]
+[CI, header="Comfortable connecting web applications with business processes"]
 --
 * starting processes
 * subscribing and via Websocket asynchron receiving of selected process events
