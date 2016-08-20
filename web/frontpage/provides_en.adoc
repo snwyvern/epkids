@@ -16,14 +16,14 @@ Many ways of installation
 * Request us for a test account
 * We also support you during installation at a hoster of your choice or in the cloud (z.B. Google, Amazon, ...)
 --
-[CI, header="Website with scaffolding"]
+[CI, header="Web application with a given scaffold"]
 --
-Because of a predefined framework, the entry is very simple.
+Because of a predefined scaffold, the first steps are very easy.
 
 * Tool for the menu and site structure
 * Theme is arbitrarily adaptable
 
-The website can also be created completely according to your needs.
+However, the website can also be completely built according to your needs.
 --
 [CI, header="Static and dynamic websites"]
 --
@@ -52,11 +52,11 @@ Choose from a amount of languages
 Access to a large set of ready to use bulding blocks (components). +
 Connection of the bulding blocks via parametrization and/or scripting.
 --
-[CI, header="Comfortable connecting the website with business processes"]
+[CI, header="Comfortable connecting web application with business processes"]
 --
 * starting processes
 * subscribing and via Websocket asynchron receiving of selected process events
-* integrating human tasks into the website
+* integrating human tasks into the website or web application
 * tiggering task lists
 * setting task status
 --
@@ -75,4 +75,4 @@ In visualised workflows are entries for necessary program changes easier recogni
 --
 
 [.imageblock.left.width800]
-image::web/images/devel.svg[]
+imagezoom::web/images/devel.svgz[]

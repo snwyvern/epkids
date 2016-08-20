@@ -52,7 +52,7 @@
         "uri": "web/presentation/usecases_%l.adoc",
         "icon": "device:widgets",
         "id": "",
-        "help": "web/help/usage_%l.adoc",
+        "help": "",
         "adoc_include": false,
         "enabled": true
       },
@@ -417,7 +417,7 @@
     "description": "",
     "uri": "contact_%l.adoc?template=1",
     "icon": "account-box",
-    "id": "",
+    "id": "contactform",
     "help": "",
     "adoc_include": false,
     "enabled": true

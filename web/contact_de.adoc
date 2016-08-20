@@ -5,6 +5,8 @@
 
 image:web/images/contactform.svg[width=150]
 
+{nbsp} +
+{nbsp} +
 
 [subs="macros"] 
 ++++

@@ -12,8 +12,12 @@
 * Sie wollen, dass wir Ihre Anwendung hosten?
 
 [imageblock.width500]
-image::web/images/business2.svg[]
+image::web/images/business2.svgz[]
 
-Kontaktieren Sie uns unter + 
+*Kontaktieren Sie uns unter* + 
 EMail: info@simpl4.org +
 Telefon: +49 (0)9831 8847538
+
+
+===== link:local:contactform[oder über das Formular]
+

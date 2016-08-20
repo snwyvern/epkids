@@ -16,7 +16,7 @@ Viele Möglichkeiten der Installation
 * Testzugang bei uns anfordern
 * Wir unterstützen Sie auch bei der Installation bei einem Hoster Ihrer Wahl oder in der Cloud (z.B. Google, Amazon, ...)
 --
-[CI, header="Webseite mit vorgebenen Gerüst"]
+[CI, header="Web-Anwendung mit vorgebenen Gerüst"]
 --
 Durch ein vorgegebenes Gerüst, ist der Einstieg sehr einfach.
 
@@ -75,4 +75,4 @@ In den visualisierten Abläufen sind Ansätze für notwendige Programmänderunge
 --
 
 [.imageblock.left.width800]
-image::web/images/devel.svg[]
+imagezoom::web/images/devel.svgz[]

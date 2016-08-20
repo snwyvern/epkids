@@ -13,7 +13,7 @@ It is optimally adapted to the individual data infrastructure and thus helps to 
 Thus, savings result in terms of workload in software use, ie time saved, and thereby also money saved.
 
 [imageblock.xeft.width600]
-image::web/images/individuell.svg[]
+image::web/images/individuell.svgz[]
 
 ===== The use of simpl4 in developing your software solution offers various advantages =====
 

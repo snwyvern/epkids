@@ -11,10 +11,11 @@
 * You want us to host your application?
 
 [imageblock.width500]
-image::web/images/business2.svg[]
+image::web/images/business2.svgz[]
 
 
-Contact us at +
+*Contact us at* +
 EMail: info@simpl4.org +
 Phone: +49 (0) 9831 8847538
 
+===== link:local:contactform[or via the form]

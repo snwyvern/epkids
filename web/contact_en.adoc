@@ -1,7 +1,13 @@
 :linkattrs:
 :source-highlighter: rouge
 
-=== Kontakt
+=== {nbsp}
+
+
+image:web/images/contactform.svg[width=150]
+
+{nbsp} +
+{nbsp} +
 
 [subs="macros"] 
 ++++
