@@ -57,7 +57,7 @@ Connection of the bulding blocks via parametrization and/or scripting.
 * starting processes
 * subscribing and via Websocket asynchron receiving of selected process events
 * integrating human tasks into the website or web application
-* tiggering task lists
+* retrieving task lists
 * setting task status
 --
 [CI, header="Tools to import data"]
