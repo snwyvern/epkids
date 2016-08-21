@@ -119,24 +119,64 @@
     ]
   },
   {
-    "title": "tr.menu.tutorials",
+    "title": "tr.menu.documentation",
     "description": "",
-    "uri": "",
-    "icon": "chrome-reader-mode",
+    "uri": "structure:simpl4docu",
+    "icon": "",
     "id": "",
     "help": "",
     "adoc_include": false,
-    "enabled": false,
+    "enabled": true
+  },
+  {
+    "title": "tr.menu.company",
+    "description": "",
+    "uri": "",
+    "icon": "supervisor-account",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
     "children": [
       {
-        "title": "tr.menu.tutorials.dataimport",
+        "title": "tr.menu.company.behind-simpl4",
         "description": "",
-        "uri": "web/tutorials/dataimport_%l.adoc?t=1",
-        "icon": "file-download",
+        "uri": "company_%l.adoc",
+        "icon": "communication:business",
         "id": "",
         "help": "",
         "adoc_include": false,
+        "enabled": false
+      },
+      {
+        "title": "tr.services",
+        "description": "",
+        "uri": "services_%l.adoc",
+        "icon": "build",
+        "id": "servicesaround",
+        "help": "",
+        "adoc_include": false,
         "enabled": true
+      },
+      {
+        "title": "tr.individual-software",
+        "description": "",
+        "uri": "individualsoftware_%l.adoc",
+        "icon": "face",
+        "id": "individuellsoftware",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
+        "title": "tr.catalog-software",
+        "description": "",
+        "uri": "",
+        "icon": "done-all",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": false
       }
     ]
   },
@@ -351,88 +391,6 @@
     ]
   },
   {
-    "title": "tr.menu.company",
-    "description": "",
-    "uri": "",
-    "icon": "supervisor-account",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": true,
-    "children": [
-      {
-        "title": "tr.menu.company.behind-simpl4",
-        "description": "",
-        "uri": "company_%l.adoc",
-        "icon": "communication:business",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": false
-      },
-      {
-        "title": "tr.services",
-        "description": "",
-        "uri": "services_%l.adoc",
-        "icon": "build",
-        "id": "servicesaround",
-        "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.individual-software",
-        "description": "",
-        "uri": "individualsoftware_%l.adoc",
-        "icon": "face",
-        "id": "individuellsoftware",
-        "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.catalog-software",
-        "description": "",
-        "uri": "",
-        "icon": "done-all",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": false
-      }
-    ]
-  },
-  {
-    "title": "News",
-    "description": "",
-    "uri": "news_%l.adoc",
-    "icon": "communication:ring-volume",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
-    "title": "tr.menu.contact",
-    "description": "",
-    "uri": "contact_%l.adoc?template=1",
-    "icon": "account-box",
-    "id": "contactform",
-    "help": "",
-    "adoc_include": false,
-    "enabled": true
-  },
-  {
-    "title": "tr.menu.press",
-    "description": "",
-    "uri": "press_%l.adoc",
-    "icon": "turned-in-not",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
     "title": "tr.menu.resources",
     "description": "",
     "uri": "links_%l.adoc",
@@ -443,11 +401,11 @@
     "enabled": true
   },
   {
-    "title": "tr.menu.documentation",
+    "title": "tr.menu.contact",
     "description": "",
-    "uri": "structure:simpl4docu",
-    "icon": "",
-    "id": "",
+    "uri": "contact_%l.adoc?template=1",
+    "icon": "account-box",
+    "id": "contactform",
     "help": "",
     "adoc_include": false,
     "enabled": true
