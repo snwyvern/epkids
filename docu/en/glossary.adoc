@@ -22,7 +22,7 @@ image:docu/images/glossary.svg[width=100]
 
 * Service: is a in the serviceengine executed service model
 
-* Service model :  is specified in the simpl4 service editor.
+* Service model :  is created in the simpl4 service editor.
 
 * Serviceengine: Executes and controls services models.
 
