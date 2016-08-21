@@ -3,13 +3,11 @@
 
 === {nbsp}
 
-
 image:web/images/contactform.svg[width=150]
 
 {nbsp} +
 {nbsp} +
 
-[subs="macros"] 
 ++++
 <contact-request></contact-request>
 ++++
