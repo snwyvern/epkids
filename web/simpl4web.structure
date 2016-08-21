@@ -41,7 +41,7 @@
         "description": "",
         "uri": "web/presentation/bigpicture_%l.adoc",
         "icon": "av:hd",
-        "id": "",
+        "id": "presentation-bigpicture",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -51,7 +51,7 @@
         "description": "",
         "uri": "web/presentation/usecases_%l.adoc",
         "icon": "device:widgets",
-        "id": "",
+        "id": "presentation_usecases",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -81,7 +81,7 @@
         "description": "",
         "uri": "web/presentation/sampleapp_%l.adoc?t=1",
         "icon": "event",
-        "id": "",
+        "id": "presentation_sampleapp",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -101,7 +101,7 @@
         "description": "",
         "uri": "web/presentation/webclient_%l.adoc?t=1",
         "icon": "language",
-        "id": "",
+        "id": "presentation_webclient",
         "help": "",
         "adoc_include": false,
         "enabled": true
