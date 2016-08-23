@@ -13,9 +13,8 @@
     "icon": "icons:aspect-ratio",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": false,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": false
   },
   {
     "title": "docu.installation",
@@ -24,9 +23,8 @@
     "icon": "icons:card-giftcard",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": true,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": true
   },
   {
     "title": "docu.glossary",
@@ -35,9 +33,8 @@
     "icon": "vaadin-icons:book",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": true,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": true
   },
   {
     "title": "docu.overview",
@@ -46,9 +43,8 @@
     "icon": "vaadin-icons:viewport",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": true,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": true
   },
   {
     "title": "docu.external_docu",
@@ -57,9 +53,8 @@
     "icon": "icons:file-upload",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": false,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": false
   },
   {
     "title": "docu.simpl4_app",
@@ -68,9 +63,8 @@
     "icon": "icons:apps",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": true,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": true
   },
   {
     "title": "docu.communication",
@@ -287,8 +281,7 @@
     "icon": "icons:cached",
     "id": "",
     "help": "",
-    "adoc_include": true,
-    "enabled": false,
-    "appendix": "'title='+tr(title)"
+    "adoc_include": false,
+    "enabled": false
   }
 ]

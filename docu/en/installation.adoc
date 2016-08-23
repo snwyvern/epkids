@@ -1,6 +1,6 @@
 :linkattrs:
 
-=== Installations 
+== Installation 
 
 image:docu/images/inst.svg[width=150]
 

@@ -1,6 +1,8 @@
 :linkattrs:
 
 
+== Communication
+
 === Remote Procedure Calls(RPC) over http
 
 image:docu/images/rpc.svg[width=150]

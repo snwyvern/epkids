@@ -1,5 +1,7 @@
 :linkattrs:
 
+== Glossary
+
 In the following, the terms used in simpl4 will be explained
 
 image:docu/images/glossary.svg[width=100]
