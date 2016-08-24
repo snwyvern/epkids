@@ -213,9 +213,8 @@
         "icon": "editor:format-indent-decrease",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.service",
