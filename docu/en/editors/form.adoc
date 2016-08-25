@@ -1,5 +1,6 @@
 :linkattrs:
 :figure-caption!:
+:source-highlighter: rouge
 
 == Formeditor ==
 
@@ -15,3 +16,15 @@ image::docu/images/forms/formeditor.svg[]
 . Staging area
 . Properties
 . Function toolbar
+
+
+=== Form properties
+
+|===
+|Name|
+
+|Form variablename|Name of the form variable in a process,
+otherwise not used. +
+Attention: +
+*if this name is changed, all references in the processes must be changed too.*
+|Default buttons|yes/no

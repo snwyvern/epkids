@@ -196,17 +196,18 @@
       height: 100%;
       max-width: 1200px;
     }
+    /*Messages overlay*/
     .headeroverlay {
       z-index: 99;
       padding-left: 10px;
- //     width: 70%;
       position: absolute;
       overflow: hidden;
       top: 40%;
-  //    height: 51%;
       left: 2%;
     }
-    /*Messages overlay*/
+    .headeroverlay strong{
+      font-size: 1em;
+		}
     
     .headeroverlay {
       font-size: 1em;
@@ -225,16 +226,16 @@
     }
     @media screen and (max-width: 800px) {
       .headeroverlay {
-        font-size: 0.80em;
+        font-size: 0.85em;
       	left: 0%;
-      	top: 30%;
+      	top: 28%;
       }
     }
     @media screen and (max-width: 550px) {
       .headeroverlay {
-        font-size: 0.75em !important;
-      	left: 0%;
-      	top: 28%;
+        font-size: 1em !important;
+      	top: 0%;
+      position: relative;
       }
     }
     .headeroverlay ul.asciidoctor-default,
@@ -275,7 +276,7 @@
 </head>
 
 <body class="polymer-theme text_body_1">
-  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4web" logo="web/images/logoneu.svg" responsive-width="820px" mmenu-background="#cfd8dc" mmenu-classes="mm-light"></simpl-main>
+  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4web" logo="web/images/logoneu.svg" responsive-width="720px" mmenu-background="#cfd8dc" mmenu-classes="mm-light"></simpl-main>
 </body>
 
 </html>
