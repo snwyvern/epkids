@@ -485,5 +485,13 @@
     {
         "msgstr": "Surname",
         "msgid": "testrequest.surname"
+    },
+    {
+        "msgstr": "Workshop",
+        "msgid": "tr.menu.workshop"
+    },
+    {
+        "msgstr": "Workshop content",
+        "msgid": "tr.menu.workshop.description"
     }
 ]

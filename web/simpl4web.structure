@@ -17,16 +17,6 @@
     "enabled": true
   },
   {
-    "title": "Home",
-    "description": "",
-    "uri": "web/main_%l.adoc",
-    "icon": "home",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
     "title": "tr.menu.presentation",
     "description": "",
     "uri": "",
@@ -177,6 +167,28 @@
         "help": "",
         "adoc_include": false,
         "enabled": false
+      }
+    ]
+  },
+  {
+    "title": "tr.menu.workshop",
+    "description": "",
+    "uri": "",
+    "icon": "",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "tr.menu.workshop.description",
+        "description": "",
+        "uri": "web/workshopdescription_%l.adoc",
+        "icon": "",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
       }
     ]
   },
