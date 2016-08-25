@@ -11,3 +11,9 @@ Durch vorgefertigte HTML5-Elemente (Custom Elements), die mit dem Backend asynch
 
 Inhalte des Workshops sind:
 Einführung in das Konzept von simpl4, Vorstellung von BPMN 2.0 sowie das Erstellen von Workflows, Services, Formularen und Datenmodellen.
+
+
+=== Nächster simpl4 Workshop link:local:contactform[Anmeldung]
+
+* *Wann:* Sonntag den 04.09.2016 von 11.00Uhr bis 18.00Uhr
+* *Wo:* Cafe Netzwerk, Luisenstraße 11, 80333 München http://www.openstreetmap.org/node/957531675[Open Streetmap, window=blank]
