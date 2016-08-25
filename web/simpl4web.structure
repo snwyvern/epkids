@@ -31,7 +31,7 @@
         "description": "",
         "uri": "web/presentation/bigpicture_%l.adoc",
         "icon": "av:hd",
-        "id": "presentation-bigpicture",
+        "id": "presentation_bigpicture",
         "help": "",
         "adoc_include": false,
         "enabled": true
