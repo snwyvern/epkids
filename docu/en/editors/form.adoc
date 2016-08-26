@@ -47,5 +47,3 @@ image::docu/images/forms/formeditor.svg[]
 <%} %>
 |===
 
-NOTE: hjddhjd
-

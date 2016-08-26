@@ -515,7 +515,7 @@
         "urivalue_operation": "get",
         "uriparam_destination": "",
         "uriparam_repo": "global",
-        "uriparam_path": "\"stencilsets/\"+h.model+\".json\"",
+        "uriparam_path": "\"stencilsets/${h.model}.json\"",
         "uriparam_type": "all",
         "extraParams": null
       },
