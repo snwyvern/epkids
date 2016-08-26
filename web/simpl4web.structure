@@ -181,16 +181,6 @@
     "enabled": true
   },
   {
-    "title": "tr.menu.workshop",
-    "description": "",
-    "uri": "",
-    "icon": "",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": true
-  },
-  {
     "title": "tr.menu.misc_demo",
     "description": "",
     "uri": "",
