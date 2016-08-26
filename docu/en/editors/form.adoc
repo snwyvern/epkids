@@ -2,11 +2,15 @@
 :figure-caption!:
 :source-highlighter: rouge
 
-== Formeditor ==
+== Formeditor ${model.namespace}  ==
 
 In simpl4 forms are used for interactions with the User within a process(human tasks). +
 Also a link:local:docu-customelements[customelement] exists, so the forms can also be used in websites
 
+
+<% model.stencils.each { t ->
+	%>${t.title} +
+<%} %>
 
 [.width200]
 .The formeditor overview
