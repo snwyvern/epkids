@@ -2,15 +2,11 @@
 :figure-caption!:
 :source-highlighter: rouge
 
-== Formeditor ${model.namespace}  ==
+== Formeditor ==
 
 In simpl4 forms are used for interactions with the User within a process(human tasks). +
 Also a link:local:docu-customelements[customelement] exists, so the forms can also be used in websites
 
-
-<% model.stencils.each { t ->
-	%>${t.title} +
-<%} %>
 
 [.width200]
 .The formeditor overview
@@ -21,14 +17,35 @@ image::docu/images/forms/formeditor.svg[]
 . Properties
 . Function toolbar
 
+<% def getSubTable= { p->
+	if( p.id != 'xf_used_default_buttons'){
+		 return ""
+	}
+	def json = new groovy.json.JsonSlurper()
+	def buttons = json.parseText(p.value);
+	def t= '\n[cols="3*", options="header"]\n'
+	t += '!===\n'
+	t += '!Label!Icon!Action\n'
+	buttons.items.each{
+		t += '!'+it.label
+		t += '!'+it.icon
+		t += '!'+it.action+'\n'
+		t += '\n'
+	}
+	t +='!===\n'
+	return t
+}%>
 
-=== Form properties
+=== Form global properties
 
+[cols="30,70a"]
 |===
 |Name|
 
-|Form variablename|Name of the form variable in a process,
-otherwise not used. +
-Attention: +
-*if this name is changed, all references in the processes must be changed too.*
-|Default buttons|yes/no
+<% model.stencils[0].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
+<%} %>
+|===
+
+NOTE: hjddhjd
+
