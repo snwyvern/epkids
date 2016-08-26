@@ -23,6 +23,13 @@
             "invalid": false,
             "label": "Onlinetest",
             "value": "onlinetest"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": "Wir rufen Sie zurück",
+            "invalid": false,
+            "label": "Rückruf",
+            "value": "rueckruf"
         }
     ],
     "fieldList": [
