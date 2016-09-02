@@ -64,3 +64,13 @@ image::docu/images/forms/formeditor.svg[]
 <%} %>
 |===
 
+=== Input
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils[1].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
+<%} %>
+|===

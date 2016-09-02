@@ -281,6 +281,6 @@
     "id": "",
     "help": "",
     "adoc_include": false,
-    "enabled": false
+    "enabled": true
   }
 ]
