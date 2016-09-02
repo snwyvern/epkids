@@ -90,22 +90,23 @@ imagezoom::docu/images/complete_example/simplmed.svg[]
 
     </script>
   </dom-module>
-  <order-example/>
+  <order-example/> <!--15-->
 </div>
 
 ----
 
-<1> This is a custom element with name "order-example"
+<1> Defines the custom element with name "order-example"
 <2> form element, show the "order.form". 
 <3> rpc element, communicates with the simpl4-backend.
 <4> toast element, show messages on the bottom of the screen.
 <5> Message translation behavior, not used here.
 <6> Initializing the order.form. In this example, the username is automatically placed in into the form. 
 <7> If a button in the order form clicked, the doOrder function is called.
-<8> The next steps are only executed , if the form is valid(this  means all plausibilties are fullfilled) and the execute button is pressed.
+<8> The next steps are only executed , if the form is valid(this  means all plausibilty checks are fullfilled) and the execute button is pressed.
 <9> Setting the form data as rpc parameter.
 <10> Remember the username in a global variable.
-<11> The username also rembered in the browers local storage.
+<11> The username is also saved in the browser local storage.
 <12> This executes the rpc.
 <13> Show an error messages, if an error happend.
 <14> Shows a message.if the order is successfully executed.
+<15> Shows the previously defined custom element order-example.
