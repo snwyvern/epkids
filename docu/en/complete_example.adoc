@@ -109,4 +109,15 @@ imagezoom::docu/images/complete_example/simplmed.svg[]
 <12> This executes the rpc.
 <13> Show an error messages, if an error happend.
 <14> Shows a message.if the order is successfully executed.
-<15> Shows the previously defined custom element order-example.
+<15> Use(shows) the previously defined custom element <order-example/>.
+
+===== And so its looks
+
+++++
+include::examples/process/order.html[namespace=docu]
+++++
+
+
+
+
+
