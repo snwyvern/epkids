@@ -3,7 +3,7 @@
 
 == Communication
 
-=== Remote Procedure Calls(RPC) over http(s) (service entrypoint)
+=== Remote Procedure Calls(RPC) over http(s) (service entrypoints)
 
 image:docu/images/rpc.svg[width=150]
 
@@ -26,7 +26,7 @@ There is also a javascript module: *simpl4.util.Rpc*, this does the same in an i
 
 NOTE: Each service, defined in the serviceeditor  for "rpc over http", +
 must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[] +
-*This is the service entrypoint.*
+*This is a the service entrypoint.*
 
 {sp} +
 {sp} +
