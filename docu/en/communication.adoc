@@ -7,6 +7,8 @@
 
 image:docu/images/rpc.svg[width=150]
 
+==== Frontend 
+
 The most basic communication in simpl4 is *rpc* over http. +
 rpc can be performed both, declarativ and imperative.  +
 There is a customelement for the declarative way.
@@ -31,9 +33,7 @@ must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint
 {sp} +
 {sp} +
 
-===== Service entrypoint ( reachable via RPC over https(s),  depretecated name "direct endpoint")
-
-{sp} +
+==== Backend
 
 [.width4000]
 imagezoom::docu/images/communication/rpc-buildingblock.svg[]
