@@ -14,7 +14,7 @@ image:docu/images/glossary.svg[width=100]
 
 * Enumeration: Mostly used as items of a selectBox
 
-* direct endpoint: service entrypoint, if the http(s) protocol is used. This block defines the procedure parameter, return value(s) and the permissions.
+* Direct endpoint: or service entrypoint, if the http(s) protocol is used. This block defines the procedure parameter, return value(s) and the permissions.
 
 * Filter: A definition of data query, which can be used in different places in simpl4
 
