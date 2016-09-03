@@ -28,7 +28,7 @@ There is also a javascript module: *simpl4.util.Rpc*, this does the same in an i
 
 NOTE: Each service, defined in the serviceeditor  for "rpc over http", +
 must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[] +
-*This is a the service entrypoint.*
+*This is also called service entrypoint.*
 
 {sp} +
 {sp} +
@@ -48,7 +48,7 @@ imagezoom::docu/images/communication/rpc-buildingblock.svg[]
 . the place where the parameter is stored: header/property or body. link:local:docu-overview[see description of exchange].
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
-link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
+link:/repo/docu/examples/rpc/start.html[Demo,window="_blank"]
 
 
 
@@ -61,7 +61,7 @@ As opposed to 'WAMP', you must provide the protocol here self.
 NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" endpoint. image:docu/images/communication/websocketendpoint.png[]
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
-link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
+link:/repo/docu/examples/websocket/start.html[Demo,window="_blank"]
 
 
 === RPC and Pub/Sub with WAMP

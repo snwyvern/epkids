@@ -4,7 +4,7 @@
 == A complete example
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/process[the code,window="_blank"] +
-see link:/repo/docu/examples/process/start.html[App,window="_blank"]
+see link:/repo/docu/examples/process/start.html[Demo,window="_blank"]
 
 [NOTE]
 The example is for demonstration purposes only. +
