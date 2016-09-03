@@ -69,7 +69,17 @@ link:/repo/docu/examples/websocket/start.html[Demo,window="_blank"]
 WAMP is an open standard WebSocket subprotocol that provides two application messaging patterns in one unified protocol:
 *Remote Procedure Calls + Publish & Subscribe*.
 
+[.width600]
+imagezoom::docu/images/communication/provide-call.svg[]
 
+{sp} +
+{sp} +
+
+[.width600]
+imagezoom::docu/images/communication/publish-subscribe.svg[]
+
+{sp} +
+{sp} +
 
 
 NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" endpoint. image:docu/images/communication/wampendpoint.png[]
@@ -82,6 +92,9 @@ link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
 
 
 === Publish/Subscribe and simpl4
+
+
+
 
 In the context of simpl4 there is a very valueable usecase of Pub/Sub.
 
