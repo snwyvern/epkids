@@ -239,11 +239,11 @@
      inkscape:window-height="1459"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.97913741"
-     inkscape:cx="8.1699141"
+     inkscape:zoom="0.6923547"
+     inkscape:cx="509.63171"
      inkscape:cy="325.28632"
-     inkscape:window-x="108"
-     inkscape:window-y="339"
+     inkscape:window-x="0"
+     inkscape:window-y="183"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      fit-margin-left="3"
@@ -627,36 +627,36 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:100%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="778.20355"
-     y="200.76927"
+     x="752.20532"
+     y="205.10231"
      id="text9422"
      sodipodi:linespacing="100%"><tspan
        sodipodi:role="line"
        id="tspan9424"
-       x="778.20355"
-       y="200.76927">publish</tspan></text>
+       x="752.20532"
+       y="205.10231">publish topic x</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:100%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="46.290386"
-     y="107.31496"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:100%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="34.735615"
+     y="108.7593"
      id="text9426"
      sodipodi:linespacing="100%"><tspan
        sodipodi:role="line"
        id="tspan9428"
-       x="46.290386"
-       y="107.31496">subscribe</tspan></text>
+       x="34.735615"
+       y="108.7593">subscribe topic x</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:100%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="222.71814"
-     y="103.82134"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:100%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="205.38599"
+     y="100.93265"
      id="text9430"
      sodipodi:linespacing="100%"><tspan
        sodipodi:role="line"
        id="tspan9432"
-       x="222.71814"
-       y="103.82134">subscribe</tspan></text>
+       x="205.38599"
+       y="100.93265">subscribe topic x</tspan></text>
   <flowRoot
      xml:space="preserve"
      id="flowRoot9434"
