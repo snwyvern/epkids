@@ -14,6 +14,8 @@ image:docu/images/glossary.svg[width=100]
 
 * Enumeration: Mostly used as items of a selectBox
 
+* direct endpoint: service entrypoint, if the http(s) protocol is used. This block defines the procedure parameter, return value(s) and the permissions.
+
 * Filter: A definition of data query, which can be used in different places in simpl4
 
 * Namespace: or application, a fenced area with its own git repository.
@@ -24,11 +26,15 @@ image:docu/images/glossary.svg[width=100]
 
 * Processengine: executes the BPMN process models and orchestrates the service engine and the Human Tasks.
 
+* RPC: Remote procedure call.
+
 * Service: is a in the serviceengine executed service model
 
 * Service model :  is created in the simpl4 service editor.
 
 * Serviceengine: Executes and controls services models.
+
+* Service entrypoint: Each service can have 1 to N entrypoints. A entrypoint is reachable via rpc.
 
 * WAMP: Web Application Messaging Protocol, Websocket subprotocol
 

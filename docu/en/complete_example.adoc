@@ -3,7 +3,8 @@
 
 == A complete example
 
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/process[the code,window="_blank"]
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/process[the code,window="_blank"] +
+see link:/repo/docu/examples/process/start.html[App,window="_blank"]
 
 [NOTE]
 The example is for demonstration purposes only. +
@@ -111,7 +112,7 @@ imagezoom::docu/images/complete_example/simplmed.svg[]
 <14> Shows a message.if the order is successfully executed.
 <15> Use(shows) the previously defined custom element <order-example/>.
 
-===== And so its looks
+===== And now the page live 
 
 ++++
 include::examples/process/order.html[namespace=docu]
