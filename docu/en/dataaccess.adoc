@@ -64,7 +64,8 @@ image::docu/images/dataaccess/findByFilter.svg[]
 
 === A complete example
 
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/data[examples,window="_blank"]
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/data[examples,window="_blank"] +
+link:/repo/docu/examples/data/start.html[Demo,window="_blank"]
 
 ==== a service, that uses some of the operationen
 
