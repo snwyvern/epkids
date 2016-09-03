@@ -228,7 +228,7 @@
             "id": "",
             "help": "",
             "adoc_include": false,
-            "enabled": true
+            "enabled": false
           },
           {
             "title": "tr.menu.process_list",
@@ -238,7 +238,7 @@
             "id": "",
             "help": "",
             "adoc_include": false,
-            "enabled": true
+            "enabled": false
           }
         ]
       },
@@ -312,7 +312,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true,
+        "enabled": false,
         "children": [
           {
             "title": "tr.form_with_grid",
@@ -354,7 +354,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true,
+        "enabled": false,
         "children": [
           {
             "title": "SQL/Datatable",
