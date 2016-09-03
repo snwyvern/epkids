@@ -3,11 +3,11 @@
 
 == Communication
 
-=== Remote Procedure Calls(RPC) over http
+=== Remote Procedure Calls(RPC) over http(s) (service entrypoint)
 
 image:docu/images/rpc.svg[width=150]
 
-The most basic communication in simpl4 is *rpc* via http. +
+The most basic communication in simpl4 is *rpc* over http. +
 rpc can be performed both, declarativ and imperative.  +
 There is a customelement for the declarative way.
 
@@ -24,20 +24,20 @@ There is also a javascript module: *simpl4.util.Rpc*, this does the same in an i
 
 
 
-NOTE: Each service defined in the serviceeditor  for "rpc via http", must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[]
+NOTE: Each service defined in the serviceeditor  for "rpc over http", must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[]
 
-===== RPC - Buildingblock( also called direct endpoint)
+===== Service entrypoint ( reachable via RPC over https(s),  depretecated name "direct endpoint")
 
 image:docu/images/communication/rpc-buildingblock.svg[]
 
 . the procedurename
-. the procedure parameter
-. the return value
+. the procedure parameter(s)
+. the return value(s)
 . permissions (roles and user)
 . the name used inside the buildingblock, if empty the parametername is used
-. if this parameter optional
-. the parameter type
-. the place where the parameter is stored: header /property or body
+. a  parameter can be optional
+. the parameter type: string, integer, long , double, boolean, date, map or list.
+. the place where the parameter is stored: header/property or body. see description of exchange.
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
 link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
