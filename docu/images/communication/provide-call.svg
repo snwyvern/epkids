@@ -239,9 +239,9 @@
      inkscape:window-height="1459"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="1.1449446"
-     inkscape:cx="-19.750805"
-     inkscape:cy="218.48192"
+     inkscape:zoom="1.9582748"
+     inkscape:cx="509.63171"
+     inkscape:cy="406.99089"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -678,15 +678,15 @@
        sodipodi:role="line"
        id="tspan9444"
        x="253.28717"
-       y="33.075497">remote procedure call</tspan></text>
+       y="33.075497">routed remote procedure call</tspan></text>
   <rect
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:0.90525466;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#607d8b;stroke-width:0.98767084;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect3338-2-8"
-     width="283.22305"
-     height="43.524452"
-     x="249.6736"
-     y="3.4526274"
-     ry="3.7698119" />
+     width="337.78058"
+     height="43.442039"
+     x="243.58696"
+     y="3.4938357"
+     ry="3.7626734" />
   <g
      id="g4498"
      transform="translate(384.29801,-34.062784)">
@@ -797,4 +797,15 @@
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff5252;fill-opacity:1;stroke:#ff5252;stroke-width:2.19070911px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:90%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     x="392.18176"
+     y="242.04979"
+     id="text4345"
+     sodipodi:linespacing="90%"><tspan
+       sodipodi:role="line"
+       id="tspan4347"
+       x="392.18176"
+       y="242.04979">Callers and Callees are decoupled</tspan></text>
 </svg>
