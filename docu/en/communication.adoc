@@ -42,7 +42,7 @@ imagezoom::docu/images/communication/rpc-buildingblock.svg[]
 . the procedure parameter(s)
 . the return value(s)
 . permissions (roles and user)
-. the name used in the header/property, if empty the parametername is used
+. the header respectively property name, if empty the parametername is used
 . a  parameter can be optional
 . the parameter type: string, integer, long , double, boolean, date, map or list.
 . the place where the parameter is stored: header/property or body. link:local:docu-overview[see description of exchange].
