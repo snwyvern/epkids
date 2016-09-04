@@ -35,7 +35,7 @@ must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint
 
 ==== Backend
 
-[.width4000]
+[.width700]
 imagezoom::docu/images/communication/rpc-buildingblock.svg[]
 
 . the procedurename
