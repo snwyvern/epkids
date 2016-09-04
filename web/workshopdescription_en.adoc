@@ -16,5 +16,7 @@ Introduction to the concept of simpl4, presenting of BPMN 2.0 as well as the cre
 
 === Next simpl4 Workshop link:local:contactform[Registration]
 
+////
 * *When:* Sunday 04.09.2016 from 11 am to 6 pm
 * *Where:* Cafe Netzwerk, Luisenstraße 11, Germany - 80333 München http://www.openstreetmap.org/node/957531675[Open Streetmap, window=blank]
+////
