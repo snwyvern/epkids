@@ -39,8 +39,11 @@ The git repository must exist in both cases. +
 In the case of a new application an empty repository must be created. +
 Creating this repository is not subject of this manual.
 
+{nbsp} +
+
 [TIP]
-If the remote repository is not needed, it must only be filled in Point *3*
+If a remote repository is not used, only Point *3*, the application name,  is needed.
 
+{nbsp} +
 
-After saving, simpl4 has to reloaded and an new login has to be made.
+*After saving, simpl4 has to reloaded and an new login has to be made.*
