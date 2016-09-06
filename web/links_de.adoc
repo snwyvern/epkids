@@ -38,6 +38,12 @@ image:debian-logo.jpg[Logo, height=70]
 
 link:http://download.ms123.org/download/simpl4-2.1.deb[Download Debian Paket,window="_blank"] 
 
+
+[NOTE]
+Auf debian stable muss link:https://backports.debian.org/Instructions[backports zu den apt sources hinzugefügt werden ,window="_blank"] , damit openjdk-8 installiert werden kann.
+
+{nbsp} +
+
 .Installation 
 [source,shell,shell_session]
 ----
