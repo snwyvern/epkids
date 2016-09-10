@@ -51,3 +51,14 @@ image::docu/images/process/processeditor.svg[]
 	%>|${p.title}|+++${p.description ? p.description : p.title}+++<% def st=getBPMProperties(p)%>$st
 <%} %>
 |===
+
+=== Servicetask
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils.find{it.id=='CamelTask'}.properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description ? p.description : p.title}+++<% def st=getBPMProperties(p)%>$st
+<%} %>
+|===
