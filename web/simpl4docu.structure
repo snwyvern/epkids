@@ -113,9 +113,8 @@
         "icon": "image:looks-one",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.firststeps.create_data",
@@ -124,9 +123,8 @@
         "icon": "communication:contact-phone",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu_firststeps.create_service",
@@ -135,9 +133,8 @@
         "icon": "image:filter-center-focus",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.firststeps.dynamic_page",
@@ -146,9 +143,8 @@
         "icon": "image:camera",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       }
     ]
   },
@@ -169,9 +165,8 @@
         "icon": "editor:format-list-numbered",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.data",
@@ -180,9 +175,8 @@
         "icon": "vaadin-icons:database",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.filter",
@@ -191,9 +185,8 @@
         "icon": "image:filter-7",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.message",
@@ -202,9 +195,8 @@
         "icon": "communication:message",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.form",
@@ -219,13 +211,12 @@
       {
         "title": "docu.editors.service",
         "description": "",
-        "uri": "docu/%l/editors/service.adoc",
+        "uri": "docu/%l/editors/service.adoc?rpc=groovyPreprocess&model=camel",
         "icon": "icons:card-travel",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.document",
@@ -234,9 +225,8 @@
         "icon": "editor:format-color-text",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.process",
@@ -245,9 +235,8 @@
         "icon": "image:filter-vintage",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.structure",
@@ -256,9 +245,8 @@
         "icon": "image:grid-on",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       },
       {
         "title": "docu.editors.datamapper",
@@ -267,9 +255,8 @@
         "icon": "maps:layers",
         "id": "",
         "help": "",
-        "adoc_include": true,
-        "enabled": true,
-        "appendix": "'title='+tr(title)"
+        "adoc_include": false,
+        "enabled": true
       }
     ]
   },

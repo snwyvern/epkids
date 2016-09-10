@@ -2,6 +2,8 @@
 :figure-caption!:
 :source-highlighter: rouge
 
+<% def m=delegate.getVariable("model") %>
+
 == Servicemodeleditor ==
 
 
@@ -53,24 +55,14 @@ image::docu/images/service/serviceeditor.svg[]
  	return ""
 }%>
 
-=== Form global properties
+
+=== Direct / Serviceentrypoint
 
 [cols="30,70a"]
 |===
 |Name|Description
 
-<% model.stencils[0].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
-	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
-<%} %>
-|===
-
-=== Input
-
-[cols="30,70a"]
-|===
-|Name|Description
-
-<% model.stencils[1].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
-	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
-<%} %>
+<% m.propertyPackages.findAll{ it.name == "directProperties" || it.name=="rpcProperties2" }.each{pp->pp.properties.findAll{it.id!='id' && it.visible!=false}.each {p->
+	%>|${p.title}|+++${p.description}+++
+<%}} %>
 |===
