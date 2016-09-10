@@ -219,20 +219,20 @@
         "enabled": true
       },
       {
-        "title": "docu.editors.document",
+        "title": "docu.editors.process",
         "description": "",
-        "uri": "docu/%l/editors/document.adoc",
-        "icon": "editor:format-color-text",
+        "uri": "docu/%l/editors/process.adoc?rpc=groovyPreprocess&model=process",
+        "icon": "image:filter-vintage",
         "id": "",
         "help": "",
         "adoc_include": false,
         "enabled": true
       },
       {
-        "title": "docu.editors.process",
+        "title": "docu.editors.document",
         "description": "",
-        "uri": "docu/%l/editors/process.adoc",
-        "icon": "image:filter-vintage",
+        "uri": "docu/%l/editors/document.adoc",
+        "icon": "editor:format-color-text",
         "id": "",
         "help": "",
         "adoc_include": false,
