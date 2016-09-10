@@ -1,3 +1,76 @@
 :linkattrs:
+:figure-caption!:
+:source-highlighter: rouge
 
-image:docu/images/under_construction.svgz[width=350]
+== Servicemodeleditor ==
+
+
+All what simpl4 offer are services. +
+The Webfrontend or the processengine  calls a service, for example to get data, write data or query status information. 
+
+[.width200]
+.The servicemodeleditor overview
+image::docu/images/service/serviceeditor.svg[]
+
+. Service controls (building blocks, flow control and routing)
+. Staging area
+. Properties
+. Function toolbar
+
+<% def getSubTable= { p->
+	if( p.id == 'xf_used_default_buttons'){
+		def json = new groovy.json.JsonSlurper()
+		def buttons = json.parseText(p.value);
+		def t= '\n[cols="3*", options="header"]\n'
+		t += '!===\n'
+		t += '!Label!Icon!Action\n'
+		buttons.items.each{
+			t += '!'+it.label
+			t += '!'+it.icon
+			t += '!'+it.action+'\n'
+			t += '\n'
+		}
+		t +='!===\n'
+		return t
+	}
+	if( p.id == 'xf_preprocess_service_mode' || p.id == 'xf_postprocess_service_mode'){
+		def t = '\n\n'
+		p.items.each{
+			t += "* " + it.title + '\n'
+		}
+		return t;
+	}
+	if( p.id == 'xf_validate_local'){
+		def t= '\n[cols="2*", options="header"]\n'
+		t += '!===\n'
+		t += '!Expression!Message\n'
+		t += '!expr1!messag1\n'
+		t += '!expr2!messag2\n'
+		t += '!..!..\n'
+		t +='!===\n'
+		return t
+	}
+ 	return ""
+}%>
+
+=== Form global properties
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils[0].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
+<%} %>
+|===
+
+=== Input
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils[1].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description}+++<% def st=getSubTable(p)%>$st
+<%} %>
+|===
