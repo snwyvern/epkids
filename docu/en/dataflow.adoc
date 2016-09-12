@@ -75,7 +75,7 @@ image::docu/images/dataflow/parameter.svg[]
 
 image::docu/images/dataflow/block.svg[]
 
-. The complete formadata object  is given to the block. +
+. The complete formadata object should be insert in the database. +
 Because, we have put the "data" parameter in the *properties*, we use "p" to access. +
 "p." is a shorthand for properties, therefore you can also use *properties.data* +
 If the value in the *headers* stored, then you have access with  *h.data* or *headers.data*
