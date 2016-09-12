@@ -71,7 +71,7 @@ image::docu/images/dataflow/parameter.svg[]
 . The place where the parameter are stored
 
 
-==== Access in the building block
+==== Accessing the form data in the building block
 
 image::docu/images/dataflow/block.svg[]
 
