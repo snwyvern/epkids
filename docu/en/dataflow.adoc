@@ -23,8 +23,8 @@ image::docu/images/dataflow/form.svg[]
 
 ----
 
-Via rpc is the object transferred to the backend. +
-The object is declared as the parameter "data".
+The object will be via rpc  transferred to the backend. +
+The parameter "data"  contains the object.
 
 [source,json]
 ----
@@ -36,7 +36,7 @@ rpcParams = {
 }
 ----
 
-If we have no other parameter , we can also do this.
+If we have no other parameters , we can also do this.
 [source,json]
 ----
 rpcParams = 
