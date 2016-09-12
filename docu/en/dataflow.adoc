@@ -64,20 +64,18 @@ rpcParams = {
 image::docu/images/dataflow/parameter.svg[]
 
 . The parameter names. 
-. We can rename the names. 
+. If this field is empty,  the parameter name is used, under which the value will be  stored.
 . "operation" has a defaultvalue
 . and is therefore optional.
 . The types.
-. The place where the parameters are stored
+. The place where the parameter are stored
 
 
 ==== Access in the building block
 
 image::docu/images/dataflow/block.svg[]
 
-. The parameter names. 
-
-. The complete formadata are given to the block
-we have put the "data" parameter previously in the properties. +
+. The complete formadata object  is given to the block. +
+Because, we have put the "data" parameter in the *properties*, we use "p" to access. +
 "p." is a shorthand for properties, therefore you can also use *properties.data* +
-If the parameter in the header stored, then you have access with  *h.data* or *headers.data*
+If the value in the *headers* stored, then you have access with  *h.data* or *headers.data*
