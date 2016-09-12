@@ -18,9 +18,10 @@ Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Op
 ** Wann macht die Verwendung der Prozess Engine Sinn, und wann weniger ?
 * Das simpl4 Konzept und Zusammenhänge
 * Erklärung der Serviceengine
+** Service Modell
 ** Service Entrypoint
 ** Exchange und Message
-** Beispiel eines Service Entrypoints zur Erstellung PDF (Katalog Kundenprojekt)
+** Beispiel eines Service Modells zur Erstellung PDF (Katalog Kundenprojekt)
 * Analyse eines beispielhaften Live-Bestellprozesses
 ** Der umgesetzte Bestellprozess in der Entwicklungsumgebung im Detail
 *** Properties
@@ -32,7 +33,7 @@ Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Op
 ** einer "Hello Worldseite" mit adoc
 ** einer Entität (mit Feldpausibilitäten, Zuodnung Enumerations,...)
 ** eines Filters
-** eines Service Entrypoints
+** eines Service
 *** Einbinden der angelegten Entity
 *** Einbinden des Service Entrypoints in die erstellte "Hello World Seite"
 
