@@ -5,13 +5,36 @@
 
 Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
 
-simpl4 bietet visuelle Editoren (u. a. BPMN 2.0, Services, Forms, Datenmodell) für die wesentlichen Komponenten. Wo dies nicht ausreicht, kann natürlich auch programmiert (gescriptet z.B. mit JavaScript in Frontend und Backend) werden.
-Sämtliche Subsysteme, vom HTML5-basierten Frontend für Smartphone, Tablet und Desktop bis hin zum Backend (Prcessengine und Serviceengine), sind optimal aufeinander abgestimmt.
-Durch vorgefertigte HTML5-Elemente (Custom Elements), die mit dem Backend asynchron über Websockets oder synchron via RPC kommunizieren, können flexible Webapplikationen erstellt werden.
+==== Die Tagespunkte ====
 
-Inhalte des Workshops sind:
-Einführung in das Konzept von simpl4, Vorstellung von BPMN 2.0 sowie das Erstellen von Workflows, Services, Formularen und Datenmodellen.
+* simpl4 Installieren
+* Erklärung wichtiger simpl4 Begrifflichkeiten und Formulierungen 
+* Grundlegendes und Wichtiges zur und über BPMN
+** Was ist die BPMN
+** Wozu dient sie ?
+* Die Prozessengine
+** Was macht sie in simpl4
+** BPMN und die Process Engine
+** Wann macht die Verwendung der Prozess Engine Sinn, und wann weniger ?
+* Das simpl4 Konzept und Zusammenhänge
+* Erklärung der Serviceengine
+** Service Entrypoint
+** Exchange und Message
+** Beispiel eines Service Entrypoints zur Erstellung PDF (Katalog Kundenprojekt)
+* Analyse eines beispielhaften Live-Bestellprozesses
+** Der umgesetzte Bestellprozess in der Entwicklungsumgebung im Detail
+*** Properties
+*** Aufrufe (RPC, etc.)
+*** Scripting
 
+* Erste Schritte in simpl4 in der Praxis
+* Anlage
+** einer "Hello Worldseite" mit adoc
+** einer Entität (mit Feldpausibilitäten, Zuodnung Enumerations,...)
+** eines Filters
+** eines Service Entrypoints
+*** Einbinden der angelegten Entity
+*** Einbinden des Service Entrypoints in die erstellte "Hello World Seite"
 
 === Nächster simpl4 Workshop link:local:contactform[Anmeldung]
 
