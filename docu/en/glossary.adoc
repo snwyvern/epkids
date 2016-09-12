@@ -13,7 +13,7 @@ For example:forms, processmodels, servicemodels ..
 * Enumeration: Mostly used as items of a selectBox
 * Filter: A definition of data query, which can be used in different places in simpl4
 * Namespace: or application, a fenced area with its own git repository.
-* Procedure: separate executable part of a services, reachable via rpc. +
+* Procedure: separate executable part of a services, reachable via RPC. +
 A service consists of one or more procedures
 * Process: is a in the processengine executed process model
 * Process model: is specified in BPMN and modelled in the simpl4 modeler
