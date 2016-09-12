@@ -1,3 +1,106 @@
 :linkattrs:
+:figure-caption!:
+:source-highlighter: rouge
 
-image:docu/images/under_construction.svgz[width=350]
+<% def m=delegate.getVariable("model") %>
+
+== Servicemodeleditor ==
+
+
+All what simpl4 offers are services. +
+The Webfrontend or the processengine  calls a service, for example to get data, write data or query status information. 
+
+[.width200]
+.The servicemodeleditor overview
+image::docu/images/service/serviceeditor.svg[]
+
+. Service controls (building blocks, flow control and routing)
+. Staging area, composing the service model
+. Buildingblock properties
+. Function toolbar
+
+<% def getString={ d,t ->
+	if( d==null ) return t;
+	return d;
+}%>
+
+<% def getDirectParameter= { p->
+	if( p.id == 'xf_used_default_buttons'){
+		def json = new groovy.json.JsonSlurper()
+		def buttons = json.parseText(p.value);
+		def t= '\n[cols="3*", options="header"]\n'
+		t += '!===\n'
+		t += '!Label!Icon!Action\n'
+		buttons.items.each{
+			t += '!'+it.label
+			t += '!'+it.icon
+			t += '!'+it.action+'\n'
+			t += '\n'
+		}
+		t +='!===\n'
+		return t
+	}
+	if( p.id == 'rpcParameter'){
+		def t = '\n\n'
+		p.complexItems.each{
+			t += "* " + it.name
+			if( it.id == "type"){
+				t += "( ";
+				def comma='';
+				m.definitions.parametertype_items.each{type->
+					t += comma + type.title
+					comma=", ";
+				}
+				t += " )";
+			}
+			if( it.id == "destination"){
+				t += "( ";
+				def comma='';
+				m.definitions.destination_items.each{type->
+					t += comma + type.title
+					comma=", ";
+				}
+				t += " )";
+			}
+			t += "\n";
+		}
+		return t;
+	}
+	if( p.id == 'rpcReturnHeaders'){
+		def t = '\n\n'
+		p.complexItems.each{
+			t += "* " + it.name + '\n'
+		}
+		return t;
+	}
+	if( p.id == 'rpcReturn'){
+		def t = '\n\n'
+		p.items.each{
+			t += "* " + it.title + '\n'
+		}
+		return t;
+	}
+	if( p.id == 'xf_validate_local'){
+		def t= '\n[cols="2*", options="header"]\n'
+		t += '!===\n'
+		t += '!Expression!Message\n'
+		t += '!expr1!messag1\n'
+		t += '!expr2!messag2\n'
+		t += '!..!..\n'
+		t +='!===\n'
+		return t
+	}
+ 	return ""
+}%>
+
+
+=== Direct / Serviceentrypoint
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% m.propertyPackages.findAll{ it.name == "directProperties" || it.name=="rpcProperties2" }.each{pp->pp.properties.findAll{it.id!='id' && it.visible!=false}.each {p->
+	%>|${p.title}|+++${getString(p.description,p.title)}+++<% def st=getDirectParameter(p)%>$st
+<%}} %>
+|===

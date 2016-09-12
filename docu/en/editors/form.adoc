@@ -2,14 +2,14 @@
 :figure-caption!:
 :source-highlighter: rouge
 
-== Formeditor ==
+== Formmodeleditor ==
 
 In simpl4 forms are used for interactions with the User within a process(human tasks). +
 Also a link:local:docu-customelements[customelement] exists, so the forms can also be used in websites
 
 
 [.width200]
-.The formeditor overview
+.The formmodeleditor overview
 image::docu/images/forms/formeditor.svg[]
 
 . Form controls

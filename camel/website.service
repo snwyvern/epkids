@@ -653,7 +653,14 @@
         "urivalue_type": "groovy",
         "uriparam_source": "p.adoc",
         "uriparam_destination": "",
-        "uriparam_headerfields": "model:asMap",
+        "uriparam_headerfields": "",
+        "uriparam_assignments": [
+          {
+            "expr": "h.model",
+            "type": "map",
+            "variable": "model"
+          }
+        ],
         "extraParams": null
       },
       "stencil": {

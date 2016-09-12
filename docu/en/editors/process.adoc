@@ -1,3 +1,64 @@
 :linkattrs:
+:figure-caption!:
+:source-highlighter: rouge
 
-image:docu/images/under_construction.svgz[width=350]
+<% def m=delegate.getVariable("model") %>
+
+== Processmodeleditor ==
+
+
+Editor for the Business Process Model and Notation (BPMN).
+
+[.width200]
+.The servicemodeleditor overview
+image::docu/images/process/processeditor.svg[]
+
+. Service controls (bpmn)
+. Staging area, composing the process model
+. Properties
+. Function toolbar
+
+
+<% def getBPMProperties= { p->
+	if( p.id == 'initialParameter'){
+		def t = '\n\n'
+		p.complexItems.each{
+			t += "* " + it.name
+			if( it.id == "type"){
+				t += "( ";
+				def comma='';
+				m.definitions.parametertype_items.each{type->
+					t += comma + type.title
+					comma=", ";
+				}
+				t += " )";
+			}
+			t += "\n";
+		}
+		return t;
+	}
+ 	return ""
+}%>
+
+
+=== Process properties
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils[0].properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description ? p.description : p.title}+++<% def st=getBPMProperties(p)%>$st
+<%} %>
+|===
+
+=== Servicetask
+
+[cols="30,70a"]
+|===
+|Name|Description
+
+<% model.stencils.find{it.id=='CamelTask'}.properties.findAll{it.include != false && it.id!='xf_id'}.each { p ->
+	%>|${p.title}|+++${p.description ? p.description : p.title}+++<% def st=getBPMProperties(p)%>$st
+<%} %>
+|===

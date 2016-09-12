@@ -1,0 +1,81 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+
+== Dataflow
+
+
+The flow of data from webfront to the backend.
+
+
+image::docu/images/dataflow/form.svg[]
+
+==== This are the resulting data.
+
+[source,json]
+.shown in javascript object notation(JSON)
+----
+{
+  firstname: "Manfred",
+  surname: "Sattler"
+}
+
+----
+
+The object will be via rpc  transferred to the backend. +
+The parameter "data"  contains the object.
+
+[source,json]
+----
+rpcParams = {
+	data :{
+		firstname: "Manfred",
+		surname: "Sattler"
+	}
+}
+----
+
+If we have no other parameters , we can also do this.
+[source,json]
+----
+rpcParams = 
+	{
+		firstname: "Manfred",
+		surname: "Sattler"
+	}
+----
+
+
+But in this case , we want send a second parameter.
+[source,json]
+----
+rpcParams = {
+	operation: "insert",
+	data :{
+		firstname: "Manfred",
+		surname: "Sattler"
+	}
+}
+----
+
+==== Serviceentrypoint
+
+image::docu/images/dataflow/parameter.svg[]
+
+. The parameter names. 
+. If this field is empty,  the parameter name is used, under which the value will be  stored.
+. "operation" has a defaultvalue
+. and is therefore optional.
+. The types.
+. The place where the parameter are stored
+
+
+==== Accessing the form data in the building block
+
+image::docu/images/dataflow/block.svg[]
+
+. The complete formadata object should be insert in the database. +
+Because, we have put the "data" parameter in the *properties*, we use "p" to access. +
+"p." is a shorthand for properties, therefore you can also use *properties.data* +
+If the value in the *headers* stored, then you have access with  *h.data* or *headers.data*
