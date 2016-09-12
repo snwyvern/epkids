@@ -493,5 +493,9 @@
     {
         "msgstr": "Workshop content",
         "msgid": "tr.menu.workshop.description"
+    },
+    {
+        "msgstr": "Dataflow",
+        "msgid": "docu.dataflow"
     }
 ]

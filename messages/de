@@ -545,5 +545,9 @@
     {
         "msgstr": "Workshop Inhalt",
         "msgid": "tr.menu.workshop.description"
+    },
+    {
+        "msgstr": "Datenfluß",
+        "msgid": "docu.dataflow"
     }
 ]

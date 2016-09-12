@@ -87,6 +87,16 @@
     "enabled": true
   },
   {
+    "title": "docu.dataflow",
+    "description": "",
+    "uri": "docu/%l/dataflow.adoc",
+    "icon": "icons:timeline",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
     "title": "docu.customelements",
     "description": "",
     "uri": "docu/%l/customelements.html",
