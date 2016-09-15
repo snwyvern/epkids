@@ -41,7 +41,7 @@ This keeps the procedure definition. +
 {sp} +
 {sp} +
 
-[.width700]
+[.width900]
 imagezoom::docu/images/communication/rpc-buildingblock.svg[]
 
 . the procedurename
@@ -64,7 +64,9 @@ Websocket can be used to transmit bidirectional raw data. +
 As opposed to 'WAMP', you must provide the protocol here self.
 
 
-NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" building block. image:docu/images/communication/websocketendpoint.png[]
+NOTE: image:docu/images/communication/websocketendpoint.png[role="left"] 
+Each service entrypoint  defined in the serviceeditor  for use with plain websockets, +
+must begin with a "Websocket" building block. 
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
 link:/repo/docu/examples/websocket/start.html[Demo,window="_blank"]
@@ -88,9 +90,10 @@ imagezoom::docu/images/communication/publish-subscribe.svg[]
 {sp} +
 
 
-NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" building block. image:docu/images/communication/wampendpoint.png[]
-
-The mode of the "WAMP" building block, can be configured as "publisher" or "rpc".
+NOTE: image:docu/images/communication/wampendpoint.png[role="left"]
+Each service entrypoint defined in the serviceeditor  for use with wamp, +
+must begin with a "WAMP" building block. +
+The mode of the "WAMP" building block, can be configured as *"publisher"* or *"rpc"*.
 
 see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[examples,window="_blank"]. +
 link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
