@@ -38,7 +38,7 @@ image::web/images/workshop.svg[]
 ** eines Filters
 ** eines Service
 *** Einbinden der angelegten Entity
-*** Einbinden des Service Entrypoints in die erstellte "Hello World Seite"
+*** Einbinden des Service Aufrufs in die erstellte "Hello World Seite"
 
 === Nächster simpl4 Workshop link:local:contactform[Anmeldung]
 
