@@ -3,9 +3,10 @@
 
 === Workshop Beschreibung ===
 
+Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
+
 image::web/images/workshop.svg[]
 
-Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
 
 ==== Die Tagespunkte ====
 
