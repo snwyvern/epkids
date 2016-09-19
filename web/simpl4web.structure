@@ -47,6 +47,16 @@
         "enabled": true
       },
       {
+        "title": "tr.menu.presentation.business",
+        "description": "",
+        "uri": "web/presentation/business_%l.adoc",
+        "icon": "vaadin-icons:money",
+        "id": "presentation_business",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
         "title": "tr.menu.presentation.features",
         "description": "",
         "uri": "features.html",

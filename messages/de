@@ -549,5 +549,9 @@
     {
         "msgstr": "Datenfluß",
         "msgid": "docu.dataflow"
+    },
+    {
+        "msgstr": "Business",
+        "msgid": "tr.menu.presentation.business"
     }
 ]

@@ -1,0 +1,111 @@
+
+
+== Some use cases
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+
+image:web/presentation/images/contentmgm.svg[width=300]
+
+###
+
+=== Web content management ===
+
+* Structur editor
+* Markdown (Asciidoctor) with dynamic content
+* Workflow with integrated processengine
+* integrated database, access to external databases
+* Versioning
+* Templates
+
+--
+
+
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Integration ===
+
+* Multitude of interfaces (APIs)
+* Messaging with XMPP and JMS
+* simpl4 as Mediator
+
+
+###
+
+image:web/presentation/images/integration.svg[width=300]
+
+--
+
+
+
+'''
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+
+image:web/presentation/images/simpl4-cloud.svg[width=300]
+
+###
+
+=== Cloud  Services ===
+
+* Processes as services
+* Data  services
+
+--
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Officeautomation ===
+
+* MS Office (docx, pptx) and OpenOffice (odt, ods) Templates.
+* Document(e.g. PDF) Generierung
+* Invoice processing
+
+
+###
+
+image:web/presentation/images/officeautomation.svg[width=300]
+
+--
+
+'''
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+
+image:web/presentation/images/printing.svg[width=300]
+
+###
+
+=== Print ===
+
+* Elektronic catalogs
+* Forms
+* with integrated DocBook
+
+--
+
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+
+=== Customized CRM ===
+
+* Customized to your need, no more and no less
+
+
+###
+
+image:web/presentation/images/tailor.svg[width=250]
+
+--
