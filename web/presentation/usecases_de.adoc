@@ -66,7 +66,8 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 === Officeautomation ===
 
 * MS Office (docx, pptx) und OpenOffice (odt, ods) Templates.
-* PDF Generierung
+* Dokumenten(ua. PDF) Generierung
+* Rechnungsverarbeitung
 
 
 ###
