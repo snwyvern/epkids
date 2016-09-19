@@ -271,8 +271,11 @@
     iron-collapse a.asciidoctor-default.simpl-import {
       color: #ff5252 !important;
     }
-		#mainContainer article.scroll-content{
+		#mainContainer > article.scroll-content{
       border-right: 4px solid #cfd8dc;
+		}
+		#mainContainer > aside.scrollbar-track-x{
+			display:none !important;
 		}
 
     /* End iron-collapse*/
