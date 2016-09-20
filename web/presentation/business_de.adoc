@@ -21,7 +21,7 @@ großen Baukasten mit vielen fertigen Bausteinen.
 * Weniger  Abhängigkeit von einem Anbieter oder Prävention vor einem Vendor Lock-in. 
 * Riesiger Pool an freier Software. +
 Schnelle Integration in simpl4.
-* Flexibilität: * *Alles* ist änder- und erweiterbar. +
+* Flexibilität: *Alles* ist änder- und erweiterbar. +
 Fehler können schneller behoben werden.
 ###
 image:web/presentation/images/opensource.svg[width=300]
