@@ -37,21 +37,21 @@
         "enabled": true
       },
       {
-        "title": "tr.menu.presentation.usecases",
-        "description": "",
-        "uri": "web/presentation/usecases_%l.adoc",
-        "icon": "device:widgets",
-        "id": "presentation_usecases",
-        "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
         "title": "tr.menu.presentation.business",
         "description": "",
         "uri": "web/presentation/business_%l.adoc",
         "icon": "vaadin-icons:money",
         "id": "presentation_business",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
+        "title": "tr.menu.presentation.usecases",
+        "description": "",
+        "uri": "web/presentation/usecases_%l.adoc",
+        "icon": "device:widgets",
+        "id": "presentation_usecases",
         "help": "",
         "adoc_include": false,
         "enabled": true
