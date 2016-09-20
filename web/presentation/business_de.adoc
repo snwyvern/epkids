@@ -18,10 +18,12 @@ großen Baukasten mit vielen fertigen Bausteinen.
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Opensource ===
-* Knowhow kommt von uns, Software aus dem riesigen Opensource Softwarepool. +
+* Prävention vor einem Vendor Lock-in.
+* Riesiger Pool an freier Software. +
 Schnelle Integration in simpl4.
 * Weniger  Abhängigkeit von einem Anbieter.
-* *Alles* ist änder- und erweiterbar.
+* Flexibilität: * *Alles* ist änder- und erweiterbar. +
+Fehler können schneller behoben werden.
 ###
 image:web/presentation/images/opensource.svg[width=300]
 --
