@@ -11,11 +11,11 @@ image:web/presentation/images/workplace.svg[width=300]
 
 === Arbeitsplatz ===
 
-* Keine Lizenzgebühren pro Arbeitsplatz
 * Keine Installation am Arbeitsplatz, +
 folglich auch  keine Updates, immer aktuell.
 * Zugriff  von allen Ein/Ausgabegeräten(Browserbasiert) +
-mobiler Arbeitsplatz
+-> mobiler Arbeitsplatz
+* Keine Arbeitsplatz-Lizenzen.
 
 --
 
@@ -28,10 +28,10 @@ mobiler Arbeitsplatz
 
 === Opensource ===
 
-* Weniger Abhängigkeiten.
+* Weniger  Abhängigkeit von einem Anbieter.
 * Einsparungen(Keine Lizenzen für Standardsoftware)
-* Knowhow kommt von uns, Software aus dem riesigen Opensource Softwarepool.
-* Schnelle Integration in simpl4.
+* Knowhow kommt von uns, Software aus dem riesigen Opensource Softwarepool. +
+Schnelle Integration in simpl4.
 * Änder- und erweiterbar.
 
 ###
@@ -53,8 +53,9 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 
 === Entwicklung ===
 
-* Flexible Entwicklungsmodelle
-* Schnelle, Implementierung neuer Anwendungen, durch zero Setup
+* Flexible Entwicklungsmodelle(Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an einen Dritten delegieren).
+* Schnellere Umsetzung neuer Ideen, durch zero Setup
+* Großer Baukasten mit vielen fertigen Bausteinen.
 * BPMN -> Bessere Zusammenarbeit Technik/Fachabteilungen
 
 
@@ -67,10 +68,11 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 
 === Sonstiges ===
 
-* Unabhängig von  Betriebssystemen( ua.Windows) -> durch keine Lizenzkosten für Systemsoftware
+* Unabhängig von  Betriebssystemen( ua.Windows) -> dadurch keine Lizenzkosten für Systemsoftware
 * Geräte-, zeit- und ortsunabhängiger Zugriff auf geografisch verteilte IT-Ressourcen
 * Integration,simpl4 als Mediator
 * In Cloud lauffähig -> Keine Harddware nötig
+* Über 30 Jahre Erfahrung mit Opensource
 
 
 ###
@@ -81,6 +83,7 @@ image:web/presentation/images/officeautomation.svg[width=300]
 
 '''
 
+////
 [ROW,  cell0="justify-center", col0="align-center"]
 --
 
@@ -90,9 +93,6 @@ image:web/presentation/images/printing.svg[width=300]
 
 === Print ===
 
-* Elektronische Kataloge
-* Formulare
-* mit integriertem DocBook
 
 --
 
@@ -104,7 +104,6 @@ image:web/presentation/images/printing.svg[width=300]
 
 === Maßgeschneidertes CRM ===
 
-* Auf Ihren Bedarf zugeschnitten, nicht mehr und nicht weniger
 
 
 ###
