@@ -62,7 +62,7 @@ image:web/presentation/images/costs.svg[width=300]
 image:web/presentation/images/integration.svg[width=300]
 ###
 === Integration ===
-* Integration,simpl4 als Mediator
+* simpl4 als Mediator
 * Geräte-, zeit- und ortsunabhängiger Zugriff auf geografisch verteilte IT-Ressourcen
 --
 '''
@@ -73,35 +73,7 @@ image:web/presentation/images/integration.svg[width=300]
 === Sonstiges ===
 * Über 30 Jahre Erfahrung mit Opensource
 ###
-image:web/presentation/images/costs.svg[width=300]
+image:web/presentation/images/etc.svg[width=300]
 --
 '''
 
-////
-[ROW,  cell0="justify-center", col0="align-center"]
---
-
-image:web/presentation/images/printing.svg[width=300]
-
-###
-
-=== Print ===
-
-
---
-
-'''
-
-
-[ROW,swap=1, cell1="justify-center", col1="align-center"]
---
-
-=== Maßgeschneidertes CRM ===
-
-
-
-###
-
-image:web/presentation/images/tailor.svg[width=250]
-
---
