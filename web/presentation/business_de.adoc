@@ -6,7 +6,7 @@
 image:web/presentation/images/simpl4-cloud.svg[width=300]
 ###
 === Entwicklung ===
-* Flexible Entwicklungsmodelle(Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an einen Dritten delegieren).
+* Flexible Entwicklungsmodelle(Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
 * Schnellere Umsetzung neuer Ideen, durch zero Setup und +
 großen Baukasten mit vielen fertigen Bausteinen.
 * BPMN -> Bessere Zusammenarbeit Technik/Fachabteilungen
@@ -62,8 +62,9 @@ image:web/presentation/images/costs.svg[width=300]
 image:web/presentation/images/integration.svg[width=300]
 ###
 === Integration ===
-* simpl4 als Mediator
-* Geräte-, zeit- und ortsunabhängiger Zugriff auf geografisch verteilte IT-Ressourcen
+* Einfache Integration in bestehende Systemlandschaften.
+* simpl4 als Mediator.
+* Zugriff auf geografisch verteilte IT-Ressourcen.
 --
 '''
 
