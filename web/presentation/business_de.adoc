@@ -38,7 +38,7 @@ image:web/presentation/images/workplace.svg[width=300]
 
 * Keine Installation am Arbeitsplatz, +
 folglich auch  keine Updates ->  immer aktuell.
-* Zugriff  von allen Ein/Ausgabegeräten(Browserbasiert) +
+* Zugriff  von vielen Ein/Ausgabegeräten(browserbasiert) +
 -> mobiler Arbeitsplatz
 --
 '''
@@ -64,8 +64,8 @@ image:web/presentation/images/integration.svg[width=300]
 ###
 === Integration ===
 * Einfache Integration in bestehende Systemlandschaften.
-* simpl4 als Mediator.
-* Zugriff auf geografisch verteilte IT-Ressourcen.
+* simpl4 kann aber auch als Mediator fungieren.
+* Zugriff auf verteilte IT-Ressourcen.
 --
 '''
 
