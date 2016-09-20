@@ -48,7 +48,7 @@ folglich auch  keine Updates ->  immer aktuell.
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Kosten ===
-* Keine Kosten durch Systemsoftware, da unabhängig vom Betriebssystemen.
+* Keine Kosten durch Systemsoftware, da unabhängig von Betriebssystemen.
 * Keine Arbeitsplatz-Lizenzen.
 * Keine Lizenzgebühren für simpl4
 * Cloud ready -> Keine Harddware nötig
