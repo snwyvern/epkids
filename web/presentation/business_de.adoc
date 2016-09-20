@@ -18,10 +18,9 @@ großen Baukasten mit vielen fertigen Bausteinen.
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Opensource ===
-* Prävention vor einem Vendor Lock-in.
+* Weniger  Abhängigkeit von einem Anbieter oder Prävention vor einem Vendor Lock-in. 
 * Riesiger Pool an freier Software. +
 Schnelle Integration in simpl4.
-* Weniger  Abhängigkeit von einem Anbieter.
 * Flexibilität: * *Alles* ist änder- und erweiterbar. +
 Fehler können schneller behoben werden.
 ###
