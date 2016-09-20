@@ -12,7 +12,7 @@ image:web/presentation/images/workplace.svg[width=300]
 === Arbeitsplatz ===
 
 * Keine Installation am Arbeitsplatz, +
-folglich auch  keine Updates, immer aktuell.
+folglich auch  keine Updates ->  immer aktuell.
 * Zugriff  von allen Ein/Ausgabegeräten(Browserbasiert) +
 -> mobiler Arbeitsplatz
 * Keine Arbeitsplatz-Lizenzen.
@@ -28,11 +28,11 @@ folglich auch  keine Updates, immer aktuell.
 
 === Opensource ===
 
-* Weniger  Abhängigkeit von einem Anbieter.
-* Einsparungen(Keine Lizenzen für Standardsoftware)
 * Knowhow kommt von uns, Software aus dem riesigen Opensource Softwarepool. +
 Schnelle Integration in simpl4.
-* Änder- und erweiterbar.
+* Weniger  Abhängigkeit von einem Anbieter.
+* Einsparungen(Keine Lizenzen für Standardsoftware)
+* *Alles* ist änder- und erweiterbar.
 
 ###
 
@@ -68,7 +68,7 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 
 === Sonstiges ===
 
-* Unabhängig von  Betriebssystemen( ua.Windows) -> dadurch keine Lizenzkosten für Systemsoftware
+* Unabhängig von  Betriebssystemen( ua.Windows) -> dadurch keine(weniger) Kosten für Systemsoftware.
 * Geräte-, zeit- und ortsunabhängiger Zugriff auf geografisch verteilte IT-Ressourcen
 * Integration,simpl4 als Mediator
 * In Cloud lauffähig -> Keine Harddware nötig
