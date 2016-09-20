@@ -6,10 +6,10 @@
 image:web/presentation/images/simpl4-cloud.svg[width=300]
 ###
 === Entwicklung ===
-* Flexible Entwicklungsmodelle(Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
+* Flexible Entwicklungsmodelle (Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
 * Schnellere Umsetzung neuer Ideen, durch zero Setup und +
-großen Baukasten mit vielen fertigen Bausteinen.
-* BPMN -> Bessere Zusammenarbeit Technik/Fachabteilungen
+großem Baukasten mit vielen fertigen Bausteinen.
+* BPMN -> Einfach lesbar und bessere Zusammenarbeit Technik/Fachabteilungen
 --
 '''
 
@@ -37,8 +37,8 @@ image:web/presentation/images/workplace.svg[width=300]
 === Arbeitsplatz ===
 
 * Keine Installation am Arbeitsplatz, +
-folglich auch  keine Updates ->  immer aktuell.
-* Zugriff  von vielen Ein/Ausgabegeräten(browserbasiert) +
+folglich auch keine Updates ->  immer aktuell.
+* Zugriff von vielen Ein/Ausgabegeräten (browserbasiert) +
 -> mobiler Arbeitsplatz
 --
 '''
@@ -64,7 +64,7 @@ image:web/presentation/images/integration.svg[width=300]
 ###
 === Integration ===
 * Einfache Integration in bestehende Systemlandschaften.
-* simpl4 kann aber auch als Mediator fungieren.
+* simpl4 kann auch als Mediator fungieren.
 * Zugriff auf verteilte IT-Ressourcen.
 --
 '''
@@ -73,7 +73,9 @@ image:web/presentation/images/integration.svg[width=300]
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Sonstiges ===
-* Über 30 Jahre Erfahrung mit Opensource
+* Über 30 Jahre Erfahrung
+** mit Opensource Software
+** mit individuellen Softwareprojekten 
 ###
 image:web/presentation/images/etc.svg[width=300]
 --

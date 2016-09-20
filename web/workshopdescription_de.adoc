@@ -10,7 +10,7 @@ image::web/images/workshop.svg[]
 
 ==== Die Tagespunkte ====
 
-* simpl4 Installieren
+* simpl4 installieren
 * Erklärung wichtiger simpl4 Begrifflichkeiten und Formulierungen 
 * Grundlegendes und Wichtiges zur und über BPMN
 ** Was ist die BPMN

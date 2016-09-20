@@ -3,44 +3,44 @@
 
 === Workshop Beschreibung ===
 
-Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
+The workshop offers a compact introduction in the work with simpl4, a Open-Source-developing- and serivceplatform for HTML5-applications with a process- and serviceengine.
 
 image::web/images/workshop.svg[]
 
 
-==== Die Tagespunkte ====
+==== The day points ====
 
-* simpl4 Installieren
-* Erklärung wichtiger simpl4 Begrifflichkeiten und Formulierungen 
-* Grundlegendes und Wichtiges zur und über BPMN
-** Was ist die BPMN
-** Wozu dient sie ?
-* Die Prozessengine
-** Was macht sie in simpl4
-** BPMN und die Process Engine
-** Wann macht die Verwendung der Prozess Engine Sinn, und wann weniger ?
-* Das simpl4 Konzept und Zusammenhänge
-* Erklärung der Serviceengine
-** Service Modell
+* installing simpl4
+* Explaining of important simpl4 concepts an formulations 
+* Basics and important to and about BPMN
+** What is BPMN
+** What is it's purpose ?
+* The process engine
+** What is it doing in simpl4
+** BPMN and the process engine
+** When does the usage of the process engine make sense, and when less ?
+* The simpl4 concept and contexts
+* Explainig the serviceengine
+** Service model
 ** Service Entrypoint
-** Exchange und Message
-** Beispiel eines Service Modells zur Erstellung PDF (Katalog Kundenprojekt)
-* Analyse eines beispielhaften Live-Bestellprozesses
-** Der umgesetzte Bestellprozess in der Entwicklungsumgebung im Detail
+** Exchange and Message
+** Example of a service model for the creation of a PDF (Catalog customer project)
+* Analysis of a exemplary live-order process
+** The implemented order process in the developing environment in detail
 *** Properties
-*** Aufrufe (RPC, etc.)
+*** Calls (RPC, etc.)
 *** Scripting
 
-* Erste Schritte in simpl4 in der Praxis
-* Anlage
-** einer "Hello Worldseite" mit adoc
-** einer Entität (mit Feldpausibilitäten, Zuodnung Enumerations,...)
-** eines Filters
-** eines Service
-*** Einbinden der angelegten Entity
-*** Einbinden des Service Aufrufs in die erstellte "Hello World Seite"
+* First steps in simpl4 in practice
+* Creating
+** of a "Hello World site" with adoc
+** of a entity (with field pausibilities, assigning enumerations,...)
+** of a filters
+** of a Service
+*** Integreating the created entity
+*** Integreating the service call into the ctreated "Hello World Site"
 
-=== Nächster simpl4 Workshop link:local:contactform[Anmeldung]
+=== Next simpl4 Workshop link:local:contactform[Registration]
 
 ////
 * *Wann:* Sonntag den 04.09.2016 von 11.00Uhr bis 18.00Uhr
