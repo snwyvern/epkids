@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   inkscape:version="0.91+devel r"
+   inkscape:version="0.91 r13725"
    xml:space="preserve"
    width="606.99152"
    height="156.36499"
@@ -19,7 +19,7 @@
    sodipodi:docname="banner1.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath22"><path
@@ -15309,8 +15309,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4069389"
-     inkscape:cx="111.94515"
+     inkscape:zoom="1.3929354"
+     inkscape:cx="303.49576"
      inkscape:cy="78.182495"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -15323,18 +15323,8 @@
        inkscape:connector-curvature="0"
        id="path14"
        style="opacity:1;fill:#cfd8dc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0889161"
-       d="M -11.545376,490.82002 H 443.69826 V 608.04514 H -11.545376 Z" /><flowRoot
-       xml:space="preserve"
-       id="flowRoot27099"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:9.33333302px;line-height:100%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(143.59979,114.73615)"><flowRegion
-         id="flowRegion27101"><rect
-           id="rect27103"
-           width="282.01877"
-           height="78.875366"
-           x="105.8413"
-           y="200.90515" /></flowRegion><flowPara
-         id="flowPara27105" /></flowRoot><g
+       d="M -11.545376,490.82002 H 443.69826 V 608.04514 H -11.545376 Z" />
+<g
        id="g8582"
        transform="matrix(0.29971038,0,0,0.29971038,412.25476,339.82704)"><text
          transform="scale(1,-1)"

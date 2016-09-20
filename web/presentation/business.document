@@ -1,0 +1,662 @@
+[sw]
+	type = sw.document
+--
+{
+  "resourceId": "oryx_6D2EC19E-36E1-4AFC-8463-C131EEEA74AA",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "${diagramname}",
+    "db_page.margin.top": "5mm",
+    "db_body.margin.top": "60mm",
+    "db_region.before.extent": "40mm",
+    "db_body.margin.bottom": "20mm",
+    "db_region.after.extent": "20mm",
+    "db_page.margin.bottom": "5mm",
+    "db_page.margin.inner": "20mm",
+    "db_page.margin.outer": "20mm",
+    "db_table.frame.border.color": "#777777",
+    "db_table.frame.border.thickness": "0.4pt",
+    "db_table.frame.border.style": "solid",
+    "db_table.cell.border.color": "#777777",
+    "db_table.cell.border.thickness": "0.4pt",
+    "db_table.cell.border.style": "solid",
+    "db_informal.object.space.before": "0.5em",
+    "db_informal.object.space.after": "0.5em",
+    "db_generate.section.toc.level": "3",
+    "db_extra.params": null,
+    "db_paper.type": "A4",
+    "db_page.orientation": "portrait",
+    "db_body.font.family": "Helvetica",
+    "db_body.font.master": "8"
+  },
+  "stencil": {
+    "id": "XDocument"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_E8D3765E-297E-4685-959C-F2A41FA48600",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_A9B35584-8570-4EB4-AFD3-0BEE207982C5",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "\n\nimage:repo:simpl4-cloud.svg[width=180]\n\nimage:repo:web/images/banner1.svg[width=150]\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_FF8DB8A9-1820-421E-A42D-0994F08E91F4",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "middle",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "=== Entwicklung ===\n\n* Flexible Entwicklungsmodelle(Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).\n* Schnellere Umsetzung neuer Ideen, durch zero Setup und +\ngroßen Baukasten mit vielen fertigen Bausteinen.\n* BPMN -> Bessere Zusammenarbeit Technik/Fachabteilungen\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 333,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 183,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 388,
+          "y": 228
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 124
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_705B1EAA-F2B1-4D22-B3AE-036967B7156A",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_6F48238C-005B-4BA6-B139-6B8F3D97578C",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "middle",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "=== Opensource ===\n* Weniger  Abhängigkeit von einem Anbieter oder Prävention vor einem Vendor Lock-in.\n* Riesiger Pool an freier Software. +\nSchnelle Integration in simpl4.\n* Flexibilität: *Alles* ist änder- und erweiterbar. +\nFehler können schneller behoben werden.\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_C60694C8-9033-4556-83A1-722219109AB6",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "\nimage:repo:web/presentation/images/opensource.svg[width=160]",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 333,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 183,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 388,
+          "y": 342
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 238
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3ED95758-AEB9-4B2F-862B-B10567706BC7",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_0C16E3A0-017C-4E42-8D05-C627FF2530BB",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "image:repo:web/presentation/images/workplace.svg[width=160]",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_E432603B-01C2-415B-9BC8-4C97E0378249",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "middle",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "=== Arbeitsplatz ===\n\n* Keine Installation am Arbeitsplatz, +\nfolglich auch  keine Updates ->  immer aktuell.\n* Zugriff  von vielen Ein/Ausgabegeräten(browserbasiert) +\n-> mobiler Arbeitsplatz",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 333,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 183,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 388,
+          "y": 456
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 352
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3F7237F8-4B13-486E-8F18-B013BC555493",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_E11C54EE-5011-4ADE-8D73-A971D3360178",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "middle",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "=== Kosten ===\n* Keine Kosten durch Systemsoftware, da unabhängig von Betriebssystemen.\n* Keine Arbeitsplatz-Lizenzen.\n* Keine Lizenzgebühren für simpl4\n* Cloud ready -> Keine Harddware nötig\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_266BD107-F6B7-4228-B18B-9AC7A46B40F3",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "image:repo:web/presentation/images/costs.svg[width=160]\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 333,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 183,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 388,
+          "y": 570
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 466
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_22D49130-8B8B-45D6-99FE-D89122C8C335",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_1F947800-1F7B-4A08-97AC-C40220C14430",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "middle",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "=== Integration ===\n* Einfache Integration in bestehende Systemlandschaften.\n* simpl4 kann aber auch als Mediator fungieren.\n* Zugriff auf verteilte IT-Ressourcen.\n--\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 230,
+          "y": 684
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 580
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_AEA32E92-CC1C-4384-A710-40D12FD15919",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "body",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "none",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_E69F1522-3602-4278-8FC5-3E97B580DBD8",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "////\nimage:repo:web/presentation/images/integration.svg[width=160]\n////\n\n=== Sonstiges ===\n* Über 30 Jahre Erfahrung mit Opensource\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 230,
+          "y": 798
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 694
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_A4D75458-768F-4E78-BA3F-04AA38FD3B24",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": true,
+        "description": "",
+        "bordercolor": "#000000",
+        "xf_position": "header",
+        "xf_pages": "first",
+        "xf_colsep": false,
+        "xf_frame": "all",
+        "xf_need": "",
+        "xf_keeptogether": "none"
+      },
+      "stencil": {
+        "id": "Row"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_5DC49C56-8E34-4CE8-ACEF-D15722AFA73A",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_valign": "top",
+            "xf_colsep": false,
+            "xf_padding": false,
+            "xf_enabled": true,
+            "xf_id": "",
+            "description": "",
+            "bordercolor": "#000000",
+            "xf_type": "markdown",
+            "xf_markdown": "image:repo:web/images/logoneu.svg[width=150]\n",
+            "xf_syntax": "asciidoctor",
+            "xf_groovymarkup": null,
+            "xf_html": null
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 84
+            },
+            "upperLeft": {
+              "x": 25,
+              "y": 20
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 230,
+          "y": 114
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 10
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "document",
+    "namespace": "http://b3mn.org/stencilset/xdocuments#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
