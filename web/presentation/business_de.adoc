@@ -9,7 +9,7 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 * Flexible Entwicklungsmodelle (Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
 * Schnellere Umsetzung neuer Ideen, durch zero Setup und +
 großem Baukasten mit vielen fertigen Bausteinen.
-* BPMN -> Einfach lesbar und bessere Zusammenarbeit Technik/Fachabteilungen
+* BPMN - ein gemeinsamer Nenner / eine gemeinsame Sprache für Technik und Fachabteilung
 --
 '''
 

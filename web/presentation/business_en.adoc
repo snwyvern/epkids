@@ -1,111 +1,81 @@
 
-
-== Some use cases
-
+== Business Features
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-
-image:web/presentation/images/contentmgm.svg[width=300]
-
-###
-
-=== Web content management ===
-
-* Structur editor
-* Markdown (Asciidoctor) with dynamic content
-* Workflow with integrated processengine
-* integrated database, access to external databases
-* Versioning
-* Templates
-
---
-
-
-'''
-
-
-[ROW,swap=1, cell1="justify-center", col1="align-center"]
---
-
-=== Integration ===
-
-* Multitude of interfaces (APIs)
-* Messaging with XMPP and JMS
-* simpl4 as Mediator
-
-
-###
-
-image:web/presentation/images/integration.svg[width=300]
-
---
-
-
-
-'''
-
-[ROW,  cell0="justify-center", col0="align-center"]
---
-
 image:web/presentation/images/simpl4-cloud.svg[width=300]
-
 ###
-
-=== Cloud  Services ===
-
-* Processes as services
-* Data  services
-
+=== Developement ===
+* Flexible developing models (if wanted, you can possibly take over the further developing, or delegate to third).
+* Faster implementation of new ideas, because of "zero setup" and +
+a big construction kit of ready building blocks.
+* BPMN -> a common denominator / a common language for Technology and Policy Department
 --
 '''
+
 
 
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
-
-=== Officeautomation ===
-
-* MS Office (docx, pptx) and OpenOffice (odt, ods) Templates.
-* Document(e.g. PDF) Generierung
-* Invoice processing
-
-
+=== Opensource ===
+* Less dependence on one supplier, or prevention of a vendor lock-in. 
+* Uge pool of free software. +
+faster integration with simpl4.
+* Flexibility: *All* is changeable an extentable. +
+errors can faster be fixed.
 ###
-
-image:web/presentation/images/officeautomation.svg[width=300]
-
+image:web/presentation/images/opensource.svg[width=300]
 --
-
 '''
+
+
 
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-
-image:web/presentation/images/printing.svg[width=300]
-
+image:web/presentation/images/workplace.svg[width=300]
 ###
+=== Working place ===
 
-=== Print ===
-
-* Elektronic catalogs
-* Forms
-* with integrated DocBook
-
+* No installation at the working place, +
+therefore also no updates ->  allways up to date.
+* Access from many in-/output devices (browser based) +
+-> mobile working place
 --
+'''
 
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Costs ===
+* No costs by system software, because of independence of operation systems.
+* No working place -Licences.
+* No licence fee for simpl4
+* Cloud ready -> No harddware neccecary
+###
+image:web/presentation/images/costs.svg[width=300]
+--
+'''
+
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/integration.svg[width=300]
+###
+=== Integration ===
+* Easy Integration into existing system environment.
+* simpl4 is also able to function as a mediator.
+* Access to shared IT-resources.
+--
 '''
 
 
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
-
-=== Customized CRM ===
-
-* Customized to your need, no more and no less
-
-
+=== Others ===
+* Over 30 years experience with
+** Opensource Software
+** individal software projects 
 ###
-
-image:web/presentation/images/tailor.svg[width=250]
-
+image:web/presentation/images/etc.svg[width=300]
 --
+'''
