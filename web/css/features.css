@@ -44,6 +44,9 @@
   padding-right: 2px;
   border-bottom: 10px solid #607d8b;
 }
+#maintext {
+  padding-left: 64px !important;
+}
 #maintext ul li {
   list-style: none;
 }
@@ -51,8 +54,22 @@
   padding: 8px;
   font-style: normal;
   font-size: 18px;
-  border-left: 2px solid #CFD8DC;
+  border-left: 0px solid #CFD8DC;
 }
 #maintext i {
   padding: 10px;
+	top:-1px;
+	font-size:1.5em;
+}
+@media screen and (max-width: 640px) {
+	#maintext ul li {
+		padding: 8px;
+		font-size: 14px;
+	}
+	#maintext {
+		padding-left: 16px !important;
+	}
+	#maintext i {
+		top:2px;
+	}
 }
