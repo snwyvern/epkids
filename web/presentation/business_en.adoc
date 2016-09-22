@@ -1,8 +1,12 @@
 
-== Business Features
+
+{sp} +
+{sp} +
+{sp} +
+
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/simpl4-cloud.svg[width=300]
+image:web/presentation/images/business_devel.svg[width=300]
 ###
 === Developement ===
 * Flexible developing models (if wanted, you can possibly take over the further developing, or delegate to third).

@@ -1,0 +1,37 @@
+<div>
+  <dom-module id="front-page">
+    <link rel="import" type="css" href="features.css" />
+    <template>
+      <div style="color:white;" class="github-fork-ribbon-wrapper right">
+      </div>
+      <div id="frontwrapper" style="width:100%;">
+        <div class="page">
+          <div elevation="0" style="padding-top:10px;border-bottom: 15px solid #607d8b;" class="imagewrapper flex">
+            <img style="width:100%;" src="web/images/bannerb.svg" />
+            <!--div class="headeroverlay">
+            <simpl-import class="headertext" url="[[getFileName('messages')]]"></simpl-import>
+						</div-->
+          </div>
+
+          <div class="grid row">
+              <paper-material style="" elevation="0" class="grid column flex card">
+                <simpl-import url="{{getFileName('web/presentation/business')}}"></simpl-import>
+              </paper-material>
+            </div>
+        </div>
+      </div>
+    </template>
+    <script>
+      Polymer( {
+        is: 'front-page',
+        behaviors: [ TranslationsBehavior, WhitespaceBehavior ],
+        getFileName: function( name ) {
+          var lang = Simpl4.Cache.getItem( "lang" );
+          return name + "_" + lang + ".adoc";
+        }
+      } );
+
+    </script>
+  </dom-module>
+  <front-page class="flex layout horizontal" />
+</div>
