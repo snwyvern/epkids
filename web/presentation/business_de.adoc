@@ -18,7 +18,7 @@ großem Baukasten mit vielen fertigen Bausteinen.
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Opensource ===
-* Weniger  Abhängigkeit von einem Anbieter,
+* Weniger  Abhängigkeit von einem Anbieter.
 * Prävention vor einem Vendor Lock-in. 
 * Riesiger Pool an freier Software. +
 Schnelle Integration in simpl4.
