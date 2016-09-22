@@ -17,10 +17,11 @@ a big construction kit of ready building blocks.
 [ROW,swap=1, cell1="justify-center", col1="align-center"]
 --
 === Opensource ===
-* Less dependence on one supplier, or prevention of a vendor lock-in. 
-* Uge pool of free software. +
-faster integration with simpl4.
-* Flexibility: *All* is changeable an extentable. +
+* Less dependence on one supplier.
+* Prevention of a vendor lock-in. 
+* Huge pool of free software. +
+fast integration in simpl4.
+* Flexibility: *All* is changeable and extentable. +
 errors can faster be fixed.
 ###
 image:web/presentation/images/opensource.svg[width=300]
