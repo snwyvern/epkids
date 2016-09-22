@@ -178,9 +178,22 @@
         padding-right: 12px;
       }
     }
+    simpl-mmenu ::-webkit-input-placeholder { /*@@@MS Nach stylen muss das Blank wieder eingesetzt werden*/
+      color: #CFD8DC !important;
+    }
+    simpl-mmenu ::-moz-placeholder {
+      color: #CFD8DC !important;
+    }
+    simpl-mmenu :-ms-input-placeholder {
+      color: #CFD8DC !important;
+    }
+		.polymer-theme .mm-navbar.simpl-mmenu .mm-title.simpl-mmenu {
+			color: #ff5252 !important;
+			font-size: 1.1em;
+		}
     /*greyblue menu END*/
-
     /*collaps-item open*/
+    
     paper-collapse-item.asciidoctor iron-collapse.content.paper-collapse-item {
       color: #455a64;
       border: 1px solid #455a64;
@@ -196,8 +209,8 @@
       height: 100%;
       max-width: 1200px;
     }
-
     /*Messages overlay*/
+    
     .headeroverlay {
       padding-left: 10px;
       position: absolute;
@@ -271,13 +284,12 @@
     iron-collapse a.asciidoctor-default.simpl-import {
       color: #ff5252 !important;
     }
-		#mainContainer > article.scroll-content{
+    #mainContainer > article.scroll-content {
       border-right: 2px solid #F0F3F4;
-		}
-		#mainContainer > aside.scrollbar-track-x{
-			display:none !important;
-		}
-
+    }
+    #mainContainer > aside.scrollbar-track-x {
+      display: none !important;
+    }
     /* End iron-collapse*/
 
   </style>
