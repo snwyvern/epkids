@@ -1,9 +1,12 @@
 
 
-== Business Features
+{sp} +
+{sp} +
+{sp} +
+
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/simpl4-cloud.svg[width=300]
+image:web/presentation/images/business_devel.svg[width=300]
 ###
 === Entwicklung ===
 * Flexible Entwicklungsmodelle (Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
