@@ -32,3 +32,32 @@
 .imagewrapper {
   position: relative;
 }
+#list1 {
+  xackground: #8fa4ad;
+  color: #727272;
+}
+#frontwrapper /deep/ hr.asciidoctor-default {
+  border: solid #607d8b;
+  border-width: 2px 0 0;
+}
+#list1 {
+  padding-right: 2px;
+  ;
+  border-bottom: 10px solid #607d8b;
+}
+#list1 ul {
+  xidth: 70%;
+  font-size: 18px;
+}
+#list1 ul li {
+  list-style: none;
+}
+#list1 ul li {
+  padding: 8px;
+  font-style: normal;
+  xont-size: 16px;
+  border-left: 2px solid #303e45;
+}
+#list1 i {
+  padding: 10px;
+}

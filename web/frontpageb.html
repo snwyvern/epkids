@@ -2,22 +2,30 @@
   <dom-module id="front-page">
     <link rel="import" type="css" href="features.css" />
     <template>
-      <div style="color:white;" class="github-fork-ribbon-wrapper right">
-      </div>
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
-          <div elevation="0" style="padding-top:10px;border-bottom: 15px solid #607d8b;" class="imagewrapper flex">
-            <img style="width:100%;" src="web/images/bannerb.svg" />
-            <!--div class="headeroverlay">
-            <simpl-import class="headertext" url="[[getFileName('messages')]]"></simpl-import>
-						</div-->
+          <div elevation="0" style="padding-top:10px;border-bottom: 10px solid #607d8b;" class="imagewrapper flex">
+            <img style="width:100%;" src="web/images/bannerb.svgz" />
           </div>
 
+          <div id="list1">
+            <ul>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Flexibel zu handhabendes Business Prozess Management System, kombiniert mit Webentwicklung.</li>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Es kann auf einen großen Baukasten mit vielen fertigen, aufeinander abgestimmten Bausteinen zurückgriffen werden.</li>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Durch das Opensource Modell von simpl4 ergeben sich viele Einsparmöglichkeiten und ein hoher Investitionsschutz.</li>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Die moderne Architektur mit responsivem Web-Frontend , wie geschaffen für die Cloud, bietet weiteres Einsparpotential.</li>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Das HTML5-Frontend ist sehr gut für mobile Arbeitsplätze mit Displays jeder Größenordnung geeignet. </li>
+              <li><i class="fa fa-check fa-2y" aria-hidden="true"></i>Einfache Integration in bestehende Systemlandschaften.</p>
+              </li>
+            </ul>
+          </div>
+
+
           <div class="grid row">
-              <paper-material style="" elevation="0" class="grid column flex card">
-                <simpl-import url="{{getFileName('web/presentation/business')}}"></simpl-import>
-              </paper-material>
-            </div>
+            <paper-material style="" elevation="0" class="grid column flex card">
+              <simpl-import url="{{getFileName('web/presentation/business')}}"></simpl-import>
+            </paper-material>
+          </div>
         </div>
       </div>
     </template>
