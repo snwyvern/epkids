@@ -5,7 +5,7 @@
       <div id="frontwrapper" style="width:100%;">
         <div class="page">
           <div elevation="0" style="padding-top:10px;border-bottom: 10px solid #607d8b;" class="imagewrapper flex">
-            <img style="width:100%;" src="web/images/bannerb.svgz" />
+            <img style="width:100%;" src$="[[getImageName(lang)]]" />
           </div>
 
           <template is="dom-if" if="[[isLang(lang,'de')]]">
@@ -53,7 +53,9 @@
         },
         isLang: function( lang, _lang ) {
           return this.lang == _lang;
-
+        },
+        getImageName: function( lang ) {
+          return "web/images/bannerb_"+this.lang+".svgz";
         },
         getFileName: function( name ) {
           var lang = Simpl4.Cache.getItem( "lang" );
