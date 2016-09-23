@@ -64,7 +64,7 @@ image:web/presentation/images/costs.svg[width=300]
 
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/integration.svg[width=300]
+image:web/presentation/images/integration.svg[width=350]
 ###
 === Integration ===
 * Einfache Integration in bestehende Systemlandschaften.
