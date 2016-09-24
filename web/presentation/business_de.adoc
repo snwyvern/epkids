@@ -6,7 +6,7 @@
 
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/business_devel.svg[width=300]
+image:web/presentation/images/business_devel.svgz[width=300]
 ###
 === Entwicklung ===
 * Flexible Entwicklungsmodelle (Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
@@ -28,7 +28,7 @@ Schnelle Integration in simpl4.
 * Flexibilität: *Alles* ist änder- und erweiterbar. +
 Fehler können schneller behoben werden.
 ###
-image:web/presentation/images/opensource.svg[width=300]
+image:web/presentation/images/opensource.svgz[width=300]
 --
 '''
 
@@ -36,7 +36,7 @@ image:web/presentation/images/opensource.svg[width=300]
 
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/workplace.svg[width=300]
+image:web/presentation/images/workplace.svgz[width=300]
 ###
 === Arbeitsplatz ===
 
@@ -57,14 +57,14 @@ folglich auch keine Updates ->  immer aktuell.
 * Keine Lizenzgebühren für simpl4
 * Cloud ready -> Keine Harddware nötig
 ###
-image:web/presentation/images/costs.svg[width=300]
+image:web/presentation/images/costs.svgz[width=300]
 --
 '''
 
 
 [ROW,  cell0="justify-center", col0="align-center"]
 --
-image:web/presentation/images/integration.svg[width=350]
+image:web/presentation/images/integration.svgz[width=350]
 ###
 === Integration ===
 * Einfache Integration in bestehende Systemlandschaften.
@@ -81,7 +81,7 @@ image:web/presentation/images/integration.svg[width=350]
 ** mit Opensource Software
 ** mit individuellen Softwareprojekten 
 ###
-image:web/presentation/images/etc.svg[width=300]
+image:web/presentation/images/etc.svgz[width=300]
 --
 '''
 
