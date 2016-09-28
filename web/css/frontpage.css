@@ -42,8 +42,10 @@
 }
 #maintext {
   padding-right: 2px;
-  background: #8FA4AD;
-  color: white;
+  /*background: #8FA4AD;
+  color: white;*/
+    background: #cfd8dc;
+    color: #040404;
   border-bottom: 10px solid #607d8b;
 }
 #maintext {
