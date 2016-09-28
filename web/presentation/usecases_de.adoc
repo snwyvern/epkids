@@ -36,7 +36,7 @@ image:web/presentation/images/contentmgm.svg[width=300]
 
 ###
 
-image:web/presentation/images/integration.svg[width=350]
+image:web/presentation/images/integration.svgz[width=350]
 
 --
 
