@@ -15,6 +15,7 @@
           console.log( "Tap:", e.detail );
 					if( e.detail.valid === true){
           	this.sendRequest( e.detail );
+						this.$.formId.setData("");
 					}
         },
         sendRequest: function( data ) {
