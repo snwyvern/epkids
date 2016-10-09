@@ -8,9 +8,9 @@ The container should run completely without a internet connection. +
 Means all required resources must be included. +
 No resources should be obtained with maven at runtime. +
 
-On github is a repository with all the things described here.
+On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here.
 
-==== What is a link:https://karaf.apache.org[apache karaf, window="_blank"]?
+==== What is link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
 .apache karaf is a osgi container and more.
 image::web/images/karaf_architecture.png[width=50%]
@@ -39,6 +39,9 @@ Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should b
 
 
 ==== Now lets us start with creating the flink feature
+
+A common thing, in every directory where there is something to do,  is a *build.sh* command provided. +
+This command does all the necessary things.
 
 .a pom file is created with the maven "karaf-feature-archetype"
 [source,bash]
@@ -107,7 +110,7 @@ mvn archetype:generate \
 
 {sp} +
 
-As you can see flink uses scala and akka. +
+As you can see flink uses link:http://www.scala-lang.org[scala, window="_blank"] and link:http://akka.io/[akka, window="_blank"]. +
 Some transitive dependencies must be excluded.
 
 .This is now the finished pom. + 
@@ -124,7 +127,7 @@ Some transitive dependencies must be excluded.
   <description></description>
 
   <dependencies>
-    <dependency>
+    <dependency> <!--1-->
       <groupId>org.simpl4.addons</groupId>
       <artifactId>FlinkService</artifactId>
       <version>1.0.0</version>
@@ -143,7 +146,7 @@ Some transitive dependencies must be excluded.
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-osgi_2.10</artifactId>
       <version>2.3.7</version>
-      <exclusions> <!--1-->
+      <exclusions> <!--2-->
         <exclusion>
           <groupId>org.osgi</groupId>
           <artifactId>org.osgi.core</artifactId>
@@ -194,7 +197,7 @@ Some transitive dependencies must be excluded.
         <configuration>
           <startLevel>50</startLevel>
           <aggregateFeatures>true</aggregateFeatures>
-          <resolver></resolver> <!--2-->
+          <resolver></resolver> <!--3-->
           <checkDependencyChange>true</checkDependencyChange>
           <failOnDependencyChange>false</failOnDependencyChange>
           <logDependencyChanges>true</logDependencyChanges>
@@ -205,8 +208,9 @@ Some transitive dependencies must be excluded.
   </build>
 </project>
 ----
-<1> exclude the osgi core and the osgi compendium bundle
-<2> this must be empty
+<1> The creation of this artifact is described below.
+<2> exclude the osgi core and the osgi compendium bundle
+<3> this must be empty
 
 .now we create the flink-feature and put it in the local maven repository
 [source,bash]
@@ -336,3 +340,17 @@ mvn install
 <1> This our flink feature , it comes from the local maven repositiory, see above.
 <2> This are all the features contained in the original karaf distribution.
 <3> plus the flink feature
+
+{sp} +
+
+
+==== Now we create the flink service
+
+Since apache flink does not deliver osgi jars, this has to be done itself. +
+In addition, an OSGI Activator must be written, which starts the flink components (jobmanager, taskmanager, webmonitor) +
+and also creates the link:http://akka.io/[akka, window="_blank"] system with a osgi classloader.
+Luckily, akka provides a link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[framework, window="_blank"]
+
+This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
+
+The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "FlinkService"
