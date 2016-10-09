@@ -2,13 +2,14 @@
 :source-highlighter: rouge
 
 
-=== Creating an link:https://karaf.apache.org[Apache Karaf, window="_blank"]  container with a new feature, for example link:https://flink.apache.org[Apache Flink, window="_blank"]
+=== Creating an link:https://karaf.apache.org[Apache Karaf, window="_blank"]  container with a new , extra feature, link:https://flink.apache.org[Apache Flink, window="_blank"]
 
 The container should run completely without a internet connection. +
 Means all required resources must be included. +
 No resources should be obtained with maven at runtime. +
 
-On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here.
+On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here. +
+Except java 1.8, nothing is needed, everything is included.
 
 ==== What is link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
@@ -41,7 +42,7 @@ Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should b
 ==== Now lets us start with creating the flink feature
 
 A common thing, in every directory where there is something to do,  is a *build.sh* command provided. +
-This command does all the necessary things.
+This command does all the necessary things, required in the directory.
 
 .a pom file is created with the maven "karaf-feature-archetype"
 [source,bash]
@@ -56,7 +57,7 @@ mvn archetype:generate \
     -Dpackage=org.simpl4.addons
 ----
 
-.the command above creates a pom template
+.the command above creates a pom template in the directory "flink".
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +114,7 @@ mvn archetype:generate \
 As you can see flink uses link:http://www.scala-lang.org[scala, window="_blank"] and link:http://akka.io/[akka, window="_blank"]. +
 Some transitive dependencies must be excluded.
 
-.This is now the finished pom. + 
+.This is now the finished pom with all dependencies.
 [source,xml]
 ----
 <?xml version="1.0" encoding="utf-8"?>
@@ -209,7 +210,7 @@ Some transitive dependencies must be excluded.
 </project>
 ----
 <1> The creation of this artifact is described below.
-<2> exclude the osgi core and the osgi compendium bundle
+<2> exclude the osgi core and the osgi compendium bundle,these are already included in the core.
 <3> this must be empty
 
 .now we create the flink-feature and put it in the local maven repository
@@ -349,7 +350,8 @@ mvn install
 Since apache flink does not deliver osgi jars, this has to be done itself. +
 In addition, an OSGI Activator must be written, which starts the flink components (jobmanager, taskmanager, webmonitor) +
 and also creates the link:http://akka.io/[akka, window="_blank"] system with a osgi classloader.
-Luckily, akka provides a link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[framework, window="_blank"]
+
+Luckily, link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[Akka, window="_blank"] provides a framework for this purpose that we will use as a basis.
 
 This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
 
@@ -360,4 +362,4 @@ The source code is in the link:https://github.com/ms123s/simpl4-addons[repositor
 A hint, the resources here are statically provided, instead of let them get by gradle
 
 The osgi bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
-Scala and akka have been removed and are integrated as stand-alone osgi bundes into the feature.
+Scala and akka have been removed and are integrated as stand-alone osgi bundles into the resulting karaf feature.
