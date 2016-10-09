@@ -501,5 +501,13 @@
     {
         "msgstr": "Business features",
         "msgid": "tr.menu.presentation.business"
+    },
+    {
+        "msgstr": "Karaf",
+        "msgid": "tr.menu.presentation.karaf"
+    },
+    {
+        "msgstr": "Blog",
+        "msgid": "tr.menu.blog"
     }
 ]

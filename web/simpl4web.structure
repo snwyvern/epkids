@@ -57,16 +57,6 @@
         "enabled": true
       },
       {
-        "title": "tr.menu.presentation.features",
-        "description": "",
-        "uri": "features.html",
-        "icon": "grade",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": false
-      },
-      {
         "title": "tr.menu.presentation.processing",
         "description": "",
         "uri": "web/presentation/processing_%l.adoc",
@@ -127,6 +117,28 @@
     "help": "",
     "adoc_include": false,
     "enabled": true
+  },
+  {
+    "title": "tr.menu.blog",
+    "description": "",
+    "uri": "",
+    "icon": "supervisor-account",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "tr.menu.presentation.karaf",
+        "description": "",
+        "uri": "karaf.adoc",
+        "icon": "grade",
+        "id": "presentation_karaf",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      }
+    ]
   },
   {
     "title": "tr.menu.company",
