@@ -133,7 +133,7 @@
         "description": "",
         "uri": "karaf.adoc",
         "icon": "grade",
-        "id": "presentation_karaf",
+        "id": "blog_karaf",
         "help": "",
         "adoc_include": false,
         "enabled": true
