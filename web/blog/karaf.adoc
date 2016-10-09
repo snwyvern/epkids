@@ -2,7 +2,13 @@
 :source-highlighter: rouge
 
 
-=== Creating a link:https://karaf.apache.org[apache karaf, window="_blank"] feature, for example link:https://flink.apache.org[Apache Flink, window="_blank"]
+=== Creating an link:https://karaf.apache.org[Apache Karaf, window="_blank"]  container with a new feature, for example link:https://flink.apache.org[Apache Flink, window="_blank"]
+
+The container should run completely without a internet connection. +
+Means all required resources must be included. +
+No resources should be obtained with maven at runtime. +
+
+On github is a repository with all the things described here.
 
 ==== What is a link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
@@ -16,6 +22,9 @@ image::web/images/karaf_architecture.png[width=50%]
 .apache flink is a streaming dataflow engine that provides data distribution.
 image::web/images/flink-stack-frontpage.png[width=50%]
 
+Problem: The flink jars are not prepared for OSGI. +
+The solution comes further down
+
 {sp} +
 
 ==== What is a karaf feature?
@@ -25,8 +34,6 @@ By provisioning application, it means install all modules, configuration, and tr
 
 
 Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should be available as a feature for karaf.
-
-Problem: Die Flink jars sind nicht für OSGI vorbereitet.
 
 {sp} +
 
@@ -100,9 +107,10 @@ mvn archetype:generate \
 
 {sp} +
 
-.This is now the finished pom. + 
 As you can see flink uses scala and akka. +
 Some transitive dependencies must be excluded.
+
+.This is now the finished pom. + 
 [source,xml]
 ----
 <?xml version="1.0" encoding="utf-8"?>
@@ -200,8 +208,131 @@ Some transitive dependencies must be excluded.
 <1> exclude the osgi core and the osgi compendium bundle
 <2> this must be empty
 
-.now we create the flink-feature
+.now we create the flink-feature and put it in the local maven repository
 [source,bash]
 ----
 mvn install
 ----
+
+{sp} +
+
+==== The next step is to create the container with maven
+
+
+
+.this pom is from the karaf distribution with some changes and our flink-feature
+[source,xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.simpl4</groupId>
+  <artifactId>simpl4-addons</artifactId>
+  <version>1.0</version>
+  <packaging>karaf-assembly</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.karaf.features</groupId>
+      <artifactId>framework</artifactId>
+      <version>4.0.7</version>
+      <type>kar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.karaf.features</groupId>
+      <artifactId>standard</artifactId>
+      <classifier>features</classifier>
+      <version>4.0.7</version>
+      <type>xml</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.karaf.features</groupId>
+      <artifactId>enterprise</artifactId>
+      <classifier>features</classifier>
+      <version>4.0.7</version>
+      <type>xml</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency> <!--1-->
+      <groupId>org.simpl4.addons</groupId>
+      <artifactId>flink-feature</artifactId>
+      <classifier>features</classifier>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <!-- if you want to include resources in the distribution -->
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/filtered-resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <!-- if you want to include resources in the distribution -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <id>process-resources</id>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
+        <version>4.0.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <bootFeatures> <!--2-->
+            <feature>wrap</feature>
+            <feature>flink-feature</feature> <!--3-->
+            <feature>aries-blueprint</feature>
+            <feature>shell</feature>
+            <feature>shell-compat</feature>
+            <feature>feature</feature>
+            <feature>jaas</feature>
+            <feature>ssh</feature>
+            <feature>management</feature>
+            <feature>framework</feature>
+            <feature>bundle</feature>
+            <feature>config</feature>
+            <feature>deployer</feature>
+            <feature>diagnostic</feature>
+            <feature>feature</feature>
+            <feature>instance</feature>
+            <feature>kar</feature>
+            <feature>log</feature>
+            <feature>package</feature>
+            <feature>service</feature>
+            <feature>system</feature>
+          </bootFeatures>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+----
+
+<1> This our flink feature , it comes from the local maven repositiory, see above.
+<2> This are all the features contained in the original karaf distribution.
+<3> plus the flink feature
