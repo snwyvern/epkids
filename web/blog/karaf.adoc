@@ -11,6 +11,9 @@ No resources should be obtained with maven at runtime. +
 On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here. +
 Except java 1.8, no additionals are needed, everything is included.
 
+A common thing, in every directory where there is something to do,  is a *build.sh* command provided. +
+This command does all the necessary things, required in the directory.
+
 ==== What is link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
 .apache karaf is a osgi container and more.
@@ -30,7 +33,7 @@ The solution comes further down
 
 ==== What is a karaf feature?
 
-A feature is flexible way to provisioning osgi applications. +
+A karaf feature is a flexible way to provisioning osgi applications. +
 By provisioning application, it means install all modules, configuration, and transitive applications.
 
 
@@ -39,10 +42,29 @@ Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should b
 {sp} +
 
 
-==== Now lets us start with creating the flink feature
 
-A common thing, in every directory where there is something to do,  is a *build.sh* command provided. +
-This command does all the necessary things, required in the directory.
+==== Now lets us start with creating the flink service
+
+Since apache flink does not deliver osgi jars, this has to be done itself. +
+In addition, an OSGI Activator must be written, which starts the flink components (jobmanager, taskmanager, webmonitor) +
+and also creates the link:http://akka.io/[akka, window="_blank"] system with a osgi classloader.
+
+Luckily, link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[Akka, window="_blank"] provides a framework for this purpose, that we will be used as a basis.
+
+This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
+
+The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "FlinkService"
+
+
+[NOTE] 
+A hint, the resources here are statically provided, instead of let them get by gradle
+
+The osgi bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
+Scala and akka have been removed and are integrated as stand-alone osgi bundles into the resulting karaf feature.
+
+==== The next step is the flink feature
+
+The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "karaf/features/flink"
 
 .a pom file is created with the maven "karaf-feature-archetype"
 [source,bash]
@@ -209,7 +231,7 @@ Some transitive dependencies must be excluded.
   </build>
 </project>
 ----
-<1> The creation of this artifact is described below.
+<1> This our previosly create flink service.
 <2> exclude the osgi core and the osgi compendium bundle,these are already included in the core.
 <3> this must be empty
 
@@ -221,8 +243,9 @@ mvn install
 
 {sp} +
 
-==== The next step is to create the container with maven
+==== The next step is to create the karaf container with maven
 
+The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "karaf/base"
 
 
 .this pom is from the karaf distribution with some changes and our flink-feature
@@ -342,24 +365,8 @@ mvn install
 <2> This are all the features contained in the original karaf distribution.
 <3> plus the flink feature
 
-{sp} +
-
-
-==== Now we create the flink service
-
-Since apache flink does not deliver osgi jars, this has to be done itself. +
-In addition, an OSGI Activator must be written, which starts the flink components (jobmanager, taskmanager, webmonitor) +
-and also creates the link:http://akka.io/[akka, window="_blank"] system with a osgi classloader.
-
-Luckily, link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[Akka, window="_blank"] provides a framework for this purpose that we will use as a basis.
-
-This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
-
-The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "FlinkService"
-
-
-[NOTE] 
-A hint, the resources here are statically provided, instead of let them get by gradle
-
-The osgi bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
-Scala and akka have been removed and are integrated as stand-alone osgi bundles into the resulting karaf feature.
+.after executing the following command, in the "karaf/base/target" directory are the resulting tar/zip files, this is the ready do use karaf container with the flink feature.
+[source,bash]
+----
+mvn clean install
+----
