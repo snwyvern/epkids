@@ -354,3 +354,10 @@ Luckily, akka provides a link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi
 This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
 
 The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "FlinkService"
+
+
+[NOTE] 
+A hint, the resources here are statically provided, instead of let them get by gradle
+
+The osgi bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
+Scala and akka have been removed and are integrated as stand-alone osgi bundes into the feature.
