@@ -9,7 +9,7 @@ Means all required resources must be included. +
 No resources should be obtained with maven at runtime. +
 
 On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here. +
-Except java 1.8, nothing is needed, everything is included.
+Except java 1.8, no additionals are needed, everything is included.
 
 ==== What is link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
