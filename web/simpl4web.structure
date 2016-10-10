@@ -182,7 +182,7 @@
     "id": "",
     "help": "",
     "adoc_include": false,
-    "enabled": true,
+    "enabled": false,
     "children": [
       {
         "title": "tr.menu.company.behind-simpl4",
@@ -234,7 +234,7 @@
     "id": "",
     "help": "",
     "adoc_include": false,
-    "enabled": true
+    "enabled": false
   },
   {
     "title": "tr.menu.misc_demo",
