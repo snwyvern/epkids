@@ -3,6 +3,8 @@
 
 == Beschreibung
 
+Dies ist der erste Artikel dem verschiedenste rund um diese Thematik folgen sollen
+
 
 === BPMN, wofür steht das ?
 
@@ -55,6 +57,7 @@ So z.B.
 * Und Vieles mehr
 
 === Fazit
+
 Die Kombination Beider bietet einem bei der Software Entwicklung somit einen Standard, der von Technik und Fachabteilung gleichermaßen verstanden wird, und obendrein Dokumentation und "Programm" ist.
 
 Als Bild denke ich, es sollte auf jeden Fall mindestens eines dabei sein, werde ich den Online-Apotheken Prozess nehmen, so kann man gleich sehen, was geschrieben steht.

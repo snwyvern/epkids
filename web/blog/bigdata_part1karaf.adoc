@@ -7,18 +7,18 @@
 This is part one  of a series of articles concering "Big Data" in an OSGI environment.
 
 All components are designed as link:https://karaf.apache.org[Apache Karaf, window="_blank"]  features. +
-The Karaf container created in this article is the base for everything else. +
+The Karaf container created in this article is the basis for everything else. +
 This should not be a theoretical consideration. +
 All things are supposed to be available as turnkey software components.
 
-The first part starts with Karaf (the base) and link:https://flink.apache.org[Apache Flink, window="_blank"].
+The first part starts with Karaf (the basis) and link:https://flink.apache.org[Apache Flink, window="_blank"].
 
 
 === Creating an link:https://karaf.apache.org[Apache Karaf, window="_blank"]  container with a new , extra feature, link:https://flink.apache.org[Apache Flink, window="_blank"]
 
 The container should run completely without a internet connection. +
 Means, that all required resources must be included. +
-No resources should be fetched with maven at runtime. +
+No resources should be fetched by maven at runtime. +
 
 On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository available with all the things described here. +
 Except java 1.8, no additionals are needed, everything is included.
@@ -50,7 +50,7 @@ A Karaf feature is a flexible way to provisioning osgi applications. +
 By provisioning application, it means install all modules, configuration, and transitive applications.
 
 
-Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should be available as a feature for Karaf.
+Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should be available as a Karaf feature.
 
 {sp} +
 
