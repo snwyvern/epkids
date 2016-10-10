@@ -18,7 +18,7 @@ The first part starts with Karaf( the basis ) and link:https://flink.apache.org[
 
 The container should run completely without a internet connection. +
 Means all required resources must be included. +
-No resources should be obtained with maven at runtime. +
+No resources should be fetched with maven at runtime. +
 
 On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here. +
 Except java 1.8, no additionals are needed, everything is included.
