@@ -66,7 +66,7 @@ Luckily, link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[Akka, wind
 
 This work ist done with help from the link:https://gradle.org/[gradle build system, window="_blank"].
 
-The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "FlinkService"
+The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/master/FlinkService[repository, window="_blank"] in the directory "FlinkService"
 
 
 [NOTE] 
@@ -77,7 +77,7 @@ Scala and akka have been removed and are integrated as stand-alone osgi bundles 
 
 ==== The next step is the flink feature
 
-The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "karaf/features/flink"
+The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/master/karaf/features/flink[repository, window="_blank"] in the directory "karaf/features/flink"
 
 .a pom file is created with the maven "karaf-feature-archetype"
 [source,bash]
@@ -258,7 +258,7 @@ mvn install
 
 ==== The next step is to create the karaf container with maven
 
-The source code is in the link:https://github.com/ms123s/simpl4-addons[repository, window="_blank"] in the directory "karaf/base"
+The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/master/karaf/base[repository, window="_blank"] in the directory "karaf/base"
 
 
 .this pom is from the karaf distribution with some changes and our flink-feature
