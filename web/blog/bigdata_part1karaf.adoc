@@ -2,30 +2,30 @@
 :source-highlighter: rouge
 
 
-== Big(Fast) Data , Part one
+== Big or Fast Data, Part one
 
-This is part one  of a series of articles on "Big Data" in an OSGI environment.
+This is part one  of a series of articles concering "Big Data" in an OSGI environment.
 
 All components are designed as link:https://karaf.apache.org[Apache Karaf, window="_blank"]  features. +
-The karaf container created in this article is the basis for everything else. +
+The Karaf container created in this article is the base for everything else. +
 This should not be a theoretical consideration. +
 All things are supposed to be available as turnkey software components.
 
-The first part starts with Karaf( the basis ) and link:https://flink.apache.org[Apache Flink, window="_blank"].
+The first part starts with Karaf (the base) and link:https://flink.apache.org[Apache Flink, window="_blank"].
 
 
 === Creating an link:https://karaf.apache.org[Apache Karaf, window="_blank"]  container with a new , extra feature, link:https://flink.apache.org[Apache Flink, window="_blank"]
 
 The container should run completely without a internet connection. +
-Means all required resources must be included. +
-No resources should be obtained with maven at runtime. +
+Means, that all required resources must be included. +
+No resources should be fetched with maven at runtime. +
 
-On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository with all the things described here. +
+On link:https://github.com/ms123s/simpl4-addons[github,window="_blank"]  is a repository available with all the things described here. +
 Except java 1.8, no additionals are needed, everything is included.
 
 [NOTE]
-A common thing, in every directory where there is something to do,  is a *build.sh* command provided. +
-This command does all the necessary things, required in the directory.
+A common thing is, that in every directory where something is to do,  is a *build.sh* command provided. +
+This command does all the necessary things, which are required in the directory.
 
 ==== What is link:https://karaf.apache.org[apache karaf, window="_blank"]?
 
@@ -40,17 +40,17 @@ image::web/images/karaf_architecture.png[width=50%]
 image::web/images/flink-stack-frontpage.png[width=50%]
 
 Problem: The flink jars are not prepared for OSGI. +
-The solution comes further down
+The solution comes further down.
 
 {sp} +
 
-==== What is a karaf feature?
+==== What is a Karaf feature?
 
-A karaf feature is a flexible way to provisioning osgi applications. +
+A Karaf feature is a flexible way to provisioning osgi applications. +
 By provisioning application, it means install all modules, configuration, and transitive applications.
 
 
-Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should be available as a feature for karaf.
+Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should be available as a feature for Karaf.
 
 {sp} +
 
@@ -60,7 +60,7 @@ Objective: link:https://flink.apache.org[Apache Flink, window="_blank"] should b
 
 Since apache flink does not deliver osgi jars, this has to be done itself. +
 In addition, an OSGI Activator must be written, which starts the flink components (jobmanager, taskmanager, webmonitor) +
-and also creates the link:http://akka.io/[akka, window="_blank"] system with a osgi classloader.
+and also creates the link:http://akka.io/[akka, window="_blank"] system with a OSGI classloader.
 
 Luckily, link:http://doc.akka.io/docs/akka/2.4.4/additional/osgi.html[Akka, window="_blank"] provides a framework for this purpose, that we will be used as a basis.
 
@@ -72,8 +72,8 @@ The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/mast
 [NOTE] 
 A hint, the resources here are statically provided, instead of let them get by gradle
 
-The osgi bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
-Scala and akka have been removed and are integrated as stand-alone osgi bundles into the resulting karaf feature.
+The OSGI bundle consists largely of the link:https://github.com/apache/flink/tree/master/flink-dist[fat jar of apache flink-dist, window="_blank"] +
+Scala and akka have been removed and are integrated as stand-alone OSGI bundles into the resulting Karaf feature.
 
 ==== The next step is the flink feature
 
@@ -245,7 +245,7 @@ Some transitive dependencies must be excluded.
 </project>
 ----
 <1> This our previosly create flink service.
-<2> exclude the osgi core and the osgi compendium bundle,these are already included in the core.
+<2> exclude the osgi core and the OSGI compendium bundle,these are already included in the core.
 <3> this must be empty
 
 .now we create the flink-feature and put it in the local maven repository
@@ -256,7 +256,7 @@ mvn install
 
 {sp} +
 
-==== The next step is to create the karaf container with maven
+==== The next step is to create the Karaf container with maven
 
 The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/master/karaf/base[repository, window="_blank"] in the directory "karaf/base"
 
@@ -374,8 +374,8 @@ The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/mast
 </project>
 ----
 
-<1> This our flink feature , it comes from the local maven repositiory, see above.
-<2> This are all the features contained in the original karaf distribution.
+<1> This our flink feature, it comes from the local maven repositiory, see above.
+<2> This are all the features contained in the original Karaf distribution.
 <3> plus the flink feature
 
 .after executing the following command, in the "karaf/base/target" directory are the resulting tar/zip files, this is the ready do use karaf container with the flink feature.

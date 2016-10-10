@@ -1,23 +1,30 @@
-Beschreibung
+:linkattrs:
+:source-highlighter: rouge
 
-BPMN, wofür steht das ?
+== Beschreibung
+
+
+=== BPMN, wofür steht das ?
 
 Die Kurzform BPMN steht für Business Process Modeling Notation, und ist eine grafische Darstellung zur Bestimmung von Geschäftsprozessen in einem Arbeitsablauf.
-BPMN ermöglicht ein Geschäftsprozessmanagement, welches gleichermaßen für den technischen UND den geschäftlichen Nutzer verständlich ist, aber trotzdem noch die Darstellung komplexer Prozesssemantiken erlaubt.
+BPMN ermöglicht ein Geschäftsprozessmanagement, welches gleichermaßen für den technischen *UND* den geschäftlichen Nutzer verständlich ist, aber trotzdem noch die Darstellung komplexer Prozesssemantiken erlaubt.
 
-Der Zweck
+=== Der Zweck
 
 Das primäre Ziel ist es eine Standardnotation zur Verfügung zu stellen die von ALLEN Beteiligten im Unternehmen leicht verstanden wird
 Einen Standard zur Modellierung von Geschäftsprozessen zu haben, für
-Wirtschaftsanalytiker, die Prozesse definieren und verfeinern
-technische Entwickler, die für die Umsetzung dieser Prozesse verantwortlich sind
-Unternehmensmanager, die diese Prozesse verwalten und beobachten
-Ein kurzer Blick auf die Historie von BPMN
+* Wirtschaftsanalytiker, die Prozesse definieren und verfeinern
+* technische Entwickler, die für die Umsetzung dieser Prozesse verantwortlich sind
+* Unternehmensmanager, die diese Prozesse verwalten und beobachten
+
+
+=== Ein kurzer Blick auf die Historie von BPMN
 
 BPMN wurde ursprünglich von der Business Process Management Initiative (BPMI) entwickelt. Sie ist mittlerweile ein Teil der „Object Management Group“ , kurz OMG.
 Die aktuelle Version von BPMN ist Version 2.0.
 
-Die BPMN 2.0 Spezifikation
+
+=== Die BPMN 2.0 Spezifikation
 
 In der Spezifikation zur Standardnotation BPMN ist definiert, mit welchen Symbolen die verschiedenen Elemente von Prozessen dargestellt werden, was die Symbole bedeuten, und wie sie kombiniert werden dürfen.
 
@@ -26,29 +33,29 @@ Syntax das System an Regeln, wie die Symbole kombiniert werden dürfen
 Semantik die Festlegung der Bedeutung von Symbolen und ihren Beziehungen
 Mit der Abbildung eines Workflows in einem Prodzessmodell erhält man somit automatisch auch eine für IT und Fachabteilung verständliche Dokumentation.
 
-Das kleine BPMN 2.0 - ABC
+=== Das kleine BPMN 2.0 - ABC
 
 So gibt es um die nur wichtigsten Symbole zu nennen, z.B.
 
-Start und Ende-Ereignisse
-Aktivitäten, die von Menschen oder der Maschine ausgeführt werden
-diverse Verzweigungsmöglichkeiten (Gateways)
-Ereignisse wie z.B. Nachrichten (Zwischenereignisse), die während eines Prozesses eintreten
+* Start und Ende-Ereignisse (Start- End Events)
+* Aktivitäten (Aktivities), die von Menschen oder der Maschine ausgeführt werden 
+* diverse Verzweigungsmöglichkeiten (Gateways)
+* Ereignisse wie z.B. Nachrichten (Zwischenereignisse/Intermediate Events), die während eines Prozesses eintreten
+
 Die sogenannten Konnektoren (Pfeilen) verbinden die einzelnen Elemente UND, stellen gleichzeitig auch den Fluss in einem Geschäftsprozess dar.
 
-BPMN 2.0 und Process engine, ein starkes Duo
+=== BPMN 2.0 und Process engine, ein starkes Duo
 
 Eine Process engine versteht die BPMN 2.0, sie ist quasi eine Laufzeitumgebung für vorhandenenes Prozessmodell, sie führt den Quellcode mit all den dazu gehörenden Attributen, Eingabe-Masken, und was sonst noch alles notwendig ist, aus.
 
 Eine Process engine bringt standardmäßig diverse Funktionalitäten mit, die ansonsten unabhängig von der gewählten Programmiersprache, aufwändig ausprogrammiert werden müssten.
 So z.B. 
-- Wo steht der Prozess gerade
-- Welche Werte wurden von wem eingegeben
-- Und Vieles mehr
+* Wo steht der Prozess gerade
+* Welche Werte wurden von wem eingegeben
+* Und Vieles mehr
 
-Fazit
+=== Fazit
 Die Kombination Beider bietet einem bei der Software Entwicklung somit einen Standard, der von Technik und Fachabteilung gleichermaßen verstanden wird, und obendrein Dokumentation und "Programm" ist.
 
 Als Bild denke ich, es sollte auf jeden Fall mindestens eines dabei sein, werde ich den Online-Apotheken Prozess nehmen, so kann man gleich sehen, was geschrieben steht.
 Besser noch eines dazu aus dem Monitoring, sprich wo man sieht, wo der Prozess gerade steht.
-
