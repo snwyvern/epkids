@@ -555,11 +555,27 @@
         "msgid": "tr.menu.presentation.business"
     },
     {
-        "msgstr": "Karaf",
+        "msgstr": "Teil1:Karaf und Flink",
         "msgid": "tr.menu.presentation.karaf"
     },
     {
         "msgstr": "Blog",
         "msgid": "tr.menu.blog"
+    },
+    {
+        "msgstr": "Big data",
+        "msgid": "tr.menu.blog_bigdata"
+    },
+    {
+        "msgstr": "BPM",
+        "msgid": "tr.menu.blog_bpm"
+    },
+    {
+        "msgstr": "Part1:Karaf und Flink",
+        "msgid": "tr.menu.blog_bigdata.part1karaf"
+    },
+    {
+        "msgstr": "BPMN",
+        "msgid": "tr.menu.blog_bpm.bpmn"
     }
 ]

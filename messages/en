@@ -503,11 +503,23 @@
         "msgid": "tr.menu.presentation.business"
     },
     {
-        "msgstr": "Karaf",
-        "msgid": "tr.menu.presentation.karaf"
+        "msgstr": "Part1:Karaf and Flink",
+        "msgid": "tr.menu.blog_bigdata.part1karaf"
     },
     {
         "msgstr": "Blog",
         "msgid": "tr.menu.blog"
+    },
+    {
+        "msgstr": "Big Data",
+        "msgid": "tr.menu.blog_bigdata"
+    },
+    {
+        "msgstr": "BPM",
+        "msgid": "tr.menu.blog_bpm"
+    },
+    {
+        "msgstr": "BPMN",
+        "msgid": "tr.menu.blog_bpm.bpmn"
     }
 ]

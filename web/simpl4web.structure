@@ -122,21 +122,55 @@
     "title": "tr.menu.blog",
     "description": "",
     "uri": "",
-    "icon": "supervisor-account",
+    "icon": "communication:import-contacts",
     "id": "",
     "help": "",
     "adoc_include": false,
     "enabled": true,
     "children": [
       {
-        "title": "tr.menu.presentation.karaf",
+        "title": "tr.menu.blog_bigdata",
         "description": "",
-        "uri": "karaf.adoc",
-        "icon": "grade",
-        "id": "blog_karaf",
+        "uri": "",
+        "icon": "vaadin-icons:archives",
+        "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true
+        "enabled": true,
+        "children": [
+          {
+            "title": "tr.menu.blog_bigdata.part1karaf",
+            "description": "",
+            "uri": "bigdata_part1karaf.adoc",
+            "icon": "input",
+            "id": "blog_bigdata_part1karaf",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "title": "tr.menu.blog_bpm",
+        "description": "",
+        "uri": "",
+        "icon": "vaadin-icons:bold",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true,
+        "children": [
+          {
+            "title": "tr.menu.blog_bpm.bpmn",
+            "description": "",
+            "uri": "bpm_bpmn.adoc",
+            "icon": "vaadin-icons:male",
+            "id": "blog_bpm_bpmn",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
+          }
+        ]
       }
     ]
   },
