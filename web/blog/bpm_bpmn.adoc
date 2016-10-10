@@ -1,63 +1,74 @@
-:linkattrs:
-:source-highlighter: rouge
-
-== Beschreibung
-
-Dies ist der erste Artikel dem verschiedenste rund um diese Thematik BPMN folgen werden.
+:Linkattrs:
+:Source-highlighter: rouge
 
 
-=== BPMN, wofür steht das ?
+== Description
 
-Die Kurzform BPMN steht für Business Process Modeling Notation, und ist eine grafische Darstellung zur Bestimmung von Geschäftsprozessen in einem Arbeitsablauf.
-BPMN ermöglicht ein Geschäftsprozessmanagement, welches gleichermaßen für den technischen *UND* den geschäftlichen Nutzer verständlich ist, aber trotzdem noch die Darstellung komplexer Prozesssemantiken erlaubt.
-
-=== Der Zweck
-
-Das primäre Ziel ist es eine Standardnotation zur Verfügung zu stellen die von ALLEN Beteiligten im Unternehmen leicht verstanden wird
-Einen Standard zur Modellierung von Geschäftsprozessen zu haben, für
-* Wirtschaftsanalytiker, die Prozesse definieren und verfeinern
-* technische Entwickler, die für die Umsetzung dieser Prozesse verantwortlich sind
-* Unternehmensmanager, die diese Prozesse verwalten und beobachten
+This is the first article of a series of articles concering the topic BPMN.
 
 
-=== Ein kurzer Blick auf die Historie von BPMN
+=== BPMN, what does it stand for?
 
-BPMN wurde ursprünglich von der Business Process Management Initiative (BPMI) entwickelt. Sie ist mittlerweile ein Teil der „Object Management Group“ , kurz OMG.
-Die aktuelle Version von BPMN ist Version 2.0.
+The short form BPMN stands for Business Process Modeling Notation, and is a graphical representation for the determination of business processes in a workflow.
+BPMN enables business process management, which is equally understandable for technical *AND* business users, but still allows for the representation of complex process semantics.
+
+image::web/images/processmodel_described.png[width = 80%]
 
 
-=== Die BPMN 2.0 Spezifikation
+=== The purpose
 
-In der Spezifikation zur Standardnotation BPMN ist definiert, mit welchen Symbolen die verschiedenen Elemente von Prozessen dargestellt werden, was die Symbole bedeuten, und wie sie kombiniert werden dürfen.
+The primary goal is to provide a standard notation that is easily understood by ALL stakeholders in the company.
 
-Sie regelt damit also Syntax und Semantik, dabei ist die
-Syntax das System an Regeln, wie die Symbole kombiniert werden dürfen
-Semantik die Festlegung der Bedeutung von Symbolen und ihren Beziehungen
-Mit der Abbildung eines Workflows in einem Prodzessmodell erhält man somit automatisch auch eine für IT und Fachabteilung verständliche Dokumentation.
+To have a standard for modeling business processes for
 
-=== Das kleine BPMN 2.0 - ABC
+* Economic analysts, who define and refine processes
+* Technical developers who are responsible for the implementation of these processes
+* Enterprise managers who manage and monitor these processes
 
-So gibt es um die nur wichtigsten Symbole zu nennen, z.B.
 
-* Start und Ende-Ereignisse (Start- End Events)
-* Aktivitäten (Aktivities), die von Menschen oder der Maschine ausgeführt werden 
-* diverse Verzweigungsmöglichkeiten (Gateways)
-* Ereignisse wie z.B. Nachrichten (Zwischenereignisse/Intermediate Events), die während eines Prozesses eintreten
+=== A brief look at the history of BPMN
 
-Die sogenannten Konnektoren (Pfeilen) verbinden die einzelnen Elemente UND, stellen gleichzeitig auch den Fluss in einem Geschäftsprozess dar.
+BPMN was originally developed by the Business Process Management Initiative (BPMI). It is now part of the "Object Management Group", for short OMG.
+The current version of BPMN is version 2.0.
 
-image::web/images/processmodel_described.png[width=80%]
 
-=== BPMN 2.0 und Process engine, ein starkes Duo
+=== The BPMN 2.0 specification
 
-Eine Process engine versteht die BPMN 2.0, sie ist quasi eine Laufzeitumgebung für vorhandenenes Prozessmodell, sie führt den Quellcode mit all den dazu gehörenden Attributen, Eingabe-Masken, und was sonst noch alles notwendig ist, aus.
+The specification for the standard notation BPMN defines the symbols with which the various elements of processes are represented, what the symbols mean, and how they can be combined.
 
-Eine Process engine bringt standardmäßig diverse Funktionalitäten mit, die ansonsten unabhängig von der gewählten Programmiersprache, aufwändig ausprogrammiert werden müssten.
-So z.B. 
-* Wo steht der Prozess gerade
-* Welche Werte wurden von wem eingegeben
-* Und Vieles mehr
+It thus it regulates syntax and semantics, whereby the
 
-=== Fazit
+* _Syntax_ is the system of rules how the symbols may be combined
+* _Semantic_ is defining the meaning of symbols and their relationships
 
-Die Kombination Beider bietet einem bei der Software Entwicklung somit einen Standard, der von Technik und Fachabteilung gleichermaßen verstanden wird, und obendrein Dokumentation und "Programm" ist.
+By mapping a workflow in a process model, you also get a documentation that is understandable for the IT department and the department.
+
+
+=== The small BPMN 2.0 - ABC
+
+
+There are e.g. to name only the most important symbols
+
+* Start and End Events 
+* Activities executed by people or the machine
+* Various branching options (gateways)
+* Events such as e.g. events that occur during a process (Intermediate Events)
+
+The so-called connectors (arrows) connect the individual elements AND, at the same time also represent the flow in a business process.
+
+
+=== BPMN 2.0 and Process engine, a powerful duo
+
+A process engine understands the BPMN 2.0, it is almost a runtime environment for existing process model, it executes the source code with all the associated attributes, input masks, and what else is necessary.
+
+A process engine usually provides various functionalities, which would otherwise have to be programmed up in a complex manner independent of the chosen programming language.
+
+So for example
+
+* Where is the process right now?
+* Which values were entered, and by whom
+* And much more
+
+=== Conclusion
+
+The combination of both provides a standard for software development, which is equally understood by the technical department and the non technical department, and is supervisory documentation and "program".
