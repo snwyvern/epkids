@@ -46,6 +46,8 @@ So gibt es um die nur wichtigsten Symbole zu nennen, z.B.
 
 Die sogenannten Konnektoren (Pfeilen) verbinden die einzelnen Elemente UND, stellen gleichzeitig auch den Fluss in einem Geschäftsprozess dar.
 
+image::web/images/processmodel_described.png[width=80%]
+
 === BPMN 2.0 und Process engine, ein starkes Duo
 
 Eine Process engine versteht die BPMN 2.0, sie ist quasi eine Laufzeitumgebung für vorhandenenes Prozessmodell, sie führt den Quellcode mit all den dazu gehörenden Attributen, Eingabe-Masken, und was sonst noch alles notwendig ist, aus.
