@@ -55,7 +55,7 @@ folglich auch keine Updates ->  immer aktuell.
 * Keine Kosten durch Systemsoftware, da unabhängig von Betriebssystemen.
 * Keine Arbeitsplatz-Lizenzen.
 * Keine Lizenzgebühren für simpl4
-* Cloud ready -> Keine Harddware nötig
+* Cloud ready -> Keine Hardware nötig
 ###
 image:web/presentation/images/costs.svgz[width=300]
 --

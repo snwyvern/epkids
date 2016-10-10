@@ -55,7 +55,7 @@ therefore also no updates ->  allways up to date.
 * No costs by system software, because of independence of operation systems.
 * No working place -Licences.
 * No licence fee for simpl4
-* Cloud ready -> No harddware neccecary
+* Cloud ready -> No hardware neccecary
 ###
 image:web/presentation/images/costs.svgz[width=300]
 --

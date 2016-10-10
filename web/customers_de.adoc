@@ -1,0 +1,34 @@
+:linkattrs:
+
+=== Unsere Kunden  ===
+
+
+Unsere bundesweit ansässigen Kunden, kommen sowohl aus dem klein- und mittelständischen Bereich, wie auch auch aus dem Bereich der Großkonzern.
+
+Unabhängig von der Größe ist es uns dabei wichtig, dass für alle einen Win-Win Situation entsteht. Nur so ist er möglich, dass langjährige Geschäftsbeziehungen  entstehen.
+
+Dabei beraten wir unsere Kunden über die Projekte hinaus, und halten sie über die neuesten für sie relevanten Entwicklungen im Bereich IT auf dem Laufenden.  
+
+Zu unseren Kunden gehören unter anderem
+
+* Bosch Thermotechnik GmbH
+* Palfinger Tail Lifts GmbH
+* BHS Maschinenen- und Anlagenbau GmbH
+
+
+[imageblock.xeft.width600]
+image::web/images/individuell.svgz[]
+
+
+=== Bereiche ===
+
+Neben der Erstellung kundenspezifischer Software-Lösungen, sind wir auch im dem Bereich Publikationssysteme tätig.
+
+Durch diese besteht die Möglichkeit Daten über verschiedenste Medien hinweg zu publizieren.
+
+* Inter-/Intranet (Ersatzteilbestellsysteme, Ersatzteilrecherche,...)
+* komplexe mehrsprachige Print-Kataloge (z.B. im Ausgabeformat PDF)
+* Offline-Lösungen
+
+
+=== Bereiche ===

@@ -4,13 +4,13 @@
 
 
 
-For many years, we create custom software solutions based on customer-specific requirements and desires.
-This may be the both the adaptation of an already existing enterprise software to new or other operational, technical or technical requirements,
-as well as a completely newly created software solution.
+For many years we create custom software solutions based on customer-specific requirements and desires.
+This can may be the both, the adaptation of an already existing enterprise software to new or other operational, technical or technical requirements,
+as well as a complete newly created software solution.
 
-The most important advantage of a software solution individually created is that the software does exactly what the customer wants.
+The most important advantage of a software solution individually created is, that the software does exactly what the customer wants.
 It is optimally adapted to the individual data infrastructure and thus helps to make better use of resources.
-Thus, savings result in terms of workload in software use, ie time saved, and thereby also money saved.
+Thus, savings result in terms of workload in software use, time saved, and thereby also money.
 
 [imageblock.xeft.width600]
 image::web/images/individuell.svgz[]
@@ -19,4 +19,4 @@ image::web/images/individuell.svgz[]
 
 - Applications can be created quickly and at a favorable price.
 - An application can also be created based on the existing enterprise data structures.
-- The complete source code of simpl4 and created individual solution is always available for you.
+- The complete source code of simpl4 and the created individual solution is always available for you.
