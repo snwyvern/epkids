@@ -374,7 +374,7 @@ The source code is in the link:https://github.com/ms123s/simpl4-addons/tree/mast
 </project>
 ----
 
-<1> This our flink feature, it comes from the local maven repositiory, see above.
+<1> This is our flink feature, it comes from the local maven repositiory, see above.
 <2> This are all the features contained in the original Karaf distribution.
 <3> plus the flink feature
 
