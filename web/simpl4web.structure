@@ -163,7 +163,7 @@
           {
             "title": "tr.menu.blog_bpm.bpmn",
             "description": "",
-            "uri": "bpm_bpmn.adoc",
+            "uri": "bpm_bpmn_%l.adoc",
             "icon": "vaadin-icons:file-process",
             "id": "blog_bpm_bpmn",
             "help": "",
