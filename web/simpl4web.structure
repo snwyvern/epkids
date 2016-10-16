@@ -147,6 +147,16 @@
             "help": "",
             "adoc_include": false,
             "enabled": true
+          },
+          {
+            "title": "tr.menu.blog_bigdata.zookeeper",
+            "description": "",
+            "uri": "bigdata_part2zookeeper.adoc",
+            "icon": "vaadin-icons:book",
+            "id": "blog_bigdata_part2zookeeper",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
           }
         ]
       },
