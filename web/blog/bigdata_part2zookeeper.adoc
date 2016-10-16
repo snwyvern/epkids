@@ -6,20 +6,20 @@
 
 This is part two  of a series of articles concering "Big Data" in an OSGI environment.
 
-All components are designed as link:https://karaf.apache.org[Apache Karaf, window="_blank"]  features. +
+All components are designed as *link:https://karaf.apache.org[Apache Karaf, window="_blank"]*  features. +
 A Karaf container, created in the previous article is the basis for everything else. +
-This is not a theoretical consideration. +
 All things are supposed to be available as turnkey software components.
 
-The second part is about link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]., which is widely used in distributed projects.
+The second part is about *link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]*, which is widely used in distributed projects, +
+as in *link:https://flink.apache.org[Apache Flink, window="_blank"]* and *link:https://kafka.apache.org[Apache Kafka, window="_blank"]* described later.
 
 It is a *link:https://github.com/ms123s/simpl4-addons[github repository,window="_blank"]* available with all the things described here. +
 Except java 1.8, no additionals are needed, everything is included.
 
 
-=== Creating an link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]  feature.
+=== Creating an link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]  Karaf feature.
 
-.apache karaf is a directory server and more.
+.Apache zookeeper is a high-performance coordination service for distributed applications.
 image::web/images/zkservice.jpg[width=50%]
 
 {sp} +
