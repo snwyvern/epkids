@@ -160,4 +160,8 @@
 			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-datamapper" />
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-datamapper" />
    </url>
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!blog_bigdata_part1karaf</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!blog_bigdata_part1kara" />
+   </url>
 </urlset> 
