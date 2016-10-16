@@ -13,7 +13,7 @@ All things are supposed to be available as turnkey software components.
 The second part is about *link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]*, which is widely used in distributed projects, +
 as in *link:https://flink.apache.org[Apache Flink, window="_blank"]* and *link:https://kafka.apache.org[Apache Kafka, window="_blank"]* described later.
 
-It is a *link:https://github.com/ms123s/simpl4-addons[github repository,window="_blank"]* available with all the things described here. +
+It is a *link:https://github.com/ms123s/simpl4-addons[github repository,window="_blank"]* available with all the things described here and in the previous article. +
 Except java 1.8, no additionals are needed, everything is included.
 
 
@@ -24,3 +24,77 @@ image::web/images/zkservice.jpg[width=50%]
 
 {sp} +
 
+
+First we need the necessary bundles. +
+Zookeeper already exists as osgi bundle. +
+
+.however, an Activator is required.
+[source,java]
+----
+package org.simpl4.addons.zookeeper;
+
+import java.io.File;
+
+import java.io.FileReader;
+import java.util.Properties;
+import org.apache.zookeeper.server.quorum.QuorumPeerConfig;
+import org.apache.zookeeper.server.ServerConfig;
+import org.apache.zookeeper.server.ZooKeeperServerMain;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleActivator, ZookeeperService {
+  private static final Logger log = LoggerFactory.getLogger(ZookeeperService.class);
+
+  private Thread thread;
+  private ServerConfig config;
+
+  public void start(BundleContext context) {
+    info("ZookeeperService activate");
+    config = getConfig();
+    thread = new Thread(this::zk, "org.simpl4.addons.zookeeper");
+    thread.start();
+  }
+
+  public void stop(BundleContext context) {
+    shutdown();
+    thread.interrupt();
+  }
+
+  private ServerConfig getConfig() {
+    Properties properties = new Properties();
+    try {
+      properties.load(new FileReader("etc/zookeeper.properties"));
+    } catch (Exception e) {
+      throw new RuntimeException("ZookeeperServiceImpl.getProperties:", e);
+    }
+    QuorumPeerConfig quorumConfiguration = new QuorumPeerConfig();
+    try {
+      quorumConfiguration.parseProperties(properties);
+    } catch (Exception e) {
+      throw new RuntimeException("ZookeeperServiceImpl.getConfig:", e);
+    }
+    ServerConfig config = new ServerConfig();
+    config.readFrom(quorumConfiguration);
+    return config;
+  }
+
+  private void zk() {
+    try {
+      info("ZookeeperService starting");
+      runFromConfig(config);
+    } catch (Exception e) {
+      e.printStackTrace();
+      log.error("ZookeeperService:", e);
+    }
+    info("ZookeeperService exiting");
+  }
+
+  private void info(String msg) {
+    System.out.println(msg);
+    log.info(msg);
+  }
+}
+----
