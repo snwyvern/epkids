@@ -24,7 +24,16 @@ image::web/images/zkservice.jpg[width=50%]
 
 {sp} +
 
-===== What does Zookeeper
+==== What Is ZooKeeper?
+
+ZooKeeper is a coordination service for distributed systems. By providing a robust implementation of a few basic operations, ZooKeeper simplifies the implementation of many advanced patterns in distributed systems.
+
+ZooKeeper as a Distributed File System. +
+One way of getting to know ZooKeeper is to think of it as a distributed file system. In fact, the way information in ZooKeeper is organized is quite similar to a file system.
+
+link::https://www.elastic.co/blog/found-zookeeper-king-of-coordination[More here,window="_blank"]
+
+===== What does Zookeeper?
 
 * *Flink and Zookeeper:* +
 Flink leverages ZooKeeper for distributed coordination between all running JobManager instances. ZooKeeper is a separate service from Flink, which provides highly reliable distributed coordination via leader election and light-weight consistent state storage. 
