@@ -24,11 +24,20 @@ image::web/images/zkservice.jpg[width=50%]
 
 {sp} +
 
+===== What does Zookeeper
+
+* *Flink and Zookeeper:* +
+Flink leverages ZooKeeper for distributed coordination between all running JobManager instances. ZooKeeper is a separate service from Flink, which provides highly reliable distributed coordination via leader election and light-weight consistent state storage. 
+
+* *Kafka and Zookeeper:* +
+Kafka uses Zookeeper for storing variety of configurations as Key,Value in the Zookeeper data tree and use them across the cluster in a distributed fashion.
+
+===== Zookeeper and OSGI
 
 First we need the necessary bundles. +
 Zookeeper already exists as osgi bundle. +
 
-.however, an Activator is required.
+.however, an BundleActivator(starting zookeeper) is required.
 [source,java]
 ----
 package org.simpl4.addons.zookeeper;
