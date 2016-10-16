@@ -45,25 +45,25 @@ import org.osgi.framework.BundleContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleActivator, ZookeeperService {
+public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleActivator, ZookeeperService { // <1>
   private static final Logger log = LoggerFactory.getLogger(ZookeeperService.class);
 
   private Thread thread;
   private ServerConfig config;
 
-  public void start(BundleContext context) {
+  public void start(BundleContext context) { // <2>
     info("ZookeeperService activate");
     config = getConfig();
     thread = new Thread(this::zk, "org.simpl4.addons.zookeeper");
     thread.start();
   }
 
-  public void stop(BundleContext context) {
+  public void stop(BundleContext context) { // <3>
     shutdown();
     thread.interrupt();
   }
 
-  private ServerConfig getConfig() {
+  private ServerConfig getConfig() { // <4>
     Properties properties = new Properties();
     try {
       properties.load(new FileReader("etc/zookeeper.properties"));
@@ -81,10 +81,10 @@ public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleA
     return config;
   }
 
-  private void zk() {
+  private void zk() { // <5>
     try {
       info("ZookeeperService starting");
-      runFromConfig(config);
+      runFromConfig(config); 
     } catch (Exception e) {
       e.printStackTrace();
       log.error("ZookeeperService:", e);
@@ -98,3 +98,9 @@ public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleA
   }
 }
 ----
+
+<1> The class extends ZooKeeperServerMain and implements the BundleActivator interface.
+<2> *start* is part of the BundleActivator interface, starts zookeeper
+<3> *stop* is also part of the BundleActivator interface, shutdowns zookeeper
+<4> reading the config properties file
+<5> The zookeeper service runs in a extra thread
