@@ -152,7 +152,7 @@
             "title": "tr.menu.blog_bigdata.zookeeper",
             "description": "",
             "uri": "bigdata_part2zookeeper.adoc",
-            "icon": "vaadin-icons:book",
+            "icon": "vaadin-icons:file-tree-sub",
             "id": "blog_bigdata_part2zookeeper",
             "help": "",
             "adoc_include": false,
