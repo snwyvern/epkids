@@ -521,5 +521,9 @@
     {
         "msgstr": "BPMN",
         "msgid": "tr.menu.blog_bpm.bpmn"
+    },
+    {
+        "msgstr": "Part2: Zookeeper",
+        "msgid": "tr.menu.blog_bigdata.zookeeper"
     }
 ]
