@@ -1,12 +1,17 @@
 :linkattrs:
 :source-highlighter: rouge
 
+++++
+<simpl-socialbuttons text="Big or Fast Data" url="http://simpl4.org/repo/webdemo/start.html#blog_bigdata_part1karaf" data="twitter,facebook"></simpl-socialbuttons>
+++++
+
 
 == Big or Fast Data, Part two
 
 This is part two  of a series of articles concering "Big Data" in an OSGI environment.
 
 *link:local:blog_bigdata_part1karaf[Part one]*
+
 
 All components are designed as *link:https://karaf.apache.org[Apache Karaf, window="_blank"]*  features. +
 A Karaf container, created in the previous article is the basis for everything else. +
