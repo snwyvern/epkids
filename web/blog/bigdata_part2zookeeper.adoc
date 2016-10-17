@@ -125,7 +125,7 @@ public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleA
 <1> The class extends ZooKeeperServerMain and implements the BundleActivator interface.
 <2> In the *start* method, zookeeper is started. *start* is part of the BundleActivator interface
 <2> In the *stop* method, zookeeper is stopped. *stop* is part of the BundleActivator interface
-<4> reading the config properties file
+<4> Reading the config properties file
 <5> The zookeeper service runs in  its own thread
 
 {sp} +
