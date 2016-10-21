@@ -6,14 +6,19 @@
 
 
 * Sie haben Fragen zu simpl4 oder möchten eine simpl4-Schulung?
+* Sie möchten Support zu simpl4 haben ?
 * Sie wollen in einem Workshop gemeinsam mit uns eine Beispiel-Anwendung erstellen?
 * Sie möchten, dass wir für Sie ein Pilotprojekt umsetzen ?
 * Oder Sie möchten, dass wir eine individuelle, speziell auf Ihre Bedürnisse hin maßgeschneiderte Softwarelösung für Sie erstellen?
 * Sie wollen, dass wir Ihre Anwendung hosten?
 
 [imageblock.width500]
-image::web/images/business2.svg[]
+image::web/images/business2.svgz[]
 
-Kontaktieren Sie uns unter + 
+*Kontaktieren Sie uns unter* + 
 EMail: info@simpl4.org +
 Telefon: +49 (0)9831 8847538
+
+
+===== link:local:contactform[oder über das Formular]
+

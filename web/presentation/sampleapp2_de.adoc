@@ -8,7 +8,7 @@
 ==== Die Hauptaspekte ====
 
 * Prozesse (Mit Sub-Prozess, Message Events und EMail Service Task)
-* Camel (Implementieren eines RPC Interfaces, was das Zusammenspiel von Camel und Activiti zeigt)
+* Service (Implementieren eines RPC Interfaces, was das Zusammenspiel der Serviceengine und der Processengine zeigt)
 * Form (Einbinden in die Webseite)
 * Webapp (Grundgerüst, eine maßgeschneiderte Form)
 

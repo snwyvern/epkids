@@ -1,0 +1,49 @@
+[sw]
+	type = sw.enum
+--
+{
+    "dataList": [
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
+            "label": "-",
+            "value": "-"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
+            "label": "Workshop",
+            "value": "workshop"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": null,
+            "invalid": false,
+            "label": "Onlinetest",
+            "value": "onlinetest"
+        },
+        {
+            "invalid_from": null,
+            "tooltip": "Wir rufen Sie zurück",
+            "invalid": false,
+            "label": "Rückruf",
+            "value": "rueckruf"
+        }
+    ],
+    "fieldList": [
+        {
+            "fieldname": "value",
+            "description": "Value"
+        },
+        {
+            "fieldname": "label",
+            "description": "Label"
+        },
+        {
+            "fieldname": "tooltip",
+            "description": "Tooltip"
+        }
+    ]
+}

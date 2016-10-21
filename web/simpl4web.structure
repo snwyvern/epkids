@@ -17,16 +17,6 @@
     "enabled": true
   },
   {
-    "title": "Home",
-    "description": "",
-    "uri": "web/main_%l.adoc",
-    "icon": "home",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
     "title": "tr.menu.presentation",
     "description": "",
     "uri": "",
@@ -41,7 +31,17 @@
         "description": "",
         "uri": "web/presentation/bigpicture_%l.adoc",
         "icon": "av:hd",
-        "id": "",
+        "id": "presentation_bigpicture",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
+        "title": "tr.menu.presentation.business",
+        "description": "",
+        "uri": "web/presentation/business_%l.adoc",
+        "icon": "vaadin-icons:money",
+        "id": "presentation_business",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -51,20 +51,10 @@
         "description": "",
         "uri": "web/presentation/usecases_%l.adoc",
         "icon": "device:widgets",
-        "id": "",
-        "help": "web/help/usage_%l.adoc",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.menu.presentation.features",
-        "description": "",
-        "uri": "features.html",
-        "icon": "grade",
-        "id": "",
+        "id": "presentation_usecases",
         "help": "",
         "adoc_include": false,
-        "enabled": false
+        "enabled": true
       },
       {
         "title": "tr.menu.presentation.processing",
@@ -81,7 +71,7 @@
         "description": "",
         "uri": "web/presentation/sampleapp_%l.adoc?t=1",
         "icon": "event",
-        "id": "",
+        "id": "presentation_sampleapp",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -101,7 +91,7 @@
         "description": "",
         "uri": "web/presentation/webclient_%l.adoc?t=1",
         "icon": "language",
-        "id": "",
+        "id": "presentation_webclient",
         "help": "",
         "adoc_include": false,
         "enabled": true
@@ -119,26 +109,142 @@
     ]
   },
   {
-    "title": "tr.menu.tutorials",
+    "title": "tr.menu.documentation",
+    "description": "",
+    "uri": "structure:simpl4docu",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "tr.menu.blog",
     "description": "",
     "uri": "",
-    "icon": "chrome-reader-mode",
+    "icon": "vaadin-icons:lightbulb",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "tr.menu.blog_bigdata",
+        "description": "",
+        "uri": "",
+        "icon": "vaadin-icons:database",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true,
+        "children": [
+          {
+            "title": "tr.menu.blog_bigdata.part1karaf",
+            "description": "",
+            "uri": "bigdata_part1karaf.adoc",
+            "icon": "vaadin-icons:trophy",
+            "id": "blog_bigdata_part1karaf",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
+          },
+          {
+            "title": "tr.menu.blog_bigdata.zookeeper",
+            "description": "",
+            "uri": "bigdata_part2zookeeper.adoc",
+            "icon": "vaadin-icons:file-tree-sub",
+            "id": "blog_bigdata_part2zookeeper",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "title": "tr.menu.blog_bpm",
+        "description": "",
+        "uri": "",
+        "icon": "vaadin-icons:cogs",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true,
+        "children": [
+          {
+            "title": "tr.menu.blog_bpm.bpmn",
+            "description": "",
+            "uri": "bpm_bpmn_%l.adoc",
+            "icon": "vaadin-icons:file-process",
+            "id": "blog_bpm_bpmn",
+            "help": "",
+            "adoc_include": false,
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "tr.menu.company",
+    "description": "",
+    "uri": "",
+    "icon": "supervisor-account",
     "id": "",
     "help": "",
     "adoc_include": false,
     "enabled": false,
     "children": [
       {
-        "title": "tr.menu.tutorials.dataimport",
+        "title": "tr.menu.company.behind-simpl4",
         "description": "",
-        "uri": "web/tutorials/dataimport_%l.adoc?t=1",
-        "icon": "file-download",
+        "uri": "company_%l.adoc",
+        "icon": "communication:business",
         "id": "",
         "help": "",
         "adoc_include": false,
+        "enabled": false
+      },
+      {
+        "title": "tr.services",
+        "description": "",
+        "uri": "services_%l.adoc",
+        "icon": "build",
+        "id": "servicesaround",
+        "help": "",
+        "adoc_include": false,
         "enabled": true
+      },
+      {
+        "title": "tr.individual-software",
+        "description": "",
+        "uri": "individualsoftware_%l.adoc",
+        "icon": "face",
+        "id": "individuellsoftware",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
+        "title": "tr.catalog-software",
+        "description": "",
+        "uri": "",
+        "icon": "done-all",
+        "id": "",
+        "help": "",
+        "adoc_include": false,
+        "enabled": false
       }
     ]
+  },
+  {
+    "title": "tr.menu.workshop.description",
+    "description": "",
+    "uri": "web/workshopdescription_%l.adoc",
+    "icon": "",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": false
   },
   {
     "title": "tr.menu.misc_demo",
@@ -188,7 +294,7 @@
             "id": "",
             "help": "",
             "adoc_include": false,
-            "enabled": true
+            "enabled": false
           },
           {
             "title": "tr.menu.process_list",
@@ -198,7 +304,7 @@
             "id": "",
             "help": "",
             "adoc_include": false,
-            "enabled": true
+            "enabled": false
           }
         ]
       },
@@ -272,7 +378,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true,
+        "enabled": false,
         "children": [
           {
             "title": "tr.form_with_grid",
@@ -314,7 +420,7 @@
         "id": "",
         "help": "",
         "adoc_include": false,
-        "enabled": true,
+        "enabled": false,
         "children": [
           {
             "title": "SQL/Datatable",
@@ -351,78 +457,6 @@
     ]
   },
   {
-    "title": "tr.menu.company",
-    "description": "",
-    "uri": "",
-    "icon": "supervisor-account",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": true,
-    "children": [
-      {
-        "title": "tr.menu.company.behind-simpl4",
-        "description": "",
-        "uri": "company_%l.adoc",
-        "icon": "communication:business",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": false
-      },
-      {
-        "title": "tr.services",
-        "description": "",
-        "uri": "services_%l.adoc",
-        "icon": "build",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.individual-software",
-        "description": "",
-        "uri": "individualsoftware_%l.adoc",
-        "icon": "face",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": true
-      },
-      {
-        "title": "tr.catalog-software",
-        "description": "",
-        "uri": "",
-        "icon": "done-all",
-        "id": "",
-        "help": "",
-        "adoc_include": false,
-        "enabled": false
-      }
-    ]
-  },
-  {
-    "title": "News",
-    "description": "",
-    "uri": "news_%l.adoc",
-    "icon": "communication:ring-volume",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
-    "title": "tr.menu.press",
-    "description": "",
-    "uri": "press_%l.adoc",
-    "icon": "turned-in-not",
-    "id": "",
-    "help": "",
-    "adoc_include": false,
-    "enabled": false
-  },
-  {
     "title": "tr.menu.resources",
     "description": "",
     "uri": "links_%l.adoc",
@@ -433,11 +467,11 @@
     "enabled": true
   },
   {
-    "title": "tr.menu.documentation",
+    "title": "tr.menu.contact",
     "description": "",
-    "uri": "structure:simpl4docu",
-    "icon": "",
-    "id": "",
+    "uri": "contact_%l.adoc?template=1",
+    "icon": "account-box",
+    "id": "contactform",
     "help": "",
     "adoc_include": false,
     "enabled": true

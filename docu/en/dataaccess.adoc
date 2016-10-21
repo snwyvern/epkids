@@ -2,20 +2,20 @@
 :source-highlighter: rouge
 
 
-=== Dataaccess
+== Dataaccess
 
+image:docu/images/data.svg[width=150]
 
 Dataaccess in simpl4 is handled with the building block "data".
 
 Following operation are available.
 
-* *update* ->  update an object
+* *findBy [ Id | Filter | Where | Criteria ]* ->  find  object(s)
+* *deleteBy [ Id | Filter | Where | Criteria ]* ->  delete  object(s)
+* *updateBy [ Id | Filter | Where | Criteria ]* ->  update  object(s)
+* *upsertBy [ Id | Filter | Where | Criteria ]* ->  combination between insert and update, if an object exists perform 'update', otherwise 'insert'
 * *insert* ->  insert a new object
-* *upsert* ->  combination between insert and update, if an id in the data map then do 'update', otherwise 'insert'
-* *delete* ->  delete an object
-* *findById* ->  find an object by its id
-* *findByFilter* ->  use an filter to find a list of object
-* *findOneByFilter* ->  use a filter to find one object
+* *findOneBy [ Id | Filter | Where | Criteria ]* ->  find one object
 
 
 *The building block "data" has several  parameter, depended on the operation*
@@ -27,43 +27,41 @@ the data in 'source' are used
 
 image::docu/images/dataaccess/insert.svg[]
 
-==== Update
+==== findById/deleteById/UpdateById
 
-Update the object with the id specified in 'objectid', +
-the data in 'source' are used
-
-image::docu/images/dataaccess/update.svg[]
-
-==== Upsert
-
-Depend whether the 'objectid' is null or not, +
- insert or update is executed
-
-image::docu/images/dataaccess/upsert.svg[]
-
-==== Delete
-
-Delete the object with the id specified in 'objectid'
-
-image::docu/images/dataaccess/delete.svg[]
-
-==== findById
-
-Find the object with the id specified in 'objectid'.
+Find,delete or update the object with the id specified in 'objectid'.
 
 image::docu/images/dataaccess/findById.svg[]
 
-==== findByFilter/findOneByFilter
+==== findByFilter/deleteByFilter/updateByFilter
 
-findByFilter has a list of object as result, +
-findOneByFilter an object, +
-if more exists, only the first one is returned
+find,delete or update the objects that are specified by the filter 'filtername'
 
 image::docu/images/dataaccess/findByFilter.svg[]
 
+==== findByWhere/deleteByWhere/updateByWhere
+
+find,delete or update the objects that are specified by the whereclause in the "where" field
+
+image::docu/images/dataaccess/findByWhere.svg[]
+
+==== findByCriteria/deleteByCriteria/updateByCriteria
+
+find,delete or update the objects that are specified by the criteria in the "Objectcriteria" field
+
+image::docu/images/dataaccess/findByCriteria.svg[]
+
+==== findBy/findOneBy
+
+findBy has a list of object as result, +
+findOneBy an object, +
+if more exists, only the first one is returned
+
+
 === A complete example
 
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/data[examples,window="_blank"]
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/data[examples,window="_blank"] +
+link:/repo/docu/examples/data/start.html[Demo,window="_blank"]
 
 ==== a service, that uses some of the operationen
 

@@ -1,0 +1,45 @@
+<div>
+  <dom-module id="contact-request">
+    <template>
+       <simpl-form id="formId" on-xaction="onTap" form-name="contactrequest.form"></simpl-form>
+			 <simpl-toast id="toastId"></simpl-toast>
+    </template>
+    <script>
+      Polymer( {
+        is: 'contact-request',
+        behaviors: [
+          TranslationsBehavior
+        ],
+
+        onTap : function( e ) {
+          console.log( "Tap:", e.detail );
+					if( e.detail.valid === true){
+          	this.sendRequest( e.detail );
+						this.$.formId.setData("");
+					}
+        },
+        sendRequest: function( data ) {
+          var params = {
+            service: "simpl4",
+            method: simpl4.util.BaseManager.getNamespace() + ".sendRequest",
+            parameter: {
+              formData: data.data
+            },
+            async: true,
+            context: this,
+            failed: function( e ) {
+              console.error( "sendRequest:", e );
+            },
+            completed: function( ret ) {
+              console.log( "sendRequest:", ret );
+							this.$.toastId.show( tr("tr.requestok"), "success", "10000" );
+							this.$.formId.updateData( { human:false});
+            }
+          }
+          simpl4.util.Rpc.rpcAsync( params );
+        }
+      } );
+
+    </script>
+  </dom-module>
+</div>

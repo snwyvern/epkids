@@ -1,6 +1,9 @@
 :linkattrs:
 
 
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/web/[the code,window="_blank"] +
+see link:/repo/docu/web/start.html[Demo,window="_blank"]
+
 [.lead]
 Load web/menu.structure
 

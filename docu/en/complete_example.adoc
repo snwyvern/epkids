@@ -1,0 +1,124 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== A complete example
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/process[the code,window="_blank"] +
+see link:/repo/docu/examples/process/start.html[Demo,window="_blank"]
+
+[NOTE]
+The example is for demonstration purposes only. +
+Most operations do not what they would do in real life.
+
+
+=== Used simpl4 artifacts 
+
+==== Forms
+
+* order.form
+* send.form
+* prescriptioncheck.form
+
+==== Custom elements
+
+* order-example in order.html
+* send-example in send.html
+* prescription-check-example in prescription-check.html
+
+==== Process
+
+* order_med.process
+
+==== Service
+
+* order_med.service
+
+
+==== Others
+
+* start.html: html main file
+* menu.json: the main menu
+
+=== Schematic representation
+
+[.width4000]
+imagezoom::docu/images/complete_example/simplmed.svg[]
+
+
+=== Frontend
+
+==== order.html
+
+[source,handlebars,html]
+----
+
+<div>
+  <dom-module id="order-example"> <!--1-->
+    <template>
+      <simpl-form id="orderformId" namespace="docu" on-xaction="doOrder" data="{}" form-name="examples/process/order.form"></simpl-form> <!--2-->
+
+      <simpl-rpc id="rpcId" method="docu.orderStart" noauto on-error="rpcError" on-complete="rpcComplete" params="[[rpcParams]]"></simpl-rpc> <!--3-->
+      <simpl-toast id="toastId"></simpl-toast> <!--4-->
+    </template>
+    <script>
+      Polymer( {
+        is: 'order-example',
+        behaviors: [
+          TranslationsBehavior  //<!--5-->
+        ],
+        attached: function( e ) {
+          this.$.orderformId.setData( {  //<!--6-->
+            username: window.username
+          } );
+        },
+
+        doOrder: function( e ) {  //<!--7-->
+          var d = e.detail;
+          if ( d.valid && d.xaction == "execute" ) {  //<!--8-->
+            this.rpcParams = d.data;  //<!--9-->
+            window.username = d.data.username;  //<!--10-->
+            Simpl4.Cache.setItem( "username", d.data.username );  //<!--11-->
+            this.$.rpcId.go();  //<!--12-->
+          }
+        },
+        rpcError: function( e ) { //<!--13-->
+          this.$.toastId.show( tr( "a problem encountered" ), "error", "5000" );
+        },
+        rpcComplete: function( e ) { //<!--14-->
+          this.$.toastId.show( tr( "Order sent" ), "success", "5000" );
+        }
+      } );
+
+    </script>
+  </dom-module>
+  <order-example/> <!--15-->
+</div>
+
+----
+
+<1> Defines the custom element with name "order-example"
+<2> form element, show the "order.form". 
+<3> rpc element, communicates with the simpl4-backend.
+<4> toast element, show messages on the bottom of the screen.
+<5> Message translation behavior, not used here.
+<6> Initializing the order.form. In this example, the username is automatically placed in into the form. 
+<7> If a button in the order form clicked, the doOrder function is called.
+<8> The next steps are only executed , if the form is valid(this  means all plausibilty checks are fullfilled) and the execute button is pressed.
+<9> Setting the form data as rpc parameter.
+<10> Remember the username in a global variable.
+<11> The username is also saved in the browser local storage.
+<12> This executes the rpc.
+<13> Show an error messages, if an error happend.
+<14> Shows a message.if the order is successfully executed.
+<15> Use(shows) the previously defined custom element <order-example/>.
+
+===== And now the page live 
+
+++++
+include::examples/process/order.html[namespace=docu]
+++++
+
+
+
+
+

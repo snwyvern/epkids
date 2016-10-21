@@ -1,6 +1,14 @@
 :linkattrs:
 
-==== Workshoptermine link:local:docu-customelements[Anmeldung]
+=== {nbsp} 
+
+==== Workshops link:local:contactform[Anmeldung]
+
+////
+* simpl4 - Einführungs-Workshop
+** *Wann:* Sonntag den 04.09.2016 von 11.00Uhr bis 18.00Uhr
+** *Wo:* Cafe Netzwerk, Luisenstraße 11, 80333 München http://www.openstreetmap.org/node/957531675[Open Streetmap, window=blank] 
+
 
 * 11.11.2111 in Nürnberg +
 * 11.11.2111 in München 
@@ -9,3 +17,4 @@
 
 Neue Version 55.0
 
+////

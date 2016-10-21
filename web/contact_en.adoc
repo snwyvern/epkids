@@ -1,0 +1,31 @@
+:linkattrs:
+:source-highlighter: rouge
+
+===== Use the simpl4-Public ITS (Issue Tracking System)
+
+[role="border"] 
+--
+For questions, problems, suggestions oder other things a http://simpl4-redmine.ms123.org/projects/simpl4-public[*Issue Tracking System*, window=blank] is available.
+--
+
+===== Find out the latest informations about simpl4
+
+[role="border"] 
+--
+You find them on our http://www.facebook.com/simpl4[*simpl4 Facebook Site*, window=blank]
+--
+
+
+===== {nbsp}
+
+image:web/images/contactform.svg[width=150]
+
+{nbsp} +
+{nbsp} +
+
+++++
+<contact-request></contact-request>
+++++
+
+{nbsp} +
+{nbsp} +

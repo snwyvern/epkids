@@ -1,8 +1,6 @@
 :linkattrs:
 
-==== simpldate(schedule meetings) ====
-
-=== Overview ===
+=== simpldate(schedule meetings) ===
 
 
 ==== The main aspects ====
@@ -23,7 +21,7 @@ Therefore the used Forms are designed as web pages and sent to the process via R
 
 --
 [.width4000]
-imagezoom::web/images/simpldate_overview.svg[border]
+imagezoom::web/images/simpldate_overview.svgz[border]
 --
 
 === RPC ===
@@ -38,7 +36,7 @@ The service-component "workflow" implements the  RPC-Interface.
 * Read variables(state) from the process.
 
 [.width600]
-imagezoom::web/images/camel.svg[]
+imagezoom::web/images/camel.svgz[]
 
 === WEB ===
 

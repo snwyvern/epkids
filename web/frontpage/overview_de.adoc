@@ -10,7 +10,7 @@ Applikationen einmal erstellen auf allen gängigen Geräten benutzen.
 [CI,header="Schnelle Erstellung von Prozessen, Tabellen, Forms ..."]
 --
 * Geschäftsprozessen (mit BPMN 2.0 Modeller)
-* Datenmodell (konfortabler Editor zum Definieren des Datenmodells) 
+* Datenmodell (komfortabler Editor zum Definieren des Datenmodells) 
 * Datenbanktabellen (werden automatisch erzeugt, abgeleitet vom Datenmodell) 
 * Forms (freidefiniert oder abgeleitet vom Datenmodell)
 * Servicemodelle 

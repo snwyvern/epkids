@@ -173,6 +173,18 @@
           }
         },
         {
+          "name": "noauto",
+          "type": "Boolean",
+          "desc": "\nexecute not automatically\n\t\t\t\t ",
+          "published": true,
+          "default": false,
+          "jsdoc": {
+            "description": "\nexecute not automatically\n\t\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t\t * execute not automatically\n\t\t\t\t "
+          }
+        },
+        {
           "name": "params",
           "type": "Object",
           "desc": "\nThe service parameter Object, can be expressed as JSON.\n\t\t\t\t ",
@@ -349,194 +361,6 @@
     },
     {
       "type": "element",
-      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-      "events": [],
-      "properties": [
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "convertSheetsToStyles",
-          "type": "Function",
-          "params": [
-            {
-              "name": "root"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "createStyleElement",
-          "type": "Function",
-          "params": [
-            {
-              "name": "cssText"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "getProperties",
-          "type": "Function",
-          "params": [],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "hrefForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importRuleForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "href"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "namespace",
-          "type": "String",
-          "published": true,
-          "default": "xxx"
-        },
-        {
-          "name": "namespaceChanged",
-          "type": "Function",
-          "params": [],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_insert",
-          "type": "Function",
-          "params": [
-            {
-              "name": "str"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "ins"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_onCssResponse",
-          "type": "Function",
-          "params": [
-            {
-              "name": "e"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssNode",
-          "type": "Function",
-          "params": [
-            {
-              "name": "node"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRule",
-          "type": "Function",
-          "params": [
-            {
-              "name": "node"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRules",
-          "type": "Function",
-          "params": [
-            {
-              "name": "items"
-            },
-            {
-              "name": "fn"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "ready",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "behaviors": [
-        "CSSImportBehavior"
-      ],
-      "observers": [],
-      "is": "simpl-globals",
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "jsdoc": {
-        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-        "tags": [],
-        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
-      },
-      "demos": [],
-      "show": false
-    },
-    {
-      "type": "element",
       "desc": "\nform element with validation, the form specification is created in the simpl4 form-editor<br/>\nHint:if an external variable 'uuid' exists, then she is passed to service calls\n\n     <simpl-form id=\"editformId\" namespace=\"docu\" on-xaction=\"formAction\" form-name=\"examples/data/edit.form\"></simpl-form>\n        .\n        .\n        formAction: function( e ) {\n          var d = e.detail;\n          if ( d.xaction == \"reset\" ) {\n          }\n        }\n",
       "events": [],
       "properties": [
@@ -619,17 +443,6 @@
         {
           "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
           "type": "Function",
           "params": [
             {
@@ -953,17 +766,6 @@
         },
         {
           "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isAlert",
           "type": "Function",
           "params": [
@@ -1273,17 +1075,6 @@
         },
         {
           "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isAlert",
           "type": "Function",
           "params": [
@@ -1552,17 +1343,6 @@
         {
           "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
           "type": "Function",
           "params": [
             {
@@ -2018,9 +1798,31 @@
         },
         {
           "__fromBehavior": "FormBehavior",
+          "name": "__dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
           "name": "__formNameChanged",
           "type": "Function",
           "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "__isSaveDisabled",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sd"
+            },
+            {
+              "name": "item"
+            }
+          ],
           "private": true,
           "function": true
         },
@@ -2422,6 +2224,18 @@
         },
         {
           "__fromBehavior": "FormBehavior",
+          "name": "_setGlobalErrorMessage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "msg"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
           "name": "_setItems",
           "type": "Function",
           "params": [
@@ -2461,6 +2275,18 @@
           "params": [
             {
               "name": "arr"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
+          "name": "_validateLocal",
+          "type": "Function",
+          "params": [
+            {
+              "name": "errorListGlobal"
             }
           ],
           "private": true,
@@ -3527,6 +3353,194 @@
       "show": false
     },
     {
+      "type": "element",
+      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+      "events": [],
+      "properties": [
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "convertSheetsToStyles",
+          "type": "Function",
+          "params": [
+            {
+              "name": "root"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "createStyleElement",
+          "type": "Function",
+          "params": [
+            {
+              "name": "cssText"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "getProperties",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "hrefForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importRuleForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "href"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "namespace",
+          "type": "String",
+          "published": true,
+          "default": "xxx"
+        },
+        {
+          "name": "namespaceChanged",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_insert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "ins"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_onCssResponse",
+          "type": "Function",
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssNode",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRule",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRules",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            },
+            {
+              "name": "fn"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "ready",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "behaviors": [
+        "CSSImportBehavior"
+      ],
+      "observers": [],
+      "is": "simpl-globals",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "jsdoc": {
+        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "tags": [],
+        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
+      },
+      "demos": [],
+      "show": false
+    },
+    {
       "type": "behavior",
       "desc": "",
       "events": [],
@@ -3536,24 +3550,754 @@
           {
             "tag": "polymerBehavior",
             "type": null,
-            "name": "TranslationsBehavior",
+            "name": "FormElementSelectorBehavior",
             "description": null
           }
         ],
-        "orig": "* @polymerBehavior TranslationsBehavior "
+        "orig": "* @polymerBehavior FormElementSelectorBehavior "
       },
       "demos": [],
-      "symbol": "TranslationsBehavior",
-      "is": "TranslationsBehavior",
+      "symbol": "FormElementSelectorBehavior",
+      "is": "FormElementSelectorBehavior",
       "properties": [
         {
-          "name": "tr",
+          "name": "isActionButton",
           "type": "Function",
           "params": [
             {
-              "name": "m"
+              "name": "id"
             }
           ],
+          "function": true
+        },
+        {
+          "name": "isAlert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isCustom",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isEnumSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isField",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isForm",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGridInput",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGroup",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndNotBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isModuleSelector",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isPage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRelatedTo",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRow",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTableSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTabView",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTextArea",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isUpload",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "tabTitle",
+          "type": "Function",
+          "params": [
+            {
+              "name": "t"
+            }
+          ],
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-form/simpl-form.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "FormBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior FormBehavior "
+      },
+      "demos": [],
+      "symbol": "FormBehavior",
+      "is": "FormBehavior",
+      "properties": [
+        {
+          "name": "clearData",
+          "type": "Function",
+          "desc": "\nclear the form data \n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\nclear the form data \n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * clear the form data \n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "getData",
+          "type": "Function",
+          "desc": "\nget the form data \n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\nget the form data \n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * get the form data \n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "setData",
+          "type": "Function",
+          "desc": "\nset the form data \n\t\t ",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "jsdoc": {
+            "description": "\nset the form data \n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * set the form data \n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "setItems",
+          "type": "Function",
+          "desc": "\nnot really  public , should only be used if you know what you are doing\n\t\t ",
+          "params": [
+            {
+              "name": "items"
+            }
+          ],
+          "jsdoc": {
+            "description": "\nnot really  public , should only be used if you know what you are doing\n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * not really  public , should only be used if you know what you are doing\n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "updateData",
+          "type": "Function",
+          "desc": "\nupdate the form data \n\t\t ",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "jsdoc": {
+            "description": "\nupdate the form data \n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * update the form data \n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "validate",
+          "type": "Function",
+          "desc": "\nvalidate the form data \n\t\t ",
+          "params": [],
+          "jsdoc": {
+            "description": "\nvalidate the form data \n\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t * validate the form data \n\t\t "
+          },
+          "function": true
+        },
+        {
+          "name": "__dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "__formNameChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_buildShapeMap",
+          "type": "Function",
+          "params": [
+            {
+              "name": "shape"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_cleanShape",
+          "type": "Function",
+          "params": [
+            {
+              "name": "shape"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_constraintParams",
+          "type": "Object",
+          "private": true
+        },
+        {
+          "name": "_constructRegulaConstraints",
+          "type": "Function",
+          "params": [
+            {
+              "name": "constraints"
+            },
+            {
+              "name": "msg"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_convertType",
+          "type": "Function",
+          "params": [
+            {
+              "name": "t"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_correctRegex",
+          "type": "Function",
+          "params": [
+            {
+              "name": "r"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_doParameterMapping",
+          "type": "Function",
+          "params": [
+            {
+              "name": "parammapping"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_doPreProcess",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_doResultMapping",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            },
+            {
+              "name": "resultmapping"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_expandString",
+          "type": "Function",
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "binding"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_filterToArray",
+          "type": "Function",
+          "params": [
+            {
+              "name": "nodeList"
+            },
+            {
+              "name": "all"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_formNameChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_getData",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_getField",
+          "type": "Function",
+          "params": [
+            {
+              "name": "path"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_getLabel",
+          "type": "Function",
+          "params": [
+            {
+              "name": "path"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_getLabelShape",
+          "type": "Function",
+          "params": [
+            {
+              "name": "childs"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_getSelectionLists",
+          "type": "Function",
+          "params": [
+            {
+              "name": "method"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_isEmpty",
+          "type": "Function",
+          "params": [
+            {
+              "name": "s"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_isLineBreak",
+          "type": "Function",
+          "params": [
+            {
+              "name": "child"
+            },
+            {
+              "name": "next"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_isNotEmpty",
+          "type": "Function",
+          "params": [
+            {
+              "name": "s"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_isSaveDisabled",
+          "type": "Function",
+          "params": [
+            {
+              "name": "env"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_mapKeys",
+          "type": "Function",
+          "params": [
+            {
+              "name": "key"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_maskedEval",
+          "type": "Function",
+          "params": [
+            {
+              "name": "scr"
+            },
+            {
+              "name": "env"
+            },
+            {
+              "name": "def"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_postProcessLocal",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_postProcessService",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_prepareShape",
+          "type": "Function",
+          "params": [
+            {
+              "name": "shape"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_preProcessLocal",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_preProcessService",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_removeExtension",
+          "type": "Function",
+          "params": [
+            {
+              "name": "s"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_setData",
+          "type": "Function",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_setFieldData",
+          "type": "Function",
+          "params": [
+            {
+              "name": "data"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_setGlobalErrorMessage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "msg"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_setItems",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_shapesChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_specChanged",
+          "type": "Function",
+          "desc": "----------------------------------",
+          "params": [],
+          "jsdoc": {
+            "description": "----------------------------------",
+            "tags": [],
+            "orig": "----------------------------------"
+          },
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_toMap",
+          "type": "Function",
+          "params": [
+            {
+              "name": "arr"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_validateLocal",
+          "type": "Function",
+          "params": [
+            {
+              "name": "errorListGlobal"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_valueChanged",
+          "type": "Function",
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "_whenFieldsReady",
+          "type": "Function",
+          "params": [
+            {
+              "name": "done"
+            }
+          ],
+          "private": true,
           "function": true
         },
         {
@@ -3563,125 +4307,18 @@
           "private": true,
           "configuration": true,
           "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "WhitespaceBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior WhitespaceBehavior "
-      },
-      "demos": [],
-      "symbol": "WhitespaceBehavior",
-      "is": "WhitespaceBehavior",
-      "properties": [
-        {
-          "name": "attached",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "ModernizrBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior ModernizrBehavior "
-      },
-      "demos": [],
-      "symbol": "ModernizrBehavior",
-      "is": "ModernizrBehavior",
-      "properties": [
-        {
-          "name": "attached",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
-            "name": "StyleScopeBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior StyleScopeBehavior "
-      },
-      "demos": [],
-      "symbol": "StyleScopeBehavior",
-      "is": "StyleScopeBehavior",
-      "properties": [
-        {
-          "name": "setStyleScope",
-          "type": "Function",
-          "params": [
-            {
-              "name": "main_el"
-            }
-          ],
-          "function": true
         },
         {
-          "name": "_domVisitor",
+          "name": "ready",
           "type": "Function",
-          "params": [
-            {
-              "name": "el"
-            },
-            {
-              "name": "f"
-            }
-          ],
+          "params": [],
           "private": true,
+          "configuration": true,
           "function": true
         }
       ],
       "observers": [],
-      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "contentHref": "src/simpl-form/form-behavior.html",
       "show": false
     },
     {
@@ -4108,225 +4745,37 @@
           {
             "tag": "polymerBehavior",
             "type": null,
-            "name": "FormElementSelectorBehavior",
+            "name": "TranslationsBehavior",
             "description": null
           }
         ],
-        "orig": "* @polymerBehavior FormElementSelectorBehavior "
+        "orig": "* @polymerBehavior TranslationsBehavior "
       },
       "demos": [],
-      "symbol": "FormElementSelectorBehavior",
-      "is": "FormElementSelectorBehavior",
+      "symbol": "TranslationsBehavior",
+      "is": "TranslationsBehavior",
       "properties": [
         {
-          "name": "isActionButton",
+          "name": "tr",
           "type": "Function",
           "params": [
             {
-              "name": "id"
+              "name": "m"
             }
           ],
           "function": true
         },
         {
-          "name": "isActionButtopn",
+          "name": "created",
           "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isAlert",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isCustom",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isEnumSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isField",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isForm",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGridInput",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGroup",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndNotBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isModuleSelector",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isPage",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRelatedTo",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRow",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTableSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTabView",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTextArea",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isUpload",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "tabTitle",
-          "type": "Function",
-          "params": [
-            {
-              "name": "t"
-            }
-          ],
+          "params": [],
+          "private": true,
+          "configuration": true,
           "function": true
         }
       ],
       "observers": [],
-      "contentHref": "src/simpl-form/simpl-form.html",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
       "show": false
     },
     {
@@ -4339,523 +4788,18 @@
           {
             "tag": "polymerBehavior",
             "type": null,
-            "name": "FormBehavior",
+            "name": "WhitespaceBehavior",
             "description": null
           }
         ],
-        "orig": "* @polymerBehavior FormBehavior "
+        "orig": "* @polymerBehavior WhitespaceBehavior "
       },
       "demos": [],
-      "symbol": "FormBehavior",
-      "is": "FormBehavior",
+      "symbol": "WhitespaceBehavior",
+      "is": "WhitespaceBehavior",
       "properties": [
         {
-          "name": "clearData",
-          "type": "Function",
-          "desc": "\nclear the form data \n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\nclear the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * clear the form data \n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "getData",
-          "type": "Function",
-          "desc": "\nget the form data \n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\nget the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * get the form data \n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "setData",
-          "type": "Function",
-          "desc": "\nset the form data \n\t\t ",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "jsdoc": {
-            "description": "\nset the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * set the form data \n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "setItems",
-          "type": "Function",
-          "desc": "\nnot really  public , should only be used if you know what you are doing\n\t\t ",
-          "params": [
-            {
-              "name": "items"
-            }
-          ],
-          "jsdoc": {
-            "description": "\nnot really  public , should only be used if you know what you are doing\n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * not really  public , should only be used if you know what you are doing\n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "updateData",
-          "type": "Function",
-          "desc": "\nupdate the form data \n\t\t ",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "jsdoc": {
-            "description": "\nupdate the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * update the form data \n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "validate",
-          "type": "Function",
-          "desc": "\nvalidate the form data \n\t\t ",
-          "params": [],
-          "jsdoc": {
-            "description": "\nvalidate the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * validate the form data \n\t\t "
-          },
-          "function": true
-        },
-        {
-          "name": "__formNameChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_buildShapeMap",
-          "type": "Function",
-          "params": [
-            {
-              "name": "shape"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_cleanShape",
-          "type": "Function",
-          "params": [
-            {
-              "name": "shape"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_constraintParams",
-          "type": "Object",
-          "private": true
-        },
-        {
-          "name": "_constructRegulaConstraints",
-          "type": "Function",
-          "params": [
-            {
-              "name": "constraints"
-            },
-            {
-              "name": "msg"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_convertType",
-          "type": "Function",
-          "params": [
-            {
-              "name": "t"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_correctRegex",
-          "type": "Function",
-          "params": [
-            {
-              "name": "r"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_dataChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_doParameterMapping",
-          "type": "Function",
-          "params": [
-            {
-              "name": "parammapping"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_doPreProcess",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_doResultMapping",
-          "type": "Function",
-          "params": [
-            {
-              "name": "items"
-            },
-            {
-              "name": "resultmapping"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_expandString",
-          "type": "Function",
-          "params": [
-            {
-              "name": "str"
-            },
-            {
-              "name": "binding"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_filterToArray",
-          "type": "Function",
-          "params": [
-            {
-              "name": "nodeList"
-            },
-            {
-              "name": "all"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_formNameChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getData",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getField",
-          "type": "Function",
-          "params": [
-            {
-              "name": "path"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getLabel",
-          "type": "Function",
-          "params": [
-            {
-              "name": "path"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getLabelShape",
-          "type": "Function",
-          "params": [
-            {
-              "name": "childs"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_getSelectionLists",
-          "type": "Function",
-          "params": [
-            {
-              "name": "method"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_isEmpty",
-          "type": "Function",
-          "params": [
-            {
-              "name": "s"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_isLineBreak",
-          "type": "Function",
-          "params": [
-            {
-              "name": "child"
-            },
-            {
-              "name": "next"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_isNotEmpty",
-          "type": "Function",
-          "params": [
-            {
-              "name": "s"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_isSaveDisabled",
-          "type": "Function",
-          "params": [
-            {
-              "name": "env"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_mapKeys",
-          "type": "Function",
-          "params": [
-            {
-              "name": "key"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_maskedEval",
-          "type": "Function",
-          "params": [
-            {
-              "name": "scr"
-            },
-            {
-              "name": "env"
-            },
-            {
-              "name": "def"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_postProcessLocal",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_postProcessService",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_prepareShape",
-          "type": "Function",
-          "params": [
-            {
-              "name": "shape"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_preProcessLocal",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_preProcessService",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_removeExtension",
-          "type": "Function",
-          "params": [
-            {
-              "name": "s"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_setData",
-          "type": "Function",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_setFieldData",
-          "type": "Function",
-          "params": [
-            {
-              "name": "data"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_setItems",
-          "type": "Function",
-          "params": [
-            {
-              "name": "items"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_shapesChanged",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_specChanged",
-          "type": "Function",
-          "desc": "----------------------------------",
-          "params": [],
-          "jsdoc": {
-            "description": "----------------------------------",
-            "tags": [],
-            "orig": "----------------------------------"
-          },
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_toMap",
-          "type": "Function",
-          "params": [
-            {
-              "name": "arr"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_valueChanged",
-          "type": "Function",
-          "params": [
-            {
-              "name": "e"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "_whenFieldsReady",
-          "type": "Function",
-          "params": [
-            {
-              "name": "done"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "created",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        },
-        {
-          "name": "ready",
+          "name": "attached",
           "type": "Function",
           "params": [],
           "private": true,
@@ -4864,7 +4808,89 @@
         }
       ],
       "observers": [],
-      "contentHref": "src/simpl-form/form-behavior.html",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "ModernizrBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior ModernizrBehavior "
+      },
+      "demos": [],
+      "symbol": "ModernizrBehavior",
+      "is": "ModernizrBehavior",
+      "properties": [
+        {
+          "name": "attached",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "StyleScopeBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior StyleScopeBehavior "
+      },
+      "demos": [],
+      "symbol": "StyleScopeBehavior",
+      "is": "StyleScopeBehavior",
+      "properties": [
+        {
+          "name": "setStyleScope",
+          "type": "Function",
+          "params": [
+            {
+              "name": "main_el"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "_domVisitor",
+          "type": "Function",
+          "params": [
+            {
+              "name": "el"
+            },
+            {
+              "name": "f"
+            }
+          ],
+          "private": true,
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-globals/simpl-globals.html",
       "show": false
     },
     {
@@ -5199,6 +5225,18 @@
           }
         },
         {
+          "name": "noauto",
+          "type": "Boolean",
+          "desc": "\nexecute not automatically\n\t\t\t\t ",
+          "published": true,
+          "default": false,
+          "jsdoc": {
+            "description": "\nexecute not automatically\n\t\t\t\t ",
+            "tags": [],
+            "orig": "*\n\t\t\t\t * execute not automatically\n\t\t\t\t "
+          }
+        },
+        {
           "name": "params",
           "type": "Object",
           "desc": "\nThe service parameter Object, can be expressed as JSON.\n\t\t\t\t ",
@@ -5373,194 +5411,6 @@
       "demos": [],
       "show": true
     },
-    "simpl-globals": {
-      "type": "element",
-      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-      "events": [],
-      "properties": [
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "convertSheetsToStyles",
-          "type": "Function",
-          "params": [
-            {
-              "name": "root"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "createStyleElement",
-          "type": "Function",
-          "params": [
-            {
-              "name": "cssText"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "getProperties",
-          "type": "Function",
-          "params": [],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "hrefForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importRuleForSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "sheet"
-            },
-            {
-              "name": "baseUrl"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "importSheet",
-          "type": "Function",
-          "params": [
-            {
-              "name": "href"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "namespace",
-          "type": "String",
-          "published": true,
-          "default": "xxx"
-        },
-        {
-          "name": "namespaceChanged",
-          "type": "Function",
-          "params": [],
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_insert",
-          "type": "Function",
-          "params": [
-            {
-              "name": "str"
-            },
-            {
-              "name": "index"
-            },
-            {
-              "name": "ins"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_onCssResponse",
-          "type": "Function",
-          "params": [
-            {
-              "name": "e"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssNode",
-          "type": "Function",
-          "params": [
-            {
-              "name": "node"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRule",
-          "type": "Function",
-          "params": [
-            {
-              "name": "node"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "__fromBehavior": "CSSImportBehavior",
-          "name": "_visitCssRules",
-          "type": "Function",
-          "params": [
-            {
-              "name": "items"
-            },
-            {
-              "name": "fn"
-            },
-            {
-              "name": "scope"
-            }
-          ],
-          "private": true,
-          "function": true
-        },
-        {
-          "name": "ready",
-          "type": "Function",
-          "params": [],
-          "private": true,
-          "configuration": true,
-          "function": true
-        }
-      ],
-      "behaviors": [
-        "CSSImportBehavior"
-      ],
-      "observers": [],
-      "is": "simpl-globals",
-      "contentHref": "src/simpl-globals/simpl-globals.html",
-      "jsdoc": {
-        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
-        "tags": [],
-        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
-      },
-      "demos": [],
-      "show": false
-    },
     "xaction-button": {
       "type": "element",
       "desc": "\nform element with validation, the form specification is created in the simpl4 form-editor<br/>\nHint:if an external variable 'uuid' exists, then she is passed to service calls\n\n     <simpl-form id=\"editformId\" namespace=\"docu\" on-xaction=\"formAction\" form-name=\"examples/data/edit.form\"></simpl-form>\n        .\n        .\n        formAction: function( e ) {\n          var d = e.detail;\n          if ( d.xaction == \"reset\" ) {\n          }\n        }\n",
@@ -5645,17 +5495,6 @@
         {
           "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
           "type": "Function",
           "params": [
             {
@@ -5979,17 +5818,6 @@
         },
         {
           "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isAlert",
           "type": "Function",
           "params": [
@@ -6299,17 +6127,6 @@
         },
         {
           "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isAlert",
           "type": "Function",
           "params": [
@@ -6578,17 +6395,6 @@
         {
           "__fromBehavior": "FormElementSelectorBehavior",
           "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "__fromBehavior": "FormElementSelectorBehavior",
-          "name": "isActionButtopn",
           "type": "Function",
           "params": [
             {
@@ -7044,9 +6850,31 @@
         },
         {
           "__fromBehavior": "FormBehavior",
+          "name": "__dataChanged",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
           "name": "__formNameChanged",
           "type": "Function",
           "params": [],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "__isSaveDisabled",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sd"
+            },
+            {
+              "name": "item"
+            }
+          ],
           "private": true,
           "function": true
         },
@@ -7448,6 +7276,18 @@
         },
         {
           "__fromBehavior": "FormBehavior",
+          "name": "_setGlobalErrorMessage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "msg"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
           "name": "_setItems",
           "type": "Function",
           "params": [
@@ -7487,6 +7327,18 @@
           "params": [
             {
               "name": "arr"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "FormBehavior",
+          "name": "_validateLocal",
+          "type": "Function",
+          "params": [
+            {
+              "name": "errorListGlobal"
             }
           ],
           "private": true,
@@ -8548,6 +8400,194 @@
         "description": "\nCRUD operations for simpl4\n",
         "tags": [],
         "orig": "\nCRUD operations for simpl4\n"
+      },
+      "demos": [],
+      "show": false
+    },
+    "simpl-globals": {
+      "type": "element",
+      "desc": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+      "events": [],
+      "properties": [
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "convertSheetsToStyles",
+          "type": "Function",
+          "params": [
+            {
+              "name": "root"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "createStyleElement",
+          "type": "Function",
+          "params": [
+            {
+              "name": "cssText"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "getProperties",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "hrefForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importRuleForSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "sheet"
+            },
+            {
+              "name": "baseUrl"
+            }
+          ],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "importSheet",
+          "type": "Function",
+          "params": [
+            {
+              "name": "href"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "namespace",
+          "type": "String",
+          "published": true,
+          "default": "xxx"
+        },
+        {
+          "name": "namespaceChanged",
+          "type": "Function",
+          "params": [],
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_insert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "index"
+            },
+            {
+              "name": "ins"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_onCssResponse",
+          "type": "Function",
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssNode",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRule",
+          "type": "Function",
+          "params": [
+            {
+              "name": "node"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "__fromBehavior": "CSSImportBehavior",
+          "name": "_visitCssRules",
+          "type": "Function",
+          "params": [
+            {
+              "name": "items"
+            },
+            {
+              "name": "fn"
+            },
+            {
+              "name": "scope"
+            }
+          ],
+          "private": true,
+          "function": true
+        },
+        {
+          "name": "ready",
+          "type": "Function",
+          "params": [],
+          "private": true,
+          "configuration": true,
+          "function": true
+        }
+      ],
+      "behaviors": [
+        "CSSImportBehavior"
+      ],
+      "observers": [],
+      "is": "simpl-globals",
+      "contentHref": "src/simpl-globals/simpl-globals.html",
+      "jsdoc": {
+        "description": "\n/**\nThis file is part of SIMPL4(http://simpl4.org).\n\n  Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n\nSIMPL4 is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nSIMPL4 is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n/\n",
+        "tags": [],
+        "orig": "\n/**\n * This file is part of SIMPL4(http://simpl4.org).\n *\n *   Copyright [2014] [Manfred Sattler] <manfred@ms123.org>\n *\n * SIMPL4 is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * SIMPL4 is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with SIMPL4.  If not, see <http://www.gnu.org/licenses/>.\n */\n"
       },
       "demos": [],
       "show": false

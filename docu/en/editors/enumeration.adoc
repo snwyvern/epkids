@@ -59,11 +59,11 @@ image::docu/images/enumerations/Use_of_enumerations.png[]
 
 
 
-An other way without creating _Enumerations_ is to write the few contens on field level in the input field "Serch (list). This allows also to select them, and to query for them.
+An other way without creating _Enumerations_ is to write the few contens on field level in the input field "Search (list). This allows also to select them, and to query for them.
 
 
 === A enumeration in a application ===
 
-Here is a example of _enumerations_ and how it is used in a application.
+Here is a example of _enumerations_, and how it is used in a application.
 [.width200]
-image::docu/images/enumerations/enumeration_in_app.png[]
+image::docu/images/enumerations/Enumeration_in_App.png[]

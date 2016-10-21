@@ -1,0 +1,82 @@
+@media screen and (max-width: 640px) {
+  #frontwrapper {
+    font-size: 0.88em;
+  }
+  #frontwrapper .title {
+    font-size: 1.4em;
+  }
+  #frontwrapper.front-page paper-material.front-page {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  #frontwrapper.front-page /deep/ paper-item {
+    font-size: 12px !important;
+  }
+}
+#frontwrapper .header {
+  color: inherit;
+}
+#frontwrapper img[src*=".svg"] {
+  width: 100%;
+}
+#frontwrapper .card {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+#frontwrapper paper-material {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.imagewrapper {
+  position: relative;
+}
+#maintext {
+  xackground: #8fa4ad;
+  color: #727272;
+}
+#frontwrapper /deep/ hr.asciidoctor-default {
+  border: solid #607d8b;
+  border-width: 2px 0 0;
+}
+#maintext {
+  padding-right: 2px;
+  /*background: #8FA4AD;
+  color: white;*/
+    background: #cfd8dc;
+    color: #040404;
+  border-bottom: 10px solid #607d8b;
+}
+#maintext {
+  padding-left: 64px !important;
+}
+#maintext ul {
+  margin-top: 0px !important;
+}
+#maintext ul li {
+  list-style: none;
+}
+#maintext ul li {
+  padding: 8px;
+  font-style: normal;
+  font-size: 18px;
+  border-left: 0px solid #CFD8DC;
+}
+#maintext i {
+  padding: 10px;
+  top: -1px;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 640px) {
+  #maintext ul li {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #maintext {
+    padding-left: 16px !important;
+  }
+  #maintext i {
+    top: 2px;
+  }
+}

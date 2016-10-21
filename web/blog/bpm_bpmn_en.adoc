@@ -1,0 +1,74 @@
+:Linkattrs:
+:Source-highlighter: rouge
+
+
+== Description
+
+This is the first article of a series of articles concering the topic BPMN.
+
+
+=== BPMN, what does it stand for?
+
+The short form BPMN stands for Business Process Modeling Notation, and is a graphical representation for the determination of business processes in a workflow.
+BPMN enables business process management, which is equally understandable for technical *AND* business users, but still allows for the representation of complex process semantics.
+
+image::web/images/processmodel_described.png[width = 80%]
+
+
+=== The purpose
+
+The primary goal is to provide a standard notation that is easily understood by ALL stakeholders in the company.
+
+To have a standard for modeling business processes for
+
+* Economic analysts, who define and refine processes
+* Technical developers who are responsible for the implementation of these processes
+* Enterprise managers who manage and monitor these processes
+
+
+=== A brief look at the history of BPMN
+
+BPMN was originally developed by the Business Process Management Initiative (BPMI). It is now part of the "Object Management Group", for short OMG.
+The current version of BPMN is version 2.0.
+
+
+=== The BPMN 2.0 specification
+
+The specification for the standard notation BPMN defines the symbols with which the various elements of processes are represented, what the symbols mean, and how they can be combined.
+
+It thus it regulates syntax and semantics, whereby the
+
+* _Syntax_ is the system of rules how the symbols may be combined
+* _Semantic_ is defining the meaning of symbols and their relationships
+
+By mapping a workflow in a process model, you also get a documentation that is understandable for the IT department and the department.
+
+
+=== The small BPMN 2.0 - ABC
+
+
+There are e.g. to name only the most important symbols
+
+* Start and End Events 
+* Activities executed by people or the machine
+* Various branching options (gateways)
+* Events such as e.g. events that occur during a process (Intermediate Events)
+
+The so-called connectors (arrows) connect the individual elements AND, at the same time also represent the flow in a business process.
+
+
+=== BPMN 2.0 and Process engine, a powerful duo
+
+A process engine understands the BPMN 2.0, it is almost a runtime environment for existing process model, it executes the source code with all the associated attributes, input masks, and what else is necessary.
+
+A process engine usually provides various functionalities, which would otherwise have to be programmed up in a complex manner independent of the chosen programming language.
+
+So for example
+
+* Where is the process right now?
+* Which values were entered, and by whom
+* And much more
+
+=== Conclusion
+
+The combination of both provides a standard for software development, which is equally understood by the technical department and the non technical department, and is supervisory documentation and "program".

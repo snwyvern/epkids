@@ -1,0 +1,874 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_93879203-5085-4063-865E-8221DD6EC359",
+  "properties": {
+    "overrideid": "website.service",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_39C261EA-76F3-4FC1-9D96-CCC90EC36CB0",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "sendRequest",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "sendRequest",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 1,
+          "items": [
+            {
+              "name": "formData",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "map",
+              "destination": "body"
+            }
+          ]
+        },
+        "rpcReturn": "body",
+        "mimetype": "",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "guest,admin"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4FBF124C-6A06-48F0-910C-CB311E9C7E41"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 148,
+          "y": 312.5
+        },
+        "upperLeft": {
+          "x": 68,
+          "y": 252.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_mail": "Mail",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "smtp",
+        "urivalue_host": "127.0.0.1",
+        "urivalue_port": 0,
+        "uriparam_username": "",
+        "uriparam_password": "",
+        "uriparam_subject": "request",
+        "uriparam_from": "website@simpl4.org",
+        "uriparam_to": "info@simpl4.org",
+        "uriparam_cc": "",
+        "uriparam_bcc": "",
+        "uriparam_searchTerm.subject": "",
+        "uriparam_searchTerm.body": "",
+        "uriparam_searchTerm.subjectOrBody": "",
+        "uriparam_searchTerm.from": "",
+        "uriparam_searchTerm.to": "",
+        "uriparam_searchTerm.seen": true,
+        "uriparam_contentType": "text/plain",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "MailEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 410,
+          "y": 312.5
+        },
+        "upperLeft": {
+          "x": 330,
+          "y": 252.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_4FBF124C-6A06-48F0-910C-CB311E9C7E41",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_304F608B-C594-44D2-A880-171F7A1A0154"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 194.75220604359905,
+          "y": 282.5
+        },
+        "upperLeft": {
+          "x": 148.88736638345412,
+          "y": 282.5
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 15.111657941642534,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_304F608B-C594-44D2-A880-171F7A1A0154"
+      }
+    },
+    {
+      "resourceId": "oryx_5AB67DDD-FB22-4599-BA67-9D1BA5432191",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 329.11201862588666,
+          "y": 282.5
+        },
+        "upperLeft": {
+          "x": 275.81277172086595,
+          "y": 282.5
+        }
+      },
+      "dockers": [
+        {
+          "x": 58.9622360025794,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_F96904EB-1EB0-4E00-BA2F-A55A67F59076"
+      }
+    },
+    {
+      "resourceId": "oryx_304F608B-C594-44D2-A880-171F7A1A0154",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "to pretty json",
+        "format": "json",
+        "csv_configRef": "",
+        "csv_strategyRef": "",
+        "csv_delimiter": ",",
+        "csv_skipFirstLine": false,
+        "csv_lazyLoad": false,
+        "csv_useMaps": false,
+        "univocity-fixed_headersDisabled": false,
+        "univocity-fixed_skipTrailingCharsUntilNewline": true,
+        "univocity-fixed_recordEndsOnNewLine": true,
+        "univocity-fixed_ignoreLeadingWhitespaces": true,
+        "univocity-fixed_ignoreTrailingWhitespaces": true,
+        "univocity-fixed_padding": "' ',",
+        "univocity-fixed_fieldLengths": null,
+        "univocity-fixed_asMap": false,
+        "zip_pattern": "",
+        "zip_oneToBody": true,
+        "json_prettyPrint": true,
+        "json_library": "flexjson",
+        "extraOptions": null,
+        "func": "marshal"
+      },
+      "stencil": {
+        "id": "Marshal"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5AB67DDD-FB22-4599-BA67-9D1BA5432191"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 275,
+          "y": 312.5
+        },
+        "upperLeft": {
+          "x": 195,
+          "y": 252.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_4C013A6D-FCE2-4826-8E2A-A2A61BFA8F41",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "adoc with groovy preprocess",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "groovyPreprocess",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 2,
+          "items": [
+            {
+              "name": "filename",
+              "destname": "",
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "header"
+            },
+            {
+              "name": "model",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "header"
+            }
+          ]
+        },
+        "rpcReturn": "bodyWithMime",
+        "mimetype": "text/html",
+        "rpcReturnHeaders": null,
+        "startableGroups": "global.guest",
+        "startableUsers": null
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1C20399A-D1BA-463F-AAFE-7E8214FDF7C1"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 151,
+          "y": 495.5
+        },
+        "upperLeft": {
+          "x": 71,
+          "y": 417.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3CC10EBA-9005-49D8-BE8F-F00F0B10EE96",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "convert adoc to html",
+        "type_asciidoctor": "Asciidoctor",
+        "uri_template": "asciidoctor:dummy",
+        "uriparam_source": "",
+        "uriparam_output": "html",
+        "uriparam_destination": "",
+        "uriparam_enclosingDiv": false,
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "AsciidoctorEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 665,
+          "y": 711
+        },
+        "upperLeft": {
+          "x": 585,
+          "y": 639
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_1C20399A-D1BA-463F-AAFE-7E8214FDF7C1",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4D54EA23-D4D7-4F95-B0C2-F5F1F20424F4"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 194.0558680436638,
+          "y": 456.5
+        },
+        "upperLeft": {
+          "x": 151.60324552057233,
+          "y": 456.5
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 39
+        },
+        {
+          "x": 19.453376053740044,
+          "y": 34.5
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_4D54EA23-D4D7-4F95-B0C2-F5F1F20424F4"
+      }
+    },
+    {
+      "resourceId": "oryx_6C0386F0-24E6-4E38-A574-2B87455EDF9F",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_88D16D50-F510-4379-BCED-1D1EE87ACDE1"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 314.60122134895596,
+          "y": 456.5
+        },
+        "upperLeft": {
+          "x": 275.4945984609884,
+          "y": 456.5
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 34.5
+        },
+        {
+          "x": 23.169563326663592,
+          "y": 33
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_88D16D50-F510-4379-BCED-1D1EE87ACDE1"
+      }
+    },
+    {
+      "resourceId": "oryx_4D54EA23-D4D7-4F95-B0C2-F5F1F20424F4",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "read adoc file to p.adoc",
+        "type_repo": "Repo",
+        "uri_template": "repo:${operation}",
+        "urivalue_operation": "get",
+        "uriparam_destination": "p.adoc",
+        "uriparam_repo": "-",
+        "uriparam_path": "h.filename",
+        "uriparam_type": "all",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "RepoEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_6C0386F0-24E6-4E38-A574-2B87455EDF9F"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 275,
+          "y": 491
+        },
+        "upperLeft": {
+          "x": 195,
+          "y": 422
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_88D16D50-F510-4379-BCED-1D1EE87ACDE1",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "read model to body",
+        "type_repo": "Repo",
+        "uri_template": "repo:${operation}",
+        "urivalue_operation": "get",
+        "uriparam_destination": "",
+        "uriparam_repo": "global",
+        "uriparam_path": "\"stencilsets/${h.model}.json\"",
+        "uriparam_type": "all",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "RepoEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DDC682B2-ADAC-4B59-89E5-C04ED944C2D3"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 395,
+          "y": 489.5
+        },
+        "upperLeft": {
+          "x": 315,
+          "y": 423.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_EB8DCD30-8C29-4E79-8F13-452ADC141D69",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "parse model ",
+        "format": "json",
+        "csv_configRef": "",
+        "csv_strategyRef": "",
+        "csv_delimiter": ",",
+        "csv_skipFirstLine": false,
+        "csv_lazyLoad": false,
+        "csv_useMaps": false,
+        "univocity-fixed_headersDisabled": false,
+        "univocity-fixed_skipTrailingCharsUntilNewline": true,
+        "univocity-fixed_recordEndsOnNewLine": true,
+        "univocity-fixed_ignoreLeadingWhitespaces": true,
+        "univocity-fixed_ignoreTrailingWhitespaces": true,
+        "univocity-fixed_padding": "' ',",
+        "univocity-fixed_fieldLengths": null,
+        "univocity-fixed_asMap": false,
+        "zip_pattern": "",
+        "zip_oneToBody": true,
+        "json_prettyPrint": true,
+        "json_library": "flexjson",
+        "extraOptions": null,
+        "func": "unmarshal"
+      },
+      "stencil": {
+        "id": "Unmarshal"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_61EE2FA4-8F17-4A33-B7B4-E193740708A2"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 515,
+          "y": 486.5
+        },
+        "upperLeft": {
+          "x": 435,
+          "y": 426.5
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DDC682B2-ADAC-4B59-89E5-C04ED944C2D3",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_EB8DCD30-8C29-4E79-8F13-452ADC141D69"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 434.5569686163541,
+          "y": 456.5
+        },
+        "upperLeft": {
+          "x": 395.67964518239376,
+          "y": 456.5
+        }
+      },
+      "dockers": [
+        {
+          "x": 68.20530877987858,
+          "y": 33
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_EB8DCD30-8C29-4E79-8F13-452ADC141D69"
+      }
+    },
+    {
+      "resourceId": "oryx_4F86A38C-7952-41C5-903F-16657D9EB0BA",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "process groovy",
+        "type_template": "Template",
+        "uri_template": "template:${type}",
+        "urivalue_type": "groovy",
+        "uriparam_source": "p.adoc",
+        "uriparam_destination": "",
+        "uriparam_headerfields": "",
+        "uriparam_assignments": [
+          {
+            "expr": "h.model",
+            "type": "map",
+            "variable": "model"
+          }
+        ],
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "TemplateEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_8C5235BA-6BDA-42B0-83BD-172D1382152A"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 515,
+          "y": 705
+        },
+        "upperLeft": {
+          "x": 435,
+          "y": 645
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_61EE2FA4-8F17-4A33-B7B4-E193740708A2",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_59983C2C-C7C6-4BE8-9EEE-FCB48C035C5F"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 475,
+          "y": 524.0208333333333
+        },
+        "upperLeft": {
+          "x": 475,
+          "y": 487.08854166666663
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 31.166666666666668
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_59983C2C-C7C6-4BE8-9EEE-FCB48C035C5F"
+      }
+    },
+    {
+      "resourceId": "oryx_59983C2C-C7C6-4BE8-9EEE-FCB48C035C5F",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "set the body  to property \"model\"",
+        "headers": {
+          "totalCount": 1,
+          "items": [
+            {
+              "name": "model",
+              "value": "request.body",
+              "language": "groovy"
+            }
+          ]
+        }
+      },
+      "stencil": {
+        "id": "SetHeader"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_6828F278-753A-447B-BF5A-036137AC4C4D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 515,
+          "y": 610
+        },
+        "upperLeft": {
+          "x": 435,
+          "y": 525
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_8C5235BA-6BDA-42B0-83BD-172D1382152A",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_3CC10EBA-9005-49D8-BE8F-F00F0B10EE96"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 584.3125,
+          "y": 675
+        },
+        "upperLeft": {
+          "x": 515.8671875,
+          "y": 675
+        }
+      },
+      "dockers": [
+        {
+          "x": 63,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 36
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_3CC10EBA-9005-49D8-BE8F-F00F0B10EE96"
+      }
+    },
+    {
+      "resourceId": "oryx_6828F278-753A-447B-BF5A-036137AC4C4D",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4F86A38C-7952-41C5-903F-16657D9EB0BA"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 475,
+          "y": 644.60546875
+        },
+        "upperLeft": {
+          "x": 475,
+          "y": 610.4921875
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 42.5
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_4F86A38C-7952-41C5-903F-16657D9EB0BA"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}

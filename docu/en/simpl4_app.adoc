@@ -1,0 +1,50 @@
+:linkattrs:
+
+
+== simpl4 applications
+
+image:docu/images/simpl4_app.svg[width=200]
+
+What is it:
+
+Each simpl4 application has a namespace and lives in it own git repository. +
+An application consists of a set of services and the web frontend. +
+Exchanging simpl4 applications is very easy using a git hosting service as application store. +
+You can also have a simpl4 application without an git service, but there is no easy way to transport the apps between simpl4 instances. +
+If you don't like an public git service, then you can also use a private one, as link:https://github.com/gitbucket/gitbucket[Gitbucket]. +
+It's easy to install and plays very nice with simpl4. The user interface is like github.
+
+
+=== How to install an application ===
+
+When simpl4 is opened, first the Tab "global", and then in the mainmenu/Global (bottom left) "Manage applications" has to be selected.
+
+In the appearing screen the point "Install application" has to be choosen.
+
+[.width900]
+imagezoom::docu/images/app_install.svg[width=800]
+
+1. Click "install app", the second window opens.
+2. The url of the git repository, e.g. https://github.com/simpl4-apps/kfzplan
+3. The application name, e.g. kfzplan , only one of them, *url(2)* or *name(3)* can be specified. + 
+*name(3)* can only be used when the repository is at github, otherwise the *url(2)* must be specified.
+4. Username of the git hosting service.
+5. the corresponding password
+6. If the built-in database is used, the data can also be stored in a git repository. +
+The repository name must be the application name append with "_data". e.g. kfzplan_data.
+
+
+[NOTE]
+There is no difference between a new and an existing application installation. +
+The git repository must exist in both cases. +
+In the case of a new application an empty repository must be created. +
+Creating this repository is not subject of this manual.
+
+{nbsp} +
+
+[TIP]
+If a remote repository is not used, only Point *3*, the application name,  is needed.
+
+{nbsp} +
+
+*After saving, simpl4 has to reloaded and an new login has to be made.*

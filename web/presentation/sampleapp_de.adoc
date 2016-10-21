@@ -1,8 +1,6 @@
 :linkattrs:
 
-== simpldate (Besprechungen planen) ==
-
-=== Übersicht === 
+=== simpldate (Besprechungen planen) ===
 
 
 ==== Die Hauptaspekte ====
@@ -24,7 +22,7 @@ Deswegen wurden die verwendeten Forms als Webseiten realisiert, und dem Prozess 
 
 --
 [.width4000]
-imagezoom::web/images/simpldate_overview.svg[border]
+imagezoom::web/images/simpldate_overview.svgz[border]
 --
 
 === RPC ===
@@ -39,7 +37,7 @@ Die Service-Komponente "workflow" setzt die "RPCs" um.
 * Variablen (Zustand) des Prozesses auslesen
 
 [.width600]
-imagezoom::web/images/camel.svg[]
+imagezoom::web/images/camel.svgz[]
 
 === WEB ===
 

@@ -31,6 +31,33 @@ simpl4 Login: admin/admin
 link:http://download.ms123.org/download/simpl4_vmware.ova[Download simpl4 VMware,window="_blank"]
 --
 '''
+[ROW,cell0="justify-center", col1="align-center"]
+--
+image:debian-logo.jpg[Logo, height=70]
+###
+
+link:http://download.ms123.org/download/simpl4-2.1.deb[Download Debian Paket,window="_blank"] 
+
+
+[NOTE]
+Auf debian stable muss link:https://backports.debian.org/Instructions[backports zu den apt sources hinzugefügt werden ,window="_blank"] , damit openjdk-8 installiert werden kann.
+
+{nbsp} +
+
+.Installation 
+[source,shell,shell_session]
+----
+$ apt-get install openjdk-8-jdk-headless 
+$ dpkg -i simpl4-2.1.deb 
+----
+
+* In */opt/simpl4/bin/simpl4.sh* kann der Port geändert werden, eingestellt ist 8080 
+* Starten: */opt/simpl4/bin/simpl4.sh start*
+* Stoppen: */opt/simpl4/bin/simpl4.sh stop* 
+* Entfernen: *apt-get remove simpl4*
+--
+
+'''
 
 
 [ROW,  cell0="justify-center", col0="align-center"]
@@ -65,16 +92,11 @@ simpl4 Login: admin/admin
 --
 image:github_logo.png[Logo, height=50]
 ###
-*Sourceccode*
-link:https://github.com/ms123s/simpl4-src[https://github.com/ms123s/simpl4-src,window="_blank"]
+link:https://github.com/ms123s/simpl4-src[Sourceccode,window="_blank"]
+
+link:https://github.com/ms123s/simpl4-deployed[Manuelle Installation,window="_blank"]
 --
 
-'''
-
---
-*Manuelle Installation* +
-link:https://github.com/ms123s/simpl4-deployed[https://github.com/ms123s/simpl4-deployed,window="_blank"]
---
 
 '''
 

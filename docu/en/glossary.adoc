@@ -1,30 +1,30 @@
 :linkattrs:
 
+== Glossary
+
 In the following, the terms used in simpl4 will be explained
 
 image:docu/images/glossary.svg[width=100]
 
+* Artifacts:  All products that are produced as an intermediate or final result in simpl4. +
+For example:forms, processmodels, servicemodels ..
 * BPMN 2.0: Business Process Model and Notation in Version 2.0
-
 * Custom Elements: simpl4 uses link:https://www.polymer-project.org/1.0/[Polymer,window="_blank"] 
-
 * Enumeration: Mostly used as items of a selectBox
-
 * Filter: A definition of data query, which can be used in different places in simpl4
-
 * Namespace: or application, a fenced area with its own git repository.
-
+* Procedure: separate executable part of a services, reachable via RPC. +
+A service consists of one or more procedures
 * Process: is a in the processengine executed process model
-
 * Process model: is specified in BPMN and modelled in the simpl4 modeler
-
-* Processengine: executes the BPMN process models and orchestrates the service engine and the Human Tasks.
-
+* Processengine: executes the BPMN process models and + 
+orchestrates the service engine and the Human Tasks.
+* RPC: Remote procedure call.
 * Service: is a in the serviceengine executed service model
-
-* Service model :  is specified in the simpl4 service editor.
-
-* Serviceengine: Executes and controls services models.
-
+* Service model :  is created in the simpl4 service editor.
+* Serviceengine: Executes services models and controls the services.
 * WAMP: Web Application Messaging Protocol, Websocket subprotocol
 
+////
+* Direct endpoint: or service entrypoint, if the http(s) protocol is used. This block defines the procedure parameter, return value(s) and the permissions.
+////

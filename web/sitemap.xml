@@ -8,11 +8,6 @@
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!0" />
    </url>
 
-   <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_mainparts</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_mainparts" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_mainparts" />
-   </url>
 
    <url>
       <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_bigpicture</loc>
@@ -20,11 +15,6 @@
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_bigpicture" />
    </url>
 
-   <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_features</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_features" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_features" />
-   </url>
 
    <url>
       <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_sampleapp</loc>
@@ -32,11 +22,6 @@
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_sampleapp" />
    </url>
 
-   <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_processing</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_processing" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_processing" />
-   </url>
 
    <url>
       <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_webclient</loc>
@@ -51,8 +36,132 @@
    </url>
 
    <url>
-      <loc>http://web.simpl4.org/repo/webdemo/start.html#!links</loc>
-			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!links" />
-			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!links" />
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!resources</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!resources" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!resources" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-installation</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-installation" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-installation" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-glossary</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-glossary" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-glossary" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-overview</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-overview" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-overview" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-simpl4_app</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-simpl4_app" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-simpl4_app" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-communication</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-communication" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-communication" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-dataaccess</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-dataaccess" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-dataaccess" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-firstpage</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-firstpage" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-firststeps-firstpage" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-create_data</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-create_data" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-firststeps-create_data" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-create_service</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-create_service" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-firststeps-create_service" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-dynamic_page</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-firststeps-dynamic_page" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-firststeps-dynamic_page" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-enumeration</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-enumeration" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-enumeration" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-data</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-data" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-data" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-filter</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-filter" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-filter" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-message</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-message" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-message" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-form</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-form" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-form" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-service</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-service" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-service" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-document</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-document" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-document" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-process</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-process" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-process" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-structure</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-structure" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-structure" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-datamapper</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!docu-editors-datamapper" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!docu-editors-datamapper" />
+   </url>
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!blog_bigdata_part1karaf</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!blog_bigdata_part1kara" />
    </url>
 </urlset> 

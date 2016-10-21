@@ -127,6 +127,26 @@
         "msgid": "data.customers._team_list"
     },
     {
+        "msgstr": "Contact",
+        "msgid": "tr.contact"
+    },
+    {
+        "msgstr": "sent request",
+        "msgid": "tr.requestok"
+    },
+    {
+        "msgstr": "Reason",
+        "msgid": "tr.reason"
+    },
+    {
+        "msgstr": "Comment",
+        "msgid": "tr.comment"
+    },
+    {
+        "msgstr": "I am not a robot",
+        "msgid": "tr.human"
+    },
+    {
         "msgstr": "Email",
         "msgid": "tr.email1"
     },
@@ -319,6 +339,10 @@
         "msgid": "tr.menu.company"
     },
     {
+        "msgstr": "Contact",
+        "msgid": "tr.menu.contact"
+    },
+    {
         "msgstr": "Company behind simpl4",
         "msgid": "tr.menu.company.behind-simpl4"
     },
@@ -363,12 +387,8 @@
         "msgid": "docu.external_docu"
     },
     {
-        "msgstr": "App concept",
-        "msgid": "docu.app_concept"
-    },
-    {
-        "msgstr": "App install",
-        "msgid": "docu.app_install"
+        "msgstr": "Application",
+        "msgid": "docu.simpl4_app"
     },
     {
         "msgstr": "Editors",
@@ -453,5 +473,57 @@
     {
         "msgstr": "Dataaccess",
         "msgid": "docu.dataaccess"
+    },
+    {
+        "msgstr": "Email",
+        "msgid": "testrequest.email"
+    },
+    {
+        "msgstr": "Firstname",
+        "msgid": "testrequest.firstname"
+    },
+    {
+        "msgstr": "Surname",
+        "msgid": "testrequest.surname"
+    },
+    {
+        "msgstr": "Workshop",
+        "msgid": "tr.menu.workshop"
+    },
+    {
+        "msgstr": "Workshop content",
+        "msgid": "tr.menu.workshop.description"
+    },
+    {
+        "msgstr": "Dataflow",
+        "msgid": "docu.dataflow"
+    },
+    {
+        "msgstr": "Business features",
+        "msgid": "tr.menu.presentation.business"
+    },
+    {
+        "msgstr": "Part1:Karaf and Flink",
+        "msgid": "tr.menu.blog_bigdata.part1karaf"
+    },
+    {
+        "msgstr": "Blog",
+        "msgid": "tr.menu.blog"
+    },
+    {
+        "msgstr": "Big Data",
+        "msgid": "tr.menu.blog_bigdata"
+    },
+    {
+        "msgstr": "BPM",
+        "msgid": "tr.menu.blog_bpm"
+    },
+    {
+        "msgstr": "BPMN",
+        "msgid": "tr.menu.blog_bpm.bpmn"
+    },
+    {
+        "msgstr": "Part2: Zookeeper",
+        "msgid": "tr.menu.blog_bigdata.zookeeper"
     }
 ]

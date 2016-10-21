@@ -1,9 +1,15 @@
 :linkattrs:
 
 
-==== Remote Procedure Calls(RPC) over http
+== Communication
 
-The most basic communication in simpl4 is *rpc* via http. +
+=== Remote Procedure Calls(RPC) over http(s) (service entrypoints)
+
+image:docu/images/rpc.svg[width=150]
+
+==== Frontend 
+
+The most basic communication in simpl4 is *rpc* over http. +
 rpc can be performed both, declarativ and imperative.  +
 There is a customelement for the declarative way.
 
@@ -20,42 +26,84 @@ There is also a javascript module: *simpl4.util.Rpc*, this does the same in an i
 
 
 
-NOTE: Each service defined in the serviceeditor  for "rpc via http", must begin with a "Direct" endpoint. image:docu/images/communication/rpcendpoint.png[]
+
+
+==== Backend
+
+Definition of a service procedure.
+
+NOTE: image:docu/images/communication/rpcendpoint.png[role="left"]
+Each procedure, defined in the serviceeditor  for *"rpc over http"*, +
+must begin with a "Direct" building block. + 
+This keeps the procedure definition. +
+*The block is also called service entrypoint.*
+
+{sp} +
+{sp} +
+
+[.width900]
+imagezoom::docu/images/communication/rpc-buildingblock.svg[]
+
+. the procedurename
+. the procedure parameter(s)
+. the return value(s)
+. permissions (roles and user)
+. the header respectively property name under which the value is set, if empty the parametername is used
+. a  parameter can be optional
+. the parameter type: string, integer, long , double, boolean, date, map or list.
+. the place where the parameter value is stored: header/property or body. link:local:docu-overview[see description of exchange].
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
+link:/repo/docu/examples/rpc/start.html[Demo,window="_blank"]
 
 
 
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/rpc[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details.
-
-
-
-==== Plain websockets
+=== Plain websockets
 
 Websocket can be used to transmit bidirectional raw data. +
 As opposed to 'WAMP', you must provide the protocol here self.
 
 
-NOTE: Each service defined in the serviceeditor  for use with plain websockets, must begin with a "Websocket" endpoint. image:docu/images/communication/websocketendpoint.png[]
+NOTE: image:docu/images/communication/websocketendpoint.png[role="left"] 
+Each service entrypoint  defined in the serviceeditor  for use with plain websockets, +
+must begin with a "Websocket" building block. 
 
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/websocket[examples,window="_blank"] and link:local:docu-customelements[customelement documentation] for details. +
+link:/repo/docu/examples/websocket/start.html[Demo,window="_blank"]
 
 
-==== RPC and Pub/Sub with WAMP
+=== RPC and Pub/Sub with WAMP
 
 WAMP is an open standard WebSocket subprotocol that provides two application messaging patterns in one unified protocol:
 *Remote Procedure Calls + Publish & Subscribe*.
 
+[.width600]
+imagezoom::docu/images/communication/provide-call.svg[]
+
+{sp} +
+{sp} +
+
+[.width600]
+imagezoom::docu/images/communication/publish-subscribe.svg[]
+
+{sp} +
+{sp} +
+
+
+NOTE: image:docu/images/communication/wampendpoint.png[role="left"]
+Each service entrypoint defined in the serviceeditor  for use with wamp, +
+must begin with a "WAMP" building block. +
+The mode of the "WAMP" building block, can be configured as *"publisher"* or *"rpc"*.
+
+see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[examples,window="_blank"]. +
+link:/repo/docu/examples/wamp/start.html[Demo,window="_blank"]
 
 
 
-NOTE: Each service defined in the serviceeditor  for use with wamp, must begin with a "WAMP" endpoint. image:docu/images/communication/wampendpoint.png[]
-
-The "WAMP" endpoint mode can be configured as "publisher" or "rpc".
-
-see link:http://gitbucket.ms123.org/simpl4-apps/docu/tree/master/examples/wamp[examples,window="_blank"]
+=== Publish/Subscribe and simpl4
 
 
 
-==== Publish/Subscribe and simpl4
 
 In the context of simpl4 there is a very valueable usecase of Pub/Sub.
 

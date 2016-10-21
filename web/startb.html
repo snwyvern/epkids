@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="fragment" content="!">
+  <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="forkme.css">
+  <title>simpl4</title>
+  <script src="/sw/surface/webcomponents-lite.js.gz"></script>
+  <script src="/sw/surface/libs.js.gz"></script>
+  <link rel="stylesheet" type="text/css" href="/sw/surface/libs.css.gz">
+
+  <link rel="import" href="/sw/surface/domelements.html.gz">
+  <link rel="import" href="theme.html">
+  <link rel="import" href="contact_request.html">
+
+  <script>
+    console.log( "HOST:", window.location.host );
+    if ( window.location.host == 'www.simpl4.com' ) {
+      window._paq = [];
+      ( function() {
+        var u = ( ( "https:" == document.location.protocol ) ? "https" : "http" ) + "://tracker.simpl4.org/piwik/";
+        window._paq.push( [ 'setTrackerUrl', u + 'piwik.php' ] );
+        window._paq.push( [ 'setSiteId', 3 ] );
+        var d = document,
+          g = d.createElement( 'script' ),
+          s = d.getElementsByTagName( 'script' )[ 0 ];
+        g.type = 'text/javascript';
+        g.defer = true;
+        g.async = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore( g, s );
+      } )();
+    }
+
+  </script>
+
+  <style>
+    /*paper-collapse-item*/
+    
+    paper-collapse-item.asciidoctor iron-collapse.paper-collapse-item {
+      border: 1px solid #d2dbe0;
+      background: #f0f3f5;
+      border-radius: 3px;
+      padding-left: 10px;
+    }
+    paper-collapse-item.asciidoctor div.paragraph > p {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    paper-collapse-item.asciidoctor.empty iron-collapse.paper-collapse-item {
+      border: 0px;
+    }
+    paper-collapse-item.asciidoctor {
+      cursor: pointer;
+    }
+    paper-collapse-item.asciidoctor.empty {
+      cursor: auto;
+    }
+    paper-collapse-item.asciidoctor.empty paper-icon-button.paper-collapse-item {
+      display: none;
+    }
+    /*paper-collapse-item end*/
+    
+    [invisible] {
+      visibility: hidden;
+    }
+    [exclude] {
+      display: none !important;
+    }
+    /*chromium asciidoctor hack*/
+    
+    html /deep/ .admonitionblock > table {
+      display: block;
+    }
+    a {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html /deep/ select {
+      padding: 3px;
+      margin: 2px;
+      border-radius: 3px;
+      box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      background: #ffffff;
+      color: #888;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 640px) {
+      html /deep/ .mobile-hidden {
+        display: none !important;
+      }
+    }
+    /*@@@MS tem.*/
+    
+    html simpl-mmenu.simpl-main {
+      position: relative !important;
+    }
+    /*ie9*/
+    
+    .no-flexbox simpl-mmenu.simpl-main {
+      position: absolute !important;
+    }
+    @media screen and (max-height: 650px) {
+      html /deep/ #loginDialog {
+        top: -30px;
+      }
+    }
+    /*ie9*/
+    
+    .no-flexbox iron-icon {
+      display: inline-block !important;
+    }
+    @media screen and (max-width: 640px) {
+      html .mobile-hidden {
+        display: none !important;
+      }
+    }
+    @media screen and (min-width: 640px) {
+      html .desktop-hidden {
+        display: none !important;
+      }
+    }
+    simpl-main /deep/ neon-animated-pages > * {
+      left: 5px;
+    }
+    _body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    _simpl-main {
+      max-width: 1000px !important;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    /*Black header and greyblue menu START*/
+    
+    .polymer-theme .brand_drawer_panel {
+      background: #303e45 !important;
+    }
+    .polymer-theme .mm-menu.simpl-mmenu .mm-search.simpl-mmenu input.simpl-mmenu {
+      border-radius: 0px;
+      background: #303e45;
+      color: #CFD8DC;
+    }
+    .polymer-theme .menu__item_primary {
+      color: white;
+    }
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-next.simpl-mmenu:after,
+    .mm-menu.simpl-mmenu .mm-listview.simpl-mmenu > li.simpl-mmenu .mm-arrow.simpl-mmenu:after {
+      border-color: #CFD8DC;
+    }
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:before,
+    .mm-menu.simpl-mmenu .mm-navbar.simpl-mmenu .mm-btn.simpl-mmenu:after {
+      border-color: #CFD8DC;
+    }
+    .polymer-theme .menu__item_primary.mm-selected {
+      background: #607d8b;
+      color: white;
+    }
+    simpl-animatable-page.simpl-main > div {
+      padding-left: 5px;
+      padding-top: 0px;
+      padding-right: 0px;
+    }
+    @media screen and (max-height: 650px) {
+      simpl-animatable-page.simpl-main > div {
+        padding-right: 12px;
+      }
+    }
+    simpl-mmenu::-webkit-input-placeholder {
+      /*@@@MS Nach stylen muss das Blank wieder eingesetzt werden*/
+      
+      color: #CFD8DC !important;
+    }
+    simpl-mmenu::-moz-placeholder {
+      color: #CFD8DC !important;
+    }
+    simpl-mmenu:-ms-input-placeholder {
+      color: #CFD8DC !important;
+    }
+    .polymer-theme .mm-navbar.simpl-mmenu .mm-title.simpl-mmenu {
+      color: #ff5252 !important;
+			font-weight:600;
+      font-size: 1.3em;
+    }
+    /*greyblue menu END*/
+    /*collaps-item open*/
+    
+    paper-collapse-item.asciidoctor iron-collapse.content.paper-collapse-item {
+      color: #455a64;
+      border: 1px solid #455a64;
+      background: white;
+      border-radius: 3px;
+      padding-left: 10px;
+    }
+    /*Center page*/
+    
+    body,
+    html {
+      margin: 0 auto;
+      height: 100%;
+      max-width: 1200px;
+    }
+    /*Messages overlay*/
+    
+    .headeroverlay {
+      padding-left: 10px;
+      position: absolute;
+      overflow: hidden;
+      width: 90%;
+      top: 40%;
+      left: 2%;
+    }
+    .headeroverlay strong {
+      font-size: 1em;
+    }
+    .headeroverlay {
+      font-size: 1em;
+    }
+    @media screen and (max-width: 1100px) {
+      .headeroverlay {
+        font-size: 0.90em;
+        top: 38%;
+      }
+    }
+    @media screen and (max-width: 920px) {
+      .headeroverlay {
+        font-size: 0.85em;
+        top: 35%;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .headeroverlay {
+        font-size: 0.85em;
+        left: 0%;
+        top: 28%;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .headeroverlay {
+        font-size: 1em !important;
+        top: 0%;
+        position: relative;
+      }
+    }
+    .headeroverlay ul.asciidoctor-default,
+    .headeroverlay ol.asciidoctor-default,
+    .headeroverlay dl.asciidoctor-default {
+      line-height: 1.6;
+      margin-bottom: 0.25em;
+    }
+    .headeroverlay h1.asciidoctor-default,
+    .headeroverlay h2.asciidoctor-default,
+    .headeroverlay h3.asciidoctor-default,
+    .headeroverlay h4.asciidoctor-default {
+      margin-top: 0.1em;
+      margin-bottom: 0.2em;
+      line-height: 1.0em;
+      font-size: 1.0em;
+    }
+    .headeroverlay p.asciidoctor-default {
+      margin-bottom: 0.225em !important;
+    }
+    .headeroverlay ol > li p.asciidoctor-default,
+    .headeroverlay ul > li p.asciidoctor-default,
+    .headeroverlay ul dd.asciidoctor-default,
+    .headeroverlay ol dd.asciidoctor-default,
+    .headeroverlay .olist .olist.asciidoctor-default,
+    .headeroverlay .ulist .ulist.asciidoctor-default,
+    .headeroverlay .ulist .olist.asciidoctor-default,
+    .headeroverlay .olist .ulist.asciidoctor-default {
+      margin-bottom: 0.025em !important;
+    }
+    /* Start iron-collapse*/
+    
+    iron-collapse a.asciidoctor-default.simpl-import {
+      color: #ff5252 !important;
+    }
+    #mainContainer > article.scroll-content {
+      border-right: 4px solid #F0F3F4;
+    }
+    #mainContainer > aside.scrollbar-track-x {
+      display: none !important;
+    }
+    /* End iron-collapse*/
+
+  </style>
+</head>
+
+<body class="polymer-theme text_body_1">
+  <simpl-main logo-link="http://simpl4.org/%l" mmenu-name="simpl4business" logo="web/images/logoneu.svg" responsive-width="780px" mmenu-background="#303e45" mmenu-classes="mm-light"></simpl-main>
+</body>
+
+</html>

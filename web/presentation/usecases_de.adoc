@@ -36,7 +36,7 @@ image:web/presentation/images/contentmgm.svg[width=300]
 
 ###
 
-image:web/presentation/images/integration.svg[width=300]
+image:web/presentation/images/integration.svgz[width=350]
 
 --
 
@@ -66,7 +66,8 @@ image:web/presentation/images/simpl4-cloud.svg[width=300]
 === Officeautomation ===
 
 * MS Office (docx, pptx) und OpenOffice (odt, ods) Templates.
-* PDF Generierung
+* Dokumenten(ua. PDF) Generierung
+* Rechnungsverarbeitung
 
 
 ###
@@ -87,7 +88,7 @@ image:web/presentation/images/printing.svg[width=300]
 === Print ===
 
 * Elektronische Kataloge
-* Formuale
+* Formulare
 * mit integriertem DocBook
 
 --

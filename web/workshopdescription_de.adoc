@@ -1,0 +1,48 @@
+:linkattrs:
+:source-highlighter: rouge
+
+=== Workshop Beschreibung ===
+
+Der Workshop bietet eine kompakte Einführung in die Arbeit mit simpl4, einer Open-Source-Entwicklungs- und Serivceplatform für HTML5-Anwendungen mit Process- und Serviceengine.
+
+image::web/images/workshop.svg[]
+
+
+==== Die Tagespunkte ====
+
+* simpl4 installieren
+* Erklärung wichtiger simpl4 Begrifflichkeiten und Formulierungen 
+* Grundlegendes und Wichtiges zur und über BPMN
+** Was ist die BPMN
+** Wozu dient sie ?
+* Die Prozessengine
+** Was macht sie in simpl4
+** BPMN und die Process Engine
+** Wann macht die Verwendung der Prozess Engine Sinn, und wann weniger ?
+* Das simpl4 Konzept und Zusammenhänge
+* Erklärung der Serviceengine
+** Service Modell
+** Service Entrypoint
+** Exchange und Message
+** Beispiel eines Service Modells zur Erstellung PDF (Katalog Kundenprojekt)
+* Analyse eines beispielhaften Live-Bestellprozesses
+** Der umgesetzte Bestellprozess in der Entwicklungsumgebung im Detail
+*** Properties
+*** Aufrufe (RPC, etc.)
+*** Scripting
+
+* Erste Schritte in simpl4 in der Praxis
+* Anlage
+** einer "Hello Worldseite" mit adoc
+** einer Entität (mit Feldpausibilitäten, Zuodnung Enumerations,...)
+** eines Filters
+** eines Service
+*** Einbinden der angelegten Entity
+*** Einbinden des Service Aufrufs in die erstellte "Hello World Seite"
+
+=== Nächster simpl4 Workshop link:local:contactform[Anmeldung]
+
+////
+* *Wann:* Sonntag den 04.09.2016 von 11.00Uhr bis 18.00Uhr
+* *Wo:* Cafe Netzwerk, Luisenstraße 11, 80333 München http://www.openstreetmap.org/node/957531675[Open Streetmap, window=blank]
+////
