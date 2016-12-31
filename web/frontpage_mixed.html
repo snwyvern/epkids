@@ -1,0 +1,71 @@
+<div>
+  <dom-module id="front-page">
+    <link rel="import" type="css" href="frontpage.css" />
+    <template>
+      <div id="frontwrapper" style="width:100%;">
+        <div class="page">
+          <div elevation="0" style="padding-top:10px;border-bottom: 10px solid #607d8b;" class="imagewrapper flex">
+            <img style="width:100%;" src$="[[getImageName(lang)]]" />
+          </div>
+
+          <template is="dom-if" if="[[isLang(lang,'de')]]">
+            <div id="maintext">
+              <ul class="fa-ul">
+                <li><i class="fa fa-li fa-gears" aria-hidden="true"></i>Flexibel zu handhabendes Business Prozess Management System, kombiniert mit Webentwicklung.</li>
+                <li><i class="fa fa-li fa-cubes" aria-hidden="true"></i>Es kann auf einen großen Baukasten mit vielen fertigen, aufeinander abgestimmten Bausteinen zurückgegriffen werden.</li>
+                <li><i class="fa fa-li fa-money" aria-hidden="true"></i>Durch das Opensource Modell von simpl4 ergeben sich viele Einsparmöglichkeiten und ein hoher Investitionsschutz.</li>
+                <li><i class="fa fa-li fa-cloud" aria-hidden="true"></i>Die moderne Architektur mit responsivem Web-Frontend , wie geschaffen für die Cloud, bietet weiteres Einsparpotential.</li>
+                <li><i class="fa fa-li fa-html5" aria-hidden="true"></i>Das HTML5-Frontend ist sehr gut für mobile Arbeitsplätze mit Displays jeder Größenordnung geeignet. </li>
+                <li><i class="fa fa-li fa-share-alt" aria-hidden="true"></i>Einfache Integration in bestehende Systemlandschaften.</p>
+                </li>
+              </ul>
+            </div>
+          </template>
+
+          <template is="dom-if" if="[[isLang(lang,'en')]]">
+            <div id="maintext">
+              <ul class="fa-ul">
+                <li><i class="fa fa-li fa-gears" aria-hidden="true"></i>Flexible to handle business process management system, combined with web development.</li>
+                <li><i class="fa fa-li fa-cubes" aria-hidden="true"></i>Access to a large construction kit with ready to use and matching building blocks.</li>
+                <li><i class="fa fa-li fa-money" aria-hidden="true"></i>Through the open source model of simpl4 many savings and high investment protection arise.</li>
+                <li><i class="fa fa-li fa-cloud" aria-hidden="true"></i>The modern architecture with the responsive web frontend, ideal for the cloud, provides further savings.</li>
+                <li><i class="fa fa-li fa-html5" aria-hidden="true"></i>The HTML5 frontend is very suitable for mobile devices with displays of all sizes.</li>
+                <li><i class="fa fa-li fa-share-alt" aria-hidden="true"></i>Easy integration into existing system environments.</p>
+                </li>
+              </ul>
+            </div>
+          </template>
+
+          <div class="grid row" style="background: #FFFDFA;">
+            <paper-material style="" elevation="0" class="grid column flex card">
+              <simpl-import url="{{getFileName('web/presentation/technic')}}"></simpl-import>
+            </paper-material>
+          </div>
+
+
+        </div>
+      </div>
+    </template>
+    <script>
+      Polymer( {
+        is: 'front-page',
+        behaviors: [ TranslationsBehavior, WhitespaceBehavior ],
+        attached: function() {
+          this.lang = Simpl4.Cache.getItem( "lang" );
+        },
+        isLang: function( lang, _lang ) {
+          return this.lang == _lang;
+        },
+        getImageName: function( lang ) {
+          return "web/images/bannerb_" + this.lang + ".svgz";
+        },
+        getFileName: function( name ) {
+          var lang = Simpl4.Cache.getItem( "lang" );
+          return name + "_" + lang + ".adoc";
+        }
+      } );
+
+    </script>
+  </dom-module>
+  <front-page class="flex layout horizontal" />
+</div>

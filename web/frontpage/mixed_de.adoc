@@ -1,0 +1,87 @@
+
+
+{sp} +
+{sp} +
+{sp} +
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/business_devel.svgz[width=300]
+###
+=== Entwicklung ===
+* Flexible Entwicklungsmodelle (Sie können gegebenfalls die Weiterentwicklung übernehmen, oder an  Dritte delegieren).
+* Schnellere Umsetzung neuer Ideen, durch zero Setup und +
+großem Baukasten mit vielen fertigen Bausteinen.
+* BPMN - ein gemeinsamer Nenner / eine gemeinsame Sprache für Technik und Fachabteilung
+--
+'''
+
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Opensource ===
+* Weniger  Abhängigkeit von einem Anbieter.
+* Prävention vor einem Vendor Lock-in. 
+* Riesiger Pool an freier Software. +
+Schnelle Integration in simpl4.
+* Flexibilität: *Alles* ist änder- und erweiterbar. +
+Fehler können schneller behoben werden.
+###
+image:web/presentation/images/opensource.svgz[width=300]
+--
+'''
+
+
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/workplace.svgz[width=300]
+###
+=== Arbeitsplatz ===
+
+* Keine Installation am Arbeitsplatz, +
+folglich auch keine Updates ->  immer aktuell.
+* Zugriff von vielen Ein/Ausgabegeräten (browserbasiert) +
+-> mobiler Arbeitsplatz
+--
+'''
+
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Kosten ===
+* Keine Kosten durch Systemsoftware, da unabhängig von Betriebssystemen.
+* Keine Arbeitsplatz-Lizenzen.
+* Keine Lizenzgebühren für simpl4
+* Cloud ready -> Keine Hardware nötig
+###
+image:web/presentation/images/costs.svgz[width=300]
+--
+'''
+
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/integration.svgz[width=350]
+###
+=== Integration ===
+* Einfache Integration in bestehende Systemlandschaften.
+* simpl4 kann auch als Mediator fungieren.
+* Zugriff auf verteilte IT-Ressourcen.
+--
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Sonstiges ===
+* Über 30 Jahre Erfahrung
+** mit Opensource Software
+** mit individuellen Softwareprojekten 
+###
+image:web/presentation/images/etc.svgz[width=300]
+--
+'''
+

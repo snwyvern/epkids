@@ -1782,12 +1782,25 @@
           "__fromBehavior": "FormBehavior",
           "name": "validate",
           "type": "Function",
-          "desc": "\nvalidate the form data \n\t\t ",
-          "params": [],
+          "desc": "\nvalidate the form data \n\n",
+          "params": [
+            {
+              "name": "dontInvalidate",
+              "type": "Boolean",
+              "desc": "don't invalidate the fields"
+            }
+          ],
           "jsdoc": {
-            "description": "\nvalidate the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * validate the form data \n\t\t "
+            "description": "\nvalidate the form data \n\n",
+            "tags": [
+              {
+                "tag": "param",
+                "type": "Boolean",
+                "name": "dontInvalidate",
+                "description": "don't invalidate the fields"
+              }
+            ],
+            "orig": "*\n\t\t * validate the form data \n     *\n\t\t * @param {Boolean} dontInvalidate   don't invalidate the fields\n\t\t "
           },
           "function": true
         },
@@ -3550,227 +3563,6 @@
           {
             "tag": "polymerBehavior",
             "type": null,
-            "name": "FormElementSelectorBehavior",
-            "description": null
-          }
-        ],
-        "orig": "* @polymerBehavior FormElementSelectorBehavior "
-      },
-      "demos": [],
-      "symbol": "FormElementSelectorBehavior",
-      "is": "FormElementSelectorBehavior",
-      "properties": [
-        {
-          "name": "isActionButton",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isAlert",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isCustom",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isEnumSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isField",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isForm",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGridInput",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isGroup",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isInputAndNotBoolean",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            },
-            {
-              "name": "xf_type"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isModuleSelector",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isPage",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRelatedTo",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isRow",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTableSelect",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTabView",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isTextArea",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "isUpload",
-          "type": "Function",
-          "params": [
-            {
-              "name": "id"
-            }
-          ],
-          "function": true
-        },
-        {
-          "name": "tabTitle",
-          "type": "Function",
-          "params": [
-            {
-              "name": "t"
-            }
-          ],
-          "function": true
-        }
-      ],
-      "observers": [],
-      "contentHref": "src/simpl-form/simpl-form.html",
-      "show": false
-    },
-    {
-      "type": "behavior",
-      "desc": "",
-      "events": [],
-      "jsdoc": {
-        "description": "",
-        "tags": [
-          {
-            "tag": "polymerBehavior",
-            "type": null,
             "name": "FormBehavior",
             "description": null
           }
@@ -3856,12 +3648,25 @@
         {
           "name": "validate",
           "type": "Function",
-          "desc": "\nvalidate the form data \n\t\t ",
-          "params": [],
+          "desc": "\nvalidate the form data \n\n",
+          "params": [
+            {
+              "name": "dontInvalidate",
+              "type": "Boolean",
+              "desc": "don't invalidate the fields"
+            }
+          ],
           "jsdoc": {
-            "description": "\nvalidate the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * validate the form data \n\t\t "
+            "description": "\nvalidate the form data \n\n",
+            "tags": [
+              {
+                "tag": "param",
+                "type": "Boolean",
+                "name": "dontInvalidate",
+                "description": "don't invalidate the fields"
+              }
+            ],
+            "orig": "*\n\t\t * validate the form data \n     *\n\t\t * @param {Boolean} dontInvalidate   don't invalidate the fields\n\t\t "
           },
           "function": true
         },
@@ -4319,6 +4124,227 @@
       ],
       "observers": [],
       "contentHref": "src/simpl-form/form-behavior.html",
+      "show": false
+    },
+    {
+      "type": "behavior",
+      "desc": "",
+      "events": [],
+      "jsdoc": {
+        "description": "",
+        "tags": [
+          {
+            "tag": "polymerBehavior",
+            "type": null,
+            "name": "FormElementSelectorBehavior",
+            "description": null
+          }
+        ],
+        "orig": "* @polymerBehavior FormElementSelectorBehavior "
+      },
+      "demos": [],
+      "symbol": "FormElementSelectorBehavior",
+      "is": "FormElementSelectorBehavior",
+      "properties": [
+        {
+          "name": "isActionButton",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isAlert",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isCustom",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isEnumSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isField",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isForm",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGridInput",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isGroup",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isInputAndNotBoolean",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            },
+            {
+              "name": "xf_type"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isModuleSelector",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isPage",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRelatedTo",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isRow",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTableSelect",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTabView",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isTextArea",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "isUpload",
+          "type": "Function",
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "function": true
+        },
+        {
+          "name": "tabTitle",
+          "type": "Function",
+          "params": [
+            {
+              "name": "t"
+            }
+          ],
+          "function": true
+        }
+      ],
+      "observers": [],
+      "contentHref": "src/simpl-form/simpl-form.html",
       "show": false
     },
     {
@@ -6834,12 +6860,25 @@
           "__fromBehavior": "FormBehavior",
           "name": "validate",
           "type": "Function",
-          "desc": "\nvalidate the form data \n\t\t ",
-          "params": [],
+          "desc": "\nvalidate the form data \n\n",
+          "params": [
+            {
+              "name": "dontInvalidate",
+              "type": "Boolean",
+              "desc": "don't invalidate the fields"
+            }
+          ],
           "jsdoc": {
-            "description": "\nvalidate the form data \n\t\t ",
-            "tags": [],
-            "orig": "*\n\t\t * validate the form data \n\t\t "
+            "description": "\nvalidate the form data \n\n",
+            "tags": [
+              {
+                "tag": "param",
+                "type": "Boolean",
+                "name": "dontInvalidate",
+                "description": "don't invalidate the fields"
+              }
+            ],
+            "orig": "*\n\t\t * validate the form data \n     *\n\t\t * @param {Boolean} dontInvalidate   don't invalidate the fields\n\t\t "
           },
           "function": true
         },
