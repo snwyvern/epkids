@@ -28,7 +28,7 @@ yum -y install git mlocate strace bridge-utils psmisc net-tools htop
 * vimrc, .vim, zshrc von anderen System kopieren
 * sshd port nach 2122 änderen
 
-=== ZFS 
+== ZFS 
 ```shell
 yum install epel-release -y
 yum -y localinstall --nogpgcheck http://download.zfsonlinux.org/epel/zfs-release.el7_3.noarch.rpm
@@ -164,7 +164,17 @@ brctl addif $LIN_BRIDGE $OVS_BRIDGE
 
 ```
 
-=== FLannel
+== FLannel
+
+Master
+```bash
+yum -y install  etcd flannel
+```
+
+Node
+```bash
+yum -y install  flannel
+```
 
 ==== Etcd on c1
 
@@ -174,6 +184,13 @@ ETCD_NAME=default
 ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
 ETCD_LISTEN_CLIENT_URLS="http://c1.ms123.org:2379,http://127.0.0.1:2379"
 ETCD_ADVERTISE_CLIENT_URLS="http://c1.ms123.org:2379"
+```
+starting etcd and flannel
+```bash
+for SERVICES in etcd flanneld; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
 ```
 
 flannel-config.json
@@ -205,13 +222,13 @@ FLANNEL_OPTIONS=""
 
 ==== Test Flannel
 ```bash
-# host c1
+# Master c1
 BRIDGE_ADDRESS=192.168.5.1/16
 
-# host c3
+# Node c3
 #BRIDGE_ADDRESS=192.168.10.1/16
 
-#all hosts
+#all nodes and on master too
 LIN_BRIDGE=linbr0
 FLANNELIF=flannel.1
 
@@ -229,6 +246,66 @@ ip link set $LIN_BRIDGE up
 brctl addif $LIN_BRIDGE $FLANNELIF
 
 ```
+
+== Kubernetes
+
+Master and Nodes
+```bash
+yum -y install  kubernetes
+```
+
+==== Master ====
+/etc/kubernetes/config -> not changed +
+/etc/kubernetes/apiserver
+```
+KUBE_API_ADDRESS="--address=0.0.0.0"
+KUBE_API_PORT="--port=8080"
+KUBELET_PORT="--kubelet-port=10250"
+#KUBE_ADMISSION_CONTROL="--admission-control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ServiceAccount,ResourceQuota"
+```
+
+Starting the services
+```bash
+for SERVICES in kube-apiserver kube-controller-manager kube-scheduler; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+==== Node ====
+
+/etc/kubernetes/kubelet
+```
+KUBELET_ADDRESS="--address=0.0.0.0"
+KUBELET_PORT="--port=10250"
+KUBELET_HOSTNAME="--hostname-override=c3.ms123.org"
+KUBELET_API_SERVER="--api-servers=http://c1.ms123.org:8080"
+```
+
+starting services
+```bash
+for SERVICES in kube-proxy kubelet docker; do
+    systemctl restart $SERVICES
+    systemctl enable $SERVICES
+done
+```
+
+Configure kubectl
+```bash
+kubectl config set-cluster default-cluster --server=http://c1.ms123.org:8080
+kubectl config set-context default-context --cluster=default-cluster --user=default-admin
+kubectl config use-context default-context
+```
+
+==== Dashboard
+```bash
+wget https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+```
+Line 54  args: ["--apiserver-host=http://c1.ms123.org:8080"]
+
+```bash
+kubectl create  -f kubernetes-dashboard.yaml
+```
+
 
 
 ==== Libvirt network
