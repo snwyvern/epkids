@@ -1,0 +1,359 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+
+== Ubuntu bei Hetzner installieren
+
+* Rescuesystem booten und einloggen
+* installimage aufrufen
+* Neuestes Ubuntu auswählen
+* Auskommentieren: DRIVE2, SWRAID*
+* HOSTNAME ändern
+* PART /boot auskommentieren, Root size
+* F10 and go
+* Reboot und wieder einloggen
+* Schlüssel kopieren
+* apt-get update
+* apt-get upgrade
+* apt-get install ubuntu-server
+
+=== Language ===
+
+/etc/locale.gen
+```
+de_DE.UTF-8 UTF-8
+```
+```bash
+locale-gen
+update-locale  LANG=de_DE.UTF-8 LANGUAGE=de
+```
+
+=== Vim,Zsh, Utils
+```shell
+apt-get install git zsh vim mlocate strace bridge-utils psmisc net-tools htop dnsutils telnet
+```
+* zsh in passwd eintragen, 
+* vimrc, .vim, zshrc von anderen System kopieren
+* sshd port nach 2122 änderen
+
+== SHOREWALL
+
+```bash
+apt-get install shorewall
+cd  /usr/share/shorewall/configfiles/
+cp rules zones interfaces policy masq /etc/shorewall
+```
+/etc/default/shorewall
+```
+startup=1
+```
+/etc/default/shorewall
+```
+
+masq
+```
+eth0                    192.168.0.0/16
+```
+
+zones
+```
+net ipv4
+lxd ipv4
+lxc ipv4
+```
+
+interfaces
+```
+net     eth0
+lxd    lxdbr0
+lxc    lxcbr0
+```
+
+rules
+```
+Ping/ACCEPT net     $FW
+
+ACCEPT  net fw tcp  2122
+
+DNAT    net lxd:10.171.101.109:80 tcp  80
+DNAT    net lxd:10.171.101.109:443 tcp  443
+
+```
+
+policy
+```
+lxd        net     ACCEPT
+lxd        $FW     ACCEPT      -
+lxd        all     ACCEPT      -
+
+lxc        net     ACCEPT
+lxc        $FW     ACCEPT      -
+lxc        all     ACCEPT      -
+
+$FW     net     ACCEPT      -
+$FW     all     ACCEPT      -
+
+#
+# Policies for traffic originating from the Internet zone (net)
+#
+net     all     DROP        -
+
+# THE FOLLOWING POLICY MUST BE LAST
+all     all     REJECT      -
+
+```
+
+
+```bash
+systemctl restart shorewall
+systemctl enable shorewall
+
+```
+
+== ZFS 
+```shell
+apt-get install zfs
+```
+create zpool
+```shell
+zpool create -o ashift=12 -f zpool  mirror partition1 partition2 ..
+```
+== FLannel
+
+Master
+```bash
+yum -y install  etcd flannel
+```
+
+Node
+```bash
+yum -y install  flannel
+```
+
+==== Etcd on c1
+
+/etc/etcd/etcd.conf
+```
+ETCD_NAME=default
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_CLIENT_URLS="http://c1.ms123.org:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://c1.ms123.org:2379"
+```
+starting etcd and flannel
+```bash
+for SERVICES in etcd flanneld; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+
+flannel-config.json
+```json
+{
+    "Network": "192.168.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "192.168.5.0",
+    "SubnetMax": "192.168.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+```bash
+etcdctl set /simpl4.org/network/config < flannel-config.json
+```
+
+
+on all hosts
+/etc/sysconfig/flanneld
+```
+FLANNEL_ETCD_ENDPOINTS="http://c1.ms123.org:2379"
+FLANNEL_ETCD_PREFIX="/simpl4.org/network"
+FLANNEL_OPTIONS=""
+```
+
+==== Test Flannel
+```bash
+# Master c1
+BRIDGE_ADDRESS=192.168.5.1/16
+
+# Node c3
+#BRIDGE_ADDRESS=192.168.10.1/16
+
+#all nodes and on master too
+LIN_BRIDGE=linbr0
+FLANNELIF=flannel.1
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+
+# Add the $FLANNELIF  to linbr0 bridge
+brctl addif $LIN_BRIDGE $FLANNELIF
+
+```
+
+== Kubernetes
+
+Master and Nodes
+```bash
+yum -y install  kubernetes
+```
+
+==== Master ====
+/etc/kubernetes/config -> not changed +
+/etc/kubernetes/apiserver
+```
+KUBE_API_ADDRESS="--address=0.0.0.0"
+KUBE_API_PORT="--port=8080"
+KUBELET_PORT="--kubelet-port=10250"
+#KUBE_ADMISSION_CONTROL="--admission-control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ServiceAccount,ResourceQuota"
+```
+
+Starting the services
+```bash
+for SERVICES in kube-apiserver kube-controller-manager kube-scheduler; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+==== Node ====
+
+/etc/kubernetes/kubelet
+```
+KUBELET_ADDRESS="--address=0.0.0.0"
+KUBELET_PORT="--port=10250"
+KUBELET_HOSTNAME="--hostname-override=c3.ms123.org"
+KUBELET_API_SERVER="--api-servers=http://c1.ms123.org:8080"
+```
+
+starting services
+```bash
+for SERVICES in kube-proxy kubelet docker; do
+    systemctl restart $SERVICES
+    systemctl enable $SERVICES
+done
+```
+
+Configure kubectl
+```bash
+kubectl config set-cluster default-cluster --server=http://c1.ms123.org:8080
+kubectl config set-context default-context --cluster=default-cluster --user=default-admin
+kubectl config use-context default-context
+```
+
+==== Dashboard
+```bash
+wget https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+```
+Line 54  args: ["--apiserver-host=http://c1.ms123.org:8080"]
+
+```bash
+kubectl create  -f kubernetes-dashboard.yaml
+```
+
+
+
+==== Libvirt network
+```xml
+<network>
+  <name>default</name>
+  <uuid>b76b112e-29ae-4729-aaf2-35b8fd773570</uuid>
+  <forward mode='bridge'/>
+  <bridge name='linbr0'/>
+</network>
+```
+==== DHCP on the bridge (linbr0) ====
+
+/etc/dnsmasq.conf
+```
+interface=linbr0
+dhcp-range=linbr0,172.16.42.5,172.16.42.30,12h
+dhcp-option=option:dns-server,213.133.99.99
+```
+
+==== Guest network
+
+/etc/sysconfig/network-scripts/ifcfg-eth0
+```
+DEVICE=eth0
+NM_CONTROLLED=no
+ONBOOT=yes
+BOOTPROTO=dhcp
+IPV6INIT=no
+```
+
+
+=== Virtualbox
+
+```shell
+cd /etc/yum.repos.d
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+yum -y install VirtualBox-5.1
+```
+
+=== Vagrant
+
+```shell
+wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.rpm
+rpm -Uvh vagrant_1.9.1_x86_64.rpm
+```
+
+
+=== Kernel 4.x.x
+
+```shell
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+yum --disablerepo="*" --enablerepo="elrepo-kernel" install kernel-lt kernel-lt-devel
+```
+
+
+=== Docker newest ===
+
+```bash
+tee /etc/yum.repos.d/docker.repo <<-'EOF'
+[dockerrepo]
+name=Docker Repository
+baseurl=https://yum.dockerproject.org/repo/main/centos/7/
+enabled=1
+gpgcheck=1
+gpgkey=https://yum.dockerproject.org/gpg
+EOF
+```
+
+```bash
+#remove old docker stuff
+yum -y remove docker docker-common docker-selinux container-selinux
+
+yumdownloader docker-engine
+rpmrebuild -p -e docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+#provide docker-engine -> docker
+
+yum -y install docker-engine-selinux
+yum -y install libtool-ltdl-devel-0:2.4.2-21.el7_2.x86_64
+rpm -Uvh /root/rpmbuild/RPMS/x86_64/docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+yum -y install kubernetes
+```
+
+==== Docker config
+
+```bash
+zfs create zpool/docker
+```
+
+/etc/systemd/system/docker.service.d/docker.conf
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --graph=/zpool/docker --storage-driver=zfs
+```
