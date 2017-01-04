@@ -44,34 +44,33 @@ apt-get install shorewall
 cd  /usr/share/shorewall/configfiles/
 cp rules zones interfaces policy masq /etc/shorewall
 ```
-/etc/default/shorewall
+
+*/etc/default/shorewall*
 ```
 startup=1
 ```
-/etc/default/shorewall
-```
 
-masq
-```
+*masq*
+```bash
 eth0                    192.168.0.0/16
 ```
 
-zones
-```
+*zones*
+```bash
 net ipv4
 lxd ipv4
 lxc ipv4
 ```
 
-interfaces
-```
+*interfaces*
+```bash
 net     eth0
 lxd    lxdbr0
 lxc    lxcbr0
 ```
 
-rules
-```
+*rules*
+```bash
 Ping/ACCEPT net     $FW
 
 ACCEPT  net fw tcp  2122
@@ -81,8 +80,8 @@ DNAT    net lxd:10.171.101.109:443 tcp  443
 
 ```
 
-policy
-```
+*policy*
+```bash
 lxd        net     ACCEPT
 lxd        $FW     ACCEPT      -
 lxd        all     ACCEPT      -
@@ -119,6 +118,31 @@ create zpool
 ```shell
 zpool create -o ashift=12 -f zpool  mirror partition1 partition2 ..
 ```
+
+== LXD
+
+```bash
+zfs create zpool/lxd
+zfs set mountpoint=/zpool/lxd  zpool/lxd
+apt-get install lxd
+newgrp lxd
+lxd init
+```
+```
+Name of the storage backend to use (dir or zfs) [default=zfs]:
+Create a new ZFS pool (yes/no) [default=yes]? no
+Name of the existing ZFS pool or dataset: zpool/lxd
+Would you like LXD to be available over the network (yes/no) [default=no]?
+Would you like stale cached images to be updated automatically (yes/no) [default=yes]? no
+Would you like to create a new network bridge (yes/no) [default=yes]?
+What should the new bridge be called [default=lxdbr0]?
+What IPv4 subnet should be used (CIDR notation, “auto” or “none”) [default=auto]?
+What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [default=auto]? none
+
+```
+
+
+
 == FLannel
 
 Master
