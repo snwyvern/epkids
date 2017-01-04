@@ -29,9 +29,21 @@ locale-gen
 update-locale  LANG=de_DE.UTF-8 LANGUAGE=de
 ```
 
+=== ipv6 off
+
+*/etc/sysctl.conf*
+```
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.lo.disable_ipv6=1
+```
+```bash
+sysctl -p
+```
+
 === Vim,Zsh, Utils
 ```shell
-apt-get install git zsh vim mlocate strace bridge-utils psmisc net-tools htop dnsutils telnet
+apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet
 ```
 * zsh in passwd eintragen, 
 * vimrc, .vim, zshrc von anderen System kopieren
@@ -141,6 +153,57 @@ What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [defau
 
 ```
 
+=== Openvswitch
+
+```shell
+apt-get install  openvswitch-switch-dpdk python-openvswitch
+
+systemctl start openvswitch-switch.service
+systemctl enable openvswitch-switch.service
+
+
+```
+==== Test openvswitch
+
+
+```shell
+
+# host c1
+REMOTE_IP=138.201.50.73
+BRIDGE_ADDRESS=172.16.42.1/24
+
+# host c2
+REMOTE_IP=88.99.69.170
+BRIDGE_ADDRESS=172.16.42.2/24
+
+#both hosts
+LIN_BRIDGE=linbr0
+OVS_BRIDGE=ovsbr0
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+ovs-vsctl del-br $OVS_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+#ovs stuff
+ovs-vsctl add-br $OVS_BRIDGE
+ip link set $OVS_BRIDGE up
+
+# Create the tunnel to the other host and attach it to the $OVS_BRIDGE bridge
+ovs-vsctl add-port $OVS_BRIDGE gre0 -- set interface gre0 type=gre options:remote_ip=$REMOTE_IP #options:pmtud=false
+#ovs-vsctl add-port $OVS_BRIDGE tun0 -- set interface tun0 type=geneve options:remote_ip=$REMOTE_IP options:key=123
+ovs-vsctl set int $OVS_BRIDGE mtu_request=1462 #very urgent!!  1500-$HEADER  GRE=38, GENEVE eg. need more, 49:Empirically determined
+
+
+# Add the $OVS_BRIDGE bridge to linbr0 bridge
+brctl addif $LIN_BRIDGE $OVS_BRIDGE
+
+```
 
 
 == FLannel
