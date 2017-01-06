@@ -22,7 +22,9 @@ yum update
 === Vim,Zsh, Utils
 ```shell
 yum -y zsh vim
-yum -y install git mlocate strace bridge-utils psmisc net-tools htop
+yum -y install git mlocate strace bridge-utils psmisc net-tools htop rpmrebuild
+yum -y install bind-utils
+yum -y install yum-utils
 ```
 * zsh in passwd eintragen, 
 * vimrc, .vim, zshrc von anderen System kopieren
@@ -360,4 +362,45 @@ rpm -Uvh vagrant_1.9.1_x86_64.rpm
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
 yum --disablerepo="*" --enablerepo="elrepo-kernel" install kernel-lt kernel-lt-devel
+```
+
+
+=== Docker newest ===
+
+```bash
+tee /etc/yum.repos.d/docker.repo <<-'EOF'
+[dockerrepo]
+name=Docker Repository
+baseurl=https://yum.dockerproject.org/repo/main/centos/7/
+enabled=1
+gpgcheck=1
+gpgkey=https://yum.dockerproject.org/gpg
+EOF
+```
+
+```bash
+#remove old docker stuff
+yum -y remove docker docker-common docker-selinux container-selinux
+
+yumdownloader docker-engine
+rpmrebuild -p -e docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+#provide docker-engine -> docker
+
+yum -y install docker-engine-selinux
+yum -y install libtool-ltdl-devel-0:2.4.2-21.el7_2.x86_64
+rpm -Uvh /root/rpmbuild/RPMS/x86_64/docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+yum -y install kubernetes
+```
+
+==== Docker config
+
+```bash
+zfs create zpool/docker
+```
+
+/etc/systemd/system/docker.service.d/docker.conf
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --graph=/zpool/docker --storage-driver=zfs
 ```

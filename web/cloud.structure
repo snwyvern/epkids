@@ -1,2 +1,29 @@
 [sw]
 	type = sw.structure
+--
+[
+  {
+    "menu_file": "web/cloud.json",
+    "doc_file": "web/cloud.adoc"
+  },
+  {
+    "title": "Centos installation",
+    "description": "",
+    "uri": "centos.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Ubuntu installation",
+    "description": "",
+    "uri": "ubuntu.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  }
+]
