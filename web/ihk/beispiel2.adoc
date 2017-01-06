@@ -1,0 +1,13 @@
+:linkattrs:
+
+== Beispiel - Kreditantrag -
+
+* Kreditantrag
+** ggf. längerer Zeitraum
+** mit parallel Arbeiten wie
+*** Schufa-Auskunft einholen
+*** Gehaltsnachweis letzte 3 Monate
+** nach Höhe des Kreditvolumens verschiedene zuständige Sachbearbeiter(Entscheider)
+** weitere durchzuführende Arbeiten
+** ...
+

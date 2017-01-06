@@ -1,0 +1,12 @@
+:linkattrs:
+
+== Fazit
+
+Die Kombination von BPMN und einer Process Engine ist bei der Entwicklung und Ausführung +
+Worklflow basierter Software-Lösungen eine sehr gute Kombination, 
+
+
+* Abläufe werden strukturiert abgebildet (visualisiert) und abgearbeitet
+* eine Lösung ist automatisch auch gleich dokumentiert
+* viele Basisfunktionaltäten (Monitoring, Workflowdaten persistent halten ,...) sind standardmäßig enthalten
+

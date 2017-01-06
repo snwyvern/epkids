@@ -1,0 +1,6 @@
+:linkattrs:
+
+== Eine Brücke schlagen - IT und Business *MIT* BPMN
+
+image::Bilder/it-business-bpmn.png[Mit BPMN]
+

@@ -119,6 +119,26 @@
     "enabled": true
   },
   {
+    "title": "tr.menu.cloud",
+    "description": "",
+    "uri": "structure:cloud",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "tr.menu.ihk",
+    "description": "",
+    "uri": "structure:ihk",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
     "title": "tr.menu.blog",
     "description": "",
     "uri": "",

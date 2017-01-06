@@ -1,0 +1,6 @@
+:linkattrs:
+
+== Software-Entwicklungsprojekte
+
+Häufig ist die Realisierung fachlicher Anforderungen rund um Worklflows oder Geschäftsregeln in der Software-Erstellung notwendig ! 
+

@@ -1,0 +1,21 @@
+:linkattrs:
+
+== Stärken einer Process Engine bei der Umsetzung von Geschäftsprozessen II  
+  
+* Orchestrierung von Systemen und Human Tasks - Die Kommunikation zwischen +
+  verschiedenen System und/oder menschlichen Akteuren müssen koordinier werden
+  
+* human tasks - Sind Menschen involviert, werden Aufgaben an Personen vergeben, +
+  entsprechend ihrer Rollen/Verantwortlichkeiten
+  
+* Komplexität der Regeln - Sind Entscheidungen/Regeln nicht trivial, und sie sollen +
+  konfigurierbar sein (Busines Rules) ?
+  
+* Prozess History und der aktuelle Status müssen jederzeit abrufbar sein
+  
+* Änderbarkeit - Wie häufig wird sich der Prozess ändern? Wer sollte in der Lage sein, 
+  um Änderung vorzunehmen?
+  
+* Prozess Versioning - mehre Prozessversionen sollen gleichzeitig aktiv sein können
+
+

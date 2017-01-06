@@ -1,0 +1,19 @@
+:linkattrs:
+
+== Regeln durch BPMN 2.0
+
+
+In der Spezifikation zur Standardnotation BPMN ist definiert
+ 
+* mit welchen Symbolen die verschiedenen Elemente von Prozessen dargestellt werden
+* was die Symbole bedeuten
+* wie sie kombiniert werden dürfen
+
+Sie regelt damit _Syntax_ und _Semantik_, dabei ist die
+
+* _Syntax_ das System an Regeln, wie die Symbole kombiniert werden dürfen
+** z.B. dürfen keine 2 Startereignisse aufeineinander folgen
+* _Semantik_ die Festlegung der Bedeutung von Symbolen und ihren Beziehungen
+** z.B. ein paralleles Gateway bedeutet das Abarbeiten _aller ausgehenden_ Zweige
+** es geht erst weiter, wenn alle ausgehenden Wege durchlaufen sind, nicht vorher !)
+

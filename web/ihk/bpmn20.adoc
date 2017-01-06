@@ -1,0 +1,28 @@
+:linkattrs:
+
+
+
+== BPMN 2.0
+
+So gibt es um die nur wichtigsten Symbole zu nennen, z.B.
+
+* Start und Ende-Ereignisse
+
+* Aktivitäten, die von Menschen _oder_ der Maschine ausgeführt werden
+
+* diverse Verzweigungsmöglichkeiten (Gateways)
+
+* Ereignisse wie z.B. Nachrichten (Zwischenereignisse), die während eines Prozesses eintreten
+
+Sogenannte Konnektoren
+
+* verbinden die einzelnen Elemente
+* stellen den Fluss in einem Geschäftsprozess dar
+
+
+Beispielhaft *das vereinfachte Prozessmodell* einer Online-Apotheke
+
+image::Bilder/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell]
+
+
+

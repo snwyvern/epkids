@@ -1,0 +1,9 @@
+:linkattrs:
+
+== Wie soll man solche beispielhaft genannten Geschäftsprozesse darstellen ?
+
+
+[TIP]
+Eine Möglichkeit der Darstellung der beispielhaft genannten Anforderungen ist _*BPMN*_
+
+

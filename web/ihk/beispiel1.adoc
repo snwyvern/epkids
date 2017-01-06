@@ -1,0 +1,24 @@
+:linkattrs:
+
+== Beispiel - Garantieabwicklung -
+
+
+* Ein Ablauf im Service Fall
+** Prüfung ob Garantie
+*** Bei Garantiefall NEIN
+**** Kostenvoranschlag erstellen /senden
+**** Auf Kostenübernahme warten
+**** NEIN Ware verschrotten
+**** JA Reparatur durchführen / Reparierte Ware versenden/  Rechnung erstellen
+*** Bei Garantie-Fall JA
+**** Ermitteln Kosten der Reparatur
+***** Reparatur sinnvoll ?
+***** => von Parametern abhängige *automatisierte Entscheidungen* (Business Rules)  
+***** => Entscheidung eines Mitarbeiter mit entsprechenden Rechten 
+**** NEIN Zusendung neues Geräte
+**** JA
+***** Reparatur durchführen
+***** Reparierte Ware versenden
+** ...
+
+
