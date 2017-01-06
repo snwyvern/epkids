@@ -10,13 +10,45 @@
 * Neuestes Ubuntu auswählen
 * Auskommentieren: DRIVE2, SWRAID*
 * HOSTNAME ändern
-* PART /boot auskommentieren, Root size
+* PART /boot auskommentieren, 
+* Root 20G, ext4
 * F10 and go
 * Reboot und wieder einloggen
 * Schlüssel kopieren
+* sshd port nach 2122 änderen
 * apt-get update
 * apt-get upgrade
 * apt-get install ubuntu-server
+* apt-get install python #(für ansible)
+
+== ZFS 
+```shell
+apt-get install zfs
+```
+
+==== Disklayout 
+
+sda1 : root 20G
+sda2 : Rest zfs
+
+sdb1 : free 20G #maybe swap
+sdb2 : Rest zfs
+
+create zpool
+```shell
+zpool create -o ashift=12 -f zpool  mirror sda2 sdb2 
+```
+
+=== Only on C1
+
+```bash
+apt-get install ansible
+zfs create zpool/gitbucket
+cd /zpool/gitbucket
+git clone http://gitbucket.ms123.org/git/cloud/hostconfig.git
+```
+
+== Der Rest wird mit ansible geregelt
 
 === Language ===
 
@@ -43,11 +75,10 @@ sysctl -p
 
 === Vim,Zsh, Utils
 ```shell
-apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet
+apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet python tree
 ```
 * zsh in passwd eintragen, 
 * vimrc, .vim, zshrc von anderen System kopieren
-* sshd port nach 2122 änderen
 
 == SHOREWALL
 
@@ -122,14 +153,6 @@ systemctl enable shorewall
 
 ```
 
-== ZFS 
-```shell
-apt-get install zfs
-```
-create zpool
-```shell
-zpool create -o ashift=12 -f zpool  mirror partition1 partition2 ..
-```
 
 == LXD
 
@@ -153,10 +176,10 @@ What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [defau
 
 ```
 
-=== Openvswitch
+== Openvswitch
 
 ```shell
-apt-get install  openvswitch-switch-dpdk python-openvswitch
+apt-get install  openvswitch-switch-dpdk python-openvswitch python-netifaces
 
 systemctl start openvswitch-switch.service
 systemctl enable openvswitch-switch.service
