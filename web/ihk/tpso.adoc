@@ -1,8 +1,11 @@
 :linkattrs:
 
+[.text-center]
 == Vorab ein paar allgemeine Fakten zu transparent solutions
 
-* seit 1998 Erstellung individueller Software-Lösungen
+[.table-center, frame=none,width=50%]
+|===
+a|* seit 1998 Erstellung individueller Software-Lösungen
 * unsere Kunden im ganzen Bundesgebiet verteilt beispielhaft
 ** Bosch Thermotechnik
 *** weltweite Ersatzteilservice-Lösung im Extra-und Intranet sowie DVD-Lösung
@@ -19,5 +22,5 @@
 ** Erstellung Workflow basierter Lösungen
 ** Big Data in Kombination mit Geschäftsprozessen
 ** Individualsoftware allgemein
-
+|===
 

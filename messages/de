@@ -581,5 +581,9 @@
     {
         "msgstr": "Part2: Zookeeper",
         "msgid": "tr.menu.blog_bigdata.zookeeper"
+    },
+    {
+        "msgstr": "Cloud",
+        "msgid": "tr.menu.cloud"
     }
 ]

@@ -22,7 +22,7 @@ Sogenannte Konnektoren
 
 Beispielhaft *das vereinfachte Prozessmodell* einer Online-Apotheke
 
-image::Bilder/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell]
+image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell]
 
 
 

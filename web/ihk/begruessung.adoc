@@ -1,11 +1,11 @@
 :linkattrs:
 
-== Begrüßung
-:linkattrs:
 
 [.left.text-center]
-image::Bilder/Logo_simpl4.png[simpl4, 100, 50]
+--
+image::web/ihk/images/Logo_simpl4.png[simpl4, 100, 50]
 
 Wir freuen uns Sie zu unserer gemeinsamen Veranstaltung mit der IHK Mittelfranken begrüßen zu dürfen !
+--
 
 
