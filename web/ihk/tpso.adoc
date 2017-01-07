@@ -1,21 +1,17 @@
 :linkattrs:
 
 [.xext-center]
-== Fakten zu transparent solutions
+== Vorab ein paar allgemeine Fakten zu transparent solutions
 
 [.left, frame=none,width=50%]
 |===
 a|* seit 1998 Erstellung individueller Software-Lösungen
-* unsere Kunden im ganzen Bundesgebiet verteilt beispielhaft
+* Kunden im ganzen Bundesgebiet verteilt, beispielhaft
 ** Bosch Thermotechnik
-*** weltweite Ersatzteilservice-Lösung im Extra-und Intranet sowie DVD-Lösung
-** GES in Nürnberg
-*** Optimierungen von Lagerprozessen
+** GES - Großeinkaufsring des Süßwaren- und Getränkehandels eG in Nürnberg
 ** Palfinger Tail Lifts GmbH
-*** Lösung im Bereiche Ersatzteilservice und Dokumentation
 ** BHS Corrugated Maschinen- und Anlagenbau
-*** Lösung im Bereich Ersatzteileservice und Dokumentation
-* von Anfang einsatz von Open Source Lösungen
+* von Anfang Einsatz von Open Source Lösungen
 ** Auswahl und Erruieren für Kunden-Projekte
 ** Über 30 Jahre Erfahrung im Open Source Umfeld
 * Geschäftsfelder

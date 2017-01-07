@@ -8,7 +8,7 @@
 
 == Big or Fast Data, Part two
 
-This is part two  of a series of articles concering "Big Data" in an OSGI environment.
+This is part two of a series of articles concering "Big Data" in an OSGI environment.
 
 *link:local:blog_bigdata_part1karaf[Part one]*
 
@@ -20,18 +20,18 @@ All things are supposed to be available as turnkey software components.
 The second part is about *link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]*, which is widely used in distributed projects, +
 as *link:https://flink.apache.org[Apache Flink, window="_blank"]* and *link:https://kafka.apache.org[Apache Kafka, window="_blank"]* described later.
 
-It is a *link:https://github.com/ms123s/simpl4-addons[github repository,window="_blank"]* available with all the things described here and in the *link:local:blog_bigdata_part1karaf[previous article]*. +
+It is in a *link:https://github.com/ms123s/simpl4-addons[github repository,window="_blank"]* available with all the things described here and in the *link:local:blog_bigdata_part1karaf[previous article]*. +
 Except java 1.8, no additionals are needed, everything is included.
 
 
-=== Creating an link:https://zookeeper.apache.org[Apache Zookeeper, window="_blank"]  Karaf feature.
+=== Creating an link:https://zookeeper.apache.org[Apache ZooKeeper, window="_blank"]  Karaf feature.
 
-.Apache zookeeper is a high-performance coordination service for distributed applications.
+.Apache ZooKeeper is a high-performance coordination service for distributed applications.
 image::web/images/zkservice.jpg[width=50%]
 
 {sp} +
 
-==== What Is ZooKeeper?
+==== What is ZooKeeper?
 
 ZooKeeper is a coordination service for distributed systems. By providing a robust implementation of a few basic operations, ZooKeeper simplifies the implementation of many advanced patterns in distributed systems.
 
@@ -40,23 +40,23 @@ One way of getting to know ZooKeeper is to think of it as a distributed file sys
 
 link:https://www.elastic.co/blog/found-zookeeper-king-of-coordination[More here,window="_blank"]
 
-===== What does Zookeeper?
+===== What does ZooKeeper?
 
-* *Flink and Zookeeper:* +
+* *Flink and ZooKeeper:* +
 Flink leverages ZooKeeper for distributed coordination between all running JobManager instances. ZooKeeper is a separate service from Flink, which provides highly reliable distributed coordination via leader election and light-weight consistent state storage. 
 
-* *Kafka and Zookeeper:* +
-Kafka uses Zookeeper for storing variety of configurations as Key,Value in the Zookeeper data tree and use them across the cluster in a distributed fashion.
+* *Kafka and ZooKeeper:* +
+Kafka uses ZooKeeper for storing variety of configurations as Key, Value in the ZooKeeper data tree and use them across the cluster in a distributed fashion.
 image:web/images/zookeeper_kv.png[width=20%]
 
 {sp} +
 {sp} +
 
-===== Zookeeper and OSGI
+===== ZooKeeper and OSGI
 
-Zookeeper already exists as an osgi bundle. +
+ZooKeeper already exists as an OSGI bundle. +
 
-.however, a BundleActivator(starting zookeeper) is required. see also here link:https://github.com/ms123s/simpl4-addons/tree/master/ZookeeperService[ZookeeperService,window="_blank"]
+.however, a BundleActivator(starting ZooKeeper) is required. see also here link:https://github.com/ms123s/simpl4-addons/tree/master/ZookeeperService[ZookeeperService,window="_blank"]
 [source,java]
 ----
 package org.simpl4.addons.zookeeper;
@@ -128,20 +128,20 @@ public class ZookeeperServiceImpl extends ZooKeeperServerMain implements BundleA
 ----
 
 <1> The class extends ZooKeeperServerMain and implements the BundleActivator interface.
-<2> In the *start* method, the zookeeper thread is launched. *start* is part of the BundleActivator interface
-<2> In the *stop* method, zookeeper is shutdown. *stop* is part of the BundleActivator interface
+<2> In the *start* method, the ZooKeeper thread is launched. *start* is part of the BundleActivator interface
+<2> In the *stop* method, ZooKeeper is shutdown. *stop* is part of the BundleActivator interface
 <4> Reading the config properties file
-<5> The zookeeper service runs in  its own thread
+<5> The ZooKeeper service runs in it's own thread
 
 {sp} +
 
 ===== Configuration
 
-The Zookeeper configuration is stored in *etc/zookeeper.properties*
+The ZooKeeper configuration is stored in *etc/zookeeper.properties*
 
 ===== Testing
 
-A Zookeeper client is required to test.
+A ZooKeeper client is required to test.
 [source,bash]
 ----
 wget http://apache.lauf-forum.at/zookeeper/zookeeper-3.4.9/zookeeper-3.4.9.tar.gz

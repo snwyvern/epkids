@@ -18,7 +18,7 @@ Eigenschaften die dadurch für den Prozess vorgegenen sind
 * asynchron
 * ...
 
-image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell]
+image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell, 600]
 
 
 

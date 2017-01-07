@@ -1,0 +1,83 @@
+:Linkattrs:
+:Source-highlighter: rouge
+
+
+=== Das Token-Konzept
+
+* Es hilft beim Verstehen von Prozessmodellen
+* Ist eine imaginäre Marke, die eine Prozessinstanz durchläuft
+* die Marke durchläuft abhängig von den Verzweigungen den Prozess
+** Bestimmte Arten von Gateways
+*** klonen (vervielfältigen) den Token
+*** verschmelzen beim Zusammenführen die geklonten Tokens
+** Am Ende einer Prozessinstanz werden alle Token "konsumiert"
+
+
+=== Der Ablauf-Token in Verbindung mit Gateways und Sequenzfluss
+
+In der Realität ist es üblich, dass ein Prozess nicht ausschließlich sequenziell verläuft.
+Es kommt in vielen Fällen zu Abzweigungen in den Abläufen, die in irgend einer Weise gesteuert werden müssen.
+
+Um so etwas zu realisieren, werden Gateways oder auch bedingte Sequenzflüsse verwendet.
+
+In der BPMN 2.0 ist das Standardsymbol für das Gateway die Raute. Für den Sequenzfluss ist das Standardssymbol ein Pfeil mit geschlossener Spitze und durchgezogener Linie.
+
+
+
+image::web/images/processmodel_described.png[width=80%]
+
+
+
+=== Der gedachte Ablauf-Token
+
+Er ist eine Hilfe, die einem bei der Modellierung von Prozessen unterstützt.
+Stellt man sich ein Straßennetz mit Abzweigungen vor, so muss es Regeln geben, anhand derer sich eine Kugel (= der Token) innerhalb der Karte in den Straßen bewegt.
+Letztendlich bestimmen Bedingungen, welchen Weg der Token nimmt. Der Token bewegt sich entlang von Aktivitäten, Sequenzflüssen, Gateways und auch Ereignissen.
+
+Modelliert man also einen Prozess oder geht diesen Gedanklich durch, ist das Prinzip einer im Prozess rollenden Kugel eine durchaus geeignete Variante.
+
+
+=== Das exklusive Gateway
+
+Bei dem exklusiven Gateway gibt es in Abhängig von einer Bedingung am Sequenzfluss exakt einen Weg für den Token.
+Das Bedeutet, die Kugel rollt in Richtung Raum 1 oder in Raum 2.
+In der BPMN gibt es für das exklusive Gateway zwei Symbole, die leere Raute, und die Raute mit einem X darin
+Das Verhalten Beider ist identisch.
+
+
+Wenn eine Entscheidung nicht eindeutig verläuft, kann es passieren, dass der Token stecken bleibt, und somit der Prozess steht.
+Im folgende Beispiel ist das der Fall, wenn es wenn es 21 bis 24 Gäste sind, das ist nicht abgedeckt.
+Der Ablauf-Token würde warten, bis eine der Bedingungen erfüllt ist. Gerade bei mehr als zwei Bedingungen muss man darauf achten, dass alle Eventualitäen
+abgedeckt sind, man keine sich ausschließenden Bedingungen formuliert.
+
+
+Im nachfolgenden Beispiel erfolgte die Modellierung mit einem Standardsequenzfluss, dadurch sind alle Bedingungen abgedeckt. Der Token läuft über den Standardsequenzfluss unten „Raum 3 reservieren“, wenn die Bedingungen „bis 15 Gäste" und „Von 16 bis 20 Gäste“ _nicht erfüllt_ sind.
+
+
+=== Das ereignisbasierte exklusive Gateway
+
+Beim diesem Gateway kann der Prozess durch das Eintreten unterschiedlicher Ereignisse fortgesetzt werden.
+Je nach dem welches Ereignis eintritt, wird der Prozess fortgesetzt. Auf die Gateways folgen immer die jeweiligen Ereignisse oder empfangende Tasks.
+Der Token wartet am Gateway somit, bis eines der definierten Ereignisse eintrifft. Das Ereignis das eintrifft, das erhält dann den Token, und der Ablauf wird fortsetzt.
+Im Beispiel ist der Prozess beendet, wenn eine der Bestätigungen "empfangen" wird.
+
+
+
+=== Das parallele Gateway
+
+Diese Gateways splitten den Sequenzfluss in zwei oder mehrere parallele Sequenzflüsse auf (= Fork) und führen sie wieder zusammen (= Join).
+
+Bei einem Fork erfolgt quasi eine Vervielfältigung des Tokens, und zwar so oft, wie es parallele Sequenzflüsse gibt.
+Im Prozess geht es erst dann weiter, wenn alle Schritte in den parallelen Sequenzflüssen durchlaufen sind.
+In diesem Fall erfolgt dann im zusammenführenden Gateway wieder das Verschmelzen sämtlicher vervielfachten Token zu einem, mit dem es im Ablauf dann wieder weiter geht.
+
+
+
+=== Das inklusive Gateway
+
+Es entspricht quasi einer Oder-Entscheidung, wobei ein oder mehrere mögliche Sequenzflüsse durchlaufen werden können.
+
+Der Token wird wieder vervielfältigt, und zwar genau so oft wie Bedingungen zutreffen, also soviele Sequenzflüsse durchlaufen werden.
+Bei der Verviefältigung des Token führt das inklusive Gateway die Sequenzflüsse auch wieder zusammen (Merge).
+Es wird gewartet bis sämtliche Token der "durchlaufenen Sequenzflüsse" im zusammenführenden Gateway .
+Gibt es nur eine Bedingung die zutrifft, entspricht das Verhalten des inklusives Gateway quasi dem des exklusiven Gateways.

@@ -2,5 +2,5 @@
 
 == Eine Brücke schlagen - IT und Business *MIT* BPMN
 
-image::web/ihk/images/it-business-bpmn.png[Mit BPMN]
+image::web/ihk/images/it-business-bpmn.png[Mit BPMN, 600]
 

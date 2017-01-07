@@ -54,7 +54,7 @@
     "id": "",
     "help": "",
     "adoc_include": false,
-    "enabled": true
+    "enabled": false
   },
   {
     "title": "Beispiel3",
