@@ -11,6 +11,8 @@
 
 === Die Geschichte von BPMN
 
+image:OMG_Logo.png[OMG Logo,200,100,float=left, align=center]
+
 * BPMN wurde ursprünglich von der Business Process Management Initiative (BPMI) entwickelt
 * die BPMI ist mittlerweile ein Teil der "Object Management Group" , kurz *OMG*
 * die aktuellste Version von BPMN ist *BPMN 2.0*
