@@ -3,9 +3,12 @@
 
 [.left.text-center]
 --
-image::web/ihk/images/Logo_simpl4.png[simpl4, 100, 50]
+image::web/ihk/images/logobpmn.svg[simpl4, 150]
 
+[.lead]
 Wir freuen uns Sie zu unserer gemeinsamen Veranstaltung mit der IHK Mittelfranken begrüßen zu dürfen !
+
+image::web/ihk/images/start.jpg[simpl4,600]
 --
 
 

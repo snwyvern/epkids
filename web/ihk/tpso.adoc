@@ -1,9 +1,9 @@
 :linkattrs:
 
-[.text-center]
+[.xext-center]
 == Vorab ein paar allgemeine Fakten zu transparent solutions
 
-[.table-center, frame=none,width=50%]
+[.left, frame=none,width=50%]
 |===
 a|* seit 1998 Erstellung individueller Software-Lösungen
 * unsere Kunden im ganzen Bundesgebiet verteilt beispielhaft
