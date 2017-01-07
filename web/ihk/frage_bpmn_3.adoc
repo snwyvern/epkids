@@ -1,0 +1,12 @@
+:linkattrs:
+
+
+[.left.text-center]
+--
+[.lead]
+Vielleicht doch besser BPMN?
+
+image::web/ihk/images/Auszug_Online_Apotheke.png[simpl4]
+--
+
+

@@ -1,9 +1,11 @@
 :linkattrs:
 
-== Wie soll man solche beispielhaft genannten Geschäftsprozesse darstellen ?
+[.left.text-center]
+== Wie sollte man Geschäftsprozesse darstellen ?
 
+--
+[.lead]
+Vielleicht so?
 
-[TIP]
-Eine Möglichkeit der Darstellung der beispielhaft genannten Anforderungen ist _*BPMN*_
-
-
+image::web/ihk/images/falsche_darstellung.svg[simpl4,600]
+--

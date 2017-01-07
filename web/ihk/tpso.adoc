@@ -1,7 +1,7 @@
 :linkattrs:
 
 [.xext-center]
-== Vorab ein paar allgemeine Fakten zu transparent solutions
+== Fakten zu transparent solutions
 
 [.left, frame=none,width=50%]
 |===

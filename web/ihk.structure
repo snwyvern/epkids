@@ -77,6 +77,26 @@
     "enabled": true
   },
   {
+    "title": "Frage BPMN",
+    "description": "",
+    "uri": "frage_bpmn_2.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Frage BPMN",
+    "description": "",
+    "uri": "frage_bpmn_3.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
     "title": "Was ist BPMN",
     "description": "",
     "uri": "was_ist_bpmn.adoc",
