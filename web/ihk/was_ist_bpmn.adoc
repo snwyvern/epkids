@@ -2,7 +2,7 @@
 
 == BPMN , wofür steht und was ist es ?
 
-* es bedeutet **B**usiness **P**rocess **M**odeling **N**otation kurz BPMN
+* es bedeutet **B**usiness **P**rocess **M**odeling and **N**otation kurz BPMN
 * ist eine grafische Darstellung zur Bestimmung von Geschäftsprozessen in einem Arbeitsablauf
 * ist ein Standard zur Modellierung von Geschäftsprozessen
 * bietet eine grafische Notation für die Definition von Geschäftsprozessen in einem Geschäftsprozessdiagramm (Business Process Diagram, kurz BPM)
@@ -11,8 +11,10 @@
 
 === Die Geschichte von BPMN
 
+image:OMG_Logo.png[OMG Logo,200,100,float=left, align=center]
+
 * BPMN wurde ursprünglich von der Business Process Management Initiative (BPMI) entwickelt
 * die BPMI ist mittlerweile ein Teil der "Object Management Group" , kurz *OMG*
-* die aktuellste Version von BPMN ist _BPMN 2.0_
+* die aktuellste Version von BPMN ist *BPMN 2.0*
 
 

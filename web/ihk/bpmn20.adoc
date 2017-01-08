@@ -4,6 +4,10 @@
 
 == BPMN 2.0
 
+Beispielhaft *das fiktive vereinfachte Prozessmodell* einer Online-Apotheke
+
+image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell, 900, float=right]
+
 So gibt es um die nur wichtigsten Symbole zu nennen, z.B.
 
 * Start und Ende-Ereignisse
@@ -18,11 +22,6 @@ Sogenannte Konnektoren
 
 * verbinden die einzelnen Elemente
 * stellen den Fluss in einem Geschäftsprozess dar
-
-
-Beispielhaft *das vereinfachte Prozessmodell* einer Online-Apotheke
-
-image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell]
 
 
 
