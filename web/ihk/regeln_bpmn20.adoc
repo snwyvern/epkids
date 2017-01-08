@@ -2,12 +2,14 @@
 
 == Regeln durch BPMN 2.0
 
+image:Regeln.jpg[Regeln,300,300,float=right]
 
 In der Spezifikation zur Standardnotation BPMN ist definiert
  
 * mit welchen Symbolen die verschiedenen Elemente von Prozessen dargestellt werden
 * was die Symbole bedeuten
 * wie sie kombiniert werden dürfen
+
 
 Sie regelt damit _Syntax_ und _Semantik_, dabei ist die
 

@@ -17,8 +17,7 @@
 ***** => Entscheidung eines Mitarbeiter mit entsprechenden Rechten 
 **** NEIN Zusendung neues Geräte
 **** JA
-***** Reparatur durchführen
-***** Reparierte Ware versenden
+***** Reparatur durchführen / Reparierte Ware versenden
 ** ...
 
 

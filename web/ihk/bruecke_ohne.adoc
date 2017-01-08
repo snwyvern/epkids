@@ -1,6 +1,6 @@
 :linkattrs:
 
-== Eine Brücke schlagen - IT und Business *OHNE* BPMN
+== Eine Brücke schlagen - IT und Business _OHNE_ BPMN
 
 image::web/ihk/images/it-business.png[Ohne BPMN, 600]
 
