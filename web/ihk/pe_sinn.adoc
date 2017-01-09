@@ -4,6 +4,8 @@
 
 Betrachten wir als einfaches Beispiel einen Teilsapekt einer Online Apotheke:
 
+image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell, 700, float=right]
+
 * Bestellung rezeptpflichtiger Medikamente
 ** Warten auf den Eingang des Rezeptes !
 *** Bei Ausbleiben des Rezeptes in einem "definierten Zeitrahmen" => Bestellung verwerfen
@@ -17,8 +19,6 @@ Eigenschaften die dadurch für den Prozess vorgegenen sind
 * meiste Zeit schlafend
 * asynchron
 * ...
-
-image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell, 600]
 
 
 

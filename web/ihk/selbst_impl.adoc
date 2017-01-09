@@ -4,6 +4,8 @@
 
 Ist es nun sinning obiges Szenario selbst mit einer Programmiersprache seiner Wahl zu implementieren ? 
 
+image:Selber_machen.jpg[Ausführen,300,300,float=right]
+
 Dabei auftauchende Fragen
 
 * lohnt sich der Aufwand ?
