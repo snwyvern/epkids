@@ -1,0 +1,95 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== OVN und Openvswitch
+
+
+=== Architektur
+
+image::web/images/ovn-overview.svg[]
+
+
+
+1.
+```bash
+# create gateway 1 on c2.ms123.org
+#add br-int , if not exists and that the mtu to a save value
+ovs-vsctl add-br br-int -- set Bridge br-int fail-mode=secure
+ovs-vsctl set int br-int  mtu_request=1410
+
+ovs-vsctl set open . external-ids:ovn-remote=tcp:88.99.69.170:6642
+ovs-vsctl set open . external-ids:ovn-encap-type=geneve
+ovs-vsctl set open . external-ids:ovn-encap-ip=88.99.69.171
+```
+2.
+```bash
+# create gateway 2 on c3.ms123.org
+#add br-int , if not exists and that the mtu to a save value
+ovs-vsctl add-br br-int -- set Bridge br-int fail-mode=secure
+ovs-vsctl set int br-int  mtu_request=1410
+
+ovs-vsctl set open . external-ids:ovn-remote=tcp:88.99.69.170:6642
+ovs-vsctl set open . external-ids:ovn-encap-type=geneve
+ovs-vsctl set open . external-ids:ovn-encap-ip=138.201.50.73
+```
+3.
+```bash
+# create the logical switch on c1.ms123.org
+ovn-nbctl ls-add lswitch1
+
+# create logical port1 for c2.ms123.org
+ovn-nbctl lsp-add lswitch1 lport1
+ovn-nbctl lsp-set-addresses lport1 00:00:00:00:00:01
+ovn-nbctl lsp-set-port-security lport1 00:00:00:00:00:01
+
+# create logical port2 for c3.ms123.org
+ovn-nbctl lsp-add lswitch1 lport2
+ovn-nbctl lsp-set-addresses lport2 00:00:00:00:00:02
+ovn-nbctl lsp-set-port-security lport2 00:00:00:00:00:02
+
+ovn-nbctl show
+```
+
+4.
+```bash
+#add c2.ms123.org to the logical switch on lport1
+ovs-vsctl add-port br-int port1 -- set interface port1 type=internal
+ip link set port1 address 00:00:00:00:00:01
+ip addr add 172.16.255.1/24 dev port1
+ip link set port1 up
+ovs-vsctl set Interface port1 external_ids:iface-id=lport1
+```
+5.
+```bash
+#add c3.ms123.org to the logical switch on lport2
+ovs-vsctl add-port br-int port1 -- set interface port1 type=internal
+ip link set port1 address 00:00:00:00:00:02
+ip addr add 172.16.255.2/24 dev port1
+ip link set port1 up
+ovs-vsctl set Interface port1 external_ids:iface-id=lport2
+```
+
+=== The OVN Databases
+
+==== ovn-northbound
+* OpenStack/CMS integration point
+* High-level, desired state
+** Logical ports -> logical switches -> logical routers
+
+==== ovn-southbound
+* Run-time state
+** Location of logical ports
+** Location of physical endpoints
+** Logical pipeline generated based on configured and run-time state
+
+
+=== The Daemons
+
+==== ovn-northd
+* Converts from the high-level northbound DB to the run-time southbound DB
+* Generates logical flows based on high-level configuration
+
+==== ovn-controller
+* Registers chassis and VIFs to southbound DB
+* Converts logical flows into physical flows (ie, VIF UUIDs to OpenFlow ports)
+* Pushes physical configuration to local OVS instance through OVSDB and OpenFlow
