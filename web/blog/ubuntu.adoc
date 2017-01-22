@@ -18,8 +18,8 @@
 * sshd port nach 2122 änderen
 * apt-get update
 * apt-get upgrade
-* apt-get install ubuntu-server
-* apt-get install python #(für ansible)
+* apt-get install ubuntu-server //nicht nötig
+* apt-get install python #(für ansible) //wird im deploy Container erledigt 
 
 == ZFS 
 ```shell
@@ -100,6 +100,7 @@ eth0                    192.168.0.0/16
 
 *zones*
 ```bash
+fw  firewall
 net ipv4
 lxd ipv4
 lxc ipv4
@@ -176,10 +177,12 @@ What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [defau
 
 ```
 
-== Openvswitch
+== Openvswitch /OVN
 
 ```shell
-apt-get install  openvswitch-switch-dpdk python-openvswitch python-netifaces
+apt-get install  openvswitch-switch python-openvswitch python-netifaces
+apt-get install  ovn-central
+apt-get install  ovn-host
 
 systemctl start openvswitch-switch.service
 systemctl enable openvswitch-switch.service
