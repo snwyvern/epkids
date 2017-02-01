@@ -4,3 +4,67 @@
 == Openstack
 
 
+
+=== Create controller,network,compute1
+
+```bash
+lxc launch images:ubuntu/yakkety/amd64 os-controller
+lxc network create mgmt-net ipv6.address=none ipv4.address=10.0.3.1/24 ipv4.nat=true
+lxc network attach mgmt-net os-controller  eth0
+lxc config device set os-controller eth0 ipv4.address 10.0.3.11
+#install some essentials on the controller: zsh,vim,ssh ..
+lxc snapshot  os-controller base
+
+lxc copy os-controller/base  os-network
+lxc config device set os-network eth0 ipv4.address 10.0.3.22
+
+lxc copy os-controller/base  os-compute1
+lxc config device set os-compute1 eth0 ipv4.address 10.0.3.33
+```
+
+=== os-controller
+
+.openstackclient
+```bash
+apt install python-openstackclient
+```
+.mariadb
+```bash
+apt install mariadb-server python-pymysql
+```
+./etc/mysql/mariadb.conf.d/99-openstack.cnf
+```
+[mysqld]
+bind-address = 10.0.3.11
+
+default-storage-engine = innodb
+innodb_file_per_table = on
+max_connections = 4096
+collation-server = utf8_general_ci
+character-set-server = utf8
+```
+
+```bash
+service mysql restart
+```
+
+.rabbitmq
+```bash
+apt install rabbitmq-server
+rabbitmqctl add_user openstack RABBIT_PASS #ms123
+rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+```
+
+.memcache
+```bash
+apt install memcached python-memcache
+```
+
+./etc/memcached.conf  #default
+```
+-l 127.0.0.1
+```
+
+```bash
+service memcached restart
+```
