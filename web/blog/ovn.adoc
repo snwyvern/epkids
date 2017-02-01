@@ -68,6 +68,30 @@ ip link set port1 up
 ovs-vsctl set Interface port1 external_ids:iface-id=lport2
 ```
 
+=== Connect lxd hosts
+
+.c1 ovn-central
+```bash
+ovn-nbctl lsp-add lswitch1 lport-c2
+ovn-nbctl lsp-set-addresses lport-c2 unknown
+
+ovn-nbctl lsp-add lswitch1 lport-c3
+ovn-nbctl lsp-set-addresses lport-c3 unknown
+```
+
+.c2 ovn-host
+```bash
+ovs-vsctl add-port br-int linbr0   #lxd is connected to this linux bridge
+ovs-vsctl set Interface linbr0 external_ids:iface-id=lport-c2
+```
+
+.c3 ovn-host
+```bash
+ovs-vsctl add-port br-int linbr0   #lxd is connected to this linux bridge
+ovs-vsctl set Interface linbr0 external_ids:iface-id=lport-c3
+```
+
+
 === The OVN Databases
 
 ==== ovn-northbound
