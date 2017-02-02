@@ -95,7 +95,7 @@ apt install keystone
 ```
 [database]
 # ...
-connection = mysql+pymysql://keystone:KEYSTONE_DBPASS@controller/keystone
+connection = mysql+pymysql://keystone:KEYSTONE_DBPASS@os-controller/keystone
 
 [token]
 # ...
@@ -122,4 +122,25 @@ keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
   --bootstrap-internal-url http://os-controller:5000/v3/ \
   --bootstrap-public-url http://os-controller:5000/v3/ \
   --bootstrap-region-id RegionOne
+```
+
+./etc/apache2/apache2.conf
+```
+ServerName os-controller
+```
+
+```bash
+service apache2 restart
+rm -f /var/lib/keystone/keystone.db
+```
+
+./etc/zsh/zshrc  #or adapt to the used shell
+```
+export OS_USERNAME=admin
+export OS_PASSWORD=ms123
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://os-controller:35357/v3
+export OS_IDENTITY_API_VERSION=3
 ```
