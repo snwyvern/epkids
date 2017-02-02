@@ -24,11 +24,13 @@ lxc config device set os-compute1 eth0 ipv4.address 10.0.3.33
 
 === os-controller
 
-.openstackclient
+==== openstackclient
+
 ```bash
 apt install python-openstackclient
 ```
-.mariadb
+==== mariadb
+
 ```bash
 apt install mariadb-server python-pymysql
 ```
@@ -48,14 +50,16 @@ character-set-server = utf8
 service mysql restart
 ```
 
-.rabbitmq
+==== rabbitmq
+
 ```bash
 apt install rabbitmq-server
 rabbitmqctl add_user openstack RABBIT_PASS #ms123
 rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 ```
 
-.memcache
+==== memcache
+
 ```bash
 apt install memcached python-memcache
 ```
@@ -67,4 +71,55 @@ apt install memcached python-memcache
 
 ```bash
 service memcached restart
+```
+
+
+==== keystone
+
+```bash
+mysql
+```
+
+.KEYSTONE_DBPASS=ms123
+```sql
+CREATE DATABASE keystone;
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'KEYSTONE_DBPASS';
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'KEYSTONE_DBPASS';
+```
+
+```bash
+apt install keystone
+```
+
+./etc/keystone/keystone.conf
+```
+[database]
+# ...
+connection = mysql+pymysql://keystone:KEYSTONE_DBPASS@controller/keystone
+
+[token]
+# ...
+provider = fernet
+```
+
+.Befüllen Sie die Identitätsdienst-Datenbank:
+```bash
+su -s /bin/sh -c "keystone-manage db_sync" keystone
+```
+
+.Initialisieren der Fernet key repositories:
+
+```bash
+keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+```
+
+
+.Bootstrap des Identitätsdienstes, ADMIN_PASS=ms123
+```bash
+keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
+  --bootstrap-admin-url http://os-controller:35357/v3/ \
+  --bootstrap-internal-url http://os-controller:5000/v3/ \
+  --bootstrap-public-url http://os-controller:5000/v3/ \
+  --bootstrap-region-id RegionOne
 ```
