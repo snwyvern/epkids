@@ -7,7 +7,7 @@ Documentation +
 link:http://docs.openstack.org/newton/install-guide-ubuntu/index.html[newton-install-guide-ubuntu, window="_blank"] +
 link:http://docs.openstack.org/developer/networking-ovn/install.html[networking-ovn, window="_blank"]
 
-=== Create controller,network,compute1
+=== Create controller,compute1
 
 ```bash
 lxc launch images:ubuntu/yakkety/amd64 os-controller
@@ -17,8 +17,8 @@ lxc config device set os-controller eth0 ipv4.address 10.0.3.11
 #install some essentials on the controller: zsh,vim,ssh ..
 lxc snapshot  os-controller base
 
-lxc copy os-controller/base  ovn-central
-lxc config device set ovn-central eth0 ipv4.address 10.0.3.22
+#lxc copy os-controller/base  ovn-central
+#lxc config device set ovn-central eth0 ipv4.address 10.0.3.22
 
 lxc copy os-controller/base  os-compute1
 lxc config device set os-compute1 eth0 ipv4.address 10.0.3.33
@@ -156,6 +156,7 @@ export OS_IDENTITY_API_VERSION=3
 ```bash
 apt install neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-l3-agent neutron-dhcp-agent neutron-metadata-agent
 apt install ovn-central
+apt install python-networking-ovn
 ```
 
 
@@ -181,6 +182,7 @@ openstack endpoint create --region RegionOne network internal http://os-controll
 openstack endpoint create --region RegionOne network admin http://os-controller:9696
 
 mkdir -p /opt/stack/data/neutron/
+neutron-db-manage upgrade heads
 ```
 
 ./etc/neutron/neutron.conf
