@@ -15,8 +15,8 @@ lxc config device set os-controller eth0 ipv4.address 10.0.3.11
 #install some essentials on the controller: zsh,vim,ssh ..
 lxc snapshot  os-controller base
 
-lxc copy os-controller/base  os-network
-lxc config device set os-network eth0 ipv4.address 10.0.3.22
+lxc copy os-controller/base  ovn-central
+lxc config device set ovn-central eth0 ipv4.address 10.0.3.22
 
 lxc copy os-controller/base  os-compute1
 lxc config device set os-compute1 eth0 ipv4.address 10.0.3.33
@@ -56,6 +56,11 @@ service mysql restart
 apt install rabbitmq-server
 rabbitmqctl add_user openstack RABBIT_PASS #ms123
 rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+```
+
+./etc/rabbitmq/rabbitmq-env.conf
+```
+NODE_IP_ADDRESS=127.0.0.1
 ```
 
 ==== memcache
@@ -143,4 +148,125 @@ export OS_USER_DOMAIN_NAME=Default
 export OS_PROJECT_DOMAIN_NAME=Default
 export OS_AUTH_URL=http://os-controller:35357/v3
 export OS_IDENTITY_API_VERSION=3
+```
+
+
+```bash
+apt install neutron-server
+apt install ovn-central
+```
+
+
+./etc/neutron/neutron.conf
+```
+[DEFAULT]
+network_scheduler_driver = neutron.scheduler.dhcp_agent_scheduler.AZAwareWeightScheduler
+dhcp_load_type = networks
+dhcp_agents_per_network = 2
+api_workers = 2
+notify_nova_on_port_data_changes = True
+notify_nova_on_port_status_changes = True
+auth_strategy = keystone
+allow_overlapping_ips = True
+debug = True
+service_plugins = networking_ovn.l3.l3_ovn.OVNL3RouterPlugin
+core_plugin = ml2
+transport_url = rabbit://openstack:ms123@127.0.0.1:5672/
+logging_user_identity_format = %(project_name)s %(user_name)s
+bind_host = 0.0.0.0
+use_syslog = False
+state_path = /opt/stack/data/neutron
+
+[agent]
+root_helper_daemon = sudo /usr/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
+
+[cors]
+
+[cors.subdomain]
+
+[database]
+connection = mysql+pymysql://neutron:ms123@127.0.0.1/neutron?charset=utf8
+
+[keystone_authtoken]
+memcached_servers = 127.0.0.1:11211
+#signing_dir = /var/cache/neutron
+#cafile = /opt/stack/data/ca-bundle.pem
+auth_uri = http://127.0.0.1/identity
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = ms123
+username = neutron
+auth_url = http://127.0.0.1/identity_admin
+auth_type = password
+
+[matchmaker_redis]
+
+[nova]
+memcached_servers = 127.0.0.1:11211
+#signing_dir = /var/cache/neutron
+#cafile = /opt/stack/data/ca-bundle.pem
+auth_uri = http://127.0.0.1/identity
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = ms123
+username = nova
+auth_url = http://127.0.0.1/identity_admin
+auth_type = password
+region_name = RegionOne
+
+[oslo_concurrency]
+lock_path = /opt/stack/data/neutron/lock
+[oslo_messaging_amqp]
+[oslo_messaging_kafka]
+[oslo_messaging_notifications]
+[oslo_messaging_rabbit]
+[oslo_messaging_zmq]
+[oslo_middleware]
+[oslo_policy]
+policy_file = /etc/neutron/policy.json
+
+[qos]
+[quotas]
+[ssl]
+```
+
+./etc/neutron/plugins/ml2/ml2_conf.ini 
+```
+[DEFAULT]
+[ml2]
+tenant_network_types = geneve
+extension_drivers = port_security
+type_drivers = local,flat,vlan,geneve
+mechanism_drivers = ovn,logger
+
+[ml2_type_flat]
+flat_networks = provider,
+
+[ml2_type_geneve]
+max_header_size = 38
+vni_ranges = 1:65536
+
+[ml2_type_gre]
+tunnel_id_ranges = 1:1000
+
+[ml2_type_vlan]
+network_vlan_ranges = provider
+
+[ml2_type_vxlan]
+vni_ranges = 1:1000
+
+[securitygroup]
+enable_security_group = True
+
+[ovn]
+ovn_native_dhcp = False
+ovn_l3_admin_net_cidr = 169.254.128.0/30
+ovn_l3_scheduler = leastloaded
+neutron_sync_mode = log
+ovn_l3_mode = True
+ovn_sb_connection = tcp:127.0.0.1:6642
+ovn_nb_connection = tcp:127.0.0.1:6641
 ```
