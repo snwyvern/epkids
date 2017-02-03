@@ -3,7 +3,9 @@
 
 == Openstack
 
-
+Documentation +
+link:http://docs.openstack.org/newton/install-guide-ubuntu/index.html[newton-install-guide-ubuntu, window="_blank"] +
+link:http://docs.openstack.org/developer/networking-ovn/install.html[networking-ovn, window="_blank"]
 
 === Create controller,network,compute1
 
@@ -152,10 +154,34 @@ export OS_IDENTITY_API_VERSION=3
 
 
 ```bash
-apt install neutron-server
+apt install neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-l3-agent neutron-dhcp-agent neutron-metadata-agent
 apt install ovn-central
 ```
 
+
+```bash
+mysql
+```
+
+.NEUTRON_DBPASS=ms123
+```sql
+CREATE DATABASE neutron;
+GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' IDENTIFIED BY 'NEUTRON_DBPASS';
+GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' IDENTIFIED BY 'NEUTRON_DBPASS';
+```
+
+.password=ms123
+```bash
+openstack user create --domain default --password-prompt neutron
+openstack role add --project service --user neutron admin
+
+openstack service create --name neutron --description "OpenStack Networking" network
+openstack endpoint create --region RegionOne network public http://os-controller:9696
+openstack endpoint create --region RegionOne network internal http://os-controller:9696
+openstack endpoint create --region RegionOne network admin http://os-controller:9696
+
+mkdir -p /opt/stack/data/neutron/
+```
 
 ./etc/neutron/neutron.conf
 ```
@@ -186,19 +212,21 @@ root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
 [cors.subdomain]
 
 [database]
-connection = mysql+pymysql://neutron:ms123@127.0.0.1/neutron?charset=utf8
+connection = mysql+pymysql://neutron:ms123@os-controller/neutron?charset=utf8
 
 [keystone_authtoken]
 memcached_servers = 127.0.0.1:11211
 #signing_dir = /var/cache/neutron
 #cafile = /opt/stack/data/ca-bundle.pem
-auth_uri = http://127.0.0.1/identity
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
 password = ms123
 username = neutron
-auth_url = http://127.0.0.1/identity_admin
+#auth_uri = http://127.0.0.1/identity
+#auth_url = http://127.0.0.1/identity_admin
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
 auth_type = password
 
 [matchmaker_redis]
@@ -207,13 +235,15 @@ auth_type = password
 memcached_servers = 127.0.0.1:11211
 #signing_dir = /var/cache/neutron
 #cafile = /opt/stack/data/ca-bundle.pem
-auth_uri = http://127.0.0.1/identity
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
 password = ms123
 username = nova
-auth_url = http://127.0.0.1/identity_admin
+#auth_uri = http://127.0.0.1/identity
+#auth_url = http://127.0.0.1/identity_admin
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
 auth_type = password
 region_name = RegionOne
 
