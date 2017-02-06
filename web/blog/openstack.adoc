@@ -131,6 +131,16 @@ keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
   --bootstrap-region-id RegionOne
 ```
 
+.Create a domain, projects, users, and roles
+```bash
+openstack project create --domain default --description "Service Project" service
+openstack project create --domain default --description "Demo Project" demo
+openstack user create --domain default --password-prompt  demo
+openstack role create user
+openstack role add --project demo --user demo user
+```
+
+
 ./etc/apache2/apache2.conf
 ```
 ServerName os-controller
@@ -152,6 +162,7 @@ export OS_AUTH_URL=http://os-controller:35357/v3
 export OS_IDENTITY_API_VERSION=3
 ```
 
+==== neutron
 
 ```bash
 apt install neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-l3-agent neutron-dhcp-agent neutron-metadata-agent
@@ -301,4 +312,106 @@ neutron_sync_mode = log
 ovn_l3_mode = True
 ovn_sb_connection = tcp:127.0.0.1:6642
 ovn_nb_connection = tcp:127.0.0.1:6641
+```
+
+==== nova
+
+```bash
+mysql
+```
+
+.NOVA_DBPASS=ms123
+```sql
+CREATE DATABASE nova_api;
+CREATE DATABASE nova;
+
+GRANT ALL PRIVILEGES ON nova_api.* TO 'nova'@'localhost' IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova_api.* TO 'nova'@'%' IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost'  IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' IDENTIFIED BY 'NOVA_DBPASS';
+```
+
+```
+openstack user create --domain default --password-prompt nova
+openstack role add --project service --user nova admin
+openstack service create --name nova --description "OpenStack Compute" compute
+openstack endpoint create --region RegionOne compute public http://os-controller:8774/v2.1/%\(tenant_id\)s
+openstack endpoint create --region RegionOne compute internal http://os-controller:8774/v2.1/%\(tenant_id\)s
+openstack endpoint create --region RegionOne compute admin http://os-controller:8774/v2.1/%\(tenant_id\)s
+```
+
+
+```bash
+apt install nova-api nova-conductor nova-consoleauth nova-novncproxy nova-scheduler
+```
+
+
+./etc/nova/nova.conf
+```
+[DEFAULT]
+dhcpbridge_flagfile=/etc/nova/nova.conf
+dhcpbridge=/usr/bin/nova-dhcpbridge
+log-dir=/var/log/nova
+state_path=/var/lib/nova
+force_dhcp_release=True
+verbose=True
+ec2_private_dns_show_ip=True
+enabled_apis=osapi_compute,metadata
+transport_url = rabbit://openstack:ms123@127.0.0.1:5672/
+auth_strategy = keystone
+my_ip = 10.0.3.11
+use_neutron = True
+firewall_driver = nova.virt.firewall.NoopFirewallDriver
+
+[database]
+connection = mysql+pymysql://nova:ms123@os-controller/nova
+
+[api_database]
+connection = mysql+pymysql://nova:ms123@os-controller/nova_api
+
+[libvirt]
+use_virtio_for_bridges=True
+
+[wsgi]
+api_paste_config=/etc/nova/api-paste.ini
+
+
+[keystone_authtoken]
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
+memcached_servers = 127.0.0.1:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = nova
+password = ms123
+
+[vnc]
+enabled = true
+vncserver_listen = $my_ip
+vncserver_proxyclient_address = $my_ip
+
+[glance]
+api_servers = http://os-controller:9292
+
+[oslo_concurrency]
+lock_path = /var/lib/nova/tmp
+```
+
+
+```bash
+su -s /bin/sh -c "nova-manage api_db sync" nova
+su -s /bin/sh -c "nova-manage db sync" nova
+```
+Maybe this is a problem? +
+*WARNING: cell0 mapping not found - not syncing cell0.*
+
+
+```bash
+service nova-api restart
+service nova-consoleauth restart
+service nova-scheduler restart
+service nova-conductor restart
+service nova-novncproxy restart
 ```
