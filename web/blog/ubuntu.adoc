@@ -68,7 +68,9 @@ update-locale  LANG=de_DE.UTF-8 LANGUAGE=de
 net.ipv6.conf.all.disable_ipv6=1
 net.ipv6.conf.default.disable_ipv6=1
 net.ipv6.conf.lo.disable_ipv6=1
+net.ipv4.ip_forward=1
 ```
+
 ```bash
 sysctl -p
 ```
@@ -177,6 +179,23 @@ What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [defau
 
 ```
 
+=== lxd remote usage
+
+.on c2
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+```
+.on c3
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc remote add c2 10.0.0.2 #ip c2
+```
+.on c3, launch a container on c2 with name test1
+```bash
+lxc launch ubuntu:14.04 c2:test1
+```
+
 == Openvswitch /OVN
 
 ```shell
@@ -232,3 +251,124 @@ brctl addif $LIN_BRIDGE $OVS_BRIDGE
 ```
 
 
+== FLannel
+
+Master
+```bash
+apt install  etcd
+apt install linux-libc-dev golang gcc
+```
+
+/etc/zsh/zshrc
+```
+export GOPATH=/zpool/gopath
+```
+
+```bash
+mkdir /zpool/gopath/src/github.com/coreos/
+cd /zpool/gopath/src/github.com/coreos/
+git clone https://github.com/coreos/flannel.git
+cd flannel
+git checkout v0.7.0
+CGO_ENABLED=1 make dist/flannel
+cp dist/flanneld /usr/local/bin
+```
+
+on all hosts
+/etc/default/flanneld
+```
+# etcd url location.  Point this to the server where etcd runs
+FLANNEL_ETCD="http://c1.ms123.org:2379"
+FLANNEL_ETCD_KEY="/simpl4.org/network"
+FLANNEL_OPTIONS=""
+```
+
+/lib/systemd/system/flanneld.service
+```
+[Unit]
+Description=Flanneld overlay address etcd agent
+After=network.target
+After=network-online.target
+Wants=network-online.target
+After=etcd.service
+Before=docker.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/default/flanneld
+ExecStart=/usr/local/bin/flanneld -ip-masq=false -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix=${FLANNEL_ETCD_KEY} $FLANNEL_OPTIONS
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=docker.service
+```
+```
+systemctl daemon-reload
+```
+
+==== Etcd on c1
+
+/etc/default/etcd.conf
+```
+ETCD_NAME=default
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
+ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
+
+```
+starting etcd and flannel
+```bash
+for SERVICES in etcd flanneld; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+
+flannel-config.json
+```json
+{
+    "Network": "192.168.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "192.168.5.0",
+    "SubnetMax": "192.168.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+```bash
+etcdctl set /simpl4.org/network/config < flannel-config.json
+```
+
+
+
+==== Test Flannel
+```bash
+# Master c1
+BRIDGE_ADDRESS=192.168.5.1/16
+
+# Node c3
+#BRIDGE_ADDRESS=192.168.10.1/16
+
+#all nodes and on master too
+LIN_BRIDGE=linbr0
+FLANNELIF=flannel.1
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+
+# Add the $FLANNELIF  to linbr0 bridge
+brctl addif $LIN_BRIDGE $FLANNELIF
+
+```
