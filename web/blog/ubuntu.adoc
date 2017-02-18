@@ -161,44 +161,8 @@ systemctl enable shorewall
 ```
 
 
-== LXD
 
-```bash
-zfs create zpool/lxd
-zfs set mountpoint=/zpool/lxd  zpool/lxd
-apt-get install lxd
-newgrp lxd
-lxd init
-```
-```
-Name of the storage backend to use (dir or zfs) [default=zfs]:
-Create a new ZFS pool (yes/no) [default=yes]? no
-Name of the existing ZFS pool or dataset: zpool/lxd
-Would you like LXD to be available over the network (yes/no) [default=no]?
-Would you like stale cached images to be updated automatically (yes/no) [default=yes]? no
-Would you like to create a new network bridge (yes/no) [default=yes]?
-What should the new bridge be called [default=lxdbr0]?
-What IPv4 subnet should be used (CIDR notation, “auto” or “none”) [default=auto]?
-What IPv6 subnet should be used (CIDR notation, “auto” or “none”) [default=auto]? none
 
-```
-
-=== lxd remote usage
-
-.on c2
-```bash
-lxc config set core.https_address "[::]:8443"
-lxc config set core.trust_password ms123
-```
-.on c3
-```bash
-lxc config set core.https_address "[::]:8443"
-lxc remote add c2 10.0.0.2 #ip c2
-```
-.on c3, launch a container on c2 with name test1
-```bash
-lxc launch ubuntu:14.04 c2:test1
-```
 
 == Openvswitch /OVN
 
@@ -257,17 +221,70 @@ brctl addif $LIN_BRIDGE $OVS_BRIDGE
 
 == FLannel
 
-Master
+=== etcd on c1
+
 ```bash
 apt install  etcd
+```
+
+===== /etc/default/etcd.conf
+```
+ETCD_NAME=default
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
+ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
+```
+
+```bash
+systemctl restart etcd
+systemctl enable etcd
+```
+
+===== flannel-s10-config.json
+```json
+{
+    "Network": "10.0.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "10.0.2.0",
+    "SubnetMax": "10.0.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+===== flannel-s192-config.json
+```json
+{
+    "Network": "192.168.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "192.168.2.0",
+    "SubnetMax": "192.168.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 2
+     }
+}
+```
+
+```bash
+etcdctl set /simpl4.org/network/config < flannel-s10-config.json
+etcdctl set /simpl4.org/network/config < flannel-s192-config.json
+```
+
+=== install fannel on all hosts
+```bash
 apt install linux-libc-dev golang gcc
 ```
 
-/etc/zsh/zshrc
+==== setting gopath in /etc/zsh/zshrc
 ```
 export GOPATH=/zpool/gopath
 ```
 
+==== build flannel
 ```bash
 mkdir -p /zpool/gopath/src/github.com/coreos/
 cd /zpool/gopath/src/github.com/coreos/
@@ -278,8 +295,7 @@ CGO_ENABLED=1 make dist/flanneld
 cp dist/flanneld /usr/local/bin
 ```
 
-on all hosts
-/etc/default/flanneld
+==== /etc/default/flanneld
 ```
 # etcd url location.  Point this to the server where etcd runs
 FLANNEL_ETCD="http://c1.ms123.org:2379"
@@ -288,7 +304,9 @@ FLANNEL_ETCD="http://c1.ms123.org:2379"
 #FLANNEL_OPTIONS=""
 ```
 
-/lib/systemd/system/flanneldS10.service
+==== flannel services for every subnet
+
+===== /lib/systemd/system/flanneldS10.service
 ```
 [Unit]
 Description=Flanneld overlay address etcd agent
@@ -308,67 +326,101 @@ Restart=on-failure
 WantedBy=multi-user.target
 RequiredBy=docker.service
 ```
+
+===== /lib/systemd/system/flanneldS192.service
 ```
+[Unit]
+Description=Flanneld overlay address etcd agent
+After=network.target
+After=network-online.target
+Wants=network-online.target
+After=etcd.service
+Before=docker.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/default/flanneld
+ExecStart=/usr/local/bin/flanneld -ip-masq=false -subnet-file="/run/flannel/s192.env" -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix="/simpl4.org/network/s192" 
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=docker.service
+```
+
+```bash
 systemctl daemon-reload
 ```
 
-==== Etcd on c1
-
-/etc/default/etcd.conf
-```
-ETCD_NAME=default
-ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
-ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
-ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
-ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
-
-```
-starting etcd and flannel
-```bash
-for SERVICES in etcd flanneldS10 flanneldS192; do
-	systemctl restart $SERVICES
-	systemctl enable $SERVICES
-done
-```
-
-flannel-s10-config.json
-```json
-{
-    "Network": "10.0.0.0/16",
-    "SubnetLen": 24,
-    "SubnetMin": "10.0.2.0",
-    "SubnetMax": "10.0.10.0",
-    "Backend": {
-        "Type": "vxlan",
-        "VNI": 1
-     }
-}
-```
-
-flannel-s192-config.json
-```json
-{
-    "Network": "192.168.0.0/16",
-    "SubnetLen": 24,
-    "SubnetMin": "192.168.2.0",
-    "SubnetMax": "192.168.10.0",
-    "Backend": {
-        "Type": "vxlan",
-        "VNI": 2
-     }
-}
-```
+==== starting flannel for every subnet
 
 ```bash
-etcdctl set /simpl4.org/network/config < flannel-config.json
+systemctl restart flanneldS10
+systemctl enable flanneldS10
+
+systemctl restart flanneldS192
+systemctl enable flanneldS192
 ```
 
-lxd subnet
+== LXD ==
+
 ```bash
-. /run/flannel/subnet.env
-lxc network set linbr0 ipv4.address $(FLANNEL_SUBNET)
+zfs create zpool/lxd
+apt-get install lxd
 ```
 
+=== lxd init
+```
+lxd init << EOF
+zfs
+no
+zpool/lxd
+no
+no
+yes
+lxdnet0
+auto
+none
+EOF
+```
+
+=== lxd subnet
+```bash
+. /run/flannel/s192.env
+cat /run/flannel/s192.env
+lxc network edit lxdnet0
+lxc network set lxdnet0  ipv4.nat false
+lxc network set lxdnet0  ipv4.address $FLANNEL_SUBNET
+```
+
+
+=== add flannel interface to lxdnet
+
+```bash
+. /run/flannel/s10.env
+SUBNET=$( echo "$FLANNEL_SUBNET" | sed "s!\.1/24!!")
+SUBNET="${SUBNET}.0"
+INTERFACE=$(ifconfig | grep -B1 $SUBNET | grep -o "^flannel\.*[0-9]")
+
+brctl addif lxdnet0 $INTERFACE
+```
+
+=== lxd remote usage
+
+.on c2
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+```
+.on c3
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc remote add c2 10.0.0.2 #ip c2
+```
+.on c3, launch a container on c2 with name test1
+```bash
+lxc launch ubuntu:14.04 c2:test1
+```
 
 ==== Test Flannel
 ```bash
