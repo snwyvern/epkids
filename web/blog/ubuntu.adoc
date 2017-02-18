@@ -68,6 +68,10 @@ update-locale  LANG=de_DE.UTF-8 LANGUAGE=de
 net.ipv6.conf.all.disable_ipv6=1
 net.ipv6.conf.default.disable_ipv6=1
 net.ipv6.conf.lo.disable_ipv6=1
+net.bridge.bridge-nf-call-iptables=1
+net.bridge.bridge-nf-call-ip6tables=1
+net.ipv4.conf.all.rp_filter=0
+net.ipv4.conf.default.rp_filter=0
 net.ipv4.ip_forward=1
 ```
 
@@ -265,12 +269,12 @@ export GOPATH=/zpool/gopath
 ```
 
 ```bash
-mkdir /zpool/gopath/src/github.com/coreos/
+mkdir -p /zpool/gopath/src/github.com/coreos/
 cd /zpool/gopath/src/github.com/coreos/
 git clone https://github.com/coreos/flannel.git
 cd flannel
 git checkout v0.7.0
-CGO_ENABLED=1 make dist/flannel
+CGO_ENABLED=1 make dist/flanneld
 cp dist/flanneld /usr/local/bin
 ```
 
@@ -279,11 +283,12 @@ on all hosts
 ```
 # etcd url location.  Point this to the server where etcd runs
 FLANNEL_ETCD="http://c1.ms123.org:2379"
-FLANNEL_ETCD_KEY="/simpl4.org/network"
-FLANNEL_OPTIONS=""
+#FLANNEL_ETCD_KEY_S10="/simpl4.org/network/s10"
+#FLANNEL_ETCD_FILE_S10="s10"
+#FLANNEL_OPTIONS=""
 ```
 
-/lib/systemd/system/flanneld.service
+/lib/systemd/system/flanneldS10.service
 ```
 [Unit]
 Description=Flanneld overlay address etcd agent
@@ -296,7 +301,7 @@ Before=docker.service
 [Service]
 Type=notify
 EnvironmentFile=-/etc/default/flanneld
-ExecStart=/usr/local/bin/flanneld -ip-masq=false -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix=${FLANNEL_ETCD_KEY} $FLANNEL_OPTIONS
+ExecStart=/usr/local/bin/flanneld -ip-masq=false -subnet-file="/run/flannel/s10.env" -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix="/simpl4.org/network/s10" 
 Restart=on-failure
 
 [Install]
@@ -314,28 +319,42 @@ systemctl daemon-reload
 ETCD_NAME=default
 ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
 ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
-ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379,http://127.0.0.1:2379"
+ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
 ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
 
 ```
 starting etcd and flannel
 ```bash
-for SERVICES in etcd flanneld; do
+for SERVICES in etcd flanneldS10 flanneldS192; do
 	systemctl restart $SERVICES
 	systemctl enable $SERVICES
 done
 ```
 
-flannel-config.json
+flannel-s10-config.json
+```json
+{
+    "Network": "10.0.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "10.0.2.0",
+    "SubnetMax": "10.0.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+flannel-s192-config.json
 ```json
 {
     "Network": "192.168.0.0/16",
     "SubnetLen": 24,
-    "SubnetMin": "192.168.5.0",
+    "SubnetMin": "192.168.2.0",
     "SubnetMax": "192.168.10.0",
     "Backend": {
         "Type": "vxlan",
-        "VNI": 1
+        "VNI": 2
      }
 }
 ```
@@ -344,6 +363,11 @@ flannel-config.json
 etcdctl set /simpl4.org/network/config < flannel-config.json
 ```
 
+lxd subnet
+```bash
+. /run/flannel/subnet.env
+lxc network set linbr0 ipv4.address $(FLANNEL_SUBNET)
+```
 
 
 ==== Test Flannel
