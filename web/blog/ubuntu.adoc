@@ -86,137 +86,6 @@ apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools
 * zsh in passwd eintragen, 
 * vimrc, .vim, zshrc von anderen System kopieren
 
-== SHOREWALL
-
-```bash
-apt-get install shorewall
-cd  /usr/share/shorewall/configfiles/
-cp rules zones interfaces policy masq /etc/shorewall
-```
-
-*/etc/default/shorewall*
-```
-startup=1
-```
-
-*masq*
-```bash
-eth0                    192.168.0.0/16
-```
-
-*zones*
-```bash
-fw  firewall
-net ipv4
-lxd ipv4
-lxc ipv4
-```
-
-*interfaces*
-```bash
-net     eth0
-lxd    lxdbr0
-lxc    lxcbr0
-```
-
-*rules*
-```bash
-Ping/ACCEPT net     $FW
-
-ACCEPT  net fw tcp  2122
-
-DNAT    net lxd:10.171.101.109:80 tcp  80
-DNAT    net lxd:10.171.101.109:443 tcp  443
-
-```
-
-*policy*
-```bash
-lxd        net     ACCEPT
-lxd        $FW     ACCEPT      -
-lxd        all     ACCEPT      -
-
-lxc        net     ACCEPT
-lxc        $FW     ACCEPT      -
-lxc        all     ACCEPT      -
-
-$FW     net     ACCEPT      -
-$FW     all     ACCEPT      -
-
-#
-# Policies for traffic originating from the Internet zone (net)
-#
-net     all     DROP        -
-
-# THE FOLLOWING POLICY MUST BE LAST
-all     all     REJECT      -
-
-```
-
-
-```bash
-systemctl restart shorewall
-systemctl enable shorewall
-
-```
-
-
-
-
-
-== Openvswitch /OVN
-
-```shell
-apt-get install  openvswitch-switch python-openvswitch python-netifaces
-apt-get install  ovn-central
-apt-get install  ovn-host
-
-systemctl start openvswitch-switch.service
-systemctl enable openvswitch-switch.service
-
-
-```
-==== Test openvswitch
-
-
-```shell
-
-# host c1
-REMOTE_IP=138.201.50.73
-BRIDGE_ADDRESS=172.16.42.1/24
-
-# host c2
-REMOTE_IP=88.99.69.170
-BRIDGE_ADDRESS=172.16.42.2/24
-
-#both hosts
-LIN_BRIDGE=linbr0
-OVS_BRIDGE=ovsbr0
-
-#cleanup from prev runs
-ip link set $LIN_BRIDGE down
-brctl delbr $LIN_BRIDGE
-ovs-vsctl del-br $OVS_BRIDGE
-
-#linux bridge
-brctl addbr $LIN_BRIDGE
-ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
-ip link set $LIN_BRIDGE up
-
-#ovs stuff
-ovs-vsctl add-br $OVS_BRIDGE
-ip link set $OVS_BRIDGE up
-
-# Create the tunnel to the other host and attach it to the $OVS_BRIDGE bridge
-ovs-vsctl add-port $OVS_BRIDGE gre0 -- set interface gre0 type=gre options:remote_ip=$REMOTE_IP #options:pmtud=false
-#ovs-vsctl add-port $OVS_BRIDGE tun0 -- set interface tun0 type=geneve options:remote_ip=$REMOTE_IP options:key=123
-ovs-vsctl set int $OVS_BRIDGE mtu_request=1462 #very urgent!!  1500-$HEADER  GRE=38, GENEVE eg. need more, 49:Empirically determined
-
-
-# Add the $OVS_BRIDGE bridge to linbr0 bridge
-brctl addif $LIN_BRIDGE $OVS_BRIDGE
-
-```
 
 
 == FLannel
@@ -446,5 +315,137 @@ ip link set $LIN_BRIDGE up
 
 # Add the $FLANNELIF  to linbr0 bridge
 brctl addif $LIN_BRIDGE $FLANNELIF
+
+```
+
+== SHOREWALL
+
+```bash
+apt-get install shorewall
+cd  /usr/share/shorewall/configfiles/
+cp rules zones interfaces policy masq /etc/shorewall
+```
+
+*/etc/default/shorewall*
+```
+startup=1
+```
+
+*masq*
+```bash
+eth0                    192.168.0.0/16
+```
+
+*zones*
+```bash
+fw  firewall
+net ipv4
+lxd ipv4
+lxc ipv4
+```
+
+*interfaces*
+```bash
+net     eth0
+lxd    lxdbr0
+lxc    lxcbr0
+```
+
+*rules*
+```bash
+Ping/ACCEPT net     $FW
+
+ACCEPT  net fw tcp  2122
+
+DNAT    net lxd:10.171.101.109:80 tcp  80
+DNAT    net lxd:10.171.101.109:443 tcp  443
+
+```
+
+*policy*
+```bash
+lxd        net     ACCEPT
+lxd        $FW     ACCEPT      -
+lxd        all     ACCEPT      -
+
+lxc        net     ACCEPT
+lxc        $FW     ACCEPT      -
+lxc        all     ACCEPT      -
+
+$FW     net     ACCEPT      -
+$FW     all     ACCEPT      -
+
+#
+# Policies for traffic originating from the Internet zone (net)
+#
+net     all     DROP        -
+
+# THE FOLLOWING POLICY MUST BE LAST
+all     all     REJECT      -
+
+```
+
+
+```bash
+systemctl restart shorewall
+systemctl enable shorewall
+
+```
+
+
+
+
+
+== Openvswitch /OVN
+
+```shell
+apt-get install  openvswitch-switch python-openvswitch python-netifaces
+apt-get install  ovn-central
+apt-get install  ovn-host
+
+systemctl start openvswitch-switch.service
+systemctl enable openvswitch-switch.service
+
+
+```
+==== Test openvswitch
+
+
+```shell
+
+# host c1
+REMOTE_IP=138.201.50.73
+BRIDGE_ADDRESS=172.16.42.1/24
+
+# host c2
+REMOTE_IP=88.99.69.170
+BRIDGE_ADDRESS=172.16.42.2/24
+
+#both hosts
+LIN_BRIDGE=linbr0
+OVS_BRIDGE=ovsbr0
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+ovs-vsctl del-br $OVS_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+#ovs stuff
+ovs-vsctl add-br $OVS_BRIDGE
+ip link set $OVS_BRIDGE up
+
+# Create the tunnel to the other host and attach it to the $OVS_BRIDGE bridge
+ovs-vsctl add-port $OVS_BRIDGE gre0 -- set interface gre0 type=gre options:remote_ip=$REMOTE_IP #options:pmtud=false
+#ovs-vsctl add-port $OVS_BRIDGE tun0 -- set interface tun0 type=geneve options:remote_ip=$REMOTE_IP options:key=123
+ovs-vsctl set int $OVS_BRIDGE mtu_request=1462 #very urgent!!  1500-$HEADER  GRE=38, GENEVE eg. need more, 49:Empirically determined
+
+
+# Add the $OVS_BRIDGE bridge to linbr0 bridge
+brctl addif $LIN_BRIDGE $OVS_BRIDGE
 
 ```
