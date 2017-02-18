@@ -257,7 +257,6 @@ EOF
 ```bash
 . /run/flannel/s192.env
 cat /run/flannel/s192.env
-lxc network edit lxdnet0
 lxc network set lxdnet0  ipv4.nat false
 lxc network set lxdnet0  ipv4.address $FLANNEL_SUBNET
 ```
@@ -266,12 +265,17 @@ lxc network set lxdnet0  ipv4.address $FLANNEL_SUBNET
 === add flannel interface to lxdnet
 
 ```bash
-. /run/flannel/s10.env
+. /run/flannel/s192.env
 SUBNET=$( echo "$FLANNEL_SUBNET" | sed "s!\.1/24!!")
 SUBNET="${SUBNET}.0"
 INTERFACE=$(ifconfig | grep -B1 $SUBNET | grep -o "^flannel\.*[0-9]")
 
 brctl addif lxdnet0 $INTERFACE
+```
+
+===== test, create on every node a first container
+```bash
+lxc launch ubuntu:16.10 lx1
 ```
 
 === lxd remote usage
