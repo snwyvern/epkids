@@ -298,7 +298,7 @@ lxc launch ubuntu:14.04 c2:test1
 == Docker
 
 ```bash
-apt install docker.io docker-compose
+apt install docker.io docker-compose apache2-utils curl
 zfs create zpool/docker
 ```
 
@@ -314,6 +314,8 @@ zfs create zpool/docker
 ```
 
 ===== Registry
+
+link:https://geekdudes.wordpress.com/2016/10/23/private-docker-registry-in-ubuntu-server-16-04[original, window="_blank"]
 
 ```bash
 zfs create zpool/docker-registry
@@ -398,9 +400,9 @@ server {
     }
 
     # To add basic authentication to v2 use auth_basic setting plus add_header
-    # auth_basic "registry.localhost";
-    # auth_basic_user_file /etc/nginx/conf.d/registry.password;
-    # add_header 'Docker-Distribution-Api-Version' 'registry/2.0' always;
+    auth_basic "registry.localhost";
+    auth_basic_user_file /etc/nginx/conf.d/registry.password;
+    add_header 'Docker-Distribution-Api-Version' 'registry/2.0' always;
 
     proxy_pass                          http://docker-registry;
     proxy_set_header  Host              $http_host;   # required for docker client's sake
@@ -412,6 +414,21 @@ server {
 }
 ```
 
+===== basic auth
+
+```
+cd /zpool/docker-registry/nginx
+htpasswd -c registry.password simpl4
+New password:
+Re-type new password:
+Adding password for user mydocker
+```
+.test
+```
+curl http://simpl4:ms123@localhost:443/v2/
+```
+
+== Not needed
 ==== Test Flannel
 ```bash
 # Master c1
@@ -438,6 +455,7 @@ ip link set $LIN_BRIDGE up
 brctl addif $LIN_BRIDGE $FLANNELIF
 
 ```
+
 
 == SHOREWALL
 
