@@ -278,6 +278,15 @@ brctl addif lxdnet0 $INTERFACE
 lxc launch ubuntu:16.10 lx1
 ```
 
+===== static ip addr
+
+```bash
+lxc network attach lxdnet0 lx1 eth0
+lxc config device set lx1 eth0 ipv4.address 192.168.4.98
+lxc stop lx1 
+lxc start lx1
+```
+
 === lxd remote usage
 
 .on c2
@@ -379,12 +388,12 @@ upstream docker-registry {
 
 server {
   listen 443;
-  server_name myregistrydomain.com;
+  server_name dockerregistry.ms123.org;
 
   # SSL
-  # ssl on;
-  # ssl_certificate /etc/nginx/conf.d/domain.crt;
-  # ssl_certificate_key /etc/nginx/conf.d/domain.key;
+  ssl on;
+  ssl_certificate /etc/nginx/conf.d/domain.crt;
+  ssl_certificate_key /etc/nginx/conf.d/domain.key;
 
   # disable any limits to avoid HTTP 413 for large image uploads
   client_max_body_size 0;
@@ -480,14 +489,12 @@ eth0                    192.168.0.0/16
 fw  firewall
 net ipv4
 lxd ipv4
-lxc ipv4
 ```
 
 *interfaces*
 ```bash
 net     eth0
-lxd    lxdbr0
-lxc    lxcbr0
+lxd    lxdnet0
 ```
 
 *rules*
@@ -495,6 +502,12 @@ lxc    lxcbr0
 Ping/ACCEPT net     $FW
 
 ACCEPT  net fw tcp  2122
+ACCEPT  net fw tcp  80
+ACCEPT  net fw tcp  443
+ACCEPT  net fw tcp  2379
+ACCEPT  net fw tcp  2380
+ACCEPT  net fw udp  8472
+
 
 DNAT    net lxd:10.171.101.109:80 tcp  80
 DNAT    net lxd:10.171.101.109:443 tcp  443
@@ -506,10 +519,6 @@ DNAT    net lxd:10.171.101.109:443 tcp  443
 lxd        net     ACCEPT
 lxd        $FW     ACCEPT      -
 lxd        all     ACCEPT      -
-
-lxc        net     ACCEPT
-lxc        $FW     ACCEPT      -
-lxc        all     ACCEPT      -
 
 $FW     net     ACCEPT      -
 $FW     all     ACCEPT      -
