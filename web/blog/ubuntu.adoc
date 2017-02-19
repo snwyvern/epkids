@@ -270,7 +270,8 @@ SUBNET=$( echo "$FLANNEL_SUBNET" | sed "s!\.1/24!!")
 SUBNET="${SUBNET}.0"
 INTERFACE=$(ifconfig | grep -B1 $SUBNET | grep -o "^flannel\.*[0-9]")
 
-brctl addif lxdnet0 $INTERFACE
+#Bridging not necessary, because the traffic is routed to the flannel interface
+#brctl addif lxdnet0 $INTERFACE
 ```
 
 ===== test, create on every node a first container
