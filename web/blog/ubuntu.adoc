@@ -486,7 +486,7 @@ eth0                    192.168.0.0/16
 ```
 
 *zones*
-```bash
+```
 fw  firewall
 net ipv4
 lxd ipv4
@@ -495,15 +495,20 @@ veth ipv4
 ```
 
 *interfaces*
-```bash
+```
 net     eth0
 lxd    lxdnet0
 fla    flannel+ 
 veth    veth+ 
 ```
 
+*masq*
+```
+eth0   192.168.0.0/16
+```
+
 *rules*
-```bash
+```
 Ping/ACCEPT net     $FW
 
 ACCEPT  net fw tcp  2122
@@ -520,7 +525,7 @@ DNAT    net lxd:10.171.101.109:443 tcp  443
 ```
 
 *policy*
-```bash
+```
 lxd        net     ACCEPT
 lxd        $FW     ACCEPT      -
 lxd        all     ACCEPT      -
