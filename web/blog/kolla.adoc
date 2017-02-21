@@ -1,0 +1,103 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== Kolla
+
+Documentation +
+link:https://docs.openstack.org/developer/kolla-ansible/quickstart.html[Quickstart, window="_blank"] +
+link:https://rahulait.wordpress.com/2016/09/20/openstack-and-containers-project-kolla/[Overwiew, window="_blank"] +
+link:https://greatbsky.github.io/kolla-for-openstack-in-docker/en.html[Kolla from source, window="_blank"] +
+link:https://marcelwiget.wordpress.com/2016/08/14/kolla-openstack-in-docker-containers-with-ansible-playbooks/[Kolla/Hetzner, window="_blank"] +
+
+
+=== Nodes
+
+```
+10.0.10.1 c1
+192.168.4.2 kolla-op
+10.0.6.1 c2
+10.0.3.1 c3
+
+#subnets
+#192.168.4.0 c1
+#192.168.5.0 c2
+#192.168.3.0 c3
+
+#10.0.10.0 c1
+#10.0.6.0 c2
+#10.0.3.0 c3
+```
+
+=== Dependencies on kolla-op
+
+```bash
+apt-get install python-pip
+pip install -U pip
+pip install -U docker-py
+apt-get install python-dev libffi-dev gcc libssl-dev
+```
+
+
+=== on c1
+
+```bash
+# Create the drop-in unit directory for docker.service
+mkdir -p /etc/systemd/system/docker.service.d
+
+tee /etc/systemd/system/docker.service.d/kolla.conf <<-'EOF'
+[Service]
+MountFlags=shared
+EOF
+
+systemctl daemon-reload
+systemctl restart docker.service
+```
+
+=== Install kolla
+
+```bash
+cd
+mkdir kolla
+cd kolla
+git clone https://git.openstack.org/openstack/kolla
+git checkout stable/newton
+cd kolla
+git checkout stable/newton
+cd ..
+pip install -r kolla/requirements.txt -r kolla/test-requirements.txt
+pip install kolla/
+cd kolla
+cp -r etc/kolla /etc/
+pip install -U python-openstackclient python-neutronclient
+pip install tox
+tox -e genconfig
+```
+
+/usr/local/share/kolla/ansible/inventory/multinode
+```
+[control]
+c1 ansible_port=2122
+
+[network]
+c1 ansible_port=2122
+
+[compute]
+c2 ansible_port=2122
+c3 ansible_port=2122
+
+[storage]
+c1 ansible_port=2122
+
+[monitoring]
+c1 ansible_port=2122
+```
+
+
+```bash
+cp /usr/local/share/kolla/etc_examples/kolla/* /etc/kolla
+kolla-genpwd
+```
+```bash
+#"Checking the network_interface is active" comment out  this task in /usr/local/share/kolla/ansible/inventory/multinode 
+kolla-ansible prechecks -i /usr/local/share/kolla/ansible/inventory/multinode a
+```

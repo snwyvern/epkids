@@ -81,7 +81,7 @@ sysctl -p
 
 === Vim,Zsh, Utils
 ```shell
-apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet python tree
+apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet python tree ntp
 ```
 * zsh in passwd eintragen, 
 * vimrc, .vim, zshrc von anderen System kopieren
@@ -288,6 +288,18 @@ lxc stop lx1
 lxc start lx1
 ```
 
+===== docker inside lxd
+
+```bash
+lxc launch ubuntu:16.10 lx1 -d default -p docker
+```
+
+===== privileged
+
+```bash
+lxc config set lx1 security.privileged true
+```
+
 === lxd remote usage
 
 .on c2
@@ -306,6 +318,11 @@ lxc launch ubuntu:14.04 c2:test1
 ```
 
 == Docker
+
+/etc/shorewall/shorewall.conf
+```
+DOCKER=Yes
+```
 
 ```bash
 apt install docker.io docker-compose apache2-utils curl
@@ -340,7 +357,7 @@ cd /zpool/docker-registry
 nginx:
   image: "nginx:1.9"
   ports:
-    - 443:443
+    - 88.99.69.170:443:443
   links:
     - registry:registry
   volumes:
@@ -348,7 +365,7 @@ nginx:
 registry:
   image: registry:2
   ports:
-    - 127.0.0.1:5000:5000
+    - 10.0.10.1:5000:5000
   environment:
     REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
   volumes:
@@ -480,11 +497,6 @@ cp rules zones interfaces policy masq /etc/shorewall
 startup=1
 ```
 
-*masq*
-```bash
-eth0                    192.168.0.0/16
-```
-
 *zones*
 ```
 fw  firewall
@@ -505,6 +517,8 @@ veth    veth+
 *masq*
 ```
 eth0   192.168.0.0/16
+flannel.1               192.168.0.0/16
+flannel.2               10.0.0.0/16
 ```
 
 *rules*
