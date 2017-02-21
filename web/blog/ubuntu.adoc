@@ -279,6 +279,12 @@ INTERFACE=$(ifconfig | grep -B1 $SUBNET | grep -o "^flannel\.*[0-9]")
 lxc launch ubuntu:16.10 lx1
 ```
 
+===== docker inside lxd
+
+```bash
+lxc launch ubuntu:16.10 lx1 -p default -p docker
+```
+
 ===== static ip addr
 
 ```bash
@@ -288,16 +294,20 @@ lxc stop lx1
 lxc start lx1
 ```
 
-===== docker inside lxd
-
-```bash
-lxc launch ubuntu:16.10 lx1 -d default -p docker
-```
 
 ===== privileged
 
 ```bash
 lxc config set lx1 security.privileged true
+```
+
+===== first time
+```
+lxc exec lx1 bash
+apt update
+cd /etc
+rm localtime
+ln -s /usr/share/zoneinfo/Europe/Berlin localtime
 ```
 
 === lxd remote usage

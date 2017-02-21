@@ -43,7 +43,7 @@ link:https://marcelwiget.wordpress.com/2016/08/14/kolla-openstack-in-docker-cont
 apt-get install python-pip
 pip install -U pip
 pip install -U docker-py
-apt-get install python-dev libffi-dev gcc libssl-dev ansible
+apt-get install docker.io python-dev libffi-dev gcc libssl-dev ansible
 ```
 
 
@@ -62,25 +62,44 @@ systemctl daemon-reload
 systemctl restart docker.service
 ```
 
+===== /etc/default/docker
+```
+DOCKER_OPTS="--mtu 1400 --insecure-registry 10.0.10.1:5000"
+```
+
 ===== Install kolla
 
+.development
 ```bash
 cd
 mkdir -p kolla
 cd kolla
-rm -rf kolla
-git clone https://git.openstack.org/openstack/kolla
-git checkout stable/newton
+rm -rf kolla kolla-ansible
+git clone https://github.com/openstack/kolla
+git clone https://github.com/openstack/kolla-ansible
 cd kolla
 git checkout stable/newton
 cd ..
 pip install -r kolla/requirements.txt -r kolla/test-requirements.txt
 pip install kolla/
-cd kolla
-cp -r etc/kolla /etc/
-pip install -U python-openstackclient python-neutronclient
+pip install -r kolla-ansible/requirements.txt 
+pip install kolla-ansible/
+cp -r kolla-ansible/etc/kolla /etc/kolla/
+cp kolla-ansible/ansible/inventory/* .
+
 pip install tox
 tox -e genconfig
+```
+
+.deployment
+```bash
+pip install kolla-ansible
+cp -r /usr/local/share/kolla/etc_examples/kolla /etc/kolla/
+cp /usr/local/share/kolla/ansible/inventory/* .
+```
+
+```bash
+pip install -U python-openstackclient python-neutronclient
 ```
 
 ===== /usr/local/share/kolla/ansible/inventory/multinode
@@ -102,16 +121,16 @@ c1 ansible_port=2122
 c1 ansible_port=2122
 ```
 
-===== /etc/default/docker
-```
-DOCKER_OPTS="--mtu 1400 --insecure-registry 10.0.10.1:5000"
-```
 
+```bash
+cp /usr/local/share/kolla/etc_examples/kolla/* /etc/kolla
+kolla-genpwd
+```
 
 ===== /etc/kolla/globals.yml
 ```
-olla_base_distro: "ubuntu"
-kolla_install_type: "source"
+kolla_base_distro: "ubuntu"
+kolla_install_type: "binary"
 
 openstack_release: "3.0.2"
 
@@ -128,10 +147,14 @@ neutron_external_interface: "veth0"
 ```
 
 ```bash
-cp /usr/local/share/kolla/etc_examples/kolla/* /etc/kolla
-kolla-genpwd
-```
-```bash
 #"Checking the network_interface is active" comment out  this task in /usr/local/share/kolla/ansible/inventory/multinode 
 kolla-ansible prechecks -i /usr/local/share/kolla/ansible/inventory/multinode a
+```
+
+```
+#/usr/local/share/kolla-ansible/ansible/roles/nova/defaults/main.yml:placement_api_tag: "3.0.3"
+#/usr/local/share/kolla-ansible/ansible/roles/common/defaults/main.yml:fluentd_tag: "master"
+
+kolla-ansible pull -i multinode
+kolla-ansible deploy -i multinode
 ```
