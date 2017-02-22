@@ -114,17 +114,17 @@ COMMENT="_MS123_"
 # remove
 ###################
 remove(){
-        iptables-save | grep -v $COMMENT | iptables-restore
+  iptables-save | grep -v $COMMENT | iptables-restore
 }
 ##################
 # add
 ###################
 add(){
-        grep -v '^#' $INPUT | while read line; do    
-                if [ ! -z "$line" ]; then
-                        eval $line -m comment --comment $COMMENT
-                fi
-        done 
+  grep -v '^#' $INPUT | while read line; do    
+  if [ ! -z "$line" ]; then
+    eval $line -m comment --comment $COMMENT
+  fi
+  done 
 }
 #########################################################
 # main
@@ -145,8 +145,8 @@ while true; do
          exit 1
       ;;
       -r|--remove)
-                                RM=1
-                                shift
+        RM=1
+        shift
       ;;
       *)
        break
