@@ -11,7 +11,7 @@
     "description": "",
     "uri": "centos.adoc",
     "icon": "communication:import-contacts",
-    "id": "",
+    "id": "centos",
     "help": "",
     "adoc_include": false,
     "enabled": true
@@ -21,7 +21,7 @@
     "description": "",
     "uri": "ubuntu.adoc",
     "icon": "communication:import-contacts",
-    "id": "",
+    "id": "ubuntu",
     "help": "",
     "adoc_include": false,
     "enabled": true
@@ -31,7 +31,7 @@
     "description": "",
     "uri": "ovn.adoc",
     "icon": "communication:import-contacts",
-    "id": "",
+    "id": "ovs",
     "help": "",
     "adoc_include": false,
     "enabled": true
@@ -41,7 +41,17 @@
     "description": "",
     "uri": "openstack.adoc",
     "icon": "communication:import-contacts",
-    "id": "",
+    "id": "os",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Kolla",
+    "description": "",
+    "uri": "kolla.adoc",
+    "icon": "communication:import-contacts",
+    "id": "kolla",
     "help": "",
     "adoc_include": false,
     "enabled": true
