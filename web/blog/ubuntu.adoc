@@ -48,6 +48,117 @@ cd /zpool/gitbucket
 git clone http://gitbucket.ms123.org/git/cloud/hostconfig.git
 ```
 
+=== On all
+=== rc.local ===
+
+```
+#!/bin/sh
+/usr/local/bin/ipt.sh
+```
+
+
+/lib/systemd/system/rc.local.service
+```
+[Unit]
+ Description=/etc/rc.local Compatibility
+ ConditionPathExists=/etc/rc.local
+
+[Service]
+ Type=forking
+ ExecStart=/etc/rc.local start
+ TimeoutSec=0
+ StandardOutput=tty
+ RemainAfterExit=yes
+ SysVStartPriority=99
+
+[Install]
+ WantedBy=multi-user.target
+```
+
+```bash
+chmod +x /etc/rc.local
+systemctl enbale rc.local
+```
+
+/etc/iptables/rule
+```
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT  --to-destination 10.0.10.1:80
+iptables -t nat -A POSTROUTING -s 10.0.10.0/16 -o eth0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j MASQUERADE 
+```
+
+/usr/local/bin/ipt.sh
+```
+#!/bin/sh
+#########################################################
+# usage
+#########################################################
+usage() {
+    echo "usage: $0"
+}
+
+usage() {
+  echo >&2
+
+  echo >&2 "usage: ipt.sh"
+
+  echo >&2
+  echo >&2 'options:'
+  echo >&2
+}
+
+RM=
+INPUT=/etc/iptables/rules
+COMMENT="_MS123_"
+##################
+# remove
+###################
+remove(){
+        iptables-save | grep -v $COMMENT | iptables-restore
+}
+##################
+# add
+###################
+add(){
+        grep -v '^#' $INPUT | while read line; do    
+                if [ ! -z "$line" ]; then
+                        eval $line -m comment --comment $COMMENT
+                fi
+        done 
+}
+#########################################################
+# main
+#########################################################
+shortoptions='r'
+longoptions='remove'
+getopt=$(getopt -o $shortoptions --longoptions  $longoptions -- "$@")
+if [ $? != 0 ]; then
+   usage
+   exit 1;
+fi
+
+eval set -- "$getopt"
+while true; do
+   case "$1" in
+      -h|--help)
+         usage
+         exit 1
+      ;;
+      -r|--remove)
+                                RM=1
+                                shift
+      ;;
+      *)
+       break
+      ;;
+   esac
+done
+
+remove;
+add;
+
+```
+
 == Der Rest wird mit ansible geregelt
 
 === Language ===
@@ -375,7 +486,7 @@ nginx:
 registry:
   image: registry:2
   ports:
-    - 10.0.10.1:5000:5000
+    - 10.0.10.1:4000:5000
   environment:
     REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
   volumes:
@@ -411,7 +522,7 @@ systemctl start docker-registry
  /zpool/docker-registry/nginx/registry.conf
 ```
 upstream docker-registry {
-  server registry:5000;
+  server registry:4000;
 }
 
 server {
