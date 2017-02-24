@@ -168,7 +168,7 @@ kolla-ansible post-deploy
 ```
 
 
-=====nova-compute-lxd (c2,c3)
+===== install nova-compute-lxd in nova_compute container on (c2,c3)
 ```bash
 d exec --user root -t -i  "compute-container" bash
 apt install nova-compute-lxd
