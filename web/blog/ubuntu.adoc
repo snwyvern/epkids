@@ -83,6 +83,7 @@ systemctl enbale rc.local
 /etc/iptables/rule
 ```
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT  --to-destination 10.0.10.1:80
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6080 -j DNAT  --to-destination 10.0.10.1:6080
 iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j MASQUERADE 
 iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE 
 iptables -t nat -A POSTROUTING -s 10.0.10.0/16 -o flannel.2 -j MASQUERADE
