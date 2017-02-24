@@ -182,6 +182,14 @@ mv nova-compute.conf.dpkg-dist nova-compute.conf
 self.client = pylxd.Client( endpoint='https://'+host+':8443', verify=False)
 ```
 
+===== Enable LXD remote, nova-compute need this
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+lxc remote add c3 10.0.2.1 #own ip
+```
+
+
 ```bash
 d restart  "compute-container" 
 ```
