@@ -80,12 +80,45 @@ chmod +x /etc/rc.local
 systemctl enbale rc.local
 ```
 
+/etc/network/interfaces
+```
+# Loopback device:
+auto lo
+iface lo inet loopback
+iface lo inet6 loopback
+
+# device: eth0
+auto  br0
+iface br0 inet static
+  pre-up ip link add veth0 type veth peer name veth1
+  pre-up ifconfig veth0 up
+  pre-up ifconfig veth1 up
+  bridge-ifaces eth0 veth0
+  bridge-ports eth0
+  up ifconfig eth0 up
+  address   88.99.69.170
+  netmask   255.255.255.192
+  gateway   88.99.69.129
+  # default route to access subnet
+  up route add -net 88.99.69.128 netmask 255.255.255.192 gw 88.99.69.129 br0
+
+iface eth0 inet manual
+```
+
 /etc/iptables/rule
 ```
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT  --to-destination 10.0.10.1:80
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6080 -j DNAT  --to-destination 10.0.10.1:6080
-iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j MASQUERADE 
-iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE 
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT  --to-destination 10.0.10.1:80
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.0.10.1:6080
+
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8774 -j DNAT  --to-destination 10.0.10.1:8774
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 8774 -j DNAT  --to-destination 10.0.10.1
+
+#glance
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 9292 -j DNAT  --to-destination 10.0.10.1:9292
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 9292 -j DNAT  --to-destination 10.0.10.1
+
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o br0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s 10.0.10.0/16 -o flannel.2 -j MASQUERADE
 ```
 
@@ -401,8 +434,8 @@ lxc launch ubuntu:16.10 lx1 -p default -p docker
 ===== static ip addr
 
 ```bash
-lxc network attach lxdnet0 lx1 eth0
-lxc config device set lx1 eth0 ipv4.address 192.168.4.98
+lxc network attach lxdnet0 lx1 br0
+lxc config device set lx1 br0 ipv4.address 192.168.4.98
 lxc stop lx1 
 lxc start lx1
 ```
@@ -631,7 +664,7 @@ veth ipv4
 
 *interfaces*
 ```
-net     eth0
+net     br0
 lxd    lxdnet0
 fla    flannel+ 
 veth    veth+ 
@@ -639,7 +672,7 @@ veth    veth+
 
 *masq*
 ```
-eth0   192.168.0.0/16
+br0   192.168.0.0/16
 flannel.1               192.168.0.0/16
 flannel.2               10.0.0.0/16
 ```
