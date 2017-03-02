@@ -246,28 +246,29 @@ weave launch
 if [ $(hostname) != "c1" ] ; then
 	weave connect c1.ms123.org
 fi
-num=$(hostname | tail  -c +2)
-ip link add veth-network type veth peer name br-veth-network
-brctl addif weave br-veth-network
 
-ip link add veth-mgmt type veth peer name br-veth-mgmt
-brctl addif weave br-veth-mgmt
+HNUM=$(hostname | tail  -c +2)
+ip link add veth_network type veth peer name br_veth_network
+brctl addif weave br_veth_network
 
-ip link add veth-neutron type veth peer name br-veth-neutron
-brctl addif weave br-veth-neutron
+ip link add veth_mgmt type veth peer name br_veth_mgmt
+brctl addif weave br_veth_mgmt
 
-ifconfig veth-network 10.2.0.${num}/16
-ifconfig veth-mgmt 10.3.0.${num}/16
-ifconfig veth-neutron 10.4.0.${num}/16
+ip link add veth_neutron type veth peer name br_veth_neutron
+brctl addif weave br_veth_neutron
 
-ifconfig weave 10.2.0.${num}/16
+ifconfig veth_network 10.2.0.${HNUM}/16
+ifconfig veth_mgmt 10.3.0.${HNUM}/16
+ifconfig veth_neutron 10.4.0.${HNUM}/16
+
+ifconfig weave 10.2.1.${HNUM}/16
 
 route del -net 10.2.0.0/16
 route del -net 10.3.0.0/16
 route del -net 10.4.0.0/16
 #network
 #route add -net 10.2.0.0/16 dev weave
-#management
+#management/api_network
 route add -net 10.3.0.0/16 dev weave
 #neutron
 route add -net 10.4.0.0/16 dev weave
