@@ -93,8 +93,7 @@ iface br0 inet static
   pre-up ip link add veth0 type veth peer name veth1
   pre-up ifconfig veth0 up
   pre-up ifconfig veth1 up
-  bridge-ifaces eth0 veth0
-  bridge-ports eth0
+  bridge-ports eth0 veth0
   up ifconfig eth0 up
   address   88.99.69.170
   netmask   255.255.255.192
@@ -233,6 +232,46 @@ apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools
 * vimrc, .vim, zshrc von anderen System kopieren
 
 
+== Weave
+
+==== install on every host
+```bash
+curl -L git.io/weave -o /usr/local/bin/weave
+chmod a+x /usr/local/bin/weave
+weave launch
+```
+
+==== setup on every host
+```bash
+if [ $(hostname) != "c1" ] ; then
+	weave connect c1.ms123.org
+fi
+num=$(hostname | tail  -c +2)
+ip link add veth-network type veth peer name br-veth-network
+brctl addif weave br-veth-network
+
+ip link add veth-mgmt type veth peer name br-veth-mgmt
+brctl addif weave br-veth-mgmt
+
+ip link add veth-neutron type veth peer name br-veth-neutron
+brctl addif weave br-veth-neutron
+
+ifconfig veth-network 10.2.0.${num}/16
+ifconfig veth-mgmt 10.3.0.${num}/16
+ifconfig veth-neutron 10.4.0.${num}/16
+
+ifconfig weave 10.2.0.${num}/16
+
+route del -net 10.2.0.0/16
+route del -net 10.3.0.0/16
+route del -net 10.4.0.0/16
+#network
+#route add -net 10.2.0.0/16 dev weave
+#management
+route add -net 10.3.0.0/16 dev weave
+#neutron
+route add -net 10.4.0.0/16 dev weave
+```
 
 == FLannel
 
