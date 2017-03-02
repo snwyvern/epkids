@@ -106,15 +106,18 @@ iface eth0 inet manual
 
 /etc/iptables/rule
 ```
-iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT  --to-destination 10.0.10.1:80
-iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.0.10.1:6080
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1:80
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1
 
-iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8774 -j DNAT  --to-destination 10.0.10.1:8774
-iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 8774 -j DNAT  --to-destination 10.0.10.1
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1:6080
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1
+
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1:8774
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1
 
 #glance
-iptables -t nat -A PREROUTING -i br0 -p tcp --dport 9292 -j DNAT  --to-destination 10.0.10.1:9292
-iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 9292 -j DNAT  --to-destination 10.0.10.1
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 9292 -j DNAT  --to-destination 10.3.0.1:9292
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 9292 -j DNAT  --to-destination 10.3.0.1
 
 iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o br0 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE
