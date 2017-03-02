@@ -31,9 +31,9 @@ link:https://ask.openstack.org/en/question/100339/how-to-use-latest-kolla-code/[
 #10.0.3.0 c3
 
 #weave subnets
-10.2.0.0/16  #kolla:network_interface
-10.3.0.0/16  #kolla:api_interface
-10.4.0.0/16  #kolla:neutron_external_interface
+10.2.0.0/16  #kolla:network_interface/veth_network
+10.3.0.0/16  #kolla:api_interface/veth_mgmt
+10.4.0.0/16  #kolla:neutron_external_interface/veth_neutron
 ```
 
 ===== /etc/hosts on all hosts
