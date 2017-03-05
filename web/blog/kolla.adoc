@@ -253,7 +253,6 @@ d restart  "horizon-container"
 /usr/local/bin/docker_start.sh
 ```
 
-
 /usr/local/bin/docker_start.sh
 ```bash
 #!/bin/sh
@@ -336,6 +335,11 @@ docker restart rabbitmq
 docker restart kolla_toolbox
 ```
 
+```bash
+chmod +x /etc/rc.local  
+chmod +x /etc/docker_start.sh
+```
+
 == startup c2,c3 ....
 
 /etc/rc.local
@@ -408,6 +412,11 @@ docker restart openvswitch_db
 docker restart nova_libvirt
 docker restart nova_compute
 docker restart nova_ssh
+```
+
+```bash
+chmod +x /etc/rc.local  
+chmod +x /etc/docker_start.sh
 ```
 
 == openstack setup
