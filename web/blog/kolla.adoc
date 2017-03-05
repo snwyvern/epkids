@@ -243,6 +243,99 @@ import re #<-insert
 d restart  "horizon-container" 
 ```
 
+== startup
+
+/etc/rc.local
+```bash
+#!/bin/sh
+
+/usr/local/bin/ipt.sh
+/usr/local/bin/docker_start.sh
+```
+
+
+/usr/local/bin/docker_start.sh
+```bash
+#!/bin/sh
+
+#docker restart weave
+#docker restart weaveplugin
+#docker restart weaveproxy
+
+echo '+++++++++++++' >/tmp/rc.log
+date >>/tmp/rc.log
+while [ 1 ]; do
+  if [ $(ip add sh dev weave | grep weave: | grep UP | wc -l) -ne 0 ]; then
+                 echo "weave ready" >>/tmp/rc.log
+     break
+  fi
+  sleep 1
+  echo "weave not ready" >>/tmp/rc.log
+done
+
+sleep 2
+
+if [ $(hostname) != "c1" ] ; then
+   weave connect c1.ms123.org
+fi
+
+HNUM=$(hostname | tail  -c +2)
+ip link add veth_network type veth peer name br_veth_network
+brctl addif weave br_veth_network
+
+ip link add veth_mgmt type veth peer name br_veth_mgmt
+brctl addif weave br_veth_mgmt
+
+ip link add veth_neutron type veth peer name br_veth_neutron
+brctl addif weave br_veth_neutron
+
+ifconfig veth_network 10.2.0.${HNUM}/16
+ifconfig veth_mgmt 10.3.0.${HNUM}/16
+ifconfig veth_neutron 10.4.0.${HNUM}/16
+
+ifconfig weave 10.2.1.${HNUM}/16
+
+route del -net 10.2.0.0/16
+route del -net 10.3.0.0/16
+route del -net 10.4.0.0/16
+#network
+#route add -net 10.2.0.0/16 dev weave
+#management/api_network
+route add -net 10.3.0.0/16 dev weave
+#neutron
+route add -net 10.4.0.0/16 dev weave
+
+sleep 2
+
+docker restart cron
+docker restart fluentd
+docker restart memcached
+docker restart mariadb
+docker restart dockerregistry_registry_1
+docker restart dockerregistry_nginx_1
+docker restart placement_api
+docker restart heat_engine
+docker restart heat_api_cfn
+docker restart heat_api
+docker restart neutron_metadata_agent
+docker restart neutron_l3_agent
+docker restart neutron_dhcp_agent
+docker restart neutron_openvswitch_agent
+docker restart neutron_server
+docker restart openvswitch_vswitchd
+docker restart openvswitch_db
+docker restart nova_conductor
+docker restart nova_scheduler
+docker restart nova_novncproxy
+docker restart nova_consoleauth
+docker restart nova_api
+docker restart glance_registry
+docker restart glance_api
+docker restart keystone
+docker restart rabbitmq
+docker restart kolla_toolbox
+```
+
 == openstack setup
 
 ```bash

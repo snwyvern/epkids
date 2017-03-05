@@ -109,8 +109,8 @@ iface eth0 inet manual
 iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1:80
 iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1
 
-iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1:6080
-iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1
+#iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1:6080
+#iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1
 
 iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1:8774
 iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1
