@@ -174,6 +174,12 @@ kolla-ansible deploy -i multinode
 kolla-ansible post-deploy
 ```
 
+===== Enable LXD remote, nova-compute need this
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+lxc remote add c3 10.3.0.3 #own host ip
+```
 
 ===== install nova-compute-lxd in nova_compute container on (c2,c3)
 ```bash
@@ -189,14 +195,40 @@ mv nova-compute.conf.dpkg-dist nova-compute.conf
 self.client = pylxd.Client( endpoint='https://'+host+':8443', verify=False)
 ```
 
-===== Enable LXD remote, nova-compute need this
-```bash
-lxc config set core.https_address "[::]:8443"
-lxc config set core.trust_password ms123
-lxc remote add c3 10.0.2.1 #own ip
+/usr/lib/python2.7/dist-packages/nova/virt/lxd/session.py, line 50
 ```
+host = CONF.host 
+```
+
+```bash
+cd ./var/lib/nova/
+scp -r -P2122 ${HOST}:/root/.config .
+
+cd /usr/lib/python2.7/dist-packages
+rm -r pylxd
+scp -r -P2122 c1:/zpool/git/hostconfig/pylxd/ .
+```
+
 
 
 ```bash
 d restart  "compute-container" 
+```
+
+
+== openstack setup
+
+```bash
+openstack network create  --share  --provider-physical-network physnet1  --provider-network-type flat physnet1
+openstack subnet create --network physnet1 --allocation-pool start=10.3.2.2,end=10.3.2.250 --dns-nameserver DNS_RESOLVER --gateway 10.3.0.1 --subnet-range 10.3.0.0/16 physnet1
+openstack flavor create --id 0 --vcpus 1 --ram 640 --disk 5 m1.nano
+openstack image create "simpl4" --file simpl4.tar.gz --disk-format raw --container-format bare --public
+
+ssh-keygen -f idr -q -N ""
+openstack keypair create --public-key idr.pub simpl4key
+
+openstack security group rule create --proto icmp default
+openstack security group rule create --proto tcp --dst-port 22 default
+
+openstack server create --flavor m1.nano --image simpl4  --availability-zone nova:c2 --nic net-id=5bd25b95-e479-4a4f-b7c6-8ba873938536 --security-group default --key-name simpl4key simpl4-instance
 ```
