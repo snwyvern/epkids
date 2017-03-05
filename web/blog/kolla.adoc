@@ -216,6 +216,33 @@ d restart  "compute-container"
 ```
 
 
+on c1 +
+/etc/kolla/nova-novncproxy/nova.conf
+```
+vnc]
+novncproxy_host = c1.ms123.org
+novncproxy_port = 6080
+vncserver_listen = c1.ms123.org
+vncserver_proxyclient_address = c1.ms123.org
+```
+
+horzion container +
+/usr/share/openstack-dashboard/openstack_dashboard/dashboards/project/instances/console.py
+```python
+import six
+import re #<-insert
+...
+
+        console_url = re.sub('http://.*:6080', 'http://c1.ms123.org:6080', console_url) #<-insert
+        return (con_type, console_url)
+
+    raise exceptions.NotAvailable(_('No available console found.'))
+```
+
+```bash
+d restart  "horizon-container" 
+```
+
 == openstack setup
 
 ```bash
