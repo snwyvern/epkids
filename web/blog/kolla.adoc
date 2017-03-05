@@ -417,6 +417,8 @@ docker restart nova_ssh
 ```bash
 chmod +x /etc/rc.local  
 chmod +x /etc/docker_start.sh
+cd /zpool/docker/containers
+sed -i "s!unless-stopped!no!g"  */hostconfig.json #no autostart
 ```
 
 == openstack setup
