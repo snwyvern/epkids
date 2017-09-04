@@ -30,7 +30,7 @@ The process engine makes it possible to view the current state of processes at a
 Camel routes are the main processing units in *simpl4*. They specify the flow of data from one component to another. Camel also provides numerous protocols and components, for example for the delivery of data from any source such as a SAP system, an IBM AS/400 or numerous other systems and solutions
 
 === Source code information
-”The complete *simpl4* source code is available under the GPL3. This was a conscious decision to encourage the continuous further development of the solution by interested users,” explains Manfred Sattler, developer of *simpl4* and CEO of transparent solutions GmbH. Open source is not a short-term marketing strategy for us. It has guided our development efforts for more than 20 years.”
+”The complete *simpl4* source code is available under the Apache 2.0 license. This was a conscious decision to encourage the continuous further development of the solution by interested users,” explains Manfred Sattler, developer of *simpl4* and CEO of transparent solutions GmbH. Open source is not a short-term marketing strategy for us. It has guided our development efforts for more than 20 years.”
 
 === Overview of key data:
 
