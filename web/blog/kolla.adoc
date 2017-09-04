@@ -1,0 +1,430 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== Kolla
+
+
+
+Documentation +
+link:https://docs.openstack.org/developer/kolla-ansible/quickstart.html[Quickstart, window="_blank"] +
+link:https://rahulait.wordpress.com/2016/09/20/openstack-and-containers-project-kolla/[Overwiew, window="_blank"] +
+link:https://greatbsky.github.io/kolla-for-openstack-in-docker/en.html[Kolla from source, window="_blank"] +
+link:https://marcelwiget.wordpress.com/2016/08/14/kolla-openstack-in-docker-containers-with-ansible-playbooks/[Kolla/Hetzner, window="_blank"] +
+
+link:https://ask.openstack.org/en/question/100339/how-to-use-latest-kolla-code/[Use Latest, window="_blank"] +
+
+===== Nodes
+
+```
+10.0.10.1 c1
+192.168.4.2 kolla-op
+10.0.6.1 c2
+10.0.3.1 c3
+
+#flannel subnets
+#192.168.4.0 c1
+#192.168.5.0 c2
+#192.168.3.0 c3
+
+#10.0.10.0 c1
+#10.0.6.0 c2
+#10.0.3.0 c3
+
+#weave subnets
+10.2.0.0/16  #kolla:network_interface/veth_network
+10.3.0.0/16  #kolla:api_interface/veth_mgmt
+10.4.0.0/16  #kolla:neutron_external_interface/veth_neutron
+```
+
+===== /etc/hosts on all hosts
+```
+88.99.69.170  dockerregistry.ms123.org
+10.3.0.1 c1
+10.3.0.2 c2
+10.3.0.3 c3
+```
+
+
+===== Dependencies on kolla-op
+
+```bash
+apt-get install python-pip
+pip install -U pip
+pip install -U docker-py
+apt-get install docker.io python-dev libffi-dev gcc libssl-dev ansible
+```
+
+
+===== on c1
+
+```bash
+# Create the drop-in unit directory for docker.service
+mkdir -p /etc/systemd/system/docker.service.d
+
+tee /etc/systemd/system/docker.service.d/kolla.conf <<-'EOF'
+[Service]
+MountFlags=shared
+EOF
+
+systemctl daemon-reload
+systemctl restart docker.service
+```
+
+===== /etc/default/docker
+```
+DOCKER_OPTS="--mtu 1400 --insecure-registry 10.0.10.1:4000"
+```
+
+===== Install kolla
+
+.development
+```bash
+cd
+mkdir -p kolla
+cd kolla
+rm -rf kolla kolla-ansible
+git clone https://github.com/openstack/kolla
+git clone https://github.com/openstack/kolla-ansible
+cd kolla
+git checkout stable/newton
+cd ..
+pip install -r kolla/requirements.txt -r kolla/test-requirements.txt
+pip install kolla/
+pip install -r kolla-ansible/requirements.txt 
+pip install kolla-ansible/
+cp -r kolla-ansible/etc/kolla /etc/kolla/
+cp kolla-ansible/ansible/inventory/* .
+
+pip install tox
+tox -e genconfig
+```
+
+.deployment
+```bash
+pip install kolla-ansible
+cp -r /usr/local/share/kolla/etc_examples/kolla /etc/kolla/
+cp /usr/local/share/kolla/ansible/inventory/* .
+```
+
+```bash
+pip install -U python-openstackclient python-neutronclient
+```
+
+===== /usr/local/share/kolla/ansible/inventory/multinode
+```
+[control]
+c1 ansible_port=2122
+
+[network]
+c1 ansible_port=2122
+
+[compute]
+c2 ansible_port=2122
+c3 ansible_port=2122
+
+[storage]
+c1 ansible_port=2122
+
+[monitoring]
+c1 ansible_port=2122
+```
+
+
+```bash
+cp /usr/local/share/kolla/etc_examples/kolla/* /etc/kolla
+kolla-genpwd
+```
+
+===== /etc/kolla/globals.yml
+```
+kolla_base_distro: "ubuntu"
+kolla_install_type: "binary"
+
+neutron_plugin_agent: "linuxbridge"
+openstack_release: "3.0.2"
+
+enable_haproxy: "no"
+
+#docker_registry: "dockerregistry.ms123.org"
+#docker_namespace: "simpl4"
+#docker_registry_username: "simpl4"
+#docker_registry_password: "ms123"
+
+neutron_external_interface: "veth_neutron"
+
+
+kolla_internal_vip_address: "10.3.0.1"
+network_interface: "veth_network"
+api_interface: "veth_mgmt"
+
+#kolla_external_vip_address: "88.99.69.170"
+#kolla_external_vip_interface: "eth0"
+```
+
+```bash
+#"Checking the network_interface is active" comment out  this task in /usr/local/share/kolla/ansible/inventory/multinode 
+kolla-ansible prechecks -i /usr/local/share/kolla/ansible/inventory/multinode a
+```
+
+```
+#/usr/local/share/kolla-ansible/ansible/roles/nova/defaults/main.yml:placement_api_tag: "3.0.3"
+#/usr/local/share/kolla-ansible/ansible/roles/common/defaults/main.yml:fluentd_tag: "master"
+
+kolla-ansible pull -i multinode
+kolla-ansible deploy -i multinode
+kolla-ansible post-deploy
+```
+
+===== Enable LXD remote, nova-compute need this
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+lxc remote add c3 10.3.0.3 #own host ip
+```
+
+===== install nova-compute-lxd in nova_compute container on (c2,c3)
+```bash
+d exec --user root -t -i  "compute-container" bash
+apt install nova-compute-lxd
+cd /etc/nova/
+mv nova-compute.conf.dpkg-dist nova-compute.conf
+```
+
+/usr/lib/python2.7/dist-packages/nova/virt/lxd/driver.py, line 206-207
+```
+#self.client = pylxd.Client()
+self.client = pylxd.Client( endpoint='https://'+host+':8443', verify=False)
+```
+
+/usr/lib/python2.7/dist-packages/nova/virt/lxd/session.py, line 50
+```
+host = CONF.host 
+```
+
+```bash
+cd ./var/lib/nova/
+scp -r -P2122 ${HOST}:/root/.config .
+
+cd /usr/lib/python2.7/dist-packages
+rm -r pylxd
+scp -r -P2122 c1:/zpool/git/hostconfig/pylxd/ .
+```
+
+
+
+```bash
+d restart  "compute-container" 
+```
+
+
+on c1 +
+/etc/kolla/nova-novncproxy/nova.conf
+```
+vnc]
+novncproxy_host = c1.ms123.org
+novncproxy_port = 6080
+vncserver_listen = c1.ms123.org
+vncserver_proxyclient_address = c1.ms123.org
+```
+
+horzion container +
+/usr/share/openstack-dashboard/openstack_dashboard/dashboards/project/instances/console.py
+```python
+import six
+import re #<-insert
+...
+
+        console_url = re.sub('http://.*:6080', 'http://c1.ms123.org:6080', console_url) #<-insert
+        return (con_type, console_url)
+
+    raise exceptions.NotAvailable(_('No available console found.'))
+```
+
+```bash
+d restart  "horizon-container" 
+```
+
+== startup c1
+
+/etc/rc.local
+```bash
+#!/bin/sh
+
+/usr/local/bin/ipt.sh
+/usr/local/bin/docker_start.sh
+```
+
+/usr/local/bin/docker_start.sh
+```bash
+#!/bin/sh
+
+echo '+++++++++++++' >/tmp/rc.log
+date >>/tmp/rc.log
+while [ 1 ]; do
+  if [ $(ip add sh dev weave | grep weave: | grep UP | wc -l) -ne 0 ]; then
+     echo "weave ready" >>/tmp/rc.log
+     break
+  fi
+  sleep 1
+  echo "weave not ready" >>/tmp/rc.log
+done
+
+sleep 2
+
+if [ $(hostname) != "c1" ] ; then
+   weave connect c1.ms123.org
+fi
+
+HNUM=$(hostname | tail  -c +2)
+ip link add veth_network type veth peer name br_veth_network
+brctl addif weave br_veth_network
+
+ip link add veth_mgmt type veth peer name br_veth_mgmt
+brctl addif weave br_veth_mgmt
+
+ip link add veth_neutron type veth peer name br_veth_neutron
+brctl addif weave br_veth_neutron
+
+ifconfig veth_network 10.2.0.${HNUM}/16
+ifconfig veth_mgmt 10.3.0.${HNUM}/16
+ifconfig veth_neutron 10.4.0.${HNUM}/16
+
+ifconfig weave 10.2.1.${HNUM}/16
+
+route del -net 10.2.0.0/16
+route del -net 10.3.0.0/16
+route del -net 10.4.0.0/16
+#network
+#route add -net 10.2.0.0/16 dev weave
+#management/api_network
+route add -net 10.3.0.0/16 dev weave
+#neutron
+route add -net 10.4.0.0/16 dev weave
+
+sleep 2
+
+docker restart cron
+docker restart fluentd
+docker restart memcached
+docker restart mariadb
+docker restart dockerregistry_registry_1
+docker restart dockerregistry_nginx_1
+docker restart placement_api
+docker restart heat_engine
+docker restart heat_api_cfn
+docker restart heat_api
+docker restart neutron_metadata_agent
+docker restart neutron_l3_agent
+docker restart neutron_dhcp_agent
+docker restart neutron_server
+docker restart neutron_linuxbridge_agent
+docker restart nova_conductor
+docker restart nova_scheduler
+docker restart nova_novncproxy
+docker restart nova_consoleauth
+docker restart nova_api
+docker restart glance_registry
+docker restart glance_api
+docker restart keystone
+docker restart rabbitmq
+docker restart kolla_toolbox
+```
+
+```bash
+chmod +x /etc/rc.local  
+chmod +x /etc/docker_start.sh
+```
+
+== startup c2,c3 ....
+
+/etc/rc.local
+```bash
+#!/bin/sh
+
+/usr/local/bin/ipt.sh
+/usr/local/bin/docker_start.sh
+```
+
+/usr/local/bin/docker_start.sh
+```bash
+#!/bin/sh
+
+echo '+++++++++++++' >/tmp/rc.log
+date >>/tmp/rc.log
+while [ 1 ]; do
+  if [ $(ip add sh dev weave | grep weave: | grep UP | wc -l) -ne 0 ]; then
+     echo "weave ready" >>/tmp/rc.log
+     break
+  fi
+  sleep 1
+  echo "weave not ready" >>/tmp/rc.log
+done
+
+sleep 2
+
+if [ $(hostname) != "c1" ] ; then
+   weave connect c1.ms123.org
+fi
+
+HNUM=$(hostname | tail  -c +2)
+ip link add veth_network type veth peer name br_veth_network
+brctl addif weave br_veth_network
+
+ip link add veth_mgmt type veth peer name br_veth_mgmt
+brctl addif weave br_veth_mgmt
+
+ip link add veth_neutron type veth peer name br_veth_neutron
+brctl addif weave br_veth_neutron
+
+ifconfig veth_network 10.2.0.${HNUM}/16
+ifconfig veth_mgmt 10.3.0.${HNUM}/16
+ifconfig veth_neutron 10.4.0.${HNUM}/16
+
+ifconfig weave 10.2.1.${HNUM}/16
+
+route del -net 10.2.0.0/16
+route del -net 10.3.0.0/16
+route del -net 10.4.0.0/16
+#network
+#route add -net 10.2.0.0/16 dev weave
+#management/api_network
+route add -net 10.3.0.0/16 dev weave
+#neutron
+route add -net 10.4.0.0/16 dev weave
+
+sleep 2
+
+docker restart cron
+docker restart kolla_toolbox
+docker restart fluentd
+docker restart neutron_linuxbridge_agent
+docker restart nova_libvirt
+docker restart nova_compute
+docker restart nova_ssh
+```
+
+```bash
+chmod +x /etc/rc.local  
+chmod +x /etc/docker_start.sh
+
+systemctl stop docker
+cd /zpool/docker/containers
+sed -i "s!unless-stopped!no!g"  */hostconfig.json #no autostart
+```
+
+== openstack setup
+
+```bash
+openstack network create  --share  --provider-physical-network physnet1  --provider-network-type flat physnet1
+openstack subnet create --network physnet1 --allocation-pool start=10.3.2.2,end=10.3.2.250 --dns-nameserver DNS_RESOLVER --gateway 10.3.0.1 --subnet-range 10.3.0.0/16 physnet1
+openstack flavor create --id 0 --vcpus 1 --ram 640 --disk 5 m1.nano
+openstack image create "simpl4" --file simpl4.tar.gz --disk-format raw --container-format bare --public
+
+ssh-keygen -f idr -q -N ""
+openstack keypair create --public-key idr.pub simpl4key
+
+openstack security group rule create --proto icmp default
+openstack security group rule create --proto tcp --dst-port 22 default
+
+openstack server create --flavor m1.nano --image simpl4  --availability-zone nova:c2 --nic net-id=5bd25b95-e479-4a4f-b7c6-8ba873938536 --security-group default --key-name simpl4key simpl4-instance
+```

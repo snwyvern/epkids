@@ -1,0 +1,229 @@
+[sw]
+	type = sw.structure
+--
+[
+  {
+    "menu_file": "web/ihk.json",
+    "doc_file": "web/ihk.adoc"
+  },
+  {
+    "title": "Begrüßung",
+    "description": "",
+    "uri": "begruessung.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "tpso",
+    "description": "",
+    "uri": "tpso.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Projekte",
+    "description": "",
+    "uri": "projekte.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Beispiel1",
+    "description": "",
+    "uri": "beispiel1.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Beispiel2",
+    "description": "",
+    "uri": "beispiel2.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": false
+  },
+  {
+    "title": "Beispiel3",
+    "description": "",
+    "uri": "beispiel3.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Frage BPMN",
+    "description": "",
+    "uri": "frage_bpmn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Frage BPMN",
+    "description": "",
+    "uri": "frage_bpmn_2.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Frage BPMN",
+    "description": "",
+    "uri": "frage_bpmn_3.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Was ist BPMN",
+    "description": "",
+    "uri": "was_ist_bpmn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Regeln BPMNM",
+    "description": "",
+    "uri": "regeln_bpmn20.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "BPMN20",
+    "description": "",
+    "uri": "bpmn20.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Vorteile BPMN",
+    "description": "",
+    "uri": "vorteile_bpmn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Brücke ohne BPMN",
+    "description": "",
+    "uri": "bruecke_ohne.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Brücke mit BPMN",
+    "description": "",
+    "uri": "bruecke_mit.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Ist BPMN malen?",
+    "description": "",
+    "uri": "malen_bpmn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Prozessengine",
+    "description": "",
+    "uri": "pe.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Sinn Prozessengine",
+    "description": "",
+    "uri": "pe_sinn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Selbst Implementieren",
+    "description": "",
+    "uri": "selbst_impl.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Prozessengine Stärken 1",
+    "description": "",
+    "uri": "pe_staerke1.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Prozessengine Stärken 2",
+    "description": "",
+    "uri": "pe_staerke2.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Fazit",
+    "description": "",
+    "uri": "fazit.adoc",
+    "icon": "communication:import-contacts",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  }
+]

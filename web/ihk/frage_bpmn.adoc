@@ -1,0 +1,11 @@
+:linkattrs:
+
+[.left.text-center]
+== Wie sollte man Geschäftsprozesse darstellen ?
+
+--
+[.lead]
+Vielleicht so?
+
+image::web/ihk/images/falsche_darstellung.svg[simpl4,600]
+--

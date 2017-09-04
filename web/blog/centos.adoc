@@ -1,0 +1,406 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+
+==== Centos bei Hetzner installieren
+
+* Rescuesystem booten und einloggen
+* installimage aufrufen
+* Neuestes Centos auswählen
+* Auskommentieren: DRIVE2, SWRAID*
+* HOSTNAME ändern
+* PART /boot auskommentieren, Root size
+* F10 and go
+* Reboot und wieder einloggen
+* Schlüssel kopieren
+* zsh, vim installieren
+
+=== Update to newest centos (eg. 7.3)
+yum update
+
+=== Vim,Zsh, Utils
+```shell
+yum -y zsh vim
+yum -y install git mlocate strace bridge-utils psmisc net-tools htop rpmrebuild
+yum -y install bind-utils
+yum -y install yum-utils
+```
+* zsh in passwd eintragen, 
+* vimrc, .vim, zshrc von anderen System kopieren
+* sshd port nach 2122 änderen
+
+== ZFS 
+```shell
+yum install epel-release -y
+yum -y localinstall --nogpgcheck http://download.zfsonlinux.org/epel/zfs-release.el7_3.noarch.rpm
+yum -y install zfs
+
+#remove all. Needed if kernel changed
+#yum remove zfs zfs-dkms libzfs libzpool2 libnvpair1 spl spl-dkms libuutil1
+
+systemctl enable zfs-share.service
+systemctl start zfs-share.service
+systemctl enable zfs-mount.service
+systemctl start zfs-mount.service
+systemctl enable zfs-import-scan.service
+systemctl start zfs-import-scan.service
+systemctl enable zfs-import-cache.service
+systemctl start zfs-import-cache.service
+systemctl enable zfs-zed.service
+
+```
+
+=== zpool
+create partitions
+```shell
+zpool create -o ashift=12 -f zpool  partition1 partition2 ..
+```
+
+=== tinc ( not needed anymore)
+```shell
+yum -y groupinstall "Development Tools"
+yum -y install gcc zlib-devel openssl-devel readline-devel ncurses-devel  texinfo lzo-devel
+git clone https://github.com/gsliepen/tinc.git
+cd tinc
+git checkout release-1.1pre14
+
+libtoolize --force
+aclocal
+autoheader
+automake --force-missing --add-missing
+autoconf
+
+configure --prefix=
+make
+make install
+```
+=== Nested KVM
+
+* kvm-intel.nested=1 -> /etc/default/grub
+```shell
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+=== Openvswitch
+
+```shell
+yum -y install python-devel openssl
+
+adduser ovswitch
+su - ovswitch
+
+OSVVERSION=2.6.1
+mkdir -p ~/rpmbuild/SOURCES
+wget http://openvswitch.org/releases/openvswitch-${OSVVERSION}.tar.gz
+cp openvswitch-${OSVVERSION}.tar.gz ~/rpmbuild/SOURCES/
+tar xfz openvswitch-${OSVVERSION}.tar.gz
+sed 's/openvswitch-kmod, //g' openvswitch-${OSVVERSION}/rhel/openvswitch.spec > openvswitch-${OSVVERSION}/rhel/openvswitch_no_kmod.spec
+yum -y install checkpolicy selinux-policy-devel
+
+rpmbuild -bb --nocheck ~/openvswitch-${OSVVERSION}/rhel/openvswitch_no_kmod.spec
+exit
+
+OSVVERSION=2.6.1
+yum localinstall /home/ovswitch/rpmbuild/RPMS/x86_64/openvswitch-${OSVVERSION}-1.x86_64.rpm
+
+systemctl start openvswitch.service
+chkconfig openvswitch on
+
+cd /usr/lib64/python2.7 
+ln -s /usr/share/openvswitch/python/ovs .
+
+```
+==== openvswitch modules (Normally not necessary)
+
+```shell
+cd openvswitch-2.6.1
+./configure --with-linux=/lib/modules/`uname -r`/build`
+make
+KERNELVER=4.4.39-1.el7.elrepo.x86_64
+rm -r  /usr/lib/modules/${KERNELVER}/kernel/net/openvswitch
+#warning: deletes all modules (eg. zfs) in /lib/modules/$KERNELVER}/extra
+make modules_install
+```
+
+
+==== Test openvswitch
+
+
+```shell
+
+# host c1
+REMOTE_IP=138.201.50.73
+BRIDGE_ADDRESS=172.16.42.1/24
+
+# host c2
+REMOTE_IP=88.99.69.170
+BRIDGE_ADDRESS=172.16.42.2/24
+
+#both hosts
+LIN_BRIDGE=linbr0
+OVS_BRIDGE=ovsbr0
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+ovs-vsctl del-br $OVS_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+#ovs stuff
+ovs-vsctl add-br $OVS_BRIDGE
+ip link set $OVS_BRIDGE up
+
+# Create the tunnel to the other host and attach it to the $OVS_BRIDGE bridge
+ovs-vsctl add-port $OVS_BRIDGE gre0 -- set interface gre0 type=gre options:remote_ip=$REMOTE_IP #options:pmtud=false
+#ovs-vsctl add-port $OVS_BRIDGE tun0 -- set interface tun0 type=geneve options:remote_ip=$REMOTE_IP options:key=123
+ovs-vsctl set int $OVS_BRIDGE mtu_request=1462 #very urgent!!  1500-$HEADER  GRE=38, GENEVE eg. need more, 49:Empirically determined
+
+
+# Add the $OVS_BRIDGE bridge to linbr0 bridge
+brctl addif $LIN_BRIDGE $OVS_BRIDGE
+
+```
+
+== FLannel
+
+Master
+```bash
+yum -y install  etcd flannel
+```
+
+Node
+```bash
+yum -y install  flannel
+```
+
+==== Etcd on c1
+
+/etc/etcd/etcd.conf
+```
+ETCD_NAME=default
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_CLIENT_URLS="http://c1.ms123.org:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://c1.ms123.org:2379"
+```
+starting etcd and flannel
+```bash
+for SERVICES in etcd flanneld; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+
+flannel-config.json
+```json
+{
+    "Network": "192.168.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "192.168.5.0",
+    "SubnetMax": "192.168.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+```bash
+etcdctl set /simpl4.org/network/config < flannel-config.json
+```
+
+
+on all hosts
+/etc/sysconfig/flanneld
+```
+FLANNEL_ETCD_ENDPOINTS="http://c1.ms123.org:2379"
+FLANNEL_ETCD_PREFIX="/simpl4.org/network"
+FLANNEL_OPTIONS=""
+```
+
+==== Test Flannel
+```bash
+# Master c1
+BRIDGE_ADDRESS=192.168.5.1/16
+
+# Node c3
+#BRIDGE_ADDRESS=192.168.10.1/16
+
+#all nodes and on master too
+LIN_BRIDGE=linbr0
+FLANNELIF=flannel.1
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+
+# Add the $FLANNELIF  to linbr0 bridge
+brctl addif $LIN_BRIDGE $FLANNELIF
+
+```
+
+== Kubernetes
+
+Master and Nodes
+```bash
+yum -y install  kubernetes
+```
+
+==== Master ====
+/etc/kubernetes/config -> not changed +
+/etc/kubernetes/apiserver
+```
+KUBE_API_ADDRESS="--address=0.0.0.0"
+KUBE_API_PORT="--port=8080"
+KUBELET_PORT="--kubelet-port=10250"
+#KUBE_ADMISSION_CONTROL="--admission-control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ServiceAccount,ResourceQuota"
+```
+
+Starting the services
+```bash
+for SERVICES in kube-apiserver kube-controller-manager kube-scheduler; do
+	systemctl restart $SERVICES
+	systemctl enable $SERVICES
+done
+```
+==== Node ====
+
+/etc/kubernetes/kubelet
+```
+KUBELET_ADDRESS="--address=0.0.0.0"
+KUBELET_PORT="--port=10250"
+KUBELET_HOSTNAME="--hostname-override=c3.ms123.org"
+KUBELET_API_SERVER="--api-servers=http://c1.ms123.org:8080"
+```
+
+starting services
+```bash
+for SERVICES in kube-proxy kubelet docker; do
+    systemctl restart $SERVICES
+    systemctl enable $SERVICES
+done
+```
+
+Configure kubectl
+```bash
+kubectl config set-cluster default-cluster --server=http://c1.ms123.org:8080
+kubectl config set-context default-context --cluster=default-cluster --user=default-admin
+kubectl config use-context default-context
+```
+
+==== Dashboard
+```bash
+wget https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+```
+Line 54  args: ["--apiserver-host=http://c1.ms123.org:8080"]
+
+```bash
+kubectl create  -f kubernetes-dashboard.yaml
+```
+
+
+
+==== Libvirt network
+```xml
+<network>
+  <name>default</name>
+  <uuid>b76b112e-29ae-4729-aaf2-35b8fd773570</uuid>
+  <forward mode='bridge'/>
+  <bridge name='linbr0'/>
+</network>
+```
+==== DHCP on the bridge (linbr0) ====
+
+/etc/dnsmasq.conf
+```
+interface=linbr0
+dhcp-range=linbr0,172.16.42.5,172.16.42.30,12h
+dhcp-option=option:dns-server,213.133.99.99
+```
+
+==== Guest network
+
+/etc/sysconfig/network-scripts/ifcfg-eth0
+```
+DEVICE=eth0
+NM_CONTROLLED=no
+ONBOOT=yes
+BOOTPROTO=dhcp
+IPV6INIT=no
+```
+
+
+=== Virtualbox
+
+```shell
+cd /etc/yum.repos.d
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+yum -y install VirtualBox-5.1
+```
+
+=== Vagrant
+
+```shell
+wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.rpm
+rpm -Uvh vagrant_1.9.1_x86_64.rpm
+```
+
+
+=== Kernel 4.x.x
+
+```shell
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+yum --disablerepo="*" --enablerepo="elrepo-kernel" install kernel-lt kernel-lt-devel
+```
+
+
+=== Docker newest ===
+
+```bash
+tee /etc/yum.repos.d/docker.repo <<-'EOF'
+[dockerrepo]
+name=Docker Repository
+baseurl=https://yum.dockerproject.org/repo/main/centos/7/
+enabled=1
+gpgcheck=1
+gpgkey=https://yum.dockerproject.org/gpg
+EOF
+```
+
+```bash
+#remove old docker stuff
+yum -y remove docker docker-common docker-selinux container-selinux
+
+yumdownloader docker-engine
+rpmrebuild -p -e docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+#provide docker-engine -> docker
+
+yum -y install docker-engine-selinux
+yum -y install libtool-ltdl-devel-0:2.4.2-21.el7_2.x86_64
+rpm -Uvh /root/rpmbuild/RPMS/x86_64/docker-engine-1.12.5-1.el7.centos.x86_64.rpm
+yum -y install kubernetes
+```
+
+==== Docker config
+
+```bash
+zfs create zpool/docker
+```
+
+/etc/systemd/system/docker.service.d/docker.conf
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --graph=/zpool/docker --storage-driver=zfs
+```

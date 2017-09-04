@@ -1,0 +1,12 @@
+:linkattrs:
+
+== Verschiedene Vorteile von BPMN  
+
+image:Vorteile.jpg[Vorteile,float=left]
+
+* ein visualisierter Ablauf ist
+** einfacher verständlich
+** schneller nachvollziehbar
+* notwendige Änderungen oder Fehler sind einfacher erkennbar
+* das Prozessmodell ist automatisch auch Dokumentation (Basis ISO-Zertifizierung !) +
+=> Am 15. Juli 2013 wurde die BPMN 2.0.1 in der ISO/IEC 19510:2013 zum internationalen Standard erhoben

@@ -1,0 +1,837 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+
+== Ubuntu bei Hetzner installieren
+
+* Rescuesystem booten und einloggen
+* installimage aufrufen
+* Neuestes Ubuntu auswählen
+* Auskommentieren: DRIVE2, SWRAID*
+* HOSTNAME ändern
+* PART /boot auskommentieren, 
+* Root 20G, ext4
+* F10 and go
+* Reboot und wieder einloggen
+* Schlüssel kopieren
+* sshd port nach 2122 änderen
+* apt-get update
+* apt-get upgrade
+* apt-get install ubuntu-server //nicht nötig
+* apt-get install python #(für ansible) //wird im deploy Container erledigt 
+
+== ZFS 
+```shell
+apt-get install zfs
+```
+
+==== Disklayout 
+
+sda1 : root 20G
+sda2 : Rest zfs
+
+sdb1 : free 20G #maybe swap
+sdb2 : Rest zfs
+
+create zpool
+```shell
+zpool create -o ashift=12 -f zpool  mirror sda2 sdb2 
+```
+
+=== Only on C1
+
+```bash
+apt-get install ansible
+zfs create zpool/gitbucket
+cd /zpool/gitbucket
+git clone http://gitbucket.ms123.org/git/cloud/hostconfig.git
+```
+
+=== On all
+=== rc.local ===
+
+```
+#!/bin/sh
+/usr/local/bin/ipt.sh
+```
+
+
+/lib/systemd/system/rc.local.service
+```
+[Unit]
+ Description=/etc/rc.local Compatibility
+ ConditionPathExists=/etc/rc.local
+
+[Service]
+ Type=forking
+ ExecStart=/etc/rc.local start
+ TimeoutSec=0
+ StandardOutput=tty
+ RemainAfterExit=yes
+ SysVStartPriority=99
+
+[Install]
+ WantedBy=multi-user.target
+```
+
+```bash
+chmod +x /etc/rc.local
+systemctl enbale rc.local
+```
+
+/etc/network/interfaces
+```
+# Loopback device:
+auto lo
+iface lo inet loopback
+iface lo inet6 loopback
+
+# device: eth0
+auto  br0
+iface br0 inet static
+  pre-up ip link add veth0 type veth peer name veth1
+  pre-up ifconfig veth0 up
+  pre-up ifconfig veth1 up
+  bridge-ports eth0 veth0
+  up ifconfig eth0 up
+  address   88.99.69.170
+  netmask   255.255.255.192
+  gateway   88.99.69.129
+  # default route to access subnet
+  up route add -net 88.99.69.128 netmask 255.255.255.192 gw 88.99.69.129 br0
+
+iface eth0 inet manual
+```
+
+/etc/iptables/rules on c1
+```
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1:80
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 80 -j DNAT  --to-destination 10.3.0.1
+
+#iptables -t nat -A PREROUTING -i br0 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1:6080
+#iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 6080 -j DNAT  --to-destination 10.3.0.1
+
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1:8774
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 8774 -j DNAT  --to-destination 10.3.0.1
+
+#glance
+iptables -t nat -A PREROUTING -i br0 -p tcp --dport 9292 -j DNAT  --to-destination 10.3.0.1:9292
+iptables -t nat -A OUTPUT --dst 88.99.69.170 -p tcp --dport 9292 -j DNAT  --to-destination 10.3.0.1
+
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o br0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 10.0.10.0/16 -o flannel.2 -j MASQUERADE
+```
+
+/etc/iptables/rules on other hosts
+```
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o br0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o flannel.1 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 10.0.10.0/16 -o flannel.2 -j MASQUERADE
+```
+
+/usr/local/bin/ipt.sh
+```
+#!/bin/sh
+#########################################################
+# usage
+#########################################################
+usage() {
+    echo "usage: $0"
+}
+
+usage() {
+  echo >&2
+
+  echo >&2 "usage: ipt.sh"
+
+  echo >&2
+  echo >&2 'options:'
+  echo >&2
+}
+
+RM=
+INPUT=/etc/iptables/rules
+COMMENT="_MS123_"
+##################
+# remove
+###################
+remove(){
+  iptables-save | grep -v $COMMENT | iptables-restore
+}
+##################
+# add
+###################
+add(){
+  grep -v '^#' $INPUT | while read line; do    
+  if [ ! -z "$line" ]; then
+    eval $line -m comment --comment $COMMENT
+  fi
+  done 
+}
+#########################################################
+# main
+#########################################################
+shortoptions='r'
+longoptions='remove'
+getopt=$(getopt -o $shortoptions --longoptions  $longoptions -- "$@")
+if [ $? != 0 ]; then
+   usage
+   exit 1;
+fi
+
+eval set -- "$getopt"
+while true; do
+   case "$1" in
+      -h|--help)
+         usage
+         exit 1
+      ;;
+      -r|--remove)
+        RM=1
+        shift
+      ;;
+      *)
+       break
+      ;;
+   esac
+done
+
+remove;
+add;
+
+```
+
+== Der Rest wird mit ansible geregelt
+
+=== Language ===
+
+/etc/locale.gen
+```
+de_DE.UTF-8 UTF-8
+```
+```bash
+locale-gen
+update-locale  LANG=de_DE.UTF-8 LANGUAGE=de
+```
+
+=== ipv6 off
+
+*/etc/sysctl.conf*
+```
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.lo.disable_ipv6=1
+net.bridge.bridge-nf-call-iptables=1
+net.bridge.bridge-nf-call-ip6tables=1
+net.ipv4.conf.all.rp_filter=0
+net.ipv4.conf.default.rp_filter=0
+net.ipv4.ip_forward=1
+```
+
+```bash
+sysctl -p
+```
+
+=== Vim,Zsh, Utils
+```shell
+apt-get install git zsh vim mlocate strace tcpdump bridge-utils psmisc net-tools htop dnsutils telnet python tree ntp
+```
+* zsh in passwd eintragen, 
+* vimrc, .vim, zshrc von anderen System kopieren
+
+
+== Weave
+
+==== install on every host
+```bash
+curl -L git.io/weave -o /usr/local/bin/weave
+chmod a+x /usr/local/bin/weave
+weave launch
+```
+
+==== setup on every host
+```bash
+if [ $(hostname) != "c1" ] ; then
+	weave connect c1.ms123.org
+fi
+
+HNUM=$(hostname | tail  -c +2)
+ip link add veth_network type veth peer name br_veth_network
+brctl addif weave br_veth_network
+
+ip link add veth_mgmt type veth peer name br_veth_mgmt
+brctl addif weave br_veth_mgmt
+
+ip link add veth_neutron type veth peer name br_veth_neutron
+brctl addif weave br_veth_neutron
+
+ifconfig veth_network 10.2.0.${HNUM}/16
+ifconfig veth_mgmt 10.3.0.${HNUM}/16
+ifconfig veth_neutron 10.4.0.${HNUM}/16
+
+ifconfig weave 10.2.1.${HNUM}/16
+
+route del -net 10.2.0.0/16
+route del -net 10.3.0.0/16
+route del -net 10.4.0.0/16
+#network
+#route add -net 10.2.0.0/16 dev weave
+#management/api_network
+route add -net 10.3.0.0/16 dev weave
+#neutron
+route add -net 10.4.0.0/16 dev weave
+```
+
+== FLannel
+
+=== etcd on c1
+
+```bash
+apt install  etcd
+```
+
+===== /etc/default/etcd.conf
+```
+ETCD_NAME=default
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
+ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
+```
+
+```bash
+systemctl restart etcd
+systemctl enable etcd
+```
+
+===== flannel-s10-config.json
+```json
+{
+    "Network": "10.0.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "10.0.2.0",
+    "SubnetMax": "10.0.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 1
+     }
+}
+```
+
+===== flannel-s192-config.json
+```json
+{
+    "Network": "192.168.0.0/16",
+    "SubnetLen": 24,
+    "SubnetMin": "192.168.2.0",
+    "SubnetMax": "192.168.10.0",
+    "Backend": {
+        "Type": "vxlan",
+        "VNI": 2
+     }
+}
+```
+
+```bash
+etcdctl set /simpl4.org/network/config < flannel-s10-config.json
+etcdctl set /simpl4.org/network/config < flannel-s192-config.json
+```
+
+=== install fannel on all hosts
+```bash
+apt install linux-libc-dev golang gcc
+```
+
+==== setting gopath in /etc/zsh/zshrc
+```
+export GOPATH=/zpool/gopath
+```
+
+==== build flannel
+```bash
+mkdir -p /zpool/gopath/src/github.com/coreos/
+cd /zpool/gopath/src/github.com/coreos/
+git clone https://github.com/coreos/flannel.git
+cd flannel
+git checkout v0.7.0
+CGO_ENABLED=1 make dist/flanneld
+cp dist/flanneld /usr/local/bin
+```
+
+==== /etc/default/flanneld
+```
+# etcd url location.  Point this to the server where etcd runs
+FLANNEL_ETCD="http://c1.ms123.org:2379"
+#FLANNEL_ETCD_KEY_S10="/simpl4.org/network/s10"
+#FLANNEL_ETCD_FILE_S10="s10"
+#FLANNEL_OPTIONS=""
+```
+
+==== flannel services for every subnet
+
+===== /lib/systemd/system/flanneldS10.service
+```
+[Unit]
+Description=Flanneld overlay address etcd agent
+After=network.target
+After=network-online.target
+Wants=network-online.target
+After=etcd.service
+Before=docker.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/default/flanneld
+ExecStart=/usr/local/bin/flanneld -ip-masq=false -subnet-file="/run/flannel/s10.env" -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix="/simpl4.org/network/s10" 
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=docker.service
+```
+
+===== /lib/systemd/system/flanneldS192.service
+```
+[Unit]
+Description=Flanneld overlay address etcd agent
+After=network.target
+After=network-online.target
+Wants=network-online.target
+After=etcd.service
+Before=docker.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/default/flanneld
+ExecStart=/usr/local/bin/flanneld -ip-masq=false -subnet-file="/run/flannel/s192.env" -etcd-endpoints=${FLANNEL_ETCD} -etcd-prefix="/simpl4.org/network/s192" 
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=docker.service
+```
+
+```bash
+systemctl daemon-reload
+```
+
+==== starting flannel for every subnet
+
+```bash
+systemctl restart flanneldS10
+systemctl enable flanneldS10
+
+systemctl restart flanneldS192
+systemctl enable flanneldS192
+```
+
+== LXD ==
+
+```bash
+zfs create zpool/lxd
+apt-get install lxd
+```
+
+=== lxd init
+```
+lxd init << EOF
+zfs
+no
+zpool/lxd
+no
+no
+yes
+lxdnet0
+auto
+none
+EOF
+```
+
+=== lxd subnet
+```bash
+. /run/flannel/s192.env
+cat /run/flannel/s192.env
+lxc network set lxdnet0  ipv4.nat false
+lxc network set lxdnet0  ipv4.address $FLANNEL_SUBNET
+```
+
+
+=== add flannel interface to lxdnet
+
+```bash
+. /run/flannel/s192.env
+SUBNET=$( echo "$FLANNEL_SUBNET" | sed "s!\.1/24!!")
+SUBNET="${SUBNET}.0"
+INTERFACE=$(ifconfig | grep -B1 $SUBNET | grep -o "^flannel\.*[0-9]")
+
+#Bridging not necessary, because the traffic is routed to the flannel interface
+#brctl addif lxdnet0 $INTERFACE
+```
+
+===== test, create on every node a first container
+```bash
+lxc launch ubuntu:16.10 lx1
+```
+
+===== docker inside lxd
+
+```bash
+lxc launch ubuntu:16.10 lx1 -p default -p docker
+```
+
+===== static ip addr
+
+```bash
+lxc network attach lxdnet0 lx1 br0
+lxc config device set lx1 br0 ipv4.address 192.168.4.98
+lxc stop lx1 
+lxc start lx1
+```
+
+
+===== privileged
+
+```bash
+lxc config set lx1 security.privileged true
+```
+
+===== first time
+```
+lxc exec lx1 bash
+apt update
+cd /etc
+rm localtime
+ln -s /usr/share/zoneinfo/Europe/Berlin localtime
+```
+
+=== lxd remote usage
+
+.on c2
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc config set core.trust_password ms123
+```
+.on c3
+```bash
+lxc config set core.https_address "[::]:8443"
+lxc remote add c2 10.0.0.2 #ip c2
+```
+.on c3, launch a container on c2 with name test1
+```bash
+lxc launch ubuntu:14.04 c2:test1
+```
+
+== Docker
+
+/etc/shorewall/shorewall.conf
+```
+DOCKER=Yes
+```
+
+```bash
+apt install docker.io docker-compose apache2-utils curl
+zfs create zpool/docker
+```
+
+===== /etc/docker/daemon.json
+.bip from /run/flannel/s10.env
+```
+{
+    "storage-driver": "zfs",
+    "graph": "zpool/docker",
+    "bip": "10.0.10.1/24",
+    "mtu": 1472
+}
+```
+
+===== Registry
+
+link:https://geekdudes.wordpress.com/2016/10/23/private-docker-registry-in-ubuntu-server-16-04[original, window="_blank"]
+
+```bash
+zfs create zpool/docker-registry
+mkdir  /zpool/docker-registry/data
+mkdir /zpool/docker-registry/nginx
+chown root:root /zpool/docker-registry
+cd /zpool/docker-registry
+```
+
+===== docker-compose.yml
+```
+nginx:
+  image: "nginx:1.9"
+  ports:
+    - 88.99.69.170:443:443
+  links:
+    - registry:registry
+  volumes:
+    - /zpool/docker-registry/nginx/:/etc/nginx/conf.d
+registry:
+  image: registry:2
+  ports:
+    - 10.0.10.1:4000:5000
+  environment:
+    REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+  volumes:
+    - /zpool/docker-registry/data:/data
+```
+
+```bash
+docker-compose up
+^C
+```
+
+===== /etc/systemd/system/docker-registry.service
+```
+[Unit]
+Description=Starting docker registry
+
+[Service]
+Environment= MY_ENVIRONMENT_VAR = /zpool/docker-registry/docker-compose.yml
+WorkingDirectory=/zpool/docker-registry
+ExecStart=/usr/bin/docker-compose up
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+systemctl enable docker-registry
+systemctl start docker-registry
+```
+
+===== nginx
+ /zpool/docker-registry/nginx/registry.conf
+```
+upstream docker-registry {
+  server registry:4000;
+}
+
+server {
+  listen 443;
+  server_name dockerregistry.ms123.org;
+
+  # SSL
+  ssl on;
+  ssl_certificate /etc/nginx/conf.d/domain.crt;
+  ssl_certificate_key /etc/nginx/conf.d/domain.key;
+
+  # disable any limits to avoid HTTP 413 for large image uploads
+  client_max_body_size 0;
+
+  # required to avoid HTTP 411: see Issue #1486 (https://github.com/docker/docker/issues/1486)
+  chunked_transfer_encoding on;
+
+  location /v2/ {
+    # Do not allow connections from docker 1.5 and earlier
+    # docker pre-1.6.0 did not properly set the user agent on ping, catch "Go *" user agents
+    if ($http_user_agent ~ "^(docker\/1\.(3|4|5(?!\.[0-9]-dev))|Go ).*$" ) {
+      return 404;
+    }
+
+    # To add basic authentication to v2 use auth_basic setting plus add_header
+    auth_basic "registry.localhost";
+    auth_basic_user_file /etc/nginx/conf.d/registry.password;
+    add_header 'Docker-Distribution-Api-Version' 'registry/2.0' always;
+
+    proxy_pass                          http://docker-registry;
+    proxy_set_header  Host              $http_host;   # required for docker client's sake
+    proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+    proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+    proxy_set_header  X-Forwarded-Proto $scheme;
+    proxy_read_timeout                  900;
+  }
+}
+```
+
+===== basic auth
+
+```
+cd /zpool/docker-registry/nginx
+htpasswd -c registry.password simpl4
+New password:
+Re-type new password:
+Adding password for user mydocker
+```
+.test
+```
+curl http://simpl4:ms123@localhost:443/v2/
+```
+
+== Not needed
+==== Test Flannel
+```bash
+# Master c1
+BRIDGE_ADDRESS=192.168.5.1/16
+
+# Node c3
+#BRIDGE_ADDRESS=192.168.10.1/16
+
+#all nodes and on master too
+LIN_BRIDGE=linbr0
+FLANNELIF=flannel.1
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+
+# Add the $FLANNELIF  to linbr0 bridge
+brctl addif $LIN_BRIDGE $FLANNELIF
+
+```
+
+
+== SHOREWALL
+
+```bash
+apt-get install shorewall
+cd  /usr/share/shorewall/configfiles/
+cp rules zones interfaces policy masq /etc/shorewall
+```
+
+*/etc/default/shorewall*
+```
+startup=1
+```
+
+*zones*
+```
+fw  firewall
+net ipv4
+lxd ipv4
+fla ipv4
+veth ipv4
+```
+
+*interfaces*
+```
+net     br0
+lxd    lxdnet0
+fla    flannel+ 
+veth    veth+ 
+```
+
+*masq*
+```
+br0   192.168.0.0/16
+flannel.1               192.168.0.0/16
+flannel.2               10.0.0.0/16
+```
+
+*rules*
+```
+Ping/ACCEPT net     $FW
+
+ACCEPT  net fw tcp  2122
+ACCEPT  net fw tcp  80
+ACCEPT  net fw tcp  443
+ACCEPT  net fw tcp  2379
+ACCEPT  net fw tcp  2380
+ACCEPT  net fw udp  8472
+
+
+DNAT    net lxd:10.171.101.109:80 tcp  80
+DNAT    net lxd:10.171.101.109:443 tcp  443
+
+```
+
+*policy*
+```
+lxd        net     ACCEPT
+lxd        $FW     ACCEPT      -
+lxd        all     ACCEPT      -
+
+fla        net     ACCEPT
+fla        $FW     ACCEPT      -
+fla        all     ACCEPT      -
+
+veth        net     ACCEPT
+veth        $FW     ACCEPT      -
+veth        all     ACCEPT      -
+
+$FW     net     ACCEPT      -
+$FW     all     ACCEPT      -
+
+#
+# Policies for traffic originating from the Internet zone (net)
+#
+net     all     DROP        -
+
+# THE FOLLOWING POLICY MUST BE LAST
+all     all     REJECT      -
+
+```
+
+
+```bash
+systemctl restart shorewall
+systemctl enable shorewall
+
+```
+
+
+
+
+
+== Openvswitch /OVN
+
+```shell
+apt-get install  openvswitch-switch python-openvswitch python-netifaces
+apt-get install  ovn-central
+apt-get install  ovn-host
+
+systemctl start openvswitch-switch.service
+systemctl enable openvswitch-switch.service
+
+
+```
+==== Test openvswitch
+
+
+```shell
+
+# host c1
+REMOTE_IP=138.201.50.73
+BRIDGE_ADDRESS=172.16.42.1/24
+
+# host c2
+REMOTE_IP=88.99.69.170
+BRIDGE_ADDRESS=172.16.42.2/24
+
+#both hosts
+LIN_BRIDGE=linbr0
+OVS_BRIDGE=ovsbr0
+
+#cleanup from prev runs
+ip link set $LIN_BRIDGE down
+brctl delbr $LIN_BRIDGE
+ovs-vsctl del-br $OVS_BRIDGE
+
+#linux bridge
+brctl addbr $LIN_BRIDGE
+ip a add $BRIDGE_ADDRESS dev $LIN_BRIDGE
+ip link set $LIN_BRIDGE up
+
+#ovs stuff
+ovs-vsctl add-br $OVS_BRIDGE
+ip link set $OVS_BRIDGE up
+
+# Create the tunnel to the other host and attach it to the $OVS_BRIDGE bridge
+ovs-vsctl add-port $OVS_BRIDGE gre0 -- set interface gre0 type=gre options:remote_ip=$REMOTE_IP #options:pmtud=false
+#ovs-vsctl add-port $OVS_BRIDGE tun0 -- set interface tun0 type=geneve options:remote_ip=$REMOTE_IP options:key=123
+ovs-vsctl set int $OVS_BRIDGE mtu_request=1462 #very urgent!!  1500-$HEADER  GRE=38, GENEVE eg. need more, 49:Empirically determined
+
+
+# Add the $OVS_BRIDGE bridge to linbr0 bridge
+brctl addif $LIN_BRIDGE $OVS_BRIDGE
+
+```

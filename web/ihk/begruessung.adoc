@@ -1,0 +1,14 @@
+:linkattrs:
+
+
+[.left.text-center]
+--
+image::web/ihk/images/logobpmn.svg[simpl4, 150]
+
+[.lead]
+Wir freuen uns Sie zu unserer gemeinsamen Veranstaltung mit der IHK Mittelfranken begrüßen zu dürfen !
+
+image::web/ihk/images/start.jpg[simpl4,600]
+--
+
+

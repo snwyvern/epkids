@@ -1,0 +1,20 @@
+:linkattrs:
+
+
+== Der Begriff Business-Process-Engine
+
+* bezeichnet eine Anwendung, die sich nur auf die Ausführung (execution) von Prozessen konzentriert
+* die auszuführenden Prozesse - also die vorstrukturierte Abfolge von einzelnen Aktivitäten - müssen vorher entsprechend definiert werden (in einer Prozessdefinition oder einem Prozess-Template)
+* beim eigentlichen Ausführen des so definierten Prozesses arbeitet die Business-Process-Engine einfach alle Aktivitäten und ihre "Verbindungen" (also die Übergänge von einer Aktivität zur nächsten) ab
+* gerade in Ausführung befindlichen Prozesse nennt man dabei, im Unterschied zur Prozessdefinition, Prozessinstanzen
+* Bei den Aktivitäten unterscheidet man typischerweise zwischen
+** Human-Aktivitäten => der Mensch ist involviert
+** Maschinenaktivitäten => also Aktivitäten, die _wieder_ von einem (anderen) Programm, Programmteil oder Modul einer anderen Applikation ausgeführt werden
+
+[TIP]
+* Eine Business-Process-Engine hat die Fähigkeit die Ausführung von + 
+  Human- *UND* Maschinen-Aktivitäten in bzw. zu einem ganzen Prozess zu verknüpfen !
+* Derartige Anwendungen werden gerne im Rahmen der Integration von Prozessen oder +
+  auch der **E**nterprise **A**pplication **I**ntegration eingesetzt.
+
+

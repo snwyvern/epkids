@@ -1,0 +1,21 @@
+:linkattrs:
+
+== Stärken einer Process Engine bei der Umsetzung von Geschäftsprozessen I
+
+- Langlaufend - erstreckt sich der Prozess über Stunden, Tage, Wochen, +
+  Monate oder mehr
+
+- Meiste Zeit schlafend - Der Prozess verbringt die meiste Zeit schlafend und wartet +
+  darauf bis das nächste Triggerereignis auftritt
+
+- asynchron - asynchrone Aktionen müssen ausgeführt werden
+
+- Parallele Ausführung . zwei/oder mehr Wege der Überprüfung/Verarbeitung, erst +
+  wenn alle Ausführungspfade erledigt sind, werden sie wieder vereinigt (join) +
+  und der Prozess läuft weiter
+
+- Persistente Zustände - der Prozess muss einen Serverneustart überleben (langlaufende Prozesse)
+
+
+
+

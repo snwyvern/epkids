@@ -1,0 +1,11 @@
+:linkattrs:
+
+== Beispiel - Daten sammeln/Datenanalyse/Reaktion -
+
+* Daten analysieren und auf Ergebnisse reagieren 
+** Loggen diverser anfallender Informationen
+** Auswerten von Informationen
+** Einleiten entsprechender Reaktionen
+** ...
+
+

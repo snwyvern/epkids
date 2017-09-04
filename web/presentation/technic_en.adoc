@@ -1,0 +1,86 @@
+
+
+{sp} +
+{sp} +
+{sp} +
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/business_devel.svgz[width=300]
+###
+=== Developement ===
+* Flexible developing models (if wanted, you can possibly take over the further developing, or delegate to third).
+* Faster implementation of new ideas, because of "zero setup" and +
+a big construction kit of ready building blocks.
+* BPMN -> a common denominator / a common language for Technology and Policy Department
+--
+'''
+
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Opensource ===
+* Less dependence on one supplier.
+* Prevention of a vendor lock-in. 
+* Huge pool of free software. +
+fast integration in simpl4.
+* Flexibility: *All* is changeable and extentable. +
+errors can faster be fixed.
+###
+image:web/presentation/images/opensource.svgz[width=300]
+--
+'''
+
+
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/workplace.svgz[width=300]
+###
+=== Working place ===
+
+* No installation at the working place, +
+therefore also no updates ->  allways up to date.
+* Access from many in-/output devices (browser based) +
+-> mobile working place
+--
+'''
+
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Costs ===
+* No costs by system software, because of independence of operation systems.
+* No working place -Licences.
+* No licence fee for simpl4
+* Cloud ready -> No hardware neccecary
+###
+image:web/presentation/images/costs.svgz[width=300]
+--
+'''
+
+
+[ROW,  cell0="justify-center", col0="align-center"]
+--
+image:web/presentation/images/integration.svgz[width=350]
+###
+=== Integration ===
+* Easy Integration into existing system environment.
+* simpl4 is also able to function as a mediator.
+* Access to shared IT-resources.
+--
+'''
+
+
+[ROW,swap=1, cell1="justify-center", col1="align-center"]
+--
+=== Others ===
+* Over 30 years experience with
+** Opensource Software
+** individal software projects 
+###
+image:web/presentation/images/etc.svgz[width=300]
+--
+'''

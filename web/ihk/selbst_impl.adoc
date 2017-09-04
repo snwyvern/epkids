@@ -1,0 +1,22 @@
+:linkattrs:
+
+== Das können wir doch aber selber implementieren !
+
+Ist es nun sinning obiges Szenario selbst mit einer Programmiersprache seiner Wahl zu implementieren ? 
+
+image:Selber_machen.jpg[Ausführen,300,300,float=right]
+
+Dabei auftauchende Fragen
+
+* lohnt sich der Aufwand ?
+* was benötigt man für weitere Funktionalitäten (Änderungen/Erweiterungen) oder ist das alles ?
+* Aufwand für die zukünftige Wartung ?
+* ist man damit nicht auf dem besten Weg sich eine eignene individuelle Process Engine "zu bauen" ?
+* ...
+
+Die Antwort:
+An dieser Stelle macht es Sinn, auf Vorhandenes zurückzugreifen, aus dem Open Source Bereich !
+Eine Lösung, welche die neuesten Webtechniken(ua. Custom Elements, Websockets) mit Business Prozessen in BPMN kombiniert.
+
+
+

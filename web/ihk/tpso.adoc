@@ -1,0 +1,22 @@
+:linkattrs:
+
+[.xext-center]
+== Vorab ein paar allgemeine Fakten zu transparent solutions
+
+[.left, frame=none,width=50%]
+|===
+a|* seit 1998 Erstellung individueller Software-Lösungen
+* Kunden im ganzen Bundesgebiet verteilt, beispielhaft
+** Bosch Thermotechnik
+** GES - Großeinkaufsring des Süßwaren- und Getränkehandels eG in Nürnberg
+** Palfinger Tail Lifts GmbH
+** BHS Corrugated Maschinen- und Anlagenbau
+* von Anfang Einsatz von Open Source Lösungen
+** Auswahl und Erruieren für Kunden-Projekte
+** Über 30 Jahre Erfahrung im Open Source Umfeld
+* Geschäftsfelder
+** Erstellung Workflow basierter Lösungen
+** Big Data in Kombination mit Geschäftsprozessen
+** Individualsoftware allgemein
+|===
+

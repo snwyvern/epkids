@@ -1,6 +1,10 @@
 :linkattrs:
 :source-highlighter: rouge
 
+++++
+<simpl-socialbuttons text="Big or Fast Data" url="http://simpl4.org/repo/webdemo/start.html#blog_bigdata_part1karaf" data="twitter,facebook"></simpl-socialbuttons>
+++++
+
 
 == Big or Fast Data, Part one
 

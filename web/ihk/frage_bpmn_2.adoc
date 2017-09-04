@@ -1,0 +1,12 @@
+:linkattrs:
+
+
+[.left.text-center]
+--
+[.lead]
+Eher nicht!
+
+image::web/ihk/images/falsche_darstellung_rejected.svg[simpl4,600]
+--
+
+

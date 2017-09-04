@@ -1,0 +1,24 @@
+:linkattrs:
+
+== Warum macht eine Process Engine bei der Software-Erstellung Sinn - Beispiel - ?   
+
+Betrachten wir als einfaches Beispiel einen Teilsapekt einer Online Apotheke:
+
+image::web/ihk/images/Auszug_Online_Apotheke.png[Apotheken-Prozessmodell, 700, float=right]
+
+* Bestellung rezeptpflichtiger Medikamente
+** Warten auf den Eingang des Rezeptes !
+*** Bei Ausbleiben des Rezeptes in einem "definierten Zeitrahmen" => Bestellung verwerfen
+**  bei Zahlungsart "Überweisung" parallel warten auf Zahlungseingang
+*** Bei Ausbleiben des Zahlungseinganges in einem "definierten Zeitrahmen" => Bestellung verwerfen
+* ...
+
+Eigenschaften die dadurch für den Prozess vorgegenen sind
+
+* langlaufend
+* meiste Zeit schlafend
+* asynchron
+* ...
+
+
+

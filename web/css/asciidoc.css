@@ -209,6 +209,8 @@ img { -ms-interpolation-mode: bicubic; }
 
 #map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object { max-width: none !important; }
 
+.table-center { margin-left: auto; margin-right: auto; }
+
 .left { float: left !important; }
 
 .right { float: right !important; }

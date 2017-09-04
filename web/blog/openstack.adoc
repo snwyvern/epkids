@@ -1,0 +1,417 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== Openstack
+
+Documentation +
+link:http://docs.openstack.org/newton/install-guide-ubuntu/index.html[newton-install-guide-ubuntu, window="_blank"] +
+link:http://docs.openstack.org/developer/networking-ovn/install.html[networking-ovn, window="_blank"]
+
+=== Create controller,compute1
+
+```bash
+lxc launch images:ubuntu/yakkety/amd64 os-controller
+lxc network create mgmt-net ipv6.address=none ipv4.address=10.0.3.1/24 ipv4.nat=true
+lxc network attach mgmt-net os-controller  eth0
+lxc config device set os-controller eth0 ipv4.address 10.0.3.11
+#install some essentials on the controller: zsh,vim,ssh ..
+lxc snapshot  os-controller base
+
+#lxc copy os-controller/base  ovn-central
+#lxc config device set ovn-central eth0 ipv4.address 10.0.3.22
+
+lxc copy os-controller/base  os-compute1
+lxc config device set os-compute1 eth0 ipv4.address 10.0.3.33
+```
+
+=== os-controller
+
+==== openstackclient
+
+```bash
+apt install python-openstackclient
+```
+==== mariadb
+
+```bash
+apt install mariadb-server python-pymysql
+```
+./etc/mysql/mariadb.conf.d/99-openstack.cnf
+```
+[mysqld]
+bind-address = 10.0.3.11
+
+default-storage-engine = innodb
+innodb_file_per_table = on
+max_connections = 4096
+collation-server = utf8_general_ci
+character-set-server = utf8
+```
+
+```bash
+service mysql restart
+```
+
+==== rabbitmq
+
+```bash
+apt install rabbitmq-server
+rabbitmqctl add_user openstack RABBIT_PASS #ms123
+rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+```
+
+./etc/rabbitmq/rabbitmq-env.conf
+```
+NODE_IP_ADDRESS=127.0.0.1
+```
+
+==== memcache
+
+```bash
+apt install memcached python-memcache
+```
+
+./etc/memcached.conf  #default
+```
+-l 127.0.0.1
+```
+
+```bash
+service memcached restart
+```
+
+
+==== keystone
+
+```bash
+mysql
+```
+
+.KEYSTONE_DBPASS=ms123
+```sql
+CREATE DATABASE keystone;
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'KEYSTONE_DBPASS';
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'KEYSTONE_DBPASS';
+```
+
+```bash
+apt install keystone
+```
+
+./etc/keystone/keystone.conf
+```
+[database]
+# ...
+connection = mysql+pymysql://keystone:KEYSTONE_DBPASS@os-controller/keystone
+
+[token]
+# ...
+provider = fernet
+```
+
+.Befüllen Sie die Identitätsdienst-Datenbank:
+```bash
+su -s /bin/sh -c "keystone-manage db_sync" keystone
+```
+
+.Initialisieren der Fernet key repositories:
+
+```bash
+keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+```
+
+
+.Bootstrap des Identitätsdienstes, ADMIN_PASS=ms123
+```bash
+keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
+  --bootstrap-admin-url http://os-controller:35357/v3/ \
+  --bootstrap-internal-url http://os-controller:5000/v3/ \
+  --bootstrap-public-url http://os-controller:5000/v3/ \
+  --bootstrap-region-id RegionOne
+```
+
+.Create a domain, projects, users, and roles
+```bash
+openstack project create --domain default --description "Service Project" service
+openstack project create --domain default --description "Demo Project" demo
+openstack user create --domain default --password-prompt  demo
+openstack role create user
+openstack role add --project demo --user demo user
+```
+
+
+./etc/apache2/apache2.conf
+```
+ServerName os-controller
+```
+
+```bash
+service apache2 restart
+rm -f /var/lib/keystone/keystone.db
+```
+
+./etc/zsh/zshrc  #or adapt to the used shell
+```
+export OS_USERNAME=admin
+export OS_PASSWORD=ms123
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://os-controller:35357/v3
+export OS_IDENTITY_API_VERSION=3
+```
+
+==== neutron
+
+```bash
+apt install neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-l3-agent neutron-dhcp-agent neutron-metadata-agent
+apt install ovn-central
+apt install python-networking-ovn
+```
+
+
+```bash
+mysql
+```
+
+.NEUTRON_DBPASS=ms123
+```sql
+CREATE DATABASE neutron;
+GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' IDENTIFIED BY 'NEUTRON_DBPASS';
+GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' IDENTIFIED BY 'NEUTRON_DBPASS';
+```
+
+.password=ms123
+```bash
+openstack user create --domain default --password-prompt neutron
+openstack role add --project service --user neutron admin
+
+openstack service create --name neutron --description "OpenStack Networking" network
+openstack endpoint create --region RegionOne network public http://os-controller:9696
+openstack endpoint create --region RegionOne network internal http://os-controller:9696
+openstack endpoint create --region RegionOne network admin http://os-controller:9696
+
+mkdir -p /opt/stack/data/neutron/
+neutron-db-manage upgrade heads
+```
+
+./etc/neutron/neutron.conf
+```
+[DEFAULT]
+network_scheduler_driver = neutron.scheduler.dhcp_agent_scheduler.AZAwareWeightScheduler
+dhcp_load_type = networks
+dhcp_agents_per_network = 2
+api_workers = 2
+notify_nova_on_port_data_changes = True
+notify_nova_on_port_status_changes = True
+auth_strategy = keystone
+allow_overlapping_ips = True
+debug = True
+service_plugins = networking_ovn.l3.l3_ovn.OVNL3RouterPlugin
+core_plugin = ml2
+transport_url = rabbit://openstack:ms123@127.0.0.1:5672/
+logging_user_identity_format = %(project_name)s %(user_name)s
+bind_host = 0.0.0.0
+use_syslog = False
+state_path = /opt/stack/data/neutron
+
+[agent]
+root_helper_daemon = sudo /usr/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
+
+[cors]
+
+[cors.subdomain]
+
+[database]
+connection = mysql+pymysql://neutron:ms123@os-controller/neutron?charset=utf8
+
+[keystone_authtoken]
+memcached_servers = 127.0.0.1:11211
+#signing_dir = /var/cache/neutron
+#cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = ms123
+username = neutron
+#auth_uri = http://127.0.0.1/identity
+#auth_url = http://127.0.0.1/identity_admin
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
+auth_type = password
+
+[matchmaker_redis]
+
+[nova]
+memcached_servers = 127.0.0.1:11211
+#signing_dir = /var/cache/neutron
+#cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = ms123
+username = nova
+#auth_uri = http://127.0.0.1/identity
+#auth_url = http://127.0.0.1/identity_admin
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
+auth_type = password
+region_name = RegionOne
+
+[oslo_concurrency]
+lock_path = /opt/stack/data/neutron/lock
+[oslo_messaging_amqp]
+[oslo_messaging_kafka]
+[oslo_messaging_notifications]
+[oslo_messaging_rabbit]
+[oslo_messaging_zmq]
+[oslo_middleware]
+[oslo_policy]
+policy_file = /etc/neutron/policy.json
+
+[qos]
+[quotas]
+[ssl]
+```
+
+./etc/neutron/plugins/ml2/ml2_conf.ini 
+```
+[DEFAULT]
+[ml2]
+tenant_network_types = geneve
+extension_drivers = port_security
+type_drivers = local,flat,vlan,geneve
+mechanism_drivers = ovn,logger
+
+[ml2_type_flat]
+flat_networks = provider,
+
+[ml2_type_geneve]
+max_header_size = 38
+vni_ranges = 1:65536
+
+[ml2_type_gre]
+tunnel_id_ranges = 1:1000
+
+[ml2_type_vlan]
+network_vlan_ranges = provider
+
+[ml2_type_vxlan]
+vni_ranges = 1:1000
+
+[securitygroup]
+enable_security_group = True
+
+[ovn]
+ovn_native_dhcp = False
+ovn_l3_admin_net_cidr = 169.254.128.0/30
+ovn_l3_scheduler = leastloaded
+neutron_sync_mode = log
+ovn_l3_mode = True
+ovn_sb_connection = tcp:127.0.0.1:6642
+ovn_nb_connection = tcp:127.0.0.1:6641
+```
+
+==== nova
+
+```bash
+mysql
+```
+
+.NOVA_DBPASS=ms123
+```sql
+CREATE DATABASE nova_api;
+CREATE DATABASE nova;
+
+GRANT ALL PRIVILEGES ON nova_api.* TO 'nova'@'localhost' IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova_api.* TO 'nova'@'%' IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost'  IDENTIFIED BY 'NOVA_DBPASS';
+GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' IDENTIFIED BY 'NOVA_DBPASS';
+```
+
+```
+openstack user create --domain default --password-prompt nova
+openstack role add --project service --user nova admin
+openstack service create --name nova --description "OpenStack Compute" compute
+openstack endpoint create --region RegionOne compute public http://os-controller:8774/v2.1/%\(tenant_id\)s
+openstack endpoint create --region RegionOne compute internal http://os-controller:8774/v2.1/%\(tenant_id\)s
+openstack endpoint create --region RegionOne compute admin http://os-controller:8774/v2.1/%\(tenant_id\)s
+```
+
+
+```bash
+apt install nova-api nova-conductor nova-consoleauth nova-novncproxy nova-scheduler
+```
+
+
+./etc/nova/nova.conf
+```
+[DEFAULT]
+dhcpbridge_flagfile=/etc/nova/nova.conf
+dhcpbridge=/usr/bin/nova-dhcpbridge
+log-dir=/var/log/nova
+state_path=/var/lib/nova
+force_dhcp_release=True
+verbose=True
+ec2_private_dns_show_ip=True
+enabled_apis=osapi_compute,metadata
+transport_url = rabbit://openstack:ms123@127.0.0.1:5672/
+auth_strategy = keystone
+my_ip = 10.0.3.11
+use_neutron = True
+firewall_driver = nova.virt.firewall.NoopFirewallDriver
+
+[database]
+connection = mysql+pymysql://nova:ms123@os-controller/nova
+
+[api_database]
+connection = mysql+pymysql://nova:ms123@os-controller/nova_api
+
+[libvirt]
+use_virtio_for_bridges=True
+
+[wsgi]
+api_paste_config=/etc/nova/api-paste.ini
+
+
+[keystone_authtoken]
+auth_uri = http://os-controller:5000
+auth_url = http://os-controller:35357
+memcached_servers = 127.0.0.1:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = nova
+password = ms123
+
+[vnc]
+enabled = true
+vncserver_listen = $my_ip
+vncserver_proxyclient_address = $my_ip
+
+[glance]
+api_servers = http://os-controller:9292
+
+[oslo_concurrency]
+lock_path = /var/lib/nova/tmp
+```
+
+
+```bash
+su -s /bin/sh -c "nova-manage api_db sync" nova
+su -s /bin/sh -c "nova-manage db sync" nova
+```
+Maybe this is a problem? +
+*WARNING: cell0 mapping not found - not syncing cell0.*
+
+
+```bash
+service nova-api restart
+service nova-consoleauth restart
+service nova-scheduler restart
+service nova-conductor restart
+service nova-novncproxy restart
+```

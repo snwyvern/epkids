@@ -1,0 +1,138 @@
+:linkattrs:
+:source-highlighter: rouge
+
+== OVN und Openvswitch
+
+
+=== Architektur
+
+image::web/images/ovn-overview.svg[]
+
+
+=== Connecting the Chassis Controllers to the Central Controller (c1)
+
+.on c1,c2,c3
+```bash
+#add br-int , if not exists and that the mtu to a save value
+ovs-vsctl add-br br-int -- set Bridge br-int fail-mode=secure
+ovs-vsctl set int br-int  mtu_request=1410
+```
+
+.on c1, connect self
+```bash
+ovs-vsctl set open . external-ids:ovn-remote=tcp:88.99.69.170:6642
+ovs-vsctl set open . external-ids:ovn-encap-type=geneve
+ovs-vsctl set open . external-ids:ovn-encap-ip=88.99.69.170
+```
+
+.(1) on c2
+```bash
+ovs-vsctl set open . external-ids:ovn-remote=tcp:88.99.69.170:6642
+ovs-vsctl set open . external-ids:ovn-encap-type=geneve
+ovs-vsctl set open . external-ids:ovn-encap-ip=88.99.69.171
+```
+.(2) on c3
+```bash
+ovs-vsctl set open . external-ids:ovn-remote=tcp:88.99.69.170:6642
+ovs-vsctl set open . external-ids:ovn-encap-type=geneve
+ovs-vsctl set open . external-ids:ovn-encap-ip=138.201.50.73
+```
+
+=== Defining a logical Network (10.0.0.0/24), with port security
+
+.(3) create the logical switch on c1(central) and some ports
+```bash
+ovn-nbctl ls-add lswitch-central
+
+# create logical port1 for c1
+ovn-nbctl lsp-add lswitch-central lport-c1
+ovn-nbctl lsp-set-addresses lport-c1 00:00:00:00:00:01
+ovn-nbctl lsp-set-port-security lport-c1 00:00:00:00:00:01
+
+# create logical port2 for c2
+ovn-nbctl lsp-add lswitch-central lport-c2
+ovn-nbctl lsp-set-addresses lport-c2 00:00:00:00:00:02
+ovn-nbctl lsp-set-port-security lport-c2 00:00:00:00:00:02
+
+# create logical port3 for c3
+ovn-nbctl lsp-add lswitch-central lport-c3
+ovn-nbctl lsp-set-addresses lport-c3 00:00:00:00:00:03
+ovn-nbctl lsp-set-port-security lport-c3 00:00:00:00:00:03
+
+ovn-nbctl show
+```
+
+.add c1 to the logical switch on lport-c1
+```bash
+ovs-vsctl add-port br-int port1 -- set interface port1 type=internal
+ip link set port1 address 00:00:00:00:00:01
+ip addr add 10.0.0.1/24 dev port1
+ip link set port1 up
+ovs-vsctl set Interface port1 external_ids:iface-id=lport-c1
+```
+
+.(4) add c2 to the logical switch on lport-c2
+```bash
+ovs-vsctl add-port br-int port1 -- set interface port1 type=internal
+ip link set port1 address 00:00:00:00:00:02
+ip addr add 10.0.0.2/24 dev port1
+ip link set port1 up
+ovs-vsctl set Interface port1 external_ids:iface-id=lport-c2
+```
+.(5) add c3 to the logical switch on lport-c3
+```bash
+ovs-vsctl add-port br-int port1 -- set interface port1 type=internal
+ip link set port1 address 00:00:00:00:00:03
+ip addr add 10.0.0.3/24 dev port1
+ip link set port1 up
+ovs-vsctl set Interface port1 external_ids:iface-id=lport-c3
+```
+
+=== Provide a linux bridge on every host (c2,c3), connect to the global locical switch on c1 (central)
+
+.c1 ovn-central
+```bash
+ovn-nbctl lsp-add lswitch-central lport-br-c2
+ovn-nbctl lsp-set-addresses lport-br-c2 unknown
+
+ovn-nbctl lsp-add lswitch-central lport-br-c3
+ovn-nbctl lsp-set-addresses lport-br-c3 unknown
+```
+
+.c2 ovn-host
+```bash
+ovs-vsctl add-port br-int linbr0   #lxd is connected to this linux bridge
+ovs-vsctl set Interface linbr0 external_ids:iface-id=lport-br-c2
+```
+
+.c3 ovn-host
+```bash
+ovs-vsctl add-port br-int linbr0   #lxd is connected to this linux bridge
+ovs-vsctl set Interface linbr0 external_ids:iface-id=lport-br-c3
+```
+
+
+=== The OVN Databases
+
+==== ovn-northbound
+* OpenStack/CMS integration point
+* High-level, desired state
+** Logical ports -> logical switches -> logical routers
+
+==== ovn-southbound
+* Run-time state
+** Location of logical ports
+** Location of physical endpoints
+** Logical pipeline generated based on configured and run-time state
+
+
+=== The Daemons
+
+==== ovn-northd
+* Converts from the high-level northbound DB to the run-time southbound DB
+* Generates logical flows based on high-level configuration
+
+==== ovn-controller
+* Registers chassis and VIFs to southbound DB
+* Converts logical flows into physical flows (ie, VIF UUIDs to OpenFlow ports)
+* Pushes physical configuration to local OVS instance through OVSDB and OpenFlow

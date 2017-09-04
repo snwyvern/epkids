@@ -1,0 +1,9 @@
+:linkattrs:
+:name: value
+
+== Software-Entwicklungsprojekte
+
+Häufig ist die Realisierung fachlicher Anforderungen rund um Worklflows oder Geschäftsregeln in der Software-Erstellung notwendig ! 
+
+
+image:Softwareentwicklung_Geschaeftsprozesse.png[Entwicklung,600,400,align=center]

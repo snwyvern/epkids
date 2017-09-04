@@ -1,0 +1,59 @@
+[sw]
+	type = sw.structure
+--
+[
+  {
+    "menu_file": "web/cloud.json",
+    "doc_file": "web/cloud.adoc"
+  },
+  {
+    "title": "Centos installation",
+    "description": "",
+    "uri": "centos.adoc",
+    "icon": "communication:import-contacts",
+    "id": "centos",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Ubuntu installation",
+    "description": "",
+    "uri": "ubuntu.adoc",
+    "icon": "communication:import-contacts",
+    "id": "ubuntu",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "OVN/OVS",
+    "description": "",
+    "uri": "ovn.adoc",
+    "icon": "communication:import-contacts",
+    "id": "ovs",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Openstack",
+    "description": "",
+    "uri": "openstack.adoc",
+    "icon": "communication:import-contacts",
+    "id": "os",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  },
+  {
+    "title": "Kolla",
+    "description": "",
+    "uri": "kolla.adoc",
+    "icon": "communication:import-contacts",
+    "id": "kolla",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true
+  }
+]

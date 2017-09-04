@@ -1,0 +1,14 @@
+:linkattrs:
+
+
+== Dient BPMN, _nur_ zum Aufmalen von Abläufen ?
+
+Wird es ausschließlich ein "Standard" zum Visualisieren von Abläufen verwendet ?
+
+=== Ganz und gar nicht !
+
+image:PE_PModell_ausfuehren.png[Ausführen,300,300,float=left, align=center]
+
+* "das gemalte", sprich das Prozessmodell ist quasi der "Quellcode" *UND* kann ausgeführt werden !
+
+* Mit verschiedenen Attributen (Forms, Parametern, ...) in  einer *Processengine* die BPMN 2.0 vesteht !
