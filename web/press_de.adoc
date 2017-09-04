@@ -18,7 +18,7 @@ _bei Bedarf kann natürlich auch Code geschrieben werden._
 
 image::web/images/presse.svg[role="related thumb left",width=300]
 
-*simpl4* ist eine Open-Source-Entwicklungsumgebung und steht  unter der GNU General Public Licence v3. *simpl4* ist als Allround-Lösung ausgelegt. Ziel der Entwickler war es, mit *simpl4* ein Entwicklungssystem  zu schaffen, mit dem sich fachliche Aufgaben mit möglichst geringem technischen Aufwand lösen lassen. Die Möglichkeiten reichen von der Ergänzung und Integration bestehender Softwaresysteme bis hin zu kompletten Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops. 
+*simpl4* ist eine Open-Source-Entwicklungsumgebung und steht  unter der Apache 2.0 Lizenz. *simpl4* ist als Allround-Lösung ausgelegt. Ziel der Entwickler war es, mit *simpl4* ein Entwicklungssystem  zu schaffen, mit dem sich fachliche Aufgaben mit möglichst geringem technischen Aufwand lösen lassen. Die Möglichkeiten reichen von der Ergänzung und Integration bestehender Softwaresysteme bis hin zu kompletten Anwendungen mit HTML5-Frontend für Smartphones, Tablets und Desktops. 
 Alle Interaktionen mit dem System (Entwicklung und UI) finden über den Browser statt. Das Frontend wird mit HTML und CSS erstellt. Durch vorgefertigte HTML-Elemente (Custom Elements), die mit mit dem Backend kommunizieren, ist es möglich, beliebige Daten in die Webseite einzubinden.
 
 === Einfach bedienbares Entwicklungssystem
