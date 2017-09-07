@@ -40,7 +40,7 @@
         "title": "tr.menu.presentation.arch",
         "description": "",
         "uri": "web/presentation/arch_%l.adoc",
-        "icon": "av:hd",
+        "icon": "av:library-add",
         "id": "presentation_arch",
         "help": "",
         "adoc_include": false,
