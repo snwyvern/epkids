@@ -44,9 +44,8 @@ simpl4 and simpl4 applications fill the cloud layer PaaS and SaaS
 -
 [CI,header="Web Application Messaging Protocol (Websocket Subprotocol)"]
 --
-link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[WAMP,window="_blank"] + 
-is an open standard WebSocket subprotocol +
-that provides two application messaging patterns.
+link:https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol[WAMP,window="_blank"] +
+is an open standard WebSocket subprotocol that provides two application messaging patterns.
 
 * Publish/Subscribe (PubSub) 
 * Remote Procedure Calls (RPC)

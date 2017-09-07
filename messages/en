@@ -235,6 +235,10 @@
         "msgid": "tr.menu.misc_demo"
     },
     {
+        "msgstr": "Architecture",
+        "msgid": "tr.menu.presentation.arch"
+    },
+    {
         "msgstr": "Features",
         "msgid": "tr.menu.presentation.features"
     },

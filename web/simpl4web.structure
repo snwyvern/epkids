@@ -37,6 +37,16 @@
         "enabled": true
       },
       {
+        "title": "tr.menu.presentation.arch",
+        "description": "",
+        "uri": "web/presentation/arch_%l.adoc",
+        "icon": "av:hd",
+        "id": "presentation_arch",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
+      },
+      {
         "title": "tr.menu.presentation.business",
         "description": "",
         "uri": "web/presentation/business_%l.adoc",

@@ -1,0 +1,9 @@
+:linkattrs:
+:source-highlighter: rouge
+
+
+==  Architektur ==
+
+[.width1000]
+imagezoom::web/presentation/images/arch.svg[]
+

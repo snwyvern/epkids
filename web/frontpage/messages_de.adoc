@@ -1,20 +1,13 @@
 :linkattrs:
 
-=== {nbsp} 
+=== link:local:presentation_arch[News]  ===
 
-==== Workshops link:local:contactform[Anmeldung]
+* Wechsel der Processengine, von Activiti zu *Camunda*. +
+Neue Features: Adhoc Tasks,Job Suspension,Geschwindigkeit.
+* Integration der NoSql Datenbank link:local:presentation_arch[*OrientDB*]. + 
+Features: Distributed, Multi-Model (Graph- und Dokument),Security. +
+Damit ist eine link:local:presentation_arch['Hochverfügbare' Installation] möglich.
+* link:local:presentation_arch[*Mandantenfähigkeit*]: Trennung der Mandanten über Database security.
 
-////
-* simpl4 - Einführungs-Workshop
-** *Wann:* Sonntag den 04.09.2016 von 11.00Uhr bis 18.00Uhr
-** *Wo:* Cafe Netzwerk, Luisenstraße 11, 80333 München http://www.openstreetmap.org/node/957531675[Open Streetmap, window=blank] 
-
-
-* 11.11.2111 in Nürnberg +
-* 11.11.2111 in München 
-
-==== Sonstiges
-
-Neue Version 55.0
 
 ////

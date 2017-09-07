@@ -227,6 +227,10 @@
         "msgid": "tr.menu.presentation.features"
     },
     {
+        "msgstr": "Architektur",
+        "msgid": "tr.menu.presentation.arch"
+    },
+    {
         "msgstr": "Beispiel Anwendung",
         "msgid": "tr.menu.presentation.sampleapp"
     },
