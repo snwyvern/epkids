@@ -2841,11 +2841,11 @@
          sodipodi:role="line"
          x="126.38316"
          y="411.65515"
-         id="tspan91963">instance. The loadbalancer </tspan><tspan
+         id="tspan91963">instance. The loadbalancer recognizes</tspan><tspan
          sodipodi:role="line"
          x="126.38316"
          y="428.15515"
-         id="tspan92088">knows,if a  instance not works,anymore.</tspan></text>
+         id="tspan92088">when an instance is no longer working.</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:100%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

@@ -2,7 +2,12 @@
 :source-highlighter: rouge
 
 
-==  Architektur ==
+==  Verteilte Architektur ==
+
+* simpl4 verwaltet keine Sessions am Backend, dies wird im Frontend gemacht. +
+Damit ist es möglich jede Anfrage an eine andere simpl4 Instanz weiterzuleiten.
+* Alle Daten, einschliesslich die der Processengine, können in der OrientDB gespeichert werden. +
+Der Zustand einer simpl4 Instanz, ist damit ausschliesslich über die Datenbank repräsentiert.
 
 [.width1000]
 imagezoom::web/presentation/images/arch.svg[]
