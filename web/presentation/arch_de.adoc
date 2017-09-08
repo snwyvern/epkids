@@ -6,8 +6,8 @@
 
 * simpl4 verwaltet keine Sessions im Backend, dafür ist das Frontend zuständig. +
 Dadurch wird es erleichtert jede Anfrage an eine andere simpl4 Instanz weiterzuleiten.
-* Alle Daten, einschliesslich die der Processengine, können in der OrientDB gespeichert werden. +
-Der Zustand einer simpl4 Instanz ist darum ausschliesslich über die Datenbank repräsentiert.
+* Alle Daten, einschließlich die der Process Engine, können in der OrientDB gespeichert werden. +
+Der Zustand einer simpl4 Instanz ist darum ausschließlich über die Datenbank repräsentiert.
 
 [.width1000]
 imagezoom::web/presentation/images/arch.svg[]

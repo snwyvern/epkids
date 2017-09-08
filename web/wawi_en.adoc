@@ -1,17 +1,16 @@
 :linkattrs:
 
-image::web/images/simplflow.svg[width=200]
+== image:web/images/simplflow.svg[width=200] the proactive thinking ERP for the cloud  ==
 
-== The proactive thinking ERP for the cloud  ==
-
+image::web/images/digi.svg[width=550]
 
 You don't have to dig through different menus into a certain program to get to your daily tasks.
 
-simpl-flow tells you what to do!
+image:web/images/simplflow.svg[width=80] tells you what to do!
 
 _How it works ?_
 
-simpl-flow is implemented on the basis of simpl4. Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, are shown in the form of process models. These are executed in the process engine of simpl4, which then places the task in the appropriate task compartment for the responsible persons, whether a particular person or a group of responsible persons.
+image:web/images/simplflow.svg[width=80] is implemented on the basis of simpl4. Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, are shown in the form of process models. These are executed in the process engine of simpl4, which then places the task in the appropriate task compartment for the responsible persons, whether a particular person or a group of responsible persons.
 
 
 === With the dashboard keeping track of all tasks  ===
@@ -36,7 +35,7 @@ variable replacement with values from the cutsomer database and own data.
 [.width700]
 image::web/images/rech_template.png[]
 
-=== Creating ivoices manually or automatically  ===
+=== Creating invoices manually or automatically  ===
 
 A template will be used, that was created or adapted by your own.
 
@@ -54,7 +53,7 @@ image::web/images/masterdata.png[]
 
 === This is the engine, it ensures that you are always up to date ===
 
-So they have only indirectly to do!
+So you have only indirectly to do with !
 Such a visualized process, which is referred to as a process model, is executed by the process engine with additional parameters that can be adjusted.
 
 A positive side-effect of a process model, a process is thus also at the same time understandable and clearly documented!
@@ -64,6 +63,7 @@ A positive side-effect of a process model, a process is thus also at the same ti
 image::web/images/innen.png[]
 
 === For decisions, a rules engine is used ===
+
 [.width800]
 image::web/images/dmn.png[]
 
@@ -71,7 +71,7 @@ The defined rules can be customized by you at any time.
 For example, if tasks are performed based on specific parameters, or are assigned to specific roles, you can adjust these parameters and roles at any time.
 
 Example:
-Up to a purchase value of up to 1.000, -Euro, the clerk can freely order in the purchase, from 1.000, -Euro the order goes to the purchasing manager, which can then release or reject the order.
+Up to a purchase value of 1.000, -Euro, the clerk can freely order, from 1.001, -Euro the order goes to the purchasing manager, which then has to release or reject the order.
 You can adjust these parameters yourself at any time.
 
 Defined rules as well as processes are executed by an engine, in this case by the rules engine.
