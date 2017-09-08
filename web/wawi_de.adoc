@@ -11,10 +11,15 @@ image::web/images/dashboard.png[]
 
 === Vorlagen nach eignen Bedarf erstellen  ===
 
-[.width800]
+mit Bildern, Tabellen, freien Texten, +
+running Header/Footer +
+Variablenersetzung mit Werten  aus +
+der Kundendatenbank und den eigenen Daten. 
+[.width600]
 image::web/images/rech_template.png[]
 
 === Rechnungen manuell oder automatisch erstellen  ===
+Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 
 [.width800]
 image::web/images/rech_erstellen.png[]
@@ -25,10 +30,10 @@ image::web/images/rech_erstellen.png[]
 image::web/images/masterdata.png[]
 
 
-=== Das ist der Motor, er sorgt dafür , dass sie alles im Griff haben  ===
+=== Das ist der Motor, er sorgt dafür , dass sie immer am Laufenden sind  ===
 [.width800]
 image::web/images/innen.png[]
 
-=== Für Entscheidungen bedient er sich einer Rulesengine  ===
+=== Für Entscheidungen wird sich einer Rulesengine bedient ===
 [.width800]
 image::web/images/dmn.png[]
