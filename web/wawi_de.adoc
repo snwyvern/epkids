@@ -1,20 +1,34 @@
 :linkattrs:
 
-== Warenwirtschaft für die Cloud  ==
-
 image::web/images/simplflow.svg[width=200]
+
+== Die mitdenkende Warenwirtschaft für die Cloud  ==
+
+
+Sie müssen sich nicht erst in ein bestimmtes Programm durch verschiedene Menüs wühlen, um an Ihre tälichen Aufgaben zu kommen.
+
+simpl-flow sagt Ihnen was zu tun ist !
+
+_Wie das geht ?_
+
+simpl-flow wird auf der Basis von simpl4 umgesetzt.
+So sind betriebswirtschafliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, in Form von Prozessmodellen abgebildet. Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal on eine bestimmte Person oder eine Gruppe von Personen, die Aufgabe in das entsprechende Fach legt.  
+
 
 === Mit dem Dashboard alle Aufgaben im Blick  ===
 
 [.width600]
 image::web/images/dashboard.png[]
 
+Von der Prozess Engine Personen oder Gruppen zugeordente Aufgaben, werden im Dashboard zur Ansicht und Ausführung eingestellt.
+Man kann auch visuell einsehen, an welchem Punkt man in einem Ablauf steht, und was der nächste Schritt ist. 
+
 === Vorlagen nach eignen Bedarf erstellen  ===
 
 mit Bildern, Tabellen, freien Texten, +
 running Header/Footer, +
 Variablenersetzung mit Werten  aus der Kundendatenbank und den eigenen Daten. 
-[.width600]
+[.width700]
 image::web/images/rech_template.png[]
 
 === Rechnungen manuell oder automatisch erstellen  ===
@@ -30,11 +44,17 @@ Das ist unter ihrer Kontrolle
 image::web/images/masterdata.png[]
 
 
-=== Das ist der Motor, er sorgt dafür , dass sie immer am Laufenden sind  ===
+=== Das ist der Motor, er sorgt dafür , dass sie immer auf dem Laufenden sind  ===
 Damit haben sie nur indirekt zu tun!
-[.width800]
+[.width1000]
 image::web/images/innen.png[]
 
 === Für Entscheidungen wird sich einer Rulesengine bedient ===
 [.width800]
 image::web/images/dmn.png[]
+
+Die definierte Regeln sind durch Sie jederzeit individuell anpassbar.
+Werden beispielsweise Aufgaben aufgrund bestimmter Parameter durchgeführt, oder sind bestimmten Rollen zugeteilt, können Sie diese Parameter und Rollen jederzeit anpassen.
+Beispiel:
+Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, ab 1.000,-Euro geht die BEstellung an den Einkaufsleiter, der die Bestellung freigeben oder ablehnen kann.
+Diese Parameter können sie jederzeit selbst anpassen.

@@ -1,13 +1,13 @@
 :linkattrs:
 
-=== News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> link:local:wawi[Hier enteht eine Warenwirtschaft] ===
+=== News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> link:local:wawi[Hier entsteht eine Warenwirtschaft auf Basis von simpl4] ===
 
 * Exchange of the Processengine, from Activiti to Camunda. +
 New features: adhoc tasks, job suspension, speed.
-* Integration of the NoSql database link:local:presentation_arch[*OrientDB*]. +
+* Integration of the NoSql database link:local:presentation_arch[OrientDB]. +
 Features: Distributed, multi-model (graph and document), security. +
-This makes a link:local:presentation_arch[*'high availability' simpl4 installation*] possible.
-* link:local:presentation_arch[*Multi tenancy*]: separation of clients via database security.
+This makes a link:local:presentation_arch['high availability' simpl4 installation] possible.
+* link:local:presentation_arch[Multi tenancy]: separation of clients via database security.
 
 ////
 
