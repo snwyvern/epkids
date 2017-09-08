@@ -1,12 +1,12 @@
 :linkattrs:
 
-=== link:local:presentation_arch[News]  ===
+=== News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> link:local:wawi[Hier enteht eine Warenwirtschaft] ===
 
 * Wechsel der Processengine, von Activiti zu Camunda. +
 Neue Features: Adhoc Tasks,Job Suspension,Geschwindigkeit.
 * Integration der NoSql Datenbank link:local:presentation_arch[*OrientDB*]. + 
 Features: Distributed, Multi-Model (Graph- und Dokument),Security. +
-Damit ist eine link:local:presentation_arch[*'Hochverfügbare' Installation*] möglich.
+Dies ermöglicht eine link:local:presentation_arch[*'Hochverfügbare' simpl4 Installation*].
 * link:local:presentation_arch[*Mandantenfähigkeit*]: Trennung der Mandanten über Database security.
 
 

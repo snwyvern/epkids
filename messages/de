@@ -227,6 +227,10 @@
         "msgid": "tr.menu.presentation.features"
     },
     {
+        "msgstr": "WaWi",
+        "msgid": "tr.menu.wawi"
+    },
+    {
         "msgstr": "Verteilte Architektur",
         "msgid": "tr.menu.presentation.arch"
     },

@@ -1,0 +1,34 @@
+:linkattrs:
+
+== Warenwirtschaft für die Cloud  ==
+
+image::web/images/simplflow.svg[width=200]
+
+=== Mit dem Dashboard alle Aufgaben im Blick  ===
+
+[.width600]
+image::web/images/dashboard.png[]
+
+=== Vorlagen nach eignen Bedarf erstellen  ===
+
+[.width800]
+image::web/images/rech_template.png[]
+
+=== Rechnungen manuell oder automatisch erstellen  ===
+
+[.width800]
+image::web/images/rech_erstellen.png[]
+
+=== Die Stammdatenverwaltung  ===
+
+[.width800]
+image::web/images/masterdata.png[]
+
+
+=== Das ist der Motor, er sorgt dafür , dass sie alles im Griff haben  ===
+[.width800]
+image::web/images/innen.png[]
+
+=== Für Entscheidungen bedient er sich einer Rulesengine  ===
+[.width800]
+image::web/images/dmn.png[]
