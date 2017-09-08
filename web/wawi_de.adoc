@@ -5,19 +5,23 @@
 
 image::web/images/digi.svg[width=650]
 
-Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, um an Ihre täglichen Aufgaben zu kommen.
+=== Mit dem Dashboard alle Aufgaben immer im Blick  ===
+
+Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, +
+um an Ihre täglichen Aufgaben zu kommen.
 
 image:web/images/simplflow.svg[width=80] sagt Ihnen was zu tun ist !
 
 _Wie das geht ?_
 
-image:web/images/simplflow.svg[width=80] ist auf der Basis von simpl4 realisiert.
+image:web/images/simplflow.svg[width=80] *ist auf der Basis von simpl4 realisiert*.
 
-So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet.
-Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
+* So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
+eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
+Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, +
+egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
 
 
-=== Mit dem Dashboard alle Aufgaben immer im Blick  ===
 
 [.width900]
 image::web/images/dashboard.png[]
@@ -32,9 +36,12 @@ Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und wa
 
 Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch andere, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
 
-Mit Bildern, Tabellen, freien Texten, +
-running Header/Footer, +
-Variablen Ersetzung mit Werten aus der Kundendatenbank und eigenen Daten. 
+.Hightlights
+--
+* Mit Bildern, Tabellen, freien Texten, +
+* running Header/Footer, +
+* Variablen Ersetzung mit Werten aus der Kundendatenbank und eigenen Daten. 
+--
 
 [.width700]
 image::web/images/rech_template.png[]
@@ -69,11 +76,16 @@ image::web/images/innen.png[]
 [.width800]
 image::web/images/dmn.png[]
 
-Die definierten Regeln (Rules) sind durch Sie jederzeit individuell anpassbar.
-Werden beispielsweise Aufgaben aufgrund bestimmter Parameter durchgeführt, oder sind bestimmten Rollen zugeteilt, können Sie diese Parameter und Rollen jederzeit anpassen.
+Die definierten Regeln (Rules) sind durch Sie jederzeit individuell anpassbar. +
+Werden beispielsweise Aufgaben aufgrund bestimmter Parameter durchgeführt, oder sind bestimmten Rollen zugeteilt, +
+können Sie diese Parameter und Rollen jederzeit anpassen.
 
-Beispiel:
-Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, ab 1.001,-Euro geht die Bestellung aber an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss.
+.Beispiel:
+--
+Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, +
+ab 1.001,-Euro geht die Bestellung aber an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss. +
 Diese Parameter können Sie jederzeit selbst anpassen.
+--
+
 
 Definierte Rules werden wie auch Prozesse von einer Engine ausgeführt, in diesem Fall von der Rules Engine.

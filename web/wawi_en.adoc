@@ -4,18 +4,24 @@
 
 image::web/images/digi.svg[width=650]
 
+=== With the dashboard keeping track of all tasks  ===
+
 You don't have to dig through different menus into a certain program to get to your daily tasks.
 
 image:web/images/simplflow.svg[width=80] tells you what to do!
 
 _How it works ?_
 
-image:web/images/simplflow.svg[width=80] is implemented on the basis of simpl4. Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, are shown in the form of process models. These are executed in the process engine of simpl4, which then places the task in the appropriate task compartment for the responsible persons, whether a particular person or a group of responsible persons.
+* image:web/images/simplflow.svg[width=80] *is implemented on the basis of simpl4.* +
+Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, +
+are shown in the form of process models. 
+These are executed in the process engine of simpl4, +
+which then places the task in the appropriate task compartment for the responsible persons, +
+whether a particular person or a group of responsible persons.
 
 
-=== With the dashboard keeping track of all tasks  ===
 
-[.width600]
+[.width900]
 image::web/images/dashboard.png[]
 
 Tasks assigned to the process engine by persons or groups are set in the dashboard for viewing and execution.
@@ -27,9 +33,12 @@ It is also possible to see visually, at what point a sequence is standing, and w
 
 You decide where exactly your company data, your company logo or others, in the invoice, and order or other templates, are placed.
 
-With pictures, tables, free texts, +
-running Header/Footer, +
-variable replacement with values from the cutsomer database and own data.
+.Hightlights
+--
+* With pictures, tables, free texts, +
+* running Header/Footer, +
+* variable replacement with values from the cutsomer database and own data.
+--
 
 
 [.width700]
@@ -40,14 +49,14 @@ image::web/images/rech_template.png[]
 A template will be used, that was created or adapted by your own.
 
 
-[.width800]
+[.width900]
 image::web/images/rech_erstellen.png[]
 
 === The master data management  ===
 
 That is under your control.
 
-[.width800]
+[.width900]
 image::web/images/masterdata.png[]
 
 
@@ -70,8 +79,12 @@ image::web/images/dmn.png[]
 The defined rules can be customized by you at any time.
 For example, if tasks are performed based on specific parameters, or are assigned to specific roles, you can adjust these parameters and roles at any time.
 
-Example:
-Up to a purchase value of 1.000, -Euro, the clerk can freely order, from 1.001, -Euro the order goes to the purchasing manager, which then has to release or reject the order.
+.Example:
+--
+Up to a purchase value of 1.000,-Euro, the clerk can freely order, + 
+from 1.001,-Euro the order goes to the purchasing manager, +
+which then has to release or reject the order. +
 You can adjust these parameters yourself at any time.
+--
 
 Defined rules as well as processes are executed by an engine, in this case by the rules engine.
