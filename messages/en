@@ -367,8 +367,12 @@
         "msgid": "tr.menu.resources"
     },
     {
-        "msgstr": "Development and service platform for HTML5 applications with process- and serviceengine.",
+        "msgstr": "Platform for developing process-controlled applications with Web front end.",
         "msgid": "frontpage.subheader"
+    },
+    {
+        "msgstr": "Now under the liberal Apache 2.0 license!",
+        "msgid": "frontpage.subheader2"
     },
     {
         "msgstr": "Advantages",

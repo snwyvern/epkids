@@ -423,8 +423,12 @@
         "msgid": "tr.menu.press"
     },
     {
-        "msgstr": "Entwicklungs und Service Platform für HTML5 Applikationen mit Prozess- und Serviceengine.",
+        "msgstr": "Plattform zum Entwickeln von prozessgesteuerten Applikation mit Webfrontend.",
         "msgid": "frontpage.subheader"
+    },
+    {
+        "msgstr": "Nun unter der liberalen Apache 2.0 Lizenz!",
+        "msgid": "frontpage.subheader2"
     },
     {
         "msgstr": "Dokumentation",

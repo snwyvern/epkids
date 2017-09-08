@@ -5,57 +5,75 @@ image::web/images/simplflow.svg[width=200]
 == Die mitdenkende Warenwirtschaft für die Cloud  ==
 
 
-Sie müssen sich nicht erst in ein bestimmtes Programm durch verschiedene Menüs wühlen, um an Ihre tälichen Aufgaben zu kommen.
+Sie müssen sich nicht erst durch verschiedene Menüs in ein bestimmtes Programm wühlen, um an Ihre tälichen Aufgaben zu kommen.
 
 simpl-flow sagt Ihnen was zu tun ist !
 
 _Wie das geht ?_
 
 simpl-flow ist auf der Basis von simpl4 realisiert.
-So sind betriebswirtschafliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, eventuell notwendigen Mahnungen, in Form von Prozessmodellen abgebildet.
-Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Fach legt.  
+
+So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet.
+Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach gelegt.  
 
 
-=== Mit dem Dashboard alle Aufgaben im Blick  ===
+=== Mit dem Dashboard alle Aufgaben immer im Blick  ===
 
 [.width600]
 image::web/images/dashboard.png[]
 
-Von der Prozess Engine Personen oder Gruppen zugeordente Aufgaben, sind im Dashboard zur Ansicht und Ausführung eingestellt.
+Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dashboard zur Ansicht und Ausführung, eingestellt.
+
 Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
-=== Vorlagen nach eignen Bedarf erstellen  ===
 
-mit Bildern, Tabellen, freien Texten, +
+=== Vorlagen nach dem eigenen Bedarf erstellen  ===
+
+
+Sie bestimmen, an welchem Platz genau Ihre Firmendaten, Ihr Firmenlogo oder auch andere, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
+
+Mit Bildern, Tabellen, freien Texten, +
 running Header/Footer, +
-Variablenersetzung mit Werten  aus der Kundendatenbank und den eigenen Daten. 
+Variablen Ersetzung mit Werten aus der Kundendatenbank und eigenen Daten. 
+
 [.width700]
 image::web/images/rech_template.png[]
 
 === Rechnungen manuell oder automatisch erstellen  ===
+
 Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 
 [.width800]
 image::web/images/rech_erstellen.png[]
 
 === Die Stammdatenverwaltung  ===
+
 Das ist unter ihrer Kontrolle
 
 [.width800]
 image::web/images/masterdata.png[]
 
 
-=== Das ist der Motor, er sorgt dafür , dass sie immer auf dem Laufenden sind  ===
-Damit haben sie nur indirekt zu tun!
+=== Das ist der Motor, er sorgt dafür, dass Sie immer auf dem Laufenden sind  ===
+
+Damit haben Sie aber nur indirekt zu tun!
+Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine mit noch zusätzlich einstellbaren Parametern ausgeführt.
+
+Positiver Nebeneffekt eines Prozessmodells ist, ein Ablauf ist damit auch gleichzeitig verständlich und übersichtlich dokumentiert !
+
 [.width1000]
 image::web/images/innen.png[]
 
-=== Für Entscheidungen wird sich einer Rulesengine bedient ===
+=== Für Entscheidungen wird sich einer Rules Engine bedient ===
+
 [.width800]
 image::web/images/dmn.png[]
 
-Die definierte Regeln sind durch Sie jederzeit individuell anpassbar.
+Die definierten Regeln (Rules) sind durch Sie jederzeit individuell anpassbar.
 Werden beispielsweise Aufgaben aufgrund bestimmter Parameter durchgeführt, oder sind bestimmten Rollen zugeteilt, können Sie diese Parameter und Rollen jederzeit anpassen.
+
 Beispiel:
-Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, ab 1.000,-Euro geht die BEstellung an den Einkaufsleiter, der die Bestellung freigeben oder ablehnen kann.
-Diese Parameter können sie jederzeit selbst anpassen.
+Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, ab 1.001,-Euro geht die Bestellung aber an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss.
+Diese Parameter können Sie jederzeit selbst anpassen.
+
+Definierte Rules werden wie auch Prozesse von einer Engine ausgeführt, in diesem Fall von der Rules Engine.

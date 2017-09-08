@@ -1,0 +1,77 @@
+:linkattrs:
+
+image::web/images/simplflow.svg[width=200]
+
+== The proactive thinking ERP for the cloud  ==
+
+
+You don't have to dig through different menus into a certain program to get to your daily tasks.
+
+simpl-flow tells you what to do!
+
+_How it works ?_
+
+simpl-flow is implemented on the basis of simpl4. Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, are shown in the form of process models. These are executed in the process engine of simpl4, which then places the task in the appropriate task compartment for the responsible persons, whether a particular person or a group of responsible persons.
+
+
+=== With the dashboard keeping track of all tasks  ===
+
+[.width600]
+image::web/images/dashboard.png[]
+
+Tasks assigned to the process engine by persons or groups are set in the dashboard for viewing and execution.
+
+It is also possible to see visually, at what point a sequence is standing, and what the next step is, or even where it hangs.
+
+=== Creating templates for your needs ===
+
+
+You decide where exactly your company data, your company logo or others, in the invoice, and order or other templates, are placed.
+
+With pictures, tables, free texts, +
+running Header/Footer, +
+variable replacement with values from the cutsomer database and own data.
+
+
+[.width700]
+image::web/images/rech_template.png[]
+
+=== Creating ivoices manually or automatically  ===
+
+A template will be used, that was created or adapted by your own.
+
+
+[.width800]
+image::web/images/rech_erstellen.png[]
+
+=== The master data management  ===
+
+That is under your control.
+
+[.width800]
+image::web/images/masterdata.png[]
+
+
+=== This is the engine, it ensures that you are always up to date ===
+
+So they have only indirectly to do!
+Such a visualized process, which is referred to as a process model, is executed by the process engine with additional parameters that can be adjusted.
+
+A positive side-effect of a process model, a process is thus also at the same time understandable and clearly documented!
+
+
+[.width1000]
+image::web/images/innen.png[]
+
+=== For decisions, a rules engine is used ===
+[.width800]
+image::web/images/dmn.png[]
+
+The defined rules can be customized by you at any time.
+For example, if tasks are performed based on specific parameters, or are assigned to specific roles, you can adjust these parameters and roles at any time.
+
+Example:
+Up to a purchase value of up to 1.000, -Euro, the clerk can freely order in the purchase, from 1.000, -Euro the order goes to the purchasing manager, which can then release or reject the order.
+You can adjust these parameters yourself at any time.
+
+Defined rules as well as processes are executed by an engine, in this case by the rules engine.
