@@ -12,9 +12,8 @@ image::web/images/dashboard.png[]
 === Vorlagen nach eignen Bedarf erstellen  ===
 
 mit Bildern, Tabellen, freien Texten, +
-running Header/Footer +
-Variablenersetzung mit Werten  aus +
-der Kundendatenbank und den eigenen Daten. 
+running Header/Footer, +
+Variablenersetzung mit Werten  aus der Kundendatenbank und den eigenen Daten. 
 [.width600]
 image::web/images/rech_template.png[]
 
@@ -25,12 +24,14 @@ Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 image::web/images/rech_erstellen.png[]
 
 === Die Stammdatenverwaltung  ===
+Das ist unter ihrer Kontrolle
 
 [.width800]
 image::web/images/masterdata.png[]
 
 
 === Das ist der Motor, er sorgt dafür , dass sie immer am Laufenden sind  ===
+Damit haben sie nur indirekt zu tun!
 [.width800]
 image::web/images/innen.png[]
 
