@@ -4,8 +4,8 @@
 
 === Distributed architecture ===
 
-* simpl4 manages no session on the backend, this happens in the frontend. +
-This makes it possible to route every request to an another simple4 instance.
+* simpl4 manages no sessions on the backend, this happens in the frontend. +
+This makes it easier to route every request to an another simple4 instance.
 * All data, including those of the processengine, can be stored in the OrientDB. +
 The state of a simpl4 instance is thus exclusively represented by the database.
 

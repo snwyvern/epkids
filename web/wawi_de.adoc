@@ -11,8 +11,9 @@ simpl-flow sagt Ihnen was zu tun ist !
 
 _Wie das geht ?_
 
-simpl-flow wird auf der Basis von simpl4 umgesetzt.
-So sind betriebswirtschafliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, in Form von Prozessmodellen abgebildet. Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal on eine bestimmte Person oder eine Gruppe von Personen, die Aufgabe in das entsprechende Fach legt.  
+simpl-flow ist auf der Basis von simpl4 realisiert.
+So sind betriebswirtschafliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, eventuell notwendigen Mahnungen, in Form von Prozessmodellen abgebildet.
+Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Fach legt.  
 
 
 === Mit dem Dashboard alle Aufgaben im Blick  ===
@@ -20,8 +21,8 @@ So sind betriebswirtschafliche Abläufe wie z.B. das Erstellen von Rechnungen un
 [.width600]
 image::web/images/dashboard.png[]
 
-Von der Prozess Engine Personen oder Gruppen zugeordente Aufgaben, werden im Dashboard zur Ansicht und Ausführung eingestellt.
-Man kann auch visuell einsehen, an welchem Punkt man in einem Ablauf steht, und was der nächste Schritt ist. 
+Von der Prozess Engine Personen oder Gruppen zugeordente Aufgaben, sind im Dashboard zur Ansicht und Ausführung eingestellt.
+Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
 === Vorlagen nach eignen Bedarf erstellen  ===
 
