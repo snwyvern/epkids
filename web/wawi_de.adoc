@@ -12,14 +12,15 @@ um an Ihre täglichen Aufgaben zu kommen.
 
 image:web/images/simplflow.svg[width=80] sagt Ihnen was zu tun ist !
 
-_Wie das geht ?_
-
+._Wie das geht ?_
+--
 image:web/images/simplflow.svg[width=80] *ist auf der Basis von simpl4 realisiert*.
 
-* So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
+So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
 eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
 Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, +
 egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
+--
 
 
 

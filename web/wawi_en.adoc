@@ -10,14 +10,16 @@ You don't have to dig through different menus into a certain program to get to y
 
 image:web/images/simplflow.svg[width=80] tells you what to do!
 
-_How it works ?_
+._How it works ?_
 
-* image:web/images/simplflow.svg[width=80] *is implemented on the basis of simpl4.* +
+--
+image:web/images/simplflow.svg[width=80] *is implemented on the basis of simpl4.* +
 Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, +
 are shown in the form of process models. 
 These are executed in the process engine of simpl4, +
 which then places the task in the appropriate task compartment for the responsible persons, +
 whether a particular person or a group of responsible persons.
+--
 
 
 
