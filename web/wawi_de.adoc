@@ -3,7 +3,7 @@
 
 == image:web/images/simplflow.svg[width=200] die mitdenkende Warenwirtschaft für die Cloud  ==
 
-image::web/images/digi.svg[width=550]
+image::web/images/digi.svg[width=650]
 
 Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, um an Ihre täglichen Aufgaben zu kommen.
 
@@ -19,7 +19,7 @@ Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Vera
 
 === Mit dem Dashboard alle Aufgaben immer im Blick  ===
 
-[.width600]
+[.width900]
 image::web/images/dashboard.png[]
 
 Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dashboard zur Ansicht und Ausführung, eingestellt.
@@ -30,7 +30,7 @@ Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und wa
 === Vorlagen nach dem eigenen Bedarf erstellen  ===
 
 
-Sie bestimmen, an welchem Platz genau Ihre Firmendaten, Ihr Firmenlogo oder auch andere, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
+Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch andere, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
 
 Mit Bildern, Tabellen, freien Texten, +
 running Header/Footer, +
@@ -43,14 +43,14 @@ image::web/images/rech_template.png[]
 
 Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 
-[.width800]
+[.width900]
 image::web/images/rech_erstellen.png[]
 
 === Die Stammdatenverwaltung  ===
 
 Das ist unter ihrer Kontrolle
 
-[.width800]
+[.width900]
 image::web/images/masterdata.png[]
 
 

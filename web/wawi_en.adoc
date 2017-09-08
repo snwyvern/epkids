@@ -2,7 +2,7 @@
 
 == image:web/images/simplflow.svg[width=200] the proactive thinking ERP for the cloud  ==
 
-image::web/images/digi.svg[width=550]
+image::web/images/digi.svg[width=650]
 
 You don't have to dig through different menus into a certain program to get to your daily tasks.
 
