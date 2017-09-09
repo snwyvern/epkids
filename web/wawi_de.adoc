@@ -7,7 +7,7 @@ image::web/images/digi.svg[width=750]
 
 '''
 
-=== Mit dem Dashboard alle Aufgaben immer im Blick  ===
+=== Mit dem Dashboard alle Aufgaben im Blick  ===
 
 Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, +
 um an Ihre täglichen Aufgaben zu kommen.

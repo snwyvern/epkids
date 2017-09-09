@@ -15,6 +15,12 @@
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_bigpicture" />
    </url>
 
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_arch</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!presentation_arch" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!presentation_arch" />
+   </url>
+
 
    <url>
       <loc>http://web.simpl4.org/repo/webdemo/start.html#!presentation_sampleapp</loc>
@@ -39,6 +45,12 @@
       <loc>http://web.simpl4.org/repo/webdemo/start.html#!resources</loc>
 			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!resources" />
 			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!resources" />
+   </url>
+
+   <url>
+      <loc>http://web.simpl4.org/repo/webdemo/start.html#!wawi</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://web.simpl4.org/repo/webdemo/start.html#!wawi" />
+			<xhtml:link rel="alternate" hreflang="de" href="http://web.simpl4.org/repo/webdemo/start.html?lang=de#!wawi" />
    </url>
 
    <url>
