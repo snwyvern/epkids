@@ -84,7 +84,7 @@ können Sie diese Parameter und Rollen jederzeit anpassen.
 .Beispiel:
 ====
 Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, +
-ab 1.001,-Euro geht die Bestellung aber an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss. +
+ab 1.001,-Euro geht die Bestellung an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss. +
 Diese Parameter können Sie jederzeit selbst anpassen.
 ====
 
