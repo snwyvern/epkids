@@ -22,7 +22,7 @@ egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe
 
 
 
-[.width900]
+[.width1000]
 image::web/images/dashboard.png[]
 
 Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dashboard zur Ansicht und Ausführung, eingestellt.
@@ -50,14 +50,14 @@ image::web/images/rech_template.png[]
 
 Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 
-[.width900]
+[.width1000]
 image::web/images/rech_erstellen.png[]
 
 === Die Stammdatenverwaltung  ===
 
 Das ist unter ihrer Kontrolle
 
-[.width900]
+[.width1000]
 image::web/images/masterdata.png[]
 
 
@@ -73,7 +73,7 @@ image::web/images/innen.png[]
 
 === Für Entscheidungen wird sich einer Rules Engine bedient ===
 
-[.width800]
+[.width1000]
 image::web/images/dmn.png[]
 
 Die definierten Regeln (Rules) sind durch Sie jederzeit individuell anpassbar. +

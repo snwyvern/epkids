@@ -23,7 +23,7 @@ whether a particular person or a group of responsible persons.
 
 
 
-[.width900]
+[.width1000]
 image::web/images/dashboard.png[]
 
 Tasks assigned to the process engine by persons or groups are set in the dashboard for viewing and execution.
@@ -52,14 +52,14 @@ image::web/images/rech_template.png[]
 A template will be used, that was created or adapted by your own.
 
 
-[.width900]
+[.width1000]
 image::web/images/rech_erstellen.png[]
 
 === The master data management  ===
 
 That is under your control.
 
-[.width900]
+[.width1000]
 image::web/images/masterdata.png[]
 
 
@@ -76,7 +76,7 @@ image::web/images/innen.png[]
 
 === For decisions, a rules engine is used ===
 
-[.width800]
+[.width1000]
 image::web/images/dmn.png[]
 
 The defined rules can be customized by you at any time.
