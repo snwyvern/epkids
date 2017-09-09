@@ -17,7 +17,7 @@ image:web/images/simplflow.svg[width=100] *is based on image:web/images/logo-fla
 Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, +
 are shown in the form of process models. 
 These are executed in the process engine of image:web/images/logo-flach.svg[width=65], +
-which then places the task in the appropriate task compartment for the responsible persons, +
+which then places the tasks in the appropriate task compartment for the responsible persons, +
 whether a particular person or a group of responsible persons.
 ====
 

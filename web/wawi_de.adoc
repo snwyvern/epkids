@@ -18,7 +18,7 @@ image:web/images/simplflow.svg[width=100] *ist auf der Basis von image:web/image
 So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
 eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
 Diese werden in der Prozesse Engine von image:web/images/logo-flach.svg[width=65] ausgeführt, welche dann den Verantwortlichen, +
-egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
+egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgaben in das entsprechende Aufgabenfach legen.  
 
 
 
