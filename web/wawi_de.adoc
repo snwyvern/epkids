@@ -63,8 +63,8 @@ image::web/images/masterdata.png[]
 
 === Das ist der Motor, er sorgt dafür, dass Sie immer auf dem Laufenden sind  ===
 
-Damit haben Sie aber nur indirekt zu tun!
-Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine mit noch zusätzlich einstellbaren Parametern ausgeführt.
+Damit haben Sie nur indirekt zu tun! +
+Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine ausgeführt.
 
 Positiver Nebeneffekt eines Prozessmodells ist, ein Ablauf ist damit auch gleichzeitig verständlich und übersichtlich dokumentiert !
 
