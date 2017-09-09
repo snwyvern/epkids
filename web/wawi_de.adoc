@@ -5,6 +5,8 @@
 
 image::web/images/digi.svg[width=750]
 
+'''
+
 === Mit dem Dashboard alle Aufgaben immer im Blick  ===
 
 Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, +
@@ -29,6 +31,7 @@ Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dash
 
 Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
+'''
 
 === Vorlagen nach eigenen Bedarf gestalten  ===
 
@@ -46,6 +49,8 @@ Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch ander
 [.width700]
 image::web/images/rech_template.png[]
 
+'''
+
 === Rechnungen manuell oder automatisch erstellen  ===
 
 Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
@@ -53,6 +58,7 @@ Es wird eine Vorlage benutzt, die sie selbst erstellt oder angepasst haben.
 [.width1000]
 image::web/images/rech_erstellen.png[]
 
+'''
 === Die Stammdatenverwaltung  ===
 
 Das ist unter ihrer Kontrolle
@@ -60,6 +66,7 @@ Das ist unter ihrer Kontrolle
 [.width1000]
 image::web/images/masterdata.png[]
 
+'''
 
 === Das ist der Motor, er sorgt dafür, dass Sie immer auf dem Laufenden sind  ===
 
@@ -71,6 +78,7 @@ Positiver Nebeneffekt eines Prozessmodells ist, ein Ablauf ist damit auch gleich
 [.width1000]
 image::web/images/innen.png[]
 
+'''
 === Für Entscheidungen wird sich einer Rules Engine bedient ===
 
 [.width1000]

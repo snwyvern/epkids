@@ -4,6 +4,8 @@
 
 image::web/images/digi_en.svg[width=750]
 
+'''
+
 === With the dashboard keeping track of all tasks  ===
 
 You don't have to dig through different menus into a certain program to get to your daily tasks.
@@ -30,6 +32,7 @@ Tasks assigned to the process engine by persons or groups are set in the dashboa
 
 It is also possible to see visually, at what point a sequence is standing, and what the next step is, or even where it hangs.
 
+'''
 === Creating templates for your needs ===
 
 
@@ -47,6 +50,7 @@ You decide where exactly your company data, your company logo or others, in the 
 [.width700]
 image::web/images/rech_template.png[]
 
+'''
 === Creating invoices manually or automatically  ===
 
 A template will be used, that was created or adapted by your own.
@@ -62,6 +66,7 @@ That is under your control.
 [.width1000]
 image::web/images/masterdata.png[]
 
+'''
 
 === This is the engine, it ensures that you are always up to date ===
 
@@ -74,6 +79,7 @@ A positive side-effect of a process model, a process is thus also at the same ti
 [.width1000]
 image::web/images/innen.png[]
 
+'''
 === For decisions, a rules engine is used ===
 
 [.width1000]
