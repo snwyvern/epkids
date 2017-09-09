@@ -73,7 +73,7 @@ image::web/images/masterdata.png[]
 Damit haben Sie nur indirekt zu tun! +
 Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine ausgeführt.
 
-Positiver Nebeneffekt eines Prozessmodells ist, das ein Ablauf verständlich und übersichtlich dokumentiert ist!
+Positiver Nebeneffekt eines Prozessmodells ist, dass ein Ablauf verständlich und übersichtlich dokumentiert ist!
 
 [.width1000]
 image::web/images/innen.png[]
