@@ -2,7 +2,7 @@
 
 == image:web/images/simplflow.svg[width=160] the proactive thinking ERP for the cloud  ==
 
-image::web/images/digi.svg[width=750]
+image::web/images/digi_en.svg[width=750]
 
 === With the dashboard keeping track of all tasks  ===
 
