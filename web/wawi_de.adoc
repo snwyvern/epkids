@@ -1,7 +1,7 @@
 :linkattrs:
 
 
-== image:web/images/simplflow.svg[width=200] die mitdenkende Warenwirtschaft für die Cloud  ==
+== image:web/images/simplflow.svg[width=160] die mitdenkende Warenwirtschaft für die Cloud  ==
 
 image::web/images/digi.svg[width=750]
 

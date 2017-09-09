@@ -1,6 +1,6 @@
 :linkattrs:
 
-== image:web/images/simplflow.svg[width=200] the proactive thinking ERP for the cloud  ==
+== image:web/images/simplflow.svg[width=160] the proactive thinking ERP for the cloud  ==
 
 image::web/images/digi.svg[width=750]
 
