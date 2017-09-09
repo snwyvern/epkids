@@ -3,22 +3,22 @@
 
 == image:web/images/simplflow.svg[width=200] die mitdenkende Warenwirtschaft für die Cloud  ==
 
-image::web/images/digi.svg[width=650]
+image::web/images/digi.svg[width=750]
 
 === Mit dem Dashboard alle Aufgaben immer im Blick  ===
 
 Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, +
 um an Ihre täglichen Aufgaben zu kommen.
 
-image:web/images/simplflow.svg[width=80] sagt Ihnen was zu tun ist !
+image:web/images/simplflow.svg[width=100] *sagt Ihnen was zu tun ist !*
 
-._Wie das geht ?_
+.*Wie das geht ?*
 --
-image:web/images/simplflow.svg[width=80] *ist auf der Basis von simpl4 realisiert*.
+image:web/images/simplflow.svg[width=100] *ist auf der Basis von image:web/images/logo-flach.svg[width=65] realisiert*.
 
 So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
 eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
-Diese werden in der Prozesse Engine von simpl4 ausgeführt, welche dann den Verantwortlichen, +
+Diese werden in der Prozesse Engine von image:web/images/logo-flach.svg[width=65] ausgeführt, welche dann den Verantwortlichen, +
 egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
 --
 

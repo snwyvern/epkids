@@ -1,6 +1,6 @@
 :linkattrs:
 
-=== News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> link:local:wawi[Hier entsteht eine Warenwirtschaft auf Basis von simpl4] ===
+=== News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> link:local:wawi[Warenwirtschaft based on simpl4] ===
 
 * Exchange of the Processengine, from Activiti to Camunda. +
 New features: adhoc tasks, job suspension, speed.
