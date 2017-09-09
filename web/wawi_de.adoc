@@ -12,15 +12,13 @@ um an Ihre täglichen Aufgaben zu kommen.
 
 image:web/images/simplflow.svg[width=100] *sagt Ihnen was zu tun ist !*
 
-.*Wie das geht ?*
---
-image:web/images/simplflow.svg[width=100] *ist auf der Basis von image:web/images/logo-flach.svg[width=65] realisiert*.
-
+TIP: Wie das geht ? +
+image:web/images/simplflow.svg[width=100] *ist auf der Basis von image:web/images/logo-flach.svg[width=65] realisiert*. +
+&nbsp; +
 So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
 eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
 Diese werden in der Prozesse Engine von image:web/images/logo-flach.svg[width=65] ausgeführt, welche dann den Verantwortlichen, +
 egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgabe in das entsprechende Aufgabenfach legt.  
---
 
 
 
@@ -32,17 +30,18 @@ Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dash
 Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
 
-=== Vorlagen nach dem eigenen Bedarf erstellen  ===
+=== Vorlagen nach eigenen Bedarf gestalten  ===
 
 
-Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch andere, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
+Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch anderes, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
 
+[TIP] 
 .Hightlights
---
+====
 * Mit Bildern, Tabellen, freien Texten, +
 * running Header/Footer, +
 * Variablen Ersetzung mit Werten aus der Kundendatenbank und eigenen Daten. 
---
+====
 
 [.width700]
 image::web/images/rech_template.png[]
@@ -81,12 +80,13 @@ Die definierten Regeln (Rules) sind durch Sie jederzeit individuell anpassbar. +
 Werden beispielsweise Aufgaben aufgrund bestimmter Parameter durchgeführt, oder sind bestimmten Rollen zugeteilt, +
 können Sie diese Parameter und Rollen jederzeit anpassen.
 
+[TIP]
 .Beispiel:
---
+====
 Bis zu einem Einkaufwert bis 1.000,-Euro kann der Sachbearbeiter im Einkauf frei bestellen, +
 ab 1.001,-Euro geht die Bestellung aber an den Einkaufsleiter, welcher die Bestellung dann freigeben oder ablehnen muss. +
 Diese Parameter können Sie jederzeit selbst anpassen.
---
+====
 
 
 Definierte Rules werden wie auch Prozesse von einer Engine ausgeführt, in diesem Fall von der Rules Engine.
