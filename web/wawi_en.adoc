@@ -24,14 +24,13 @@ which then places the tasks in the appropriate task compartment for the responsi
 whether a particular person or a group of responsible persons.
 ====
 
+Tasks assigned to the process engine by persons or groups are set in the dashboard for viewing and execution. +
+It is also possible to see visually, at what point a sequence is standing, and what the next step is, or even where it hangs.
 
 
 [.width1000]
 image::web/images/dashboard.png[]
 
-Tasks assigned to the process engine by persons or groups are set in the dashboard for viewing and execution.
-
-It is also possible to see visually, at what point a sequence is standing, and what the next step is, or even where it hangs.
 
 '''
 === Creating templates for your needs ===

@@ -25,14 +25,13 @@ eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
 egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgaben in das entsprechende Aufgabenfach legen.  
 ====
 
+Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dashboard zur Ansicht und Ausführung, eingestellt. +
+Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
 
 [.width1000]
 image::web/images/dashboard.png[]
 
-Von der Prozess Engine Personen oder Gruppen zugeordnente Aufgaben, sind im Dashboard zur Ansicht und Ausführung, eingestellt.
-
-Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und was der nächste Schritt ist, oder auch wo es hakt.
 
 '''
 
