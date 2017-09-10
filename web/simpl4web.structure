@@ -17,16 +17,6 @@
     "enabled": true
   },
   {
-    "title": "tr.menu.wawi",
-    "description": "",
-    "uri": "wawi_%l.adoc",
-    "icon": "social:people",
-    "id": "wawi",
-    "help": "",
-    "adoc_include": false,
-    "enabled": true
-  },
-  {
     "title": "tr.menu.presentation",
     "description": "",
     "uri": "",
@@ -483,6 +473,28 @@
             "enabled": true
           }
         ]
+      }
+    ]
+  },
+  {
+    "title": "tr.menu.wawi2",
+    "description": "",
+    "uri": "",
+    "icon": "",
+    "id": "",
+    "help": "",
+    "adoc_include": false,
+    "enabled": true,
+    "children": [
+      {
+        "title": "tr.menu.wawi",
+        "description": "",
+        "uri": "wawi_%l.adoc",
+        "icon": "social:people",
+        "id": "wawi",
+        "help": "",
+        "adoc_include": false,
+        "enabled": true
       }
     ]
   },

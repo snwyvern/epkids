@@ -597,5 +597,9 @@
     {
         "msgstr": "Cloud",
         "msgid": "tr.menu.cloud"
+    },
+    {
+        "msgstr": "Warenwirtschaft",
+        "msgid": "tr.menu.wawi2"
     }
 ]

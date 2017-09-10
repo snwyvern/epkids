@@ -10,16 +10,17 @@ image::web/images/digi_en.svg[width=750]
 
 You don't have to dig through different menus into a certain program to get to your daily tasks.
 
-image:web/images/simplflow.svg[width=100] *tells you what to do!*
 
 [TIP]
-.*How it works ?*
+image:web/images/simplflow.svg[width=90] *tells you what to do!*
 ====
-image:web/images/simplflow.svg[width=100] *is based on image:web/images/logo-flach.svg[width=65].* +
-Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, +
-are shown in the form of process models. 
-These are executed in the process engine of image:web/images/logo-flach.svg[width=65], +
-which then places the tasks in the appropriate task compartment for the responsible persons, +
+.How it works ? +
+image:web/images/simplflow.svg[width=90] is based on image:web/images/logo-flach.svg[width=55]. 
+
+* Thus, operations such as e.g. the creation of invoices and the corresponding monitoring of payments, possibly necessary reminders, 
+are shown in the form of process models. +
+* These are executed in the process engine of image:web/images/logo-flach.svg[width=55], 
+which then places the tasks in the appropriate task compartment for the responsible persons, 
 whether a particular person or a group of responsible persons.
 ====
 
@@ -71,9 +72,11 @@ image::web/images/masterdata.png[]
 === This is the engine, it ensures that you are always up to date ===
 
 So you have only indirectly to do with !
-Such a visualized process, which is referred to as a process model, is executed by the process engine.
-
+[TIP]
+====
+Such a visualized process, which is referred to as a process model, is executed by the process engine. +
 A positive side-effect of a process model, a process is thus also at the same time understandable and clearly documented!
+====
 
 
 [.width1000]

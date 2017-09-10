@@ -9,18 +9,21 @@ image::web/images/digi.svg[width=750]
 
 === Mit dem Dashboard alle Aufgaben im Blick  ===
 
-Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, +
+Sie müssen sich nicht erst durch verschiedene Menüs in einem Programm wühlen, 
 um an Ihre täglichen Aufgaben zu kommen.
 
-image:web/images/simplflow.svg[width=100] *sagt Ihnen was zu tun ist !*
 
-TIP: Wie das geht ? +
-image:web/images/simplflow.svg[width=100] *ist auf der Basis von image:web/images/logo-flach.svg[width=65] realisiert*. +
-&nbsp; +
-So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
+[TIP] 
+image:web/images/simplflow.svg[width=90] *sagt Ihnen was zu tun ist !*
+====
+Wie das geht ? +
+image:web/images/simplflow.svg[width=90] ist auf der Basis von image:web/images/logo-flach.svg[width=55] realisiert. 
+
+* So sind betriebswirtschaftliche Abläufe wie z.B. das Erstellen von Rechnungen und das dazugehörige Überwachen von Zahlungen, + 
 eventuell auch notwendigen Mahnungen, in Form von Prozessmodellen abgebildet. +
-Diese werden in der Prozesse Engine von image:web/images/logo-flach.svg[width=65] ausgeführt, welche dann den Verantwortlichen, +
+* Diese werden in der Prozesse Engine von image:web/images/logo-flach.svg[width=55] ausgeführt, welche dann den Verantwortlichen, +
 egal ob eine bestimmte Person oder eine Gruppe von Verantwortlichen, die Aufgaben in das entsprechende Aufgabenfach legen.  
+====
 
 
 
@@ -33,7 +36,7 @@ Man kann auch visuell einsehen, an welchem Punkt ein Ablauf gerade steht, und wa
 
 '''
 
-=== Vorlagen nach eigenen Bedarf gestalten  ===
+=== Vorlagen nach eigenem Bedarf gestalten  ===
 
 
 Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch anderes, in der Rechnung, einer Bestellung oder anderen Vorlagen platziert werden sollen.
@@ -70,10 +73,12 @@ image::web/images/masterdata.png[]
 
 === Das ist der Motor (bzw. der Ablaufplan dessen), er sorgt dafür, dass Sie immer auf dem Laufenden sind  ===
 
-Damit haben Sie nur indirekt zu tun! +
-Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine ausgeführt.
-
+Damit haben Sie aber nur indirekt zu tun!
+[TIP]
+====
+Ein solcher visualiserter Ablauf, man spricht von einem Prozessmodell, wird von der Prozess Engine ausgeführt. +
 Positiver Nebeneffekt eines Prozessmodells ist, dass ein Ablauf verständlich und übersichtlich dokumentiert ist!
+====
 
 [.width1000]
 image::web/images/innen.png[]

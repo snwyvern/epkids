@@ -1,0 +1,27 @@
+=== Wir suchen SIE ! ===
+
+Um simpl-flow schnell und effektiv vorwärts zu bringen, sind wir auf der Suche nach unterschiedlichen Untersützungen in verschiedenen Bereichen
+
+So beispielsweise durch
+
+* konstruktive Kritik, die ist ausdrücklich erwünscht !
+** Registrieren Sie sich einfach und testen simpl-flow, geben Sie uns anschließend  dann Ihre persönlichen Eindrücke wieder
+
+
+* Vorschlagen neuer Funktionalitäten
+** Sagen Sie uns was Sinn machen würde, die Entscheidung tifft die Mehrheit !
+   Heißt, für die neunen Funktionalitäten werden entsprechend Ressourcen zur Umsetzung eingeplant.
+
+
+* IHR Sponsoring
+** beteiligen Sie sich finanziell an der Fortenwicklung von simpl-flow, wobei natürlich auch kleine Beträge helfen, bei höheren Beträgen aber mehr Resourcen für die Weiterentwicklung verplant werden können.
+
+* IHRE Mitentwicklung
+** Wir suchen in den verschiendsten technischen Bereichen Unterstützung
+*** simpl4 Programmierer
+*** Openstack-Freaks
+*** ...
+
+
+Sie wollen uns aber auf eine andere Art unterstützen, an die wir aber noch gar gedacht haben ?
+Überhaupt kein Problem, kontaktieren Sie uns, wir hören Ihnen gerne zu !
