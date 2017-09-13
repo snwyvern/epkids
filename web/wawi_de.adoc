@@ -48,7 +48,7 @@ Sie bestimmen, an welchem Platz Ihre Firmendaten, Ihr Firmenlogo oder auch ander
 * Variablen Ersetzung mit Werten aus der Kundendatenbank und eigenen Daten. 
 ====
 
-[.width700]
+[.width1000]
 image::web/images/rech_template.png[]
 
 '''

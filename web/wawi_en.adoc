@@ -47,7 +47,7 @@ You decide where exactly your company data, your company logo or others, in the 
 ====
 
 
-[.width700]
+[.width1000]
 image::web/images/rech_template.png[]
 
 '''
